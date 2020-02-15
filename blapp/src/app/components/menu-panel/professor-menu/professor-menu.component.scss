@@ -1,1 +1,83 @@
+.principal{
+    width: 1144px;
+    height: 664px; 
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;   
+ }
+ .icon{
+     width: 56px;
+     height: 45px;
+ }
+ .titulo{
+     top: 81px;
+     margin-left:334px;
+     margin-right: 334px;
+     width: 476px;
+     height: 164px;
+     text-align: center;   
+ }
+ .texto{
+     font-family: Poppins;
+     font-style: normal;
+     font-weight: 500;
+     font-size: 35px;
+     line-height: 52px;
+     text-align: center;
+     
+     color: #5F659C;    
+ }
+ 
+ .opciones{
+     top: 140px;
+ }
+ .divFonema{
 
+ }
+ .divSemantica{
+     margin-left: 118px;
+ }
+ .opcionFonema{
+     width: 230px;
+     height: 230px;
+     background: url('../../../../assets/svg/menu-panel/fonemas.svg');
+ }
+ 
+ .opcionSemantica{
+     left: 50px;
+     width: 230px;
+     height: 230px;
+     background: url('../../../../assets/svg/menu-panel/semanticas.svg');
+ }
+ 
+
+ .opcionEstudiantes{
+    // left: 40px;
+    width: 230px;
+    height: 230px;
+    background: url('../../../../assets/svg/menu-panel/estudiantes.svg');
+}
+
+
+ .textoOpcion{
+     width: 365px;
+     height: 45px;
+     //left: 317px;
+     top: 621px;
+     
+     font-family: Poppins;
+     font-style: normal;
+     font-weight: bold;
+     font-size: 30px;
+     line-height: 45px;
+     
+     /* identical to box height */
+     
+     color: #5F659C;    
+ }
+ 
+ .btnLogout{
+     position: absolute;
+     left: 142px;
+     top: 137px;    
+ }

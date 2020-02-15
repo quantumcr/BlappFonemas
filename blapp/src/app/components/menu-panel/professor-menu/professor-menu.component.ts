@@ -13,7 +13,7 @@ export class ProfessorMenuComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {}
-  selectTheme(event: any){
+  selectTheme(event: any) {
     console.log(event.target.value);
   }
 }
