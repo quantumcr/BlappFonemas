@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-menu-panel',
@@ -6,7 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu-panel.component.scss'],
 })
 export class MenuPanelComponent implements OnInit {
-
+  @Input() titulo: string;
+  @Input() opcion1: string;
+  @Input() opcion2: string;
   constructor() { }
 
   ngOnInit() {}
