@@ -1,0 +1,23 @@
+<div class="principal">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-label class="tituloUsuario">{{usuario}}</ion-label>
+        <ion-input class="usuario" (ionInput)="setEmail($event)"></ion-input>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-label class="tituloClave">{{clave}}</ion-label>
+        <ion-input class="clave" type="password" (ionInput)="setPassword($event)"></ion-input>
+      </ion-col>
+    </ion-row> 
+
+    <ion-row>
+      <ion-col>
+        <ion-button color="blappButton" class="btnLogin" (click)="login()">{{comando}}</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>

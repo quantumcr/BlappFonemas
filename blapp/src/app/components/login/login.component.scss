@@ -1,0 +1,74 @@
+.principal{
+    position: absolute;
+    width: 554px;
+    height: 264px;
+    margin-left: 360px;
+    margin-right: 360px;
+    top: 318px;
+    
+    background: #7A84DD;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;    
+}
+.tituloUsuario{
+    width: 79px;
+    height: 30px;    
+    top: 16px;
+    margin-left: 241px;
+    margin-right: 234px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px; 
+    /* identical to box height */ 
+    color: #FFFFFF;    
+}
+.tituloClave{
+    width: 121px;
+    height: 30px;  
+    margin-left: 225px;
+    margin-right: 214px; 
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    
+    /* identical to box height */
+    
+    color: #FFFFFF;    
+}
+.usuario{
+    width: 484px;
+    height: 44px;
+    left: 25px;
+    right: 33px;    
+    top: 4px;
+    background: #FFFFFF;
+    border-radius: 3px;    
+
+}
+.clave{
+    width: 484px;
+    height: 44px;
+    left: 25px;
+    right: 33px;
+    top: 14px;
+    background: #FFFFFF;
+    border-radius: 3px;    
+
+}
+.btnLogin{
+    position: absolute;
+    width: 150px;
+    height: 44px;
+    left: 203px;
+    right: 201px;
+    top: 18px;
+    bottom: 20px;
+    
+    background: #A9B0F0;
+    border-radius: 6px;    
+}

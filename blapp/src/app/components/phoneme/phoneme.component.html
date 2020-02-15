@@ -1,0 +1,13 @@
+<div>
+  <ion-grid>
+    <ion-row>
+      <ion-col class="bar">
+        <app-phoneme-bar titulo="FONEMAS" comando1="VOCALES" comando2="CONSONANTES" comando3="JUGAR" (phonemeBarEvent)="selectPanel($event)" ></app-phoneme-bar>
+      </ion-col>
+      <ion-col class="panel">
+        <app-vocal-panel *ngIf="visibleVocal"></app-vocal-panel>
+        <app-consonant-panel *ngIf="visibleConsonant"></app-consonant-panel> 
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>

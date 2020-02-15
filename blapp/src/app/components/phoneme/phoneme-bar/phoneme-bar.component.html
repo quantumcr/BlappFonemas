@@ -1,0 +1,19 @@
+<div class="principal">
+  <ion-grid>
+    <ion-row>
+      <ion-img src="assets/img/fonemas/phoneme-bar/fonemas.png" class="imagen"></ion-img>
+    </ion-row>
+    <ion-row>
+      <ion-label class="titulo">{{titulo}}</ion-label>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-segment (ionChange)="openPanel($event)">
+          <ion-segment-button value="vocales" class="btnComando1">{{comando1}}</ion-segment-button>
+          <ion-segment-button value="consonantes" class="btnComando2">{{comando2}}</ion-segment-button>
+          <ion-segment-button value="jugar" class="btnComando3">{{comando3}}</ion-segment-button>
+        </ion-segment>        
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>
