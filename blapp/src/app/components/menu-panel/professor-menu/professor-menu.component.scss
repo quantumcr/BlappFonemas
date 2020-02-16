@@ -18,12 +18,12 @@
      text-align: center;   
  }
  .texto{
-     font-family: Poppins;
-     font-style: normal;
-     font-weight: 500;
-     font-size: 35px;
-     line-height: 52px;
-     text-align: center;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 52px;
+    text-align: center;
      
      color: #5F659C;    
  }
@@ -31,12 +31,7 @@
  .opciones{
      top: 140px;
  }
- .divFonema{
 
- }
- .divSemantica{
-     margin-left: 118px;
- }
  .opcionFonema{
      width: 230px;
      height: 230px;
@@ -70,6 +65,7 @@
      font-weight: bold;
      font-size: 30px;
      line-height: 45px;
+     text-align: center;
      
      /* identical to box height */
      

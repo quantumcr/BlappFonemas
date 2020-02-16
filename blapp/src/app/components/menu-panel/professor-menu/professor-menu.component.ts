@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-
+import { NavController } from '@ionic/angular';
 @Component({
   selector: 'app-professor-menu',
   templateUrl: './professor-menu.component.html',
@@ -10,10 +10,11 @@ export class ProfessorMenuComponent implements OnInit {
   @Input() opcion1: string;
   @Input() opcion2: string;
   @Input() opcion3: string;
-  constructor() { }
+  constructor(private navCtrl: NavController) { }
 
   ngOnInit() {}
   selectTheme(event: any) {
     console.log(event.target.value);
+    this.navCtrl.navigateForward('/' + event.target.value);
   }
 }
