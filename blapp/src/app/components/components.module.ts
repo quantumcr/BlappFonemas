@@ -9,16 +9,18 @@ import { PhonemeComponent } from './phoneme/phoneme.component';
 import { PhonemeBarComponent } from './phoneme/phoneme-bar/phoneme-bar.component';
 import { VocalPanelComponent } from './phoneme/vocal-panel/vocal-panel.component';
 import { ConsonantPanelComponent } from './phoneme/consonant-panel/consonant-panel.component';
+import { PhonemeGamePanelComponent } from './phoneme/phoneme-game-panel/phoneme-game-panel.component';
+
 
 
 
 @NgModule({
   declarations: [LoginComponent,
     MenuPanelComponent, ProfessorMenuComponent, StudentsMenuComponent,
-    PhonemeComponent, PhonemeBarComponent, VocalPanelComponent, ConsonantPanelComponent],
+    PhonemeComponent, PhonemeBarComponent, VocalPanelComponent, ConsonantPanelComponent, PhonemeGamePanelComponent],
   exports: [LoginComponent,
     MenuPanelComponent, ProfessorMenuComponent, StudentsMenuComponent,
-    PhonemeComponent, PhonemeBarComponent, VocalPanelComponent, ConsonantPanelComponent],
+    PhonemeComponent, PhonemeBarComponent, VocalPanelComponent, ConsonantPanelComponent, PhonemeGamePanelComponent],
   imports: [
     CommonModule,
     IonicModule

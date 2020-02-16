@@ -1,3 +1,50 @@
-<p>
-  phoneme-game-panel works!
-</p>
+<div class="principal">
+    <ion-grid>
+        <ion-row class="rowSilaba">
+            <ion-col>
+                <ion-segment-button fill="round" class="silaba">Ma</ion-segment-button>
+            </ion-col>
+            <ion-col>
+                <ion-segment-button fill="round" class="silaba">Me</ion-segment-button>
+            </ion-col>
+        </ion-row>
+        <ion-row class="row">
+            <ion-col>
+                <div style="position: relative;">
+                    <div style="position: absolute; left: 0px; top: 0px;">
+                        <ion-img src="assets/img/fonemas/game-panel/mama.png" class="imagen"></ion-img>
+                    </div>
+                    <div style="position: absolute; left: 0px; right: 120px; top: 126px;">
+                        <ion-segment-button value="audio1" class="btnPlay" (click)="playAudio($event)">
+                            <ion-icon src="assets/icon/play.svg"></ion-icon>
+                        </ion-segment-button>
+                    </div>
+                  </div>
+            </ion-col>
+            <ion-col>
+                <div style="position: relative;">
+                    <div style="position: absolute; left: 0px; top: 0px;">
+                        <ion-img src="assets/img/fonemas/game-panel/mama.png" class="imagen"></ion-img>
+                    </div>
+                    <div style="position: absolute; left: 0px; right: 120px; top: 126px;">
+                        <ion-segment-button value="audio2" class="btnPlay" (click)="playAudio($event)">
+                            <ion-icon src="assets/icon/play.svg"></ion-icon>
+                        </ion-segment-button>
+                    </div>
+                  </div>              
+            </ion-col>  
+            <ion-col>
+                <div style="position: relative;">
+                    <div style="position: absolute; left: 0px; top: 0px;">
+                        <ion-img src="assets/img/fonemas/game-panel/mama.png" class="imagen"></ion-img>
+                    </div>
+                    <div style="position: absolute; left: 0px; right: 120px; top: 126px;">
+                        <ion-segment-button value="audio3" class="btnPlay" (click)="playAudio($event)">
+                            <ion-icon src="assets/icon/play.svg"></ion-icon>
+                        </ion-segment-button>
+                    </div>
+                  </div>             
+            </ion-col>                   
+        </ion-row>
+    </ion-grid>
+</div>

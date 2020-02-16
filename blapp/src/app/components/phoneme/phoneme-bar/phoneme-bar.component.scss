@@ -1,12 +1,10 @@
 .principal{
-    position: absolute;
+   position: absolute;
     width: 302px;
     height: 623px;
-    //left: 70px;
-    //top: 48px;   
     background: #FCD260;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
+    border-radius: 10px;    
 }
 .imagen{
     position: absolute;
@@ -14,22 +12,48 @@
     height: 213px;
     left: 43px;
     right: 46px;
-    top: 106px;   
+    top: 106px;    
 }
 .titulo{
     position: absolute;
     width: 226px;
     height: 74px;
     left: 50px;
-    right: 38px;
-    top: 319px;   
+    right: 41px;
+    top: 319px;
+
     font-family: Poppins;
     font-style: normal;
     font-weight: bold;
     font-size: 45px;
     line-height: 67px;
     
-    color: #FFFFFF;  
+    color: #FFFFFF;    
+}
+
+.comando1{
+    position: absolute;
+    top: 406px;  
+    background: rgba(255, 230, 190, 0.94);     
+    border-radius: 15px;    
+}
+.comando2{
+    position: absolute;
+    top: 467px;
+    background: rgba(255, 230, 190, 0.94);     
+    border-radius: 15px;       
+}
+.comando3{
+    position: absolute;
+    top: 520px; 
+    background: rgba(255, 230, 190, 0.94);     
+    border-radius: 15px;      
+}
+.ion-segment-button{
+    background: rgba(255, 230, 190, 0.94);
+    border-radius: 15px;  
+    color: #5F659C;      
+    top: 392px;     
 }
 .btnComando1{
     position: absolute;
@@ -40,7 +64,7 @@
     background: rgba(255, 230, 190, 0.94);
     border-radius: 15px;  
     color: #5F659C;      
-    top: 392px;
+    top: 392px;  
 }
 .btnComando2{
     position: absolute;

@@ -10,5 +10,5 @@ export class ConsonantPanelComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {}
-
+  goToPhoneme($event: any){}
 }
