@@ -1,3 +1,13 @@
-<p>
-  professor works!
-</p>
+<div class="principal">
+  <ion-grid>
+    <ion-row>
+      <ion-col class="bar">
+        <app-students-bar titulo="ESTUDIANTES"  comando1="AGREGAR" comando2="LISTA COMPLETA"(studentssBarEvent)="selectPanel($event)" ></app-students-bar>
+      </ion-col>
+      <ion-col class="panel">
+        <app-register nombre="Nombre Completo" edad="Edad" genero="Género" residencia="Lugar de Residencia" encargado="Encargado Legal" comando="Guardar" *ngIf="visibleRegister"></app-register>
+        <app-list *ngIf="visibleList"></app-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>
