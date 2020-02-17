@@ -14,6 +14,11 @@ import { SemanticsComponent } from './semantics/semantics.component';
 import { SemanticsBarComponent } from './semantics/semantics-bar/semantics-bar.component';
 import { CategoriesPanelComponent } from './semantics/categories-panel/categories-panel.component';
 import { SemanticsGamePanelComponent } from './semantics/semantics-game-panel/semantics-game-panel.component';
+import { ProfessorComponent } from './professor/professor.component';
+import { ListComponent } from './professor/list/list.component';
+import { RegisterComponent } from './professor/register/register.component';
+import { StudentInfoComponent } from './professor/student-info/student-info.component';
+import { StudentsBarComponent } from './professor/students-bar/students-bar.component';
 
 
 
@@ -22,11 +27,13 @@ import { SemanticsGamePanelComponent } from './semantics/semantics-game-panel/se
   declarations: [LoginComponent,
     MenuPanelComponent, ProfessorMenuComponent, StudentsMenuComponent,
     PhonemeComponent, PhonemeBarComponent, VocalPanelComponent, ConsonantPanelComponent, PhonemeGamePanelComponent,
-    SemanticsComponent, SemanticsBarComponent, CategoriesPanelComponent, SemanticsGamePanelComponent],
+    SemanticsComponent, SemanticsBarComponent, CategoriesPanelComponent, SemanticsGamePanelComponent,
+    ProfessorComponent, ListComponent, RegisterComponent, StudentInfoComponent, StudentsBarComponent],
   exports: [LoginComponent,
     MenuPanelComponent, ProfessorMenuComponent, StudentsMenuComponent,
     PhonemeComponent, PhonemeBarComponent, VocalPanelComponent, ConsonantPanelComponent, PhonemeGamePanelComponent,
-    SemanticsComponent, SemanticsBarComponent, CategoriesPanelComponent, SemanticsGamePanelComponent],
+    SemanticsComponent, SemanticsBarComponent, CategoriesPanelComponent, SemanticsGamePanelComponent,
+    ProfessorComponent, ListComponent, RegisterComponent, StudentInfoComponent, StudentsBarComponent],
   imports: [
     CommonModule,
     IonicModule
