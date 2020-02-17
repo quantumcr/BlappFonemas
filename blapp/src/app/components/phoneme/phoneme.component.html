@@ -1,4 +1,4 @@
-<div>
+<div class="principal">
   <ion-grid>
     <ion-row>
       <ion-col class="bar">
@@ -7,6 +7,7 @@
       <ion-col class="panel">
         <app-vocal-panel *ngIf="visibleVocal"></app-vocal-panel>
         <app-consonant-panel *ngIf="visibleConsonant"></app-consonant-panel> 
+        <app-phoneme-game-panel *ngIf="visibleGame"></app-phoneme-game-panel>
       </ion-col>
     </ion-row>
   </ion-grid>

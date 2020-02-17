@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class PhonemeComponent implements OnInit {
   public visibleVocal = true;
   public visibleConsonant = false;
-  public visibleJugar = false;
+  public visibleGame = false;
   constructor() { }
 
   ngOnInit() {}
@@ -19,14 +19,20 @@ export class PhonemeComponent implements OnInit {
   }
 
   setVisible( value) {
-    if ( value === 'vocales') {
+    if ( value === 'vocales'){
       this.visibleVocal = true;
       this.visibleConsonant = false;
-      this.visibleJugar = false;
-    } else {
+      this.visibleGame = false;
+    }
+    if (value === 'consonantes') {
       this.visibleVocal = false;
       this.visibleConsonant = true;
-      this.visibleJugar = false;
+      this.visibleGame = false;
+    }
+    if (value === 'jugar') {
+      this.visibleVocal = false;
+      this.visibleConsonant = false;
+      this.visibleGame = true;
     }
 
   }

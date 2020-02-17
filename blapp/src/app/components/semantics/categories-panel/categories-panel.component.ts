@@ -10,5 +10,6 @@ export class CategoriesPanelComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {}
+  goToPhoneme($event: any){}
 
 }

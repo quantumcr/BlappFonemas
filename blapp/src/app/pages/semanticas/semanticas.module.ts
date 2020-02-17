@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { SemanticasPageRoutingModule } from './semanticas-routing.module';
 
 import { SemanticasPage } from './semanticas.page';
+import { ComponentsModule } from '../../components/components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    SemanticasPageRoutingModule
+    SemanticasPageRoutingModule,
+    ComponentsModule
   ],
   declarations: [SemanticasPage]
 })

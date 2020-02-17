@@ -11,4 +11,6 @@ export class VocalPanelComponent implements OnInit {
 
   ngOnInit() {}
 
+  goToPhoneme(event: any) {}
+
 }

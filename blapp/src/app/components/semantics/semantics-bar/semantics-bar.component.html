@@ -1,3 +1,21 @@
-<p>
-  semantics-bar works!
-</p>
+<div class="principal">
+  <ion-grid>
+    <ion-row>
+      <ion-img src="assets/img/semanticas/semantics-bar/semanticas.png" class="imagen"></ion-img>
+    </ion-row>
+
+    <ion-row>
+      <ion-label class="titulo">{{titulo}}</ion-label>
+      <ion-label class="titulo2">{{titulo2}}</ion-label>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <div>
+          <ion-segment-button value="categorias" class="btnComando1" (click)="openPanel($event)">{{comando1}}</ion-segment-button>
+          <ion-segment-button value="jugar" class="btnComando2" (click)="openPanel($event)">{{comando2}}</ion-segment-button>
+        </div>         
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>
