@@ -28,7 +28,7 @@ studentCtrl.getNameStudents = async (req, res) => {
 studentCtrl.disableStudent = async (req, res) => {
     await Student.findByIdAndUpdate(req.body._id, { $set: {habilitado: false}}, async (err, student) => {
         if(err) { return res.status(501).json(err); }
-        await User.findByIdAndUpdate(req.body.idUser, { $set: {habilitado: false}}, (err, user) => {
+        await User.updateOne({ idUsuario: req.body._id }, { $set: {habilitado: false}}, (err, user) => {
             if(err) { return res.status(501).json(err); }
             return res.status(200).json({ message: "Disabled Student!!!" });
         });
