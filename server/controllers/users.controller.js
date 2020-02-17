@@ -1,6 +1,5 @@
 const passport = require('passport');
 
-const User = require('../models/user');
 const Professor = require('../models/professor');
 const Student = require('../models/student');
 
