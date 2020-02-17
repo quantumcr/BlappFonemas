@@ -6,9 +6,27 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./semantics.component.scss'],
 })
 export class SemanticsComponent implements OnInit {
-
+  public visibleCategories = true;
+  public visibleGame = false;
   constructor() { }
 
   ngOnInit() {}
+
+  selectPanel(value: string) {
+    console.log(value);
+    this.setVisible(value);
+  }
+
+  setVisible( value) {
+    if ( value === 'vocales'){
+      this.visibleCategories = true;
+      this.visibleGame = false;
+    }
+    if (value === 'jugar') {
+      this.visibleCategories = false;
+      this.visibleGame = true;
+    }
+
+  }
 
 }
