@@ -1,17 +1,21 @@
+class EncargadoLegal {
+    constructor( 
+        public nombre: String = "none",
+        public profesion: String = "none",
+        public telefono: String = "none",
+        public direccion: String = "none",
+    ) {}    
+}
+
 export class Student {
     constructor(
-        public _id: String,
-        public nombre: String,
-        public cedula: String,
-        public sexo: String,
-        public edad: Number,
-        public encargadoLegal: {
-            nombre: String,
-            profesion: String,
-            telefono: String,
-            direccion: String
-        },
-        public familia: String[],
-        public alimentacion: String[]
+        public _id: String = "none",
+        public nombre: String = "none",
+        public cedula: String = "none",
+        public sexo: String = "none",
+        public edad: Number = 0,
+        public encargadoLegal: EncargadoLegal = new EncargadoLegal,
+        public familia: String[] = [],
+        public alimentacion: String[] = []
     ) {}
 }

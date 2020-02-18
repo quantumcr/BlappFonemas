@@ -5,6 +5,8 @@ import { UserService } from '../../services/user.service';
 import { AuthenticationService, TokenResponse } from '../../services/authentication.service';
 
 import { User } from '../../models/user';
+import { StudentService } from '../../services/student.service';
+import { Student } from '../../models/student';
 
 @Component({
   selector: 'app-login',
@@ -17,14 +19,17 @@ export class LoginComponent implements OnInit {
   @Input() comando: string;
 
   newUser = new User;
+  newStudent = new Student;
 
   constructor(
     private navCtrl: NavController,
     private userService: UserService,
-    private authenticationService: AuthenticationService
+    private authenticationService: AuthenticationService,
+    private studentService: StudentService
   ) { }
 
   ngOnInit() {}
+  
   setEmail(event: any) {
     this.newUser.email = event.target.value;
   }

@@ -3,36 +3,48 @@
       <ion-row style="margin-top: 48px;">
         <ion-col>
           <ion-label class="label">{{nombre}}</ion-label>
-          <ion-input class="input"></ion-input>
+          <ion-input class="input" (ionInput)="setName($event)"></ion-input>
         </ion-col>
       </ion-row>
-      <ion-row style="margin-top: 28px;">
+      <ion-row >
         <ion-col>
           <ion-label class="label">{{edad}}</ion-label>
-          <ion-input class="input"></ion-input>
+          <ion-input class="input" (ionInput)="setAge($event)"></ion-input>
         </ion-col>
       </ion-row>   
-      <ion-row style="margin-top: 28px;">
+      <ion-row >
         <ion-col>
           <ion-label class="label">{{genero}}</ion-label>
-          <ion-input class="input"></ion-input>
+          <ion-input class="input" (ionInput)="setGender($event)"></ion-input>
         </ion-col>
       </ion-row>  
-      <ion-row style="margin-top: 28px;">
+      <ion-row >
         <ion-col>
           <ion-label class="label">{{residencia}}</ion-label>
-          <ion-input class="input"></ion-input>
+          <ion-input class="input" (ionInput)="setAddress($event)"></ion-input>
         </ion-col>
       </ion-row>  
-      <ion-row style="margin-top: 28px;">
+      <ion-row >
         <ion-col>
           <ion-label class="label">{{encargado}}</ion-label>
-          <ion-input class="input"></ion-input>
+          <ion-input class="input" (ionInput)="setLegalOfficer($event)"></ion-input>
+        </ion-col>
+      </ion-row> 
+      <ion-row >
+        <ion-col>
+          <ion-label class="label">{{email}}</ion-label>
+          <ion-input class="input" type="email" (ionInput)="setEmail($event)"></ion-input>
+        </ion-col>
+      </ion-row> 
+      <ion-row >
+        <ion-col>
+          <ion-label class="label">{{password}}</ion-label>
+          <ion-input class="input" type="password" (ionInput)="setPassword($event)"></ion-input>
         </ion-col>
       </ion-row> 
       <ion-row>
         <ion-col>
-          <ion-button color="formButton" shape="round" class="btnGuardar" >{{comando}}</ion-button>
+          <ion-button color="formButton" shape="round" class="btnGuardar" (click)="register()">{{comando}}</ion-button>
         </ion-col>
       </ion-row>
     </ion-grid>
