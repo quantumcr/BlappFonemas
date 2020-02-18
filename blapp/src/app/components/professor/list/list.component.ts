@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 import { StudentService, NameStudents } from '../../../services/student.service';
 
@@ -8,13 +8,14 @@ import { StudentService, NameStudents } from '../../../services/student.service'
   styleUrls: ['./list.component.scss'],
 })
 export class ListComponent implements OnInit {
+  @Input() nombre: string;
 
   nameStudents: NameStudents;
 
   constructor(
     private studentService: StudentService
   ) { }
-
+  
   ngOnInit() {
     this.studentService.getNameStudents()
     .then((nameStudent: NameStudents) => {

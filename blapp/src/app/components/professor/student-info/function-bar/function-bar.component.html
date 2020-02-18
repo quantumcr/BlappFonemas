@@ -1,3 +1,20 @@
-<p>
-  function-bar works!
-</p>
+<div class="principal">
+  <ion-grid>
+    <ion-row>
+      <ion-img src="assets/img/docentes/students-bar/estudiantes.png" class="imagen"></ion-img>
+    </ion-row>
+
+    <ion-row>
+      <ion-label class="titulo">{{titulo}}</ion-label>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <div>
+          <ion-segment-button value="editar" class="btnComando1" (click)="openPanel($event)">{{comando1}}</ion-segment-button>
+          <ion-segment-button value="eliminar" class="btnComando2" (click)="openPanel($event)">{{comando2}}</ion-segment-button>
+        </div>         
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>
