@@ -19,6 +19,8 @@ import { ListComponent } from './professor/list/list.component';
 import { RegisterComponent } from './professor/register/register.component';
 import { StudentInfoComponent } from './professor/student-info/student-info.component';
 import { StudentsBarComponent } from './professor/students-bar/students-bar.component';
+import { FunctionBarComponent } from './professor/student-info/function-bar/function-bar.component';
+import { InfoPanelComponent } from './professor/student-info/info-panel/info-panel.component';
 
 
 
@@ -28,12 +30,14 @@ import { StudentsBarComponent } from './professor/students-bar/students-bar.comp
     MenuPanelComponent, ProfessorMenuComponent, StudentsMenuComponent,
     PhonemeComponent, PhonemeBarComponent, VocalPanelComponent, ConsonantPanelComponent, PhonemeGamePanelComponent,
     SemanticsComponent, SemanticsBarComponent, CategoriesPanelComponent, SemanticsGamePanelComponent,
-    ProfessorComponent, ListComponent, RegisterComponent, StudentInfoComponent, StudentsBarComponent],
+    ProfessorComponent, ListComponent, RegisterComponent, StudentInfoComponent,
+    FunctionBarComponent, InfoPanelComponent, StudentsBarComponent],
   exports: [LoginComponent,
     MenuPanelComponent, ProfessorMenuComponent, StudentsMenuComponent,
     PhonemeComponent, PhonemeBarComponent, VocalPanelComponent, ConsonantPanelComponent, PhonemeGamePanelComponent,
     SemanticsComponent, SemanticsBarComponent, CategoriesPanelComponent, SemanticsGamePanelComponent,
-    ProfessorComponent, ListComponent, RegisterComponent, StudentInfoComponent, StudentsBarComponent],
+    ProfessorComponent, ListComponent, RegisterComponent, StudentInfoComponent,
+    FunctionBarComponent, InfoPanelComponent, StudentsBarComponent],
   imports: [
     CommonModule,
     IonicModule
