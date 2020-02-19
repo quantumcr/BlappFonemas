@@ -2,7 +2,19 @@
     width: 705px;
     height: 593px;     
 }
-
+.titulo{
+    margin-left: 20px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 37px;
+    
+    /* identical to box height */
+    text-align: center;
+    
+    color: #5F659C    
+}
 .info{
     width: 705px;
     height: 293px;  
@@ -11,7 +23,11 @@
     margin-top: 56px;
 
 }
-
+.grid{
+    width: 317px;
+    height: 210px;
+    margin-top: 20px;
+}
 .infoFamilia{
     width: 337px;
     height: 262px; 
@@ -28,3 +44,4 @@
     background: #ffffff; 
     border-radius: 20px; 
 }
+

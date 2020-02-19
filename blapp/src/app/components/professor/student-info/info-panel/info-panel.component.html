@@ -1,11 +1,25 @@
 <div class="principal">
   <div>
     <ion-grid>
-      <ion-row class="info">
+      <ion-row class="info">  
+        <ion-grid>
+          <ion-row>
+            <ion-label class="titulo">Información Personal</ion-label>
+          </ion-row>
+          <ion-row>
+            <app-personal-info></app-personal-info>
+          </ion-row>
+        </ion-grid>
       </ion-row>
       <ion-row>
-        <ion-col class="infoFamilia"></ion-col>
-        <ion-col class="infoAlimentos"></ion-col>
+        <ion-col class="infoFamilia">
+          <ion-label class="titulo">Familia</ion-label>
+          <app-family-info></app-family-info>
+        </ion-col>
+        <ion-col class="infoAlimentos">
+          <ion-label class="titulo">Alimentos</ion-label>
+          <!--En esta parte va el ngFor para los alimentos-->
+        </ion-col>
       </ion-row>
     </ion-grid>
   </div>
