@@ -21,8 +21,9 @@ import { StudentInfoComponent } from './professor/student-info/student-info.comp
 import { StudentsBarComponent } from './professor/students-bar/students-bar.component';
 import { FunctionBarComponent } from './professor/student-info/function-bar/function-bar.component';
 import { InfoPanelComponent } from './professor/student-info/info-panel/info-panel.component';
-
-
+import { SubcategoriesComponent } from './semantics/subcategories/subcategories.component';
+import { SubcategoriesBarComponent } from './semantics/subcategories/subcategories-bar/subcategories-bar.component';
+import { SubcategoriesPanelComponent } from './semantics/subcategories/subcategories-panel/subcategories-panel.component';
 
 
 @NgModule({
@@ -31,13 +32,15 @@ import { InfoPanelComponent } from './professor/student-info/info-panel/info-pan
     PhonemeComponent, PhonemeBarComponent, VocalPanelComponent, ConsonantPanelComponent, PhonemeGamePanelComponent,
     SemanticsComponent, SemanticsBarComponent, CategoriesPanelComponent, SemanticsGamePanelComponent,
     ProfessorComponent, ListComponent, RegisterComponent, StudentInfoComponent,
-    FunctionBarComponent, InfoPanelComponent, StudentsBarComponent],
+    FunctionBarComponent, InfoPanelComponent, StudentsBarComponent, SubcategoriesComponent,
+    SubcategoriesBarComponent, SubcategoriesPanelComponent],
   exports: [LoginComponent,
     MenuPanelComponent, ProfessorMenuComponent, StudentsMenuComponent,
     PhonemeComponent, PhonemeBarComponent, VocalPanelComponent, ConsonantPanelComponent, PhonemeGamePanelComponent,
     SemanticsComponent, SemanticsBarComponent, CategoriesPanelComponent, SemanticsGamePanelComponent,
     ProfessorComponent, ListComponent, RegisterComponent, StudentInfoComponent,
-    FunctionBarComponent, InfoPanelComponent, StudentsBarComponent],
+    FunctionBarComponent, InfoPanelComponent, StudentsBarComponent, SubcategoriesComponent,
+    SubcategoriesBarComponent, SubcategoriesPanelComponent],
   imports: [
     CommonModule,
     IonicModule

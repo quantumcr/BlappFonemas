@@ -26,4 +26,7 @@ export class ListComponent implements OnInit {
     });
   }
 
+  getStudent(_id: String) {
+    console.log(_id);
+  }
 }

@@ -3,7 +3,9 @@
     <ion-grid >
       <ion-row class="row">
         <ion-col class="col">
-          <ion-segment-button value="datos" class="btnEstudiante">NOMBRE DEL ESTUDIANTE</ion-segment-button>
+          <ion-list class="list">
+            <ion-segment-button ion-item value="datos" *ngFor="let names of nameStudents" class="btnEstudiante" (click)="getStudent(names._id)">{{names.nombre}}</ion-segment-button>
+          </ion-list>          
         </ion-col>
       </ion-row>
     </ion-grid>

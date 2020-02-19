@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { NavController } from '@ionic/angular';
+import { AuthenticationService } from '../../../services/authentication.service';
 
 @Component({
   selector: 'app-students-menu',
@@ -11,9 +12,13 @@ export class StudentsMenuComponent implements OnInit {
   @Input() opcion1: string;
   @Input() opcion2: string;
 
-  constructor(private navCtrl: NavController) { }
+  constructor(
+    private navCtrl: NavController,
+    public authenticationService: AuthenticationService
+    ) { }
 
   ngOnInit() {}
+
   selectTheme(event: any) {
     console.log(event.target.value);
     this.navCtrl.navigateForward('/' + event.target.value);
