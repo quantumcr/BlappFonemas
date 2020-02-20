@@ -1,35 +1,22 @@
 .principal{
-    width: 574px;
-    height: 696px;
-    //box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    //border-radius: 20px;     
+    --background: transparent;
+    width: 600px;
+    height: 600px;
+    margin-top: 71px;
+    overflow-y: scroll;   
 }
-
-.content{
-    background-color: transparent;
-    width: 474px;
-    height: 596px; 
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 50px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;     
-
+.principal::-webkit-scrollbar {
+    display: none;
 }
 .row{
     text-align: center;
-}
-.col{
-    text-align: center;
-}
-.list{    
-    background-color: transparent;
+    width: 600px;
+    height: 65px;
+    margin-bottom: 39px;
 }
 .btnEstudiante{
     width: 574px;
     height: 65px;
-    margin-left: 50px;
-    margin-right: 50px;
     background: #ffffff;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;       
