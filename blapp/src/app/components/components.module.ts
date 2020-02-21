@@ -24,6 +24,11 @@ import { InfoPanelComponent } from './professor/student-info/info-panel/info-pan
 import { SubcategoriesComponent } from './semantics/subcategories/subcategories.component';
 import { SubcategoriesBarComponent } from './semantics/subcategories/subcategories-bar/subcategories-bar.component';
 import { SubcategoriesPanelComponent } from './semantics/subcategories/subcategories-panel/subcategories-panel.component';
+import { PersonalInfoComponent } from './professor/student-info/info-panel/personal-info/personal-info.component';
+import { FamilyInfoComponent } from './professor/student-info/info-panel/family-info/family-info.component';
+import { FoodInfoComponent } from './professor/student-info/info-panel/food-info/food-info.component';
+
+
 
 
 @NgModule({
@@ -33,14 +38,16 @@ import { SubcategoriesPanelComponent } from './semantics/subcategories/subcatego
     SemanticsComponent, SemanticsBarComponent, CategoriesPanelComponent, SemanticsGamePanelComponent,
     ProfessorComponent, ListComponent, RegisterComponent, StudentInfoComponent,
     FunctionBarComponent, InfoPanelComponent, StudentsBarComponent, SubcategoriesComponent,
-    SubcategoriesBarComponent, SubcategoriesPanelComponent],
+    SubcategoriesBarComponent, SubcategoriesPanelComponent, PersonalInfoComponent, FamilyInfoComponent,
+    FoodInfoComponent],
   exports: [LoginComponent,
     MenuPanelComponent, ProfessorMenuComponent, StudentsMenuComponent,
     PhonemeComponent, PhonemeBarComponent, VocalPanelComponent, ConsonantPanelComponent, PhonemeGamePanelComponent,
     SemanticsComponent, SemanticsBarComponent, CategoriesPanelComponent, SemanticsGamePanelComponent,
     ProfessorComponent, ListComponent, RegisterComponent, StudentInfoComponent,
     FunctionBarComponent, InfoPanelComponent, StudentsBarComponent, SubcategoriesComponent,
-    SubcategoriesBarComponent, SubcategoriesPanelComponent],
+    SubcategoriesBarComponent, SubcategoriesPanelComponent, PersonalInfoComponent, FamilyInfoComponent,
+    FoodInfoComponent],
   imports: [
     CommonModule,
     IonicModule

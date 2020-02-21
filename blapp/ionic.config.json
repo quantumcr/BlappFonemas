@@ -1,5 +1,7 @@
 {
   "name": "blapp",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
