@@ -27,4 +27,8 @@ export class UserService {
   loginUser(user: User) {
     return this.http.post<TokenResponse>(this.URL_API + '/signin', user).toPromise();
   }
+
+  getUserByIdStudent(_idStudent: String) {
+    return this.http.get<User>(this.URL_API + `/withIdStudent/${_idStudent}`, { headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }}).toPromise();
+  }
 }

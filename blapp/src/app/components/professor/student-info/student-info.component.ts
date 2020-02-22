@@ -8,10 +8,12 @@ import { Component, OnInit, Input } from '@angular/core';
 export class StudentInfoComponent implements OnInit {
   @Input() _idStudent: string;
 
-  constructor() { }
+  constructor() {
+  
+  }
 
   ngOnInit() {
-    console.log(this._idStudent);
+    
   }
 
 }
