@@ -19,7 +19,7 @@ studentCtrl.getStudent = async (req, res) => {
 }
 
 studentCtrl.getNameStudents = async (req, res) => {
-    await Student.find({}, { nombre:1 }, (err, nameStudents) => {
+    await Student.find({ habilitado: true }, { nombre:1 }, (err, nameStudents) => {
         if(err) { return res.status(501).json(err); }
         return res.status(200).json(nameStudents);
     });

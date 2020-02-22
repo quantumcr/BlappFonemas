@@ -1,4 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { StudentService } from '../../../services/student.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-student-info',
@@ -6,9 +8,12 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./student-info.component.scss'],
 })
 export class StudentInfoComponent implements OnInit {
-  @Input() _idStudent: string;
+  @Input() _idStudent: string;  
 
-  constructor() {
+  constructor(
+    private studentService: StudentService,
+    private router: Router
+  ) {
   
   }
 
@@ -16,4 +21,14 @@ export class StudentInfoComponent implements OnInit {
     
   }
 
+  deleteStudent() {
+    this.studentService.putDisableStudent(this._idStudent)
+    .then(message => {
+      console.log(message);
+      this.router.navigate(['docentes']);
+    })
+    .catch(err => {
+      console.log(err);
+    });
+  }
 }

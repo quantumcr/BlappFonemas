@@ -23,6 +23,16 @@ export class ListComponent implements OnInit {
   ) { }
   
   ngOnInit() {
+    this.getNameStudents();
+  }
+
+  ngOnChanges(): void {
+    //Called before any other lifecycle hook. Use it to inject dependencies, but avoid any serious work here.
+    //Add '${implements OnChanges}' to the class.
+    this.getNameStudents();
+  }
+
+  getNameStudents() {
     this.studentService.getNameStudents()
     .then((nameStudent: NameStudents) => {
       this.nameStudents = nameStudent;
