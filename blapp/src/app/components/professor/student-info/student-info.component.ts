@@ -24,8 +24,7 @@ export class StudentInfoComponent implements OnInit {
   deleteStudent() {
     this.studentService.putDisableStudent(this._idStudent)
     .then(message => {
-      console.log(message);
-      this.router.navigate(['docentes']);
+      window.open('/docentes', '_self');
     })
     .catch(err => {
       console.log(err);
