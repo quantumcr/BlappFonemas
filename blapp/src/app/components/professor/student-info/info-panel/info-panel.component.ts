@@ -12,8 +12,8 @@ import { UserService } from '../../../../services/user.service';
 export class InfoPanelComponent implements OnInit {
   @Input() _idStudent: string;
 
-  student = new Student;
-  user = new User;
+  public student = new Student;
+  public user = new User;
 
   constructor(
     private studentService: StudentService,
@@ -24,6 +24,7 @@ export class InfoPanelComponent implements OnInit {
     this.studentService.getStudent(this._idStudent).
     then((student: Student) => {
       this.student = student;
+      console.log(student);
       this.userService.getUserByIdStudent(student._id)
       .then((user: User) => {
         this.user = user;        

@@ -8,7 +8,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class EstudiantesPage implements OnInit {
 
-  _idStudent: string;
+  public _idStudent: string;
 
   constructor(private activatedRoute: ActivatedRoute) {
     activatedRoute.queryParams.subscribe(params => {

@@ -7,6 +7,13 @@ class EncargadoLegal {
     ) {}    
 }
 
+export class Alimentos {
+    constructor(
+        public alimento: String = "none",
+        public seleccionado: Boolean = false
+    ) {}
+}
+
 export class Student {
     constructor(
         public _id: String = "none",
@@ -16,6 +23,6 @@ export class Student {
         public edad: Number = 0,
         public encargadoLegal: EncargadoLegal = new EncargadoLegal,
         public familia: String[] = [],
-        public alimentacion: String[] = []
+        public alimentacion: Alimentos[] = []
     ) {}
 }
