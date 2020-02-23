@@ -1,0 +1,133 @@
+.principal{
+    position: absolute;
+     width: 302px;
+     height: 623px;
+     background: #FCD260;
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+     border-radius: 10px;    
+ }
+ .imagen{
+     position: absolute;
+     width: 263px;
+     height: 262px;
+     left: 16px;
+     right: 23px;
+     top: 206px;    
+ }
+ .titulo{
+     position: absolute;
+     width: 226px;
+     height: 74px;
+     left: 50px;
+     right: 41px;
+     top: 15px;
+ 
+     font-family: Poppins;
+     font-style: normal;
+     font-weight: bold;
+     font-size: 45px;
+     line-height: 67px;
+     
+     color: #FFFFFF;    
+ }
+ .fonema{
+    position: absolute;
+    width: 301px;
+    height: 74px;
+    left: 35px;
+    right: 41px;
+    top: 85px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 67px;
+    
+    color: #FFFFFF;      
+ }
+
+ .videoFonema{
+     margin-top: 65px;
+     margin-right: 100px;
+ }
+
+ .mensaje{
+    width: 303px;
+    height: 42px; 
+    margin-top:450px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 37px;
+    text-align: center;
+
+    color: #FFFFFF;
+ }
+ 
+ .comando1{
+     position: absolute;
+     top: 406px;  
+     background: rgba(255, 230, 190, 0.94);     
+     border-radius: 15px;    
+ }
+ .comando2{
+     position: absolute;
+     top: 467px;
+     background: rgba(255, 230, 190, 0.94);     
+     border-radius: 15px;       
+ }
+ .comando3{
+     position: absolute;
+     top: 520px; 
+     background: rgba(255, 230, 190, 0.94);     
+     border-radius: 15px;      
+ }
+ .ion-segment-button{
+     background: rgba(255, 230, 190, 0.94);
+     border-radius: 15px;  
+     color: #5F659C;      
+     top: 392px;     
+ }
+ .btnComando1{
+     position: absolute;
+     width: 259px;
+     height: 48px;
+     left: 20px;
+     right: 23px;
+     background: rgba(255, 230, 190, 0.94);
+     border-radius: 15px;  
+     color: #5F659C;      
+     top: 392px;  
+ }
+ .btnComando2{
+     position: absolute;
+     width: 259px;
+     height: 48px;
+     left: 20px;
+     right: 23px;
+     background: rgba(255, 230, 190, 0.94);
+     border-radius: 15px;  
+     color: #5F659C;      
+     top: 453px;
+ }
+ .btnComando3{
+     position: absolute;
+     width: 259px;
+     height: 48px;
+     left: 20px;
+     right: 23px;
+     background: rgba(255, 230, 190, 0.94);
+     border-radius: 15px;  
+     color: #5F659C;      
+     top: 520px;
+ }
+
+ .btnPlay{
+    width: 60px;
+    height: 60px;   
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);  
+    border-radius: 100px;  
+    background: #7A84DD;
+}

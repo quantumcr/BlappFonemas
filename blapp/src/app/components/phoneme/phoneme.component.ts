@@ -19,7 +19,7 @@ export class PhonemeComponent implements OnInit {
   }
 
   setVisible( value) {
-    if ( value === 'vocales'){
+    if ( value === 'vocales') {
       this.visibleVocal = true;
       this.visibleConsonant = false;
       this.visibleGame = false;

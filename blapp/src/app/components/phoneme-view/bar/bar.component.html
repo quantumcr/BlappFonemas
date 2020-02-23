@@ -1,0 +1,25 @@
+<div class="principal">
+  <ion-grid>
+    <ion-row>
+      <ion-label class="titulo">FONEMA</ion-label>
+    </ion-row>
+    <ion-row>
+      <ion-label class="fonema">/ {{fonema}} /</ion-label>
+    </ion-row>
+    <ion-row class="videoFonema">
+      <div>
+        <div >
+          <ion-img src="assets/img/fonemas/game-panel/mama.png" class="imagen"></ion-img>
+        </div>
+        <div style="position: absolute; left: 37px; top: 421px;">
+          <ion-segment-button value="video" class="btnPlay" (click)="openPanel($event)">
+            <ion-icon src="assets/icon/play.svg"></ion-icon>
+          </ion-segment-button>
+        </div>
+      </div>
+    </ion-row>
+    <ion-row>
+      <ion-label class="mensaje">{{mensaje}}</ion-label>
+    </ion-row>
+  </ion-grid>
+</div>

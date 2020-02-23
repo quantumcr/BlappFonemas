@@ -8,6 +8,7 @@ import { NavController } from '@ionic/angular';
 })
 export class StudentsMenuComponent implements OnInit {
   @Input() titulo: string;
+  @Input() usuario: string;
   @Input() opcion1: string;
   @Input() opcion2: string;
 

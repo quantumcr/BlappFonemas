@@ -1,0 +1,21 @@
+<div class="principal">
+  <ion-grid>
+    <ion-row class="audioFonema">   
+      <div>
+        <div>
+          <ion-img src="assets/img/fonemas/game-panel/mama.png" class="imagen"></ion-img>
+        </div>
+
+        <div style="position: absolute; left: 227px; top: 346px;">
+          <ion-segment-button value="audio" class="btnPlay" (click)="playAudio($event)">
+            <ion-icon src="assets/icon/play.svg"></ion-icon>
+          </ion-segment-button>
+        </div>
+      </div>    
+    </ion-row>
+    <ion-row>
+      <ion-label class="palabra">Palabra</ion-label>
+    </ion-row>
+  </ion-grid>
+</div>
+

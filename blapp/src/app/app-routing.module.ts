@@ -26,7 +26,13 @@ const routes: Routes = [
   {
     path: 'estudiantes',
     loadChildren: () => import('./pages/estudiantes/estudiantes.module').then( m => m.EstudiantesPageModule)
+  },  {
+    path: 'fonema',
+    loadChildren: () => import('./pages/fonema/fonema.module').then( m => m.FonemaPageModule)
   },
+
+
+
 ];
 
 @NgModule({
