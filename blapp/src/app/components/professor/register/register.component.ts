@@ -7,6 +7,7 @@ import { TokenResponse } from '../../../services/authentication.service';
 
 import { Student } from '../../../models/student';
 import { User } from '../../../models/user';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -28,7 +29,8 @@ export class RegisterComponent implements OnInit {
 
   constructor(
     private studentService: StudentService,
-    private userService: UserService
+    private userService: UserService,
+    private router: Router
   ) { }
 
   ngOnInit() {}
@@ -70,8 +72,9 @@ export class RegisterComponent implements OnInit {
       this.newUser.tipo = "Estudiante";
       this.newUser.idUsuario = student._id;
       this.userService.createUser(this.newUser)
-      .then((userToken: TokenResponse) => {
+      .then((userToken: TokenResponse) => {        
         console.log(userToken);
+        this.router.navigate(['estudiantes'], { queryParams: { _id: student._id } });
       })
       .catch(err => {
         console.log("Error creando usuario", err);
