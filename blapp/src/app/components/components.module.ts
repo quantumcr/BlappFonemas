@@ -43,7 +43,9 @@ import { SubcategoriesPanelComponent } from './semantics/subcategories/subcatego
     SubcategoriesComponent, SubcategoriesBarComponent, SubcategoriesPanelComponent,
     ProfessorComponent, ListComponent, RegisterComponent, StudentInfoComponent,
     FunctionBarComponent, InfoPanelComponent, StudentsBarComponent, PersonalInfoComponent, FamilyInfoComponent,
-    FoodInfoComponent],
+    FoodInfoComponent, SubcategoriesComponent,
+    SubcategoriesBarComponent, SubcategoriesPanelComponent],
+
   exports: [LoginComponent,
     MenuPanelComponent, ProfessorMenuComponent, StudentsMenuComponent,
     PhonemeComponent, PhonemeBarComponent, VocalPanelComponent, ConsonantPanelComponent, PhonemeGamePanelComponent,
@@ -52,7 +54,7 @@ import { SubcategoriesPanelComponent } from './semantics/subcategories/subcatego
     SubcategoriesComponent, SubcategoriesBarComponent, SubcategoriesPanelComponent,
     ProfessorComponent, ListComponent, RegisterComponent, StudentInfoComponent,
     FunctionBarComponent, InfoPanelComponent, StudentsBarComponent, PersonalInfoComponent, FamilyInfoComponent,
-    FoodInfoComponent],
+    FoodInfoComponent, SubcategoriesBarComponent, SubcategoriesPanelComponent],
   imports: [
     CommonModule,
     IonicModule

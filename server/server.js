@@ -23,7 +23,7 @@ app.use('/api/users', require('./routes/users.routes'));
 app.use('/api/students', require('./routes/students.routes'));
 
 // Static files
-app.use(express.static(path.join(__dirname, 'blapp/www')));
+app.use(express.static(path.join(__dirname, '../blapp/www')));
 
 // error handlers
 // Catch unauthorised errors

@@ -4,6 +4,8 @@ import { Router } from '@angular/router';
 
 export interface UserDetails {
   _id: string;
+  idUsuario: String;
+  tipo: String;
   nombre: string;
   exp: number;
   iat: number;
