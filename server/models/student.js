@@ -12,13 +12,12 @@ studentSchema = new Schema({
         telefono: { type: String, required: true },
         direccion: { type: String, required: true }
     },
-    /*familia: [
+    familia: [
         {
-            familiar: { type: String, required: true },
-            nombre: { type: String, required: true }
+            nombre: { type: String, required: true },
+            relacion: { type: String, required: true }
         }
-    ],*/
-    familia: { type: [String], required: true },
+    ],    
     alimentacion: [
         { 
             alimento: { type: String, required: true },

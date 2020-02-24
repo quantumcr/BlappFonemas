@@ -7,6 +7,13 @@ class EncargadoLegal {
     ) {}    
 }
 
+export class MiembrosFamilia {
+    constructor(
+        public nombre: String = "none",
+        public relacion: String = "none"
+    ) {}
+}
+
 export class Alimentos {
     constructor(
         public alimento: String = "none",
@@ -22,7 +29,7 @@ export class Student {
         public sexo: String = "none",
         public edad: Number = 0,
         public encargadoLegal: EncargadoLegal = new EncargadoLegal,
-        public familia: String[] = [],
+        public familia: MiembrosFamilia[] = [],
         public alimentacion: Alimentos[] = []
     ) {}
 }
