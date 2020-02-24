@@ -21,6 +21,9 @@ import { StudentInfoComponent } from './professor/student-info/student-info.comp
 import { StudentsBarComponent } from './professor/students-bar/students-bar.component';
 import { FunctionBarComponent } from './professor/student-info/function-bar/function-bar.component';
 import { InfoPanelComponent } from './professor/student-info/info-panel/info-panel.component';
+import { SubcategoriesComponent } from './semantics/subcategories/subcategories.component';
+import { SubcategoriesBarComponent } from './semantics/subcategories/subcategories-bar/subcategories-bar.component';
+import { SubcategoriesPanelComponent } from './semantics/subcategories/subcategories-panel/subcategories-panel.component';
 import { PersonalInfoComponent } from './professor/student-info/info-panel/personal-info/personal-info.component';
 import { FamilyInfoComponent } from './professor/student-info/info-panel/family-info/family-info.component';
 import { FoodInfoComponent } from './professor/student-info/info-panel/food-info/food-info.component';
@@ -28,10 +31,6 @@ import { PhonemeViewComponent } from './phoneme-view/phoneme-view.component';
 import { BarComponent } from './phoneme-view/bar/bar.component';
 import { PhonemePanelComponent } from './phoneme-view/phoneme-panel/phoneme-panel.component';
 import { VideoPanelComponent } from './phoneme-view/video-panel/video-panel.component';
-import { SubcategoriesComponent } from './semantics/subcategories/subcategories.component';
-import { SubcategoriesBarComponent } from './semantics/subcategories/subcategories-bar/subcategories-bar.component';
-import { SubcategoriesPanelComponent } from './semantics/subcategories/subcategories-panel/subcategories-panel.component';
-
 
 
 @NgModule({
@@ -53,8 +52,9 @@ import { SubcategoriesPanelComponent } from './semantics/subcategories/subcatego
     SemanticsComponent, SemanticsBarComponent, CategoriesPanelComponent, SemanticsGamePanelComponent,
     SubcategoriesComponent, SubcategoriesBarComponent, SubcategoriesPanelComponent,
     ProfessorComponent, ListComponent, RegisterComponent, StudentInfoComponent,
-    FunctionBarComponent, InfoPanelComponent, StudentsBarComponent, PersonalInfoComponent, FamilyInfoComponent,
-    FoodInfoComponent, SubcategoriesBarComponent, SubcategoriesPanelComponent],
+    FunctionBarComponent, InfoPanelComponent, StudentsBarComponent, SubcategoriesComponent,
+    SubcategoriesBarComponent, SubcategoriesPanelComponent, PersonalInfoComponent, FamilyInfoComponent,
+    FoodInfoComponent],
   imports: [
     CommonModule,
     IonicModule

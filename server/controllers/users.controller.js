@@ -2,6 +2,7 @@ const passport = require('passport');
 
 const Professor = require('../models/professor');
 const Student = require('../models/student');
+const User = require('../models/user');
 
 userCtrl = {};
 
@@ -45,6 +46,13 @@ userCtrl.loginUser = (req, res, next) => {
             });
         }
     })(req, res, next);
+}
+
+userCtrl.getUserWithIdStudent = async (req, res, next) => {
+    await User.findOne({ idUsuario: req.params.idUsuario }, (err, user) => {
+        if(err) { return res.status(501).json(err); }
+        return res.status(200).json(user);
+    });
 }
 
 module.exports = userCtrl;

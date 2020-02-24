@@ -10,6 +10,8 @@ export class FunctionBarComponent implements OnInit {
   @Input() comando1: string;
   @Input() comando2: string;
   @Output() functionBarEvent = new EventEmitter();
+  @Output() deleteStudentEvent = new EventEmitter();
+
   constructor() { }
 
   ngOnInit() {}
@@ -19,5 +21,10 @@ export class FunctionBarComponent implements OnInit {
     this.functionBarEvent.emit(event.target.value);
   }
 
+  deleteStudent() {
+    if(true) { 
+      this.deleteStudentEvent.emit();
+    } // Confirmación de eliminación de estudiante
+  }
 
 }

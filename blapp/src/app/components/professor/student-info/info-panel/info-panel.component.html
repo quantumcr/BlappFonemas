@@ -7,7 +7,7 @@
             <ion-label class="titulo">Información Personal</ion-label>
           </ion-row>
           <ion-row>
-            <app-personal-info></app-personal-info>
+            <app-personal-info [student]="student" [user]="user"></app-personal-info>
           </ion-row>
         </ion-grid>
       </ion-row>
@@ -18,7 +18,7 @@
         </ion-col>
         <ion-col class="infoAlimentos">
           <ion-label class="titulo">Alimentos</ion-label>
-          <app-food-info></app-food-info>
+          <app-food-info [alimetacion]="student.alimentacion"></app-food-info>          
         </ion-col>
       </ion-row>
     </ion-grid>

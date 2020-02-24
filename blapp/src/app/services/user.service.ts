@@ -10,7 +10,7 @@ import { User } from '../models/user';
 })
 export class UserService {
 
-  readonly URL_API = 'http://localhost:3000/api/users';
+  readonly URL_API = 'https://blapp.herokuapp.com/api/users';
 
   constructor(
     private http: HttpClient
@@ -26,5 +26,9 @@ export class UserService {
 
   loginUser(user: User) {
     return this.http.post<TokenResponse>(this.URL_API + '/signin', user).toPromise();
+  }
+
+  getUserByIdStudent(_idStudent: String) {
+    return this.http.get<User>(this.URL_API + `/withIdStudent/${_idStudent}`, { headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }}).toPromise();
   }
 }

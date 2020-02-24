@@ -1,25 +1,31 @@
 const Student = require('../models/student');
 const User = require('../models/user');
+const Food = require('../models/food');
 
 studentCtrl = {}
 
 studentCtrl.createStudent = async (req, res) => {
-    newStudent = new Student(req.body);
-    await newStudent.save((err, student) => {
+    await Food.find({ habilitado: true }, { _id: 0, alimento: 1, seleccionado: 1 }, async (err, foods) => {
         if(err) { return res.status(501).json(err); }
-        return res.status(200).json(student);
-    });
+        req.body.alimentacion = foods;
+        newStudent = new Student(req.body);
+        await newStudent.save((err, student) => {
+            if(err) { return res.status(501).json(err); }
+            return res.status(200).json(student);
+        });
+    });    
 };
 
 studentCtrl.getStudent = async (req, res) => {
     await Student.findById(req.params.id, { habilitado:0 }, (err, student) => {
         if(err) { return res.status(501).json(err); }
+        console.log(student);
         return res.status(200).json(student);
     });
 }
 
 studentCtrl.getNameStudents = async (req, res) => {
-    await Student.find({}, { nombre:1 }, (err, nameStudents) => {
+    await Student.find({ habilitado: true }, { nombre:1 }, (err, nameStudents) => {
         if(err) { return res.status(501).json(err); }
         return res.status(200).json(nameStudents);
     });

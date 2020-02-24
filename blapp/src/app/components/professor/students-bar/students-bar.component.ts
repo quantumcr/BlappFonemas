@@ -10,9 +10,11 @@ export class StudentsBarComponent implements OnInit {
   @Input() comando1: string;
   @Input() comando2: string;
   @Output() studentsBarEvent = new EventEmitter();
-  constructor() { }
+  
+  constructor() {}
 
   ngOnInit() {}
+  
   openPanel(event: any) {
     console.log(event.target.value);
     this.studentsBarEvent.emit(event.target.value);

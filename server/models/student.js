@@ -12,8 +12,18 @@ studentSchema = new Schema({
         telefono: { type: String, required: true },
         direccion: { type: String, required: true }
     },
+    /*familia: [
+        {
+            familiar: { type: String, required: true },
+            nombre: { type: String, required: true }
+        }
+    ],*/
     familia: { type: [String], required: true },
-    alimentacion: { type: [String], required: true },
+    alimentacion: [
+        { 
+            alimento: { type: String, required: true },
+            seleccionado: { type: Boolean, required: true }
+        }],
     habilitado: { type: Boolean, required: true, default: true }
 },{
     timestamps: true

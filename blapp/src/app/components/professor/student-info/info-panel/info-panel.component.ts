@@ -1,4 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { StudentService } from '../../../../services/student.service';
+import { Student } from '../../../../models/student';
+import { User } from '../../../../models/user';
+import { UserService } from '../../../../services/user.service';
 
 @Component({
   selector: 'app-info-panel',
@@ -6,9 +10,31 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./info-panel.component.scss'],
 })
 export class InfoPanelComponent implements OnInit {
+  @Input() _idStudent: string;
 
-  constructor() { }
+  public student = new Student;
+  public user = new User;
 
-  ngOnInit() {}
+  constructor(
+    private studentService: StudentService,
+    private userService: UserService
+  ) { }
 
+  ngOnInit() {
+    this.studentService.getStudent(this._idStudent).
+    then((student: Student) => {
+      this.student = student;
+      console.log(student);
+      this.userService.getUserByIdStudent(student._id)
+      .then((user: User) => {
+        this.user = user;        
+      })
+      .catch(err => {
+        console.log(err);
+      });
+    })
+    .catch(err => {
+      console.log(err);
+    });    
+  }
 }

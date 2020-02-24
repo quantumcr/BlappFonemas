@@ -1,12 +1,8 @@
-<div>
-  <ion-grid>
-    <ion-row>
-      <ion-radio-group>
-        <ion-item lines="none">
-          <ion-label class="label">Manzana</ion-label>
-          <ion-radio slot="start" color="success"></ion-radio>
-        </ion-item>
-      </ion-radio-group>
-    </ion-row>
-  </ion-grid>
+<div class="principal">
+  <ion-col>
+    <ion-item lines="none" *ngFor="let alimento of alimetacion">
+      <ion-label class="label" color="black">{{alimento.alimento}}</ion-label>
+      <ion-radio slot="start" color="success" ></ion-radio>
+    </ion-item>
+  </ion-col>
 </div>

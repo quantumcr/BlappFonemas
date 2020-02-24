@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Alimentos } from '../../../../../models/student';
 
 @Component({
   selector: 'app-food-info',
@@ -6,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./food-info.component.scss'],
 })
 export class FoodInfoComponent implements OnInit {
+  @Input() alimetacion: Alimentos[];
 
   constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    console.log(this.alimetacion);
+  }
+
+  changeSelected(alimento: Alimentos) {    
+    alimento.seleccionado = ((alimento.seleccionado == true) ? false : true);
+    console.log(this.alimetacion);
+  }
 
 }
