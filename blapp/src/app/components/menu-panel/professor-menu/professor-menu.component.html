@@ -3,7 +3,7 @@
   
       <ion-row>
         <ion-col>
-          <ion-button fill="clear" class="icon">
+          <ion-button fill="clear" class="icon" (click)="logout()">
             <ion-img src="assets/icon/logout.svg"></ion-img>
           </ion-button>
         </ion-col>
@@ -31,7 +31,7 @@
           </div> 
 
           <div>
-            <ion-segment-button value="estudiantes" class="opcionEstudiantes">
+            <ion-segment-button value="docentes" class="opcionEstudiantes">
             </ion-segment-button>
             <ion-label class="textoOpcion">{{opcion3}}</ion-label>
           </div>           
