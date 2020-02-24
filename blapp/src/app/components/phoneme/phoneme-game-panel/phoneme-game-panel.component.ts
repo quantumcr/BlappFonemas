@@ -1,24 +1,20 @@
 import { Component, OnInit } from '@angular/core';
-import { Audio } from '../../../interfaces/audio';
-import { VideoPlayer } from '@ionic-native/video-player';
 @Component({
   selector: 'app-phoneme-game-panel',
   templateUrl: './phoneme-game-panel.component.html',
   styleUrls: ['./phoneme-game-panel.component.scss'],
 })
 export class PhonemeGamePanelComponent implements OnInit {
-
+  audio = new Audio();
   constructor() { }
 
   ngOnInit() {}
 
   playAudio(event: any) {
-    VideoPlayer.play('assets/video/snoopDog.mp4');
+    this.audio.src = 'assets/audio/Mama.mp3';
+    this.audio.load();
+    this.audio.play();
     console.log(event.target.value);
   }
 
-  play(audio: Audio) {
-
-
-}
 }

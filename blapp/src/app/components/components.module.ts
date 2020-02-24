@@ -27,23 +27,30 @@ import { SubcategoriesPanelComponent } from './semantics/subcategories/subcatego
 import { PersonalInfoComponent } from './professor/student-info/info-panel/personal-info/personal-info.component';
 import { FamilyInfoComponent } from './professor/student-info/info-panel/family-info/family-info.component';
 import { FoodInfoComponent } from './professor/student-info/info-panel/food-info/food-info.component';
-
-
+import { PhonemeViewComponent } from './phoneme-view/phoneme-view.component';
+import { BarComponent } from './phoneme-view/bar/bar.component';
+import { PhonemePanelComponent } from './phoneme-view/phoneme-panel/phoneme-panel.component';
+import { VideoPanelComponent } from './phoneme-view/video-panel/video-panel.component';
 
 
 @NgModule({
   declarations: [LoginComponent,
     MenuPanelComponent, ProfessorMenuComponent, StudentsMenuComponent,
     PhonemeComponent, PhonemeBarComponent, VocalPanelComponent, ConsonantPanelComponent, PhonemeGamePanelComponent,
+    PhonemeViewComponent, BarComponent, PhonemePanelComponent, VideoPanelComponent,
     SemanticsComponent, SemanticsBarComponent, CategoriesPanelComponent, SemanticsGamePanelComponent,
+    SubcategoriesComponent, SubcategoriesBarComponent, SubcategoriesPanelComponent,
     ProfessorComponent, ListComponent, RegisterComponent, StudentInfoComponent,
-    FunctionBarComponent, InfoPanelComponent, StudentsBarComponent, SubcategoriesComponent,
-    SubcategoriesBarComponent, SubcategoriesPanelComponent, PersonalInfoComponent, FamilyInfoComponent,
-    FoodInfoComponent],
+    FunctionBarComponent, InfoPanelComponent, StudentsBarComponent, PersonalInfoComponent, FamilyInfoComponent,
+    FoodInfoComponent, SubcategoriesComponent,
+    SubcategoriesBarComponent, SubcategoriesPanelComponent],
+
   exports: [LoginComponent,
     MenuPanelComponent, ProfessorMenuComponent, StudentsMenuComponent,
     PhonemeComponent, PhonemeBarComponent, VocalPanelComponent, ConsonantPanelComponent, PhonemeGamePanelComponent,
+    PhonemeViewComponent, BarComponent, PhonemePanelComponent, VideoPanelComponent,
     SemanticsComponent, SemanticsBarComponent, CategoriesPanelComponent, SemanticsGamePanelComponent,
+    SubcategoriesComponent, SubcategoriesBarComponent, SubcategoriesPanelComponent,
     ProfessorComponent, ListComponent, RegisterComponent, StudentInfoComponent,
     FunctionBarComponent, InfoPanelComponent, StudentsBarComponent, SubcategoriesComponent,
     SubcategoriesBarComponent, SubcategoriesPanelComponent, PersonalInfoComponent, FamilyInfoComponent,

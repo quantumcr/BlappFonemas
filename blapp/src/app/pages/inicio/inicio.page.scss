@@ -1,37 +1,141 @@
 
-.principal{
-    width: 100%;
-    height: 100%;
-    background: url('../../../assets/svg/fondo.svg');
-}    
+@media screen and (min-width:720px){
+    .principal{
+        width: 100%;
+        height: 100%;
+        background: url('../../../assets/svg/fondo.svg');
+    }   
 
-.logo{
-    position: absolute;
-    width: 181px;
-    height: 147px;
-    left: 549px;
-    right: 550px;
-    top: 76px;      
-}
-.loginComponent{
-    top: 20px;
-    left: 360px;
-    right: 366px;
-}
-.titulo{
-    position: absolute;
-    width: 229px;
-    height: 45px;
-    margin-left: 526px;
-    margin-right: 525px;
-    top: 253px;    
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 45px;
+    .logo{
+        position: absolute;
+        max-width: 181px;
+        max-height: 147px;
+        min-width: 181px;
+        min-height: 147px;
+        left: 269px;
+        right: 270px;
+        top: 76px;   
+    }
+
+    .loginComponent{
+        top: 20px;
+        left: 83px;
+        right: 83px;
+    } 
     
-    /* identical to box height */
-    
-    color: #5F659C;    
+    .titulo{
+        position: absolute;
+        max-width: 229px;
+        max-height: 45px;
+        min-width: 229px;
+        min-height: 45px;
+        margin-left: 246px;
+        margin-right: 245px;
+        top: 253px;    
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 45px;
+        
+        /* identical to box height */
+        
+        color: #5F659C;    
+    }    
 }
+
+@media screen and (min-width:800px){
+
+    .principal{
+        width: 100%;
+        height: 100%;
+        background: url('../../../assets/svg/fondo.svg');
+    } 
+
+    .logo{
+        position: absolute;
+        max-width: 181px;
+        max-height: 147px;
+        min-width: 181px;
+        min-height: 147px;
+        left: 310px;
+        right: 310px;
+        top: 76px;   
+    } 
+
+    .loginComponent{
+        top: 20px;
+        left: 123px;
+        right: 123px;
+    } 
+    
+    .titulo{
+        position: absolute;
+        max-width: 229px;
+        max-height: 45px;
+        min-width: 229px;
+        min-height: 45px;
+        margin-left: 285px;
+        margin-right: 286px;
+        top: 253px;    
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 45px;
+        
+        /* identical to box height */
+        
+        color: #5F659C;    
+    }    
+
+}
+
+@media screen and (min-width:1280px){
+    .principal{
+        width: 100%;
+        height: 100%;
+        background: url('../../../assets/svg/fondo.svg');
+    }      
+
+    .logo{
+        position: absolute;
+        max-width: 181px;
+        max-height: 147px;
+        min-width: 181px;
+        min-height: 147px;
+        left: 549px;
+        right: 550px;
+        top: 76px;   
+    }    
+   
+
+    .loginComponent{
+        top: 20px;
+        left: 360px;
+        right: 366px;
+    }
+    .titulo{
+        position: absolute;
+        max-width: 229px;
+        max-height: 45px;
+        min-width: 229px;
+        min-height: 45px;
+        margin-left: 526px;
+        margin-right: 525px;
+        top: 253px;    
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 45px;
+        
+        /* identical to box height */
+        
+        color: #5F659C;    
+    }
+}
+    
+    
+    
+ 

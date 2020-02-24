@@ -1,3 +1,13 @@
-<p>
-  phoneme-view works!
-</p>
+<div class="principal">
+  <ion-grid>
+    <ion-row>
+      <ion-col class="bar">
+        <app-bar fonema="fonema" mensaje="sonido del fonema" (barEvent)="selectPanel($event)" ></app-bar>
+      </ion-col>
+      <ion-col class="panel">
+        <app-phoneme-panel *ngIf="visiblePhoneme"></app-phoneme-panel>
+        <app-video-panel *ngIf="visibleVideo"></app-video-panel>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>

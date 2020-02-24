@@ -13,8 +13,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { AuthenticationService } from './services/authentication.service';
 import { UserService } from './services/user.service';
 
-import { VideoPlayerOriginal } from '@ionic-native/video-player';
-
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
