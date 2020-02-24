@@ -13,7 +13,7 @@ export interface NameStudents {
 })
 export class StudentService {
 
-  readonly URL_API = 'http://localhost:3000/api/students';  
+  readonly URL_API = 'https://blapp.herokuapp.com/api/students';  
   
   constructor(
     private http: HttpClient
