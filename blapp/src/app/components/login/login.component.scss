@@ -94,12 +94,12 @@
         //height: 30px;    
         top: 16px;
         margin-left: 234px;
-        margin-right: 234px;
+        margin-right: auto;
         //font-family: Poppins;
         font-style: normal;
         font-weight: 600;
         font-size: 20px;
-        line-height: 30px; 
+        //line-height: 30px; 
         /* identical to box height */ 
         color: #FFFFFF;    
     }  
@@ -108,7 +108,7 @@
         //width: 121px;
         //height: 30px;  
         margin-left: 225px;
-        margin-right: 214px; 
+        margin-right: auto; 
     
         //font-family: Poppins;
         font-style: normal;
@@ -174,27 +174,29 @@
         //width: 100px;
         //height: 30px;    
         top: 16px;
-        margin-left: 234px;
-        margin-right: 234px;
+        margin-left: 241px;
+        margin-right: auto;
         //font-family: Poppins;
         font-style: normal;
         font-weight: 600;
         font-size: 20px;
-        line-height: 30px; 
+        text-align: center;
+        //line-height: 30px; 
         /* identical to box height */ 
         color: #FFFFFF;    
     }
     .tituloClave{
         //width: 121px;
         //height: 30px;  
-        margin-left: 225px;
-        margin-right: 214px; 
+        margin-left: 219px;
+        margin-right: auto; 
     
         //font-family: Poppins;
         font-style: normal;
         font-weight: 600;
         font-size: 20px;
         line-height: 30px;
+        text-align: center;
         
         /* identical to box height */
         
