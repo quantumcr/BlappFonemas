@@ -12,7 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AuthenticationService } from './services/authentication.service';
 import { UserService } from './services/user.service';
-
+import {DragulaModule} from 'ng2-dragula';
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
