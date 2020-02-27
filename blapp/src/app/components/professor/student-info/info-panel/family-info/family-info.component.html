@@ -1,8 +1,14 @@
-<div>
-  <ion-grid>
-    <ion-row *ngFor="let family_member of familia">
-      <ion-label class="label">{{((family_member.relacion.toString() != "none") ? family_member.relacion : "")}}</ion-label>
-      <ion-input class="input" value="{{((family_member.nombre.toString() != 'none') ? family_member.nombre : '')}}"></ion-input>
-    </ion-row>
-  </ion-grid>
+<div class="principal">
+  <ion-list>
+    <ion-item lines="none" *ngFor="let family_member of familia">
+      <ion-col>
+        <ion-row>
+          <ion-label>{{"Nombre " + ((family_member.relacion.toString() != "none") ? family_member.relacion : "") + ":"}}</ion-label>
+        </ion-row>
+        <ion-row>
+          <ion-input class="input" value="{{((family_member.nombre.toString() != 'none') ? family_member.nombre : '')}}"></ion-input>
+        </ion-row>
+      </ion-col>      
+    </ion-item>
+  </ion-list>
 </div>

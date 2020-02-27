@@ -2,10 +2,10 @@
   <ion-grid>
     <ion-row>
       <ion-col class="bar">
-        <app-function-bar titulo="ESTUDIANTES" comando1="EDITAR INFORMACIÓN" comando2="ELIMINAR ESTUDIANTE" (deleteStudentEvent)="deleteStudent()"></app-function-bar>
+        <app-function-bar titulo="ESTUDIANTES" comando1="EDITAR INFORMACIÓN" comando2="ELIMINAR ESTUDIANTE" (deleteStudentEvent)="deleteStudent()" (updateStudentEvent)="updateStudent()"></app-function-bar>
       </ion-col>
       <ion-col class="panel">
-          <app-info-panel [_idStudent]="_idStudent"></app-info-panel>     
+        <app-info-panel [_idStudent]="_idStudent" [boolEdit]="boolEdit"></app-info-panel>     
       </ion-col>
     </ion-row>
   </ion-grid>

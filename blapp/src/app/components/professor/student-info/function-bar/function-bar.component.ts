@@ -11,6 +11,7 @@ export class FunctionBarComponent implements OnInit {
   @Input() comando2: string;
   @Output() functionBarEvent = new EventEmitter();
   @Output() deleteStudentEvent = new EventEmitter();
+  @Output() updateStudentEvent = new EventEmitter();
 
   constructor() { }
 
@@ -21,10 +22,16 @@ export class FunctionBarComponent implements OnInit {
     this.functionBarEvent.emit(event.target.value);
   }
 
+  updateStudent(){
+    if (true) {
+      this.updateStudentEvent.emit();
+    }
+  }
+
   deleteStudent() {
-    if(true) { 
+    if (true) { 
       this.deleteStudentEvent.emit();
-    } // Confirmación de eliminación de estudiante
+    }
   }
 
 }

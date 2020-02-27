@@ -1,51 +1,102 @@
 <div class="principal">
     <ion-grid class="grid">
-      <ion-row style="margin-top: 48px;">
-        <ion-col>
-          <ion-label class="label">{{nombre}}</ion-label>
-          <ion-input class="input" (ionInput)="setName($event)"></ion-input>
-        </ion-col>
-      </ion-row>
-      <ion-row >
-        <ion-col>
-          <ion-label class="label">{{edad}}</ion-label>
-          <ion-input class="input" (ionInput)="setAge($event)"></ion-input>
-        </ion-col>
-      </ion-row>   
-      <ion-row >
-        <ion-col>
-          <ion-label class="label">{{genero}}</ion-label>
-          <ion-input class="input" (ionInput)="setGender($event)"></ion-input>
-        </ion-col>
-      </ion-row>  
-      <ion-row >
-        <ion-col>
-          <ion-label class="label">{{residencia}}</ion-label>
-          <ion-input class="input" (ionInput)="setAddress($event)"></ion-input>
-        </ion-col>
-      </ion-row>  
-      <ion-row >
-        <ion-col>
-          <ion-label class="label">{{encargado}}</ion-label>
-          <ion-input class="input" (ionInput)="setLegalOfficer($event)"></ion-input>
-        </ion-col>
-      </ion-row> 
-      <ion-row >
-        <ion-col>
-          <ion-label class="label">{{email}}</ion-label>
-          <ion-input class="input" type="email" (ionInput)="setEmail($event)"></ion-input>
-        </ion-col>
-      </ion-row> 
-      <ion-row >
-        <ion-col>
-          <ion-label class="label">{{password}}</ion-label>
-          <ion-input class="input" type="password" (ionInput)="setPassword($event)"></ion-input>
-        </ion-col>
-      </ion-row> 
-      <ion-row>
-        <ion-col>
-          <ion-button color="formButton" shape="round" class="btnGuardar" (click)="register()">{{comando}}</ion-button>
-        </ion-col>
-      </ion-row>
+      <form [formGroup]="studentForm">
+        <ion-row style="margin-top: 48px;">
+          <ion-col>
+            <ion-label class="label">{{nombre}}</ion-label>
+            <ion-input class="input" type="text" formControlName="nombre"></ion-input>
+          </ion-col>
+        </ion-row>
+        <div class="validation-errors">
+          <ng-container *ngFor="let validation of validation_messages.nombre">
+            <div *ngIf="studentForm.get('nombre').hasError(validation.type) && (studentForm.get('nombre').dirty || studentForm.get('nombre').touched)" class="alert alert-danger">
+              {{ validation.message }}
+            </div>
+          </ng-container>
+        </div>
+        <ion-row >
+          <ion-col>
+            <ion-label class="label">{{edad}}</ion-label>
+            <ion-input class="input" type="number" formControlName="edad"></ion-input>
+          </ion-col>
+        </ion-row>
+        <div class="validation-errors">
+          <ng-container *ngFor="let validation of validation_messages.edad">
+            <div *ngIf="studentForm.get('edad').hasError(validation.type) && (studentForm.get('edad').dirty || studentForm.get('edad').touched)">
+              {{ validation.message }}
+            </div>
+          </ng-container>
+        </div>
+        <ion-row >
+          <ion-col>
+            <ion-label class="label">{{genero}}</ion-label>
+            <ion-input class="input" type="text" formControlName="sexo"></ion-input>
+          </ion-col>
+        </ion-row>
+        <div class="validation-errors">
+          <ng-container *ngFor="let validation of validation_messages.sexo">
+            <div *ngIf="studentForm.get('sexo').hasError(validation.type) && (studentForm.get('sexo').dirty || studentForm.get('sexo').touched)">
+              {{ validation.message }}
+            </div>
+          </ng-container>
+        </div>
+        <div formGroupName="encargadoLegal">
+          <ion-row >
+            <ion-col>
+              <ion-label class="label">{{residencia}}</ion-label>
+              <ion-input class="input" type="text" formControlName="direccion"></ion-input>
+            </ion-col>
+          </ion-row>
+          <div class="validation-errors">
+            <ng-container *ngFor="let validation of validation_messages.encargado_direccion">
+              <div *ngIf="studentForm.get('encargadoLegal.direccion').hasError(validation.type) && (studentForm.get('encargadoLegal.direccion').dirty || studentForm.get('encargadoLegal.direccion').touched)">
+                {{ validation.message }}
+              </div>
+            </ng-container>
+          </div>
+          <ion-row >
+            <ion-col>
+              <ion-label class="label">{{encargado}}</ion-label>
+              <ion-input class="input" type="text" formControlName="nombre"></ion-input>
+            </ion-col>
+          </ion-row>
+          <div class="validation-errors">
+            <ng-container *ngFor="let validation of validation_messages.encargado_nombre">
+              <div *ngIf="studentForm.get('encargadoLegal.nombre').hasError(validation.type) && (studentForm.get('encargadoLegal.nombre').dirty || studentForm.get('encargadoLegal.nombre').touched)">
+                {{ validation.message }}
+              </div>
+            </ng-container>
+          </div>
+        </div>
+      </form>
+      <form [formGroup]="userForm">
+        <ion-row >
+          <ion-col>
+            <ion-label class="label">{{email}}</ion-label>
+            <ion-input class="input" type="email" formControlName="email"></ion-input>
+          </ion-col>
+        </ion-row>
+        <div class="validation-errors">
+          <ng-container *ngFor="let validation of validation_messages.email">
+            <div *ngIf="userForm.get('email').hasError(validation.type) && (userForm.get('email').dirty || userForm.get('email').touched)">
+              {{ validation.message }}
+            </div>
+          </ng-container>
+        </div>
+        <ion-row >
+          <ion-col>
+            <ion-label class="label">{{password}}</ion-label>
+            <ion-input class="input" type="password" formControlName="password"></ion-input>
+          </ion-col>
+        </ion-row>
+        <div class="validation-errors">
+          <ng-container *ngFor="let validation of validation_messages.password">
+            <div *ngIf="userForm.get('password').hasError(validation.type) && (userForm.get('password').dirty || userForm.get('password').touched)">
+              {{ validation.message }}
+            </div>
+          </ng-container>
+        </div>
+        <ion-button class="btnGuardar" color="formButton" shape="round" [disabled]="(!userForm.valid  || !studentForm.valid)" (click)="register()">{{comando}}</ion-button>
+      </form>        
     </ion-grid>
 </div>

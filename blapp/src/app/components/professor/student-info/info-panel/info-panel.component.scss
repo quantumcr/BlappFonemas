@@ -45,3 +45,33 @@
     border-radius: 20px; 
 }
 
+.list {
+    height: 210px;
+    width: 330px;
+    overflow-y: scroll;   
+}
+.list::-webkit-scrollbar {
+    display: none;
+}
+.input{
+    background: #ECEEFD;
+    height: 29px;
+}
+.label{
+    width: 90px; 
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+
+    color: #5F659C;
+}
+.inputInfoPersonal{
+    width: 225px;
+    height: 29px;
+    background: #ECEEFD;    
+}
+.item{
+    width: 317px;
+}

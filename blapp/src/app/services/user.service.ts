@@ -28,6 +28,10 @@ export class UserService {
     return this.http.post<TokenResponse>(this.URL_API + '/signin', user).toPromise();
   }
 
+  putUser(user: User) {
+    return this.http.put(this.URL_API, user, { headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }}).toPromise();
+  }
+
   getUserByIdStudent(_idStudent: String) {
     return this.http.get<User>(this.URL_API + `/withIdStudent/${_idStudent}`, { headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }}).toPromise();
   }

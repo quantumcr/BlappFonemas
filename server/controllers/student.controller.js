@@ -6,12 +6,12 @@ const Family_Member = require('../models/family_member');
 studentCtrl = {}
 
 studentCtrl.createStudent = async (req, res) => {
+    console.log(req.body);
     await Food.find({ habilitado: true }, { _id: 0, alimento: 1, seleccionado: 1 }, async (err, foods) => {
         if(err) { return res.status(501).json(err); }
         req.body.alimentacion = foods;
         await Family_Member.find({ habilitado: true }, { _id: 0, nombre: 1, relacion: 1 }, async (err, family) => {
             if(err) { return res.status(501).json(err); }
-            console.log(family);
             req.body.familia = family;
             newStudent = new Student(req.body);
             await newStudent.save((err, student) => {

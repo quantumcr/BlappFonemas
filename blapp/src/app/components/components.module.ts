@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LoginComponent } from './login/login.component';
 import { IonicModule } from '@ionic/angular';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MenuPanelComponent } from './menu-panel/menu-panel.component';
 import { ProfessorMenuComponent } from './menu-panel/professor-menu/professor-menu.component';
 import { StudentsMenuComponent } from './menu-panel/students-menu/students-menu.component';
@@ -57,7 +58,9 @@ import { VideoPanelComponent } from './phoneme-view/video-panel/video-panel.comp
     FoodInfoComponent],
   imports: [
     CommonModule,
-    IonicModule
+    IonicModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class ComponentsModule { }

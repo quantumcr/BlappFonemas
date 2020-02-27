@@ -8,7 +8,9 @@ import { Router } from '@angular/router';
   styleUrls: ['./student-info.component.scss'],
 })
 export class StudentInfoComponent implements OnInit {
-  @Input() _idStudent: string;  
+  @Input() _idStudent: string;
+
+  boolEdit: Boolean = false;
 
   constructor(
     private studentService: StudentService,
@@ -29,5 +31,9 @@ export class StudentInfoComponent implements OnInit {
     .catch(err => {
       console.log(err);
     });
+  }
+
+  updateStudent(){
+    this.boolEdit = true;
   }
 }

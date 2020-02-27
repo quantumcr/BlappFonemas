@@ -8,6 +8,7 @@ import { TokenResponse } from '../../../services/authentication.service';
 import { Student } from '../../../models/student';
 import { User } from '../../../models/user';
 import { Router } from '@angular/router';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-register',
@@ -24,6 +25,79 @@ export class RegisterComponent implements OnInit {
   @Input() password: string;
   @Input() comando: string;
 
+  public studentForm = new FormGroup({
+    nombre: new FormControl('', Validators.compose([
+      Validators.required,
+      Validators.minLength(3),
+      Validators.pattern('[a-zA-Z ]*')
+    ])),
+    edad: new FormControl('', Validators.compose([
+      Validators.required,
+      Validators.min(0),
+      Validators.max(120)
+    ])),
+    sexo: new FormControl('', Validators.compose([
+      Validators.required,
+      Validators.pattern('[a-zA-Z ]*')
+    ])),
+    encargadoLegal: new FormGroup({      
+      direccion: new FormControl('', Validators.compose([
+        Validators.required,
+        Validators.minLength(3),
+      ])),
+      nombre: new FormControl('', Validators.compose([
+        Validators.required,
+        Validators.minLength(3),
+        Validators.pattern('[a-zA-Z ]*')
+      ]))
+    })
+  });
+
+  public validation_messages = {
+    'nombre': [
+      { type: 'required', message: 'Nombre es requerido' },
+      { type: 'minlength', message: 'Nombre debe ser de al menos 3 caracteres' },
+      { type: 'pattern', message: 'Su nombre debe contener solo letras' }
+    ],
+    'edad': [
+      { type: 'required', message: 'Edad es requerida' },
+      { type: 'min', message: 'Edad debe ser mayor de 0' },
+      { type: 'max', message: 'Edad debe ser menor de 120' }
+    ],
+    'sexo': [
+      { type: 'required', message: 'Sexo es requerido' },
+      { type: 'pattern', message: 'Su sexo debe contener solo letras' }
+    ],
+    'encargado_direccion': [
+      { type: 'required', message: 'Dirección es requerido' },
+      { type: 'minlength', message: 'Dirección debe ser de al menos 3 caracteres' },
+    ],
+    'encargado_nombre': [
+      { type: 'required', message: 'Nombre del encargado es requerido' },
+      { type: 'minlength', message: 'Nombre del encargado debe ser de al menos 3 caracteres' },
+      { type: 'pattern', message: 'El nombre del encargado debe contener solo letras' }
+    ],
+    'email': [
+      { type: 'required', message: 'Email es requerido' },
+      { type: 'pattern', message: 'El email debe contener el formato de un email' }
+    ],
+    'password': [
+      { type: 'required', message: 'Contraseña es requerida' },
+      { type: 'minlength', message: 'Contraseña debe ser de al menos 5 caracteres' },
+    ]
+  }
+
+  public userForm = new FormGroup({
+    email: new FormControl('', Validators.compose([
+      Validators.required,
+      Validators.pattern('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$')
+    ])),
+    password: new FormControl('', Validators.compose([
+      Validators.minLength(5),
+      Validators.required
+    ]))
+  })
+
   newStudent = new Student;
   newUser = new User;
 
@@ -33,37 +107,13 @@ export class RegisterComponent implements OnInit {
     private router: Router
   ) { }
 
-  ngOnInit() {}
-
-  setName(event: any) {
-    this.newStudent.nombre = event.target.value;
-  }
-
-  setAge(event: any) {
-    this.newStudent.edad = event.target.value;
-  }
-
-  setGender(event: any) {
-    this.newStudent.sexo = event.target.value;
-  }
-
-  setAddress(event: any) {
-    this.newStudent.encargadoLegal.direccion = event.target.value;
-  }
-
-  setLegalOfficer(event: any) {
-    this.newStudent.encargadoLegal.nombre = event.target.value;
-  }
-
-  setEmail(event: any) {
-    this.newUser.email = event.target.value;
-  }
-
-  setPassword(event: any) {
-    this.newUser.password = event.target.value;
+  ngOnInit() {
+    
   }
 
   register() {
+    this.newStudent = this.studentForm.value;
+    this.newUser = this.userForm.value;
     delete this.newStudent._id;
     this.studentService.createStudent(this.newStudent)
     .then((student: Student) => {
@@ -82,6 +132,6 @@ export class RegisterComponent implements OnInit {
     })
     .catch(err => {
       console.log("Error creando estudiante", err);
-    });    
+    });
   }
 }

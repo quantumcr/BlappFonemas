@@ -1,9 +1,19 @@
+.principal {
+    height: 210px;
+    width: 330px;
+    overflow-y: scroll;   
+}
+.principal::-webkit-scrollbar {
+    display: none;
+}
 .input{
     background: #ECEEFD;
-    width: 225px;
+    width: 65%;
     height: 29px;
 }
 .label{
+
+    width: 35%;
 
     font-family: Poppins;
     font-style: normal;
