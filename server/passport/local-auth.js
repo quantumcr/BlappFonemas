@@ -61,8 +61,8 @@ passport.use('local-signin', new LocalStrategy({
  */
 passport.use('jwt', new JwtStrategy({
     jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
-    secretOrKey: "123",
-    algorithms: ["HS256"]
+    secretOrKey: process.env.SECRET_KEY,
+    algorithms: process.env.ALGORITHMS
 }, (jwt_payload, done) => {    
     User.findOne({ _id: jwt_payload._id }, (err, user) => {
         if(err) { return done(err, false); }

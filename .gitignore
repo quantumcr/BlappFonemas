@@ -65,3 +65,4 @@ Thumbs.db
 UserInterfaceState.xcuserstate
 
 # End of https://www.gitignore.io/api/ionic3,angular
+.env
