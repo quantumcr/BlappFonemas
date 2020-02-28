@@ -29,7 +29,7 @@ export class RegisterComponent implements OnInit {
     nombre: new FormControl('', Validators.compose([
       Validators.required,
       Validators.minLength(3),
-      Validators.pattern('[a-zA-Z ]*')
+      Validators.pattern('[a-zA-Z áéíóú]*')
     ])),
     edad: new FormControl('', Validators.compose([
       Validators.required,
