@@ -38,7 +38,7 @@ export class RegisterComponent implements OnInit {
     ])),
     sexo: new FormControl('', Validators.compose([
       Validators.required,
-      Validators.pattern('[a-zA-Z ]*')
+      Validators.pattern('[a-zA-Z áéíóú]*')
     ])),
     encargadoLegal: new FormGroup({      
       direccion: new FormControl('', Validators.compose([
@@ -48,7 +48,7 @@ export class RegisterComponent implements OnInit {
       nombre: new FormControl('', Validators.compose([
         Validators.required,
         Validators.minLength(3),
-        Validators.pattern('[a-zA-Z ]*')
+        Validators.pattern('[a-zA-Z áéíóú]*')
       ]))
     })
   });
