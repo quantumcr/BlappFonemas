@@ -12,9 +12,12 @@
           <ion-img src="assets/img/fonemas/game-panel/mama.png" class="imagen"></ion-img>
         </div>
         <div style="position: absolute; left: 37px; top: 421px;">
-          <ion-segment-button value="video" class="btnPlay" (click)="openPanel($event)">
-            <ion-icon src="assets/icon/play.svg"></ion-icon>
+          <ion-segment-button *ngIf="visibleVideo"  value="video" class="btnPlay" (click)="openPanel($event)">
+            <ion-icon  src="assets/icon/play.svg"></ion-icon>
           </ion-segment-button>
+          <ion-segment-button *ngIf="visibleAudio"  value="phoneme" class="btnPlay" (click)="openPanel($event)">
+            <ion-icon src="assets/icon/audio.svg"></ion-icon>
+          </ion-segment-button>          
         </div>
       </div>
     </ion-row>
