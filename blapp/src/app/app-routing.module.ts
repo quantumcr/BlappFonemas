@@ -30,6 +30,10 @@ const routes: Routes = [
     path: 'fonema',
     loadChildren: () => import('./pages/fonema/fonema.module').then( m => m.FonemaPageModule)
   },
+  {
+    path: 'categoria',
+    loadChildren: () => import('./pages/categoria/categoria.module').then( m => m.CategoriaPageModule)
+  },
 
 
 

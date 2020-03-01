@@ -31,30 +31,37 @@ import { PhonemeViewComponent } from './phoneme-view/phoneme-view.component';
 import { BarComponent } from './phoneme-view/bar/bar.component';
 import { PhonemePanelComponent } from './phoneme-view/phoneme-panel/phoneme-panel.component';
 import { VideoPanelComponent } from './phoneme-view/video-panel/video-panel.component';
+import { CategoriesViewComponent } from './categories-view/categories-view.component';
+import { CategoriesBarComponent } from './categories-view/categories-bar/categories-bar.component';
+import { CategoriesViewPanelComponent } from './categories-view/categories-view-panel/categories-view-panel.component';
+import { NavigationComponent } from './navigation/navigation.component';
+import { PhonemeConsonantPanelComponent } from './phoneme-view/phoneme-consonant-panel/phoneme-consonant-panel.component';
 
 
 @NgModule({
   declarations: [LoginComponent,
     MenuPanelComponent, ProfessorMenuComponent, StudentsMenuComponent,
     PhonemeComponent, PhonemeBarComponent, VocalPanelComponent, ConsonantPanelComponent, PhonemeGamePanelComponent,
-    PhonemeViewComponent, BarComponent, PhonemePanelComponent, VideoPanelComponent,
+    PhonemeViewComponent, BarComponent, PhonemePanelComponent, VideoPanelComponent, PhonemeConsonantPanelComponent,
     SemanticsComponent, SemanticsBarComponent, CategoriesPanelComponent, SemanticsGamePanelComponent,
     SubcategoriesComponent, SubcategoriesBarComponent, SubcategoriesPanelComponent,
+    CategoriesViewComponent, CategoriesBarComponent, CategoriesViewPanelComponent,
     ProfessorComponent, ListComponent, RegisterComponent, StudentInfoComponent,
     FunctionBarComponent, InfoPanelComponent, StudentsBarComponent, PersonalInfoComponent, FamilyInfoComponent,
     FoodInfoComponent, SubcategoriesComponent,
-    SubcategoriesBarComponent, SubcategoriesPanelComponent],
+    SubcategoriesBarComponent, SubcategoriesPanelComponent, FoodInfoComponent, NavigationComponent],
 
   exports: [LoginComponent,
     MenuPanelComponent, ProfessorMenuComponent, StudentsMenuComponent,
     PhonemeComponent, PhonemeBarComponent, VocalPanelComponent, ConsonantPanelComponent, PhonemeGamePanelComponent,
-    PhonemeViewComponent, BarComponent, PhonemePanelComponent, VideoPanelComponent,
+    PhonemeViewComponent, BarComponent, PhonemePanelComponent, VideoPanelComponent, PhonemeConsonantPanelComponent,
     SemanticsComponent, SemanticsBarComponent, CategoriesPanelComponent, SemanticsGamePanelComponent,
     SubcategoriesComponent, SubcategoriesBarComponent, SubcategoriesPanelComponent,
+    CategoriesViewComponent, CategoriesBarComponent, CategoriesViewPanelComponent,
     ProfessorComponent, ListComponent, RegisterComponent, StudentInfoComponent,
     FunctionBarComponent, InfoPanelComponent, StudentsBarComponent, SubcategoriesComponent,
     SubcategoriesBarComponent, SubcategoriesPanelComponent, PersonalInfoComponent, FamilyInfoComponent,
-    FoodInfoComponent],
+    FoodInfoComponent, NavigationComponent],
   imports: [
     CommonModule,
     IonicModule
