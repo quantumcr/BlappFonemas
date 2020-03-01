@@ -18,7 +18,7 @@ export class SemanticsComponent implements OnInit {
   }
 
   setVisible( value) {
-    if ( value === 'vocales'){
+    if ( value === 'categorias') {
       this.visibleCategories = true;
       this.visibleGame = false;
     }

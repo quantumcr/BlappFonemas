@@ -11,3 +11,54 @@
     margin-top: 57px;
     left: 56px;
 }
+.sujeto{
+    width: 230px;
+    height: 230px;
+    margin-left: auto;
+    background: url('../../../../assets/svg/semantics/semantics-game-panel/black.svg');
+    background-size: auto;
+}
+.verbo{
+    width: 161px;
+    height: 161px;
+    margin-top: 34px;
+    margin-left: 42px;
+    margin-right: 43px;
+    background: url('../../../../assets/svg/semantics/semantics-game-panel/red.svg');
+    background-size: auto;    
+}
+.predicado{
+    width: 230px;
+    height: 230px;
+    margin-right: auto;
+    background: url('../../../../assets/svg/semantics/semantics-game-panel/green.svg');
+    background-size: auto;    
+}
+.element{
+    margin-left: auto;
+    margin-right: auto;
+    width: 176px;
+    height: 176px;
+    background: url('../../../../assets/svg/semantics/semantics-game-panel/element.svg');
+    background-size: auto;    
+}
+.options{
+    margin-top: 32px;
+}
+.palabras{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 52px; 
+    /* identical to box height */
+    text-align: center;
+    
+    color: #3C3C3C;    
+}
+.semantica{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
