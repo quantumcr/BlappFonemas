@@ -39,9 +39,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony import */
 
 
-    var _core_80bde1aa_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
-    /*! ./core-80bde1aa.js */
-    "./node_modules/@ionic/core/dist/esm/core-80bde1aa.js");
+    var _core_0a8d4d2e_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! ./core-0a8d4d2e.js */
+    "./node_modules/@ionic/core/dist/esm/core-0a8d4d2e.js");
     /* harmony import */
 
 
@@ -57,9 +57,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony import */
 
 
-    var _animation_0084d55f_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
-    /*! ./animation-0084d55f.js */
-    "./node_modules/@ionic/core/dist/esm/animation-0084d55f.js");
+    var _animation_56279521_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! ./animation-56279521.js */
+    "./node_modules/@ionic/core/dist/esm/animation-56279521.js");
     /* harmony import */
 
 
@@ -87,25 +87,31 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony import */
 
 
-    var _index_70999d9c_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
-    /*! ./index-70999d9c.js */
-    "./node_modules/@ionic/core/dist/esm/index-70999d9c.js");
+    var _hardware_back_button_1ed0083a_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+    /*! ./hardware-back-button-1ed0083a.js */
+    "./node_modules/@ionic/core/dist/esm/hardware-back-button-1ed0083a.js");
     /* harmony import */
 
 
-    var _overlays_992cb809_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
-    /*! ./overlays-992cb809.js */
-    "./node_modules/@ionic/core/dist/esm/overlays-992cb809.js");
+    var _index_c58c7441_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
+    /*! ./index-c58c7441.js */
+    "./node_modules/@ionic/core/dist/esm/index-c58c7441.js");
     /* harmony import */
 
 
-    var _index_3476b023_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
+    var _overlays_e336664a_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
+    /*! ./overlays-e336664a.js */
+    "./node_modules/@ionic/core/dist/esm/overlays-e336664a.js");
+    /* harmony import */
+
+
+    var _index_3476b023_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
     /*! ./index-3476b023.js */
     "./node_modules/@ionic/core/dist/esm/index-3476b023.js");
     /* harmony import */
 
 
-    var _spinner_configs_28520d80_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
+    var _spinner_configs_28520d80_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
     /*! ./spinner-configs-28520d80.js */
     "./node_modules/@ionic/core/dist/esm/spinner-configs-28520d80.js");
 
@@ -218,8 +224,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       var spinnerArrowContainer = pullingRefresherIcon.querySelector('.spinner-arrow-container');
       var arrowContainer = pullingRefresherIcon.querySelector('.arrow-container');
       var arrow = arrowContainer ? arrowContainer.querySelector('ion-icon') : null;
-      var baseAnimation = Object(_animation_0084d55f_js__WEBPACK_IMPORTED_MODULE_3__["c"])().duration(1000).easing('ease-out');
-      var spinnerArrowContainerAnimation = Object(_animation_0084d55f_js__WEBPACK_IMPORTED_MODULE_3__["c"])().addElement(spinnerArrowContainer).keyframes([{
+      var baseAnimation = Object(_animation_56279521_js__WEBPACK_IMPORTED_MODULE_3__["c"])().duration(1000).easing('ease-out');
+      var spinnerArrowContainerAnimation = Object(_animation_56279521_js__WEBPACK_IMPORTED_MODULE_3__["c"])().addElement(spinnerArrowContainer).keyframes([{
         offset: 0,
         opacity: '0.3'
       }, {
@@ -232,7 +238,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         offset: 1,
         opacity: '1'
       }]);
-      var circleInnerAnimation = Object(_animation_0084d55f_js__WEBPACK_IMPORTED_MODULE_3__["c"])().addElement(circle).keyframes([{
+      var circleInnerAnimation = Object(_animation_56279521_js__WEBPACK_IMPORTED_MODULE_3__["c"])().addElement(circle).keyframes([{
         offset: 0,
         strokeDasharray: '1px, 200px'
       }, {
@@ -245,7 +251,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         offset: 1,
         strokeDasharray: '100px, 200px'
       }]);
-      var circleOuterAnimation = Object(_animation_0084d55f_js__WEBPACK_IMPORTED_MODULE_3__["c"])().addElement(spinner).keyframes([{
+      var circleOuterAnimation = Object(_animation_56279521_js__WEBPACK_IMPORTED_MODULE_3__["c"])().addElement(spinner).keyframes([{
         offset: 0,
         transform: 'rotate(-90deg)'
       }, {
@@ -259,7 +265,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
        */
 
       if (arrowContainer && arrow) {
-        var arrowContainerAnimation = Object(_animation_0084d55f_js__WEBPACK_IMPORTED_MODULE_3__["c"])().addElement(arrowContainer).keyframes([{
+        var arrowContainerAnimation = Object(_animation_56279521_js__WEBPACK_IMPORTED_MODULE_3__["c"])().addElement(arrowContainer).keyframes([{
           offset: 0,
           transform: 'rotate(0deg)'
         }, {
@@ -272,7 +278,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           offset: 1,
           transform: 'rotate(400deg)'
         }]);
-        var arrowAnimation = Object(_animation_0084d55f_js__WEBPACK_IMPORTED_MODULE_3__["c"])().addElement(arrow).keyframes([{
+        var arrowAnimation = Object(_animation_56279521_js__WEBPACK_IMPORTED_MODULE_3__["c"])().addElement(arrow).keyframes([{
           offset: 0,
           transform: 'translateX(2px) scale(0)'
         }, {
@@ -293,7 +299,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
     var createScaleAnimation = function createScaleAnimation(pullingRefresherIcon) {
       var height = pullingRefresherIcon.clientHeight;
-      var spinnerAnimation = Object(_animation_0084d55f_js__WEBPACK_IMPORTED_MODULE_3__["c"])().addElement(pullingRefresherIcon).keyframes([{
+      var spinnerAnimation = Object(_animation_56279521_js__WEBPACK_IMPORTED_MODULE_3__["c"])().addElement(pullingRefresherIcon).keyframes([{
         offset: 0,
         transform: "scale(0) translateY(-".concat(height + 20, "px)")
       }, {
@@ -305,7 +311,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
     var createTranslateAnimation = function createTranslateAnimation(pullingRefresherIcon) {
       var height = pullingRefresherIcon.clientHeight;
-      var spinnerAnimation = Object(_animation_0084d55f_js__WEBPACK_IMPORTED_MODULE_3__["c"])().addElement(pullingRefresherIcon).keyframes([{
+      var spinnerAnimation = Object(_animation_56279521_js__WEBPACK_IMPORTED_MODULE_3__["c"])().addElement(pullingRefresherIcon).keyframes([{
         offset: 0,
         transform: "translateY(-".concat(height + 20, "px)")
       }, {
@@ -316,7 +322,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     };
 
     var createSnapBackAnimation = function createSnapBackAnimation(pullingRefresherIcon) {
-      return Object(_animation_0084d55f_js__WEBPACK_IMPORTED_MODULE_3__["c"])().duration(125).addElement(pullingRefresherIcon).fromTo('transform', 'translateY(var(--ion-pulling-refresher-translate, 100px))', 'translateY(0px)');
+      return Object(_animation_56279521_js__WEBPACK_IMPORTED_MODULE_3__["c"])().duration(125).addElement(pullingRefresherIcon).fromTo('transform', 'translateY(var(--ion-pulling-refresher-translate, 100px))', 'translateY(0px)');
     }; // iOS Native Refresher
     // -----------------------------
 
@@ -326,7 +332,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     };
 
     var handleScrollWhilePulling = function handleScrollWhilePulling(spinner, ticks, opacity, currentTickToShow) {
-      Object(_core_80bde1aa_js__WEBPACK_IMPORTED_MODULE_0__["w"])(function () {
+      Object(_core_0a8d4d2e_js__WEBPACK_IMPORTED_MODULE_0__["w"])(function () {
         setSpinnerOpacity(spinner, opacity);
         ticks.forEach(function (el, i) {
           return el.style.setProperty('opacity', i <= currentTickToShow ? '0.99' : '0');
@@ -335,7 +341,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     };
 
     var handleScrollWhileRefreshing = function handleScrollWhileRefreshing(spinner, lastVelocityY) {
-      Object(_core_80bde1aa_js__WEBPACK_IMPORTED_MODULE_0__["w"])(function () {
+      Object(_core_0a8d4d2e_js__WEBPACK_IMPORTED_MODULE_0__["w"])(function () {
         // If user pulls down quickly, the spinner should spin faster
         spinner.style.setProperty('--refreshing-rotation-duration', lastVelocityY >= 1.0 ? '0.5s' : '2s');
         spinner.style.setProperty('opacity', '1');
@@ -348,7 +354,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }
 
       var trans = transitionEndAsync(el);
-      Object(_core_80bde1aa_js__WEBPACK_IMPORTED_MODULE_0__["w"])(function () {
+      Object(_core_0a8d4d2e_js__WEBPACK_IMPORTED_MODULE_0__["w"])(function () {
         el.style.setProperty('transition', '0.2s all ease-out');
 
         if (value === undefined) {
@@ -412,7 +418,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       function Refresher(hostRef) {
         _classCallCheck(this, Refresher);
 
-        Object(_core_80bde1aa_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_core_0a8d4d2e_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         this.appliedStyles = false;
         this.didStart = false;
         this.progress = 0;
@@ -488,9 +494,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
          */
 
         this.disabled = false;
-        this.ionRefresh = Object(_core_80bde1aa_js__WEBPACK_IMPORTED_MODULE_0__["d"])(this, "ionRefresh", 7);
-        this.ionPull = Object(_core_80bde1aa_js__WEBPACK_IMPORTED_MODULE_0__["d"])(this, "ionPull", 7);
-        this.ionStart = Object(_core_80bde1aa_js__WEBPACK_IMPORTED_MODULE_0__["d"])(this, "ionStart", 7);
+        this.ionRefresh = Object(_core_0a8d4d2e_js__WEBPACK_IMPORTED_MODULE_0__["d"])(this, "ionRefresh", 7);
+        this.ionPull = Object(_core_0a8d4d2e_js__WEBPACK_IMPORTED_MODULE_0__["d"])(this, "ionPull", 7);
+        this.ionStart = Object(_core_0a8d4d2e_js__WEBPACK_IMPORTED_MODULE_0__["d"])(this, "ionStart", 7);
       }
 
       _createClass(Refresher, [{
@@ -503,7 +509,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "checkNativeRefresher",
         value: function checkNativeRefresher() {
-          var useNativeRefresher = shouldUseNativeRefresher(this.el, Object(_core_80bde1aa_js__WEBPACK_IMPORTED_MODULE_0__["c"])(this));
+          var useNativeRefresher = shouldUseNativeRefresher(this.el, Object(_core_0a8d4d2e_js__WEBPACK_IMPORTED_MODULE_0__["c"])(this));
 
           if (useNativeRefresher && !this.nativeRefresher) {
             var contentEl = this.el.closest('ion-content');
@@ -534,7 +540,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                   case 0:
                     this.state = state;
 
-                    if (!(Object(_core_80bde1aa_js__WEBPACK_IMPORTED_MODULE_0__["c"])(this) === 'ios')) {
+                    if (!(Object(_core_0a8d4d2e_js__WEBPACK_IMPORTED_MODULE_0__["c"])(this) === 'ios')) {
                       _context.next = 6;
                       break;
                     }
@@ -594,7 +600,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                     ticks = pullingSpinner.shadowRoot.querySelectorAll('svg');
                     MAX_PULL = this.scrollEl.clientHeight * 0.16;
                     NUM_TICKS = ticks.length;
-                    Object(_core_80bde1aa_js__WEBPACK_IMPORTED_MODULE_0__["w"])(function () {
+                    Object(_core_0a8d4d2e_js__WEBPACK_IMPORTED_MODULE_0__["w"])(function () {
                       return ticks.forEach(function (el) {
                         return el.style.setProperty('animation', 'none');
                       });
@@ -608,7 +614,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                           return;
                         }
 
-                      Object(_core_80bde1aa_js__WEBPACK_IMPORTED_MODULE_0__["f"])(function () {
+                      Object(_core_0a8d4d2e_js__WEBPACK_IMPORTED_MODULE_0__["f"])(function () {
                         // PTR should only be active when overflow scrolling at the top
                         var scrollTop = _this.scrollEl.scrollTop;
                         var refresherHeight = _this.el.clientHeight;
@@ -622,13 +628,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                           /* Refreshing */
                           ) {
                               var ratio = Object(_helpers_46f4a262_js__WEBPACK_IMPORTED_MODULE_2__["c"])(0, scrollTop / (refresherHeight * 0.5), 1);
-                              Object(_core_80bde1aa_js__WEBPACK_IMPORTED_MODULE_0__["w"])(function () {
+                              Object(_core_0a8d4d2e_js__WEBPACK_IMPORTED_MODULE_0__["w"])(function () {
                                 return setSpinnerOpacity(refreshingSpinner, 1 - ratio);
                               });
                               return;
                             }
 
-                          Object(_core_80bde1aa_js__WEBPACK_IMPORTED_MODULE_0__["w"])(function () {
+                          Object(_core_0a8d4d2e_js__WEBPACK_IMPORTED_MODULE_0__["w"])(function () {
                             return setSpinnerOpacity(pullingSpinner, 0);
                           });
                           return;
@@ -719,7 +725,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                           _this.needsCompletion = false;
                         } else if (_this.didRefresh) {
-                          Object(_core_80bde1aa_js__WEBPACK_IMPORTED_MODULE_0__["f"])(function () {
+                          Object(_core_0a8d4d2e_js__WEBPACK_IMPORTED_MODULE_0__["f"])(function () {
                             return translateElement(_this.elementToTransform, "".concat(_this.el.clientHeight, "px"));
                           });
                         }
@@ -760,7 +766,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                     refreshingCircle = refreshingSpinner.shadowRoot.querySelector('circle');
 
                     if (circle !== null && refreshingCircle !== null) {
-                      Object(_core_80bde1aa_js__WEBPACK_IMPORTED_MODULE_0__["w"])(function () {
+                      Object(_core_0a8d4d2e_js__WEBPACK_IMPORTED_MODULE_0__["w"])(function () {
                         circle.style.setProperty('animation', 'none'); // This lines up the animation on the refreshing spinner with the pulling spinner
 
                         refreshingSpinner.style.setProperty('animation-delay', '-655ms');
@@ -805,7 +811,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                           _this2.state = 2
                           /* Pulling */
                           ;
-                          Object(_core_80bde1aa_js__WEBPACK_IMPORTED_MODULE_0__["w"])(function () {
+                          Object(_core_0a8d4d2e_js__WEBPACK_IMPORTED_MODULE_0__["w"])(function () {
                             var animationType = getRefresherAnimationType(contentEl);
                             var animation = createPullingAnimation(animationType, pullingRefresherIcon);
                             ev.data.animation = animation;
@@ -832,7 +838,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                           return;
                         }
 
-                        Object(_core_80bde1aa_js__WEBPACK_IMPORTED_MODULE_0__["w"])(function () {
+                        Object(_core_0a8d4d2e_js__WEBPACK_IMPORTED_MODULE_0__["w"])(function () {
                           return _this2.scrollEl.style.removeProperty('--overflow');
                         });
 
@@ -860,7 +866,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                         _this2.animations.push(snapBackAnimation);
 
-                        Object(_core_80bde1aa_js__WEBPACK_IMPORTED_MODULE_0__["w"])(
+                        Object(_core_0a8d4d2e_js__WEBPACK_IMPORTED_MODULE_0__["w"])(
                         /*#__PURE__*/
                         _asyncToGenerator(
                         /*#__PURE__*/
@@ -928,7 +934,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                     pullingSpinner = this.el.querySelector('ion-refresher-content .refresher-pulling ion-spinner');
                     refreshingSpinner = this.el.querySelector('ion-refresher-content .refresher-refreshing ion-spinner');
 
-                    if (Object(_core_80bde1aa_js__WEBPACK_IMPORTED_MODULE_0__["c"])(this) === 'ios') {
+                    if (Object(_core_0a8d4d2e_js__WEBPACK_IMPORTED_MODULE_0__["c"])(this) === 'ios') {
                       this.setupiOSNativeRefresher(pullingSpinner, refreshingSpinner);
                     } else {
                       this.setupMDNativeRefresher(contentEl, pullingSpinner, refreshingSpinner);
@@ -993,7 +999,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                     this.scrollEl = _context6.sent;
                     this.backgroundContentEl = contentEl.shadowRoot.querySelector('#background-content');
 
-                    if (!shouldUseNativeRefresher(this.el, Object(_core_80bde1aa_js__WEBPACK_IMPORTED_MODULE_0__["c"])(this))) {
+                    if (!shouldUseNativeRefresher(this.el, Object(_core_0a8d4d2e_js__WEBPACK_IMPORTED_MODULE_0__["c"])(this))) {
                       _context6.next = 15;
                       break;
                     }
@@ -1370,11 +1376,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           }
 
           this.appliedStyles = y > 0;
-          Object(_core_80bde1aa_js__WEBPACK_IMPORTED_MODULE_0__["w"])(function () {
+          Object(_core_0a8d4d2e_js__WEBPACK_IMPORTED_MODULE_0__["w"])(function () {
             if (_this5.scrollEl && _this5.backgroundContentEl) {
               var scrollStyle = _this5.scrollEl.style;
               var backgroundStyle = _this5.backgroundContentEl.style;
-              scrollStyle.transform = backgroundStyle.transform = y > 0 ? "translateY(".concat(y, "px) translateZ(0px)") : 'translateZ(0px)';
+              scrollStyle.transform = backgroundStyle.transform = y > 0 ? "translateY(".concat(y, "px) translateZ(0px)") : '';
               scrollStyle.transitionDuration = backgroundStyle.transitionDuration = duration;
               scrollStyle.transitionDelay = backgroundStyle.transitionDelay = delay;
               scrollStyle.overflow = overflowVisible ? 'hidden' : '';
@@ -1386,8 +1392,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         value: function render() {
           var _class;
 
-          var mode = Object(_core_80bde1aa_js__WEBPACK_IMPORTED_MODULE_0__["c"])(this);
-          return Object(_core_80bde1aa_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_core_80bde1aa_js__WEBPACK_IMPORTED_MODULE_0__["H"], {
+          var mode = Object(_core_0a8d4d2e_js__WEBPACK_IMPORTED_MODULE_0__["c"])(this);
+          return Object(_core_0a8d4d2e_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_core_0a8d4d2e_js__WEBPACK_IMPORTED_MODULE_0__["H"], {
             slot: "fixed",
             class: (_class = {}, _defineProperty(_class, mode, true), _defineProperty(_class, "refresher-".concat(mode), true), _defineProperty(_class, 'refresher-native', this.nativeRefresher), _defineProperty(_class, 'refresher-active', this.state !== 1), _defineProperty(_class, 'refresher-pulling', this.state === 2), _defineProperty(_class, 'refresher-ready', this.state === 4), _defineProperty(_class, 'refresher-refreshing', this.state === 8), _defineProperty(_class, 'refresher-cancelling', this.state === 16), _defineProperty(_class, 'refresher-completing', this.state === 32), _class)
           });
@@ -1395,7 +1401,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "el",
         get: function get() {
-          return Object(_core_80bde1aa_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this);
+          return Object(_core_0a8d4d2e_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this);
         }
       }], [{
         key: "watchers",
@@ -1420,20 +1426,20 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       function RefresherContent(hostRef) {
         _classCallCheck(this, RefresherContent);
 
-        Object(_core_80bde1aa_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_core_0a8d4d2e_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
       }
 
       _createClass(RefresherContent, [{
         key: "componentWillLoad",
         value: function componentWillLoad() {
           if (this.pullingIcon === undefined) {
-            var mode = Object(_core_80bde1aa_js__WEBPACK_IMPORTED_MODULE_0__["c"])(this);
+            var mode = Object(_core_0a8d4d2e_js__WEBPACK_IMPORTED_MODULE_0__["c"])(this);
             var overflowRefresher = this.el.style.webkitOverflowScrolling !== undefined ? 'lines' : 'arrow-down';
             this.pullingIcon = _config_3c7f3790_js__WEBPACK_IMPORTED_MODULE_1__["b"].get('refreshingIcon', mode === 'ios' && Object(_config_3c7f3790_js__WEBPACK_IMPORTED_MODULE_1__["i"])('mobile') ? _config_3c7f3790_js__WEBPACK_IMPORTED_MODULE_1__["b"].get('spinner', overflowRefresher) : 'circular');
           }
 
           if (this.refreshingSpinner === undefined) {
-            var _mode = Object(_core_80bde1aa_js__WEBPACK_IMPORTED_MODULE_0__["c"])(this);
+            var _mode = Object(_core_0a8d4d2e_js__WEBPACK_IMPORTED_MODULE_0__["c"])(this);
 
             this.refreshingSpinner = _config_3c7f3790_js__WEBPACK_IMPORTED_MODULE_1__["b"].get('refreshingSpinner', _config_3c7f3790_js__WEBPACK_IMPORTED_MODULE_1__["b"].get('spinner', _mode === 'ios' ? 'lines' : 'circular'));
           }
@@ -1442,46 +1448,46 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "render",
         value: function render() {
           var pullingIcon = this.pullingIcon;
-          var hasSpinner = pullingIcon != null && _spinner_configs_28520d80_js__WEBPACK_IMPORTED_MODULE_11__["S"][pullingIcon] !== undefined;
-          var mode = Object(_core_80bde1aa_js__WEBPACK_IMPORTED_MODULE_0__["c"])(this);
-          return Object(_core_80bde1aa_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_core_80bde1aa_js__WEBPACK_IMPORTED_MODULE_0__["H"], {
+          var hasSpinner = pullingIcon != null && _spinner_configs_28520d80_js__WEBPACK_IMPORTED_MODULE_12__["S"][pullingIcon] !== undefined;
+          var mode = Object(_core_0a8d4d2e_js__WEBPACK_IMPORTED_MODULE_0__["c"])(this);
+          return Object(_core_0a8d4d2e_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_core_0a8d4d2e_js__WEBPACK_IMPORTED_MODULE_0__["H"], {
             class: mode
-          }, Object(_core_80bde1aa_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", {
+          }, Object(_core_0a8d4d2e_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", {
             class: "refresher-pulling"
-          }, this.pullingIcon && hasSpinner && Object(_core_80bde1aa_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", {
+          }, this.pullingIcon && hasSpinner && Object(_core_0a8d4d2e_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", {
             class: "refresher-pulling-icon"
-          }, Object(_core_80bde1aa_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", {
+          }, Object(_core_0a8d4d2e_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", {
             class: "spinner-arrow-container"
-          }, Object(_core_80bde1aa_js__WEBPACK_IMPORTED_MODULE_0__["h"])("ion-spinner", {
+          }, Object(_core_0a8d4d2e_js__WEBPACK_IMPORTED_MODULE_0__["h"])("ion-spinner", {
             name: this.pullingIcon,
             paused: true
-          }), mode === 'md' && this.pullingIcon === 'circular' && Object(_core_80bde1aa_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", {
+          }), mode === 'md' && this.pullingIcon === 'circular' && Object(_core_0a8d4d2e_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", {
             class: "arrow-container"
-          }, Object(_core_80bde1aa_js__WEBPACK_IMPORTED_MODULE_0__["h"])("ion-icon", {
+          }, Object(_core_0a8d4d2e_js__WEBPACK_IMPORTED_MODULE_0__["h"])("ion-icon", {
             name: "caret-back-sharp"
-          })))), this.pullingIcon && !hasSpinner && Object(_core_80bde1aa_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", {
+          })))), this.pullingIcon && !hasSpinner && Object(_core_0a8d4d2e_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", {
             class: "refresher-pulling-icon"
-          }, Object(_core_80bde1aa_js__WEBPACK_IMPORTED_MODULE_0__["h"])("ion-icon", {
+          }, Object(_core_0a8d4d2e_js__WEBPACK_IMPORTED_MODULE_0__["h"])("ion-icon", {
             icon: this.pullingIcon,
             lazy: false
-          })), this.pullingText && Object(_core_80bde1aa_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", {
+          })), this.pullingText && Object(_core_0a8d4d2e_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", {
             class: "refresher-pulling-text",
-            innerHTML: Object(_index_3476b023_js__WEBPACK_IMPORTED_MODULE_10__["s"])(this.pullingText)
-          })), Object(_core_80bde1aa_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", {
+            innerHTML: Object(_index_3476b023_js__WEBPACK_IMPORTED_MODULE_11__["s"])(this.pullingText)
+          })), Object(_core_0a8d4d2e_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", {
             class: "refresher-refreshing"
-          }, this.refreshingSpinner && Object(_core_80bde1aa_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", {
+          }, this.refreshingSpinner && Object(_core_0a8d4d2e_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", {
             class: "refresher-refreshing-icon"
-          }, Object(_core_80bde1aa_js__WEBPACK_IMPORTED_MODULE_0__["h"])("ion-spinner", {
+          }, Object(_core_0a8d4d2e_js__WEBPACK_IMPORTED_MODULE_0__["h"])("ion-spinner", {
             name: this.refreshingSpinner
-          })), this.refreshingText && Object(_core_80bde1aa_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", {
+          })), this.refreshingText && Object(_core_0a8d4d2e_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", {
             class: "refresher-refreshing-text",
-            innerHTML: Object(_index_3476b023_js__WEBPACK_IMPORTED_MODULE_10__["s"])(this.refreshingText)
+            innerHTML: Object(_index_3476b023_js__WEBPACK_IMPORTED_MODULE_11__["s"])(this.refreshingText)
           })));
         }
       }, {
         key: "el",
         get: function get() {
-          return Object(_core_80bde1aa_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this);
+          return Object(_core_0a8d4d2e_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this);
         }
       }]);
 

@@ -20926,8 +20926,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
      * APPLICATION IMPORTS
      */
 
-    /***/
+    /**Drag and drop */
 
+
+    window.global = window;
+    /***/
   },
 
   /***/

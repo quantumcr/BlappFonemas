@@ -363,15 +363,15 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
   },
 
   /***/
-  "./node_modules/@ionic/core/dist/esm/index-3528f139.js":
+  "./node_modules/@ionic/core/dist/esm/index-4e2fa3c6.js":
   /*!*************************************************************!*\
-    !*** ./node_modules/@ionic/core/dist/esm/index-3528f139.js ***!
+    !*** ./node_modules/@ionic/core/dist/esm/index-4e2fa3c6.js ***!
     \*************************************************************/
 
   /*! exports provided: d, g, l, s, t */
 
   /***/
-  function node_modulesIonicCoreDistEsmIndex3528f139Js(module, __webpack_exports__, __webpack_require__) {
+  function node_modulesIonicCoreDistEsmIndex4e2fa3c6Js(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
@@ -408,9 +408,9 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     /* harmony import */
 
 
-    var _core_80bde1aa_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
-    /*! ./core-80bde1aa.js */
-    "./node_modules/@ionic/core/dist/esm/core-80bde1aa.js");
+    var _core_0a8d4d2e_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! ./core-0a8d4d2e.js */
+    "./node_modules/@ionic/core/dist/esm/core-0a8d4d2e.js");
     /* harmony import */
 
 
@@ -420,23 +420,23 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
     var iosTransitionAnimation = function iosTransitionAnimation() {
       return __webpack_require__.e(
-      /*! import() | ios-transition-1850e475-js */
-      "ios-transition-1850e475-js").then(__webpack_require__.bind(null,
-      /*! ./ios.transition-1850e475.js */
-      "./node_modules/@ionic/core/dist/esm/ios.transition-1850e475.js"));
+      /*! import() | ios-transition-179652bb-js */
+      "ios-transition-179652bb-js").then(__webpack_require__.bind(null,
+      /*! ./ios.transition-179652bb.js */
+      "./node_modules/@ionic/core/dist/esm/ios.transition-179652bb.js"));
     };
 
     var mdTransitionAnimation = function mdTransitionAnimation() {
       return __webpack_require__.e(
-      /*! import() | md-transition-083fcf52-js */
-      "md-transition-083fcf52-js").then(__webpack_require__.bind(null,
-      /*! ./md.transition-083fcf52.js */
-      "./node_modules/@ionic/core/dist/esm/md.transition-083fcf52.js"));
+      /*! import() | md-transition-91524c12-js */
+      "md-transition-91524c12-js").then(__webpack_require__.bind(null,
+      /*! ./md.transition-91524c12.js */
+      "./node_modules/@ionic/core/dist/esm/md.transition-91524c12.js"));
     };
 
     var transition = function transition(opts) {
       return new Promise(function (resolve, reject) {
-        Object(_core_80bde1aa_js__WEBPACK_IMPORTED_MODULE_0__["w"])(function () {
+        Object(_core_0a8d4d2e_js__WEBPACK_IMPORTED_MODULE_0__["w"])(function () {
           beforeTransition(opts);
           runTransition(opts).then(function (result) {
             if (result.animation) {

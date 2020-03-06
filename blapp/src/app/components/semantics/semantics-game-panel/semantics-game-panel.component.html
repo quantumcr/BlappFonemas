@@ -43,20 +43,25 @@
 
     <ion-row class="options">
       <ion-col>
-        <div class="element">
-          <div>
-            
+        <div class="element" cdkDropList
+          #element1List="cdkDropList">
+          <div cdkDrag>
+            <ion-img src="assets/img/fonemas/game-panel/mama.png"></ion-img>
           </div>
         </div>        
       </ion-col>
       <ion-col>
-        <div class="element">
-          <div></div>
+        <div class="element" cdkDrop>
+          <div cdkDrag>
+            <ion-img src="assets/img/fonemas/game-panel/mama.png"></ion-img>
+          </div>
         </div>  
       </ion-col>
       <ion-col>
-        <div class="element">
-          <div></div>
+        <div class="element" cdkDrop>
+          <div cdkDrag>
+            <ion-img src="assets/img/fonemas/game-panel/mama.png"></ion-img>
+          </div>
         </div>  
       </ion-col>
     </ion-row> 

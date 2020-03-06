@@ -26,8 +26,9 @@ const routes: Routes = [
   {
     path: 'estudiantes',
     loadChildren: () => import('./pages/estudiantes/estudiantes.module').then( m => m.EstudiantesPageModule)
-  },  {
-    path: 'fonema',
+  },
+  {
+    path: 'fonema/:value',
     loadChildren: () => import('./pages/fonema/fonema.module').then( m => m.FonemaPageModule)
   },
   {

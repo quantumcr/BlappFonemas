@@ -1,7 +1,10 @@
 export interface Video {
+
     nombre: string;
-    imagen: string;
     video: string;
+    imagen: string;
+    mensaje: string;
     duracion: number;
     reproduciendo: boolean;
+
 }

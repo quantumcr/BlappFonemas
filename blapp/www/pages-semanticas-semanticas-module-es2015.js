@@ -85,7 +85,7 @@ SemanticasPageModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"],
             _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["IonicModule"],
             _semanticas_routing_module__WEBPACK_IMPORTED_MODULE_5__["SemanticasPageRoutingModule"],
-            _components_components_module__WEBPACK_IMPORTED_MODULE_7__["ComponentsModule"]
+            _components_components_module__WEBPACK_IMPORTED_MODULE_7__["ComponentsModule"],
         ],
         declarations: [_semanticas_page__WEBPACK_IMPORTED_MODULE_6__["SemanticasPage"]]
     })
@@ -123,7 +123,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 let SemanticasPage = class SemanticasPage {
-    constructor() { }
     ngOnInit() {
     }
 };
@@ -132,8 +131,7 @@ SemanticasPage = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         selector: 'app-semanticas',
         template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./semanticas.page.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/semanticas/semanticas.page.html")).default,
         styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./semanticas.page.scss */ "./src/app/pages/semanticas/semanticas.page.scss")).default]
-    }),
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    })
 ], SemanticasPage);
 
 

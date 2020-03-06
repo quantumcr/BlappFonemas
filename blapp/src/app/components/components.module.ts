@@ -36,6 +36,7 @@ import { CategoriesBarComponent } from './categories-view/categories-bar/categor
 import { CategoriesViewPanelComponent } from './categories-view/categories-view-panel/categories-view-panel.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { PhonemeConsonantPanelComponent } from './phoneme-view/phoneme-consonant-panel/phoneme-consonant-panel.component';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 
 @NgModule({
@@ -64,7 +65,8 @@ import { PhonemeConsonantPanelComponent } from './phoneme-view/phoneme-consonant
     FoodInfoComponent, NavigationComponent],
   imports: [
     CommonModule,
-    IonicModule
+    IonicModule,
+    DragDropModule
   ]
 })
 export class ComponentsModule { }

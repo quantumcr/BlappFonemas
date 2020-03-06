@@ -29,9 +29,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony import */
 
 
-    var _core_80bde1aa_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
-    /*! ./core-80bde1aa.js */
-    "./node_modules/@ionic/core/dist/esm/core-80bde1aa.js");
+    var _core_0a8d4d2e_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! ./core-0a8d4d2e.js */
+    "./node_modules/@ionic/core/dist/esm/core-0a8d4d2e.js");
     /* harmony import */
 
 
@@ -57,7 +57,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       function Spinner(hostRef) {
         _classCallCheck(this, Spinner);
 
-        Object(_core_80bde1aa_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_core_0a8d4d2e_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         /**
          * If `true`, the spinner's animation will be paused.
          */
@@ -70,7 +70,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         value: function getName() {
           var spinnerName = this.name || _config_3c7f3790_js__WEBPACK_IMPORTED_MODULE_1__["b"].get('spinner');
 
-          var mode = Object(_core_80bde1aa_js__WEBPACK_IMPORTED_MODULE_0__["c"])(this);
+          var mode = Object(_core_0a8d4d2e_js__WEBPACK_IMPORTED_MODULE_0__["c"])(this);
 
           if (spinnerName) {
             return spinnerName;
@@ -84,7 +84,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           var _Object$assign;
 
           var self = this;
-          var mode = Object(_core_80bde1aa_js__WEBPACK_IMPORTED_MODULE_0__["c"])(self);
+          var mode = Object(_core_0a8d4d2e_js__WEBPACK_IMPORTED_MODULE_0__["c"])(self);
           var spinnerName = self.getName();
           var spinner = _spinner_configs_28520d80_js__WEBPACK_IMPORTED_MODULE_3__["S"][spinnerName] || _spinner_configs_28520d80_js__WEBPACK_IMPORTED_MODULE_3__["S"]['lines'];
           var duration = typeof self.duration === 'number' && self.duration > 10 ? self.duration : spinner.dur;
@@ -100,7 +100,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             }
           }
 
-          return Object(_core_80bde1aa_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_core_80bde1aa_js__WEBPACK_IMPORTED_MODULE_0__["H"], {
+          return Object(_core_0a8d4d2e_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_core_0a8d4d2e_js__WEBPACK_IMPORTED_MODULE_0__["H"], {
             class: Object.assign(Object.assign({}, Object(_theme_18cbe2cc_js__WEBPACK_IMPORTED_MODULE_2__["c"])(self.color)), (_Object$assign = {}, _defineProperty(_Object$assign, mode, true), _defineProperty(_Object$assign, "spinner-".concat(spinnerName), true), _defineProperty(_Object$assign, 'spinner-paused', !!self.paused || _config_3c7f3790_js__WEBPACK_IMPORTED_MODULE_1__["b"].getBoolean('_testing')), _Object$assign)),
             role: "progressbar",
             style: spinner.elmDuration ? {
@@ -121,10 +121,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var buildCircle = function buildCircle(spinner, duration, index, total) {
       var data = spinner.fn(duration, index, total);
       data.style['animation-duration'] = duration + 'ms';
-      return Object(_core_80bde1aa_js__WEBPACK_IMPORTED_MODULE_0__["h"])("svg", {
+      return Object(_core_0a8d4d2e_js__WEBPACK_IMPORTED_MODULE_0__["h"])("svg", {
         viewBox: data.viewBox || '0 0 64 64',
         style: data.style
-      }, Object(_core_80bde1aa_js__WEBPACK_IMPORTED_MODULE_0__["h"])("circle", {
+      }, Object(_core_0a8d4d2e_js__WEBPACK_IMPORTED_MODULE_0__["h"])("circle", {
         transform: data.transform || 'translate(32,32)',
         cx: data.cx,
         cy: data.cy,
@@ -138,10 +138,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var buildLine = function buildLine(spinner, duration, index, total) {
       var data = spinner.fn(duration, index, total);
       data.style['animation-duration'] = duration + 'ms';
-      return Object(_core_80bde1aa_js__WEBPACK_IMPORTED_MODULE_0__["h"])("svg", {
+      return Object(_core_0a8d4d2e_js__WEBPACK_IMPORTED_MODULE_0__["h"])("svg", {
         viewBox: data.viewBox || '0 0 64 64',
         style: data.style
-      }, Object(_core_80bde1aa_js__WEBPACK_IMPORTED_MODULE_0__["h"])("line", {
+      }, Object(_core_0a8d4d2e_js__WEBPACK_IMPORTED_MODULE_0__["h"])("line", {
         transform: "translate(32,32)",
         y1: data.y1,
         y2: data.y2

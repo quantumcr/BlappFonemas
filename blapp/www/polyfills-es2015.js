@@ -6477,6 +6477,8 @@ __webpack_require__.r(__webpack_exports__);
 /***************************************************************************************************
  * APPLICATION IMPORTS
  */
+/**Drag and drop */
+window.global = window;
 
 
 /***/ }),
