@@ -10,6 +10,7 @@ export class BarComponent implements OnInit {
   @Input() Video: string;
   @Input() fonema: string;
   @Input() mensaje: string;
+  @Input() imagen: string;
   @Output() barEvent = new EventEmitter();
   public visibleAudio = false;
   public visibleVideo = true;

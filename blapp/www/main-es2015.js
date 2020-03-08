@@ -710,35 +710,39 @@ const routes = [
     { path: '', redirectTo: 'inicio', pathMatch: 'full' },
     {
         path: 'inicio',
-        loadChildren: () => Promise.all(/*! import() | pages-inicio-inicio-module */[__webpack_require__.e("default~pages-docentes-docentes-module~pages-estudiantes-estudiantes-module~pages-fonema-fonema-modu~4a78e072"), __webpack_require__.e("pages-inicio-inicio-module")]).then(__webpack_require__.bind(null, /*! ./pages/inicio/inicio.module */ "./src/app/pages/inicio/inicio.module.ts")).then(m => m.InicioPageModule)
+        loadChildren: () => Promise.all(/*! import() | pages-inicio-inicio-module */[__webpack_require__.e("default~pages-consonantes-consonantes-module~pages-docentes-docentes-module~pages-estudiantes-estudi~35c779d2"), __webpack_require__.e("pages-inicio-inicio-module")]).then(__webpack_require__.bind(null, /*! ./pages/inicio/inicio.module */ "./src/app/pages/inicio/inicio.module.ts")).then(m => m.InicioPageModule)
     },
     {
         path: 'menu',
-        loadChildren: () => Promise.all(/*! import() | pages-menu-menu-module */[__webpack_require__.e("default~pages-docentes-docentes-module~pages-estudiantes-estudiantes-module~pages-fonema-fonema-modu~4a78e072"), __webpack_require__.e("pages-menu-menu-module")]).then(__webpack_require__.bind(null, /*! ./pages/menu/menu.module */ "./src/app/pages/menu/menu.module.ts")).then(m => m.MenuPageModule)
+        loadChildren: () => Promise.all(/*! import() | pages-menu-menu-module */[__webpack_require__.e("default~pages-consonantes-consonantes-module~pages-docentes-docentes-module~pages-estudiantes-estudi~35c779d2"), __webpack_require__.e("pages-menu-menu-module")]).then(__webpack_require__.bind(null, /*! ./pages/menu/menu.module */ "./src/app/pages/menu/menu.module.ts")).then(m => m.MenuPageModule)
     },
     {
         path: 'docentes',
-        loadChildren: () => Promise.all(/*! import() | pages-docentes-docentes-module */[__webpack_require__.e("default~pages-docentes-docentes-module~pages-estudiantes-estudiantes-module~pages-fonema-fonema-modu~4a78e072"), __webpack_require__.e("pages-docentes-docentes-module")]).then(__webpack_require__.bind(null, /*! ./pages/docentes/docentes.module */ "./src/app/pages/docentes/docentes.module.ts")).then(m => m.DocentesPageModule)
+        loadChildren: () => Promise.all(/*! import() | pages-docentes-docentes-module */[__webpack_require__.e("default~pages-consonantes-consonantes-module~pages-docentes-docentes-module~pages-estudiantes-estudi~35c779d2"), __webpack_require__.e("pages-docentes-docentes-module")]).then(__webpack_require__.bind(null, /*! ./pages/docentes/docentes.module */ "./src/app/pages/docentes/docentes.module.ts")).then(m => m.DocentesPageModule)
     },
     {
         path: 'fonemas',
-        loadChildren: () => Promise.all(/*! import() | pages-fonemas-fonemas-module */[__webpack_require__.e("default~pages-docentes-docentes-module~pages-estudiantes-estudiantes-module~pages-fonema-fonema-modu~4a78e072"), __webpack_require__.e("pages-fonemas-fonemas-module")]).then(__webpack_require__.bind(null, /*! ./pages/fonemas/fonemas.module */ "./src/app/pages/fonemas/fonemas.module.ts")).then(m => m.FonemasPageModule)
+        loadChildren: () => Promise.all(/*! import() | pages-fonemas-fonemas-module */[__webpack_require__.e("default~pages-consonantes-consonantes-module~pages-docentes-docentes-module~pages-estudiantes-estudi~35c779d2"), __webpack_require__.e("pages-fonemas-fonemas-module")]).then(__webpack_require__.bind(null, /*! ./pages/fonemas/fonemas.module */ "./src/app/pages/fonemas/fonemas.module.ts")).then(m => m.FonemasPageModule)
     },
     {
         path: 'semanticas',
-        loadChildren: () => Promise.all(/*! import() | pages-semanticas-semanticas-module */[__webpack_require__.e("default~pages-docentes-docentes-module~pages-estudiantes-estudiantes-module~pages-fonema-fonema-modu~4a78e072"), __webpack_require__.e("pages-semanticas-semanticas-module")]).then(__webpack_require__.bind(null, /*! ./pages/semanticas/semanticas.module */ "./src/app/pages/semanticas/semanticas.module.ts")).then(m => m.SemanticasPageModule)
+        loadChildren: () => Promise.all(/*! import() | pages-semanticas-semanticas-module */[__webpack_require__.e("default~pages-consonantes-consonantes-module~pages-docentes-docentes-module~pages-estudiantes-estudi~35c779d2"), __webpack_require__.e("pages-semanticas-semanticas-module")]).then(__webpack_require__.bind(null, /*! ./pages/semanticas/semanticas.module */ "./src/app/pages/semanticas/semanticas.module.ts")).then(m => m.SemanticasPageModule)
     },
     {
         path: 'estudiantes',
-        loadChildren: () => Promise.all(/*! import() | pages-estudiantes-estudiantes-module */[__webpack_require__.e("default~pages-docentes-docentes-module~pages-estudiantes-estudiantes-module~pages-fonema-fonema-modu~4a78e072"), __webpack_require__.e("pages-estudiantes-estudiantes-module")]).then(__webpack_require__.bind(null, /*! ./pages/estudiantes/estudiantes.module */ "./src/app/pages/estudiantes/estudiantes.module.ts")).then(m => m.EstudiantesPageModule)
+        loadChildren: () => Promise.all(/*! import() | pages-estudiantes-estudiantes-module */[__webpack_require__.e("default~pages-consonantes-consonantes-module~pages-docentes-docentes-module~pages-estudiantes-estudi~35c779d2"), __webpack_require__.e("pages-estudiantes-estudiantes-module")]).then(__webpack_require__.bind(null, /*! ./pages/estudiantes/estudiantes.module */ "./src/app/pages/estudiantes/estudiantes.module.ts")).then(m => m.EstudiantesPageModule)
     },
     {
         path: 'fonema/:value',
-        loadChildren: () => Promise.all(/*! import() | pages-fonema-fonema-module */[__webpack_require__.e("default~pages-docentes-docentes-module~pages-estudiantes-estudiantes-module~pages-fonema-fonema-modu~4a78e072"), __webpack_require__.e("pages-fonema-fonema-module")]).then(__webpack_require__.bind(null, /*! ./pages/fonema/fonema.module */ "./src/app/pages/fonema/fonema.module.ts")).then(m => m.FonemaPageModule)
+        loadChildren: () => Promise.all(/*! import() | pages-fonema-fonema-module */[__webpack_require__.e("default~pages-consonantes-consonantes-module~pages-docentes-docentes-module~pages-estudiantes-estudi~35c779d2"), __webpack_require__.e("pages-fonema-fonema-module")]).then(__webpack_require__.bind(null, /*! ./pages/fonema/fonema.module */ "./src/app/pages/fonema/fonema.module.ts")).then(m => m.FonemaPageModule)
     },
     {
         path: 'categoria',
         loadChildren: () => __webpack_require__.e(/*! import() | pages-categoria-categoria-module */ "pages-categoria-categoria-module").then(__webpack_require__.bind(null, /*! ./pages/categoria/categoria.module */ "./src/app/pages/categoria/categoria.module.ts")).then(m => m.CategoriaPageModule)
+    },
+    {
+        path: 'consonantes/:value',
+        loadChildren: () => Promise.all(/*! import() | pages-consonantes-consonantes-module */[__webpack_require__.e("default~pages-consonantes-consonantes-module~pages-docentes-docentes-module~pages-estudiantes-estudi~35c779d2"), __webpack_require__.e("pages-consonantes-consonantes-module")]).then(__webpack_require__.bind(null, /*! ./pages/consonantes/consonantes.module */ "./src/app/pages/consonantes/consonantes.module.ts")).then(m => m.ConsonantesPageModule)
     },
 ];
 let AppRoutingModule = class AppRoutingModule {

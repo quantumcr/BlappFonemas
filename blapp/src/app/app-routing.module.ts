@@ -35,6 +35,11 @@ const routes: Routes = [
     path: 'categoria',
     loadChildren: () => import('./pages/categoria/categoria.module').then( m => m.CategoriaPageModule)
   },
+  {
+    path: 'consonantes/:value',
+    loadChildren: () => import('./pages/consonantes/consonantes.module').then( m => m.ConsonantesPageModule)
+  },
+
 
 
 

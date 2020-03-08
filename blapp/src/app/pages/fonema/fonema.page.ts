@@ -1,6 +1,5 @@
 import { Component, OnInit, Output } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { VIDEOS } from '../../../data/data.videos';
 
 @Component({
   selector: 'app-fonema',

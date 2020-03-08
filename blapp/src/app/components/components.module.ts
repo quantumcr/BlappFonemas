@@ -35,15 +35,19 @@ import { CategoriesViewComponent } from './categories-view/categories-view.compo
 import { CategoriesBarComponent } from './categories-view/categories-bar/categories-bar.component';
 import { CategoriesViewPanelComponent } from './categories-view/categories-view-panel/categories-view-panel.component';
 import { NavigationComponent } from './navigation/navigation.component';
-import { PhonemeConsonantPanelComponent } from './phoneme-view/phoneme-consonant-panel/phoneme-consonant-panel.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
+import { PhonemeConsonantViewComponent } from './phoneme-consonant-view/phoneme-consonant-view.component';
+import { ConsonantBarComponent } from './phoneme-consonant-view/consonant-bar/consonant-bar.component';
+import { ConsonantPhonemePanelComponent } from './phoneme-consonant-view/consonant-phoneme-panel/consonant-phoneme-panel.component';
+import { ConsonantPhonemeVideoPanelComponent } from './phoneme-consonant-view/consonant-phoneme-video-panel/consonant-phoneme-video-panel.component';
 
 
 @NgModule({
   declarations: [LoginComponent,
     MenuPanelComponent, ProfessorMenuComponent, StudentsMenuComponent,
     PhonemeComponent, PhonemeBarComponent, VocalPanelComponent, ConsonantPanelComponent, PhonemeGamePanelComponent,
-    PhonemeViewComponent, BarComponent, PhonemePanelComponent, VideoPanelComponent, PhonemeConsonantPanelComponent,
+    PhonemeViewComponent, BarComponent, PhonemePanelComponent, VideoPanelComponent,
+    PhonemeConsonantViewComponent, ConsonantBarComponent, ConsonantPhonemePanelComponent, ConsonantPhonemeVideoPanelComponent,
     SemanticsComponent, SemanticsBarComponent, CategoriesPanelComponent, SemanticsGamePanelComponent,
     SubcategoriesComponent, SubcategoriesBarComponent, SubcategoriesPanelComponent,
     CategoriesViewComponent, CategoriesBarComponent, CategoriesViewPanelComponent,
@@ -55,7 +59,8 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
   exports: [LoginComponent,
     MenuPanelComponent, ProfessorMenuComponent, StudentsMenuComponent,
     PhonemeComponent, PhonemeBarComponent, VocalPanelComponent, ConsonantPanelComponent, PhonemeGamePanelComponent,
-    PhonemeViewComponent, BarComponent, PhonemePanelComponent, VideoPanelComponent, PhonemeConsonantPanelComponent,
+    PhonemeViewComponent, BarComponent, PhonemePanelComponent, VideoPanelComponent,
+    PhonemeConsonantViewComponent, ConsonantBarComponent, ConsonantPhonemePanelComponent, ConsonantPhonemeVideoPanelComponent,
     SemanticsComponent, SemanticsBarComponent, CategoriesPanelComponent, SemanticsGamePanelComponent,
     SubcategoriesComponent, SubcategoriesBarComponent, SubcategoriesPanelComponent,
     CategoriesViewComponent, CategoriesBarComponent, CategoriesViewPanelComponent,

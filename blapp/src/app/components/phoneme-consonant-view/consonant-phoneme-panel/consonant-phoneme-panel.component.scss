@@ -1,0 +1,64 @@
+.principal{
+    width: 818px;
+    height: 624px;
+    background: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;    
+}
+.audioFonema{
+    
+    text-align: center;
+    margin-left: 226px;
+    margin-right: 235px;
+    margin-top: 55px;
+}
+.imagen{
+    width: 287px;
+    height: 287px;    
+}
+.btnPlay{
+    width: 103px;
+    height: 103px;   
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);  
+    border-radius: 100px;  
+    background: #7A84DD;
+}
+.rowPalabra{
+    margin-left: 309px;
+    margin-right: 318px;
+}
+.palabra{
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 90px;
+    text-align: center;  
+    color: #109CF1;  
+}
+.rowSilaba{
+    margin-top: 50px;
+    margin-left: 53px;
+    margin-right: 62px;
+}
+.silaba{
+    width: 87px;
+    height: 87px;
+    border-radius: 100px;
+    margin-left: auto;
+    margin-right:auto;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 52px;
+    text-transform: initial;
+
+    background: #A9B0F0;
+    color: #5F659C;
+}

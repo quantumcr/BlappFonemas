@@ -6,11 +6,13 @@ import { NavController } from '@ionic/angular';
   styleUrls: ['./consonant-panel.component.scss'],
 })
 export class ConsonantPanelComponent implements OnInit {
-
+  value:string;
   constructor(private navCtrl: NavController) { }
 
   ngOnInit() {}
-  goToPhoneme($event: any) {
-    this.navCtrl.navigateForward('/fonema');
+  goToPhoneme(event: any) {
+    console.log(event.target.value);
+    this.value = event.target.value;
+    this.navCtrl.navigateForward(['/consonantes',this.value]);
   }
 }
