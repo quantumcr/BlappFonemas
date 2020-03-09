@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { MiembrosFamilia } from '../../../../../models/student';
 
 @Component({
   selector: 'app-family-info',
@@ -6,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./family-info.component.scss'],
 })
 export class FamilyInfoComponent implements OnInit {
+  @Input() familia: MiembrosFamilia[];
 
   constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    console.log(this.familia);
+  }
 
 }

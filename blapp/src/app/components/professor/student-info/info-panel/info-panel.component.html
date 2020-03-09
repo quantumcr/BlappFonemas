@@ -4,21 +4,98 @@
       <ion-row class="info">  
         <ion-grid>
           <ion-row>
-            <ion-label class="titulo">Información Personal</ion-label>
+            <ion-label class="titulo" (click)="prueba()">Información Personal</ion-label>
           </ion-row>
           <ion-row>
-            <app-personal-info [student]="student" [user]="user"></app-personal-info>
+
+              <div>
+                <ion-grid>
+                  <ion-row>
+                    <ion-col>
+                      <ion-item lines="none" class="item">
+                        <ion-label class="label">Nombre:</ion-label>
+                        <ion-input id="nombre" class="inputInfoPersonal" [(ngModel)]="student.nombre"></ion-input>
+                      </ion-item>
+                      <ion-item lines="none" class="item">
+                        <ion-label class="label">Cédula:</ion-label>
+                        <ion-input id="cedula" class="inputInfoPersonal" [(ngModel)]="student.cedula"></ion-input>
+                      </ion-item>
+                      <ion-item lines="none" class="item">
+                        <ion-label class="label">Género:</ion-label>
+                        <ion-input id="sexo" class="inputInfoPersonal" [(ngModel)]="student.sexo"></ion-input>
+                      </ion-item>
+                      <ion-item lines="none" class="item">
+                        <ion-label class="label">Edad:</ion-label>
+                        <ion-input id="edad" type="number" class="inputInfoPersonal" [(ngModel)]="student.edad"></ion-input>
+                      </ion-item>
+                      <ion-item lines="none" class="item">
+                        <ion-label class="label">Email:</ion-label>
+                        <ion-input id="email" type="email" class="inputInfoPersonal" [(ngModel)]="user.email"></ion-input>
+                      </ion-item>
+                    </ion-col>
+                    <ion-col>
+                      <ion-item lines="none" class="item">
+                        <ion-label class="label">Encargado:</ion-label>
+                        <ion-input id="encargado_nombre" class="inputInfoPersonal" [(ngModel)]="student.encargadoLegal.nombre"></ion-input>
+                      </ion-item>
+                      <ion-item lines="none" class="item">
+                        <ion-label class="label">Profesión:</ion-label>
+                        <ion-input id="encargado_profesion" class="inputInfoPersonal" [(ngModel)]="student.encargadoLegal.profesion"></ion-input>
+                      </ion-item>
+                      <ion-item lines="none" class="item">
+                        <ion-label class="label">Teléfono:</ion-label>
+                        <ion-input id="encargado_telefono" class="inputInfoPersonal" [(ngModel)]="student.encargadoLegal.telefono"></ion-input>
+                      </ion-item>
+                      <ion-item lines="none" class="item">
+                        <ion-label class="label">Dirección:</ion-label>
+                        <ion-input id="encargado_direccion" class="inputInfoPersonal" [(ngModel)]="student.encargadoLegal.direccion"></ion-input>
+                      </ion-item>
+                      <ion-item lines="none" class="item">
+                        <ion-label class="label">Password:</ion-label>
+                        <ion-input id="password" type="password" class="inputInfoPersonal" [(ngModel)]="user.password"></ion-input>
+                      </ion-item>
+                    </ion-col>
+                  </ion-row>
+                </ion-grid>
+              </div>
+            
+            <!--<app-personal-info [student]="student" [user]="user"></app-personal-info>-->
           </ion-row>
         </ion-grid>
       </ion-row>
       <ion-row>
         <ion-col class="infoFamilia">
           <ion-label class="titulo">Familia</ion-label>
-          <app-family-info></app-family-info>
+
+          <ion-list class="list">
+            <ion-item lines="none" *ngFor="let family_member of student.familia">
+              <ion-col>
+                <ion-row>
+                  <ion-label>{{"Nombre " + family_member.relacion + ":"}}</ion-label>
+                </ion-row>
+                <ion-row>
+                  <ion-input class="input" [(ngModel)]="family_member.nombre"></ion-input>
+                </ion-row>
+              </ion-col>      
+            </ion-item>
+          </ion-list>
+          
+          <!--<app-family-info [familia]="student.familia"></app-family-info>-->
         </ion-col>
         <ion-col class="infoAlimentos">
           <ion-label class="titulo">Alimentos</ion-label>
-          <app-food-info [alimetacion]="student.alimentacion"></app-food-info>          
+            <ion-list class="list">
+              <ion-item lines="none" *ngFor="let alimento of student.alimentacion" (click)="changeSelected(alimento)">
+                <ion-label class="label" color="black">{{alimento.alimento}}</ion-label>
+                <ion-checkbox slot="start" mode="ios" color="success" checked={{alimento.seleccionado}}></ion-checkbox>        
+              </ion-item>
+            </ion-list>
+          <!--<app-food-info [alimetacion]="student.alimentacion"></app-food-info>-->
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+            <ion-button color="success" slot="start">Actualizar</ion-button>
         </ion-col>
       </ion-row>
     </ion-grid>

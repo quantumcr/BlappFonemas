@@ -1,8 +1,8 @@
 <div class="principal">
-  <ion-col>
-    <ion-item lines="none" *ngFor="let alimento of alimetacion">
+  <ion-list>
+    <ion-item lines="none" *ngFor="let alimento of alimetacion" (click)="changeSelected(alimento)">
       <ion-label class="label" color="black">{{alimento.alimento}}</ion-label>
-      <ion-radio slot="start" color="success" ></ion-radio>
+      <ion-checkbox slot="start" mode="ios" color="success" checked={{alimento.seleccionado}}></ion-checkbox>        
     </ion-item>
-  </ion-col>
+  </ion-list>
 </div>

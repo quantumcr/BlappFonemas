@@ -48,9 +48,26 @@ userCtrl.loginUser = (req, res, next) => {
     })(req, res, next);
 }
 
+userCtrl.putUser = async (req, res) => {
+    var params = { email: req.body.email, password: req.body.password };
+    console.log(params.password, req.body);
+    if (params.password == "") {
+        delete params.password;
+    } else {
+        const user = new User;
+        params.password = user.encryptPassword(req.body.password);
+    }
+    for(let prop in params) { if(!params[prop]) { delete params[prop]; } }
+    await User.findByIdAndUpdate(req.body._id, params, { habilitado: true }, (err, user) => {
+        if(err) { return res.status(501).json(err); }
+        return res.status(200).json( { message: "Updated User!!!" });
+    });
+}
+
 userCtrl.getUserWithIdStudent = async (req, res, next) => {
     await User.findOne({ idUsuario: req.params.idUsuario }, (err, user) => {
         if(err) { return res.status(501).json(err); }
+        user.password = "";
         return res.status(200).json(user);
     });
 }

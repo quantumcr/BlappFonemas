@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { NavController } from '@ionic/angular';
 import { AuthenticationService } from '../../../services/authentication.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-students-menu',
@@ -15,7 +16,8 @@ export class StudentsMenuComponent implements OnInit {
 
   constructor(
     private navCtrl: NavController,
-    public authenticationService: AuthenticationService
+    public authenticationService: AuthenticationService,
+    private router: Router
     ) { }
 
   ngOnInit() {}
@@ -25,4 +27,8 @@ export class StudentsMenuComponent implements OnInit {
     this.navCtrl.navigateForward('/' + event.target.value);
   }
 
+  logout(){
+    this.authenticationService.logout();
+    this.router.navigateByUrl('/');
+  }
 }
