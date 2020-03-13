@@ -321,7 +321,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"principal\">\n  <ion-grid >\n    <ion-row>\n      <ion-col>\n        <ion-segment-button value='back' class=\"btnBack\" (click)='back($event)'>\n          <ion-icon class=\"backIcon\"></ion-icon>\n        </ion-segment-button>\n      </ion-col>\n      <ion-col >\n        <ion-segment-button value=\"home\" class=\"btnHome\" (click)=\"goToHome($event)\">\n          <ion-icon class=\"homeIcon\"></ion-icon>\n        </ion-segment-button>\n      </ion-col>\n      \n      <ion-col >\n        <ion-segment-button value='forward' class=\"btnForward\" (click)=\"forward($event)\">\n          <ion-icon class=\"forwardIcon\"></ion-icon>\n        </ion-segment-button>\n      </ion-col>      \n    </ion-row>\n  </ion-grid>\n</div>\n";
+    __webpack_exports__["default"] = "<div class=\"principal\">\r\n  <ion-grid >\r\n    <ion-row>\r\n      <ion-col>\r\n        <ion-segment-button value='back' class=\"btnBack\" (click)='back($event)'>\r\n          <ion-icon class=\"backIcon\"></ion-icon>\r\n        </ion-segment-button>\r\n      </ion-col>\r\n      <ion-col >\r\n        <ion-segment-button value=\"home\" class=\"btnHome\" (click)=\"goToHome($event)\">\r\n          <ion-icon class=\"homeIcon\"></ion-icon>\r\n        </ion-segment-button>\r\n      </ion-col>\r\n      \r\n      <ion-col >\r\n        <ion-segment-button value='forward' class=\"btnForward\" (click)=\"forward($event)\">\r\n          <ion-icon class=\"forwardIcon\"></ion-icon>\r\n        </ion-segment-button>\r\n      </ion-col>      \r\n    </ion-row>\r\n  </ion-grid>\r\n</div>\r\n";
     /***/
   },
 
