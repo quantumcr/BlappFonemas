@@ -1,0 +1,37 @@
+<div class="principal">
+  <ion-grid>
+    <ion-row class="rowSilaba">
+        <ion-col>
+          <ion-segment-button value='0' fill="round" class="silaba" (click)="playAudioS($event)">{{silaba1}}</ion-segment-button>
+        </ion-col>
+        <ion-col>
+          <ion-segment-button value= '1' fill="round"  class="silaba" (click)="playAudioS($event)">{{silaba2}}</ion-segment-button>
+        </ion-col>
+        <ion-col>
+          <ion-segment-button value='2' fill="round"  class="silaba" (click)="playAudioS($event)">{{silaba3}}</ion-segment-button>
+        </ion-col>
+        <ion-col>
+          <ion-segment-button value='3' fill="round"  class="silaba" (click)="playAudioS($event)">{{silaba4}}</ion-segment-button>
+        </ion-col>
+        <ion-col>
+          <ion-segment-button value='4' fill="round"  class="silaba" (click)="playAudioS($event)">{{silaba5}}</ion-segment-button>
+        </ion-col> 
+    </ion-row>
+    <ion-row class="audioFonema">
+      <div>
+        <div>
+          <ion-img src={{imagen}}  class="imagen"></ion-img>
+        </div>
+
+        <div style="position: absolute; left: 227px; top: 346px;">
+          <ion-segment-button value="audio" class="btnPlay" (click)="playAudio($event)">
+            <ion-icon src="assets/icon/play.svg"></ion-icon>
+          </ion-segment-button>
+        </div>
+      </div>    
+    </ion-row>
+    <ion-row>
+      <ion-label class="palabra">{{palabra}}</ion-label>
+    </ion-row>
+  </ion-grid>
+</div>

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-fonema',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./fonema.page.scss'],
 })
 export class FonemaPage implements OnInit {
-
-  constructor() { }
+  valueFonema = null;
+  mensajeFonema: string;
+  constructor(private activateRoute: ActivatedRoute) { }
 
   ngOnInit() {
+    this.valueFonema = this.activateRoute.snapshot.paramMap.get('value');
+    console.log(this.valueFonema);
   }
+
+
 
 }

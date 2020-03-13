@@ -26,10 +26,20 @@ const routes: Routes = [
   {
     path: 'estudiantes',
     loadChildren: () => import('./pages/estudiantes/estudiantes.module').then( m => m.EstudiantesPageModule)
-  },  {
-    path: 'fonema',
+  },
+  {
+    path: 'fonema/:value',
     loadChildren: () => import('./pages/fonema/fonema.module').then( m => m.FonemaPageModule)
   },
+  {
+    path: 'categoria',
+    loadChildren: () => import('./pages/categoria/categoria.module').then( m => m.CategoriaPageModule)
+  },
+  {
+    path: 'consonantes/:value',
+    loadChildren: () => import('./pages/consonantes/consonantes.module').then( m => m.ConsonantesPageModule)
+  },
+
 
 
 

@@ -1,0 +1,18 @@
+<div class="principal">
+  <ion-grid>
+    <ion-row>
+      <ion-col class="bar">
+        <app-consonant-bar [fonema]="valueFonemaView" [imagen]="videoData.imagen" [mensaje]="videoData.mensaje"  (barEvent)="selectPanel($event)" ></app-consonant-bar>
+      </ion-col>
+      <ion-col class="panel">
+        <app-consonant-phoneme-panel [fonema]="valueFonemaView" *ngIf="visiblePhoneme" [comando]="comandoFonema"></app-consonant-phoneme-panel>
+        <app-consonant-phoneme-video-panel [video]="videoData.video" *ngIf="visibleVideo"></app-consonant-phoneme-video-panel>
+      </ion-col>
+    </ion-row>
+    <ion-row class="navigation">
+      <ion-col>
+        <app-navigation></app-navigation>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>

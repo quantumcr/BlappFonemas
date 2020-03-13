@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { NavController } from '@ionic/angular';
 @Component({
   selector: 'app-vocal-panel',
@@ -6,13 +6,15 @@ import { NavController } from '@ionic/angular';
   styleUrls: ['./vocal-panel.component.scss'],
 })
 export class VocalPanelComponent implements OnInit {
-
+  value: string;
   constructor(private navCtrl: NavController) { }
 
   ngOnInit() {}
 
   goToPhoneme(event: any) {
-    this.navCtrl.navigateForward('/fonema');
+    console.log(event.target.value);
+    this.value = event.target.value;
+    this.navCtrl.navigateForward(['/fonema', this.value]);
   }
 
 }

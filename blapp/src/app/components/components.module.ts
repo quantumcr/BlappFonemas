@@ -29,33 +29,53 @@ import { PhonemeViewComponent } from './phoneme-view/phoneme-view.component';
 import { BarComponent } from './phoneme-view/bar/bar.component';
 import { PhonemePanelComponent } from './phoneme-view/phoneme-panel/phoneme-panel.component';
 import { VideoPanelComponent } from './phoneme-view/video-panel/video-panel.component';
+import { CategoriesViewComponent } from './categories-view/categories-view.component';
+import { CategoriesBarComponent } from './categories-view/categories-bar/categories-bar.component';
+import { CategoriesViewPanelComponent } from './categories-view/categories-view-panel/categories-view-panel.component';
+import { NavigationComponent } from './navigation/navigation.component';
+import { DragDropModule } from '@angular/cdk/drag-drop';
+import { PhonemeConsonantViewComponent } from './phoneme-consonant-view/phoneme-consonant-view.component';
+import { ConsonantBarComponent } from './phoneme-consonant-view/consonant-bar/consonant-bar.component';
+import { ConsonantPhonemePanelComponent } from './phoneme-consonant-view/consonant-phoneme-panel/consonant-phoneme-panel.component';
+import { ConsonantPhonemeVideoPanelComponent } from'./phoneme-consonant-view/consonant-phoneme-video-panel/consonant-phoneme-video-panel.component';
+import { CategoriesNavigationComponent } from './categories-view/categories-navigation/categories-navigation.component';
+import { PhonemeNavigationComponent } from './phoneme-view/phoneme-navigation/phoneme-navigation.component';
+import { ConsonantNavigationComponent } from './phoneme-consonant-view/consonant-navigation/consonant-navigation.component';
+
+
 
 
 @NgModule({
   declarations: [LoginComponent,
     MenuPanelComponent, ProfessorMenuComponent, StudentsMenuComponent,
     PhonemeComponent, PhonemeBarComponent, VocalPanelComponent, ConsonantPanelComponent, PhonemeGamePanelComponent,
-    PhonemeViewComponent, BarComponent, PhonemePanelComponent, VideoPanelComponent,
+    PhonemeViewComponent, BarComponent, PhonemePanelComponent, VideoPanelComponent,PhonemeNavigationComponent,
+    PhonemeConsonantViewComponent, ConsonantBarComponent, ConsonantPhonemePanelComponent, ConsonantPhonemeVideoPanelComponent,
+    ConsonantNavigationComponent,
     SemanticsComponent, SemanticsBarComponent, CategoriesPanelComponent, SemanticsGamePanelComponent,
     SubcategoriesComponent, SubcategoriesBarComponent, SubcategoriesPanelComponent,
+    CategoriesViewComponent, CategoriesBarComponent, CategoriesViewPanelComponent, CategoriesNavigationComponent,
     ProfessorComponent, ListComponent, RegisterComponent, StudentInfoComponent,
     FunctionBarComponent, InfoPanelComponent, StudentsBarComponent, SubcategoriesComponent,
-    SubcategoriesBarComponent, SubcategoriesPanelComponent],
+    SubcategoriesBarComponent, SubcategoriesPanelComponent, NavigationComponent],
 
   exports: [LoginComponent,
     MenuPanelComponent, ProfessorMenuComponent, StudentsMenuComponent,
     PhonemeComponent, PhonemeBarComponent, VocalPanelComponent, ConsonantPanelComponent, PhonemeGamePanelComponent,
-    PhonemeViewComponent, BarComponent, PhonemePanelComponent, VideoPanelComponent,
+    PhonemeViewComponent, BarComponent, PhonemePanelComponent, VideoPanelComponent, PhonemeNavigationComponent,
+    PhonemeConsonantViewComponent, ConsonantBarComponent, ConsonantPhonemePanelComponent, ConsonantPhonemeVideoPanelComponent,
     SemanticsComponent, SemanticsBarComponent, CategoriesPanelComponent, SemanticsGamePanelComponent,
     SubcategoriesComponent, SubcategoriesBarComponent, SubcategoriesPanelComponent,
+    CategoriesViewComponent, CategoriesBarComponent, CategoriesViewPanelComponent, CategoriesNavigationComponent,
     ProfessorComponent, ListComponent, RegisterComponent, StudentInfoComponent,
     FunctionBarComponent, InfoPanelComponent, StudentsBarComponent, SubcategoriesComponent,
-    SubcategoriesBarComponent, SubcategoriesPanelComponent],
+    SubcategoriesBarComponent, SubcategoriesPanelComponent, NavigationComponent],
   imports: [
     CommonModule,
     IonicModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    DragDropModule
   ]
 })
 export class ComponentsModule { }

@@ -13,6 +13,9 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AuthenticationService } from './services/authentication.service';
 import { UserService } from './services/user.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DragDropModule } from '@angular/cdk/drag-drop';
+
 
 @NgModule({
   declarations: [AppComponent],
@@ -23,7 +26,9 @@ import { UserService } from './services/user.service';
     AppRoutingModule, 
     HttpClientModule, 
     FormsModule,
-    ReactiveFormsModule  
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    DragDropModule
   ],
   providers: [
     StatusBar,

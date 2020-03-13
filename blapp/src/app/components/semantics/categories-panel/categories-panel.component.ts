@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { NavController } from '@ionic/angular';
 @Component({
   selector: 'app-categories-panel',
   templateUrl: './categories-panel.component.html',
@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CategoriesPanelComponent implements OnInit {
 
-  constructor() { }
+  constructor(private navCtrl: NavController) { }
 
   ngOnInit() {}
-  goToPhoneme($event: any){}
+  goToCategories($event: any) {
+    this.navCtrl.navigateForward('/categoria');
+  }
 
 }

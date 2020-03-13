@@ -2,12 +2,17 @@
   <ion-grid>
     <ion-row>
       <ion-col class="bar">
-        <app-semantics-bar titulo="CATEGORÍAS" titulo2="SEMÁNTICAS" comando1="CATEGORÍAS" comando2="JUGAR"(semanticsBarEvent)="selectPanel($event)" ></app-semantics-bar>
+        <app-semantics-bar titulo="CATEGORÍAS" titulo2="SEMÁNTICAS" comando1="CATEGORÍAS" comando2="JUGAR" (semanticsBarEvent)="selectPanel($event)" ></app-semantics-bar>
       </ion-col>
       <ion-col class="panel">
         <app-categories-panel *ngIf="visibleCategories"></app-categories-panel>
         <app-semantics-game-panel *ngIf="visibleGame"></app-semantics-game-panel>
       </ion-col>
     </ion-row>
+    <ion-row class="navigation">
+      <ion-col>
+        <app-navigation></app-navigation>
+      </ion-col>
+    </ion-row>       
   </ion-grid>
 </div>
