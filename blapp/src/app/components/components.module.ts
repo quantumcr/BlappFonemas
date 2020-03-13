@@ -40,24 +40,18 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
 import { PhonemeConsonantViewComponent } from './phoneme-consonant-view/phoneme-consonant-view.component';
 import { ConsonantBarComponent } from './phoneme-consonant-view/consonant-bar/consonant-bar.component';
 import { ConsonantPhonemePanelComponent } from './phoneme-consonant-view/consonant-phoneme-panel/consonant-phoneme-panel.component';
-import { ConsonantPhonemeVideoPanelComponent } from'./phoneme-consonant-view/consonant-phoneme-video-panel/consonant-phoneme-video-panel.component';
-import { CategoriesNavigationComponent } from './categories-view/categories-navigation/categories-navigation.component';
-import { PhonemeNavigationComponent } from './phoneme-view/phoneme-navigation/phoneme-navigation.component';
-import { ConsonantNavigationComponent } from './phoneme-consonant-view/consonant-navigation/consonant-navigation.component';
-
-
+import { ConsonantPhonemeVideoPanelComponent } from './phoneme-consonant-view/consonant-phoneme-video-panel/consonant-phoneme-video-panel.component';
 
 
 @NgModule({
   declarations: [LoginComponent,
     MenuPanelComponent, ProfessorMenuComponent, StudentsMenuComponent,
     PhonemeComponent, PhonemeBarComponent, VocalPanelComponent, ConsonantPanelComponent, PhonemeGamePanelComponent,
-    PhonemeViewComponent, BarComponent, PhonemePanelComponent, VideoPanelComponent,PhonemeNavigationComponent,
+    PhonemeViewComponent, BarComponent, PhonemePanelComponent, VideoPanelComponent,
     PhonemeConsonantViewComponent, ConsonantBarComponent, ConsonantPhonemePanelComponent, ConsonantPhonemeVideoPanelComponent,
-    ConsonantNavigationComponent,
     SemanticsComponent, SemanticsBarComponent, CategoriesPanelComponent, SemanticsGamePanelComponent,
     SubcategoriesComponent, SubcategoriesBarComponent, SubcategoriesPanelComponent,
-    CategoriesViewComponent, CategoriesBarComponent, CategoriesViewPanelComponent, CategoriesNavigationComponent,
+    CategoriesViewComponent, CategoriesBarComponent, CategoriesViewPanelComponent,
     ProfessorComponent, ListComponent, RegisterComponent, StudentInfoComponent,
     FunctionBarComponent, InfoPanelComponent, StudentsBarComponent, PersonalInfoComponent, FamilyInfoComponent,
     FoodInfoComponent, SubcategoriesComponent,
@@ -66,11 +60,11 @@ import { ConsonantNavigationComponent } from './phoneme-consonant-view/consonant
   exports: [LoginComponent,
     MenuPanelComponent, ProfessorMenuComponent, StudentsMenuComponent,
     PhonemeComponent, PhonemeBarComponent, VocalPanelComponent, ConsonantPanelComponent, PhonemeGamePanelComponent,
-    PhonemeViewComponent, BarComponent, PhonemePanelComponent, VideoPanelComponent, PhonemeNavigationComponent,
+    PhonemeViewComponent, BarComponent, PhonemePanelComponent, VideoPanelComponent,
     PhonemeConsonantViewComponent, ConsonantBarComponent, ConsonantPhonemePanelComponent, ConsonantPhonemeVideoPanelComponent,
     SemanticsComponent, SemanticsBarComponent, CategoriesPanelComponent, SemanticsGamePanelComponent,
     SubcategoriesComponent, SubcategoriesBarComponent, SubcategoriesPanelComponent,
-    CategoriesViewComponent, CategoriesBarComponent, CategoriesViewPanelComponent, CategoriesNavigationComponent,
+    CategoriesViewComponent, CategoriesBarComponent, CategoriesViewPanelComponent,
     ProfessorComponent, ListComponent, RegisterComponent, StudentInfoComponent,
     FunctionBarComponent, InfoPanelComponent, StudentsBarComponent, SubcategoriesComponent,
     SubcategoriesBarComponent, SubcategoriesPanelComponent, PersonalInfoComponent, FamilyInfoComponent,

@@ -1,73 +1,298 @@
+
 export const CATEGORIAS = [
     {
         nombre: 'Imagen de mí mismo',
-        imagen: 'assets/img/semanticas/categories-bar/imagen.png',
-        subcategoria: []
-    },
-    {
-        nombre: 'Partes del Cuerpo',
-        imagen: 'assets/img/semanticas/categories-bar/cuerpo.png',
-        subcategoria: []
-    },
-    {
-        nombre: 'Familia',
-        imagen: 'assets/img/semanticas/categories-bar/familia.png',
-        subcategoria: []
-    },
-    {
-        nombre: 'Alimentos',
-        imagen: 'assets/img/semanticas/categories-bar/alimentos.png',
-        subcategoria: [
-            {nombre: 'Frutas'},
-            {nombre: 'Vegetales'},
-            {nombre: 'Alimentos Salados'},
-            {nombre: 'Alimentos Dulces'},
-            {nombre: 'Bebidas'}
+        data: [
+            {
+                sujeto: 'Este',
+                verbo: 'soy',
+                predicado: ' yo',
+                imagenSujeto: '',
+                imagenVerbo: '',
+                imagenPredicado: '',
+            },
+            {
+                sujeto: 'Yo',
+                verbo: 'me llamo',
+                predicado: 'Nombre',
+                imagenSujeto: '',
+                imagenVerbo: '',
+                imagenPredicado: '',
+            },
+            {
+                sujeto: 'Yo',
+                verbo: 'vivo',
+                predicado: 'lugar',
+                imagenSujeto: '',
+                imagenVerbo: '',
+                imagenPredicado: '',
+            },
+            {
+                sujeto: 'Yo',
+                verbo: 'Estoy',
+                predicado: 'en el Centro de Apoyos Hospital Calderón Guardia',
+                imagenSujeto: '',
+                imagenVerbo: '',
+                imagenPredicado: '',
+            },
         ]
     },
     {
-        nombre: 'Animales',
-        imagen: 'assets/img/semanticas/categories-bar/animales.png',
-        subcategoria: [
-            {nombre: 'Animales de la Granja'},
-            {nombre: 'Animales Domésticos'},
-            {nombre: 'Salvajes'}
-        ]
+        categoria: 'Partes del Cuerpo',
+        data: [
+            {
+                sujeto: 'Yo',
+                verbo: ' tengo',
+                predicado: 'cabeza',
+                imagenSujeto: '',
+                imagenVerbo: '',
+                imagenPredicado: '',
+            },
+            {
+                sujeto: 'Yo',
+                verbo: ' tengo',
+                predicado: 'pelo',
+                imagenSujeto: '',
+                imagenVerbo: '',
+                imagenPredicado: '',
+            },
+            {
+                sujeto: 'Yo',
+                verbo: ' tengo',
+                predicado: 'cara',
+                imagenSujeto: '',
+                imagenVerbo: '',
+                imagenPredicado: '',
+            },
+            {
+                sujeto: 'Yo',
+                verbo: ' tengo',
+                predicado: 'frente',
+                imagenSujeto: '',
+                imagenVerbo: '',
+                imagenPredicado: '',
+            },
+            {
+                sujeto: 'Yo',
+                verbo: ' tengo',
+                predicado: 'mejillas',
+                imagenSujeto: '',
+                imagenVerbo: '',
+                imagenPredicado: '',
+            },
+            {
+                sujeto: 'Yo',
+                verbo: ' tengo',
+                predicado: 'ojos',
+                imagenSujeto: '',
+                imagenVerbo: '',
+                imagenPredicado: '',
+            },
+            {
+                sujeto: 'Yo',
+                verbo: ' tengo',
+                predicado: 'cejas',
+                imagenSujeto: '',
+                imagenVerbo: '',
+                imagenPredicado: '',
+            },
+            {
+                sujeto: 'Yo',
+                verbo: ' tengo',
+                predicado: 'pestaña',
+                imagenSujeto: '',
+                imagenVerbo: '',
+                imagenPredicado: '',
+            },
+            {
+                sujeto: 'Yo',
+                verbo: ' tengo',
+                predicado: 'nariz',
+                imagenSujeto: '',
+                imagenVerbo: '',
+                imagenPredicado: '',
+            },
+            {
+                sujeto: 'Yo',
+                verbo: ' tengo',
+                predicado: 'boca',
+                imagenSujeto: '',
+                imagenVerbo: '',
+                imagenPredicado: '',
+            },
+            {
+                sujeto: 'Yo',
+                verbo: ' tengo',
+                predicado: 'dientes',
+                imagenSujeto: '',
+                imagenVerbo: '',
+                imagenPredicado: '',
+            },
+            {
+                sujeto: 'Yo',
+                verbo: ' tengo',
+                predicado: 'lengua',
+                imagenSujeto: '',
+                imagenVerbo: '',
+                imagenPredicado: '',
+            },
+            {
+                sujeto: 'Yo',
+                verbo: ' tengo',
+                predicado: 'labios',
+                imagenSujeto: '',
+                imagenVerbo: '',
+                imagenPredicado: '',
+            },
+            {
+                sujeto: 'Yo',
+                verbo: ' tengo',
+                predicado: 'barbilla',
+                imagenSujeto: '',
+                imagenVerbo: '',
+                imagenPredicado: '',
+            },
+            {
+                sujeto: 'Yo',
+                verbo: ' tengo',
+                predicado: 'orejas',
+                imagenSujeto: '',
+                imagenVerbo: '',
+                imagenPredicado: '',
+            },
+            {
+                sujeto: 'Yo',
+                verbo: ' tengo',
+                predicado: 'cuello',
+                imagenSujeto: '',
+                imagenVerbo: '',
+                imagenPredicado: '',
+            },
+            {
+                sujeto: 'Yo',
+                verbo: ' tengo',
+                predicado: 'nuca',
+                imagenSujeto: '',
+                imagenVerbo: '',
+                imagenPredicado: '',
+            },
+            {
+                sujeto: 'Yo',
+                verbo: ' tengo',
+                predicado: 'espalda',
+                imagenSujeto: '',
+                imagenVerbo: '',
+                imagenPredicado: '',
+            },
+            {
+                sujeto: 'Yo',
+                verbo: ' tengo',
+                predicado: 'hombros',
+                imagenSujeto: '',
+                imagenVerbo: '',
+                imagenPredicado: '',
+            },
+            {
+                sujeto: 'Yo',
+                verbo: ' tengo',
+                predicado: 'estómago',
+                imagenSujeto: '',
+                imagenVerbo: '',
+                imagenPredicado: '',
+            },
+            {
+                sujeto: 'Yo',
+                verbo: ' tengo',
+                predicado: 'brazos',
+                imagenSujeto: '',
+                imagenVerbo: '',
+                imagenPredicado: '',
+            },
+            {
+                sujeto: 'Yo',
+                verbo: ' tengo',
+                predicado: 'codos',
+                imagenSujeto: '',
+                imagenVerbo: '',
+                imagenPredicado: '',
+            },
+            {
+                sujeto: 'Yo',
+                verbo: ' tengo',
+                predicado: 'manos',
+                imagenSujeto: '',
+                imagenVerbo: '',
+                imagenPredicado: '',
+            },
+            {
+                sujeto: 'Yo',
+                verbo: ' tengo',
+                predicado: 'dedos',
+                imagenSujeto: '',
+                imagenVerbo: '',
+                imagenPredicado: '',
+            },
+            {
+                sujeto: 'Yo',
+                verbo: ' tengo',
+                predicado: 'uñas',
+                imagenSujeto: '',
+                imagenVerbo: '',
+                imagenPredicado: '',
+            },
+            {
+                sujeto: 'Yo',
+                verbo: ' tengo',
+                predicado: 'cintura',
+                imagenSujeto: '',
+                imagenVerbo: '',
+                imagenPredicado: '',
+            },
+            {
+                sujeto: 'Yo',
+                verbo: ' tengo',
+                predicado: 'piernas',
+                imagenSujeto: '',
+                imagenVerbo: '',
+                imagenPredicado: '',
+            },
+            {
+                sujeto: 'Yo',
+                verbo: ' tengo',
+                predicado: 'rodillas',
+                imagenSujeto: '',
+                imagenVerbo: '',
+                imagenPredicado: '',
+            },
+            {
+                sujeto: 'Yo',
+                verbo: ' tengo',
+                predicado: 'tobillos',
+                imagenSujeto: '',
+                imagenVerbo: '',
+                imagenPredicado: '',
+            },
+            {
+                sujeto: 'Yo',
+                verbo: ' tengo',
+                predicado: 'talones',
+                imagenSujeto: '',
+                imagenVerbo: '',
+                imagenPredicado: '',
+            },
+            {
+                sujeto: 'Yo',
+                verbo: ' tengo',
+                predicado: 'pies',
+                imagenSujeto: '',
+                imagenVerbo: '',
+                imagenPredicado: '',
+            }
+        ],
     },
     {
-        nombre: 'Juguetes',
-        imagen: 'assets/img/semanticas/categories-bar/juguetes.png',
-        subcategoria: [
-            {nombre: ''}
-        ]
-    },
-    {
-        nombre: 'Prendas de Vestir',
-        imagen: 'assets/img/semanticas/categories-bar/prendas.png',
-        subcategoria: [
-            {nombre: 'Ropa de Hombre'},
-            {nombre: 'Ropa de Mujer'},
-            {nombre: 'Ropa Interior'}
-        ]
-    },
-    {
-        nombre: 'Partes de la Casa',
-        imagen: 'assets/img/semanticas/categories-bar/casa.png',
-        subcategoria: []
-    },
-    {
-        nombre: 'Medios de Transporte',
-        imagen: 'assets/img/semanticas/categories-bar/transporte.png',
-        subcategoria: []
-    },
-    {
-        nombre: 'Servidores de la Comunidad',
-        imagen: 'assets/img/semanticas/categories-bar/servidores.png',
-        subcategoria: []
-    },
-    {
-        nombre: 'Instrumentos Musicales',
-        imagen: 'assets/img/semanticas/categories-bar/instrumentos.png',
-        subcategoria: []
+        categoria: 'Famlia',
+        
     }
+
 ];

@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-categories-view',
@@ -6,13 +6,9 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./categories-view.component.scss'],
 })
 export class CategoriesViewComponent implements OnInit {
-  @Input() valueSubCategoriaView: string;
-  @Input() valueCategoriaView: string;
-  comandoFonema: string;
+
   constructor() { }
 
   ngOnInit() {}
-
-  selectPanel(event: any) {}
 
 }
