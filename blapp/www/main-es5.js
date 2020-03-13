@@ -1331,7 +1331,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         _classCallCheck(this, UserService);
 
         this.http = http;
-        this.URL_API = 'http://localhost:3000/api/users';
+        this.URL_API = 'https://blapp.herokuapp.com/api/users';
       }
       /**
        * Servicio de creacion de un usuario

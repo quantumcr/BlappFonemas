@@ -992,7 +992,7 @@ __webpack_require__.r(__webpack_exports__);
 let UserService = class UserService {
     constructor(http) {
         this.http = http;
-        this.URL_API = 'http://localhost:3000/api/users';
+        this.URL_API = 'https://blapp.herokuapp.com/api/users';
     }
     /**
      * Servicio de creacion de un usuario

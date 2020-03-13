@@ -5501,7 +5501,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         _classCallCheck(this, StudentService);
 
         this.http = http;
-        this.URL_API = 'http://localhost:3000/api/students';
+        this.URL_API = 'https://blapp.herokuapp.com/api/students';
       }
 
       _createClass(StudentService, [{

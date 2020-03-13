@@ -3560,7 +3560,7 @@ __webpack_require__.r(__webpack_exports__);
 let StudentService = class StudentService {
     constructor(http) {
         this.http = http;
-        this.URL_API = 'http://localhost:3000/api/students';
+        this.URL_API = 'https://blapp.herokuapp.com/api/students';
     }
     createStudent(student) {
         return this.http.post(this.URL_API, student, { headers: { Authorization: `Bearer ${localStorage.getItem('token')}` } }).toPromise();
