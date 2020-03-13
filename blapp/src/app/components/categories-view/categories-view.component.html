@@ -1,3 +1,17 @@
-<div>
-
+<div class="principal">
+    <ion-grid>
+        <ion-row>
+          <ion-col class="bar">
+            <app-categories-bar [titulo]="valueCategoriaView"   (barEvent)="selectPanel($event)" ></app-categories-bar>
+          </ion-col>
+          <ion-col class="panel">
+            <app-categories-view-panel [subcategoria]="valueSubCategoriaView" ></app-categories-view-panel>
+          </ion-col>
+        </ion-row>
+        <ion-row class="navigation">
+          <ion-col>
+            <app-categories-navigation></app-categories-navigation>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
 </div>
