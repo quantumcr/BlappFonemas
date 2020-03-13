@@ -14,6 +14,9 @@ export class CategoriesNavigationComponent implements OnInit {
   goToHome(event: any) {
     this.navCtrl.navigateForward('/menu');
   }
-  goTo(event: any) {
+  forward(event: any) {
+  }
+  back(event: any){
+    
   }
 }
