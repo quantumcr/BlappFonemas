@@ -25,9 +25,6 @@ import { InfoPanelComponent } from './professor/student-info/info-panel/info-pan
 import { SubcategoriesComponent } from './semantics/subcategories/subcategories.component';
 import { SubcategoriesBarComponent } from './semantics/subcategories/subcategories-bar/subcategories-bar.component';
 import { SubcategoriesPanelComponent } from './semantics/subcategories/subcategories-panel/subcategories-panel.component';
-import { PersonalInfoComponent } from './professor/student-info/info-panel/personal-info/personal-info.component';
-import { FamilyInfoComponent } from './professor/student-info/info-panel/family-info/family-info.component';
-import { FoodInfoComponent } from './professor/student-info/info-panel/food-info/food-info.component';
 import { PhonemeViewComponent } from './phoneme-view/phoneme-view.component';
 import { BarComponent } from './phoneme-view/bar/bar.component';
 import { PhonemePanelComponent } from './phoneme-view/phoneme-panel/phoneme-panel.component';
@@ -59,9 +56,8 @@ import { ConsonantNavigationComponent } from './phoneme-consonant-view/consonant
     SubcategoriesComponent, SubcategoriesBarComponent, SubcategoriesPanelComponent,
     CategoriesViewComponent, CategoriesBarComponent, CategoriesViewPanelComponent, CategoriesNavigationComponent,
     ProfessorComponent, ListComponent, RegisterComponent, StudentInfoComponent,
-    FunctionBarComponent, InfoPanelComponent, StudentsBarComponent, PersonalInfoComponent, FamilyInfoComponent,
-    FoodInfoComponent, SubcategoriesComponent,
-    SubcategoriesBarComponent, SubcategoriesPanelComponent, FoodInfoComponent, NavigationComponent],
+    FunctionBarComponent, InfoPanelComponent, StudentsBarComponent, SubcategoriesComponent,
+    SubcategoriesBarComponent, SubcategoriesPanelComponent, NavigationComponent],
 
   exports: [LoginComponent,
     MenuPanelComponent, ProfessorMenuComponent, StudentsMenuComponent,
@@ -73,8 +69,7 @@ import { ConsonantNavigationComponent } from './phoneme-consonant-view/consonant
     CategoriesViewComponent, CategoriesBarComponent, CategoriesViewPanelComponent, CategoriesNavigationComponent,
     ProfessorComponent, ListComponent, RegisterComponent, StudentInfoComponent,
     FunctionBarComponent, InfoPanelComponent, StudentsBarComponent, SubcategoriesComponent,
-    SubcategoriesBarComponent, SubcategoriesPanelComponent, PersonalInfoComponent, FamilyInfoComponent,
-    FoodInfoComponent, NavigationComponent],
+    SubcategoriesBarComponent, SubcategoriesPanelComponent, NavigationComponent],
   imports: [
     CommonModule,
     IonicModule,

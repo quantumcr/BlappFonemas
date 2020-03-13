@@ -4,13 +4,15 @@ const path = require('path');
 const app = express();
 const passport = require('passport');
 const cors = require('cors');
+const dotenv = require('dotenv');
 
 // Initioalizations
-const { mongoose } = require('./database');
+dotenv.config();
+require('./database');
 require('./passport/local-auth');
 
 // Configuraciones
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT);
 
 // Middlewares
 app.use(morgan('dev'));
@@ -24,15 +26,6 @@ app.use('/api/students', require('./routes/students.routes'));
 
 // Static files
 app.use(express.static(path.join(__dirname, '../blapp/www')));
-
-// error handlers
-// Catch unauthorised errors
-app.use(function (err, req, res, next) {
-    if (err.name === 'UnauthorizedError') {
-        res.status(401);
-        res.json({"message" : err.name + ": " + err.message});
-    }
-});
 
 // Starting the server
 app.listen(app.get('port'), () => {

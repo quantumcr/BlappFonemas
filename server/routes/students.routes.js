@@ -4,7 +4,7 @@ const custom = require('../middlewares/custom');
 
 const studentCtrl = require('../controllers/student.controller');
 
-router.post('/', studentCtrl.createStudent);
+router.post('/', custom.ensureAuthenticated, studentCtrl.createStudent);
 router.get('/names', custom.ensureAuthenticated, studentCtrl.getNameStudents);
 router.get('/:id', custom.ensureAuthenticated, studentCtrl.getStudent);
 router.put('/disable', custom.ensureAuthenticated, studentCtrl.disableStudent);
