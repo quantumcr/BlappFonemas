@@ -158,7 +158,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     };
 
     EstudiantesPageModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
-      imports: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"], _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["IonicModule"], _estudiantes_routing_module__WEBPACK_IMPORTED_MODULE_5__["EstudiantesPageRoutingModule"], _components_components_module__WEBPACK_IMPORTED_MODULE_7__["ComponentsModule"]],
+      imports: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["ReactiveFormsModule"], _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["IonicModule"], _estudiantes_routing_module__WEBPACK_IMPORTED_MODULE_5__["EstudiantesPageRoutingModule"], _components_components_module__WEBPACK_IMPORTED_MODULE_7__["ComponentsModule"]],
       declarations: [_estudiantes_page__WEBPACK_IMPORTED_MODULE_6__["EstudiantesPage"]]
     })], EstudiantesPageModule);
     /***/

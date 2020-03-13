@@ -710,39 +710,39 @@ const routes = [
     { path: '', redirectTo: 'inicio', pathMatch: 'full' },
     {
         path: 'inicio',
-        loadChildren: () => Promise.all(/*! import() | pages-inicio-inicio-module */[__webpack_require__.e("default~pages-consonantes-consonantes-module~pages-docentes-docentes-module~pages-estudiantes-estudi~35c779d2"), __webpack_require__.e("pages-inicio-inicio-module")]).then(__webpack_require__.bind(null, /*! ./pages/inicio/inicio.module */ "./src/app/pages/inicio/inicio.module.ts")).then(m => m.InicioPageModule)
+        loadChildren: () => Promise.all(/*! import() | pages-inicio-inicio-module */[__webpack_require__.e("default~pages-categoria-categoria-module~pages-consonantes-consonantes-module~pages-docentes-docente~625ffebc"), __webpack_require__.e("pages-inicio-inicio-module")]).then(__webpack_require__.bind(null, /*! ./pages/inicio/inicio.module */ "./src/app/pages/inicio/inicio.module.ts")).then(m => m.InicioPageModule)
     },
     {
         path: 'menu',
-        loadChildren: () => Promise.all(/*! import() | pages-menu-menu-module */[__webpack_require__.e("default~pages-consonantes-consonantes-module~pages-docentes-docentes-module~pages-estudiantes-estudi~35c779d2"), __webpack_require__.e("pages-menu-menu-module")]).then(__webpack_require__.bind(null, /*! ./pages/menu/menu.module */ "./src/app/pages/menu/menu.module.ts")).then(m => m.MenuPageModule)
+        loadChildren: () => Promise.all(/*! import() | pages-menu-menu-module */[__webpack_require__.e("default~pages-categoria-categoria-module~pages-consonantes-consonantes-module~pages-docentes-docente~625ffebc"), __webpack_require__.e("pages-menu-menu-module")]).then(__webpack_require__.bind(null, /*! ./pages/menu/menu.module */ "./src/app/pages/menu/menu.module.ts")).then(m => m.MenuPageModule)
     },
     {
         path: 'docentes',
-        loadChildren: () => Promise.all(/*! import() | pages-docentes-docentes-module */[__webpack_require__.e("default~pages-consonantes-consonantes-module~pages-docentes-docentes-module~pages-estudiantes-estudi~35c779d2"), __webpack_require__.e("pages-docentes-docentes-module")]).then(__webpack_require__.bind(null, /*! ./pages/docentes/docentes.module */ "./src/app/pages/docentes/docentes.module.ts")).then(m => m.DocentesPageModule)
+        loadChildren: () => Promise.all(/*! import() | pages-docentes-docentes-module */[__webpack_require__.e("default~pages-categoria-categoria-module~pages-consonantes-consonantes-module~pages-docentes-docente~625ffebc"), __webpack_require__.e("pages-docentes-docentes-module")]).then(__webpack_require__.bind(null, /*! ./pages/docentes/docentes.module */ "./src/app/pages/docentes/docentes.module.ts")).then(m => m.DocentesPageModule)
     },
     {
         path: 'fonemas',
-        loadChildren: () => Promise.all(/*! import() | pages-fonemas-fonemas-module */[__webpack_require__.e("default~pages-consonantes-consonantes-module~pages-docentes-docentes-module~pages-estudiantes-estudi~35c779d2"), __webpack_require__.e("pages-fonemas-fonemas-module")]).then(__webpack_require__.bind(null, /*! ./pages/fonemas/fonemas.module */ "./src/app/pages/fonemas/fonemas.module.ts")).then(m => m.FonemasPageModule)
+        loadChildren: () => Promise.all(/*! import() | pages-fonemas-fonemas-module */[__webpack_require__.e("default~pages-categoria-categoria-module~pages-consonantes-consonantes-module~pages-docentes-docente~625ffebc"), __webpack_require__.e("pages-fonemas-fonemas-module")]).then(__webpack_require__.bind(null, /*! ./pages/fonemas/fonemas.module */ "./src/app/pages/fonemas/fonemas.module.ts")).then(m => m.FonemasPageModule)
     },
     {
         path: 'semanticas',
-        loadChildren: () => Promise.all(/*! import() | pages-semanticas-semanticas-module */[__webpack_require__.e("default~pages-consonantes-consonantes-module~pages-docentes-docentes-module~pages-estudiantes-estudi~35c779d2"), __webpack_require__.e("pages-semanticas-semanticas-module")]).then(__webpack_require__.bind(null, /*! ./pages/semanticas/semanticas.module */ "./src/app/pages/semanticas/semanticas.module.ts")).then(m => m.SemanticasPageModule)
+        loadChildren: () => Promise.all(/*! import() | pages-semanticas-semanticas-module */[__webpack_require__.e("default~pages-categoria-categoria-module~pages-consonantes-consonantes-module~pages-docentes-docente~625ffebc"), __webpack_require__.e("pages-semanticas-semanticas-module")]).then(__webpack_require__.bind(null, /*! ./pages/semanticas/semanticas.module */ "./src/app/pages/semanticas/semanticas.module.ts")).then(m => m.SemanticasPageModule)
     },
     {
         path: 'estudiantes',
-        loadChildren: () => Promise.all(/*! import() | pages-estudiantes-estudiantes-module */[__webpack_require__.e("default~pages-consonantes-consonantes-module~pages-docentes-docentes-module~pages-estudiantes-estudi~35c779d2"), __webpack_require__.e("pages-estudiantes-estudiantes-module")]).then(__webpack_require__.bind(null, /*! ./pages/estudiantes/estudiantes.module */ "./src/app/pages/estudiantes/estudiantes.module.ts")).then(m => m.EstudiantesPageModule)
+        loadChildren: () => Promise.all(/*! import() | pages-estudiantes-estudiantes-module */[__webpack_require__.e("default~pages-categoria-categoria-module~pages-consonantes-consonantes-module~pages-docentes-docente~625ffebc"), __webpack_require__.e("pages-estudiantes-estudiantes-module")]).then(__webpack_require__.bind(null, /*! ./pages/estudiantes/estudiantes.module */ "./src/app/pages/estudiantes/estudiantes.module.ts")).then(m => m.EstudiantesPageModule)
     },
     {
         path: 'fonema/:value',
-        loadChildren: () => Promise.all(/*! import() | pages-fonema-fonema-module */[__webpack_require__.e("default~pages-consonantes-consonantes-module~pages-docentes-docentes-module~pages-estudiantes-estudi~35c779d2"), __webpack_require__.e("pages-fonema-fonema-module")]).then(__webpack_require__.bind(null, /*! ./pages/fonema/fonema.module */ "./src/app/pages/fonema/fonema.module.ts")).then(m => m.FonemaPageModule)
+        loadChildren: () => Promise.all(/*! import() | pages-fonema-fonema-module */[__webpack_require__.e("default~pages-categoria-categoria-module~pages-consonantes-consonantes-module~pages-docentes-docente~625ffebc"), __webpack_require__.e("pages-fonema-fonema-module")]).then(__webpack_require__.bind(null, /*! ./pages/fonema/fonema.module */ "./src/app/pages/fonema/fonema.module.ts")).then(m => m.FonemaPageModule)
     },
     {
         path: 'categoria',
-        loadChildren: () => __webpack_require__.e(/*! import() | pages-categoria-categoria-module */ "pages-categoria-categoria-module").then(__webpack_require__.bind(null, /*! ./pages/categoria/categoria.module */ "./src/app/pages/categoria/categoria.module.ts")).then(m => m.CategoriaPageModule)
+        loadChildren: () => Promise.all(/*! import() | pages-categoria-categoria-module */[__webpack_require__.e("default~pages-categoria-categoria-module~pages-consonantes-consonantes-module~pages-docentes-docente~625ffebc"), __webpack_require__.e("pages-categoria-categoria-module")]).then(__webpack_require__.bind(null, /*! ./pages/categoria/categoria.module */ "./src/app/pages/categoria/categoria.module.ts")).then(m => m.CategoriaPageModule)
     },
     {
         path: 'consonantes/:value',
-        loadChildren: () => Promise.all(/*! import() | pages-consonantes-consonantes-module */[__webpack_require__.e("default~pages-consonantes-consonantes-module~pages-docentes-docentes-module~pages-estudiantes-estudi~35c779d2"), __webpack_require__.e("pages-consonantes-consonantes-module")]).then(__webpack_require__.bind(null, /*! ./pages/consonantes/consonantes.module */ "./src/app/pages/consonantes/consonantes.module.ts")).then(m => m.ConsonantesPageModule)
+        loadChildren: () => Promise.all(/*! import() | pages-consonantes-consonantes-module */[__webpack_require__.e("default~pages-categoria-categoria-module~pages-consonantes-consonantes-module~pages-docentes-docente~625ffebc"), __webpack_require__.e("pages-consonantes-consonantes-module")]).then(__webpack_require__.bind(null, /*! ./pages/consonantes/consonantes.module */ "./src/app/pages/consonantes/consonantes.module.ts")).then(m => m.ConsonantesPageModule)
     },
 ];
 let AppRoutingModule = class AppRoutingModule {
@@ -841,16 +841,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm2015/platform-browser.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
-/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/fesm2015/ionic-angular.js");
-/* harmony import */ var _ionic_native_splash_screen_ngx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @ionic-native/splash-screen/ngx */ "./node_modules/@ionic-native/splash-screen/ngx/index.js");
-/* harmony import */ var _ionic_native_status_bar_ngx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @ionic-native/status-bar/ngx */ "./node_modules/@ionic-native/status-bar/ngx/index.js");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
-/* harmony import */ var _services_authentication_service__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./services/authentication.service */ "./src/app/services/authentication.service.ts");
-/* harmony import */ var _services_user_service__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./services/user.service */ "./src/app/services/user.service.ts");
-/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm2015/animations.js");
-/* harmony import */ var _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/cdk/drag-drop */ "./node_modules/@angular/cdk/esm2015/drag-drop.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/fesm2015/ionic-angular.js");
+/* harmony import */ var _ionic_native_splash_screen_ngx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @ionic-native/splash-screen/ngx */ "./node_modules/@ionic-native/splash-screen/ngx/index.js");
+/* harmony import */ var _ionic_native_status_bar_ngx__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @ionic-native/status-bar/ngx */ "./node_modules/@ionic-native/status-bar/ngx/index.js");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+/* harmony import */ var _services_authentication_service__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./services/authentication.service */ "./src/app/services/authentication.service.ts");
+/* harmony import */ var _services_user_service__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./services/user.service */ "./src/app/services/user.service.ts");
+/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm2015/animations.js");
+/* harmony import */ var _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/cdk/drag-drop */ "./node_modules/@angular/cdk/esm2015/drag-drop.js");
+
 
 
 
@@ -869,17 +871,26 @@ let AppModule = class AppModule {
 };
 AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
-        declarations: [_app_component__WEBPACK_IMPORTED_MODULE_7__["AppComponent"]],
+        declarations: [_app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"]],
         entryComponents: [],
-        imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["BrowserModule"], _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["IonicModule"].forRoot(), _app_routing_module__WEBPACK_IMPORTED_MODULE_8__["AppRoutingModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_9__["HttpClientModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_12__["BrowserAnimationsModule"], _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_13__["DragDropModule"]],
-        providers: [
-            _ionic_native_status_bar_ngx__WEBPACK_IMPORTED_MODULE_6__["StatusBar"],
-            _ionic_native_splash_screen_ngx__WEBPACK_IMPORTED_MODULE_5__["SplashScreen"],
-            _services_authentication_service__WEBPACK_IMPORTED_MODULE_10__["AuthenticationService"],
-            _services_user_service__WEBPACK_IMPORTED_MODULE_11__["UserService"],
-            { provide: _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouteReuseStrategy"], useClass: _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["IonicRouteStrategy"] }
+        imports: [
+            _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["BrowserModule"],
+            _ionic_angular__WEBPACK_IMPORTED_MODULE_5__["IonicModule"].forRoot(),
+            _app_routing_module__WEBPACK_IMPORTED_MODULE_9__["AppRoutingModule"],
+            _angular_common_http__WEBPACK_IMPORTED_MODULE_10__["HttpClientModule"],
+            _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"],
+            _angular_forms__WEBPACK_IMPORTED_MODULE_4__["ReactiveFormsModule"],
+            _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_13__["BrowserAnimationsModule"],
+            _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_14__["DragDropModule"]
         ],
-        bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_7__["AppComponent"]]
+        providers: [
+            _ionic_native_status_bar_ngx__WEBPACK_IMPORTED_MODULE_7__["StatusBar"],
+            _ionic_native_splash_screen_ngx__WEBPACK_IMPORTED_MODULE_6__["SplashScreen"],
+            _services_authentication_service__WEBPACK_IMPORTED_MODULE_11__["AuthenticationService"],
+            _services_user_service__WEBPACK_IMPORTED_MODULE_12__["UserService"],
+            { provide: _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouteReuseStrategy"], useClass: _ionic_angular__WEBPACK_IMPORTED_MODULE_5__["IonicRouteStrategy"] }
+        ],
+        bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"]]
     })
 ], AppModule);
 
@@ -981,7 +992,7 @@ __webpack_require__.r(__webpack_exports__);
 let UserService = class UserService {
     constructor(http) {
         this.http = http;
-        this.URL_API = 'https://blapp.herokuapp.com/api/users';
+        this.URL_API = 'http://localhost:3000/api/users';
     }
     /**
      * Servicio de creacion de un usuario
@@ -992,6 +1003,9 @@ let UserService = class UserService {
     }
     loginUser(user) {
         return this.http.post(this.URL_API + '/signin', user).toPromise();
+    }
+    putUser(user) {
+        return this.http.put(this.URL_API, user, { headers: { Authorization: `Bearer ${localStorage.getItem('token')}` } }).toPromise();
     }
     getUserByIdStudent(_idStudent) {
         return this.http.get(this.URL_API + `/withIdStudent/${_idStudent}`, { headers: { Authorization: `Bearer ${localStorage.getItem('token')}` } }).toPromise();

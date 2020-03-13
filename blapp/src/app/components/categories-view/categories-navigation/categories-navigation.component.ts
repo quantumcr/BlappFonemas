@@ -17,6 +17,5 @@ export class CategoriesNavigationComponent implements OnInit {
   forward(event: any) {
   }
   back(event: any){
-    
   }
 }

@@ -51,6 +51,10 @@ export class PhonemeViewComponent implements OnInit {
     }
   }
 
+  ejecutarAccion($event) {
+    
+  }
+
 
 
 }

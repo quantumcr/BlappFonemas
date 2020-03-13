@@ -21,7 +21,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"principal\">\n  <ion-grid>\n    <ion-row class=\"component\">\n      <ion-col >\n        <app-phoneme-consonant-view [valueFonemaView]=\"valueFonema\"></app-phoneme-consonant-view>\n      </ion-col>\n    </ion-row>   \n  </ion-grid>\n</div>\n";
+    __webpack_exports__["default"] = "<div class=\"principal\">\r\n  <ion-grid>\r\n    <ion-row class=\"component\">\r\n      <ion-col >\r\n        <app-phoneme-consonant-view [valueFonemaView]=\"valueFonema\"></app-phoneme-consonant-view>\r\n      </ion-col>\r\n    </ion-row>   \r\n  </ion-grid>\r\n</div>\r\n";
     /***/
   },
 
