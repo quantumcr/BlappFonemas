@@ -27,9 +27,23 @@ export class ConsonantPhonemePanelComponent implements OnInit {
     this.getSilabas();
     this.imagen = this.audios[0].imagen;
     this.palabra = this.audios[0].nombre;
+    this.cantidadAudios = 0;
 
   }
-  playAudio(event: any) {}
+  playAudio(event: any) {
+    if (this.cantidadAudios == this.audios.length){
+      this.cantidadAudios = 0;
+    }
+    this.palabra=this.audios[this.cantidadAudios].nombre;
+    this.imagen= this.audios[this.cantidadAudios].imagen;
+    this.audio.src = this.audios[this.cantidadAudios].audio;
+    this.audio.load();
+    this.audio.play();
+    console.log(event.target.value);
+    console.log('Soy el audio');
+    this.cantidadAudios ++;
+    console.log(this.comando);
+  }
 
   playAudioS(event: any) {
     this.audio.src = this.silabas[event.target.value].audio;

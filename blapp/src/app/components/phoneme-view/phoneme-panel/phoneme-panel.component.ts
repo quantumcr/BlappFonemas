@@ -26,7 +26,8 @@ export class PhonemePanelComponent implements OnInit {
     this.cantidadAudios = 0;
   }
   playAudio(event: any) {
-    if (this.cantidadAudios > this.audios.length){
+    console.log(this.cantidadAudios);
+    if (this.cantidadAudios == this.audios.length){
       this.cantidadAudios = 0;
     }
     this.palabra=this.audios[this.cantidadAudios].nombre;
