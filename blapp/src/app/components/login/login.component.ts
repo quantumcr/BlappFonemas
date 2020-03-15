@@ -7,6 +7,7 @@ import { AuthenticationService, TokenResponse } from '../../services/authenticat
 import { User } from '../../models/user';
 import { StudentService } from '../../services/student.service';
 import { Student } from '../../models/student';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -25,7 +26,8 @@ export class LoginComponent implements OnInit {
     private navCtrl: NavController,
     private userService: UserService,
     private authenticationService: AuthenticationService,
-    private studentService: StudentService
+    private studentService: StudentService,
+    private route: Router
   ) { }
 
   ngOnInit() {}
@@ -42,12 +44,16 @@ export class LoginComponent implements OnInit {
     this.userService.loginUser(this.newUser)
     .then((data: TokenResponse) => {
       this.authenticationService.saveToken(data.token);
-      if (this.authenticationService.getUserDetails().tipo == "Estudiante") {
+      document.getElementById('email').setAttribute('value', '');
+      document.getElementById('password').setAttribute('value', '');
+      if (this.authenticationService.getUserDetails().tipo.toUpperCase() == "ESTUDIANTE") {
         // Redireccionar al menu del estudiante
-        this.navCtrl.navigateForward('/menu');
-      } else if (this.authenticationService.getUserDetails().tipo == "Docente") {
+        //this.navCtrl.navigateForward('/menu');        
+        this.route.navigate(['/menu'], { queryParams: { tipo: false }});
+      } else if (this.authenticationService.getUserDetails().tipo.toUpperCase() == "DOCENTE") {
         // Redireccionar al menu del docente
-        this.navCtrl.navigateForward('/menu');
+        //this.navCtrl.navigateForward('/menu');
+        this.route.navigate(['/menu'], { queryParams: { tipo: true }});
       }      
     })
     .catch(err => {
