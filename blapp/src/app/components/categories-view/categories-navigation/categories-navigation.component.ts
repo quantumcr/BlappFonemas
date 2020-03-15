@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 import { NavController } from '@ionic/angular';
 
 @Component({
@@ -7,15 +7,27 @@ import { NavController } from '@ionic/angular';
   styleUrls: ['./categories-navigation.component.scss'],
 })
 export class CategoriesNavigationComponent implements OnInit {
-  @Output() navigationEvent = new EventEmitter();
-  constructor(private navCtrl: NavController) { }
+  @Output() forwardEmit = new EventEmitter();
+  @Output() backEmit = new EventEmitter();
 
-  ngOnInit() {}
+  constructor(
+    private navCtrl: NavController
+  ) { }
+
+  ngOnInit() {
+
+  }
+  
   goToHome(event: any) {
     this.navCtrl.navigateForward('/menu');
   }
-  forward(event: any) {
+
+  forward() {
+    this.forwardEmit.emit();
   }
-  back(event: any){
+
+  back(){
+    this.backEmit.emit();
   }
+
 }

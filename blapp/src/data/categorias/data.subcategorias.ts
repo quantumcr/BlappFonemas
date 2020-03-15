@@ -1,3 +1,24 @@
+export interface SubcategoryI {
+    nombre: string;
+    data: [{
+        sujeto: string;
+        verbo: string;
+        predicado: string;
+        imagenSujeto: string;
+        imagenVerbo: string;
+        imagenPredicado: string;
+    }]
+}
+
+export interface OneDataI {
+    sujeto: string;
+    verbo: string;
+    predicado: string;
+    imagenSujeto: string;
+    imagenVerbo: string;
+    imagenPredicado: string;
+}
+
 export const SUBCATEGORIAS = [
     {
         nombre: 'Imagen de mí mismo',
