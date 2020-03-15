@@ -47,7 +47,7 @@ export const CATEGORIAS = [
         subcategoria: [
             {nombre: 'Ropa de Hombre'},
             {nombre: 'Ropa de Mujer'},
-            {nombre: 'Ropa Interior'}
+            {nombre: 'Ropa de Playa'}
         ]
     },
     {
