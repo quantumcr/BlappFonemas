@@ -28,6 +28,7 @@ userCtrl.createUser = (req, res, next) => {
  * Controlador del login con passport
  */
 userCtrl.loginUser = (req, res, next) => {
+    console.log("LoginUser", process.env.API_URL);
     passport.authenticate('local-signin', { session: false }, (err, user, info) => {
         // Si en el primer paramentro retornado del done() no es null es que hubo un error
         if(err) { return res.status(501).json(err); }
