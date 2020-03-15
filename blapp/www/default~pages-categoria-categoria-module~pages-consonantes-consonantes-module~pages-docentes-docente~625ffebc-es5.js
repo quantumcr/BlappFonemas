@@ -2355,10 +2355,25 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.getSilabas();
           this.imagen = this.audios[0].imagen;
           this.palabra = this.audios[0].nombre;
+          this.cantidadAudios = 0;
         }
       }, {
         key: "playAudio",
-        value: function playAudio(event) {}
+        value: function playAudio(event) {
+          if (this.cantidadAudios == this.audios.length) {
+            this.cantidadAudios = 0;
+          }
+
+          this.palabra = this.audios[this.cantidadAudios].nombre;
+          this.imagen = this.audios[this.cantidadAudios].imagen;
+          this.audio.src = this.audios[this.cantidadAudios].audio;
+          this.audio.load();
+          this.audio.play();
+          console.log(event.target.value);
+          console.log('Soy el audio');
+          this.cantidadAudios++;
+          console.log(this.comando);
+        }
       }, {
         key: "playAudioS",
         value: function playAudioS(event) {
@@ -2926,7 +2941,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "playAudio",
         value: function playAudio(event) {
-          if (this.cantidadAudios > this.audios.length) {
+          console.log(this.cantidadAudios);
+
+          if (this.cantidadAudios == this.audios.length) {
             this.cantidadAudios = 0;
           }
 
@@ -6222,9 +6239,93 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         duracion: 4,
         reproduciendo: false
       }, {
-        nombre: 'Na-chos',
-        audio: 'assets/audio/fonemas/consonantes/n/Nachos.mp3',
-        imagen: 'assets/img/fonemas/consonantes/n/Nachos.jpg',
+        nombre: 'Nan-cy',
+        audio: 'assets/audio/fonemas/consonantes/n/Nancy.mp3',
+        imagen: 'assets/img/fonemas/consonantes/n/Nancy.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Na-ti-lla',
+        audio: 'assets/audio/fonemas/consonantes/n/Natilla.mp3',
+        imagen: 'assets/img/fonemas/consonantes/n/Natilla.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Na-va-ja',
+        audio: 'assets/audio/fonemas/consonantes/n/Navaja.mp3',
+        imagen: 'assets/img/fonemas/consonantes/n/Navaja.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Na-ve',
+        audio: 'assets/audio/fonemas/consonantes/n/Nave.mp3',
+        imagen: 'assets/img/fonemas/consonantes/n/Nave.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Ne-va-da',
+        audio: 'assets/audio/fonemas/consonantes/n/Nevada.mp3',
+        imagen: 'assets/img/fonemas/consonantes/n/Nevada.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Ni-do',
+        audio: 'assets/audio/fonemas/consonantes/n/Nido.mp3',
+        imagen: 'assets/img/fonemas/consonantes/n/Nido.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Ni-ña',
+        audio: 'assets/audio/fonemas/consonantes/n/Niña.mp3',
+        imagen: 'assets/img/fonemas/consonantes/n/Niña.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Ni-ñe-ra',
+        audio: 'assets/audio/fonemas/consonantes/n/Niñera.mp3',
+        imagen: 'assets/img/fonemas/consonantes/n/Niñera.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Ni-ños',
+        audio: 'assets/audio/fonemas/consonantes/n/Niños.mp3',
+        imagen: 'assets/img/fonemas/consonantes/n/Niños.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'No-che',
+        audio: 'assets/audio/fonemas/consonantes/n/Noche.mp3',
+        imagen: 'assets/img/fonemas/consonantes/n/Noche.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'No-mo',
+        audio: 'assets/audio/fonemas/consonantes/n/Nancy.mp3',
+        imagen: 'assets/img/fonemas/consonantes/n/Nancy.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Nu-be',
+        audio: 'assets/audio/fonemas/consonantes/n/Nube.mp3',
+        imagen: 'assets/img/fonemas/consonantes/n/Nube.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Nu-do',
+        audio: 'assets/audio/fonemas/consonantes/n/Nudo.mp3',
+        imagen: 'assets/img/fonemas/consonantes/n/Nudo.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Nuez',
+        audio: 'assets/audio/fonemas/consonantes/n/Nuez.mp3',
+        imagen: 'assets/img/fonemas/consonantes/n/Nuez.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Nú-me-ros',
+        audio: 'assets/audio/fonemas/consonantes/n/Números.mp3',
+        imagen: 'assets/img/fonemas/consonantes/n/Números.jpg',
         duracion: 4,
         reproduciendo: false
       }],
@@ -6257,7 +6358,25 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }, // Consonante Ñ
     {
       consonante: 'ñ',
-      data: [],
+      data: [{
+        nombre: 'Ña-me',
+        audio: 'assets/audio/fonemas/consonantes/ñ/Ñame.mp3',
+        imagen: 'assets/img/fonemas/consonantes/ñ/Ñame.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Ñam-pí',
+        audio: 'assets/audio/fonemas/consonantes/ñ/Ñampí.mp3',
+        imagen: 'assets/img/fonemas/consonantes/ñ/Ñampí.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Ñan-dú',
+        audio: 'assets/audio/fonemas/consonantes/ñ/Ñandú.mp3',
+        imagen: 'assets/img/fonemas/consonantes/ñ/Ñandú.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }],
       dataS: [{
         nombre: 'Ña',
         audio: 'assets/audio/fonemas/silabas/ñ/Ña.mp3',
