@@ -1,5 +1,3 @@
-
-
 export interface CategoriaI {
     nombre: string;
     imagen: string;
