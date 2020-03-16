@@ -1763,5 +1763,302 @@ export const CONSONANTES = [
                 reproduciendo: false
             },
         ]
+    },
+    // Consonante T
+    {
+        consonante: 't',
+        data: [
+            {
+                nombre: 'Ta-ja-da',
+                audio: 'assets/audio/fonemas/consonantes/t/Tajada.mp3',
+                imagen: 'assets/img/fonemas/consonantes/t/Tajada.jpg',
+                duracion: 4,
+                reproduciendo: false
+            },
+            {
+                nombre: 'Tam-bor',
+                audio: 'assets/audio/fonemas/consonantes/t/Tambor.mp3',
+                imagen: 'assets/img/fonemas/consonantes/t/Tambor.jpg',
+                duracion: 4,
+                reproduciendo: false
+            },
+            {
+                nombre: 'Ta-pa',
+                audio: 'assets/audio/fonemas/consonantes/t/Tapa.mp3',
+                imagen: 'assets/img/fonemas/consonantes/t/Tapa.jpg',
+                duracion: 4,
+                reproduciendo: false
+            },
+            {
+                nombre: 'Ta-pe-te',
+                audio: 'assets/audio/fonemas/consonantes/t/Tapete.mp3',
+                imagen: 'assets/img/fonemas/consonantes/t/Tapete.jpg',
+                duracion: 4,
+                reproduciendo: false
+            },
+            {
+                nombre: 'Tar-de',
+                audio: 'assets/audio/fonemas/consonantes/t/Tarde.mp3',
+                imagen: 'assets/img/fonemas/consonantes/t/Tarde.jpg',
+                duracion: 4,
+                reproduciendo: false
+            },
+            {
+                nombre: 'Ta-xi',
+                audio: 'assets/audio/fonemas/consonantes/t/Taxi.mp3',
+                imagen: 'assets/img/fonemas/consonantes/t/Taxi.jpg',
+                duracion: 4,
+                reproduciendo: false
+            },
+            {
+                nombre: 'Ta-za',
+                audio: 'assets/audio/fonemas/consonantes/t/Taza.mp3',
+                imagen: 'assets/img/fonemas/consonantes/t/Taza.jpg',
+                duracion: 4,
+                reproduciendo: false
+            },
+            {
+                nombre: 'Ta-zón',
+                audio: 'assets/audio/fonemas/consonantes/t/Tazón.mp3',
+                imagen: 'assets/img/fonemas/consonantes/t/Tazón.jpg',
+                duracion: 4,
+                reproduciendo: false
+            },
+            {
+                nombre: 'Te-cho',
+                audio: 'assets/audio/fonemas/consonantes/t/Techo.mp3',
+                imagen: 'assets/img/fonemas/consonantes/t/Techo.jpg',
+                duracion: 4,
+                reproduciendo: false
+            },
+            {
+                nombre: 'Te-la',
+                audio: 'assets/audio/fonemas/consonantes/t/Tela.mp3',
+                imagen: 'assets/img/fonemas/consonantes/t/Tela.jpg',
+                duracion: 4,
+                reproduciendo: false
+            },
+            {
+                nombre: 'Te-lé-fo-no',
+                audio: 'assets/audio/fonemas/consonantes/t/Teléfono.mp3',
+                imagen: 'assets/img/fonemas/consonantes/t/Teléfono.jpg',
+                duracion: 4,
+                reproduciendo: false
+            },
+            {
+                nombre: 'Te-le-vi-sor',
+                audio: 'assets/audio/fonemas/consonantes/t/Televisor.mp3',
+                imagen: 'assets/img/fonemas/consonantes/t/Televisor.jpg',
+                duracion: 4,
+                reproduciendo: false
+            },
+            {
+                nombre: 'Te-ne-dor',
+                audio: 'assets/audio/fonemas/consonantes/t/Tenedor.mp3',
+                imagen: 'assets/img/fonemas/consonantes/t/Tenedor.jpg',
+                duracion: 4,
+                reproduciendo: false
+            },
+            {
+                nombre: 'Te-nis',
+                audio: 'assets/audio/fonemas/consonantes/t/Tenis.mp3',
+                imagen: 'assets/img/fonemas/consonantes/t/Tenis.jpg',
+                duracion: 4,
+                reproduciendo: false
+            },
+            {
+                nombre: 'Tex-to',
+                audio: 'assets/audio/fonemas/consonantes/t/Texto.mp3',
+                imagen: 'assets/img/fonemas/consonantes/t/Texto.jpg',
+                duracion: 4,
+                reproduciendo: false
+            },
+            {
+                nombre: 'Tía',
+                audio: 'assets/audio/fonemas/consonantes/t/Tía.mp3',
+                imagen: 'assets/img/fonemas/consonantes/t/Tía.jpg',
+                duracion: 4,
+                reproduciendo: false
+            },
+            {
+                nombre: 'Ti-bu-rón',
+                audio: 'assets/audio/fonemas/consonantes/t/Tiburón.mp3',
+                imagen: 'assets/img/fonemas/consonantes/t/Tiburón.jpg',
+                duracion: 4,
+                reproduciendo: false
+            },
+            {
+                nombre: 'Ti-gre',
+                audio: 'assets/audio/fonemas/consonantes/t/Tigre.mp3',
+                imagen: 'assets/img/fonemas/consonantes/t/Tigre.jpg',
+                duracion: 4,
+                reproduciendo: false
+            },
+            {
+                nombre: 'Ti-je-ras',
+                audio: 'assets/audio/fonemas/consonantes/t/Tijeras.mp3',
+                imagen: 'assets/img/fonemas/consonantes/t/Tijeras.jpg',
+                duracion: 4,
+                reproduciendo: false
+            },
+            {
+                nombre: 'Ti-na',
+                audio: 'assets/audio/fonemas/consonantes/t/Tina.mp3',
+                imagen: 'assets/img/fonemas/consonantes/t/Tina.jpg',
+                duracion: 4,
+                reproduciendo: false
+            },
+            {
+                nombre: 'Ti-na-ja',
+                audio: 'assets/audio/fonemas/consonantes/t/Tinaja.mp3',
+                imagen: 'assets/img/fonemas/consonantes/t/Tinaja.jpg',
+                duracion: 4,
+                reproduciendo: false
+            },
+            {
+                nombre: 'Tin-ta',
+                audio: 'assets/audio/fonemas/consonantes/t/Tinta.mp3',
+                imagen: 'assets/img/fonemas/consonantes/t/Tinta.jpg',
+                duracion: 4,
+                reproduciendo: false
+            },
+            {
+                nombre: 'Tío',
+                audio: 'assets/audio/fonemas/consonantes/t/Tío.mp3',
+                imagen: 'assets/img/fonemas/consonantes/t/Tío.jpg',
+                duracion: 4,
+                reproduciendo: false
+            },
+            {
+                nombre: 'To-bo-gán',
+                audio: 'assets/audio/fonemas/consonantes/t/Tobogán.mp3',
+                imagen: 'assets/img/fonemas/consonantes/t/Tobogán.jpg',
+                duracion: 4,
+                reproduciendo: false
+            },
+            {
+                nombre: 'To-mi-llo',
+                audio: 'assets/audio/fonemas/consonantes/t/Tomillo.mp3',
+                imagen: 'assets/img/fonemas/consonantes/t/Tomillo.jpg',
+                duracion: 4,
+                reproduciendo: false
+            },
+            {
+                nombre: 'To-ro',
+                audio: 'assets/audio/fonemas/consonantes/t/Toro.mp3',
+                imagen: 'assets/img/fonemas/consonantes/t/Toro.jpg',
+                duracion: 4,
+                reproduciendo: false
+            },
+            {
+                nombre: 'Tor-ti-lla',
+                audio: 'assets/audio/fonemas/consonantes/t/Tortilla.mp3',
+                imagen: 'assets/img/fonemas/consonantes/t/Tortilla.jpg',
+                duracion: 4,
+                reproduciendo: false
+            },
+            {
+                nombre: 'Tor-tu-ga',
+                audio: 'assets/audio/fonemas/consonantes/t/Tortuga.mp3',
+                imagen: 'assets/img/fonemas/consonantes/t/Tortuga.jpg',
+                duracion: 4,
+                reproduciendo: false
+            },
+            {
+                nombre: 'Tos',
+                audio: 'assets/audio/fonemas/consonantes/t/Tos.mp3',
+                imagen: 'assets/img/fonemas/consonantes/t/Tos.jpg',
+                duracion: 4,
+                reproduciendo: false
+            },
+            {
+                nombre: 'Tos-ta-das',
+                audio: 'assets/audio/fonemas/consonantes/t/Tostadas.mp3',
+                imagen: 'assets/img/fonemas/consonantes/t/Tostadas.jpg',
+                duracion: 4,
+                reproduciendo: false
+            },
+            {
+                nombre: 'Trai-ler',
+                audio: 'assets/audio/fonemas/consonantes/t/Trailer.mp3',
+                imagen: 'assets/img/fonemas/consonantes/t/Trailer.jpg',
+                duracion: 4,
+                reproduciendo: false
+            },
+            {
+                nombre: 'Tren',
+                audio: 'assets/audio/fonemas/consonantes/t/Tren.mp3',
+                imagen: 'assets/img/fonemas/consonantes/t/Tren.jpg',
+                duracion: 4,
+                reproduciendo: false
+            },
+            {
+                nombre: 'Trom-pe-ta',
+                audio: 'assets/audio/fonemas/consonantes/t/Trompeta.mp3',
+                imagen: 'assets/img/fonemas/consonantes/t/Trompeta.jpg',
+                duracion: 4,
+                reproduciendo: false
+            },
+            {
+                nombre: 'Tu-cán',
+                audio: 'assets/audio/fonemas/consonantes/t/Tucán.mp3',
+                imagen: 'assets/img/fonemas/consonantes/t/Tucán.jpg',
+                duracion: 4,
+                reproduciendo: false
+            },
+            {
+                nombre: 'Tu-co',
+                audio: 'assets/audio/fonemas/consonantes/t/Tuco.mp3',
+                imagen: 'assets/img/fonemas/consonantes/t/Tuco.jpg',
+                duracion: 4,
+                reproduciendo: false
+            },
+            {
+                nombre: 'Tu-li-pán',
+                audio: 'assets/audio/fonemas/consonantes/t/Tulipán.mp3',
+                imagen: 'assets/img/fonemas/consonantes/t/Tulipán.jpg',
+                duracion: 4,
+                reproduciendo: false
+            },
+            {
+                nombre: 'Tu-na',
+                audio: 'assets/audio/fonemas/consonantes/t/Tuna.mp3',
+                imagen: 'assets/img/fonemas/consonantes/t/Tuna.jpg',
+                duracion: 4,
+                reproduciendo: false
+            },
+        ],
+        dataS: [
+            {
+                nombre: 'Ta',
+                audio: 'assets/audio/fonemas/silabas/t/Ta.mp3',
+                duracion: 4,
+                reproduciendo: false
+            },
+            {
+                nombre: 'Te',
+                audio: 'assets/audio/fonemas/silabas/t/Te.mp3',
+                duracion: 4,
+                reproduciendo: false
+            },
+            {
+                nombre: 'Ti',
+                audio: 'assets/audio/fonemas/silabas/T/Ti.mp3',
+                duracion: 4,
+                reproduciendo: false
+            },
+            {
+                nombre: 'To',
+                audio: 'assets/audio/fonemas/silabas/t/To.mp3',
+                duracion: 4,
+                reproduciendo: false
+            },
+            {
+                nombre: 'Su',
+                audio: 'assets/audio/fonemas/silabas/t/Tu.mp3',
+                duracion: 4,
+                reproduciendo: false
+            },
+        ]
     }
 ];
