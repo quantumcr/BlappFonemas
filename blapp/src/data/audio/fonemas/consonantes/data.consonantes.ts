@@ -80,6 +80,7 @@ export const CONSONANTES = [
             }
         ],
     },
+
     // Consonante Ch
     {
         consonante: 'ch',
@@ -1555,7 +1556,7 @@ export const CONSONANTES = [
         consonante: 's',
         data: [
             {
-                nombre: 'Sa-ba-na',
+                nombre: 'Sá-ba-na',
                 audio: 'assets/audio/fonemas/consonantes/s/Sabana.mp3',
                 imagen: 'assets/img/fonemas/consonantes/s/Sabana.jpg',
                 duracion: 4,
@@ -1585,7 +1586,7 @@ export const CONSONANTES = [
             {
                 nombre: 'Sal-chi-cha',
                 audio: 'assets/audio/fonemas/consonantes/s/Salchicha.mp3',
-                imagen: 'assets/img/fonemas/consonantes/r/Salchicha.jpg',
+                imagen: 'assets/img/fonemas/consonantes/s/Salchicha.jpg',
                 duracion: 4,
                 reproduciendo: false
             },
