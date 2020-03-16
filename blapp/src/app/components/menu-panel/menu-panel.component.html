@@ -2,12 +2,11 @@
   <ion-grid>
     <ion-row>
       <ion-col>
-        <!--
-        <app-students-menu  titulo="Estudiante" opcion1="fonemas" opcion2="categorías semánticas"></app-students-menu>
-        -->
         
-        <app-professor-menu  titulo="¡Buenos días, Profe!" opcion1="Fonemas" opcion2="Categorías Semánticas" opcion3="estudiantes"></app-professor-menu>
+        <app-students-menu *ngIf="!tipo" titulo="Estudiante" opcion1="Fonemas" opcion2="Categorías semánticas"></app-students-menu>
         
+        <app-professor-menu *ngIf="tipo" titulo="¡Buenos días, Profe!" opcion1="Fonemas" opcion2="Categorías semánticas" opcion3="Estudiantes"></app-professor-menu>
+      
       </ion-col>
     </ion-row>
   </ion-grid>

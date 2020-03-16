@@ -1,3 +1,11 @@
+export interface CategoriaI {
+    nombre: string;
+    imagen: string;
+    subcategoria: [{
+        nombre: string;
+    }]
+}
+
 export const CATEGORIAS = [
     {
         nombre: 'Imagen de mí mismo',

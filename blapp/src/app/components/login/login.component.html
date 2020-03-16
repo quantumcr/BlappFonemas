@@ -3,14 +3,14 @@
     <ion-row>
       <ion-col >
         <ion-label class="tituloUsuario">{{usuario}}</ion-label>
-        <ion-input class="usuario" (ionInput)="setEmail($event)"></ion-input>
+        <ion-input id="email" class="usuario" (ionInput)="setEmail($event)"></ion-input>
       </ion-col>
     </ion-row>
 
     <ion-row justify-content-center>
       <ion-col >
         <ion-label class="tituloClave">{{clave}}</ion-label>
-        <ion-input class="clave" type="password" (ionInput)="setPassword($event)"></ion-input>
+        <ion-input id="password" class="clave" type="password" (ionInput)="setPassword($event)"></ion-input>
       </ion-col>
     </ion-row> 
 
