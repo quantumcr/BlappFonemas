@@ -3,7 +3,7 @@ export interface CategoriaI {
     imagen: string;
     subcategoria: [{
         nombre: string;
-    }]
+    } ]
 }
 
 export const CATEGORIAS = [
