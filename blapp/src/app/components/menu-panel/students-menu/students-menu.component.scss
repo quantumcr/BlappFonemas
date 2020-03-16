@@ -31,12 +31,18 @@
      }  
      .opciones{
         top: 140px;
+        text-align: center;
+        margin-left: 91px;
+        margin-right: 91px;
     }  
     .opcionFonema{
         width: 150px;
         height: 150px;
         background: url('../../../../assets/svg/menu-panel/fonemas.svg');
         background-size: 150px 150px;
+        text-align: center;
+        left: 40px;
+        right: auto;
     }  
     .opcionSemantica{
 
@@ -50,6 +56,8 @@
         width: 365px;
         height: 45px;
         //left: 317px;
+        left: auto;
+        right: auto;
         top: 621px;
         
         font-family: Poppins;
