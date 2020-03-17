@@ -87,8 +87,8 @@ export const CONSONANTES = [
         data: [
             {
                 nombre: 'Chu-rros',
-                audio: 'assets/audio/fonemas/consonantes/ch/churros.mp3',
-                imagen: 'assets/img/fonemas/consonantes/ch/churros.jpg',
+                audio: 'assets/audio/fonemas/consonantes/ch/Churros.mp3',
+                imagen: 'assets/img/fonemas/consonantes/ch/Churros.jpg',
                 duracion: 4,
                 reproduciendo: false
             },
@@ -317,63 +317,63 @@ export const CONSONANTES = [
             {
                 nombre: 'Ja-rra',
                 audio: 'assets/audio/fonemas/consonantes/j/jarra.mp3',
-                imagen: 'assets/img/fonemas/consonantes/j/jarra.jpg',
+                imagen: 'assets/img/fonemas/consonantes/j/Jarra.jpg',
                 duracion: 4,
                 reproduciendo: false
             },
             {
                 nombre: 'Je-fe',
                 audio: 'assets/audio/fonemas/consonantes/j/jefe.mp3',
-                imagen: 'assets/img/fonemas/consonantes/j/jefe.jpg',
+                imagen: 'assets/img/fonemas/consonantes/j/Jefe.jpg',
                 duracion: 4,
                 reproduciendo: false
             },
             {
                 nombre: 'Ji-ne-te',
                 audio: 'assets/audio/fonemas/consonantes/j/jinete.mp3',
-                imagen: 'assets/img/fonemas/consonantes/j/jinete.jpg',
+                imagen: 'assets/img/fonemas/consonantes/j/Jinete.jpg',
                 duracion: 4,
                 reproduciendo: false
             },
             {
                 nombre: 'Ji-ra-fa',
                 audio: 'assets/audio/fonemas/consonantes/j/jirafa.mp3',
-                imagen: 'assets/img/fonemas/consonantes/j/jirafa.jpg',
+                imagen: 'assets/img/fonemas/consonantes/j/Jirafa.jpg',
                 duracion: 4,
                 reproduciendo: false
             },
             {
                 nombre: 'Jo-ya',
                 audio: 'assets/audio/fonemas/consonantes/j/joya.mp3',
-                imagen: 'assets/img/fonemas/consonantes/j/joya.jpg',
+                imagen: 'assets/img/fonemas/consonantes/j/Joya.jpg',
                 duracion: 4,
                 reproduciendo: false
             },
             {
                 nombre: 'Jue-go',
                 audio: 'assets/audio/fonemas/consonantes/j/juego.mp3',
-                imagen: 'assets/img/fonemas/consonantes/j/juego.jpg',
+                imagen: 'assets/img/fonemas/consonantes/j/Juego.jpg',
                 duracion: 4,
                 reproduciendo: false
             },
             {
                 nombre: 'Ju-go',
                 audio: 'assets/audio/fonemas/consonantes/j/jugo.mp3',
-                imagen: 'assets/img/fonemas/consonantes/j/jugo.jpg',
+                imagen: 'assets/img/fonemas/consonantes/j/Jugo.jpg',
                 duracion: 4,
                 reproduciendo: false
             },
             {
                 nombre: 'Ju-gue-te',
                 audio: 'assets/audio/fonemas/consonantes/j/juguete.mp3',
-                imagen: 'assets/img/fonemas/consonantes/j/juguete.jpg',
+                imagen: 'assets/img/fonemas/consonantes/j/Juguete.jpg',
                 duracion: 4,
                 reproduciendo: false
             },
             {
                 nombre: 'Ju-gue-tes',
                 audio: 'assets/audio/fonemas/consonantes/j/juguetes.mp3',
-                imagen: 'assets/img/fonemas/consonantes/j/juguetes.jpg',
+                imagen: 'assets/img/fonemas/consonantes/j/Juguetes.jpg',
                 duracion: 4,
                 reproduciendo: false
             },
@@ -418,161 +418,161 @@ export const CONSONANTES = [
         data: [
             {
                 nombre: 'La-gar-ti-ja',
-                audio: 'assets/audio/fonemas/consonantes/l/Lagartija.mp3',
+                audio: 'assets/audio/fonemas/consonantes/l/lagartija.mp3',
                 imagen: 'assets/img/fonemas/consonantes/l/Lagartija.jpg',
                 duracion: 4,
                 reproduciendo: false
             },
             {
                 nombre: 'La-go',
-                audio: 'assets/audio/fonemas/consonantes/l/Lago.mp3',
+                audio: 'assets/audio/fonemas/consonantes/l/lago.mp3',
                 imagen: 'assets/img/fonemas/consonantes/l/Lago.jpg',
                 duracion: 4,
                 reproduciendo: false
             },
             {
                 nombre: 'La-gu-na',
-                audio: 'assets/audio/fonemas/consonantes/l/Laguna.mp3',
+                audio: 'assets/audio/fonemas/consonantes/l/laguna.mp3',
                 imagen: 'assets/img/fonemas/consonantes/l/Laguna.jpg',
                 duracion: 4,
                 reproduciendo: false
             },
             {
                 nombre: 'Lám-pa-ra',
-                audio: 'assets/audio/fonemas/consonantes/l/Lampara.mp3',
+                audio: 'assets/audio/fonemas/consonantes/l/lampara.mp3',
                 imagen: 'assets/img/fonemas/consonantes/l/Lampara.jpg',
                 duracion: 4,
                 reproduciendo: false
             },
             {
                 nombre: 'La-pa',
-                audio: 'assets/audio/fonemas/consonantes/l/Lapa.mp3',
+                audio: 'assets/audio/fonemas/consonantes/l/lapa.mp3',
                 imagen: 'assets/img/fonemas/consonantes/l/Lapa.jpg',
                 duracion: 4,
                 reproduciendo: false
             },
             {
                 nombre: 'Lá-pi-ces',
-                audio: 'assets/audio/fonemas/consonantes/l/Lapices.mp3',
+                audio: 'assets/audio/fonemas/consonantes/l/lapices.mp3',
                 imagen: 'assets/img/fonemas/consonantes/l/Lapices.jpg',
                 duracion: 4,
                 reproduciendo: false
             },
             {
                 nombre: 'Lá-piz',
-                audio: 'assets/audio/fonemas/consonantes/l/Lapiz.mp3',
+                audio: 'assets/audio/fonemas/consonantes/l/lapiz.mp3',
                 imagen: 'assets/img/fonemas/consonantes/l/Lapiz.jpg',
                 duracion: 4,
                 reproduciendo: false
             },
             {
                 nombre: 'La-ta',
-                audio: 'assets/audio/fonemas/consonantes/l/Lata.mp3',
+                audio: 'assets/audio/fonemas/consonantes/l/lata.mp3',
                 imagen: 'assets/img/fonemas/consonantes/l/Lata.jpg',
                 duracion: 4,
                 reproduciendo: false
             },
             {
                 nombre: 'La-zo',
-                audio: 'assets/audio/fonemas/consonantes/l/Lazo.mp3',
+                audio: 'assets/audio/fonemas/consonantes/l/lazo.mp3',
                 imagen: 'assets/img/fonemas/consonantes/l/Lazo.jpg',
                 duracion: 4,
                 reproduciendo: false
             },
             {
                 nombre: 'Le-che',
-                audio: 'assets/audio/fonemas/consonantes/l/Leche.mp3',
+                audio: 'assets/audio/fonemas/consonantes/l/leche.mp3',
                 imagen: 'assets/img/fonemas/consonantes/l/Leche.jpg',
                 duracion: 4,
                 reproduciendo: false
             },
             {
                 nombre: 'Le-chu-za',
-                audio: 'assets/audio/fonemas/consonantes/l/Lechuza.mp3',
+                audio: 'assets/audio/fonemas/consonantes/l/lechuza.mp3',
                 imagen: 'assets/img/fonemas/consonantes/l/Lechuza.jpg',
                 duracion: 4,
                 reproduciendo: false
             },
             {
                 nombre: 'Le-gos',
-                audio: 'assets/audio/fonemas/consonantes/l/Legos.mp3',
+                audio: 'assets/audio/fonemas/consonantes/l/legos.mp3',
                 imagen: 'assets/img/fonemas/consonantes/l/Legos.jpg',
                 duracion: 4,
                 reproduciendo: false
             },
             {
                 nombre: 'Le-ña',
-                audio: 'assets/audio/fonemas/consonantes/l/Leña.mp3',
+                audio: 'assets/audio/fonemas/consonantes/l/leña.mp3',
                 imagen: 'assets/img/fonemas/consonantes/l/Leña.jpg',
                 duracion: 4,
                 reproduciendo: false
             },
             {
                 nombre: 'Le-ón',
-                audio: 'assets/audio/fonemas/consonantes/l/León.mp3',
+                audio: 'assets/audio/fonemas/consonantes/l/león.mp3',
                 imagen: 'assets/img/fonemas/consonantes/l/León.jpg',
                 duracion: 4,
                 reproduciendo: false
             },
             {
                 nombre: 'Lo-bo',
-                audio: 'assets/audio/fonemas/consonantes/l/Lobo.mp3',
+                audio: 'assets/audio/fonemas/consonantes/l/lobo.mp3',
                 imagen: 'assets/img/fonemas/consonantes/l/Lobo.jpg',
                 duracion: 4,
                 reproduciendo: false
             },
             {
                 nombre: 'Lo-co-mo-to-ra',
-                audio: 'assets/audio/fonemas/consonantes/l/Locotora.mp3',
+                audio: 'assets/audio/fonemas/consonantes/l/locotora.mp3',
                 imagen: 'assets/img/fonemas/consonantes/l/Locomotora.jpg',
                 duracion: 4,
                 reproduciendo: false
             },
             {
                 nombre: 'Lo-ma',
-                audio: 'assets/audio/fonemas/consonantes/l/Loma.mp3',
+                audio: 'assets/audio/fonemas/consonantes/l/loma.mp3',
                 imagen: 'assets/img/fonemas/consonantes/l/Loma.jpg',
                 duracion: 4,
                 reproduciendo: false
             },
             {
                 nombre: 'Lo-ra',
-                audio: 'assets/audio/fonemas/consonantes/l/Lora.mp3',
+                audio: 'assets/audio/fonemas/consonantes/l/lora.mp3',
                 imagen: 'assets/img/fonemas/consonantes/l/Lora.jpg',
                 duracion: 4,
                 reproduciendo: false
             },
             {
                 nombre: 'Lo-ro',
-                audio: 'assets/audio/fonemas/consonantes/l/Loro.mp3',
+                audio: 'assets/audio/fonemas/consonantes/l/loro.mp3',
                 imagen: 'assets/img/fonemas/consonantes/l/Loro.jpg',
                 duracion: 4,
                 reproduciendo: false
             },
             {
                 nombre: 'Lu-ciér-na-ga',
-                audio: 'assets/audio/fonemas/consonantes/l/Luciernaga.mp3',
+                audio: 'assets/audio/fonemas/consonantes/l/luciernaga.mp3',
                 imagen: 'assets/img/fonemas/consonantes/l/Luciernaga.jpg',
                 duracion: 4,
                 reproduciendo: false
             },
             {
                 nombre: 'Lu-na',
-                audio: 'assets/audio/fonemas/consonantes/l/Luna.mp3',
+                audio: 'assets/audio/fonemas/consonantes/l/luna.mp3',
                 imagen: 'assets/img/fonemas/consonantes/l/Luna.jpg',
                 duracion: 4,
                 reproduciendo: false
             },
             {
                 nombre: 'Lu-na-res',
-                audio: 'assets/audio/fonemas/consonantes/l/Lunares.mp3',
+                audio: 'assets/audio/fonemas/consonantes/l/lunares.mp3',
                 imagen: 'assets/img/fonemas/consonantes/l/Lunares.jpg',
                 duracion: 4,
                 reproduciendo: false
             },
             {
                 nombre: 'Lu-pi-ta',
-                audio: 'assets/audio/fonemas/consonantes/l/Lupita.mp3',
+                audio: 'assets/audio/fonemas/consonantes/l/lupita.mp3',
                 imagen: 'assets/img/fonemas/consonantes/l/Lupita.jpg',
                 duracion: 4,
                 reproduciendo: false
@@ -606,6 +606,100 @@ export const CONSONANTES = [
             {
                 nombre: 'Lu',
                 audio: 'assets/audio/fonemas/silabas/l/Lu.mp3',
+                duracion: 4,
+                reproduciendo: false
+            }
+        ]
+    },
+    // Consonante LL
+    {
+        consonante: 'LLll Yy',
+        data: [
+            {
+                nombre: 'Lla-ma',
+                audio: 'assets/audio/fonemas/consonantes/llyy/Llama.mp3',
+                imagen: 'assets/img/fonemas/consonantes/llyy/Llama.jpg',
+                duracion: 4,
+                reproduciendo: false
+            },
+            {
+                nombre: 'Lla-ve',
+                audio: 'assets/audio/fonemas/consonantes/llyy/Llave.mp3',
+                imagen: 'assets/img/fonemas/consonantes/llyy/Llave.jpg',
+                duracion: 4,
+                reproduciendo: false
+            },
+            {
+                nombre: 'Lle-no',
+                audio: 'assets/audio/fonemas/consonantes/llyy/Lleno.mp3',
+                imagen: 'assets/img/fonemas/consonantes/llyy/Lleno.jpg',
+                duracion: 4,
+                reproduciendo: false
+            },
+            {
+                nombre: 'Llo-ran-do',
+                audio: 'assets/audio/fonemas/consonantes/llyy/Llorando.mp3',
+                imagen: 'assets/img/fonemas/consonantes/llyy/Llorando.jpg',
+                duracion: 4,
+                reproduciendo: false
+            },
+            {
+                nombre: 'Llu-via',
+                audio: 'assets/audio/fonemas/consonantes/llyy/Lluvia.mp3',
+                imagen: 'assets/img/fonemas/consonantes/llyy/Lluvia.jpg',
+                duracion: 4,
+                reproduciendo: false
+            },
+            {
+                nombre: 'Ye-güi-ta',
+                audio: 'assets/audio/fonemas/consonantes/llyy/Yeguita.mp3',
+                imagen: 'assets/img/fonemas/consonantes/llyy/Yeguita.jpg',
+                duracion: 4,
+                reproduciendo: false
+            },
+            {
+                nombre: 'Ye-ma',
+                audio: 'assets/audio/fonemas/consonantes/llyy/Yema.mp3',
+                imagen: 'assets/img/fonemas/consonantes/llyy/Yema.jpg',
+                duracion: 4,
+                reproduciendo: false
+            },
+            {
+                nombre: 'Yun-que',
+                audio: 'assets/audio/fonemas/consonantes/llyy/Yunque.mp3',
+                imagen: 'assets/img/fonemas/consonantes/llyy/Yunque.jpg',
+                duracion: 4,
+                reproduciendo: false
+            },
+        ],
+        dataS: [
+            {
+                nombre: 'Ya',
+                audio: 'assets/audio/fonemas/silabas/llyy/Ya.mp3',
+                duracion: 4,
+                reproduciendo: false
+            },
+            {
+                nombre: 'Ye',
+                audio: 'assets/audio/fonemas/silabas/llyy/Ye.mp3',
+                duracion: 4,
+                reproduciendo: false
+            },
+            {
+                nombre: 'Yi',
+                audio: 'assets/audio/fonemas/silabas/llyy/Yi.mp3',
+                duracion: 4,
+                reproduciendo: false
+            },
+            {
+                nombre: 'Yo',
+                audio: 'assets/audio/fonemas/silabas/llyy/Yo.mp3',
+                duracion: 4,
+                reproduciendo: false
+            },
+            {
+                nombre: 'Yu',
+                audio: 'assets/audio/fonemas/silabas/llyy/Yu.mp3',
                 duracion: 4,
                 reproduciendo: false
             }
@@ -971,7 +1065,7 @@ export const CONSONANTES = [
             {
                 nombre: 'Pá-ja-ro',
                 audio: 'assets/audio/fonemas/consonantes/p/Pajaro.mp3',
-                imagen: 'assets/img/fonemas/consonantes/p/Pajaro.jpg',
+                imagen: 'assets/img/fonemas/consonantes/p/Pájaro.jpg',
                 duracion: 4,
                 reproduciendo: false
             },
@@ -1018,9 +1112,9 @@ export const CONSONANTES = [
                 reproduciendo: false
             },
             {
-                nombre: 'Pa-lo-mi-ta',
+                nombre: 'Pa-lo-mi-tas',
                 audio: 'assets/audio/fonemas/consonantes/p/Palomita.mp3',
-                imagen: 'assets/img/fonemas/consonantes/p/Palomita.jpg',
+                imagen: 'assets/img/fonemas/consonantes/p/Palomitas.jpg',
                 duracion: 4,
                 reproduciendo: false
             },
@@ -1035,13 +1129,6 @@ export const CONSONANTES = [
                 nombre: 'Pan-da',
                 audio: 'assets/audio/fonemas/consonantes/p/Panda.mp3',
                 imagen: 'assets/img/fonemas/consonantes/p/Panda.jpg',
-                duracion: 4,
-                reproduciendo: false
-            },
-            {
-                nombre: 'Pa-lo-ma',
-                audio: 'assets/audio/fonemas/consonantes/p/Paloma.mp3',
-                imagen: 'assets/img/fonemas/consonantes/p/Paloma.jpg',
                 duracion: 4,
                 reproduciendo: false
             },
@@ -1299,8 +1386,8 @@ export const CONSONANTES = [
             },
             {
                 nombre: 'Po-li-cia',
-                audio: 'assets/audio/fonemas/consonantes/p/Policia.mp3',
-                imagen: 'assets/img/fonemas/consonantes/p/Policia.jpg',
+                audio: 'assets/audio/fonemas/consonantes/p/Policía.mp3',
+                imagen: 'assets/img/fonemas/consonantes/p/Policía.jpg',
                 duracion: 4,
                 reproduciendo: false
             },
@@ -1341,8 +1428,8 @@ export const CONSONANTES = [
             },
             {
                 nombre: 'Pri-mo',
-                audio: 'assets/audio/fonemas/consonantes/p/Prima.mp3',
-                imagen: 'assets/img/fonemas/consonantes/p/Prima.jpg',
+                audio: 'assets/audio/fonemas/consonantes/p/Primo.mp3',
+                imagen: 'assets/img/fonemas/consonantes/p/Primo.jpg',
                 duracion: 4,
                 reproduciendo: false
             },
@@ -2056,6 +2143,58 @@ export const CONSONANTES = [
             {
                 nombre: 'Su',
                 audio: 'assets/audio/fonemas/silabas/t/Tu.mp3',
+                duracion: 4,
+                reproduciendo: false
+            },
+        ]
+    },
+    // Consonante X
+    {
+        consonante: 'x',
+        data: [
+            {
+                nombre: 'Xi-ló-fo-no',
+                audio: 'assets/audio/fonemas/consonantes/x/Xilofono.mp3',
+                imagen: 'assets/img/fonemas/consonantes/x/Xilofono.jpg',
+                duracion: 4,
+                reproduciendo: false
+            },
+            {
+                nombre: 'Xi-nia',
+                audio: 'assets/audio/fonemas/consonantes/x/Xinia.mp3',
+                imagen: 'assets/img/fonemas/consonantes/x/Xinia.jpg',
+                duracion: 4,
+                reproduciendo: false
+            },
+        ],
+        dataS: [
+            {
+                nombre: 'Xa',
+                audio: 'assets/audio/fonemas/silabas/x/Xa.mp3',
+                duracion: 4,
+                reproduciendo: false
+            },
+            {
+                nombre: 'Xe',
+                audio: 'assets/audio/fonemas/silabas/x/Xe.mp3',
+                duracion: 4,
+                reproduciendo: false
+            },
+            {
+                nombre: 'Xi',
+                audio: 'assets/audio/fonemas/silabas/x/Xi.mp3',
+                duracion: 4,
+                reproduciendo: false
+            },
+            {
+                nombre: 'Xo',
+                audio: 'assets/audio/fonemas/silabas/x/Xo.mp3',
+                duracion: 4,
+                reproduciendo: false
+            },
+            {
+                nombre: 'Xu',
+                audio: 'assets/audio/fonemas/silabas/x/Xu.mp3',
                 duracion: 4,
                 reproduciendo: false
             },

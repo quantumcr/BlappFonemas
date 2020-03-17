@@ -90,7 +90,7 @@ export const VOCALES = [
             {
                 nombre: 'Escudo',
                 audio: 'assets/audio/fonemas/vocales/e/escudo.mp3',
-                imagen: 'assets/img/fonemas/vocales/e/escudi.jpg',
+                imagen: 'assets/img/fonemas/vocales/e/escudo.jpg',
                 duracion: 4,
                 reproduciendo: false
             },
@@ -103,8 +103,8 @@ export const VOCALES = [
             },
             {
                 nombre: 'Espárrago',
-                audio: 'assets/audio/fonemas/vocales/e/esparrago.mp3',
-                imagen: 'assets/img/fonemas/vocales/e/esparrago.jpg',
+                audio: 'assets/audio/fonemas/vocales/e/esparragos.mp3',
+                imagen: 'assets/img/fonemas/vocales/e/espárragos.jpg',
                 duracion: 4,
                 reproduciendo: false
             },

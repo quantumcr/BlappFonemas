@@ -800,6 +800,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
     /*! @angular/router */
     "./node_modules/@angular/router/fesm2015/router.js");
+    /* harmony import */
+
+
+    var _services_auth_guard_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! ./services/auth-guard.service */
+    "./src/app/services/auth-guard.service.ts");
 
     var routes = [{
       path: '',
@@ -818,6 +824,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
     }, {
       path: 'menu',
+      canActivate: [_services_auth_guard_service__WEBPACK_IMPORTED_MODULE_3__["AuthGuardService"]],
       loadChildren: function loadChildren() {
         return Promise.all(
         /*! import() | pages-menu-menu-module */
@@ -829,6 +836,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
     }, {
       path: 'docentes',
+      canActivate: [_services_auth_guard_service__WEBPACK_IMPORTED_MODULE_3__["AuthGuardService"]],
       loadChildren: function loadChildren() {
         return Promise.all(
         /*! import() | pages-docentes-docentes-module */
@@ -840,6 +848,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
     }, {
       path: 'fonemas',
+      canActivate: [_services_auth_guard_service__WEBPACK_IMPORTED_MODULE_3__["AuthGuardService"]],
       loadChildren: function loadChildren() {
         return Promise.all(
         /*! import() | pages-fonemas-fonemas-module */
@@ -851,6 +860,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
     }, {
       path: 'semanticas',
+      canActivate: [_services_auth_guard_service__WEBPACK_IMPORTED_MODULE_3__["AuthGuardService"]],
       loadChildren: function loadChildren() {
         return Promise.all(
         /*! import() | pages-semanticas-semanticas-module */
@@ -862,6 +872,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
     }, {
       path: 'estudiantes',
+      canActivate: [_services_auth_guard_service__WEBPACK_IMPORTED_MODULE_3__["AuthGuardService"]],
       loadChildren: function loadChildren() {
         return Promise.all(
         /*! import() | pages-estudiantes-estudiantes-module */
@@ -873,6 +884,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
     }, {
       path: 'fonema/:value',
+      canActivate: [_services_auth_guard_service__WEBPACK_IMPORTED_MODULE_3__["AuthGuardService"]],
       loadChildren: function loadChildren() {
         return Promise.all(
         /*! import() | pages-fonema-fonema-module */
@@ -884,6 +896,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
     }, {
       path: 'categoria',
+      canActivate: [_services_auth_guard_service__WEBPACK_IMPORTED_MODULE_3__["AuthGuardService"]],
       loadChildren: function loadChildren() {
         return Promise.all(
         /*! import() | pages-categoria-categoria-module */
@@ -895,6 +908,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
     }, {
       path: 'consonantes/:value',
+      canActivate: [_services_auth_guard_service__WEBPACK_IMPORTED_MODULE_3__["AuthGuardService"]],
       loadChildren: function loadChildren() {
         return Promise.all(
         /*! import() | pages-consonantes-consonantes-module */
@@ -1163,6 +1177,89 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }],
       bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"]]
     })], AppModule);
+    /***/
+  },
+
+  /***/
+  "./src/app/services/auth-guard.service.ts":
+  /*!************************************************!*\
+    !*** ./src/app/services/auth-guard.service.ts ***!
+    \************************************************/
+
+  /*! exports provided: AuthGuardService */
+
+  /***/
+  function srcAppServicesAuthGuardServiceTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "AuthGuardService", function () {
+      return AuthGuardService;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/fesm2015/router.js");
+    /* harmony import */
+
+
+    var _authentication_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! ./authentication.service */
+    "./src/app/services/authentication.service.ts");
+
+    var AuthGuardService =
+    /*#__PURE__*/
+    function () {
+      function AuthGuardService(auth, router) {
+        _classCallCheck(this, AuthGuardService);
+
+        this.auth = auth;
+        this.router = router;
+      }
+
+      _createClass(AuthGuardService, [{
+        key: "canActivate",
+        value: function canActivate() {
+          if (!this.auth.isLoggedIn()) {
+            this.router.navigateByUrl('/inicio');
+            return false;
+          }
+
+          return true;
+        }
+      }]);
+
+      return AuthGuardService;
+    }();
+
+    AuthGuardService.ctorParameters = function () {
+      return [{
+        type: _authentication_service__WEBPACK_IMPORTED_MODULE_3__["AuthenticationService"]
+      }, {
+        type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]
+      }];
+    };
+
+    AuthGuardService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+      providedIn: 'root'
+    }), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_authentication_service__WEBPACK_IMPORTED_MODULE_3__["AuthenticationService"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]])], AuthGuardService);
     /***/
   },
 

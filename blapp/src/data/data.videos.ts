@@ -115,7 +115,7 @@ export const VIDEOS = [
     },
     {
         nombre: 'n',
-        video: 'assets/video/fonemas/vidFonNn.mp4',
+        video: 'assets/video/fonemas/vidFonN.mp4',
         imagen: 'assets/img/fonemas/phoneme-bar/fonemaN.png',
         mensaje: 'Ni No Ni No Ni No (Minions)',
         duracion: 4,
@@ -138,16 +138,16 @@ export const VIDEOS = [
         reproduciendo: false
     },
     {
-        nombre: 'Pp',
+        nombre: 'p',
         video: 'assets/video/fonemas/vidFonP.mp4',
         imagen: 'assets/img/fonemaP.svg',
-        mensaje: '',
+        mensaje: 'Pum Pum Pum (Tambor)',
         duracion: 4,
         reproduciendo: false
     },
     {
         nombre: 'r',
-        video: 'assets/video/fonemas/vidFonRr.mp4',
+        video: 'assets/video/fonemas/vidFonR.mp4',
         imagen: 'assets/img/fonemaRr.svg',
         mensaje: 'Ra Ra Ra Ra Ra (Cantando)',
         duracion: 4,
@@ -172,7 +172,7 @@ export const VIDEOS = [
     {
         nombre: 't',
         video: 'assets/video/fonemas/vidFonT.mp4',
-        imagen: 'assets/img/fonemaT.svg',
+        imagen: 'assets/img/fonemas/phoneme-bar/fonemaT.png',
         mensaje: 'Tilín Tilín Tilín (Campana)',
         duracion: 4,
         reproduciendo: false
@@ -194,7 +194,7 @@ export const VIDEOS = [
         reproduciendo: false
     },
     {
-        nombre: 'y',
+        nombre: 'LLll Yy',
         video: 'assets/video/fonemas/vidFonY.mp4',
         imagen: 'assets/img/fonemas/phoneme-bar/fonemaY.png',
         mensaje: 'Yyyyyyyy (Avión volando)',

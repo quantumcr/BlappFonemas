@@ -50,7 +50,7 @@ export const SUBCATEGORIAS = [
             {
                 sujeto: 'Yo',
                 verbo: 'estoy',
-                predicado: ' en el Centro de Apoyos Hospital Calderón Guardia',
+                predicado: ' en el Centro de Apoyos',
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/imagen/Centro.jpg',

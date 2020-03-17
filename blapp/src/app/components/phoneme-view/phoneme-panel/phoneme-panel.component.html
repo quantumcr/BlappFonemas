@@ -2,9 +2,9 @@
   <ion-grid>
     <ion-row class="audioFonema">   
       <div>
-        <div>
-          <ion-img src={{imagen}}  class="imagen"></ion-img>
-        </div>
+        <ion-avatar class="imagen">
+          <ion-img src={{imagen}}></ion-img>
+        </ion-avatar>
 
         <div style="position: absolute; left: 227px; top: 346px;">
           <ion-segment-button value="audio" class="btnPlay" (click)="playAudio($event)">
