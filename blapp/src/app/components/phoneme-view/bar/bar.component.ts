@@ -9,9 +9,9 @@ import { OneDataPhonemeVocalI } from 'src/data/audio/fonemas/vocales/data.vocale
   styleUrls: ['./bar.component.scss'],
 })
 export class BarComponent implements OnInit {
-  @Input() phonemeOneData: OneDataPhonemeVocalI;
+  //@Input() phonemeOneData: OneDataPhonemeVocalI;
 
-  @Input() Video: string;
+  //@Input() Video: string;
   @Input() fonema: string;
   @Input() mensaje: string;
   @Input() imagen: string;
@@ -48,6 +48,6 @@ export class BarComponent implements OnInit {
       this.visibleVideo = true;
       this.visibleAudio = false;
     }
-  }
+  }  
 
 }
