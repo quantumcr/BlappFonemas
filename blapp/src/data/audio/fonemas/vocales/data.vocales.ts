@@ -1,3 +1,22 @@
+export interface PhonemeVocalI {
+    vocal: string;
+    data: [{
+        nombre: string;
+        audio: string;
+        imagen: string;
+        duracion: number;
+        reproduciendo: Boolean;
+    }]
+}
+
+export interface OneDataPhonemeVocalI {
+    nombre: string;
+    audio: string;
+    imagen: string;
+    duracion: number;
+    reproduciendo: Boolean;
+}
+
 export const VOCALES = [
     // Vocal A
     {
@@ -90,7 +109,7 @@ export const VOCALES = [
             {
                 nombre: 'Escudo',
                 audio: 'assets/audio/fonemas/vocales/e/escudo.mp3',
-                imagen: 'assets/img/fonemas/vocales/e/escudi.jpg',
+                imagen: 'assets/img/fonemas/vocales/e/escudo.jpg',
                 duracion: 4,
                 reproduciendo: false
             },
@@ -103,8 +122,8 @@ export const VOCALES = [
             },
             {
                 nombre: 'Espárrago',
-                audio: 'assets/audio/fonemas/vocales/e/esparrago.mp3',
-                imagen: 'assets/img/fonemas/vocales/e/esparrago.jpg',
+                audio: 'assets/audio/fonemas/vocales/e/esparragos.mp3',
+                imagen: 'assets/img/fonemas/vocales/e/espárragos.jpg',
                 duracion: 4,
                 reproduciendo: false
             },
@@ -215,57 +234,57 @@ export const VOCALES = [
         data: [
             {
                 nombre: 'Unicornio',
-                audio: 'assets/audio/fonemas/vocales/u/unicornio.mp3',
+                audio: 'assets/audio/fonemas/vocales/u/Unicornio.mp3',
                 imagen: 'assets/img/fonemas/vocales/u/unicornio.jpg',
                 duracion: 4,
                 reproduciendo: false
             },
             {
                 nombre: 'Uniforme',
-                audio: 'assets/audio/fonemas/vocales/u/uniforme.mp3',
+                audio: 'assets/audio/fonemas/vocales/u/Uniforme.mp3',
                 imagen: 'assets/img/fonemas/vocales/u/uniforme.jpg',
                 duracion: 4,
                 reproduciendo: false
             },
             {
                 nombre: 'Universo',
-                audio: 'assets/audio/fonemas/vocales/u/universo.mp3',
+                audio: 'assets/audio/fonemas/vocales/u/Universo.mp3',
                 imagen: 'assets/img/fonemas/vocales/u/universo.jpg',
                 duracion: 4,
                 reproduciendo: false
             },
             {
                 nombre: 'Uno',
-                audio: 'assets/audio/fonemas/vocales/u/uno.mp3',
+                audio: 'assets/audio/fonemas/vocales/u/Uno.mp3',
                 imagen: 'assets/img/fonemas/vocales/u/uno.jpg',
                 duracion: 4,
                 reproduciendo: false
             },
             {
                 nombre: 'Uña',
-                audio: 'assets/audio/fonemas/vocales/u/uña.mp3',
+                audio: 'assets/audio/fonemas/vocales/u/Uña.mp3',
                 imagen: 'assets/img/fonemas/vocales/u/uña.jpg',
                 duracion: 4,
                 reproduciendo: false
             },
             {
                 nombre: 'Urna',
-                audio: 'assets/audio/fonemas/vocales/u/urna.mp3',
+                audio: 'assets/audio/fonemas/vocales/u/Urna.mp3',
                 imagen: 'assets/img/fonemas/vocales/u/urna.jpg',
                 duracion: 4,
                 reproduciendo: false
             },
             {
                 nombre: 'Urraca',
-                audio: 'assets/audio/fonemas/vocales/u/urraca.mp3',
+                audio: 'assets/audio/fonemas/vocales/u/Urraca.mp3',
                 imagen: 'assets/img/fonemas/vocales/u/urraca.jpg',
                 duracion: 4,
                 reproduciendo: false
             },
             {
                 nombre: 'Útiles',
-                audio: 'assets/audio/fonemas/vocales/u/unicornio.mp3',
-                imagen: 'assets/img/fonemas/vocales/u/unicornio.jpg',
+                audio: 'assets/audio/fonemas/vocales/u/Útiles.mp3',
+                imagen: 'assets/img/fonemas/vocales/u/utiles.jpg',
                 duracion: 4,
                 reproduciendo: false
             }

@@ -8,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class SemanticsComponent implements OnInit {
   public visibleCategories = true;
   public visibleGame = false;
-  constructor() { }
+  
+  constructor(
 
-  ngOnInit() {}
+  ) { }
+
+  ngOnInit() {
+    
+  }
 
   selectPanel(value: string) {
     console.log(value);

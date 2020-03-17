@@ -1,3 +1,21 @@
+export interface PhonemeConsonantI {
+    consonante: string;
+    data: [{
+        nombre: string;
+        audio: string;
+        imagen: string;
+        duracion: number;
+        reproduciendo: Boolean;
+    }]
+}
+
+export interface OneDataPhonemeConsonantI {
+    nombre: string;
+    audio: string;
+    imagen: string;
+    duracion: number;
+    reproduciendo: Boolean;
+}
 
 export const CONSONANTES = [
     // Consonante B

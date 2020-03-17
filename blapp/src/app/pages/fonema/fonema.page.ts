@@ -1,5 +1,6 @@
 import { Component, OnInit, Output } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { PhonemeVocalI } from '../../../data/audio/fonemas/vocales/data.vocales';
 
 @Component({
   selector: 'app-fonema',
@@ -7,15 +8,20 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./fonema.page.scss'],
 })
 export class FonemaPage implements OnInit {
-  valueFonema = null;
-  mensajeFonema: string;
-  constructor(private activateRoute: ActivatedRoute) { }
+  public phonemeVocal: PhonemeVocalI;
+  //public valueFonema = null;
+  //public mensajeFonema: string;
+
+  constructor(
+    private activatedRoute: ActivatedRoute
+  ) { }
 
   ngOnInit() {
-    this.valueFonema = this.activateRoute.snapshot.paramMap.get('value');
-    console.log(this.valueFonema);
+    this.activatedRoute.queryParams.subscribe(params => {
+      this.phonemeVocal = JSON.parse(params['phoneme']);
+    });
+    //this.valueFonema = this.activateRoute.snapshot.paramMap.get('value');
+    //console.log(this.valueFonema);
   }
-
-
 
 }

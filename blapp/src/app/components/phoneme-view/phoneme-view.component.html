@@ -2,16 +2,16 @@
   <ion-grid>
     <ion-row>
       <ion-col class="bar">
-        <app-bar [fonema]="valueFonemaView" [imagen]="videoData.imagen" [mensaje]="videoData.mensaje"  (barEvent)="selectPanel($event)" ></app-bar>
+        <app-bar [fonema]="phoneme.vocal" [imagen]="videoData.imagen" [mensaje]="videoData.mensaje"  (barEvent)="selectPanel($event)" ></app-bar>
       </ion-col>
       <ion-col class="panel">
-        <app-phoneme-panel [fonema]="valueFonemaView" *ngIf="visiblePhoneme" [comando]="comandoFonema"></app-phoneme-panel>
-        <app-video-panel [video]="videoData.video" *ngIf="visibleVideo"></app-video-panel>
+        <app-phoneme-panel *ngIf="visiblePhoneme" [phonemeOneData]="phoneme.data[indexData]"></app-phoneme-panel>
+        <app-video-panel *ngIf="visibleVideo" [video]="videoData.video"></app-video-panel>
       </ion-col>
     </ion-row>
     <ion-row class="navigation">
       <ion-col>
-        <app-phoneme-nav (navigationEvent)="ejecutarAccion($event)"></app-phoneme-nav>
+        <app-phoneme-nav (forwardEmit)="incIndexData()" (backEmit)="decIndexData()"></app-phoneme-nav>
       </ion-col>
     </ion-row>
   </ion-grid>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { AuthenticationService } from '../../services/authentication.service';
 
 @Component({
   selector: 'app-menu',
@@ -10,13 +11,19 @@ export class MenuPage implements OnInit {
   public tipoUsuario: Boolean;
 
   constructor(
-    private activatedRoute: ActivatedRoute
+    private activatedRoute: ActivatedRoute,
+    private authenticationService: AuthenticationService    
   ) { }
 
   ngOnInit() {
     this.activatedRoute.queryParams.subscribe(params => {
       this.tipoUsuario = JSON.parse(params['tipo']);
     });
+    if (this.authenticationService.getUserDetails().tipo.toUpperCase() == "ESTUDIANTE") {
+      this.tipoUsuario = false;
+    } else if (this.authenticationService.getUserDetails().tipo.toUpperCase() == "DOCENTE") {
+      this.tipoUsuario = true;
+    }  
   }
 
 }
