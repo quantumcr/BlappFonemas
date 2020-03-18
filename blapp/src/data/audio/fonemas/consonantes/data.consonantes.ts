@@ -231,14 +231,6 @@ export const CONSONANTES = [
                 duracion: 4,
                 reproduciendo: false
             },
-            {
-                nombre: 'Flo-res',
-                silaba: 'Flo',
-                audio: 'assets/audio/fonemas/consonantes/f/Flores.mp3',
-                imagen: 'assets/img/fonemas/consonantes/f/Flores.jpg',
-                duracion: 4,
-                reproduciendo: false
-            },
         ],
         dataS: [
             {
@@ -1554,30 +1546,6 @@ export const CONSONANTES = [
                 reproduciendo: false
             },
             {
-                nombre: 'Pren-sas',
-                silaba: 'Pre',
-                audio: 'assets/audio/fonemas/consonantes/p/Prensas.mp3',
-                imagen: 'assets/img/fonemas/consonantes/p/Prensas.jpg',
-                duracion: 4,
-                reproduciendo: false
-            },
-            {
-                nombre: 'Pri-ma',
-                silaba: 'Pri',
-                audio: 'assets/audio/fonemas/consonantes/p/Prima.mp3',
-                imagen: 'assets/img/fonemas/consonantes/p/Prima.jpg',
-                duracion: 4,
-                reproduciendo: false
-            },
-            {
-                nombre: 'Pri-mo',
-                silaba: 'Pri',
-                audio: 'assets/audio/fonemas/consonantes/p/Primo.mp3',
-                imagen: 'assets/img/fonemas/consonantes/p/Primo.jpg',
-                duracion: 4,
-                reproduciendo: false
-            },
-            {
                 nombre: 'Pul-pe-ro',
                 silaba: 'Pu',
                 audio: 'assets/audio/fonemas/consonantes/p/Pulpero.mp3',
@@ -2282,30 +2250,7 @@ export const CONSONANTES = [
                 duracion: 4,
                 reproduciendo: false
             },
-            {
-                nombre: 'Trai-ler',
-                silaba: 'Tra',
-                audio: 'assets/audio/fonemas/consonantes/t/Trailer.mp3',
-                imagen: 'assets/img/fonemas/consonantes/t/Trailer.jpg',
-                duracion: 4,
-                reproduciendo: false
-            },
-            {
-                nombre: 'Tren',
-                silaba: 'Tre',
-                audio: 'assets/audio/fonemas/consonantes/t/Tren.mp3',
-                imagen: 'assets/img/fonemas/consonantes/t/Tren.jpg',
-                duracion: 4,
-                reproduciendo: false
-            },
-            {
-                nombre: 'Trom-pe-ta',
-                silaba: 'Tro',
-                audio: 'assets/audio/fonemas/consonantes/t/Trompeta.mp3',
-                imagen: 'assets/img/fonemas/consonantes/t/Trompeta.jpg',
-                duracion: 4,
-                reproduciendo: false
-            },
+
             {
                 nombre: 'Tu-cán',
                 silaba: 'Tu',
