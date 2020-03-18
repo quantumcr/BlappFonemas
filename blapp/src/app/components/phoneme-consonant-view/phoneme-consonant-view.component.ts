@@ -1,21 +1,29 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { VideoSelected } from '../../models/video-selected';
 import { VIDEOS } from '../../../data/data.videos';
+import { PhonemeConsonantI } from '../../../data/audio/fonemas/consonantes/data.consonantes';
+
 @Component({
   selector: 'app-phoneme-consonant-view',
   templateUrl: './phoneme-consonant-view.component.html',
   styleUrls: ['./phoneme-consonant-view.component.scss'],
 })
 export class PhonemeConsonantViewComponent implements OnInit {
-  videoData = new VideoSelected();
+  @Input() phoneme: PhonemeConsonantI;
+
+  public indexData: number = 0;
+  
+  public videoData = new VideoSelected();
   public visiblePhoneme = true;
   public visibleVideo = false;
-  @Input() valueFonemaView: string;
-  comandoFonema: string;
-  constructor() { }
+  public comandoFonema: string;
+  
+  constructor(
+
+  ) { }
 
   ngOnInit() {
-    this.getVideo(this.valueFonemaView);
+    this.getVideo(this.phoneme.consonante);
   }
 
   selectPanel(value: string) {
@@ -23,7 +31,7 @@ export class PhonemeConsonantViewComponent implements OnInit {
     this.setVisible(value);
   }
 
-  setVisible( value) {
+  setVisible(value) {
     if ( value === 'video') {
       this.visibleVideo = true;
       this.visiblePhoneme = false;
@@ -32,8 +40,6 @@ export class PhonemeConsonantViewComponent implements OnInit {
       this.visibleVideo = false;
       this.visiblePhoneme = true;
     }
-
-
   }
 
   getVideo(value: string) {
@@ -47,6 +53,22 @@ export class PhonemeConsonantViewComponent implements OnInit {
         this.videoData.reproduciendo = VIDEOS[i].reproduciendo;
         break;
       }
+    }
+  }
+
+  incIndexData() {
+    if (this.phoneme.data.length - 1 == this.indexData) {
+      this.indexData = 0;
+    } else {
+      this.indexData++;
+    }
+  }
+
+  decIndexData() {
+    if (this.indexData == 0) {
+      this.indexData = this.phoneme.data.length - 1;
+    } else {
+      this.indexData--;
     }
   }
 

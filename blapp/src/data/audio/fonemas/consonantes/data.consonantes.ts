@@ -6,6 +6,12 @@ export interface PhonemeConsonantI {
         imagen: string;
         duracion: number;
         reproduciendo: Boolean;
+    }],
+    dataS: [{
+        nombre: string;
+        audio: string;
+        duracion: number,
+        reproduciendo: false
     }]
 }
 
@@ -15,6 +21,13 @@ export interface OneDataPhonemeConsonantI {
     imagen: string;
     duracion: number;
     reproduciendo: Boolean;
+}
+
+export interface OneDataSPhonemeConsonantI {
+    nombre: string;
+    audio: string;
+    duracion: number,
+    reproduciendo: false
 }
 
 export const CONSONANTES = [
@@ -642,7 +655,7 @@ export const CONSONANTES = [
             },
             {
                 nombre: 'Ma-dri-na',
-                audio: 'assets/audio/fonemas/consonantes/m/Madrina.mp3',
+                audio: 'assets/audio/fonemas/consonantes/m/madrina.mp3',
                 imagen: 'assets/img/fonemas/consonantes/m/Madrina.jpg',
                 duracion: 4,
                 reproduciendo: false

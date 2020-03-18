@@ -2,36 +2,36 @@
   <ion-grid>
     <ion-row class="rowSilaba">
         <ion-col>
-          <ion-segment-button value='0' fill="round" class="silaba" (click)="playAudioS($event)">{{silaba1}}</ion-segment-button>
+          <ion-segment-button fill="round" class="silaba" (click)="playAudioS(0)">{{dataSPhonemeConsonant[0].nombre}}</ion-segment-button>
         </ion-col>
         <ion-col>
-          <ion-segment-button value= '1' fill="round"  class="silaba" (click)="playAudioS($event)">{{silaba2}}</ion-segment-button>
+          <ion-segment-button fill="round"  class="silaba" (click)="playAudioS(1)">{{dataSPhonemeConsonant[1].nombre}}</ion-segment-button>
         </ion-col>
         <ion-col>
-          <ion-segment-button value='2' fill="round"  class="silaba" (click)="playAudioS($event)">{{silaba3}}</ion-segment-button>
+          <ion-segment-button fill="round"  class="silaba" (click)="playAudioS(2)">{{dataSPhonemeConsonant[2].nombre}}</ion-segment-button>
         </ion-col>
         <ion-col>
-          <ion-segment-button value='3' fill="round"  class="silaba" (click)="playAudioS($event)">{{silaba4}}</ion-segment-button>
+          <ion-segment-button fill="round"  class="silaba" (click)="playAudioS(3)">{{dataSPhonemeConsonant[3].nombre}}</ion-segment-button>
         </ion-col>
         <ion-col>
-          <ion-segment-button value='4' fill="round"  class="silaba" (click)="playAudioS($event)">{{silaba5}}</ion-segment-button>
+          <ion-segment-button fill="round"  class="silaba" (click)="playAudioS(4)">{{dataSPhonemeConsonant[4].nombre}}</ion-segment-button>
         </ion-col> 
     </ion-row>
     <ion-row class="audioFonema">
       <div>
         <div>
-          <ion-img src={{imagen}}  class="imagen"></ion-img>
+          <ion-img src={{oneDataPhonemeConsonant.imagen}}  class="imagen"></ion-img>
         </div>
 
         <div style="position: absolute; left: 227px; top: 346px;">
-          <ion-segment-button value="audio" class="btnPlay" (click)="playAudio($event)">
+          <ion-segment-button class="btnPlay" (click)="playRecord()">
             <ion-icon src="assets/icon/play.svg"></ion-icon>
           </ion-segment-button>
         </div>
       </div>    
     </ion-row>
     <ion-row>
-      <ion-label class="palabra">{{palabra}}</ion-label>
+      <ion-label class="palabra">{{oneDataPhonemeConsonant.nombre}}</ion-label>
     </ion-row>
   </ion-grid>
 </div>
