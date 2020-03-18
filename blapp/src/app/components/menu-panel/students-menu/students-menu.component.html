@@ -16,19 +16,16 @@
     </ion-row>
 
     <ion-row class="opciones">
-      <ion-segment (ionChange)="selectTheme($event)">
-        <div>
-          <ion-segment-button value="fonemas" class="opcionFonema">
+      <ion-col>
+          <ion-segment-button value="fonemas" class="opcionFonema" (click)="selectTheme($event)">
           </ion-segment-button>
           <ion-label class="textoOpcion">{{opcion1}}</ion-label>
-        </div>
-
-        <div class="divSemantica">
-          <ion-segment-button value="semanticas" class="opcionSemantica">
+      </ion-col>
+      <ion-col>
+          <ion-segment-button value="semanticas" class="opcionSemantica" (click)="selectTheme($event)">
           </ion-segment-button>
           <ion-label class="textoOpcion">{{opcion2}}</ion-label>
-        </div> 
-      </ion-segment>
+      </ion-col>
     </ion-row>
   </ion-grid>
 </div>

@@ -21,7 +21,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"principal\">\r\n  <ion-grid>\r\n    <ion-row>\r\n      <ion-img src={{imagen}} class=\"imagen\"></ion-img>\r\n    </ion-row>\r\n\r\n    <ion-row>\r\n      <ion-label class=\"titulo\">{{titulo}}</ion-label>\r\n      \r\n    </ion-row>\r\n\r\n    <ion-row>\r\n      <ion-col>\r\n        <div>\r\n          \r\n        </div>         \r\n      </ion-col>\r\n    </ion-row>\r\n  </ion-grid>\r\n</div>\r\n\r\n";
+    __webpack_exports__["default"] = "<div class=\"principal\">\r\n  <ion-grid>\r\n    <ion-row>\r\n      <ion-img src=\"assets\\img\\semanticas\\semantics-bar\\semanticas.png\" class=\"imagen\"></ion-img>\r\n    </ion-row>\r\n\r\n    <ion-row>\r\n      <ion-label class=\"titulo\">{{this.category.nombre.toUpperCase()}}</ion-label>      \r\n    </ion-row>\r\n    \r\n    <div>\r\n      <ion-row *ngFor=\"let subcategory of category.subcategoria\">\r\n        <ion-col>\r\n          <ion-segment-button value=\"{{subcategory.nombre}}\" onclick=\"\">{{subcategory.nombre}}</ion-segment-button>\r\n        </ion-col>\r\n      </ion-row>\r\n    </div>\r\n  </ion-grid>\r\n</div>\r\n\r\n";
     /***/
   },
 
@@ -61,7 +61,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"principal\">\r\n  <ion-grid>\r\n    <ion-row class=\"imagenes\">\r\n      <ion-col>\r\n        <div class=\"sujeto\">\r\n          <div>\r\n            <ion-img src={{imagenSujeto}}></ion-img>\r\n          </div>\r\n        </div>\r\n      </ion-col>\r\n      <ion-col>\r\n        <div class=\"verbo\">\r\n          <div>\r\n            <ion-img src={{imagenVerbo}}></ion-img>\r\n          </div>\r\n        </div>\r\n      </ion-col>\r\n      <ion-col>\r\n        <div class=\"predicado\">\r\n          <div>\r\n            <ion-img src={{imagenPredicado}}></ion-img>\r\n          </div>\r\n        </div>\r\n      </ion-col>\r\n    </ion-row>\r\n\r\n    <ion-row>\r\n      <ion-col>\r\n        <div>\r\n          <ion-img src=\"assets/svg/semantics/categories-view/trayectoria.svg\" class=\"trayectoria\"></ion-img>\r\n        </div>\r\n      </ion-col>\r\n    </ion-row>\r\n    <ion-row>\r\n      <ion-col>\r\n        <div class=\"semantica\">\r\n          <ion-label class=\"palabras\">{{sujeto}}</ion-label>\r\n        </div>\r\n      </ion-col>\r\n      <ion-col>\r\n        <div class=\"semantica\">\r\n          <ion-label class=\"palabras\">{{verbo}}</ion-label>\r\n        </div>\r\n      </ion-col>\r\n      <ion-col>\r\n        <div class=\"semantica\">\r\n          <ion-label class=\"palabras\">{{predicado}}</ion-label>\r\n        </div>\r\n      </ion-col>\r\n    </ion-row>\r\n  </ion-grid>\r\n</div>\r\n";
+    __webpack_exports__["default"] = "<div class=\"principal\">\r\n  <ion-grid>\r\n    <ion-row class=\"imagenes\">\r\n      <ion-col>\r\n        <div class=\"sujeto\">\r\n          <ion-avatar class=\"imagenSujeto\">\r\n            <ion-img id=\"sujeto\" src=\"\"></ion-img>\r\n          </ion-avatar>\r\n        </div>\r\n      </ion-col>\r\n      <ion-col>\r\n        <div class=\"verbo\">\r\n          <div>\r\n            <ion-img id=\"verbo\" src=\"\"></ion-img>\r\n          </div>\r\n        </div>\r\n      </ion-col>\r\n      <ion-col>\r\n        <div class=\"predicado\">\r\n          <ion-avatar class=\"imagenPredicado\">\r\n            <ion-img id=\"predicado\" src=\"\"></ion-img>\r\n          </ion-avatar>\r\n        </div>\r\n      </ion-col>\r\n    </ion-row>\r\n\r\n    <ion-row>\r\n      <ion-col>\r\n        <div>\r\n          <ion-img src=\"assets/svg/semantics/categories-view/trayectoria.svg\" class=\"trayectoria\"></ion-img>\r\n        </div>\r\n      </ion-col>\r\n    </ion-row>\r\n    <ion-row>\r\n      <ion-col>\r\n        <div class=\"semantica\">\r\n          <ion-label class=\"palabras\">{{subcategoryOneData.sujeto}}</ion-label>\r\n        </div>\r\n      </ion-col>\r\n      <ion-col>\r\n        <div class=\"semantica\">\r\n          <ion-label class=\"palabras\">{{subcategoryOneData.verbo}}</ion-label>\r\n        </div>\r\n      </ion-col>\r\n      <ion-col>\r\n        <div class=\"semantica\">\r\n          <ion-label class=\"palabras\">{{subcategoryOneData.predicado}}</ion-label>\r\n        </div>\r\n      </ion-col>\r\n    </ion-row>\r\n  </ion-grid>\r\n</div>\r\n";
     /***/
   },
 
@@ -81,7 +81,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"principal\">\r\n    <ion-grid>\r\n        <ion-row>\r\n          <ion-col class=\"bar\">\r\n            <app-categories-bar [titulo]=\"valueCategoriaView\"   (barEvent)=\"selectPanel($event)\" ></app-categories-bar>\r\n          </ion-col>\r\n          <ion-col class=\"panel\">\r\n            <app-categories-view-panel [subcategoria]=\"valueSubCategoriaView\" ></app-categories-view-panel>\r\n          </ion-col>\r\n        </ion-row>\r\n        <ion-row class=\"navigation\">\r\n          <ion-col>\r\n            <app-categories-navigation></app-categories-navigation>\r\n          </ion-col>\r\n        </ion-row>\r\n      </ion-grid>\r\n</div>";
+    __webpack_exports__["default"] = "<div class=\"principal\">\r\n    <ion-grid>\r\n        <ion-row>\r\n          <ion-col class=\"bar\">\r\n            <app-categories-bar [category]=\"category\" (subcategoryEmit)=\"changeSubcategory($event)\" ></app-categories-bar>\r\n          </ion-col>\r\n          <ion-col class=\"panel\">\r\n            <app-categories-view-panel [subcategoryOneData]=\"subcategory.data[indexData]\" ></app-categories-view-panel>\r\n          </ion-col>\r\n        </ion-row>\r\n        <ion-row class=\"navigation\">\r\n          <ion-col>\r\n            <app-categories-navigation (forwardEmit)=\"incIndexData()\" (backEmit)=\"decIndexData()\"></app-categories-navigation>\r\n          </ion-col>\r\n        </ion-row>\r\n      </ion-grid>\r\n</div>";
     /***/
   },
 
@@ -101,7 +101,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"principal\">\r\n  <ion-grid justify-content-center>\r\n    <ion-row>\r\n      <ion-col >\r\n        <ion-label class=\"tituloUsuario\">{{usuario}}</ion-label>\r\n        <ion-input class=\"usuario\" (ionInput)=\"setEmail($event)\"></ion-input>\r\n      </ion-col>\r\n    </ion-row>\r\n\r\n    <ion-row justify-content-center>\r\n      <ion-col >\r\n        <ion-label class=\"tituloClave\">{{clave}}</ion-label>\r\n        <ion-input class=\"clave\" type=\"password\" (ionInput)=\"setPassword($event)\"></ion-input>\r\n      </ion-col>\r\n    </ion-row> \r\n\r\n    <ion-row justify-content-center>\r\n      <ion-col>\r\n        <ion-button color=\"blappButton\" class=\"btnLogin\" (click)=\"login()\">{{comando}}</ion-button>\r\n      </ion-col>\r\n    </ion-row>\r\n  </ion-grid>\r\n</div>\r\n";
+    __webpack_exports__["default"] = "<div class=\"principal\">\r\n  <ion-grid justify-content-center>\r\n    <ion-row>\r\n      <ion-col >\r\n        <ion-label class=\"tituloUsuario\">{{usuario}}</ion-label>\r\n        <ion-input id=\"email\" class=\"usuario\" (ionInput)=\"setEmail($event)\"></ion-input>\r\n      </ion-col>\r\n    </ion-row>\r\n\r\n    <ion-row justify-content-center>\r\n      <ion-col >\r\n        <ion-label class=\"tituloClave\">{{clave}}</ion-label>\r\n        <ion-input id=\"password\" class=\"clave\" type=\"password\" (ionInput)=\"setPassword($event)\"></ion-input>\r\n      </ion-col>\r\n    </ion-row> \r\n\r\n    <ion-row justify-content-center>\r\n      <ion-col>\r\n        <ion-button color=\"blappButton\" class=\"btnLogin\" (click)=\"login()\">{{comando}}</ion-button>\r\n      </ion-col>\r\n    </ion-row>\r\n  </ion-grid>\r\n</div>\r\n";
     /***/
   },
 
@@ -121,7 +121,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"principal\">\r\n  <ion-grid>\r\n    <ion-row>\r\n      <ion-col>\r\n        <!--\r\n        <app-students-menu  titulo=\"Estudiante\" opcion1=\"fonemas\" opcion2=\"categorías semánticas\"></app-students-menu>\r\n        -->\r\n        <app-professor-menu  titulo=\"¡Buenos días, Profe!\" opcion1=\"Fonemas\" opcion2=\"Categorías semánticas\" opcion3=\"estudiantes\"></app-professor-menu>\r\n      \r\n      </ion-col>\r\n    </ion-row>\r\n  </ion-grid>\r\n</div>\r\n";
+    __webpack_exports__["default"] = "<div class=\"principal\">\r\n  <ion-grid>\r\n    <ion-row>\r\n      <ion-col>\r\n        \r\n        <app-students-menu *ngIf=\"!tipo\" titulo=\"Estudiante\" opcion1=\"Fonemas\" opcion2=\"Categorías semánticas\"></app-students-menu>\r\n        \r\n        <app-professor-menu *ngIf=\"tipo\" titulo=\"¡Buenos días, Profe!\" opcion1=\"Fonemas\" opcion2=\"Categorías semánticas\" opcion3=\"Estudiantes\"></app-professor-menu>\r\n      \r\n      </ion-col>\r\n    </ion-row>\r\n  </ion-grid>\r\n</div>\r\n";
     /***/
   },
 
@@ -141,7 +141,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"principal\">\r\n    <ion-grid>\r\n  \r\n      <ion-row>\r\n        <ion-col>\r\n          <ion-button fill=\"clear\" class=\"icon\" (click)=\"logout()\">\r\n            <ion-img src=\"assets/icon/logout.svg\"></ion-img>\r\n          </ion-button>\r\n        </ion-col>\r\n      </ion-row>\r\n  \r\n      <ion-row class=\"titulo\">\r\n        <ion-col>\r\n          <ion-label class=\"texto\">{{titulo}}</ion-label>\r\n        </ion-col>\r\n      </ion-row>\r\n  \r\n      <ion-row class=\"opciones\">\r\n        <ion-segment (ionChange)=\"selectTheme($event)\">\r\n          <div> \r\n            <ion-segment-button value=\"fonemas\" class=\"opcionFonema\">\r\n            </ion-segment-button>\r\n            <ion-label class=\"textoOpcion\">{{opcion1}}</ion-label>\r\n          \r\n          </div>\r\n  \r\n          <div>\r\n            <ion-segment-button value=\"semanticas\" class=\"opcionSemantica\">\r\n            </ion-segment-button>\r\n            <ion-label class=\"textoOpcion\">{{opcion2}}</ion-label>\r\n          </div> \r\n\r\n          <div>\r\n            <ion-segment-button value=\"docentes\" class=\"opcionEstudiantes\">\r\n            </ion-segment-button>\r\n            <ion-label class=\"textoOpcion\">{{opcion3}}</ion-label>\r\n          </div>           \r\n        </ion-segment>\r\n      </ion-row>\r\n    </ion-grid>\r\n  </div>\r\n";
+    __webpack_exports__["default"] = "<div class=\"principal\">\r\n    <ion-grid>\r\n  \r\n      <ion-row>\r\n        <ion-col>\r\n          <ion-button fill=\"clear\" class=\"icon\" (click)=\"logout()\">\r\n            <ion-img src=\"assets/icon/logout.svg\"></ion-img>\r\n          </ion-button>\r\n        </ion-col>\r\n      </ion-row>\r\n  \r\n      <ion-row class=\"titulo\">\r\n        <ion-col>\r\n          <ion-label class=\"texto\">{{titulo}}</ion-label>\r\n        </ion-col>\r\n      </ion-row>\r\n  \r\n      <ion-row class=\"opciones\">\r\n        <ion-col> \r\n            <ion-segment-button value=\"fonemas\" class=\"opcionFonema\"(click)=\"selectTheme($event)\">\r\n            </ion-segment-button>\r\n            <ion-label class=\"textoOpcion\">{{opcion1}}</ion-label>\r\n        </ion-col>\r\n        <ion-col>\r\n            <ion-segment-button value=\"semanticas\" class=\"opcionSemantica\" (click)=\"selectTheme($event)\">\r\n            </ion-segment-button>\r\n            <ion-label class=\"textoOpcion\">{{opcion2}}</ion-label>\r\n        </ion-col>\r\n        <ion-col>\r\n            <ion-segment-button value=\"docentes\" class=\"opcionEstudiantes\" (click)=\"selectTheme($event)\">\r\n            </ion-segment-button>\r\n            <ion-label class=\"textoOpcion\">{{opcion3}}</ion-label>\r\n        </ion-col>\r\n      </ion-row>\r\n    </ion-grid>\r\n  </div>\r\n";
     /***/
   },
 
@@ -161,7 +161,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"principal\">\r\n  <ion-grid>\r\n\r\n    <ion-row>\r\n      <ion-col>\r\n        <ion-button fill=\"clear\" class=\"icon\" (click)=\"logout()\">\r\n          <ion-img src=\"assets/icon/logout.svg\"></ion-img>\r\n        </ion-button>\r\n      </ion-col>\r\n    </ion-row>\r\n\r\n    <ion-row class=\"titulo\">\r\n      <ion-col>\r\n        <ion-label class=\"texto\">¡Hola {{authenticationService.getUserDetails().nombre}}!<br>¿Qué aprenderemos hoy?</ion-label>\r\n      </ion-col>\r\n    </ion-row>\r\n\r\n    <ion-row class=\"opciones\">\r\n      <ion-segment (ionChange)=\"selectTheme($event)\">\r\n        <div>\r\n          <ion-segment-button value=\"fonemas\" class=\"opcionFonema\">\r\n          </ion-segment-button>\r\n          <ion-label class=\"textoOpcion\">{{opcion1}}</ion-label>\r\n        </div>\r\n\r\n        <div class=\"divSemantica\">\r\n          <ion-segment-button value=\"semanticas\" class=\"opcionSemantica\">\r\n          </ion-segment-button>\r\n          <ion-label class=\"textoOpcion\">{{opcion2}}</ion-label>\r\n        </div> \r\n      </ion-segment>\r\n    </ion-row>\r\n  </ion-grid>\r\n</div>\r\n";
+    __webpack_exports__["default"] = "<div class=\"principal\">\r\n  <ion-grid>\r\n\r\n    <ion-row>\r\n      <ion-col>\r\n        <ion-button fill=\"clear\" class=\"icon\" (click)=\"logout()\">\r\n          <ion-img src=\"assets/icon/logout.svg\"></ion-img>\r\n        </ion-button>\r\n      </ion-col>\r\n    </ion-row>\r\n\r\n    <ion-row class=\"titulo\">\r\n      <ion-col>\r\n        <ion-label class=\"texto\">¡Hola {{authenticationService.getUserDetails().nombre}}!<br>¿Qué aprenderemos hoy?</ion-label>\r\n      </ion-col>\r\n    </ion-row>\r\n\r\n    <ion-row class=\"opciones\">\r\n      <ion-col>\r\n          <ion-segment-button value=\"fonemas\" class=\"opcionFonema\" (click)=\"selectTheme($event)\">\r\n          </ion-segment-button>\r\n          <ion-label class=\"textoOpcion\">{{opcion1}}</ion-label>\r\n      </ion-col>\r\n      <ion-col>\r\n          <ion-segment-button value=\"semanticas\" class=\"opcionSemantica\" (click)=\"selectTheme($event)\">\r\n          </ion-segment-button>\r\n          <ion-label class=\"textoOpcion\">{{opcion2}}</ion-label>\r\n      </ion-col>\r\n    </ion-row>\r\n  </ion-grid>\r\n</div>\r\n";
     /***/
   },
 
@@ -241,7 +241,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"principal\">\r\n  <ion-grid>\r\n    <ion-row class=\"rowSilaba\">\r\n        <ion-col>\r\n          <ion-segment-button value='0' fill=\"round\" class=\"silaba\" (click)=\"playAudioS($event)\">{{silaba1}}</ion-segment-button>\r\n        </ion-col>\r\n        <ion-col>\r\n          <ion-segment-button value= '1' fill=\"round\"  class=\"silaba\" (click)=\"playAudioS($event)\">{{silaba2}}</ion-segment-button>\r\n        </ion-col>\r\n        <ion-col>\r\n          <ion-segment-button value='2' fill=\"round\"  class=\"silaba\" (click)=\"playAudioS($event)\">{{silaba3}}</ion-segment-button>\r\n        </ion-col>\r\n        <ion-col>\r\n          <ion-segment-button value='3' fill=\"round\"  class=\"silaba\" (click)=\"playAudioS($event)\">{{silaba4}}</ion-segment-button>\r\n        </ion-col>\r\n        <ion-col>\r\n          <ion-segment-button value='4' fill=\"round\"  class=\"silaba\" (click)=\"playAudioS($event)\">{{silaba5}}</ion-segment-button>\r\n        </ion-col> \r\n    </ion-row>\r\n    <ion-row class=\"audioFonema\">\r\n      <div>\r\n        <div>\r\n          <ion-img src={{imagen}}  class=\"imagen\"></ion-img>\r\n        </div>\r\n\r\n        <div style=\"position: absolute; left: 227px; top: 346px;\">\r\n          <ion-segment-button value=\"audio\" class=\"btnPlay\" (click)=\"playAudio($event)\">\r\n            <ion-icon src=\"assets/icon/play.svg\"></ion-icon>\r\n          </ion-segment-button>\r\n        </div>\r\n      </div>    \r\n    </ion-row>\r\n    <ion-row>\r\n      <ion-label class=\"palabra\">{{palabra}}</ion-label>\r\n    </ion-row>\r\n  </ion-grid>\r\n</div>\r\n";
+    __webpack_exports__["default"] = "<div class=\"principal\">\r\n  <ion-grid>\r\n    <ion-row class=\"rowSilaba\">\r\n        <ion-col>\r\n          <ion-segment-button value='0' fill=\"round\" class=\"silaba\" (click)=\"playAudioS($event)\">{{silaba1}}</ion-segment-button>\r\n        </ion-col>\r\n        <ion-col>\r\n          <ion-segment-button value= '1' fill=\"round\"  class=\"silaba\" (click)=\"playAudioS($event)\">{{silaba2}}</ion-segment-button>\r\n        </ion-col>\r\n        <ion-col>\r\n          <ion-segment-button value='2' fill=\"round\"  class=\"silaba\" (click)=\"playAudioS($event)\">{{silaba3}}</ion-segment-button>\r\n        </ion-col>\r\n        <ion-col>\r\n          <ion-segment-button value='3' fill=\"round\"  class=\"silaba\" (click)=\"playAudioS($event)\">{{silaba4}}</ion-segment-button>\r\n        </ion-col>\r\n        <ion-col>\r\n          <ion-segment-button value='4' fill=\"round\"  class=\"silaba\" (click)=\"playAudioS($event)\">{{silaba5}}</ion-segment-button>\r\n        </ion-col> \r\n    </ion-row>\r\n    <ion-row class=\"audioFonema\">\r\n      <div>\r\n        <ion-avatar class=\"imagen\">\r\n          <ion-img src={{imagen}}></ion-img>\r\n        </ion-avatar>\r\n\r\n        <div style=\"position: absolute; left: 227px; top: 406px;\">\r\n          <ion-segment-button value=\"audio\" class=\"btnPlay\" (click)=\"playAudio($event)\">\r\n            <ion-icon src=\"assets/icon/play.svg\"></ion-icon>\r\n          </ion-segment-button>\r\n        </div>\r\n      </div>    \r\n    </ion-row>\r\n    <ion-row>\r\n      <ion-label class=\"palabra\">{{palabra}}</ion-label>\r\n    </ion-row>\r\n  </ion-grid>\r\n</div>\r\n";
     /***/
   },
 
@@ -301,7 +301,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"principal\">\r\n  <ion-grid>\r\n    <ion-row>\r\n      <ion-label class=\"titulo\">FONEMA</ion-label>\r\n    </ion-row>\r\n    <ion-row>\r\n      <ion-label class=\"fonema\">/ {{fonema}} /</ion-label>\r\n    </ion-row>\r\n    <ion-row class=\"videoFonema\">\r\n      <div>\r\n        <div >\r\n          <ion-img src={{imagen}} class=\"imagen\"></ion-img>\r\n        </div>\r\n        <div style=\"position: absolute; left: 37px; top: 421px;\">\r\n          <ion-segment-button *ngIf=\"visibleVideo\"  value=\"video\" class=\"btnPlay\" (click)=\"openPanel($event)\">\r\n            <ion-icon  src=\"assets/icon/play.svg\"></ion-icon>\r\n          </ion-segment-button>\r\n          <ion-segment-button *ngIf=\"visibleAudio\"  value=\"phoneme\" class=\"btnPlay\" (click)=\"openPanel($event)\">\r\n            <ion-icon src=\"assets/icon/audio.svg\"></ion-icon>\r\n          </ion-segment-button>          \r\n        </div>\r\n      </div>\r\n    </ion-row>\r\n    <ion-row>\r\n      <ion-label class=\"mensaje\">{{mensaje}}</ion-label>\r\n    </ion-row>\r\n  </ion-grid>\r\n</div>\r\n";
+    __webpack_exports__["default"] = "<div class=\"principal\">\r\n  <ion-grid>\r\n    <ion-row>\r\n      <ion-label class=\"titulo\">FONEMA</ion-label>\r\n    </ion-row>\r\n    <ion-row>\r\n      <ion-label class=\"fonema\">/ {{fonema}} /</ion-label>\r\n    </ion-row>\r\n    <ion-row class=\"videoFonema\">\r\n      <div>\r\n        <div shape=\"round\">\r\n          <ion-img src={{imagen}} class=\"imagen\"></ion-img>\r\n        </div>\r\n        <div style=\"position: absolute; left: 37px; top: 421px;\">\r\n          <ion-segment-button *ngIf=\"visibleVideo\"  value=\"video\" class=\"btnPlay\" (click)=\"openPanel($event)\">\r\n            <ion-icon  src=\"assets/icon/play.svg\"></ion-icon>\r\n          </ion-segment-button>\r\n          <ion-segment-button *ngIf=\"visibleAudio\"  value=\"phoneme\" class=\"btnPlay\" (click)=\"openPanel($event)\">\r\n            <ion-icon src=\"assets/icon/audio.svg\"></ion-icon>\r\n          </ion-segment-button>          \r\n        </div>\r\n      </div>\r\n    </ion-row>\r\n    <ion-row>\r\n      <ion-label class=\"mensaje\">{{mensaje}}</ion-label>\r\n    </ion-row>\r\n  </ion-grid>\r\n</div>\r\n";
     /***/
   },
 
@@ -341,7 +341,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"principal\">\r\n  <ion-grid>\r\n    <ion-row class=\"audioFonema\">   \r\n      <div>\r\n        <div>\r\n          <ion-img src={{imagen}}  class=\"imagen\"></ion-img>\r\n        </div>\r\n\r\n        <div style=\"position: absolute; left: 227px; top: 346px;\">\r\n          <ion-segment-button value=\"audio\" class=\"btnPlay\" (click)=\"playAudio($event)\">\r\n            <ion-icon src=\"assets/icon/play.svg\"></ion-icon>\r\n          </ion-segment-button>\r\n        </div>\r\n      </div>    \r\n    </ion-row>\r\n    <ion-row>\r\n      <ion-label class=\"palabra\">{{palabra}}</ion-label>\r\n    </ion-row>\r\n  </ion-grid>\r\n</div>\r\n\r\n";
+    __webpack_exports__["default"] = "<div class=\"principal\">\r\n  <ion-grid>\r\n    <ion-row class=\"audioFonema\">   \r\n      <div>\r\n        <ion-avatar class=\"imagen\">\r\n          <ion-img src={{imagen}}></ion-img>\r\n        </ion-avatar>\r\n\r\n        <div style=\"position: absolute; left: 227px; top: 346px;\">\r\n          <ion-segment-button value=\"audio\" class=\"btnPlay\" (click)=\"playAudio($event)\">\r\n            <ion-icon src=\"assets/icon/play.svg\"></ion-icon>\r\n          </ion-segment-button>\r\n        </div>\r\n      </div>    \r\n    </ion-row>\r\n    <ion-row>\r\n      <ion-label class=\"palabra\">{{palabra}}</ion-label>\r\n    </ion-row>\r\n  </ion-grid>\r\n</div>\r\n\r\n";
     /***/
   },
 
@@ -641,7 +641,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"principal\">\r\n  <ion-grid class=\"grid\">\r\n      <ion-row class=\"row\">\r\n          <ion-col>\r\n              <ion-segment-button value=\"imagen\" class=\"phonemeButton\" (click)=\"goToCategories($event)\">Imagen de<br>mi mismo</ion-segment-button>\r\n          </ion-col>\r\n          <ion-col>\r\n              <ion-segment-button value=\"cuerpo\" class=\"phonemeButton\" (click)=\"goToCategories($event)\">Partes del<br>cuerpo</ion-segment-button>\r\n          </ion-col>\r\n          <ion-col>\r\n              <ion-segment-button value=\"familia\" class=\"phonemeButton\" (click)=\"goToCategories($event)\">Familia</ion-segment-button>\r\n          </ion-col>                        \r\n      </ion-row>\r\n\r\n      <ion-row class=\"row\">\r\n          <ion-col>\r\n              <ion-segment-button value=\"alimentos\" class=\"phonemeButton\" (click)=\"goToCategories($event)\">Alimentos</ion-segment-button>\r\n          </ion-col>\r\n          <ion-col>\r\n              <ion-segment-button value=\"animales\" class=\"phonemeButton\" (click)=\"goToCategories($event)\">Animales</ion-segment-button>\r\n          </ion-col>\r\n          <ion-col>\r\n              <ion-segment-button value=\"juguetes\" class=\"phonemeButton\" (click)=\"goToCategories($event)\">Juguetes</ion-segment-button>\r\n          </ion-col>                        \r\n      </ion-row>  \r\n      \r\n      <ion-row class=\"row\">\r\n          <ion-col>\r\n              <ion-segment-button value=\"ropa\" class=\"phonemeButton\" (click)=\"goToCategories($event)\">Prendas de<br>vestir</ion-segment-button>\r\n          </ion-col>\r\n          <ion-col>\r\n              <ion-segment-button value=\"casa\" class=\"phonemeButton\" (click)=\"goToCategories($event)\">Partes de<br>la casa</ion-segment-button>\r\n          </ion-col>\r\n          <ion-col>\r\n              <ion-segment-button value=\"transporte\" class=\"phonemeButton\" (click)=\"goToCategories($event)\">Medios<br>transporte</ion-segment-button>\r\n          </ion-col>                        \r\n      </ion-row> \r\n\r\n      <ion-row class=\"lastRow\">\r\n          <ion-col>\r\n              <ion-segment-button value=\"\"  class=\"phonemeButton\" (click)=\"goToCategories($event)\">Servidores de<br>la comunidad</ion-segment-button>\r\n          </ion-col>\r\n          <ion-col>\r\n              <ion-segment-button value=\"\" class=\"phonemeButton\" (click)=\"goToCategories($event)\">Instrumentos<br>musicales</ion-segment-button>\r\n          </ion-col>                     \r\n      </ion-row>      \r\n  </ion-grid>\r\n</div>\r\n";
+    __webpack_exports__["default"] = "<div class=\"principal\">\r\n  <ion-grid class=\"grid\">\r\n      <ion-row class=\"row\">\r\n          <ion-col>\r\n              <ion-segment-button class=\"phonemeButton\" (click)=\"goToCategories('Imagen de mí mismo')\">Imagen de<br>mi mismo</ion-segment-button>\r\n          </ion-col>\r\n          <ion-col>\r\n              <ion-segment-button class=\"phonemeButton\" (click)=\"goToCategories('Partes del Cuerpo')\">Partes del<br>cuerpo</ion-segment-button>\r\n          </ion-col>\r\n          <ion-col>\r\n              <ion-segment-button class=\"phonemeButton\" (click)=\"goToCategories('Familia')\">Familia</ion-segment-button>\r\n          </ion-col>                        \r\n      </ion-row>\r\n\r\n      <ion-row class=\"row\">\r\n          <ion-col>\r\n              <ion-segment-button class=\"phonemeButton\" (click)=\"goToCategories('Alimentos')\">Alimentos</ion-segment-button>\r\n          </ion-col>\r\n          <ion-col>\r\n              <ion-segment-button class=\"phonemeButton\" (click)=\"goToCategories('Animales')\">Animales</ion-segment-button>\r\n          </ion-col>\r\n          <ion-col>\r\n              <ion-segment-button class=\"phonemeButton\" (click)=\"goToCategories('Juguetes')\">Juguetes</ion-segment-button>\r\n          </ion-col>                        \r\n      </ion-row>  \r\n      \r\n      <ion-row class=\"row\">\r\n          <ion-col>\r\n              <ion-segment-button class=\"phonemeButton\" (click)=\"goToCategories('Prendas de Vestir')\">Prendas de<br>vestir</ion-segment-button>\r\n          </ion-col>\r\n          <ion-col>\r\n              <ion-segment-button class=\"phonemeButton\" (click)=\"goToCategories('Partes de la Casa')\">Partes de<br>la casa</ion-segment-button>\r\n          </ion-col>\r\n          <ion-col>\r\n              <ion-segment-button class=\"phonemeButton\" (click)=\"goToCategories('Medios de Transporte')\">Medios<br>transporte</ion-segment-button>\r\n          </ion-col>                        \r\n      </ion-row> \r\n\r\n      <ion-row class=\"lastRow\">\r\n          <ion-col>\r\n              <ion-segment-button class=\"phonemeButton\" (click)=\"goToCategories('Servidores de la Comunidad')\">Servidores de<br>la comunidad</ion-segment-button>\r\n          </ion-col>\r\n          <ion-col>\r\n              <ion-segment-button class=\"phonemeButton\" (click)=\"goToCategories('Instrumentos Musicales')\">Instrumentos<br>musicales</ion-segment-button>\r\n          </ion-col>                     \r\n      </ion-row>      \r\n  </ion-grid>\r\n</div>\r\n";
     /***/
   },
 
@@ -823,6 +823,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       function CategoriesBarComponent() {
         _classCallCheck(this, CategoriesBarComponent);
 
+        this.subcategoryEmit = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
         this.semanticsBarEvent = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
       }
 
@@ -832,11 +833,18 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "openPanel",
         value: function openPanel(event) {}
+      }, {
+        key: "subcategorySelected",
+        value: function subcategorySelected(subcategoryName) {
+          this.subcategoryEmit.emit(subcategoryName);
+        }
       }]);
 
       return CategoriesBarComponent;
     }();
 
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Object)], CategoriesBarComponent.prototype, "category", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])], CategoriesBarComponent.prototype, "subcategoryEmit", void 0);
     tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)], CategoriesBarComponent.prototype, "titulo", void 0);
     tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)], CategoriesBarComponent.prototype, "imagen", void 0);
     tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)], CategoriesBarComponent.prototype, "comando1", void 0);
@@ -920,7 +928,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         _classCallCheck(this, CategoriesNavigationComponent);
 
         this.navCtrl = navCtrl;
-        this.navigationEvent = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
+        this.forwardEmit = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
+        this.backEmit = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
       }
 
       _createClass(CategoriesNavigationComponent, [{
@@ -933,10 +942,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         }
       }, {
         key: "forward",
-        value: function forward(event) {}
+        value: function forward() {
+          this.forwardEmit.emit();
+        }
       }, {
         key: "back",
-        value: function back(event) {}
+        value: function back() {
+          this.backEmit.emit();
+        }
       }]);
 
       return CategoriesNavigationComponent;
@@ -948,7 +961,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }];
     };
 
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Object)], CategoriesNavigationComponent.prototype, "navigationEvent", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Object)], CategoriesNavigationComponent.prototype, "forwardEmit", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Object)], CategoriesNavigationComponent.prototype, "backEmit", void 0);
     CategoriesNavigationComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
       selector: 'app-categories-navigation',
       template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
@@ -977,7 +991,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = ".principal {\n  width: 818px;\n  height: 624px;\n  background: #FFFFFF;\n  border: 2px solid #FFFFFF;\n  box-sizing: border-box;\n  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);\n  border-radius: 10px;\n}\n\n.imagenes {\n  margin-top: 95px;\n}\n\n.trayectoria {\n  margin-left: auto;\n  margin-right: auto;\n  width: 532px;\n  height: 97.18px;\n}\n\n.grid {\n  margin-top: 57px;\n  left: 56px;\n}\n\n.sujeto {\n  width: 230px;\n  height: 230px;\n  margin-left: auto;\n  background: url('black.svg');\n  background-size: auto;\n}\n\n.verbo {\n  width: 161px;\n  height: 161px;\n  margin-top: 34px;\n  margin-left: 42px;\n  margin-right: 43px;\n  background: url('red.svg');\n  background-size: auto;\n}\n\n.predicado {\n  width: 230px;\n  height: 230px;\n  margin-right: auto;\n  background: url('green.svg');\n  background-size: auto;\n}\n\n.element {\n  margin-left: auto;\n  margin-right: auto;\n  width: 176px;\n  height: 176px;\n  background: url('element.svg');\n  background-size: auto;\n}\n\n.options {\n  margin-top: 32px;\n}\n\n.palabras {\n  font-family: Poppins;\n  font-style: normal;\n  font-weight: 500;\n  font-size: 35px;\n  line-height: 52px;\n  /* identical to box height */\n  text-align: center;\n  color: #3C3C3C;\n}\n\n.semantica {\n  margin-left: auto;\n  margin-right: auto;\n  text-align: center;\n}\n\n.imagen {\n  width: 161px;\n  height: 161px;\n}\n\n.example-box {\n  width: 161px;\n  height: 161px;\n  border: solid 1px #ccc;\n  color: rgba(0, 0, 0, 0.87);\n  cursor: move;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n          align-items: center;\n  text-align: center;\n  background: #fff;\n  border-radius: 100px;\n  position: relative;\n  z-index: 1;\n  -webkit-transition: box-shadow 200ms cubic-bezier(0, 0, 0.2, 1);\n  transition: box-shadow 200ms cubic-bezier(0, 0, 0.2, 1);\n  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);\n}\n\n.example-box:active {\n  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9jYXRlZ29yaWVzLXZpZXcvY2F0ZWdvcmllcy12aWV3LXBhbmVsL0M6XFxVc2Vyc1xcYmVybmFcXERvY3VtZW50c1xcR2l0SHViXFxCbGFwcEZvbmVtYXNcXGJsYXBwL3NyY1xcYXBwXFxjb21wb25lbnRzXFxjYXRlZ29yaWVzLXZpZXdcXGNhdGVnb3JpZXMtdmlldy1wYW5lbFxcY2F0ZWdvcmllcy12aWV3LXBhbmVsLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9jb21wb25lbnRzL2NhdGVnb3JpZXMtdmlldy9jYXRlZ29yaWVzLXZpZXctcGFuZWwvY2F0ZWdvcmllcy12aWV3LXBhbmVsLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksWUFBQTtFQUNBLGFBQUE7RUFDQSxtQkFBQTtFQUNBLHlCQUFBO0VBQ0Esc0JBQUE7RUFDQSwyQ0FBQTtFQUNBLG1CQUFBO0FDQ0o7O0FEQ0E7RUFDSSxnQkFBQTtBQ0VKOztBREFBO0VBQ0ksaUJBQUE7RUFDQSxrQkFBQTtFQUNBLFlBQUE7RUFDQSxlQUFBO0FDR0o7O0FEREE7RUFDSSxnQkFBQTtFQUNBLFVBQUE7QUNJSjs7QURGQTtFQUNJLFlBQUE7RUFDQSxhQUFBO0VBQ0EsaUJBQUE7RUFDQSw0QkFBQTtFQUNBLHFCQUFBO0FDS0o7O0FESEE7RUFDSSxZQUFBO0VBQ0EsYUFBQTtFQUNBLGdCQUFBO0VBQ0EsaUJBQUE7RUFDQSxrQkFBQTtFQUNBLDBCQUFBO0VBQ0EscUJBQUE7QUNNSjs7QURKQTtFQUNJLFlBQUE7RUFDQSxhQUFBO0VBQ0Esa0JBQUE7RUFDQSw0QkFBQTtFQUNBLHFCQUFBO0FDT0o7O0FETEE7RUFDSSxpQkFBQTtFQUNBLGtCQUFBO0VBQ0EsWUFBQTtFQUNBLGFBQUE7RUFDQSw4QkFBQTtFQUNBLHFCQUFBO0FDUUo7O0FETkE7RUFDSSxnQkFBQTtBQ1NKOztBRFBBO0VBQ0ksb0JBQUE7RUFDQSxrQkFBQTtFQUNBLGdCQUFBO0VBQ0EsZUFBQTtFQUNBLGlCQUFBO0VBQ0EsNEJBQUE7RUFDQSxrQkFBQTtFQUVBLGNBQUE7QUNTSjs7QURQQTtFQUNJLGlCQUFBO0VBQ0Esa0JBQUE7RUFDQSxrQkFBQTtBQ1VKOztBRE5BO0VBQ0ksWUFBQTtFQUNBLGFBQUE7QUNTSjs7QURMQTtFQUNJLFlBQUE7RUFDQSxhQUFBO0VBQ0Esc0JBQUE7RUFDQSwwQkFBQTtFQUNBLFlBQUE7RUFDQSxvQkFBQTtFQUFBLGFBQUE7RUFDQSx3QkFBQTtVQUFBLHVCQUFBO0VBQ0EseUJBQUE7VUFBQSxtQkFBQTtFQUNBLGtCQUFBO0VBQ0EsZ0JBQUE7RUFDQSxvQkFBQTtFQUNBLGtCQUFBO0VBQ0EsVUFBQTtFQUNBLCtEQUFBO0VBQUEsdURBQUE7RUFDQSwrR0FBQTtBQ1FKOztBREhFO0VBQ0UscUhBQUE7QUNNSiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvY2F0ZWdvcmllcy12aWV3L2NhdGVnb3JpZXMtdmlldy1wYW5lbC9jYXRlZ29yaWVzLXZpZXctcGFuZWwuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIucHJpbmNpcGFse1xyXG4gICAgd2lkdGg6IDgxOHB4O1xyXG4gICAgaGVpZ2h0OiA2MjRweDtcclxuICAgIGJhY2tncm91bmQ6ICNGRkZGRkY7XHJcbiAgICBib3JkZXI6IDJweCBzb2xpZCAjRkZGRkZGO1xyXG4gICAgYm94LXNpemluZzogYm9yZGVyLWJveDtcclxuICAgIGJveC1zaGFkb3c6IDBweCA0cHggNHB4IHJnYmEoMCwgMCwgMCwgMC4yNSk7XHJcbiAgICBib3JkZXItcmFkaXVzOiAxMHB4OyAgICBcclxufVxyXG4uaW1hZ2VuZXN7XHJcbiAgICBtYXJnaW4tdG9wOiA5NXB4O1xyXG59XHJcbi50cmF5ZWN0b3JpYXtcclxuICAgIG1hcmdpbi1sZWZ0OiBhdXRvO1xyXG4gICAgbWFyZ2luLXJpZ2h0OiBhdXRvO1xyXG4gICAgd2lkdGg6IDUzMnB4O1xyXG4gICAgaGVpZ2h0OiA5Ny4xOHB4O1xyXG59XHJcbi5ncmlke1xyXG4gICAgbWFyZ2luLXRvcDogNTdweDtcclxuICAgIGxlZnQ6IDU2cHg7XHJcbn1cclxuLnN1amV0b3tcclxuICAgIHdpZHRoOiAyMzBweDtcclxuICAgIGhlaWdodDogMjMwcHg7XHJcbiAgICBtYXJnaW4tbGVmdDogYXV0bztcclxuICAgIGJhY2tncm91bmQ6IHVybCgnLi4vLi4vLi4vLi4vYXNzZXRzL3N2Zy9zZW1hbnRpY3Mvc2VtYW50aWNzLWdhbWUtcGFuZWwvYmxhY2suc3ZnJyk7XHJcbiAgICBiYWNrZ3JvdW5kLXNpemU6IGF1dG87XHJcbn1cclxuLnZlcmJve1xyXG4gICAgd2lkdGg6IDE2MXB4O1xyXG4gICAgaGVpZ2h0OiAxNjFweDtcclxuICAgIG1hcmdpbi10b3A6IDM0cHg7XHJcbiAgICBtYXJnaW4tbGVmdDogNDJweDtcclxuICAgIG1hcmdpbi1yaWdodDogNDNweDtcclxuICAgIGJhY2tncm91bmQ6IHVybCgnLi4vLi4vLi4vLi4vYXNzZXRzL3N2Zy9zZW1hbnRpY3Mvc2VtYW50aWNzLWdhbWUtcGFuZWwvcmVkLnN2ZycpO1xyXG4gICAgYmFja2dyb3VuZC1zaXplOiBhdXRvOyAgICBcclxufVxyXG4ucHJlZGljYWRve1xyXG4gICAgd2lkdGg6IDIzMHB4O1xyXG4gICAgaGVpZ2h0OiAyMzBweDtcclxuICAgIG1hcmdpbi1yaWdodDogYXV0bztcclxuICAgIGJhY2tncm91bmQ6IHVybCgnLi4vLi4vLi4vLi4vYXNzZXRzL3N2Zy9zZW1hbnRpY3Mvc2VtYW50aWNzLWdhbWUtcGFuZWwvZ3JlZW4uc3ZnJyk7XHJcbiAgICBiYWNrZ3JvdW5kLXNpemU6IGF1dG87ICAgIFxyXG59XHJcbi5lbGVtZW50e1xyXG4gICAgbWFyZ2luLWxlZnQ6IGF1dG87XHJcbiAgICBtYXJnaW4tcmlnaHQ6IGF1dG87XHJcbiAgICB3aWR0aDogMTc2cHg7XHJcbiAgICBoZWlnaHQ6IDE3NnB4O1xyXG4gICAgYmFja2dyb3VuZDogdXJsKCcuLi8uLi8uLi8uLi9hc3NldHMvc3ZnL3NlbWFudGljcy9zZW1hbnRpY3MtZ2FtZS1wYW5lbC9lbGVtZW50LnN2ZycpO1xyXG4gICAgYmFja2dyb3VuZC1zaXplOiBhdXRvOyAgICBcclxufVxyXG4ub3B0aW9uc3tcclxuICAgIG1hcmdpbi10b3A6IDMycHg7XHJcbn1cclxuLnBhbGFicmFze1xyXG4gICAgZm9udC1mYW1pbHk6IFBvcHBpbnM7XHJcbiAgICBmb250LXN0eWxlOiBub3JtYWw7XHJcbiAgICBmb250LXdlaWdodDogNTAwO1xyXG4gICAgZm9udC1zaXplOiAzNXB4O1xyXG4gICAgbGluZS1oZWlnaHQ6IDUycHg7IFxyXG4gICAgLyogaWRlbnRpY2FsIHRvIGJveCBoZWlnaHQgKi9cclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgIFxyXG4gICAgY29sb3I6ICMzQzNDM0M7ICAgIFxyXG59XHJcbi5zZW1hbnRpY2F7XHJcbiAgICBtYXJnaW4tbGVmdDogYXV0bztcclxuICAgIG1hcmdpbi1yaWdodDogYXV0bztcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxufVxyXG5cclxuXHJcbi5pbWFnZW57XHJcbiAgICB3aWR0aDogMTYxcHg7XHJcbiAgICBoZWlnaHQ6IDE2MXB4O1xyXG4gICAgXHJcbn1cclxuXHJcbi5leGFtcGxlLWJveCB7XHJcbiAgICB3aWR0aDogMTYxcHg7XHJcbiAgICBoZWlnaHQ6IDE2MXB4O1xyXG4gICAgYm9yZGVyOiBzb2xpZCAxcHggI2NjYztcclxuICAgIGNvbG9yOiByZ2JhKDAsIDAsIDAsIDAuODcpO1xyXG4gICAgY3Vyc29yOiBtb3ZlO1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgIGJhY2tncm91bmQ6ICNmZmY7XHJcbiAgICBib3JkZXItcmFkaXVzOiAxMDBweDtcclxuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICAgIHotaW5kZXg6IDE7XHJcbiAgICB0cmFuc2l0aW9uOiBib3gtc2hhZG93IDIwMG1zIGN1YmljLWJlemllcigwLCAwLCAwLjIsIDEpO1xyXG4gICAgYm94LXNoYWRvdzogMCAzcHggMXB4IC0ycHggcmdiYSgwLCAwLCAwLCAwLjIpLFxyXG4gICAgICAgICAgICAgICAgMCAycHggMnB4IDAgcmdiYSgwLCAwLCAwLCAwLjE0KSxcclxuICAgICAgICAgICAgICAgIDAgMXB4IDVweCAwIHJnYmEoMCwgMCwgMCwgMC4xMik7XHJcbiAgfVxyXG4gIFxyXG4gIC5leGFtcGxlLWJveDphY3RpdmUge1xyXG4gICAgYm94LXNoYWRvdzogMCA1cHggNXB4IC0zcHggcmdiYSgwLCAwLCAwLCAwLjIpLFxyXG4gICAgICAgICAgICAgICAgMCA4cHggMTBweCAxcHggcmdiYSgwLCAwLCAwLCAwLjE0KSxcclxuICAgICAgICAgICAgICAgIDAgM3B4IDE0cHggMnB4IHJnYmEoMCwgMCwgMCwgMC4xMik7XHJcbiAgfSIsIi5wcmluY2lwYWwge1xuICB3aWR0aDogODE4cHg7XG4gIGhlaWdodDogNjI0cHg7XG4gIGJhY2tncm91bmQ6ICNGRkZGRkY7XG4gIGJvcmRlcjogMnB4IHNvbGlkICNGRkZGRkY7XG4gIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XG4gIGJveC1zaGFkb3c6IDBweCA0cHggNHB4IHJnYmEoMCwgMCwgMCwgMC4yNSk7XG4gIGJvcmRlci1yYWRpdXM6IDEwcHg7XG59XG5cbi5pbWFnZW5lcyB7XG4gIG1hcmdpbi10b3A6IDk1cHg7XG59XG5cbi50cmF5ZWN0b3JpYSB7XG4gIG1hcmdpbi1sZWZ0OiBhdXRvO1xuICBtYXJnaW4tcmlnaHQ6IGF1dG87XG4gIHdpZHRoOiA1MzJweDtcbiAgaGVpZ2h0OiA5Ny4xOHB4O1xufVxuXG4uZ3JpZCB7XG4gIG1hcmdpbi10b3A6IDU3cHg7XG4gIGxlZnQ6IDU2cHg7XG59XG5cbi5zdWpldG8ge1xuICB3aWR0aDogMjMwcHg7XG4gIGhlaWdodDogMjMwcHg7XG4gIG1hcmdpbi1sZWZ0OiBhdXRvO1xuICBiYWNrZ3JvdW5kOiB1cmwoXCIuLi8uLi8uLi8uLi9hc3NldHMvc3ZnL3NlbWFudGljcy9zZW1hbnRpY3MtZ2FtZS1wYW5lbC9ibGFjay5zdmdcIik7XG4gIGJhY2tncm91bmQtc2l6ZTogYXV0bztcbn1cblxuLnZlcmJvIHtcbiAgd2lkdGg6IDE2MXB4O1xuICBoZWlnaHQ6IDE2MXB4O1xuICBtYXJnaW4tdG9wOiAzNHB4O1xuICBtYXJnaW4tbGVmdDogNDJweDtcbiAgbWFyZ2luLXJpZ2h0OiA0M3B4O1xuICBiYWNrZ3JvdW5kOiB1cmwoXCIuLi8uLi8uLi8uLi9hc3NldHMvc3ZnL3NlbWFudGljcy9zZW1hbnRpY3MtZ2FtZS1wYW5lbC9yZWQuc3ZnXCIpO1xuICBiYWNrZ3JvdW5kLXNpemU6IGF1dG87XG59XG5cbi5wcmVkaWNhZG8ge1xuICB3aWR0aDogMjMwcHg7XG4gIGhlaWdodDogMjMwcHg7XG4gIG1hcmdpbi1yaWdodDogYXV0bztcbiAgYmFja2dyb3VuZDogdXJsKFwiLi4vLi4vLi4vLi4vYXNzZXRzL3N2Zy9zZW1hbnRpY3Mvc2VtYW50aWNzLWdhbWUtcGFuZWwvZ3JlZW4uc3ZnXCIpO1xuICBiYWNrZ3JvdW5kLXNpemU6IGF1dG87XG59XG5cbi5lbGVtZW50IHtcbiAgbWFyZ2luLWxlZnQ6IGF1dG87XG4gIG1hcmdpbi1yaWdodDogYXV0bztcbiAgd2lkdGg6IDE3NnB4O1xuICBoZWlnaHQ6IDE3NnB4O1xuICBiYWNrZ3JvdW5kOiB1cmwoXCIuLi8uLi8uLi8uLi9hc3NldHMvc3ZnL3NlbWFudGljcy9zZW1hbnRpY3MtZ2FtZS1wYW5lbC9lbGVtZW50LnN2Z1wiKTtcbiAgYmFja2dyb3VuZC1zaXplOiBhdXRvO1xufVxuXG4ub3B0aW9ucyB7XG4gIG1hcmdpbi10b3A6IDMycHg7XG59XG5cbi5wYWxhYnJhcyB7XG4gIGZvbnQtZmFtaWx5OiBQb3BwaW5zO1xuICBmb250LXN0eWxlOiBub3JtYWw7XG4gIGZvbnQtd2VpZ2h0OiA1MDA7XG4gIGZvbnQtc2l6ZTogMzVweDtcbiAgbGluZS1oZWlnaHQ6IDUycHg7XG4gIC8qIGlkZW50aWNhbCB0byBib3ggaGVpZ2h0ICovXG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgY29sb3I6ICMzQzNDM0M7XG59XG5cbi5zZW1hbnRpY2Ege1xuICBtYXJnaW4tbGVmdDogYXV0bztcbiAgbWFyZ2luLXJpZ2h0OiBhdXRvO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbi5pbWFnZW4ge1xuICB3aWR0aDogMTYxcHg7XG4gIGhlaWdodDogMTYxcHg7XG59XG5cbi5leGFtcGxlLWJveCB7XG4gIHdpZHRoOiAxNjFweDtcbiAgaGVpZ2h0OiAxNjFweDtcbiAgYm9yZGVyOiBzb2xpZCAxcHggI2NjYztcbiAgY29sb3I6IHJnYmEoMCwgMCwgMCwgMC44Nyk7XG4gIGN1cnNvcjogbW92ZTtcbiAgZGlzcGxheTogZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgYmFja2dyb3VuZDogI2ZmZjtcbiAgYm9yZGVyLXJhZGl1czogMTAwcHg7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgei1pbmRleDogMTtcbiAgdHJhbnNpdGlvbjogYm94LXNoYWRvdyAyMDBtcyBjdWJpYy1iZXppZXIoMCwgMCwgMC4yLCAxKTtcbiAgYm94LXNoYWRvdzogMCAzcHggMXB4IC0ycHggcmdiYSgwLCAwLCAwLCAwLjIpLCAwIDJweCAycHggMCByZ2JhKDAsIDAsIDAsIDAuMTQpLCAwIDFweCA1cHggMCByZ2JhKDAsIDAsIDAsIDAuMTIpO1xufVxuXG4uZXhhbXBsZS1ib3g6YWN0aXZlIHtcbiAgYm94LXNoYWRvdzogMCA1cHggNXB4IC0zcHggcmdiYSgwLCAwLCAwLCAwLjIpLCAwIDhweCAxMHB4IDFweCByZ2JhKDAsIDAsIDAsIDAuMTQpLCAwIDNweCAxNHB4IDJweCByZ2JhKDAsIDAsIDAsIDAuMTIpO1xufSJdfQ== */";
+    __webpack_exports__["default"] = ".principal {\n  width: 818px;\n  height: 624px;\n  background: #FFFFFF;\n  border: 2px solid #FFFFFF;\n  box-sizing: border-box;\n  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);\n  border-radius: 10px;\n}\n\n.trayectoria {\n  margin-left: auto;\n  margin-right: auto;\n  width: 532px;\n  height: 97.18px;\n}\n\n.grid {\n  margin-top: 57px;\n  left: 56px;\n}\n\n.sujeto {\n  width: 230px;\n  height: 230px;\n  margin-left: auto;\n  background: url('black.svg');\n  background-size: auto;\n}\n\n.verbo {\n  width: 161px;\n  height: 161px;\n  margin-top: 34px;\n  margin-left: 42px;\n  margin-right: 43px;\n  background: url('red.svg');\n  background-size: auto;\n}\n\n.predicado {\n  width: 230px;\n  height: 230px;\n  margin-right: auto;\n  background: url('green.svg');\n  background-size: auto;\n}\n\n.element {\n  margin-left: auto;\n  margin-right: auto;\n  width: 176px;\n  height: 176px;\n  background: url('element.svg');\n  background-size: auto;\n}\n\n.options {\n  margin-top: 32px;\n}\n\n.palabras {\n  font-family: Poppins;\n  font-style: normal;\n  font-weight: 500;\n  font-size: 35px;\n  line-height: 52px;\n  /* identical to box height */\n  text-align: center;\n  color: #3C3C3C;\n}\n\n.semantica {\n  margin-left: auto;\n  margin-right: auto;\n  text-align: center;\n}\n\n.imagenPredicado {\n  width: 230px;\n  height: 230px;\n  border: 5px solid #8ACF60;\n}\n\n.imagenSujeto {\n  width: 230px;\n  height: 230px;\n  border: 5px solid #3C3C3C;\n}\n\n.example-box {\n  width: 161px;\n  height: 161px;\n  border: solid 1px #ccc;\n  color: rgba(0, 0, 0, 0.87);\n  cursor: move;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n          align-items: center;\n  text-align: center;\n  background: #fff;\n  border-radius: 100px;\n  position: relative;\n  z-index: 1;\n  -webkit-transition: box-shadow 200ms cubic-bezier(0, 0, 0.2, 1);\n  transition: box-shadow 200ms cubic-bezier(0, 0, 0.2, 1);\n  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);\n}\n\n.example-box:active {\n  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9jYXRlZ29yaWVzLXZpZXcvY2F0ZWdvcmllcy12aWV3LXBhbmVsL0M6XFxVc2Vyc1xcYmVybmFcXERvY3VtZW50c1xcR2l0SHViXFxCbGFwcEZvbmVtYXNcXGJsYXBwL3NyY1xcYXBwXFxjb21wb25lbnRzXFxjYXRlZ29yaWVzLXZpZXdcXGNhdGVnb3JpZXMtdmlldy1wYW5lbFxcY2F0ZWdvcmllcy12aWV3LXBhbmVsLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9jb21wb25lbnRzL2NhdGVnb3JpZXMtdmlldy9jYXRlZ29yaWVzLXZpZXctcGFuZWwvY2F0ZWdvcmllcy12aWV3LXBhbmVsLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksWUFBQTtFQUNBLGFBQUE7RUFDQSxtQkFBQTtFQUNBLHlCQUFBO0VBQ0Esc0JBQUE7RUFDQSwyQ0FBQTtFQUNBLG1CQUFBO0FDQ0o7O0FEQ0E7RUFDSSxpQkFBQTtFQUNBLGtCQUFBO0VBQ0EsWUFBQTtFQUNBLGVBQUE7QUNFSjs7QURBQTtFQUNJLGdCQUFBO0VBQ0EsVUFBQTtBQ0dKOztBRERBO0VBQ0ksWUFBQTtFQUNBLGFBQUE7RUFDQSxpQkFBQTtFQUNBLDRCQUFBO0VBQ0EscUJBQUE7QUNJSjs7QURGQTtFQUNJLFlBQUE7RUFDQSxhQUFBO0VBQ0EsZ0JBQUE7RUFDQSxpQkFBQTtFQUNBLGtCQUFBO0VBQ0EsMEJBQUE7RUFDQSxxQkFBQTtBQ0tKOztBREhBO0VBQ0ksWUFBQTtFQUNBLGFBQUE7RUFDQSxrQkFBQTtFQUNBLDRCQUFBO0VBQ0EscUJBQUE7QUNNSjs7QURKQTtFQUNJLGlCQUFBO0VBQ0Esa0JBQUE7RUFDQSxZQUFBO0VBQ0EsYUFBQTtFQUNBLDhCQUFBO0VBQ0EscUJBQUE7QUNPSjs7QURMQTtFQUNJLGdCQUFBO0FDUUo7O0FETkE7RUFDSSxvQkFBQTtFQUNBLGtCQUFBO0VBQ0EsZ0JBQUE7RUFDQSxlQUFBO0VBQ0EsaUJBQUE7RUFDQSw0QkFBQTtFQUNBLGtCQUFBO0VBRUEsY0FBQTtBQ1FKOztBRE5BO0VBQ0ksaUJBQUE7RUFDQSxrQkFBQTtFQUNBLGtCQUFBO0FDU0o7O0FETEE7RUFDSSxZQUFBO0VBQ0EsYUFBQTtFQUNBLHlCQUFBO0FDUUo7O0FESEE7RUFDSSxZQUFBO0VBQ0EsYUFBQTtFQUNBLHlCQUFBO0FDTUo7O0FESEE7RUFDSSxZQUFBO0VBQ0EsYUFBQTtFQUNBLHNCQUFBO0VBQ0EsMEJBQUE7RUFDQSxZQUFBO0VBQ0Esb0JBQUE7RUFBQSxhQUFBO0VBQ0Esd0JBQUE7VUFBQSx1QkFBQTtFQUNBLHlCQUFBO1VBQUEsbUJBQUE7RUFDQSxrQkFBQTtFQUNBLGdCQUFBO0VBQ0Esb0JBQUE7RUFDQSxrQkFBQTtFQUNBLFVBQUE7RUFDQSwrREFBQTtFQUFBLHVEQUFBO0VBQ0EsK0dBQUE7QUNNSjs7QURERTtFQUNFLHFIQUFBO0FDSUoiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL2NhdGVnb3JpZXMtdmlldy9jYXRlZ29yaWVzLXZpZXctcGFuZWwvY2F0ZWdvcmllcy12aWV3LXBhbmVsLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnByaW5jaXBhbHtcclxuICAgIHdpZHRoOiA4MThweDtcclxuICAgIGhlaWdodDogNjI0cHg7XHJcbiAgICBiYWNrZ3JvdW5kOiAjRkZGRkZGO1xyXG4gICAgYm9yZGVyOiAycHggc29saWQgI0ZGRkZGRjtcclxuICAgIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XHJcbiAgICBib3gtc2hhZG93OiAwcHggNHB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMjUpO1xyXG4gICAgYm9yZGVyLXJhZGl1czogMTBweDsgICAgXHJcbn1cclxuLnRyYXllY3Rvcmlhe1xyXG4gICAgbWFyZ2luLWxlZnQ6IGF1dG87XHJcbiAgICBtYXJnaW4tcmlnaHQ6IGF1dG87XHJcbiAgICB3aWR0aDogNTMycHg7XHJcbiAgICBoZWlnaHQ6IDk3LjE4cHg7XHJcbn1cclxuLmdyaWR7XHJcbiAgICBtYXJnaW4tdG9wOiA1N3B4O1xyXG4gICAgbGVmdDogNTZweDtcclxufVxyXG4uc3VqZXRve1xyXG4gICAgd2lkdGg6IDIzMHB4O1xyXG4gICAgaGVpZ2h0OiAyMzBweDtcclxuICAgIG1hcmdpbi1sZWZ0OiBhdXRvO1xyXG4gICAgYmFja2dyb3VuZDogdXJsKCcuLi8uLi8uLi8uLi9hc3NldHMvc3ZnL3NlbWFudGljcy9zZW1hbnRpY3MtZ2FtZS1wYW5lbC9ibGFjay5zdmcnKTtcclxuICAgIGJhY2tncm91bmQtc2l6ZTogYXV0bztcclxufVxyXG4udmVyYm97XHJcbiAgICB3aWR0aDogMTYxcHg7XHJcbiAgICBoZWlnaHQ6IDE2MXB4O1xyXG4gICAgbWFyZ2luLXRvcDogMzRweDtcclxuICAgIG1hcmdpbi1sZWZ0OiA0MnB4O1xyXG4gICAgbWFyZ2luLXJpZ2h0OiA0M3B4O1xyXG4gICAgYmFja2dyb3VuZDogdXJsKCcuLi8uLi8uLi8uLi9hc3NldHMvc3ZnL3NlbWFudGljcy9zZW1hbnRpY3MtZ2FtZS1wYW5lbC9yZWQuc3ZnJyk7XHJcbiAgICBiYWNrZ3JvdW5kLXNpemU6IGF1dG87ICAgIFxyXG59XHJcbi5wcmVkaWNhZG97XHJcbiAgICB3aWR0aDogMjMwcHg7XHJcbiAgICBoZWlnaHQ6IDIzMHB4O1xyXG4gICAgbWFyZ2luLXJpZ2h0OiBhdXRvO1xyXG4gICAgYmFja2dyb3VuZDogdXJsKCcuLi8uLi8uLi8uLi9hc3NldHMvc3ZnL3NlbWFudGljcy9zZW1hbnRpY3MtZ2FtZS1wYW5lbC9ncmVlbi5zdmcnKTtcclxuICAgIGJhY2tncm91bmQtc2l6ZTogYXV0bzsgICAgXHJcbn1cclxuLmVsZW1lbnR7XHJcbiAgICBtYXJnaW4tbGVmdDogYXV0bztcclxuICAgIG1hcmdpbi1yaWdodDogYXV0bztcclxuICAgIHdpZHRoOiAxNzZweDtcclxuICAgIGhlaWdodDogMTc2cHg7XHJcbiAgICBiYWNrZ3JvdW5kOiB1cmwoJy4uLy4uLy4uLy4uL2Fzc2V0cy9zdmcvc2VtYW50aWNzL3NlbWFudGljcy1nYW1lLXBhbmVsL2VsZW1lbnQuc3ZnJyk7XHJcbiAgICBiYWNrZ3JvdW5kLXNpemU6IGF1dG87ICAgIFxyXG59XHJcbi5vcHRpb25ze1xyXG4gICAgbWFyZ2luLXRvcDogMzJweDtcclxufVxyXG4ucGFsYWJyYXN7XHJcbiAgICBmb250LWZhbWlseTogUG9wcGlucztcclxuICAgIGZvbnQtc3R5bGU6IG5vcm1hbDtcclxuICAgIGZvbnQtd2VpZ2h0OiA1MDA7XHJcbiAgICBmb250LXNpemU6IDM1cHg7XHJcbiAgICBsaW5lLWhlaWdodDogNTJweDsgXHJcbiAgICAvKiBpZGVudGljYWwgdG8gYm94IGhlaWdodCAqL1xyXG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgXHJcbiAgICBjb2xvcjogIzNDM0MzQzsgICAgXHJcbn1cclxuLnNlbWFudGljYXtcclxuICAgIG1hcmdpbi1sZWZ0OiBhdXRvO1xyXG4gICAgbWFyZ2luLXJpZ2h0OiBhdXRvO1xyXG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG59XHJcblxyXG5cclxuLmltYWdlblByZWRpY2Fkb3tcclxuICAgIHdpZHRoOiAyMzBweDtcclxuICAgIGhlaWdodDogMjMwcHg7XHJcbiAgICBib3JkZXI6IDVweCBzb2xpZCAjOEFDRjYwO1xyXG4gICAgXHJcbn1cclxuXHJcblxyXG4uaW1hZ2VuU3VqZXRve1xyXG4gICAgd2lkdGg6IDIzMHB4O1xyXG4gICAgaGVpZ2h0OiAyMzBweDtcclxuICAgIGJvcmRlcjogNXB4IHNvbGlkICMzQzNDM0M7XHJcbiAgICBcclxufVxyXG4uZXhhbXBsZS1ib3gge1xyXG4gICAgd2lkdGg6IDE2MXB4O1xyXG4gICAgaGVpZ2h0OiAxNjFweDtcclxuICAgIGJvcmRlcjogc29saWQgMXB4ICNjY2M7XHJcbiAgICBjb2xvcjogcmdiYSgwLCAwLCAwLCAwLjg3KTtcclxuICAgIGN1cnNvcjogbW92ZTtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICBiYWNrZ3JvdW5kOiAjZmZmO1xyXG4gICAgYm9yZGVyLXJhZGl1czogMTAwcHg7XHJcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbiAgICB6LWluZGV4OiAxO1xyXG4gICAgdHJhbnNpdGlvbjogYm94LXNoYWRvdyAyMDBtcyBjdWJpYy1iZXppZXIoMCwgMCwgMC4yLCAxKTtcclxuICAgIGJveC1zaGFkb3c6IDAgM3B4IDFweCAtMnB4IHJnYmEoMCwgMCwgMCwgMC4yKSxcclxuICAgICAgICAgICAgICAgIDAgMnB4IDJweCAwIHJnYmEoMCwgMCwgMCwgMC4xNCksXHJcbiAgICAgICAgICAgICAgICAwIDFweCA1cHggMCByZ2JhKDAsIDAsIDAsIDAuMTIpO1xyXG4gIH1cclxuICBcclxuICAuZXhhbXBsZS1ib3g6YWN0aXZlIHtcclxuICAgIGJveC1zaGFkb3c6IDAgNXB4IDVweCAtM3B4IHJnYmEoMCwgMCwgMCwgMC4yKSxcclxuICAgICAgICAgICAgICAgIDAgOHB4IDEwcHggMXB4IHJnYmEoMCwgMCwgMCwgMC4xNCksXHJcbiAgICAgICAgICAgICAgICAwIDNweCAxNHB4IDJweCByZ2JhKDAsIDAsIDAsIDAuMTIpO1xyXG4gIH0iLCIucHJpbmNpcGFsIHtcbiAgd2lkdGg6IDgxOHB4O1xuICBoZWlnaHQ6IDYyNHB4O1xuICBiYWNrZ3JvdW5kOiAjRkZGRkZGO1xuICBib3JkZXI6IDJweCBzb2xpZCAjRkZGRkZGO1xuICBib3gtc2l6aW5nOiBib3JkZXItYm94O1xuICBib3gtc2hhZG93OiAwcHggNHB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMjUpO1xuICBib3JkZXItcmFkaXVzOiAxMHB4O1xufVxuXG4udHJheWVjdG9yaWEge1xuICBtYXJnaW4tbGVmdDogYXV0bztcbiAgbWFyZ2luLXJpZ2h0OiBhdXRvO1xuICB3aWR0aDogNTMycHg7XG4gIGhlaWdodDogOTcuMThweDtcbn1cblxuLmdyaWQge1xuICBtYXJnaW4tdG9wOiA1N3B4O1xuICBsZWZ0OiA1NnB4O1xufVxuXG4uc3VqZXRvIHtcbiAgd2lkdGg6IDIzMHB4O1xuICBoZWlnaHQ6IDIzMHB4O1xuICBtYXJnaW4tbGVmdDogYXV0bztcbiAgYmFja2dyb3VuZDogdXJsKFwiLi4vLi4vLi4vLi4vYXNzZXRzL3N2Zy9zZW1hbnRpY3Mvc2VtYW50aWNzLWdhbWUtcGFuZWwvYmxhY2suc3ZnXCIpO1xuICBiYWNrZ3JvdW5kLXNpemU6IGF1dG87XG59XG5cbi52ZXJibyB7XG4gIHdpZHRoOiAxNjFweDtcbiAgaGVpZ2h0OiAxNjFweDtcbiAgbWFyZ2luLXRvcDogMzRweDtcbiAgbWFyZ2luLWxlZnQ6IDQycHg7XG4gIG1hcmdpbi1yaWdodDogNDNweDtcbiAgYmFja2dyb3VuZDogdXJsKFwiLi4vLi4vLi4vLi4vYXNzZXRzL3N2Zy9zZW1hbnRpY3Mvc2VtYW50aWNzLWdhbWUtcGFuZWwvcmVkLnN2Z1wiKTtcbiAgYmFja2dyb3VuZC1zaXplOiBhdXRvO1xufVxuXG4ucHJlZGljYWRvIHtcbiAgd2lkdGg6IDIzMHB4O1xuICBoZWlnaHQ6IDIzMHB4O1xuICBtYXJnaW4tcmlnaHQ6IGF1dG87XG4gIGJhY2tncm91bmQ6IHVybChcIi4uLy4uLy4uLy4uL2Fzc2V0cy9zdmcvc2VtYW50aWNzL3NlbWFudGljcy1nYW1lLXBhbmVsL2dyZWVuLnN2Z1wiKTtcbiAgYmFja2dyb3VuZC1zaXplOiBhdXRvO1xufVxuXG4uZWxlbWVudCB7XG4gIG1hcmdpbi1sZWZ0OiBhdXRvO1xuICBtYXJnaW4tcmlnaHQ6IGF1dG87XG4gIHdpZHRoOiAxNzZweDtcbiAgaGVpZ2h0OiAxNzZweDtcbiAgYmFja2dyb3VuZDogdXJsKFwiLi4vLi4vLi4vLi4vYXNzZXRzL3N2Zy9zZW1hbnRpY3Mvc2VtYW50aWNzLWdhbWUtcGFuZWwvZWxlbWVudC5zdmdcIik7XG4gIGJhY2tncm91bmQtc2l6ZTogYXV0bztcbn1cblxuLm9wdGlvbnMge1xuICBtYXJnaW4tdG9wOiAzMnB4O1xufVxuXG4ucGFsYWJyYXMge1xuICBmb250LWZhbWlseTogUG9wcGlucztcbiAgZm9udC1zdHlsZTogbm9ybWFsO1xuICBmb250LXdlaWdodDogNTAwO1xuICBmb250LXNpemU6IDM1cHg7XG4gIGxpbmUtaGVpZ2h0OiA1MnB4O1xuICAvKiBpZGVudGljYWwgdG8gYm94IGhlaWdodCAqL1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIGNvbG9yOiAjM0MzQzNDO1xufVxuXG4uc2VtYW50aWNhIHtcbiAgbWFyZ2luLWxlZnQ6IGF1dG87XG4gIG1hcmdpbi1yaWdodDogYXV0bztcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG4uaW1hZ2VuUHJlZGljYWRvIHtcbiAgd2lkdGg6IDIzMHB4O1xuICBoZWlnaHQ6IDIzMHB4O1xuICBib3JkZXI6IDVweCBzb2xpZCAjOEFDRjYwO1xufVxuXG4uaW1hZ2VuU3VqZXRvIHtcbiAgd2lkdGg6IDIzMHB4O1xuICBoZWlnaHQ6IDIzMHB4O1xuICBib3JkZXI6IDVweCBzb2xpZCAjM0MzQzNDO1xufVxuXG4uZXhhbXBsZS1ib3gge1xuICB3aWR0aDogMTYxcHg7XG4gIGhlaWdodDogMTYxcHg7XG4gIGJvcmRlcjogc29saWQgMXB4ICNjY2M7XG4gIGNvbG9yOiByZ2JhKDAsIDAsIDAsIDAuODcpO1xuICBjdXJzb3I6IG1vdmU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIGJhY2tncm91bmQ6ICNmZmY7XG4gIGJvcmRlci1yYWRpdXM6IDEwMHB4O1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gIHotaW5kZXg6IDE7XG4gIHRyYW5zaXRpb246IGJveC1zaGFkb3cgMjAwbXMgY3ViaWMtYmV6aWVyKDAsIDAsIDAuMiwgMSk7XG4gIGJveC1zaGFkb3c6IDAgM3B4IDFweCAtMnB4IHJnYmEoMCwgMCwgMCwgMC4yKSwgMCAycHggMnB4IDAgcmdiYSgwLCAwLCAwLCAwLjE0KSwgMCAxcHggNXB4IDAgcmdiYSgwLCAwLCAwLCAwLjEyKTtcbn1cblxuLmV4YW1wbGUtYm94OmFjdGl2ZSB7XG4gIGJveC1zaGFkb3c6IDAgNXB4IDVweCAtM3B4IHJnYmEoMCwgMCwgMCwgMC4yKSwgMCA4cHggMTBweCAxcHggcmdiYSgwLCAwLCAwLCAwLjE0KSwgMCAzcHggMTRweCAycHggcmdiYSgwLCAwLCAwLCAwLjEyKTtcbn0iXX0= */";
     /***/
   },
 
@@ -1012,12 +1026,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
     /*! @angular/core */
     "./node_modules/@angular/core/fesm2015/core.js");
-    /* harmony import */
-
-
-    var _data_categorias_data_subcategorias__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
-    /*! ../../../../data/categorias/data.subcategorias */
-    "./src/data/categorias/data.subcategorias.ts");
 
     var CategoriesViewPanelComponent =
     /*#__PURE__*/
@@ -1031,36 +1039,42 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(CategoriesViewPanelComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
+          console.log(this.subcategoryOneData.imagenVerbo);
+          document.getElementById("sujeto").setAttribute('src', this.subcategoryOneData.imagenSujeto);
+          document.getElementById("verbo").setAttribute('src', this.subcategoryOneData.imagenVerbo);
+          document.getElementById("predicado").setAttribute('src', this.subcategoryOneData.imagenPredicado);
+          /*
+          if (this.category.subcategoria != []) {
+            
+          }
+          */
+
+          /*
           this.getEjemplos('Imagen de mí mismo');
           this.sujeto = this.ejemplos[0].sujeto;
           this.verbo = this.ejemplos[0].verbo;
           this.predicado = this.ejemplos[0].predicado;
           this.cantidadEjemplos = 0;
+          */
         }
-      }, {
-        key: "nuevoEjemplo",
-        value: function nuevoEjemplo() {
-          if (this.cantidadEjemplos > this.ejemplos.length) {
+        /*
+        nuevoEjemplo(){
+          if (this.cantidadEjemplos > this.ejemplos.length){
             this.cantidadEjemplos = 0;
           }
-
           this.sujeto = this.ejemplos[this.cantidadEjemplos].sujeto;
           this.verbo = this.ejemplos[this.cantidadEjemplos].verbo;
           this.predicado = this.ejemplos[this.cantidadEjemplos].predicado;
           this.imagenSujeto = this.ejemplos[this.cantidadEjemplos].imagenSujeto;
           this.imagenVerbo = this.ejemplos[this.cantidadEjemplos].imagenVerbo;
           this.imagenPredicado = this.ejemplos[this.cantidadEjemplos].imagenPredicado;
-          this.cantidadEjemplos++;
+          this.cantidadEjemplos ++;
         }
-      }, {
-        key: "ejemploAnterior",
-        value: function ejemploAnterior() {
-          this.cantidadEjemplos--;
-
+            ejemploAnterior(){
+          this.cantidadEjemplos --;
           if (this.cantidadEjemplos < this.ejemplos.length) {
             this.cantidadEjemplos = 0;
           }
-
           this.sujeto = this.ejemplos[this.cantidadEjemplos].sujeto;
           this.verbo = this.ejemplos[this.cantidadEjemplos].verbo;
           this.predicado = this.ejemplos[this.cantidadEjemplos].predicado;
@@ -1068,21 +1082,43 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.imagenVerbo = this.ejemplos[this.cantidadEjemplos].imagenVerbo;
           this.imagenPredicado = this.ejemplos[this.cantidadEjemplos].imagenPredicado;
         }
-      }, {
-        key: "getEjemplos",
-        value: function getEjemplos(value) {
-          for (var i = 0; i < _data_categorias_data_subcategorias__WEBPACK_IMPORTED_MODULE_2__["SUBCATEGORIAS"].length; i++) {
-            if (_data_categorias_data_subcategorias__WEBPACK_IMPORTED_MODULE_2__["SUBCATEGORIAS"][i].nombre === value) {
-              this.ejemplos = _data_categorias_data_subcategorias__WEBPACK_IMPORTED_MODULE_2__["SUBCATEGORIAS"][i].data;
+            getEjemplos(value: string) {
+          for(let i = 0; i < SUBCATEGORIAS.length; i++) {
+            if (SUBCATEGORIAS[i].nombre === value) {
+              this.ejemplos = SUBCATEGORIAS[i].data;
               break;
             }
           }
         }
+            getSubcategorySelect(subcategoryNameSelected: string): SubcategoryI {
+          subcategoryNameSelected = subcategoryNameSelected.toLowerCase();
+          for (let i = 0; i < SUBCATEGORIAS.length; i++) {
+            if (SUBCATEGORIAS[i].nombre.toUpperCase() == subcategoryNameSelected) {
+              return SUBCATEGORIAS[i] as unknown as SubcategoryI;
+            }
+          }
+        }
+        */
+
+      }, {
+        key: "ngOnChanges",
+        value: function ngOnChanges() {
+          //Called before any other lifecycle hook. Use it to inject dependencies, but avoid any serious work here.
+          //Add '${implements OnChanges}' to the class.
+          console.log(this.subcategoryOneData);
+          document.getElementById("sujeto").setAttribute('src', this.subcategoryOneData.imagenSujeto);
+          document.getElementById("verbo").setAttribute('src', this.subcategoryOneData.imagenVerbo);
+          document.getElementById("predicado").setAttribute('src', this.subcategoryOneData.imagenPredicado);
+        }
+      }, {
+        key: "onload",
+        value: function onload() {}
       }]);
 
       return CategoriesViewPanelComponent;
     }();
 
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Object)], CategoriesViewPanelComponent.prototype, "subcategoryOneData", void 0);
     tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)], CategoriesViewPanelComponent.prototype, "subcategoria", void 0);
     tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)], CategoriesViewPanelComponent.prototype, "sujeto", void 0);
     tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)], CategoriesViewPanelComponent.prototype, "verbo", void 0);
@@ -1153,27 +1189,85 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
     /*! @angular/core */
     "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _data_categorias_data_subcategorias__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ../../../data/categorias/data.subcategorias */
+    "./src/data/categorias/data.subcategorias.ts");
 
     var CategoriesViewComponent =
     /*#__PURE__*/
     function () {
       function CategoriesViewComponent() {
         _classCallCheck(this, CategoriesViewComponent);
+
+        this.indexData = 0;
       }
 
       _createClass(CategoriesViewComponent, [{
         key: "ngOnInit",
-        value: function ngOnInit() {}
+        value: function ngOnInit() {
+          //console.log(this.category.subcategoria.length);
+          if (this.category.subcategoria.length < 1) {
+            //console.log("ELSE");
+            //console.log(this.category.nombre);
+            this.subcategory = this.getSubcategorySelect(this.category.nombre);
+          } else {
+            //console.log("IF");
+            //console.log(this.category.subcategoria[0].nombre);
+            this.subcategory = this.getSubcategorySelect(this.category.subcategoria[0].nombre);
+          } //console.log(this.subcategory);
+
+        }
       }, {
         key: "selectPanel",
         value: function selectPanel(event) {}
+      }, {
+        key: "changeSubcategory",
+        value: function changeSubcategory(subcategoryName) {
+          this.subcategory = this.getSubcategorySelect(subcategoryName);
+        }
+      }, {
+        key: "ngOnChanges",
+        value: function ngOnChanges() {//Called before any other lifecycle hook. Use it to inject dependencies, but avoid any serious work here.
+          //Add '${implements OnChanges}' to the class.
+        }
+      }, {
+        key: "getSubcategorySelect",
+        value: function getSubcategorySelect(subcategoryNameSelected) {
+          subcategoryNameSelected = subcategoryNameSelected.toUpperCase();
+
+          for (var i = 0; i < _data_categorias_data_subcategorias__WEBPACK_IMPORTED_MODULE_2__["SUBCATEGORIAS"].length; i++) {
+            if (_data_categorias_data_subcategorias__WEBPACK_IMPORTED_MODULE_2__["SUBCATEGORIAS"][i].nombre.toUpperCase() == subcategoryNameSelected) {
+              return _data_categorias_data_subcategorias__WEBPACK_IMPORTED_MODULE_2__["SUBCATEGORIAS"][i];
+            }
+          }
+        }
+      }, {
+        key: "incIndexData",
+        value: function incIndexData() {
+          if (this.subcategory.data.length - 1 == this.indexData) {
+            this.indexData = 0;
+          } else {
+            this.indexData++;
+          }
+        }
+      }, {
+        key: "decIndexData",
+        value: function decIndexData() {
+          if (this.indexData == 0) {
+            this.indexData = this.subcategory.data.length;
+          } else {
+            this.indexData--;
+          }
+        }
       }]);
 
       return CategoriesViewComponent;
     }();
 
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)], CategoriesViewComponent.prototype, "valueSubCategoriaView", void 0);
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)], CategoriesViewComponent.prototype, "valueCategoriaView", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Object)], CategoriesViewComponent.prototype, "category", void 0);
     CategoriesViewComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
       selector: 'app-categories-view',
       template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
@@ -1569,17 +1663,24 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _models_student__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
     /*! ../../models/student */
     "./src/app/models/student.ts");
+    /* harmony import */
+
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/fesm2015/router.js");
 
     var LoginComponent =
     /*#__PURE__*/
     function () {
-      function LoginComponent(navCtrl, userService, authenticationService, studentService) {
+      function LoginComponent(navCtrl, userService, authenticationService, studentService, route) {
         _classCallCheck(this, LoginComponent);
 
         this.navCtrl = navCtrl;
         this.userService = userService;
         this.authenticationService = authenticationService;
         this.studentService = studentService;
+        this.route = route;
         this.newUser = new _models_user__WEBPACK_IMPORTED_MODULE_5__["User"]();
         this.newStudent = new _models_student__WEBPACK_IMPORTED_MODULE_7__["Student"]();
       }
@@ -1605,12 +1706,25 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.userService.loginUser(this.newUser).then(function (data) {
             _this.authenticationService.saveToken(data.token);
 
-            if (_this.authenticationService.getUserDetails().tipo == "Estudiante") {
+            document.getElementById('email').setAttribute('value', '');
+            document.getElementById('password').setAttribute('value', '');
+
+            if (_this.authenticationService.getUserDetails().tipo.toUpperCase() == "ESTUDIANTE") {
               // Redireccionar al menu del estudiante
-              _this.navCtrl.navigateForward('/menu');
-            } else if (_this.authenticationService.getUserDetails().tipo == "Docente") {
+              //this.navCtrl.navigateForward('/menu');        
+              _this.route.navigate(['/menu'], {
+                queryParams: {
+                  tipo: false
+                }
+              });
+            } else if (_this.authenticationService.getUserDetails().tipo.toUpperCase() == "DOCENTE") {
               // Redireccionar al menu del docente
-              _this.navCtrl.navigateForward('/menu');
+              //this.navCtrl.navigateForward('/menu');
+              _this.route.navigate(['/menu'], {
+                queryParams: {
+                  tipo: true
+                }
+              });
             }
           }).catch(function (err) {
             console.log("Login Incorrecto :(");
@@ -1634,6 +1748,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         type: _services_authentication_service__WEBPACK_IMPORTED_MODULE_4__["AuthenticationService"]
       }, {
         type: _services_student_service__WEBPACK_IMPORTED_MODULE_6__["StudentService"]
+      }, {
+        type: _angular_router__WEBPACK_IMPORTED_MODULE_8__["Router"]
       }];
     };
 
@@ -1648,7 +1764,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
       /*! ./login.component.scss */
       "./src/app/components/login/login.component.scss")).default]
-    }), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_angular__WEBPACK_IMPORTED_MODULE_2__["NavController"], _services_user_service__WEBPACK_IMPORTED_MODULE_3__["UserService"], _services_authentication_service__WEBPACK_IMPORTED_MODULE_4__["AuthenticationService"], _services_student_service__WEBPACK_IMPORTED_MODULE_6__["StudentService"]])], LoginComponent);
+    }), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_angular__WEBPACK_IMPORTED_MODULE_2__["NavController"], _services_user_service__WEBPACK_IMPORTED_MODULE_3__["UserService"], _services_authentication_service__WEBPACK_IMPORTED_MODULE_4__["AuthenticationService"], _services_student_service__WEBPACK_IMPORTED_MODULE_6__["StudentService"], _angular_router__WEBPACK_IMPORTED_MODULE_8__["Router"]])], LoginComponent);
     /***/
   },
 
@@ -1714,11 +1830,17 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(MenuPanelComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {}
+      }, {
+        key: "ngOnChanges",
+        value: function ngOnChanges() {//Called before any other lifecycle hook. Use it to inject dependencies, but avoid any serious work here.
+          //Add '${implements OnChanges}' to the class.
+        }
       }]);
 
       return MenuPanelComponent;
     }();
 
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Boolean)], MenuPanelComponent.prototype, "tipo", void 0);
     tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)], MenuPanelComponent.prototype, "titulo", void 0);
     tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)], MenuPanelComponent.prototype, "opcion1", void 0);
     tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)], MenuPanelComponent.prototype, "opcion2", void 0);
@@ -1750,7 +1872,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "@media screen and (min-width: 800px) {\n  .principal {\n    width: 715px;\n    height: 664px;\n    background: #FFFFFF;\n    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);\n    border-radius: 15px;\n  }\n\n  .icon {\n    width: 56px;\n    height: 45px;\n  }\n\n  .titulo {\n    top: 81px;\n    margin-left: 119px;\n    margin-right: 120px;\n    width: 476px;\n    height: 164px;\n    text-align: center;\n  }\n\n  .texto {\n    font-family: Poppins;\n    font-style: normal;\n    font-weight: bold;\n    font-size: 35px;\n    line-height: 52px;\n    text-align: center;\n    color: #5F659C;\n  }\n\n  .opciones {\n    top: 140px;\n  }\n\n  .opcionFonema {\n    width: 150px;\n    height: 150px;\n    background: url('fonemas.svg');\n    background-size: 150px 150px;\n  }\n\n  .opcionSemantica {\n    left: 50px;\n    width: 150px;\n    height: 150px;\n    background: url('semanticas.svg');\n    background-size: 150px 150px;\n  }\n\n  .opcionEstudiantes {\n    width: 150px;\n    height: 150px;\n    background: url('estudiantes.svg');\n    background-size: 150px 150px;\n  }\n\n  .textoOpcion {\n    width: 365px;\n    height: 45px;\n    top: 621px;\n    font-family: Poppins;\n    font-style: normal;\n    font-weight: bold;\n    font-size: 20px;\n    line-height: 45px;\n    text-align: center;\n    /* identical to box height */\n    color: #5F659C;\n  }\n\n  .btnLogout {\n    position: absolute;\n    left: 142px;\n    top: 137px;\n  }\n}\n@media screen and (min-width: 1280px) {\n  .principal {\n    width: 1144px;\n    height: 664px;\n    background: #FFFFFF;\n    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);\n    border-radius: 15px;\n  }\n\n  .icon {\n    width: 56px;\n    height: 45px;\n  }\n\n  .titulo {\n    top: 81px;\n    margin-left: 334px;\n    margin-right: 334px;\n    width: 476px;\n    height: 164px;\n    text-align: center;\n  }\n\n  .texto {\n    font-family: Poppins;\n    font-style: normal;\n    font-weight: bold;\n    font-size: 35px;\n    line-height: 52px;\n    text-align: center;\n    color: #5F659C;\n  }\n\n  .opciones {\n    top: 140px;\n  }\n\n  .opcionFonema {\n    width: 230px;\n    height: 230px;\n    background: url('fonemas.svg');\n  }\n\n  .opcionSemantica {\n    left: 50px;\n    width: 230px;\n    height: 230px;\n    background: url('semanticas.svg');\n  }\n\n  .opcionEstudiantes {\n    width: 230px;\n    height: 230px;\n    background: url('estudiantes.svg');\n  }\n\n  .textoOpcion {\n    width: 365px;\n    height: 45px;\n    top: 621px;\n    font-family: Poppins;\n    font-style: normal;\n    font-weight: bold;\n    font-size: 30px;\n    line-height: 45px;\n    text-align: center;\n    /* identical to box height */\n    color: #5F659C;\n  }\n\n  .btnLogout {\n    position: absolute;\n    left: 142px;\n    top: 137px;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9tZW51LXBhbmVsL3Byb2Zlc3Nvci1tZW51L0M6XFxVc2Vyc1xcYmVybmFcXERvY3VtZW50c1xcR2l0SHViXFxCbGFwcEZvbmVtYXNcXGJsYXBwL3NyY1xcYXBwXFxjb21wb25lbnRzXFxtZW51LXBhbmVsXFxwcm9mZXNzb3ItbWVudVxccHJvZmVzc29yLW1lbnUuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2NvbXBvbmVudHMvbWVudS1wYW5lbC9wcm9mZXNzb3ItbWVudS9wcm9mZXNzb3ItbWVudS5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJO0lBQ0ksWUFBQTtJQUNBLGFBQUE7SUFDQSxtQkFBQTtJQUNBLDJDQUFBO0lBQ0EsbUJBQUE7RUNDTjs7RURDRztJQUNHLFdBQUE7SUFDQSxZQUFBO0VDRU47O0VEQUU7SUFDSSxTQUFBO0lBQ0Esa0JBQUE7SUFDQSxtQkFBQTtJQUNBLFlBQUE7SUFDQSxhQUFBO0lBQ0Esa0JBQUE7RUNHTjs7RURERTtJQUNJLG9CQUFBO0lBQ0Esa0JBQUE7SUFDQSxpQkFBQTtJQUNBLGVBQUE7SUFDQSxpQkFBQTtJQUNBLGtCQUFBO0lBRUMsY0FBQTtFQ0dQOztFRERHO0lBQ0csVUFBQTtFQ0lOOztFREZFO0lBQ0ksWUFBQTtJQUNBLGFBQUE7SUFDQSw4QkFBQTtJQUNBLDRCQUFBO0VDS047O0VESEU7SUFFSSxVQUFBO0lBQ0EsWUFBQTtJQUNBLGFBQUE7SUFDQSxpQ0FBQTtJQUNBLDRCQUFBO0VDS047O0VESEU7SUFFSyxZQUFBO0lBQ0EsYUFBQTtJQUNELGtDQUFBO0lBQ0EsNEJBQUE7RUNLTjs7RURIRTtJQUNJLFlBQUE7SUFDQSxZQUFBO0lBRUEsVUFBQTtJQUVBLG9CQUFBO0lBQ0Esa0JBQUE7SUFDQSxpQkFBQTtJQUNBLGVBQUE7SUFDQSxpQkFBQTtJQUNBLGtCQUFBO0lBRUEsNEJBQUE7SUFFQSxjQUFBO0VDRU47O0VEQUU7SUFDSSxrQkFBQTtJQUNBLFdBQUE7SUFDQSxVQUFBO0VDR047QUFDRjtBRERBO0VBQ0k7SUFDSSxhQUFBO0lBQ0EsYUFBQTtJQUNBLG1CQUFBO0lBQ0EsMkNBQUE7SUFDQSxtQkFBQTtFQ0dOOztFRERHO0lBQ0ksV0FBQTtJQUNBLFlBQUE7RUNJUDs7RURGRztJQUNJLFNBQUE7SUFDQSxrQkFBQTtJQUNBLG1CQUFBO0lBQ0EsWUFBQTtJQUNBLGFBQUE7SUFDQSxrQkFBQTtFQ0tQOztFREhHO0lBQ0csb0JBQUE7SUFDQSxrQkFBQTtJQUNBLGlCQUFBO0lBQ0EsZUFBQTtJQUNBLGlCQUFBO0lBQ0Esa0JBQUE7SUFFQyxjQUFBO0VDS1A7O0VERkc7SUFDSSxVQUFBO0VDS1A7O0VERkc7SUFDSSxZQUFBO0lBQ0EsYUFBQTtJQUNBLDhCQUFBO0VDS1A7O0VERkc7SUFDSSxVQUFBO0lBQ0EsWUFBQTtJQUNBLGFBQUE7SUFDQSxpQ0FBQTtFQ0tQOztFRERHO0lBRUcsWUFBQTtJQUNBLGFBQUE7SUFDQSxrQ0FBQTtFQ0dOOztFRENHO0lBQ0ksWUFBQTtJQUNBLFlBQUE7SUFFQSxVQUFBO0lBRUEsb0JBQUE7SUFDQSxrQkFBQTtJQUNBLGlCQUFBO0lBQ0EsZUFBQTtJQUNBLGlCQUFBO0lBQ0Esa0JBQUE7SUFFQSw0QkFBQTtJQUVBLGNBQUE7RUNGUDs7RURLRztJQUNJLGtCQUFBO0lBQ0EsV0FBQTtJQUNBLFVBQUE7RUNGUDtBQUNGIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9tZW51LXBhbmVsL3Byb2Zlc3Nvci1tZW51L3Byb2Zlc3Nvci1tZW51LmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiQG1lZGlhIHNjcmVlbiBhbmQgKG1pbi13aWR0aDo4MDBweCl7XHJcbiAgICAucHJpbmNpcGFse1xyXG4gICAgICAgIHdpZHRoOiA3MTVweDtcclxuICAgICAgICBoZWlnaHQ6IDY2NHB4OyBcclxuICAgICAgICBiYWNrZ3JvdW5kOiAjRkZGRkZGO1xyXG4gICAgICAgIGJveC1zaGFkb3c6IDBweCA0cHggNHB4IHJnYmEoMCwgMCwgMCwgMC4yNSk7XHJcbiAgICAgICAgYm9yZGVyLXJhZGl1czogMTVweDsgICBcclxuICAgICB9IFxyXG4gICAgIC5pY29ue1xyXG4gICAgICAgIHdpZHRoOiA1NnB4O1xyXG4gICAgICAgIGhlaWdodDogNDVweDtcclxuICAgIH0gIFxyXG4gICAgLnRpdHVsb3tcclxuICAgICAgICB0b3A6IDgxcHg7XHJcbiAgICAgICAgbWFyZ2luLWxlZnQ6MTE5cHg7XHJcbiAgICAgICAgbWFyZ2luLXJpZ2h0OiAxMjBweDtcclxuICAgICAgICB3aWR0aDogNDc2cHg7XHJcbiAgICAgICAgaGVpZ2h0OiAxNjRweDtcclxuICAgICAgICB0ZXh0LWFsaWduOiBjZW50ZXI7ICAgXHJcbiAgICB9IFxyXG4gICAgLnRleHRve1xyXG4gICAgICAgIGZvbnQtZmFtaWx5OiBQb3BwaW5zO1xyXG4gICAgICAgIGZvbnQtc3R5bGU6IG5vcm1hbDtcclxuICAgICAgICBmb250LXdlaWdodDogYm9sZDtcclxuICAgICAgICBmb250LXNpemU6IDM1cHg7XHJcbiAgICAgICAgbGluZS1oZWlnaHQ6IDUycHg7XHJcbiAgICAgICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgICAgICBcclxuICAgICAgICAgY29sb3I6ICM1RjY1OUM7ICAgIFxyXG4gICAgIH0gIFxyXG4gICAgIC5vcGNpb25lc3tcclxuICAgICAgICB0b3A6IDE0MHB4O1xyXG4gICAgfSAgXHJcbiAgICAub3BjaW9uRm9uZW1he1xyXG4gICAgICAgIHdpZHRoOiAxNTBweDtcclxuICAgICAgICBoZWlnaHQ6IDE1MHB4O1xyXG4gICAgICAgIGJhY2tncm91bmQ6IHVybCgnLi4vLi4vLi4vLi4vYXNzZXRzL3N2Zy9tZW51LXBhbmVsL2ZvbmVtYXMuc3ZnJyk7XHJcbiAgICAgICAgYmFja2dyb3VuZC1zaXplOiAxNTBweCAxNTBweDtcclxuICAgIH0gIFxyXG4gICAgLm9wY2lvblNlbWFudGljYXtcclxuXHJcbiAgICAgICAgbGVmdDogNTBweDtcclxuICAgICAgICB3aWR0aDogMTUwcHg7XHJcbiAgICAgICAgaGVpZ2h0OiAxNTBweDtcclxuICAgICAgICBiYWNrZ3JvdW5kOiB1cmwoJy4uLy4uLy4uLy4uL2Fzc2V0cy9zdmcvbWVudS1wYW5lbC9zZW1hbnRpY2FzLnN2ZycpO1xyXG4gICAgICAgIGJhY2tncm91bmQtc2l6ZTogMTUwcHggMTUwcHg7XHJcbiAgICB9IFxyXG4gICAgLm9wY2lvbkVzdHVkaWFudGVze1xyXG4gICAgICAgICAvL2xlZnQ6IDQwcHg7XHJcbiAgICAgICAgIHdpZHRoOiAxNTBweDtcclxuICAgICAgICAgaGVpZ2h0OiAxNTBweDtcclxuICAgICAgICBiYWNrZ3JvdW5kOiB1cmwoJy4uLy4uLy4uLy4uL2Fzc2V0cy9zdmcvbWVudS1wYW5lbC9lc3R1ZGlhbnRlcy5zdmcnKTtcclxuICAgICAgICBiYWNrZ3JvdW5kLXNpemU6IDE1MHB4IDE1MHB4O1xyXG4gICAgfSAgIFxyXG4gICAgLnRleHRvT3BjaW9ue1xyXG4gICAgICAgIHdpZHRoOiAzNjVweDtcclxuICAgICAgICBoZWlnaHQ6IDQ1cHg7XHJcbiAgICAgICAgLy9sZWZ0OiAzMTdweDtcclxuICAgICAgICB0b3A6IDYyMXB4O1xyXG4gICAgICAgIFxyXG4gICAgICAgIGZvbnQtZmFtaWx5OiBQb3BwaW5zO1xyXG4gICAgICAgIGZvbnQtc3R5bGU6IG5vcm1hbDtcclxuICAgICAgICBmb250LXdlaWdodDogYm9sZDtcclxuICAgICAgICBmb250LXNpemU6IDIwcHg7XHJcbiAgICAgICAgbGluZS1oZWlnaHQ6IDQ1cHg7XHJcbiAgICAgICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgICAgIFxyXG4gICAgICAgIC8qIGlkZW50aWNhbCB0byBib3ggaGVpZ2h0ICovXHJcbiAgICAgICAgXHJcbiAgICAgICAgY29sb3I6ICM1RjY1OUM7ICAgIFxyXG4gICAgfSBcclxuICAgIC5idG5Mb2dvdXR7XHJcbiAgICAgICAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gICAgICAgIGxlZnQ6IDE0MnB4O1xyXG4gICAgICAgIHRvcDogMTM3cHg7ICAgIFxyXG4gICAgfSAgICAgICAgICAgIFxyXG59XHJcbkBtZWRpYSBzY3JlZW4gYW5kIChtaW4td2lkdGg6MTI4MHB4KXtcclxuICAgIC5wcmluY2lwYWx7XHJcbiAgICAgICAgd2lkdGg6IDExNDRweDtcclxuICAgICAgICBoZWlnaHQ6IDY2NHB4OyBcclxuICAgICAgICBiYWNrZ3JvdW5kOiAjRkZGRkZGO1xyXG4gICAgICAgIGJveC1zaGFkb3c6IDBweCA0cHggNHB4IHJnYmEoMCwgMCwgMCwgMC4yNSk7XHJcbiAgICAgICAgYm9yZGVyLXJhZGl1czogMTVweDsgICBcclxuICAgICB9XHJcbiAgICAgLmljb257XHJcbiAgICAgICAgIHdpZHRoOiA1NnB4O1xyXG4gICAgICAgICBoZWlnaHQ6IDQ1cHg7XHJcbiAgICAgfVxyXG4gICAgIC50aXR1bG97XHJcbiAgICAgICAgIHRvcDogODFweDtcclxuICAgICAgICAgbWFyZ2luLWxlZnQ6MzM0cHg7XHJcbiAgICAgICAgIG1hcmdpbi1yaWdodDogMzM0cHg7XHJcbiAgICAgICAgIHdpZHRoOiA0NzZweDtcclxuICAgICAgICAgaGVpZ2h0OiAxNjRweDtcclxuICAgICAgICAgdGV4dC1hbGlnbjogY2VudGVyOyAgIFxyXG4gICAgIH1cclxuICAgICAudGV4dG97XHJcbiAgICAgICAgZm9udC1mYW1pbHk6IFBvcHBpbnM7XHJcbiAgICAgICAgZm9udC1zdHlsZTogbm9ybWFsO1xyXG4gICAgICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xyXG4gICAgICAgIGZvbnQtc2l6ZTogMzVweDtcclxuICAgICAgICBsaW5lLWhlaWdodDogNTJweDtcclxuICAgICAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICAgICAgIFxyXG4gICAgICAgICBjb2xvcjogIzVGNjU5QzsgICAgXHJcbiAgICAgfVxyXG4gICAgIFxyXG4gICAgIC5vcGNpb25lc3tcclxuICAgICAgICAgdG9wOiAxNDBweDtcclxuICAgICB9XHJcbiAgICBcclxuICAgICAub3BjaW9uRm9uZW1he1xyXG4gICAgICAgICB3aWR0aDogMjMwcHg7XHJcbiAgICAgICAgIGhlaWdodDogMjMwcHg7XHJcbiAgICAgICAgIGJhY2tncm91bmQ6IHVybCgnLi4vLi4vLi4vLi4vYXNzZXRzL3N2Zy9tZW51LXBhbmVsL2ZvbmVtYXMuc3ZnJyk7XHJcbiAgICAgfVxyXG4gICAgIFxyXG4gICAgIC5vcGNpb25TZW1hbnRpY2F7XHJcbiAgICAgICAgIGxlZnQ6IDUwcHg7XHJcbiAgICAgICAgIHdpZHRoOiAyMzBweDtcclxuICAgICAgICAgaGVpZ2h0OiAyMzBweDtcclxuICAgICAgICAgYmFja2dyb3VuZDogdXJsKCcuLi8uLi8uLi8uLi9hc3NldHMvc3ZnL21lbnUtcGFuZWwvc2VtYW50aWNhcy5zdmcnKTtcclxuICAgICB9XHJcbiAgICAgXHJcbiAgICBcclxuICAgICAub3BjaW9uRXN0dWRpYW50ZXN7XHJcbiAgICAgICAgLy8gbGVmdDogNDBweDtcclxuICAgICAgICB3aWR0aDogMjMwcHg7XHJcbiAgICAgICAgaGVpZ2h0OiAyMzBweDtcclxuICAgICAgICBiYWNrZ3JvdW5kOiB1cmwoJy4uLy4uLy4uLy4uL2Fzc2V0cy9zdmcvbWVudS1wYW5lbC9lc3R1ZGlhbnRlcy5zdmcnKTtcclxuICAgIH1cclxuICAgIFxyXG4gICAgXHJcbiAgICAgLnRleHRvT3BjaW9ue1xyXG4gICAgICAgICB3aWR0aDogMzY1cHg7XHJcbiAgICAgICAgIGhlaWdodDogNDVweDtcclxuICAgICAgICAgLy9sZWZ0OiAzMTdweDtcclxuICAgICAgICAgdG9wOiA2MjFweDtcclxuICAgICAgICAgXHJcbiAgICAgICAgIGZvbnQtZmFtaWx5OiBQb3BwaW5zO1xyXG4gICAgICAgICBmb250LXN0eWxlOiBub3JtYWw7XHJcbiAgICAgICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xyXG4gICAgICAgICBmb250LXNpemU6IDMwcHg7XHJcbiAgICAgICAgIGxpbmUtaGVpZ2h0OiA0NXB4O1xyXG4gICAgICAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICAgICAgIFxyXG4gICAgICAgICAvKiBpZGVudGljYWwgdG8gYm94IGhlaWdodCAqL1xyXG4gICAgICAgICBcclxuICAgICAgICAgY29sb3I6ICM1RjY1OUM7ICAgIFxyXG4gICAgIH1cclxuICAgICBcclxuICAgICAuYnRuTG9nb3V0e1xyXG4gICAgICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICAgICAgIGxlZnQ6IDE0MnB4O1xyXG4gICAgICAgICB0b3A6IDEzN3B4OyAgICBcclxuICAgICB9XHJcbn1cclxuXHJcblxyXG4iLCJAbWVkaWEgc2NyZWVuIGFuZCAobWluLXdpZHRoOiA4MDBweCkge1xuICAucHJpbmNpcGFsIHtcbiAgICB3aWR0aDogNzE1cHg7XG4gICAgaGVpZ2h0OiA2NjRweDtcbiAgICBiYWNrZ3JvdW5kOiAjRkZGRkZGO1xuICAgIGJveC1zaGFkb3c6IDBweCA0cHggNHB4IHJnYmEoMCwgMCwgMCwgMC4yNSk7XG4gICAgYm9yZGVyLXJhZGl1czogMTVweDtcbiAgfVxuXG4gIC5pY29uIHtcbiAgICB3aWR0aDogNTZweDtcbiAgICBoZWlnaHQ6IDQ1cHg7XG4gIH1cblxuICAudGl0dWxvIHtcbiAgICB0b3A6IDgxcHg7XG4gICAgbWFyZ2luLWxlZnQ6IDExOXB4O1xuICAgIG1hcmdpbi1yaWdodDogMTIwcHg7XG4gICAgd2lkdGg6IDQ3NnB4O1xuICAgIGhlaWdodDogMTY0cHg7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xuICB9XG5cbiAgLnRleHRvIHtcbiAgICBmb250LWZhbWlseTogUG9wcGlucztcbiAgICBmb250LXN0eWxlOiBub3JtYWw7XG4gICAgZm9udC13ZWlnaHQ6IGJvbGQ7XG4gICAgZm9udC1zaXplOiAzNXB4O1xuICAgIGxpbmUtaGVpZ2h0OiA1MnB4O1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICBjb2xvcjogIzVGNjU5QztcbiAgfVxuXG4gIC5vcGNpb25lcyB7XG4gICAgdG9wOiAxNDBweDtcbiAgfVxuXG4gIC5vcGNpb25Gb25lbWEge1xuICAgIHdpZHRoOiAxNTBweDtcbiAgICBoZWlnaHQ6IDE1MHB4O1xuICAgIGJhY2tncm91bmQ6IHVybChcIi4uLy4uLy4uLy4uL2Fzc2V0cy9zdmcvbWVudS1wYW5lbC9mb25lbWFzLnN2Z1wiKTtcbiAgICBiYWNrZ3JvdW5kLXNpemU6IDE1MHB4IDE1MHB4O1xuICB9XG5cbiAgLm9wY2lvblNlbWFudGljYSB7XG4gICAgbGVmdDogNTBweDtcbiAgICB3aWR0aDogMTUwcHg7XG4gICAgaGVpZ2h0OiAxNTBweDtcbiAgICBiYWNrZ3JvdW5kOiB1cmwoXCIuLi8uLi8uLi8uLi9hc3NldHMvc3ZnL21lbnUtcGFuZWwvc2VtYW50aWNhcy5zdmdcIik7XG4gICAgYmFja2dyb3VuZC1zaXplOiAxNTBweCAxNTBweDtcbiAgfVxuXG4gIC5vcGNpb25Fc3R1ZGlhbnRlcyB7XG4gICAgd2lkdGg6IDE1MHB4O1xuICAgIGhlaWdodDogMTUwcHg7XG4gICAgYmFja2dyb3VuZDogdXJsKFwiLi4vLi4vLi4vLi4vYXNzZXRzL3N2Zy9tZW51LXBhbmVsL2VzdHVkaWFudGVzLnN2Z1wiKTtcbiAgICBiYWNrZ3JvdW5kLXNpemU6IDE1MHB4IDE1MHB4O1xuICB9XG5cbiAgLnRleHRvT3BjaW9uIHtcbiAgICB3aWR0aDogMzY1cHg7XG4gICAgaGVpZ2h0OiA0NXB4O1xuICAgIHRvcDogNjIxcHg7XG4gICAgZm9udC1mYW1pbHk6IFBvcHBpbnM7XG4gICAgZm9udC1zdHlsZTogbm9ybWFsO1xuICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xuICAgIGZvbnQtc2l6ZTogMjBweDtcbiAgICBsaW5lLWhlaWdodDogNDVweDtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgLyogaWRlbnRpY2FsIHRvIGJveCBoZWlnaHQgKi9cbiAgICBjb2xvcjogIzVGNjU5QztcbiAgfVxuXG4gIC5idG5Mb2dvdXQge1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICBsZWZ0OiAxNDJweDtcbiAgICB0b3A6IDEzN3B4O1xuICB9XG59XG5AbWVkaWEgc2NyZWVuIGFuZCAobWluLXdpZHRoOiAxMjgwcHgpIHtcbiAgLnByaW5jaXBhbCB7XG4gICAgd2lkdGg6IDExNDRweDtcbiAgICBoZWlnaHQ6IDY2NHB4O1xuICAgIGJhY2tncm91bmQ6ICNGRkZGRkY7XG4gICAgYm94LXNoYWRvdzogMHB4IDRweCA0cHggcmdiYSgwLCAwLCAwLCAwLjI1KTtcbiAgICBib3JkZXItcmFkaXVzOiAxNXB4O1xuICB9XG5cbiAgLmljb24ge1xuICAgIHdpZHRoOiA1NnB4O1xuICAgIGhlaWdodDogNDVweDtcbiAgfVxuXG4gIC50aXR1bG8ge1xuICAgIHRvcDogODFweDtcbiAgICBtYXJnaW4tbGVmdDogMzM0cHg7XG4gICAgbWFyZ2luLXJpZ2h0OiAzMzRweDtcbiAgICB3aWR0aDogNDc2cHg7XG4gICAgaGVpZ2h0OiAxNjRweDtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIH1cblxuICAudGV4dG8ge1xuICAgIGZvbnQtZmFtaWx5OiBQb3BwaW5zO1xuICAgIGZvbnQtc3R5bGU6IG5vcm1hbDtcbiAgICBmb250LXdlaWdodDogYm9sZDtcbiAgICBmb250LXNpemU6IDM1cHg7XG4gICAgbGluZS1oZWlnaHQ6IDUycHg7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xuICAgIGNvbG9yOiAjNUY2NTlDO1xuICB9XG5cbiAgLm9wY2lvbmVzIHtcbiAgICB0b3A6IDE0MHB4O1xuICB9XG5cbiAgLm9wY2lvbkZvbmVtYSB7XG4gICAgd2lkdGg6IDIzMHB4O1xuICAgIGhlaWdodDogMjMwcHg7XG4gICAgYmFja2dyb3VuZDogdXJsKFwiLi4vLi4vLi4vLi4vYXNzZXRzL3N2Zy9tZW51LXBhbmVsL2ZvbmVtYXMuc3ZnXCIpO1xuICB9XG5cbiAgLm9wY2lvblNlbWFudGljYSB7XG4gICAgbGVmdDogNTBweDtcbiAgICB3aWR0aDogMjMwcHg7XG4gICAgaGVpZ2h0OiAyMzBweDtcbiAgICBiYWNrZ3JvdW5kOiB1cmwoXCIuLi8uLi8uLi8uLi9hc3NldHMvc3ZnL21lbnUtcGFuZWwvc2VtYW50aWNhcy5zdmdcIik7XG4gIH1cblxuICAub3BjaW9uRXN0dWRpYW50ZXMge1xuICAgIHdpZHRoOiAyMzBweDtcbiAgICBoZWlnaHQ6IDIzMHB4O1xuICAgIGJhY2tncm91bmQ6IHVybChcIi4uLy4uLy4uLy4uL2Fzc2V0cy9zdmcvbWVudS1wYW5lbC9lc3R1ZGlhbnRlcy5zdmdcIik7XG4gIH1cblxuICAudGV4dG9PcGNpb24ge1xuICAgIHdpZHRoOiAzNjVweDtcbiAgICBoZWlnaHQ6IDQ1cHg7XG4gICAgdG9wOiA2MjFweDtcbiAgICBmb250LWZhbWlseTogUG9wcGlucztcbiAgICBmb250LXN0eWxlOiBub3JtYWw7XG4gICAgZm9udC13ZWlnaHQ6IGJvbGQ7XG4gICAgZm9udC1zaXplOiAzMHB4O1xuICAgIGxpbmUtaGVpZ2h0OiA0NXB4O1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICAvKiBpZGVudGljYWwgdG8gYm94IGhlaWdodCAqL1xuICAgIGNvbG9yOiAjNUY2NTlDO1xuICB9XG5cbiAgLmJ0bkxvZ291dCB7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIGxlZnQ6IDE0MnB4O1xuICAgIHRvcDogMTM3cHg7XG4gIH1cbn0iXX0= */";
+    __webpack_exports__["default"] = "@media screen and (min-width: 800px) {\n  .principal {\n    width: 715px;\n    height: 664px;\n    background: #FFFFFF;\n    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);\n    border-radius: 15px;\n  }\n\n  .icon {\n    width: 56px;\n    height: 45px;\n  }\n\n  .titulo {\n    top: 81px;\n    margin-left: 119px;\n    margin-right: 120px;\n    width: 476px;\n    height: 164px;\n    text-align: center;\n  }\n\n  .texto {\n    font-family: Poppins;\n    font-style: normal;\n    font-weight: bold;\n    font-size: 35px;\n    line-height: 52px;\n    text-align: center;\n    color: #5F659C;\n  }\n\n  .opciones {\n    top: 140px;\n    margin-left: 91px;\n    margin-right: 91px;\n    text-align: center;\n  }\n\n  .opcionFonema {\n    width: 150px;\n    height: 150px;\n    background: url('fonemas.svg');\n    background-size: 150px 150px;\n    background-position: center;\n    text-align: center;\n    left: 40px;\n    right: auto;\n  }\n\n  .opcionSemantica {\n    width: 150px;\n    height: 150px;\n    background: url('semanticas.svg');\n    background-size: 150px 150px;\n    background-position: center;\n    text-align: center;\n    left: auto;\n    right: 47px;\n  }\n\n  .opcionEstudiantes {\n    width: 150px;\n    height: 150px;\n    background: url('estudiantes.svg');\n    background-size: 150px 150px;\n    background-position: center;\n    text-align: center;\n    left: 40px;\n    right: auto;\n  }\n\n  .textoOpcion {\n    width: 365px;\n    height: 45px;\n    left: auto;\n    right: auto;\n    top: 621px;\n    font-family: Poppins;\n    font-style: normal;\n    font-weight: bold;\n    font-size: 20px;\n    line-height: 45px;\n    /* identical to box height */\n    color: #5F659C;\n  }\n\n  .rowTexto {\n    text-align: center;\n    margin-left: auto;\n    margin-right: auto;\n  }\n\n  .btnLogout {\n    position: absolute;\n    left: 142px;\n    top: 137px;\n  }\n}\n@media screen and (min-width: 1280px) {\n  .principal {\n    width: 1144px;\n    height: 664px;\n    background: #FFFFFF;\n    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);\n    border-radius: 15px;\n  }\n\n  .icon {\n    width: 56px;\n    height: 45px;\n  }\n\n  .titulo {\n    top: 81px;\n    margin-left: 334px;\n    margin-right: 334px;\n    width: 476px;\n    height: 164px;\n    text-align: center;\n  }\n\n  .texto {\n    font-family: Poppins;\n    font-style: normal;\n    font-weight: bold;\n    font-size: 35px;\n    line-height: 52px;\n    text-align: center;\n    color: #5F659C;\n  }\n\n  .opciones {\n    top: 140px;\n  }\n\n  .opcionFonema {\n    width: 230px;\n    height: 230px;\n    background: url('fonemas.svg');\n  }\n\n  .opcionSemantica {\n    left: 50px;\n    width: 230px;\n    height: 230px;\n    background: url('semanticas.svg');\n  }\n\n  .opcionEstudiantes {\n    width: 230px;\n    height: 230px;\n    background: url('estudiantes.svg');\n  }\n\n  .textoOpcion {\n    width: 365px;\n    height: 45px;\n    top: 621px;\n    font-family: Poppins;\n    font-style: normal;\n    font-weight: bold;\n    font-size: 30px;\n    line-height: 45px;\n    text-align: center;\n    /* identical to box height */\n    color: #5F659C;\n  }\n\n  .btnLogout {\n    position: absolute;\n    left: 142px;\n    top: 137px;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9tZW51LXBhbmVsL3Byb2Zlc3Nvci1tZW51L0M6XFxVc2Vyc1xcYmVybmFcXERvY3VtZW50c1xcR2l0SHViXFxCbGFwcEZvbmVtYXNcXGJsYXBwL3NyY1xcYXBwXFxjb21wb25lbnRzXFxtZW51LXBhbmVsXFxwcm9mZXNzb3ItbWVudVxccHJvZmVzc29yLW1lbnUuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2NvbXBvbmVudHMvbWVudS1wYW5lbC9wcm9mZXNzb3ItbWVudS9wcm9mZXNzb3ItbWVudS5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJO0lBQ0ksWUFBQTtJQUNBLGFBQUE7SUFDQSxtQkFBQTtJQUNBLDJDQUFBO0lBQ0EsbUJBQUE7RUNDTjs7RURDRztJQUNHLFdBQUE7SUFDQSxZQUFBO0VDRU47O0VEQUU7SUFDSSxTQUFBO0lBQ0Esa0JBQUE7SUFDQSxtQkFBQTtJQUNBLFlBQUE7SUFDQSxhQUFBO0lBQ0Esa0JBQUE7RUNHTjs7RURERTtJQUNJLG9CQUFBO0lBQ0Esa0JBQUE7SUFDQSxpQkFBQTtJQUNBLGVBQUE7SUFDQSxpQkFBQTtJQUNBLGtCQUFBO0lBRUMsY0FBQTtFQ0dQOztFRERHO0lBQ0csVUFBQTtJQUNBLGlCQUFBO0lBQ0Esa0JBQUE7SUFDQSxrQkFBQTtFQ0lOOztFRERFO0lBRUksWUFBQTtJQUNBLGFBQUE7SUFDQSw4QkFBQTtJQUNBLDRCQUFBO0lBQ0EsMkJBQUE7SUFDQSxrQkFBQTtJQUNBLFVBQUE7SUFDQSxXQUFBO0VDR047O0VEREU7SUFDSSxZQUFBO0lBQ0EsYUFBQTtJQUNBLGlDQUFBO0lBQ0EsNEJBQUE7SUFDQSwyQkFBQTtJQUNBLGtCQUFBO0lBQ0EsVUFBQTtJQUNBLFdBQUE7RUNJTjs7RURGRTtJQUNLLFlBQUE7SUFDQSxhQUFBO0lBQ0Qsa0NBQUE7SUFDQSw0QkFBQTtJQUNBLDJCQUFBO0lBQ0Esa0JBQUE7SUFDQSxVQUFBO0lBQ0EsV0FBQTtFQ0tOOztFREhFO0lBQ0ksWUFBQTtJQUNBLFlBQUE7SUFDQSxVQUFBO0lBQ0EsV0FBQTtJQUNBLFVBQUE7SUFFQSxvQkFBQTtJQUNBLGtCQUFBO0lBQ0EsaUJBQUE7SUFDQSxlQUFBO0lBQ0EsaUJBQUE7SUFHQSw0QkFBQTtJQUVBLGNBQUE7RUNFTjs7RURBRTtJQUNJLGtCQUFBO0lBQ0EsaUJBQUE7SUFDQSxrQkFBQTtFQ0dOOztFRERFO0lBQ0ksa0JBQUE7SUFDQSxXQUFBO0lBQ0EsVUFBQTtFQ0lOO0FBQ0Y7QURGQTtFQUNJO0lBQ0ksYUFBQTtJQUNBLGFBQUE7SUFDQSxtQkFBQTtJQUNBLDJDQUFBO0lBQ0EsbUJBQUE7RUNJTjs7RURGRztJQUNJLFdBQUE7SUFDQSxZQUFBO0VDS1A7O0VESEc7SUFDSSxTQUFBO0lBQ0Esa0JBQUE7SUFDQSxtQkFBQTtJQUNBLFlBQUE7SUFDQSxhQUFBO0lBQ0Esa0JBQUE7RUNNUDs7RURKRztJQUNHLG9CQUFBO0lBQ0Esa0JBQUE7SUFDQSxpQkFBQTtJQUNBLGVBQUE7SUFDQSxpQkFBQTtJQUNBLGtCQUFBO0lBRUMsY0FBQTtFQ01QOztFREhHO0lBQ0ksVUFBQTtFQ01QOztFREhHO0lBQ0ksWUFBQTtJQUNBLGFBQUE7SUFDQSw4QkFBQTtFQ01QOztFREhHO0lBQ0ksVUFBQTtJQUNBLFlBQUE7SUFDQSxhQUFBO0lBQ0EsaUNBQUE7RUNNUDs7RURGRztJQUVHLFlBQUE7SUFDQSxhQUFBO0lBQ0Esa0NBQUE7RUNJTjs7RURBRztJQUNJLFlBQUE7SUFDQSxZQUFBO0lBRUEsVUFBQTtJQUVBLG9CQUFBO0lBQ0Esa0JBQUE7SUFDQSxpQkFBQTtJQUNBLGVBQUE7SUFDQSxpQkFBQTtJQUNBLGtCQUFBO0lBRUEsNEJBQUE7SUFFQSxjQUFBO0VDRFA7O0VESUc7SUFDSSxrQkFBQTtJQUNBLFdBQUE7SUFDQSxVQUFBO0VDRFA7QUFDRiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvbWVudS1wYW5lbC9wcm9mZXNzb3ItbWVudS9wcm9mZXNzb3ItbWVudS5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIkBtZWRpYSBzY3JlZW4gYW5kIChtaW4td2lkdGg6ODAwcHgpe1xyXG4gICAgLnByaW5jaXBhbHtcclxuICAgICAgICB3aWR0aDogNzE1cHg7XHJcbiAgICAgICAgaGVpZ2h0OiA2NjRweDsgXHJcbiAgICAgICAgYmFja2dyb3VuZDogI0ZGRkZGRjtcclxuICAgICAgICBib3gtc2hhZG93OiAwcHggNHB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMjUpO1xyXG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDE1cHg7ICAgXHJcbiAgICAgfSBcclxuICAgICAuaWNvbntcclxuICAgICAgICB3aWR0aDogNTZweDtcclxuICAgICAgICBoZWlnaHQ6IDQ1cHg7XHJcbiAgICB9ICBcclxuICAgIC50aXR1bG97XHJcbiAgICAgICAgdG9wOiA4MXB4O1xyXG4gICAgICAgIG1hcmdpbi1sZWZ0OjExOXB4O1xyXG4gICAgICAgIG1hcmdpbi1yaWdodDogMTIwcHg7XHJcbiAgICAgICAgd2lkdGg6IDQ3NnB4O1xyXG4gICAgICAgIGhlaWdodDogMTY0cHg7XHJcbiAgICAgICAgdGV4dC1hbGlnbjogY2VudGVyOyAgIFxyXG4gICAgfSBcclxuICAgIC50ZXh0b3tcclxuICAgICAgICBmb250LWZhbWlseTogUG9wcGlucztcclxuICAgICAgICBmb250LXN0eWxlOiBub3JtYWw7XHJcbiAgICAgICAgZm9udC13ZWlnaHQ6IGJvbGQ7XHJcbiAgICAgICAgZm9udC1zaXplOiAzNXB4O1xyXG4gICAgICAgIGxpbmUtaGVpZ2h0OiA1MnB4O1xyXG4gICAgICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgICAgICAgXHJcbiAgICAgICAgIGNvbG9yOiAjNUY2NTlDOyAgICBcclxuICAgICB9ICBcclxuICAgICAub3BjaW9uZXN7XHJcbiAgICAgICAgdG9wOiAxNDBweDtcclxuICAgICAgICBtYXJnaW4tbGVmdDogOTFweDtcclxuICAgICAgICBtYXJnaW4tcmlnaHQ6IDkxcHg7XHJcbiAgICAgICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG5cclxuICAgIH0gIFxyXG4gICAgLm9wY2lvbkZvbmVtYXtcclxuICAgICBcclxuICAgICAgICB3aWR0aDogMTUwcHg7XHJcbiAgICAgICAgaGVpZ2h0OiAxNTBweDtcclxuICAgICAgICBiYWNrZ3JvdW5kOiB1cmwoJy4uLy4uLy4uLy4uL2Fzc2V0cy9zdmcvbWVudS1wYW5lbC9mb25lbWFzLnN2ZycpO1xyXG4gICAgICAgIGJhY2tncm91bmQtc2l6ZTogMTUwcHggMTUwcHg7XHJcbiAgICAgICAgYmFja2dyb3VuZC1wb3NpdGlvbjogY2VudGVyO1xyXG4gICAgICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgICAgICBsZWZ0OiA0MHB4O1xyXG4gICAgICAgIHJpZ2h0OiBhdXRvO1xyXG4gICAgfSAgXHJcbiAgICAub3BjaW9uU2VtYW50aWNhe1xyXG4gICAgICAgIHdpZHRoOiAxNTBweDtcclxuICAgICAgICBoZWlnaHQ6IDE1MHB4O1xyXG4gICAgICAgIGJhY2tncm91bmQ6IHVybCgnLi4vLi4vLi4vLi4vYXNzZXRzL3N2Zy9tZW51LXBhbmVsL3NlbWFudGljYXMuc3ZnJyk7XHJcbiAgICAgICAgYmFja2dyb3VuZC1zaXplOiAxNTBweCAxNTBweDtcclxuICAgICAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXI7XHJcbiAgICAgICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgICAgIGxlZnQ6IGF1dG87XHJcbiAgICAgICAgcmlnaHQ6IDQ3cHg7XHJcbiAgICB9IFxyXG4gICAgLm9wY2lvbkVzdHVkaWFudGVze1xyXG4gICAgICAgICB3aWR0aDogMTUwcHg7XHJcbiAgICAgICAgIGhlaWdodDogMTUwcHg7XHJcbiAgICAgICAgYmFja2dyb3VuZDogdXJsKCcuLi8uLi8uLi8uLi9hc3NldHMvc3ZnL21lbnUtcGFuZWwvZXN0dWRpYW50ZXMuc3ZnJyk7XHJcbiAgICAgICAgYmFja2dyb3VuZC1zaXplOiAxNTBweCAxNTBweDtcclxuICAgICAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXI7XHJcbiAgICAgICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgICAgIGxlZnQ6IDQwcHg7XHJcbiAgICAgICAgcmlnaHQ6IGF1dG87XHJcbiAgICB9ICAgXHJcbiAgICAudGV4dG9PcGNpb257XHJcbiAgICAgICAgd2lkdGg6IDM2NXB4O1xyXG4gICAgICAgIGhlaWdodDogNDVweDtcclxuICAgICAgICBsZWZ0OiBhdXRvO1xyXG4gICAgICAgIHJpZ2h0OiBhdXRvO1xyXG4gICAgICAgIHRvcDogNjIxcHg7XHJcbiAgICAgICAgXHJcbiAgICAgICAgZm9udC1mYW1pbHk6IFBvcHBpbnM7XHJcbiAgICAgICAgZm9udC1zdHlsZTogbm9ybWFsO1xyXG4gICAgICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xyXG4gICAgICAgIGZvbnQtc2l6ZTogMjBweDtcclxuICAgICAgICBsaW5lLWhlaWdodDogNDVweDtcclxuXHJcbiAgICAgICAgXHJcbiAgICAgICAgLyogaWRlbnRpY2FsIHRvIGJveCBoZWlnaHQgKi9cclxuICAgICAgICBcclxuICAgICAgICBjb2xvcjogIzVGNjU5QzsgICAgXHJcbiAgICB9IFxyXG4gICAgLnJvd1RleHRve1xyXG4gICAgICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgICAgICBtYXJnaW4tbGVmdDogYXV0bztcclxuICAgICAgICBtYXJnaW4tcmlnaHQ6IGF1dG87XHJcbiAgICB9XHJcbiAgICAuYnRuTG9nb3V0e1xyXG4gICAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgICAgICBsZWZ0OiAxNDJweDtcclxuICAgICAgICB0b3A6IDEzN3B4OyAgICBcclxuICAgIH0gICAgICAgICAgICBcclxufVxyXG5AbWVkaWEgc2NyZWVuIGFuZCAobWluLXdpZHRoOjEyODBweCl7XHJcbiAgICAucHJpbmNpcGFse1xyXG4gICAgICAgIHdpZHRoOiAxMTQ0cHg7XHJcbiAgICAgICAgaGVpZ2h0OiA2NjRweDsgXHJcbiAgICAgICAgYmFja2dyb3VuZDogI0ZGRkZGRjtcclxuICAgICAgICBib3gtc2hhZG93OiAwcHggNHB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMjUpO1xyXG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDE1cHg7ICAgXHJcbiAgICAgfVxyXG4gICAgIC5pY29ue1xyXG4gICAgICAgICB3aWR0aDogNTZweDtcclxuICAgICAgICAgaGVpZ2h0OiA0NXB4O1xyXG4gICAgIH1cclxuICAgICAudGl0dWxve1xyXG4gICAgICAgICB0b3A6IDgxcHg7XHJcbiAgICAgICAgIG1hcmdpbi1sZWZ0OjMzNHB4O1xyXG4gICAgICAgICBtYXJnaW4tcmlnaHQ6IDMzNHB4O1xyXG4gICAgICAgICB3aWR0aDogNDc2cHg7XHJcbiAgICAgICAgIGhlaWdodDogMTY0cHg7XHJcbiAgICAgICAgIHRleHQtYWxpZ246IGNlbnRlcjsgICBcclxuICAgICB9XHJcbiAgICAgLnRleHRve1xyXG4gICAgICAgIGZvbnQtZmFtaWx5OiBQb3BwaW5zO1xyXG4gICAgICAgIGZvbnQtc3R5bGU6IG5vcm1hbDtcclxuICAgICAgICBmb250LXdlaWdodDogYm9sZDtcclxuICAgICAgICBmb250LXNpemU6IDM1cHg7XHJcbiAgICAgICAgbGluZS1oZWlnaHQ6IDUycHg7XHJcbiAgICAgICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgICAgICBcclxuICAgICAgICAgY29sb3I6ICM1RjY1OUM7ICAgIFxyXG4gICAgIH1cclxuICAgICBcclxuICAgICAub3BjaW9uZXN7XHJcbiAgICAgICAgIHRvcDogMTQwcHg7XHJcbiAgICAgfVxyXG4gICAgXHJcbiAgICAgLm9wY2lvbkZvbmVtYXtcclxuICAgICAgICAgd2lkdGg6IDIzMHB4O1xyXG4gICAgICAgICBoZWlnaHQ6IDIzMHB4O1xyXG4gICAgICAgICBiYWNrZ3JvdW5kOiB1cmwoJy4uLy4uLy4uLy4uL2Fzc2V0cy9zdmcvbWVudS1wYW5lbC9mb25lbWFzLnN2ZycpO1xyXG4gICAgIH1cclxuICAgICBcclxuICAgICAub3BjaW9uU2VtYW50aWNhe1xyXG4gICAgICAgICBsZWZ0OiA1MHB4O1xyXG4gICAgICAgICB3aWR0aDogMjMwcHg7XHJcbiAgICAgICAgIGhlaWdodDogMjMwcHg7XHJcbiAgICAgICAgIGJhY2tncm91bmQ6IHVybCgnLi4vLi4vLi4vLi4vYXNzZXRzL3N2Zy9tZW51LXBhbmVsL3NlbWFudGljYXMuc3ZnJyk7XHJcbiAgICAgfVxyXG4gICAgIFxyXG4gICAgXHJcbiAgICAgLm9wY2lvbkVzdHVkaWFudGVze1xyXG4gICAgICAgIC8vIGxlZnQ6IDQwcHg7XHJcbiAgICAgICAgd2lkdGg6IDIzMHB4O1xyXG4gICAgICAgIGhlaWdodDogMjMwcHg7XHJcbiAgICAgICAgYmFja2dyb3VuZDogdXJsKCcuLi8uLi8uLi8uLi9hc3NldHMvc3ZnL21lbnUtcGFuZWwvZXN0dWRpYW50ZXMuc3ZnJyk7XHJcbiAgICB9XHJcbiAgICBcclxuICAgIFxyXG4gICAgIC50ZXh0b09wY2lvbntcclxuICAgICAgICAgd2lkdGg6IDM2NXB4O1xyXG4gICAgICAgICBoZWlnaHQ6IDQ1cHg7XHJcbiAgICAgICAgIC8vbGVmdDogMzE3cHg7XHJcbiAgICAgICAgIHRvcDogNjIxcHg7XHJcbiAgICAgICAgIFxyXG4gICAgICAgICBmb250LWZhbWlseTogUG9wcGlucztcclxuICAgICAgICAgZm9udC1zdHlsZTogbm9ybWFsO1xyXG4gICAgICAgICBmb250LXdlaWdodDogYm9sZDtcclxuICAgICAgICAgZm9udC1zaXplOiAzMHB4O1xyXG4gICAgICAgICBsaW5lLWhlaWdodDogNDVweDtcclxuICAgICAgICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgICAgICBcclxuICAgICAgICAgLyogaWRlbnRpY2FsIHRvIGJveCBoZWlnaHQgKi9cclxuICAgICAgICAgXHJcbiAgICAgICAgIGNvbG9yOiAjNUY2NTlDOyAgICBcclxuICAgICB9XHJcbiAgICAgXHJcbiAgICAgLmJ0bkxvZ291dHtcclxuICAgICAgICAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gICAgICAgICBsZWZ0OiAxNDJweDtcclxuICAgICAgICAgdG9wOiAxMzdweDsgICAgXHJcbiAgICAgfVxyXG59XHJcblxyXG5cclxuIiwiQG1lZGlhIHNjcmVlbiBhbmQgKG1pbi13aWR0aDogODAwcHgpIHtcbiAgLnByaW5jaXBhbCB7XG4gICAgd2lkdGg6IDcxNXB4O1xuICAgIGhlaWdodDogNjY0cHg7XG4gICAgYmFja2dyb3VuZDogI0ZGRkZGRjtcbiAgICBib3gtc2hhZG93OiAwcHggNHB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMjUpO1xuICAgIGJvcmRlci1yYWRpdXM6IDE1cHg7XG4gIH1cblxuICAuaWNvbiB7XG4gICAgd2lkdGg6IDU2cHg7XG4gICAgaGVpZ2h0OiA0NXB4O1xuICB9XG5cbiAgLnRpdHVsbyB7XG4gICAgdG9wOiA4MXB4O1xuICAgIG1hcmdpbi1sZWZ0OiAxMTlweDtcbiAgICBtYXJnaW4tcmlnaHQ6IDEyMHB4O1xuICAgIHdpZHRoOiA0NzZweDtcbiAgICBoZWlnaHQ6IDE2NHB4O1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgfVxuXG4gIC50ZXh0byB7XG4gICAgZm9udC1mYW1pbHk6IFBvcHBpbnM7XG4gICAgZm9udC1zdHlsZTogbm9ybWFsO1xuICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xuICAgIGZvbnQtc2l6ZTogMzVweDtcbiAgICBsaW5lLWhlaWdodDogNTJweDtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgY29sb3I6ICM1RjY1OUM7XG4gIH1cblxuICAub3BjaW9uZXMge1xuICAgIHRvcDogMTQwcHg7XG4gICAgbWFyZ2luLWxlZnQ6IDkxcHg7XG4gICAgbWFyZ2luLXJpZ2h0OiA5MXB4O1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgfVxuXG4gIC5vcGNpb25Gb25lbWEge1xuICAgIHdpZHRoOiAxNTBweDtcbiAgICBoZWlnaHQ6IDE1MHB4O1xuICAgIGJhY2tncm91bmQ6IHVybChcIi4uLy4uLy4uLy4uL2Fzc2V0cy9zdmcvbWVudS1wYW5lbC9mb25lbWFzLnN2Z1wiKTtcbiAgICBiYWNrZ3JvdW5kLXNpemU6IDE1MHB4IDE1MHB4O1xuICAgIGJhY2tncm91bmQtcG9zaXRpb246IGNlbnRlcjtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgbGVmdDogNDBweDtcbiAgICByaWdodDogYXV0bztcbiAgfVxuXG4gIC5vcGNpb25TZW1hbnRpY2Ege1xuICAgIHdpZHRoOiAxNTBweDtcbiAgICBoZWlnaHQ6IDE1MHB4O1xuICAgIGJhY2tncm91bmQ6IHVybChcIi4uLy4uLy4uLy4uL2Fzc2V0cy9zdmcvbWVudS1wYW5lbC9zZW1hbnRpY2FzLnN2Z1wiKTtcbiAgICBiYWNrZ3JvdW5kLXNpemU6IDE1MHB4IDE1MHB4O1xuICAgIGJhY2tncm91bmQtcG9zaXRpb246IGNlbnRlcjtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgbGVmdDogYXV0bztcbiAgICByaWdodDogNDdweDtcbiAgfVxuXG4gIC5vcGNpb25Fc3R1ZGlhbnRlcyB7XG4gICAgd2lkdGg6IDE1MHB4O1xuICAgIGhlaWdodDogMTUwcHg7XG4gICAgYmFja2dyb3VuZDogdXJsKFwiLi4vLi4vLi4vLi4vYXNzZXRzL3N2Zy9tZW51LXBhbmVsL2VzdHVkaWFudGVzLnN2Z1wiKTtcbiAgICBiYWNrZ3JvdW5kLXNpemU6IDE1MHB4IDE1MHB4O1xuICAgIGJhY2tncm91bmQtcG9zaXRpb246IGNlbnRlcjtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgbGVmdDogNDBweDtcbiAgICByaWdodDogYXV0bztcbiAgfVxuXG4gIC50ZXh0b09wY2lvbiB7XG4gICAgd2lkdGg6IDM2NXB4O1xuICAgIGhlaWdodDogNDVweDtcbiAgICBsZWZ0OiBhdXRvO1xuICAgIHJpZ2h0OiBhdXRvO1xuICAgIHRvcDogNjIxcHg7XG4gICAgZm9udC1mYW1pbHk6IFBvcHBpbnM7XG4gICAgZm9udC1zdHlsZTogbm9ybWFsO1xuICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xuICAgIGZvbnQtc2l6ZTogMjBweDtcbiAgICBsaW5lLWhlaWdodDogNDVweDtcbiAgICAvKiBpZGVudGljYWwgdG8gYm94IGhlaWdodCAqL1xuICAgIGNvbG9yOiAjNUY2NTlDO1xuICB9XG5cbiAgLnJvd1RleHRvIHtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgbWFyZ2luLWxlZnQ6IGF1dG87XG4gICAgbWFyZ2luLXJpZ2h0OiBhdXRvO1xuICB9XG5cbiAgLmJ0bkxvZ291dCB7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIGxlZnQ6IDE0MnB4O1xuICAgIHRvcDogMTM3cHg7XG4gIH1cbn1cbkBtZWRpYSBzY3JlZW4gYW5kIChtaW4td2lkdGg6IDEyODBweCkge1xuICAucHJpbmNpcGFsIHtcbiAgICB3aWR0aDogMTE0NHB4O1xuICAgIGhlaWdodDogNjY0cHg7XG4gICAgYmFja2dyb3VuZDogI0ZGRkZGRjtcbiAgICBib3gtc2hhZG93OiAwcHggNHB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMjUpO1xuICAgIGJvcmRlci1yYWRpdXM6IDE1cHg7XG4gIH1cblxuICAuaWNvbiB7XG4gICAgd2lkdGg6IDU2cHg7XG4gICAgaGVpZ2h0OiA0NXB4O1xuICB9XG5cbiAgLnRpdHVsbyB7XG4gICAgdG9wOiA4MXB4O1xuICAgIG1hcmdpbi1sZWZ0OiAzMzRweDtcbiAgICBtYXJnaW4tcmlnaHQ6IDMzNHB4O1xuICAgIHdpZHRoOiA0NzZweDtcbiAgICBoZWlnaHQ6IDE2NHB4O1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgfVxuXG4gIC50ZXh0byB7XG4gICAgZm9udC1mYW1pbHk6IFBvcHBpbnM7XG4gICAgZm9udC1zdHlsZTogbm9ybWFsO1xuICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xuICAgIGZvbnQtc2l6ZTogMzVweDtcbiAgICBsaW5lLWhlaWdodDogNTJweDtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgY29sb3I6ICM1RjY1OUM7XG4gIH1cblxuICAub3BjaW9uZXMge1xuICAgIHRvcDogMTQwcHg7XG4gIH1cblxuICAub3BjaW9uRm9uZW1hIHtcbiAgICB3aWR0aDogMjMwcHg7XG4gICAgaGVpZ2h0OiAyMzBweDtcbiAgICBiYWNrZ3JvdW5kOiB1cmwoXCIuLi8uLi8uLi8uLi9hc3NldHMvc3ZnL21lbnUtcGFuZWwvZm9uZW1hcy5zdmdcIik7XG4gIH1cblxuICAub3BjaW9uU2VtYW50aWNhIHtcbiAgICBsZWZ0OiA1MHB4O1xuICAgIHdpZHRoOiAyMzBweDtcbiAgICBoZWlnaHQ6IDIzMHB4O1xuICAgIGJhY2tncm91bmQ6IHVybChcIi4uLy4uLy4uLy4uL2Fzc2V0cy9zdmcvbWVudS1wYW5lbC9zZW1hbnRpY2FzLnN2Z1wiKTtcbiAgfVxuXG4gIC5vcGNpb25Fc3R1ZGlhbnRlcyB7XG4gICAgd2lkdGg6IDIzMHB4O1xuICAgIGhlaWdodDogMjMwcHg7XG4gICAgYmFja2dyb3VuZDogdXJsKFwiLi4vLi4vLi4vLi4vYXNzZXRzL3N2Zy9tZW51LXBhbmVsL2VzdHVkaWFudGVzLnN2Z1wiKTtcbiAgfVxuXG4gIC50ZXh0b09wY2lvbiB7XG4gICAgd2lkdGg6IDM2NXB4O1xuICAgIGhlaWdodDogNDVweDtcbiAgICB0b3A6IDYyMXB4O1xuICAgIGZvbnQtZmFtaWx5OiBQb3BwaW5zO1xuICAgIGZvbnQtc3R5bGU6IG5vcm1hbDtcbiAgICBmb250LXdlaWdodDogYm9sZDtcbiAgICBmb250LXNpemU6IDMwcHg7XG4gICAgbGluZS1oZWlnaHQ6IDQ1cHg7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xuICAgIC8qIGlkZW50aWNhbCB0byBib3ggaGVpZ2h0ICovXG4gICAgY29sb3I6ICM1RjY1OUM7XG4gIH1cblxuICAuYnRuTG9nb3V0IHtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgbGVmdDogMTQycHg7XG4gICAgdG9wOiAxMzdweDtcbiAgfVxufSJdfQ== */";
     /***/
   },
 
@@ -1877,7 +1999,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "@media screen and (min-width: 800px) {\n  .principal {\n    width: 715px;\n    height: 664px;\n    background: #FFFFFF;\n    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);\n    border-radius: 15px;\n  }\n\n  .icon {\n    width: 56px;\n    height: 45px;\n  }\n\n  .titulo {\n    top: 81px;\n    margin-left: 119px;\n    margin-right: 120px;\n    width: 476px;\n    height: 164px;\n    text-align: center;\n  }\n\n  .texto {\n    font-family: Poppins;\n    font-style: normal;\n    font-weight: bold;\n    font-size: 35px;\n    line-height: 52px;\n    text-align: center;\n    color: #5F659C;\n  }\n\n  .opciones {\n    top: 140px;\n  }\n\n  .opcionFonema {\n    width: 150px;\n    height: 150px;\n    background: url('fonemas.svg');\n    background-size: 150px 150px;\n  }\n\n  .opcionSemantica {\n    left: 50px;\n    width: 150px;\n    height: 150px;\n    background: url('semanticas.svg');\n    background-size: 150px 150px;\n  }\n\n  .textoOpcion {\n    width: 365px;\n    height: 45px;\n    top: 621px;\n    font-family: Poppins;\n    font-style: normal;\n    font-weight: bold;\n    font-size: 20px;\n    line-height: 45px;\n    text-align: center;\n    /* identical to box height */\n    color: #5F659C;\n  }\n\n  .btnLogout {\n    position: absolute;\n    left: 142px;\n    top: 137px;\n  }\n}\n@media screen and (min-width: 1280px) {\n  .principal {\n    width: 1144px;\n    height: 664px;\n    background: #FFFFFF;\n    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);\n    border-radius: 15px;\n  }\n\n  .icon {\n    width: 56px;\n    height: 45px;\n  }\n\n  .titulo {\n    top: 81px;\n    margin-left: 334px;\n    margin-right: 334px;\n    width: 476px;\n    height: 164px;\n    text-align: center;\n  }\n\n  .texto {\n    font-family: Poppins;\n    font-style: normal;\n    font-weight: 500;\n    font-size: 35px;\n    line-height: 52px;\n    text-align: center;\n    color: #5F659C;\n  }\n\n  .opciones {\n    top: 254px;\n    margin-left: 190px;\n    margin-right: 190px;\n  }\n\n  .divFonema {\n    width: 274px;\n    margin-right: 118px;\n  }\n\n  .divSemantica {\n    margin-left: 118px;\n  }\n\n  .opcionFonema {\n    width: 264px;\n    height: 264px;\n    background: url('fonemas.png');\n  }\n\n  .opcionSemantica {\n    left: 40px;\n    width: 264px;\n    height: 264px;\n    background: url('semanticas.png');\n  }\n\n  .textoOpcion {\n    width: 365px;\n    height: 45px;\n    top: 621px;\n    font-family: Poppins;\n    font-style: normal;\n    font-weight: bold;\n    font-size: 30px;\n    line-height: 45px;\n    /* identical to box height */\n    color: #5F659C;\n  }\n\n  .btnLogout {\n    position: absolute;\n    left: 142px;\n    top: 137px;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9tZW51LXBhbmVsL3N0dWRlbnRzLW1lbnUvQzpcXFVzZXJzXFxiZXJuYVxcRG9jdW1lbnRzXFxHaXRIdWJcXEJsYXBwRm9uZW1hc1xcYmxhcHAvc3JjXFxhcHBcXGNvbXBvbmVudHNcXG1lbnUtcGFuZWxcXHN0dWRlbnRzLW1lbnVcXHN0dWRlbnRzLW1lbnUuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2NvbXBvbmVudHMvbWVudS1wYW5lbC9zdHVkZW50cy1tZW51L3N0dWRlbnRzLW1lbnUuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0E7RUFDSTtJQUNJLFlBQUE7SUFDQSxhQUFBO0lBQ0EsbUJBQUE7SUFDQSwyQ0FBQTtJQUNBLG1CQUFBO0VDQU47O0VERUc7SUFDRyxXQUFBO0lBQ0EsWUFBQTtFQ0NOOztFRENFO0lBQ0ksU0FBQTtJQUNBLGtCQUFBO0lBQ0EsbUJBQUE7SUFDQSxZQUFBO0lBQ0EsYUFBQTtJQUNBLGtCQUFBO0VDRU47O0VEQUU7SUFDSSxvQkFBQTtJQUNBLGtCQUFBO0lBQ0EsaUJBQUE7SUFDQSxlQUFBO0lBQ0EsaUJBQUE7SUFDQSxrQkFBQTtJQUVDLGNBQUE7RUNFUDs7RURBRztJQUNHLFVBQUE7RUNHTjs7RURERTtJQUNJLFlBQUE7SUFDQSxhQUFBO0lBQ0EsOEJBQUE7SUFDQSw0QkFBQTtFQ0lOOztFREZFO0lBRUksVUFBQTtJQUNBLFlBQUE7SUFDQSxhQUFBO0lBQ0EsaUNBQUE7SUFDQSw0QkFBQTtFQ0lOOztFREZFO0lBQ0ksWUFBQTtJQUNBLFlBQUE7SUFFQSxVQUFBO0lBRUEsb0JBQUE7SUFDQSxrQkFBQTtJQUNBLGlCQUFBO0lBQ0EsZUFBQTtJQUNBLGlCQUFBO0lBQ0Esa0JBQUE7SUFFQSw0QkFBQTtJQUVBLGNBQUE7RUNDTjs7RURDRTtJQUNJLGtCQUFBO0lBQ0EsV0FBQTtJQUNBLFVBQUE7RUNFTjtBQUNGO0FEQ0E7RUFDSTtJQUNBLGFBQUE7SUFDQSxhQUFBO0lBQ0EsbUJBQUE7SUFDQSwyQ0FBQTtJQUNBLG1CQUFBO0VDQ0Y7O0VEQ0U7SUFDSSxXQUFBO0lBQ0EsWUFBQTtFQ0VOOztFREFFO0lBQ0ksU0FBQTtJQUNBLGtCQUFBO0lBQ0EsbUJBQUE7SUFDQSxZQUFBO0lBQ0EsYUFBQTtJQUNBLGtCQUFBO0VDR047O0VEREU7SUFDSSxvQkFBQTtJQUNBLGtCQUFBO0lBQ0EsZ0JBQUE7SUFDQSxlQUFBO0lBQ0EsaUJBQUE7SUFDQSxrQkFBQTtJQUVBLGNBQUE7RUNHTjs7RURBRTtJQUNJLFVBQUE7SUFDQSxrQkFBQTtJQUNBLG1CQUFBO0VDR047O0VEREU7SUFDSSxZQUFBO0lBQ0EsbUJBQUE7RUNJTjs7RURGRTtJQUNJLGtCQUFBO0VDS047O0VESEU7SUFDSSxZQUFBO0lBQ0EsYUFBQTtJQUNBLDhCQUFBO0VDTU47O0VESEU7SUFDSSxVQUFBO0lBQ0EsWUFBQTtJQUNBLGFBQUE7SUFDQSxpQ0FBQTtFQ01OOztFREhFO0lBQ0ksWUFBQTtJQUNBLFlBQUE7SUFFQSxVQUFBO0lBRUEsb0JBQUE7SUFDQSxrQkFBQTtJQUNBLGlCQUFBO0lBQ0EsZUFBQTtJQUNBLGlCQUFBO0lBRUEsNEJBQUE7SUFFQSxjQUFBO0VDRU47O0VEQ0U7SUFDSSxrQkFBQTtJQUNBLFdBQUE7SUFDQSxVQUFBO0VDRU47QUFDRiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvbWVudS1wYW5lbC9zdHVkZW50cy1tZW51L3N0dWRlbnRzLW1lbnUuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJcclxuQG1lZGlhIHNjcmVlbiBhbmQgKG1pbi13aWR0aDo4MDBweCl7XHJcbiAgICAucHJpbmNpcGFse1xyXG4gICAgICAgIHdpZHRoOiA3MTVweDtcclxuICAgICAgICBoZWlnaHQ6IDY2NHB4OyBcclxuICAgICAgICBiYWNrZ3JvdW5kOiAjRkZGRkZGO1xyXG4gICAgICAgIGJveC1zaGFkb3c6IDBweCA0cHggNHB4IHJnYmEoMCwgMCwgMCwgMC4yNSk7XHJcbiAgICAgICAgYm9yZGVyLXJhZGl1czogMTVweDsgICBcclxuICAgICB9IFxyXG4gICAgIC5pY29ue1xyXG4gICAgICAgIHdpZHRoOiA1NnB4O1xyXG4gICAgICAgIGhlaWdodDogNDVweDtcclxuICAgIH0gIFxyXG4gICAgLnRpdHVsb3tcclxuICAgICAgICB0b3A6IDgxcHg7XHJcbiAgICAgICAgbWFyZ2luLWxlZnQ6MTE5cHg7XHJcbiAgICAgICAgbWFyZ2luLXJpZ2h0OiAxMjBweDtcclxuICAgICAgICB3aWR0aDogNDc2cHg7XHJcbiAgICAgICAgaGVpZ2h0OiAxNjRweDtcclxuICAgICAgICB0ZXh0LWFsaWduOiBjZW50ZXI7ICAgXHJcbiAgICB9IFxyXG4gICAgLnRleHRve1xyXG4gICAgICAgIGZvbnQtZmFtaWx5OiBQb3BwaW5zO1xyXG4gICAgICAgIGZvbnQtc3R5bGU6IG5vcm1hbDtcclxuICAgICAgICBmb250LXdlaWdodDogYm9sZDtcclxuICAgICAgICBmb250LXNpemU6IDM1cHg7XHJcbiAgICAgICAgbGluZS1oZWlnaHQ6IDUycHg7XHJcbiAgICAgICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgICAgICBcclxuICAgICAgICAgY29sb3I6ICM1RjY1OUM7ICAgIFxyXG4gICAgIH0gIFxyXG4gICAgIC5vcGNpb25lc3tcclxuICAgICAgICB0b3A6IDE0MHB4O1xyXG4gICAgfSAgXHJcbiAgICAub3BjaW9uRm9uZW1he1xyXG4gICAgICAgIHdpZHRoOiAxNTBweDtcclxuICAgICAgICBoZWlnaHQ6IDE1MHB4O1xyXG4gICAgICAgIGJhY2tncm91bmQ6IHVybCgnLi4vLi4vLi4vLi4vYXNzZXRzL3N2Zy9tZW51LXBhbmVsL2ZvbmVtYXMuc3ZnJyk7XHJcbiAgICAgICAgYmFja2dyb3VuZC1zaXplOiAxNTBweCAxNTBweDtcclxuICAgIH0gIFxyXG4gICAgLm9wY2lvblNlbWFudGljYXtcclxuXHJcbiAgICAgICAgbGVmdDogNTBweDtcclxuICAgICAgICB3aWR0aDogMTUwcHg7XHJcbiAgICAgICAgaGVpZ2h0OiAxNTBweDtcclxuICAgICAgICBiYWNrZ3JvdW5kOiB1cmwoJy4uLy4uLy4uLy4uL2Fzc2V0cy9zdmcvbWVudS1wYW5lbC9zZW1hbnRpY2FzLnN2ZycpO1xyXG4gICAgICAgIGJhY2tncm91bmQtc2l6ZTogMTUwcHggMTUwcHg7XHJcbiAgICB9ICBcclxuICAgIC50ZXh0b09wY2lvbntcclxuICAgICAgICB3aWR0aDogMzY1cHg7XHJcbiAgICAgICAgaGVpZ2h0OiA0NXB4O1xyXG4gICAgICAgIC8vbGVmdDogMzE3cHg7XHJcbiAgICAgICAgdG9wOiA2MjFweDtcclxuICAgICAgICBcclxuICAgICAgICBmb250LWZhbWlseTogUG9wcGlucztcclxuICAgICAgICBmb250LXN0eWxlOiBub3JtYWw7XHJcbiAgICAgICAgZm9udC13ZWlnaHQ6IGJvbGQ7XHJcbiAgICAgICAgZm9udC1zaXplOiAyMHB4O1xyXG4gICAgICAgIGxpbmUtaGVpZ2h0OiA0NXB4O1xyXG4gICAgICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgICAgICBcclxuICAgICAgICAvKiBpZGVudGljYWwgdG8gYm94IGhlaWdodCAqL1xyXG4gICAgICAgIFxyXG4gICAgICAgIGNvbG9yOiAjNUY2NTlDOyAgICBcclxuICAgIH0gXHJcbiAgICAuYnRuTG9nb3V0e1xyXG4gICAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgICAgICBsZWZ0OiAxNDJweDtcclxuICAgICAgICB0b3A6IDEzN3B4OyAgICBcclxuICAgIH0gICAgICAgICAgICBcclxufVxyXG5cclxuQG1lZGlhIHNjcmVlbiBhbmQgKG1pbi13aWR0aDoxMjgwcHgpe1xyXG4gICAgLnByaW5jaXBhbHtcclxuICAgIHdpZHRoOiAxMTQ0cHg7XHJcbiAgICBoZWlnaHQ6IDY2NHB4OyBcclxuICAgIGJhY2tncm91bmQ6ICNGRkZGRkY7XHJcbiAgICBib3gtc2hhZG93OiAwcHggNHB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMjUpO1xyXG4gICAgYm9yZGVyLXJhZGl1czogMTVweDsgICBcclxuICAgIH1cclxuICAgIC5pY29ue1xyXG4gICAgICAgIHdpZHRoOiA1NnB4O1xyXG4gICAgICAgIGhlaWdodDogNDVweDtcclxuICAgIH1cclxuICAgIC50aXR1bG97XHJcbiAgICAgICAgdG9wOiA4MXB4O1xyXG4gICAgICAgIG1hcmdpbi1sZWZ0OjMzNHB4O1xyXG4gICAgICAgIG1hcmdpbi1yaWdodDogMzM0cHg7XHJcbiAgICAgICAgd2lkdGg6IDQ3NnB4O1xyXG4gICAgICAgIGhlaWdodDogMTY0cHg7XHJcbiAgICAgICAgdGV4dC1hbGlnbjogY2VudGVyOyAgIFxyXG4gICAgfVxyXG4gICAgLnRleHRve1xyXG4gICAgICAgIGZvbnQtZmFtaWx5OiBQb3BwaW5zO1xyXG4gICAgICAgIGZvbnQtc3R5bGU6IG5vcm1hbDtcclxuICAgICAgICBmb250LXdlaWdodDogNTAwO1xyXG4gICAgICAgIGZvbnQtc2l6ZTogMzVweDtcclxuICAgICAgICBsaW5lLWhlaWdodDogNTJweDtcclxuICAgICAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICAgICAgXHJcbiAgICAgICAgY29sb3I6ICM1RjY1OUM7ICAgIFxyXG4gICAgfVxyXG5cclxuICAgIC5vcGNpb25lc3tcclxuICAgICAgICB0b3A6IDI1NHB4O1xyXG4gICAgICAgIG1hcmdpbi1sZWZ0OiAxOTBweDtcclxuICAgICAgICBtYXJnaW4tcmlnaHQ6IDE5MHB4O1xyXG4gICAgfVxyXG4gICAgLmRpdkZvbmVtYXtcclxuICAgICAgICB3aWR0aDogMjc0cHg7XHJcbiAgICAgICAgbWFyZ2luLXJpZ2h0OiAxMThweDtcclxuICAgIH1cclxuICAgIC5kaXZTZW1hbnRpY2F7XHJcbiAgICAgICAgbWFyZ2luLWxlZnQ6IDExOHB4O1xyXG4gICAgfVxyXG4gICAgLm9wY2lvbkZvbmVtYXtcclxuICAgICAgICB3aWR0aDogMjY0cHg7XHJcbiAgICAgICAgaGVpZ2h0OiAyNjRweDtcclxuICAgICAgICBiYWNrZ3JvdW5kOiB1cmwoJy4uLy4uLy4uLy4uL2Fzc2V0cy9pbWcvbWVudS1wYW5lbC9mb25lbWFzLnBuZycpO1xyXG4gICAgfVxyXG5cclxuICAgIC5vcGNpb25TZW1hbnRpY2F7XHJcbiAgICAgICAgbGVmdDogNDBweDtcclxuICAgICAgICB3aWR0aDogMjY0cHg7XHJcbiAgICAgICAgaGVpZ2h0OiAyNjRweDtcclxuICAgICAgICBiYWNrZ3JvdW5kOiB1cmwoJy4uLy4uLy4uLy4uL2Fzc2V0cy9pbWcvbWVudS1wYW5lbC9zZW1hbnRpY2FzLnBuZycpO1xyXG4gICAgfVxyXG5cclxuICAgIC50ZXh0b09wY2lvbntcclxuICAgICAgICB3aWR0aDogMzY1cHg7XHJcbiAgICAgICAgaGVpZ2h0OiA0NXB4O1xyXG4gICAgICAgIC8vbGVmdDogMzE3cHg7XHJcbiAgICAgICAgdG9wOiA2MjFweDtcclxuICAgICAgICBcclxuICAgICAgICBmb250LWZhbWlseTogUG9wcGlucztcclxuICAgICAgICBmb250LXN0eWxlOiBub3JtYWw7XHJcbiAgICAgICAgZm9udC13ZWlnaHQ6IGJvbGQ7XHJcbiAgICAgICAgZm9udC1zaXplOiAzMHB4O1xyXG4gICAgICAgIGxpbmUtaGVpZ2h0OiA0NXB4O1xyXG4gICAgICAgIFxyXG4gICAgICAgIC8qIGlkZW50aWNhbCB0byBib3ggaGVpZ2h0ICovXHJcbiAgICAgICAgXHJcbiAgICAgICAgY29sb3I6ICM1RjY1OUM7ICAgIFxyXG4gICAgfVxyXG5cclxuICAgIC5idG5Mb2dvdXR7XHJcbiAgICAgICAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gICAgICAgIGxlZnQ6IDE0MnB4O1xyXG4gICAgICAgIHRvcDogMTM3cHg7ICAgIFxyXG4gICAgfVxyXG5cclxufVxyXG5cclxuIiwiQG1lZGlhIHNjcmVlbiBhbmQgKG1pbi13aWR0aDogODAwcHgpIHtcbiAgLnByaW5jaXBhbCB7XG4gICAgd2lkdGg6IDcxNXB4O1xuICAgIGhlaWdodDogNjY0cHg7XG4gICAgYmFja2dyb3VuZDogI0ZGRkZGRjtcbiAgICBib3gtc2hhZG93OiAwcHggNHB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMjUpO1xuICAgIGJvcmRlci1yYWRpdXM6IDE1cHg7XG4gIH1cblxuICAuaWNvbiB7XG4gICAgd2lkdGg6IDU2cHg7XG4gICAgaGVpZ2h0OiA0NXB4O1xuICB9XG5cbiAgLnRpdHVsbyB7XG4gICAgdG9wOiA4MXB4O1xuICAgIG1hcmdpbi1sZWZ0OiAxMTlweDtcbiAgICBtYXJnaW4tcmlnaHQ6IDEyMHB4O1xuICAgIHdpZHRoOiA0NzZweDtcbiAgICBoZWlnaHQ6IDE2NHB4O1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgfVxuXG4gIC50ZXh0byB7XG4gICAgZm9udC1mYW1pbHk6IFBvcHBpbnM7XG4gICAgZm9udC1zdHlsZTogbm9ybWFsO1xuICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xuICAgIGZvbnQtc2l6ZTogMzVweDtcbiAgICBsaW5lLWhlaWdodDogNTJweDtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgY29sb3I6ICM1RjY1OUM7XG4gIH1cblxuICAub3BjaW9uZXMge1xuICAgIHRvcDogMTQwcHg7XG4gIH1cblxuICAub3BjaW9uRm9uZW1hIHtcbiAgICB3aWR0aDogMTUwcHg7XG4gICAgaGVpZ2h0OiAxNTBweDtcbiAgICBiYWNrZ3JvdW5kOiB1cmwoXCIuLi8uLi8uLi8uLi9hc3NldHMvc3ZnL21lbnUtcGFuZWwvZm9uZW1hcy5zdmdcIik7XG4gICAgYmFja2dyb3VuZC1zaXplOiAxNTBweCAxNTBweDtcbiAgfVxuXG4gIC5vcGNpb25TZW1hbnRpY2Ege1xuICAgIGxlZnQ6IDUwcHg7XG4gICAgd2lkdGg6IDE1MHB4O1xuICAgIGhlaWdodDogMTUwcHg7XG4gICAgYmFja2dyb3VuZDogdXJsKFwiLi4vLi4vLi4vLi4vYXNzZXRzL3N2Zy9tZW51LXBhbmVsL3NlbWFudGljYXMuc3ZnXCIpO1xuICAgIGJhY2tncm91bmQtc2l6ZTogMTUwcHggMTUwcHg7XG4gIH1cblxuICAudGV4dG9PcGNpb24ge1xuICAgIHdpZHRoOiAzNjVweDtcbiAgICBoZWlnaHQ6IDQ1cHg7XG4gICAgdG9wOiA2MjFweDtcbiAgICBmb250LWZhbWlseTogUG9wcGlucztcbiAgICBmb250LXN0eWxlOiBub3JtYWw7XG4gICAgZm9udC13ZWlnaHQ6IGJvbGQ7XG4gICAgZm9udC1zaXplOiAyMHB4O1xuICAgIGxpbmUtaGVpZ2h0OiA0NXB4O1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICAvKiBpZGVudGljYWwgdG8gYm94IGhlaWdodCAqL1xuICAgIGNvbG9yOiAjNUY2NTlDO1xuICB9XG5cbiAgLmJ0bkxvZ291dCB7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIGxlZnQ6IDE0MnB4O1xuICAgIHRvcDogMTM3cHg7XG4gIH1cbn1cbkBtZWRpYSBzY3JlZW4gYW5kIChtaW4td2lkdGg6IDEyODBweCkge1xuICAucHJpbmNpcGFsIHtcbiAgICB3aWR0aDogMTE0NHB4O1xuICAgIGhlaWdodDogNjY0cHg7XG4gICAgYmFja2dyb3VuZDogI0ZGRkZGRjtcbiAgICBib3gtc2hhZG93OiAwcHggNHB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMjUpO1xuICAgIGJvcmRlci1yYWRpdXM6IDE1cHg7XG4gIH1cblxuICAuaWNvbiB7XG4gICAgd2lkdGg6IDU2cHg7XG4gICAgaGVpZ2h0OiA0NXB4O1xuICB9XG5cbiAgLnRpdHVsbyB7XG4gICAgdG9wOiA4MXB4O1xuICAgIG1hcmdpbi1sZWZ0OiAzMzRweDtcbiAgICBtYXJnaW4tcmlnaHQ6IDMzNHB4O1xuICAgIHdpZHRoOiA0NzZweDtcbiAgICBoZWlnaHQ6IDE2NHB4O1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgfVxuXG4gIC50ZXh0byB7XG4gICAgZm9udC1mYW1pbHk6IFBvcHBpbnM7XG4gICAgZm9udC1zdHlsZTogbm9ybWFsO1xuICAgIGZvbnQtd2VpZ2h0OiA1MDA7XG4gICAgZm9udC1zaXplOiAzNXB4O1xuICAgIGxpbmUtaGVpZ2h0OiA1MnB4O1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICBjb2xvcjogIzVGNjU5QztcbiAgfVxuXG4gIC5vcGNpb25lcyB7XG4gICAgdG9wOiAyNTRweDtcbiAgICBtYXJnaW4tbGVmdDogMTkwcHg7XG4gICAgbWFyZ2luLXJpZ2h0OiAxOTBweDtcbiAgfVxuXG4gIC5kaXZGb25lbWEge1xuICAgIHdpZHRoOiAyNzRweDtcbiAgICBtYXJnaW4tcmlnaHQ6IDExOHB4O1xuICB9XG5cbiAgLmRpdlNlbWFudGljYSB7XG4gICAgbWFyZ2luLWxlZnQ6IDExOHB4O1xuICB9XG5cbiAgLm9wY2lvbkZvbmVtYSB7XG4gICAgd2lkdGg6IDI2NHB4O1xuICAgIGhlaWdodDogMjY0cHg7XG4gICAgYmFja2dyb3VuZDogdXJsKFwiLi4vLi4vLi4vLi4vYXNzZXRzL2ltZy9tZW51LXBhbmVsL2ZvbmVtYXMucG5nXCIpO1xuICB9XG5cbiAgLm9wY2lvblNlbWFudGljYSB7XG4gICAgbGVmdDogNDBweDtcbiAgICB3aWR0aDogMjY0cHg7XG4gICAgaGVpZ2h0OiAyNjRweDtcbiAgICBiYWNrZ3JvdW5kOiB1cmwoXCIuLi8uLi8uLi8uLi9hc3NldHMvaW1nL21lbnUtcGFuZWwvc2VtYW50aWNhcy5wbmdcIik7XG4gIH1cblxuICAudGV4dG9PcGNpb24ge1xuICAgIHdpZHRoOiAzNjVweDtcbiAgICBoZWlnaHQ6IDQ1cHg7XG4gICAgdG9wOiA2MjFweDtcbiAgICBmb250LWZhbWlseTogUG9wcGlucztcbiAgICBmb250LXN0eWxlOiBub3JtYWw7XG4gICAgZm9udC13ZWlnaHQ6IGJvbGQ7XG4gICAgZm9udC1zaXplOiAzMHB4O1xuICAgIGxpbmUtaGVpZ2h0OiA0NXB4O1xuICAgIC8qIGlkZW50aWNhbCB0byBib3ggaGVpZ2h0ICovXG4gICAgY29sb3I6ICM1RjY1OUM7XG4gIH1cblxuICAuYnRuTG9nb3V0IHtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgbGVmdDogMTQycHg7XG4gICAgdG9wOiAxMzdweDtcbiAgfVxufSJdfQ== */";
+    __webpack_exports__["default"] = "@media screen and (min-width: 800px) {\n  .principal {\n    width: 715px;\n    height: 664px;\n    background: #FFFFFF;\n    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);\n    border-radius: 15px;\n  }\n\n  .icon {\n    width: 56px;\n    height: 45px;\n  }\n\n  .titulo {\n    top: 81px;\n    margin-left: 119px;\n    margin-right: 120px;\n    width: 476px;\n    height: 164px;\n    text-align: center;\n  }\n\n  .texto {\n    font-family: Poppins;\n    font-style: normal;\n    font-weight: bold;\n    font-size: 35px;\n    line-height: 52px;\n    text-align: center;\n    color: #5F659C;\n  }\n\n  .opciones {\n    top: 140px;\n    text-align: center;\n    margin-left: 91px;\n    margin-right: 91px;\n  }\n\n  .opcionFonema {\n    width: 150px;\n    height: 150px;\n    background: url('fonemas.svg');\n    background-size: 150px 150px;\n    text-align: center;\n    left: 40px;\n    right: auto;\n  }\n\n  .opcionSemantica {\n    left: 50px;\n    width: 150px;\n    height: 150px;\n    background: url('semanticas.svg');\n    background-size: 150px 150px;\n  }\n\n  .textoOpcion {\n    width: 365px;\n    height: 45px;\n    left: auto;\n    right: auto;\n    top: 621px;\n    font-family: Poppins;\n    font-style: normal;\n    font-weight: bold;\n    font-size: 20px;\n    line-height: 45px;\n    text-align: center;\n    /* identical to box height */\n    color: #5F659C;\n  }\n\n  .btnLogout {\n    position: absolute;\n    left: 142px;\n    top: 137px;\n  }\n}\n@media screen and (min-width: 1280px) {\n  .principal {\n    width: 1144px;\n    height: 664px;\n    background: #FFFFFF;\n    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);\n    border-radius: 15px;\n  }\n\n  .icon {\n    width: 56px;\n    height: 45px;\n  }\n\n  .titulo {\n    top: 81px;\n    margin-left: 334px;\n    margin-right: 334px;\n    width: 476px;\n    height: 164px;\n    text-align: center;\n  }\n\n  .texto {\n    font-family: Poppins;\n    font-style: normal;\n    font-weight: 500;\n    font-size: 35px;\n    line-height: 52px;\n    text-align: center;\n    color: #5F659C;\n  }\n\n  .opciones {\n    top: 254px;\n    margin-left: 190px;\n    margin-right: 190px;\n  }\n\n  .divFonema {\n    width: 274px;\n    margin-right: 118px;\n  }\n\n  .divSemantica {\n    margin-left: 118px;\n  }\n\n  .opcionFonema {\n    width: 264px;\n    height: 264px;\n    background: url('fonemas.png');\n  }\n\n  .opcionSemantica {\n    left: 40px;\n    width: 264px;\n    height: 264px;\n    background: url('semanticas.png');\n  }\n\n  .textoOpcion {\n    width: 365px;\n    height: 45px;\n    top: 621px;\n    font-family: Poppins;\n    font-style: normal;\n    font-weight: bold;\n    font-size: 30px;\n    line-height: 45px;\n    /* identical to box height */\n    color: #5F659C;\n  }\n\n  .btnLogout {\n    position: absolute;\n    left: 142px;\n    top: 137px;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9tZW51LXBhbmVsL3N0dWRlbnRzLW1lbnUvQzpcXFVzZXJzXFxiZXJuYVxcRG9jdW1lbnRzXFxHaXRIdWJcXEJsYXBwRm9uZW1hc1xcYmxhcHAvc3JjXFxhcHBcXGNvbXBvbmVudHNcXG1lbnUtcGFuZWxcXHN0dWRlbnRzLW1lbnVcXHN0dWRlbnRzLW1lbnUuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2NvbXBvbmVudHMvbWVudS1wYW5lbC9zdHVkZW50cy1tZW51L3N0dWRlbnRzLW1lbnUuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0E7RUFDSTtJQUNJLFlBQUE7SUFDQSxhQUFBO0lBQ0EsbUJBQUE7SUFDQSwyQ0FBQTtJQUNBLG1CQUFBO0VDQU47O0VERUc7SUFDRyxXQUFBO0lBQ0EsWUFBQTtFQ0NOOztFRENFO0lBQ0ksU0FBQTtJQUNBLGtCQUFBO0lBQ0EsbUJBQUE7SUFDQSxZQUFBO0lBQ0EsYUFBQTtJQUNBLGtCQUFBO0VDRU47O0VEQUU7SUFDSSxvQkFBQTtJQUNBLGtCQUFBO0lBQ0EsaUJBQUE7SUFDQSxlQUFBO0lBQ0EsaUJBQUE7SUFDQSxrQkFBQTtJQUVDLGNBQUE7RUNFUDs7RURBRztJQUNHLFVBQUE7SUFDQSxrQkFBQTtJQUNBLGlCQUFBO0lBQ0Esa0JBQUE7RUNHTjs7RURERTtJQUNJLFlBQUE7SUFDQSxhQUFBO0lBQ0EsOEJBQUE7SUFDQSw0QkFBQTtJQUNBLGtCQUFBO0lBQ0EsVUFBQTtJQUNBLFdBQUE7RUNJTjs7RURGRTtJQUVJLFVBQUE7SUFDQSxZQUFBO0lBQ0EsYUFBQTtJQUNBLGlDQUFBO0lBQ0EsNEJBQUE7RUNJTjs7RURGRTtJQUNJLFlBQUE7SUFDQSxZQUFBO0lBRUEsVUFBQTtJQUNBLFdBQUE7SUFDQSxVQUFBO0lBRUEsb0JBQUE7SUFDQSxrQkFBQTtJQUNBLGlCQUFBO0lBQ0EsZUFBQTtJQUNBLGlCQUFBO0lBQ0Esa0JBQUE7SUFFQSw0QkFBQTtJQUVBLGNBQUE7RUNDTjs7RURDRTtJQUNJLGtCQUFBO0lBQ0EsV0FBQTtJQUNBLFVBQUE7RUNFTjtBQUNGO0FEQ0E7RUFDSTtJQUNBLGFBQUE7SUFDQSxhQUFBO0lBQ0EsbUJBQUE7SUFDQSwyQ0FBQTtJQUNBLG1CQUFBO0VDQ0Y7O0VEQ0U7SUFDSSxXQUFBO0lBQ0EsWUFBQTtFQ0VOOztFREFFO0lBQ0ksU0FBQTtJQUNBLGtCQUFBO0lBQ0EsbUJBQUE7SUFDQSxZQUFBO0lBQ0EsYUFBQTtJQUNBLGtCQUFBO0VDR047O0VEREU7SUFDSSxvQkFBQTtJQUNBLGtCQUFBO0lBQ0EsZ0JBQUE7SUFDQSxlQUFBO0lBQ0EsaUJBQUE7SUFDQSxrQkFBQTtJQUVBLGNBQUE7RUNHTjs7RURBRTtJQUNJLFVBQUE7SUFDQSxrQkFBQTtJQUNBLG1CQUFBO0VDR047O0VEREU7SUFDSSxZQUFBO0lBQ0EsbUJBQUE7RUNJTjs7RURGRTtJQUNJLGtCQUFBO0VDS047O0VESEU7SUFDSSxZQUFBO0lBQ0EsYUFBQTtJQUNBLDhCQUFBO0VDTU47O0VESEU7SUFDSSxVQUFBO0lBQ0EsWUFBQTtJQUNBLGFBQUE7SUFDQSxpQ0FBQTtFQ01OOztFREhFO0lBQ0ksWUFBQTtJQUNBLFlBQUE7SUFFQSxVQUFBO0lBRUEsb0JBQUE7SUFDQSxrQkFBQTtJQUNBLGlCQUFBO0lBQ0EsZUFBQTtJQUNBLGlCQUFBO0lBRUEsNEJBQUE7SUFFQSxjQUFBO0VDRU47O0VEQ0U7SUFDSSxrQkFBQTtJQUNBLFdBQUE7SUFDQSxVQUFBO0VDRU47QUFDRiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvbWVudS1wYW5lbC9zdHVkZW50cy1tZW51L3N0dWRlbnRzLW1lbnUuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJcclxuQG1lZGlhIHNjcmVlbiBhbmQgKG1pbi13aWR0aDo4MDBweCl7XHJcbiAgICAucHJpbmNpcGFse1xyXG4gICAgICAgIHdpZHRoOiA3MTVweDtcclxuICAgICAgICBoZWlnaHQ6IDY2NHB4OyBcclxuICAgICAgICBiYWNrZ3JvdW5kOiAjRkZGRkZGO1xyXG4gICAgICAgIGJveC1zaGFkb3c6IDBweCA0cHggNHB4IHJnYmEoMCwgMCwgMCwgMC4yNSk7XHJcbiAgICAgICAgYm9yZGVyLXJhZGl1czogMTVweDsgICBcclxuICAgICB9IFxyXG4gICAgIC5pY29ue1xyXG4gICAgICAgIHdpZHRoOiA1NnB4O1xyXG4gICAgICAgIGhlaWdodDogNDVweDtcclxuICAgIH0gIFxyXG4gICAgLnRpdHVsb3tcclxuICAgICAgICB0b3A6IDgxcHg7XHJcbiAgICAgICAgbWFyZ2luLWxlZnQ6MTE5cHg7XHJcbiAgICAgICAgbWFyZ2luLXJpZ2h0OiAxMjBweDtcclxuICAgICAgICB3aWR0aDogNDc2cHg7XHJcbiAgICAgICAgaGVpZ2h0OiAxNjRweDtcclxuICAgICAgICB0ZXh0LWFsaWduOiBjZW50ZXI7ICAgXHJcbiAgICB9IFxyXG4gICAgLnRleHRve1xyXG4gICAgICAgIGZvbnQtZmFtaWx5OiBQb3BwaW5zO1xyXG4gICAgICAgIGZvbnQtc3R5bGU6IG5vcm1hbDtcclxuICAgICAgICBmb250LXdlaWdodDogYm9sZDtcclxuICAgICAgICBmb250LXNpemU6IDM1cHg7XHJcbiAgICAgICAgbGluZS1oZWlnaHQ6IDUycHg7XHJcbiAgICAgICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgICAgICBcclxuICAgICAgICAgY29sb3I6ICM1RjY1OUM7ICAgIFxyXG4gICAgIH0gIFxyXG4gICAgIC5vcGNpb25lc3tcclxuICAgICAgICB0b3A6IDE0MHB4O1xyXG4gICAgICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgICAgICBtYXJnaW4tbGVmdDogOTFweDtcclxuICAgICAgICBtYXJnaW4tcmlnaHQ6IDkxcHg7XHJcbiAgICB9ICBcclxuICAgIC5vcGNpb25Gb25lbWF7XHJcbiAgICAgICAgd2lkdGg6IDE1MHB4O1xyXG4gICAgICAgIGhlaWdodDogMTUwcHg7XHJcbiAgICAgICAgYmFja2dyb3VuZDogdXJsKCcuLi8uLi8uLi8uLi9hc3NldHMvc3ZnL21lbnUtcGFuZWwvZm9uZW1hcy5zdmcnKTtcclxuICAgICAgICBiYWNrZ3JvdW5kLXNpemU6IDE1MHB4IDE1MHB4O1xyXG4gICAgICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgICAgICBsZWZ0OiA0MHB4O1xyXG4gICAgICAgIHJpZ2h0OiBhdXRvO1xyXG4gICAgfSAgXHJcbiAgICAub3BjaW9uU2VtYW50aWNhe1xyXG5cclxuICAgICAgICBsZWZ0OiA1MHB4O1xyXG4gICAgICAgIHdpZHRoOiAxNTBweDtcclxuICAgICAgICBoZWlnaHQ6IDE1MHB4O1xyXG4gICAgICAgIGJhY2tncm91bmQ6IHVybCgnLi4vLi4vLi4vLi4vYXNzZXRzL3N2Zy9tZW51LXBhbmVsL3NlbWFudGljYXMuc3ZnJyk7XHJcbiAgICAgICAgYmFja2dyb3VuZC1zaXplOiAxNTBweCAxNTBweDtcclxuICAgIH0gIFxyXG4gICAgLnRleHRvT3BjaW9ue1xyXG4gICAgICAgIHdpZHRoOiAzNjVweDtcclxuICAgICAgICBoZWlnaHQ6IDQ1cHg7XHJcbiAgICAgICAgLy9sZWZ0OiAzMTdweDtcclxuICAgICAgICBsZWZ0OiBhdXRvO1xyXG4gICAgICAgIHJpZ2h0OiBhdXRvO1xyXG4gICAgICAgIHRvcDogNjIxcHg7XHJcbiAgICAgICAgXHJcbiAgICAgICAgZm9udC1mYW1pbHk6IFBvcHBpbnM7XHJcbiAgICAgICAgZm9udC1zdHlsZTogbm9ybWFsO1xyXG4gICAgICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xyXG4gICAgICAgIGZvbnQtc2l6ZTogMjBweDtcclxuICAgICAgICBsaW5lLWhlaWdodDogNDVweDtcclxuICAgICAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICAgICAgXHJcbiAgICAgICAgLyogaWRlbnRpY2FsIHRvIGJveCBoZWlnaHQgKi9cclxuICAgICAgICBcclxuICAgICAgICBjb2xvcjogIzVGNjU5QzsgICAgXHJcbiAgICB9IFxyXG4gICAgLmJ0bkxvZ291dHtcclxuICAgICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICAgICAgbGVmdDogMTQycHg7XHJcbiAgICAgICAgdG9wOiAxMzdweDsgICAgXHJcbiAgICB9ICAgICAgICAgICAgXHJcbn1cclxuXHJcbkBtZWRpYSBzY3JlZW4gYW5kIChtaW4td2lkdGg6MTI4MHB4KXtcclxuICAgIC5wcmluY2lwYWx7XHJcbiAgICB3aWR0aDogMTE0NHB4O1xyXG4gICAgaGVpZ2h0OiA2NjRweDsgXHJcbiAgICBiYWNrZ3JvdW5kOiAjRkZGRkZGO1xyXG4gICAgYm94LXNoYWRvdzogMHB4IDRweCA0cHggcmdiYSgwLCAwLCAwLCAwLjI1KTtcclxuICAgIGJvcmRlci1yYWRpdXM6IDE1cHg7ICAgXHJcbiAgICB9XHJcbiAgICAuaWNvbntcclxuICAgICAgICB3aWR0aDogNTZweDtcclxuICAgICAgICBoZWlnaHQ6IDQ1cHg7XHJcbiAgICB9XHJcbiAgICAudGl0dWxve1xyXG4gICAgICAgIHRvcDogODFweDtcclxuICAgICAgICBtYXJnaW4tbGVmdDozMzRweDtcclxuICAgICAgICBtYXJnaW4tcmlnaHQ6IDMzNHB4O1xyXG4gICAgICAgIHdpZHRoOiA0NzZweDtcclxuICAgICAgICBoZWlnaHQ6IDE2NHB4O1xyXG4gICAgICAgIHRleHQtYWxpZ246IGNlbnRlcjsgICBcclxuICAgIH1cclxuICAgIC50ZXh0b3tcclxuICAgICAgICBmb250LWZhbWlseTogUG9wcGlucztcclxuICAgICAgICBmb250LXN0eWxlOiBub3JtYWw7XHJcbiAgICAgICAgZm9udC13ZWlnaHQ6IDUwMDtcclxuICAgICAgICBmb250LXNpemU6IDM1cHg7XHJcbiAgICAgICAgbGluZS1oZWlnaHQ6IDUycHg7XHJcbiAgICAgICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgICAgIFxyXG4gICAgICAgIGNvbG9yOiAjNUY2NTlDOyAgICBcclxuICAgIH1cclxuXHJcbiAgICAub3BjaW9uZXN7XHJcbiAgICAgICAgdG9wOiAyNTRweDtcclxuICAgICAgICBtYXJnaW4tbGVmdDogMTkwcHg7XHJcbiAgICAgICAgbWFyZ2luLXJpZ2h0OiAxOTBweDtcclxuICAgIH1cclxuICAgIC5kaXZGb25lbWF7XHJcbiAgICAgICAgd2lkdGg6IDI3NHB4O1xyXG4gICAgICAgIG1hcmdpbi1yaWdodDogMTE4cHg7XHJcbiAgICB9XHJcbiAgICAuZGl2U2VtYW50aWNhe1xyXG4gICAgICAgIG1hcmdpbi1sZWZ0OiAxMThweDtcclxuICAgIH1cclxuICAgIC5vcGNpb25Gb25lbWF7XHJcbiAgICAgICAgd2lkdGg6IDI2NHB4O1xyXG4gICAgICAgIGhlaWdodDogMjY0cHg7XHJcbiAgICAgICAgYmFja2dyb3VuZDogdXJsKCcuLi8uLi8uLi8uLi9hc3NldHMvaW1nL21lbnUtcGFuZWwvZm9uZW1hcy5wbmcnKTtcclxuICAgIH1cclxuXHJcbiAgICAub3BjaW9uU2VtYW50aWNhe1xyXG4gICAgICAgIGxlZnQ6IDQwcHg7XHJcbiAgICAgICAgd2lkdGg6IDI2NHB4O1xyXG4gICAgICAgIGhlaWdodDogMjY0cHg7XHJcbiAgICAgICAgYmFja2dyb3VuZDogdXJsKCcuLi8uLi8uLi8uLi9hc3NldHMvaW1nL21lbnUtcGFuZWwvc2VtYW50aWNhcy5wbmcnKTtcclxuICAgIH1cclxuXHJcbiAgICAudGV4dG9PcGNpb257XHJcbiAgICAgICAgd2lkdGg6IDM2NXB4O1xyXG4gICAgICAgIGhlaWdodDogNDVweDtcclxuICAgICAgICAvL2xlZnQ6IDMxN3B4O1xyXG4gICAgICAgIHRvcDogNjIxcHg7XHJcbiAgICAgICAgXHJcbiAgICAgICAgZm9udC1mYW1pbHk6IFBvcHBpbnM7XHJcbiAgICAgICAgZm9udC1zdHlsZTogbm9ybWFsO1xyXG4gICAgICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xyXG4gICAgICAgIGZvbnQtc2l6ZTogMzBweDtcclxuICAgICAgICBsaW5lLWhlaWdodDogNDVweDtcclxuICAgICAgICBcclxuICAgICAgICAvKiBpZGVudGljYWwgdG8gYm94IGhlaWdodCAqL1xyXG4gICAgICAgIFxyXG4gICAgICAgIGNvbG9yOiAjNUY2NTlDOyAgICBcclxuICAgIH1cclxuXHJcbiAgICAuYnRuTG9nb3V0e1xyXG4gICAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgICAgICBsZWZ0OiAxNDJweDtcclxuICAgICAgICB0b3A6IDEzN3B4OyAgICBcclxuICAgIH1cclxuXHJcbn1cclxuXHJcbiIsIkBtZWRpYSBzY3JlZW4gYW5kIChtaW4td2lkdGg6IDgwMHB4KSB7XG4gIC5wcmluY2lwYWwge1xuICAgIHdpZHRoOiA3MTVweDtcbiAgICBoZWlnaHQ6IDY2NHB4O1xuICAgIGJhY2tncm91bmQ6ICNGRkZGRkY7XG4gICAgYm94LXNoYWRvdzogMHB4IDRweCA0cHggcmdiYSgwLCAwLCAwLCAwLjI1KTtcbiAgICBib3JkZXItcmFkaXVzOiAxNXB4O1xuICB9XG5cbiAgLmljb24ge1xuICAgIHdpZHRoOiA1NnB4O1xuICAgIGhlaWdodDogNDVweDtcbiAgfVxuXG4gIC50aXR1bG8ge1xuICAgIHRvcDogODFweDtcbiAgICBtYXJnaW4tbGVmdDogMTE5cHg7XG4gICAgbWFyZ2luLXJpZ2h0OiAxMjBweDtcbiAgICB3aWR0aDogNDc2cHg7XG4gICAgaGVpZ2h0OiAxNjRweDtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIH1cblxuICAudGV4dG8ge1xuICAgIGZvbnQtZmFtaWx5OiBQb3BwaW5zO1xuICAgIGZvbnQtc3R5bGU6IG5vcm1hbDtcbiAgICBmb250LXdlaWdodDogYm9sZDtcbiAgICBmb250LXNpemU6IDM1cHg7XG4gICAgbGluZS1oZWlnaHQ6IDUycHg7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xuICAgIGNvbG9yOiAjNUY2NTlDO1xuICB9XG5cbiAgLm9wY2lvbmVzIHtcbiAgICB0b3A6IDE0MHB4O1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICBtYXJnaW4tbGVmdDogOTFweDtcbiAgICBtYXJnaW4tcmlnaHQ6IDkxcHg7XG4gIH1cblxuICAub3BjaW9uRm9uZW1hIHtcbiAgICB3aWR0aDogMTUwcHg7XG4gICAgaGVpZ2h0OiAxNTBweDtcbiAgICBiYWNrZ3JvdW5kOiB1cmwoXCIuLi8uLi8uLi8uLi9hc3NldHMvc3ZnL21lbnUtcGFuZWwvZm9uZW1hcy5zdmdcIik7XG4gICAgYmFja2dyb3VuZC1zaXplOiAxNTBweCAxNTBweDtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgbGVmdDogNDBweDtcbiAgICByaWdodDogYXV0bztcbiAgfVxuXG4gIC5vcGNpb25TZW1hbnRpY2Ege1xuICAgIGxlZnQ6IDUwcHg7XG4gICAgd2lkdGg6IDE1MHB4O1xuICAgIGhlaWdodDogMTUwcHg7XG4gICAgYmFja2dyb3VuZDogdXJsKFwiLi4vLi4vLi4vLi4vYXNzZXRzL3N2Zy9tZW51LXBhbmVsL3NlbWFudGljYXMuc3ZnXCIpO1xuICAgIGJhY2tncm91bmQtc2l6ZTogMTUwcHggMTUwcHg7XG4gIH1cblxuICAudGV4dG9PcGNpb24ge1xuICAgIHdpZHRoOiAzNjVweDtcbiAgICBoZWlnaHQ6IDQ1cHg7XG4gICAgbGVmdDogYXV0bztcbiAgICByaWdodDogYXV0bztcbiAgICB0b3A6IDYyMXB4O1xuICAgIGZvbnQtZmFtaWx5OiBQb3BwaW5zO1xuICAgIGZvbnQtc3R5bGU6IG5vcm1hbDtcbiAgICBmb250LXdlaWdodDogYm9sZDtcbiAgICBmb250LXNpemU6IDIwcHg7XG4gICAgbGluZS1oZWlnaHQ6IDQ1cHg7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xuICAgIC8qIGlkZW50aWNhbCB0byBib3ggaGVpZ2h0ICovXG4gICAgY29sb3I6ICM1RjY1OUM7XG4gIH1cblxuICAuYnRuTG9nb3V0IHtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgbGVmdDogMTQycHg7XG4gICAgdG9wOiAxMzdweDtcbiAgfVxufVxuQG1lZGlhIHNjcmVlbiBhbmQgKG1pbi13aWR0aDogMTI4MHB4KSB7XG4gIC5wcmluY2lwYWwge1xuICAgIHdpZHRoOiAxMTQ0cHg7XG4gICAgaGVpZ2h0OiA2NjRweDtcbiAgICBiYWNrZ3JvdW5kOiAjRkZGRkZGO1xuICAgIGJveC1zaGFkb3c6IDBweCA0cHggNHB4IHJnYmEoMCwgMCwgMCwgMC4yNSk7XG4gICAgYm9yZGVyLXJhZGl1czogMTVweDtcbiAgfVxuXG4gIC5pY29uIHtcbiAgICB3aWR0aDogNTZweDtcbiAgICBoZWlnaHQ6IDQ1cHg7XG4gIH1cblxuICAudGl0dWxvIHtcbiAgICB0b3A6IDgxcHg7XG4gICAgbWFyZ2luLWxlZnQ6IDMzNHB4O1xuICAgIG1hcmdpbi1yaWdodDogMzM0cHg7XG4gICAgd2lkdGg6IDQ3NnB4O1xuICAgIGhlaWdodDogMTY0cHg7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xuICB9XG5cbiAgLnRleHRvIHtcbiAgICBmb250LWZhbWlseTogUG9wcGlucztcbiAgICBmb250LXN0eWxlOiBub3JtYWw7XG4gICAgZm9udC13ZWlnaHQ6IDUwMDtcbiAgICBmb250LXNpemU6IDM1cHg7XG4gICAgbGluZS1oZWlnaHQ6IDUycHg7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xuICAgIGNvbG9yOiAjNUY2NTlDO1xuICB9XG5cbiAgLm9wY2lvbmVzIHtcbiAgICB0b3A6IDI1NHB4O1xuICAgIG1hcmdpbi1sZWZ0OiAxOTBweDtcbiAgICBtYXJnaW4tcmlnaHQ6IDE5MHB4O1xuICB9XG5cbiAgLmRpdkZvbmVtYSB7XG4gICAgd2lkdGg6IDI3NHB4O1xuICAgIG1hcmdpbi1yaWdodDogMTE4cHg7XG4gIH1cblxuICAuZGl2U2VtYW50aWNhIHtcbiAgICBtYXJnaW4tbGVmdDogMTE4cHg7XG4gIH1cblxuICAub3BjaW9uRm9uZW1hIHtcbiAgICB3aWR0aDogMjY0cHg7XG4gICAgaGVpZ2h0OiAyNjRweDtcbiAgICBiYWNrZ3JvdW5kOiB1cmwoXCIuLi8uLi8uLi8uLi9hc3NldHMvaW1nL21lbnUtcGFuZWwvZm9uZW1hcy5wbmdcIik7XG4gIH1cblxuICAub3BjaW9uU2VtYW50aWNhIHtcbiAgICBsZWZ0OiA0MHB4O1xuICAgIHdpZHRoOiAyNjRweDtcbiAgICBoZWlnaHQ6IDI2NHB4O1xuICAgIGJhY2tncm91bmQ6IHVybChcIi4uLy4uLy4uLy4uL2Fzc2V0cy9pbWcvbWVudS1wYW5lbC9zZW1hbnRpY2FzLnBuZ1wiKTtcbiAgfVxuXG4gIC50ZXh0b09wY2lvbiB7XG4gICAgd2lkdGg6IDM2NXB4O1xuICAgIGhlaWdodDogNDVweDtcbiAgICB0b3A6IDYyMXB4O1xuICAgIGZvbnQtZmFtaWx5OiBQb3BwaW5zO1xuICAgIGZvbnQtc3R5bGU6IG5vcm1hbDtcbiAgICBmb250LXdlaWdodDogYm9sZDtcbiAgICBmb250LXNpemU6IDMwcHg7XG4gICAgbGluZS1oZWlnaHQ6IDQ1cHg7XG4gICAgLyogaWRlbnRpY2FsIHRvIGJveCBoZWlnaHQgKi9cbiAgICBjb2xvcjogIzVGNjU5QztcbiAgfVxuXG4gIC5idG5Mb2dvdXQge1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICBsZWZ0OiAxNDJweDtcbiAgICB0b3A6IDEzN3B4O1xuICB9XG59Il19 */";
     /***/
   },
 
@@ -2295,7 +2417,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = ".principal {\n  width: 818px;\n  height: 624px;\n  background: #FFFFFF;\n  border: 2px solid #FFFFFF;\n  box-sizing: border-box;\n  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);\n  border-radius: 10px;\n}\n\n.audioFonema {\n  text-align: center;\n  margin-left: 226px;\n  margin-right: 235px;\n  margin-top: 55px;\n}\n\n.imagen {\n  width: 287px;\n  height: 287px;\n}\n\n.btnPlay {\n  width: 103px;\n  height: 103px;\n  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);\n  border-radius: 100px;\n  background: #7A84DD;\n}\n\n.rowPalabra {\n  margin-left: 309px;\n  margin-right: 318px;\n}\n\n.palabra {\n  margin-left: auto;\n  margin-right: auto;\n  font-family: Poppins;\n  font-style: normal;\n  font-weight: normal;\n  font-size: 60px;\n  line-height: 90px;\n  text-align: center;\n  color: #109CF1;\n}\n\n.rowSilaba {\n  margin-top: 50px;\n  margin-left: 53px;\n  margin-right: 62px;\n}\n\n.silaba {\n  width: 87px;\n  height: 87px;\n  border-radius: 100px;\n  margin-left: auto;\n  margin-right: auto;\n  font-family: Poppins;\n  font-style: normal;\n  font-weight: normal;\n  font-size: 35px;\n  line-height: 52px;\n  text-transform: initial;\n  background: #A9B0F0;\n  color: #5F659C;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9waG9uZW1lLWNvbnNvbmFudC12aWV3L2NvbnNvbmFudC1waG9uZW1lLXBhbmVsL0M6XFxVc2Vyc1xcYmVybmFcXERvY3VtZW50c1xcR2l0SHViXFxCbGFwcEZvbmVtYXNcXGJsYXBwL3NyY1xcYXBwXFxjb21wb25lbnRzXFxwaG9uZW1lLWNvbnNvbmFudC12aWV3XFxjb25zb25hbnQtcGhvbmVtZS1wYW5lbFxcY29uc29uYW50LXBob25lbWUtcGFuZWwuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2NvbXBvbmVudHMvcGhvbmVtZS1jb25zb25hbnQtdmlldy9jb25zb25hbnQtcGhvbmVtZS1wYW5lbC9jb25zb25hbnQtcGhvbmVtZS1wYW5lbC5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLFlBQUE7RUFDQSxhQUFBO0VBQ0EsbUJBQUE7RUFDQSx5QkFBQTtFQUNBLHNCQUFBO0VBQ0EsMkNBQUE7RUFDQSxtQkFBQTtBQ0NKOztBRENBO0VBRUksa0JBQUE7RUFDQSxrQkFBQTtFQUNBLG1CQUFBO0VBQ0EsZ0JBQUE7QUNDSjs7QURDQTtFQUNJLFlBQUE7RUFDQSxhQUFBO0FDRUo7O0FEQUE7RUFDSSxZQUFBO0VBQ0EsYUFBQTtFQUNBLDJDQUFBO0VBQ0Esb0JBQUE7RUFDQSxtQkFBQTtBQ0dKOztBRERBO0VBQ0ksa0JBQUE7RUFDQSxtQkFBQTtBQ0lKOztBREZBO0VBQ0ksaUJBQUE7RUFDQSxrQkFBQTtFQUNBLG9CQUFBO0VBQ0Esa0JBQUE7RUFDQSxtQkFBQTtFQUNBLGVBQUE7RUFDQSxpQkFBQTtFQUNBLGtCQUFBO0VBQ0EsY0FBQTtBQ0tKOztBREhBO0VBQ0ksZ0JBQUE7RUFDQSxpQkFBQTtFQUNBLGtCQUFBO0FDTUo7O0FESkE7RUFDSSxXQUFBO0VBQ0EsWUFBQTtFQUNBLG9CQUFBO0VBQ0EsaUJBQUE7RUFDQSxrQkFBQTtFQUVBLG9CQUFBO0VBQ0Esa0JBQUE7RUFDQSxtQkFBQTtFQUNBLGVBQUE7RUFDQSxpQkFBQTtFQUNBLHVCQUFBO0VBRUEsbUJBQUE7RUFDQSxjQUFBO0FDS0oiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL3Bob25lbWUtY29uc29uYW50LXZpZXcvY29uc29uYW50LXBob25lbWUtcGFuZWwvY29uc29uYW50LXBob25lbWUtcGFuZWwuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIucHJpbmNpcGFse1xyXG4gICAgd2lkdGg6IDgxOHB4O1xyXG4gICAgaGVpZ2h0OiA2MjRweDtcclxuICAgIGJhY2tncm91bmQ6ICNGRkZGRkY7XHJcbiAgICBib3JkZXI6IDJweCBzb2xpZCAjRkZGRkZGO1xyXG4gICAgYm94LXNpemluZzogYm9yZGVyLWJveDtcclxuICAgIGJveC1zaGFkb3c6IDBweCA0cHggNHB4IHJnYmEoMCwgMCwgMCwgMC4yNSk7XHJcbiAgICBib3JkZXItcmFkaXVzOiAxMHB4OyAgICBcclxufVxyXG4uYXVkaW9Gb25lbWF7XHJcbiAgICBcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgIG1hcmdpbi1sZWZ0OiAyMjZweDtcclxuICAgIG1hcmdpbi1yaWdodDogMjM1cHg7XHJcbiAgICBtYXJnaW4tdG9wOiA1NXB4O1xyXG59XHJcbi5pbWFnZW57XHJcbiAgICB3aWR0aDogMjg3cHg7XHJcbiAgICBoZWlnaHQ6IDI4N3B4OyAgICBcclxufVxyXG4uYnRuUGxheXtcclxuICAgIHdpZHRoOiAxMDNweDtcclxuICAgIGhlaWdodDogMTAzcHg7ICAgXHJcbiAgICBib3gtc2hhZG93OiAwcHggNHB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMjUpOyAgXHJcbiAgICBib3JkZXItcmFkaXVzOiAxMDBweDsgIFxyXG4gICAgYmFja2dyb3VuZDogIzdBODRERDtcclxufVxyXG4ucm93UGFsYWJyYXtcclxuICAgIG1hcmdpbi1sZWZ0OiAzMDlweDtcclxuICAgIG1hcmdpbi1yaWdodDogMzE4cHg7XHJcbn1cclxuLnBhbGFicmF7XHJcbiAgICBtYXJnaW4tbGVmdDogYXV0bztcclxuICAgIG1hcmdpbi1yaWdodDogYXV0bztcclxuICAgIGZvbnQtZmFtaWx5OiBQb3BwaW5zO1xyXG4gICAgZm9udC1zdHlsZTogbm9ybWFsO1xyXG4gICAgZm9udC13ZWlnaHQ6IG5vcm1hbDtcclxuICAgIGZvbnQtc2l6ZTogNjBweDtcclxuICAgIGxpbmUtaGVpZ2h0OiA5MHB4O1xyXG4gICAgdGV4dC1hbGlnbjogY2VudGVyOyAgXHJcbiAgICBjb2xvcjogIzEwOUNGMTsgIFxyXG59XHJcbi5yb3dTaWxhYmF7XHJcbiAgICBtYXJnaW4tdG9wOiA1MHB4O1xyXG4gICAgbWFyZ2luLWxlZnQ6IDUzcHg7XHJcbiAgICBtYXJnaW4tcmlnaHQ6IDYycHg7XHJcbn1cclxuLnNpbGFiYXtcclxuICAgIHdpZHRoOiA4N3B4O1xyXG4gICAgaGVpZ2h0OiA4N3B4O1xyXG4gICAgYm9yZGVyLXJhZGl1czogMTAwcHg7XHJcbiAgICBtYXJnaW4tbGVmdDogYXV0bztcclxuICAgIG1hcmdpbi1yaWdodDphdXRvO1xyXG5cclxuICAgIGZvbnQtZmFtaWx5OiBQb3BwaW5zO1xyXG4gICAgZm9udC1zdHlsZTogbm9ybWFsO1xyXG4gICAgZm9udC13ZWlnaHQ6IG5vcm1hbDtcclxuICAgIGZvbnQtc2l6ZTogMzVweDtcclxuICAgIGxpbmUtaGVpZ2h0OiA1MnB4O1xyXG4gICAgdGV4dC10cmFuc2Zvcm06IGluaXRpYWw7XHJcblxyXG4gICAgYmFja2dyb3VuZDogI0E5QjBGMDtcclxuICAgIGNvbG9yOiAjNUY2NTlDO1xyXG59IiwiLnByaW5jaXBhbCB7XG4gIHdpZHRoOiA4MThweDtcbiAgaGVpZ2h0OiA2MjRweDtcbiAgYmFja2dyb3VuZDogI0ZGRkZGRjtcbiAgYm9yZGVyOiAycHggc29saWQgI0ZGRkZGRjtcbiAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbiAgYm94LXNoYWRvdzogMHB4IDRweCA0cHggcmdiYSgwLCAwLCAwLCAwLjI1KTtcbiAgYm9yZGVyLXJhZGl1czogMTBweDtcbn1cblxuLmF1ZGlvRm9uZW1hIHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBtYXJnaW4tbGVmdDogMjI2cHg7XG4gIG1hcmdpbi1yaWdodDogMjM1cHg7XG4gIG1hcmdpbi10b3A6IDU1cHg7XG59XG5cbi5pbWFnZW4ge1xuICB3aWR0aDogMjg3cHg7XG4gIGhlaWdodDogMjg3cHg7XG59XG5cbi5idG5QbGF5IHtcbiAgd2lkdGg6IDEwM3B4O1xuICBoZWlnaHQ6IDEwM3B4O1xuICBib3gtc2hhZG93OiAwcHggNHB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMjUpO1xuICBib3JkZXItcmFkaXVzOiAxMDBweDtcbiAgYmFja2dyb3VuZDogIzdBODRERDtcbn1cblxuLnJvd1BhbGFicmEge1xuICBtYXJnaW4tbGVmdDogMzA5cHg7XG4gIG1hcmdpbi1yaWdodDogMzE4cHg7XG59XG5cbi5wYWxhYnJhIHtcbiAgbWFyZ2luLWxlZnQ6IGF1dG87XG4gIG1hcmdpbi1yaWdodDogYXV0bztcbiAgZm9udC1mYW1pbHk6IFBvcHBpbnM7XG4gIGZvbnQtc3R5bGU6IG5vcm1hbDtcbiAgZm9udC13ZWlnaHQ6IG5vcm1hbDtcbiAgZm9udC1zaXplOiA2MHB4O1xuICBsaW5lLWhlaWdodDogOTBweDtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBjb2xvcjogIzEwOUNGMTtcbn1cblxuLnJvd1NpbGFiYSB7XG4gIG1hcmdpbi10b3A6IDUwcHg7XG4gIG1hcmdpbi1sZWZ0OiA1M3B4O1xuICBtYXJnaW4tcmlnaHQ6IDYycHg7XG59XG5cbi5zaWxhYmEge1xuICB3aWR0aDogODdweDtcbiAgaGVpZ2h0OiA4N3B4O1xuICBib3JkZXItcmFkaXVzOiAxMDBweDtcbiAgbWFyZ2luLWxlZnQ6IGF1dG87XG4gIG1hcmdpbi1yaWdodDogYXV0bztcbiAgZm9udC1mYW1pbHk6IFBvcHBpbnM7XG4gIGZvbnQtc3R5bGU6IG5vcm1hbDtcbiAgZm9udC13ZWlnaHQ6IG5vcm1hbDtcbiAgZm9udC1zaXplOiAzNXB4O1xuICBsaW5lLWhlaWdodDogNTJweDtcbiAgdGV4dC10cmFuc2Zvcm06IGluaXRpYWw7XG4gIGJhY2tncm91bmQ6ICNBOUIwRjA7XG4gIGNvbG9yOiAjNUY2NTlDO1xufSJdfQ== */";
+    __webpack_exports__["default"] = ".principal {\n  width: 818px;\n  height: 624px;\n  background: #FFFFFF;\n  border: 2px solid #FFFFFF;\n  box-sizing: border-box;\n  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);\n  border-radius: 10px;\n}\n\n.audioFonema {\n  text-align: center;\n  margin-left: 226px;\n  margin-right: 235px;\n  margin-top: 55px;\n}\n\n.imagen {\n  width: 287px;\n  height: 287px;\n  border: 2px solid #C4C4C4;\n}\n\n.btnPlay {\n  width: 103px;\n  height: 103px;\n  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);\n  border-radius: 100px;\n  background: #7A84DD;\n}\n\n.rowPalabra {\n  margin-left: 309px;\n  margin-right: 318px;\n}\n\n.palabra {\n  margin-left: auto;\n  margin-right: auto;\n  font-family: Poppins;\n  font-style: normal;\n  font-weight: normal;\n  font-size: 60px;\n  line-height: 90px;\n  text-align: center;\n  color: #109CF1;\n}\n\n.rowSilaba {\n  margin-top: 50px;\n  margin-left: 53px;\n  margin-right: 62px;\n}\n\n.silaba {\n  width: 87px;\n  height: 87px;\n  border-radius: 100px;\n  margin-left: auto;\n  margin-right: auto;\n  font-family: Poppins;\n  font-style: normal;\n  font-weight: normal;\n  font-size: 35px;\n  line-height: 52px;\n  text-transform: initial;\n  background: #A9B0F0;\n  color: #5F659C;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9waG9uZW1lLWNvbnNvbmFudC12aWV3L2NvbnNvbmFudC1waG9uZW1lLXBhbmVsL0M6XFxVc2Vyc1xcYmVybmFcXERvY3VtZW50c1xcR2l0SHViXFxCbGFwcEZvbmVtYXNcXGJsYXBwL3NyY1xcYXBwXFxjb21wb25lbnRzXFxwaG9uZW1lLWNvbnNvbmFudC12aWV3XFxjb25zb25hbnQtcGhvbmVtZS1wYW5lbFxcY29uc29uYW50LXBob25lbWUtcGFuZWwuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2NvbXBvbmVudHMvcGhvbmVtZS1jb25zb25hbnQtdmlldy9jb25zb25hbnQtcGhvbmVtZS1wYW5lbC9jb25zb25hbnQtcGhvbmVtZS1wYW5lbC5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLFlBQUE7RUFDQSxhQUFBO0VBQ0EsbUJBQUE7RUFDQSx5QkFBQTtFQUNBLHNCQUFBO0VBQ0EsMkNBQUE7RUFDQSxtQkFBQTtBQ0NKOztBRENBO0VBRUksa0JBQUE7RUFDQSxrQkFBQTtFQUNBLG1CQUFBO0VBQ0EsZ0JBQUE7QUNDSjs7QURDQTtFQUNJLFlBQUE7RUFDQSxhQUFBO0VBQ0EseUJBQUE7QUNFSjs7QURFQTtFQUNJLFlBQUE7RUFDQSxhQUFBO0VBQ0EsMkNBQUE7RUFDQSxvQkFBQTtFQUNBLG1CQUFBO0FDQ0o7O0FEQ0E7RUFDSSxrQkFBQTtFQUNBLG1CQUFBO0FDRUo7O0FEQUE7RUFDSSxpQkFBQTtFQUNBLGtCQUFBO0VBQ0Esb0JBQUE7RUFDQSxrQkFBQTtFQUNBLG1CQUFBO0VBQ0EsZUFBQTtFQUNBLGlCQUFBO0VBQ0Esa0JBQUE7RUFDQSxjQUFBO0FDR0o7O0FEREE7RUFDSSxnQkFBQTtFQUNBLGlCQUFBO0VBQ0Esa0JBQUE7QUNJSjs7QURGQTtFQUNJLFdBQUE7RUFDQSxZQUFBO0VBQ0Esb0JBQUE7RUFDQSxpQkFBQTtFQUNBLGtCQUFBO0VBRUEsb0JBQUE7RUFDQSxrQkFBQTtFQUNBLG1CQUFBO0VBQ0EsZUFBQTtFQUNBLGlCQUFBO0VBQ0EsdUJBQUE7RUFFQSxtQkFBQTtFQUNBLGNBQUE7QUNHSiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcGhvbmVtZS1jb25zb25hbnQtdmlldy9jb25zb25hbnQtcGhvbmVtZS1wYW5lbC9jb25zb25hbnQtcGhvbmVtZS1wYW5lbC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5wcmluY2lwYWx7XHJcbiAgICB3aWR0aDogODE4cHg7XHJcbiAgICBoZWlnaHQ6IDYyNHB4O1xyXG4gICAgYmFja2dyb3VuZDogI0ZGRkZGRjtcclxuICAgIGJvcmRlcjogMnB4IHNvbGlkICNGRkZGRkY7XHJcbiAgICBib3gtc2l6aW5nOiBib3JkZXItYm94O1xyXG4gICAgYm94LXNoYWRvdzogMHB4IDRweCA0cHggcmdiYSgwLCAwLCAwLCAwLjI1KTtcclxuICAgIGJvcmRlci1yYWRpdXM6IDEwcHg7ICAgIFxyXG59XHJcbi5hdWRpb0ZvbmVtYXtcclxuICAgIFxyXG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgbWFyZ2luLWxlZnQ6IDIyNnB4O1xyXG4gICAgbWFyZ2luLXJpZ2h0OiAyMzVweDtcclxuICAgIG1hcmdpbi10b3A6IDU1cHg7XHJcbn1cclxuLmltYWdlbntcclxuICAgIHdpZHRoOiAyODdweDtcclxuICAgIGhlaWdodDogMjg3cHg7ICBcclxuICAgIGJvcmRlcjogMnB4IHNvbGlkICNDNEM0QzQ7ICBcclxufVxyXG5cclxuXHJcbi5idG5QbGF5e1xyXG4gICAgd2lkdGg6IDEwM3B4O1xyXG4gICAgaGVpZ2h0OiAxMDNweDsgICBcclxuICAgIGJveC1zaGFkb3c6IDBweCA0cHggNHB4IHJnYmEoMCwgMCwgMCwgMC4yNSk7ICBcclxuICAgIGJvcmRlci1yYWRpdXM6IDEwMHB4OyAgXHJcbiAgICBiYWNrZ3JvdW5kOiAjN0E4NEREO1xyXG59XHJcbi5yb3dQYWxhYnJhe1xyXG4gICAgbWFyZ2luLWxlZnQ6IDMwOXB4O1xyXG4gICAgbWFyZ2luLXJpZ2h0OiAzMThweDtcclxufVxyXG4ucGFsYWJyYXtcclxuICAgIG1hcmdpbi1sZWZ0OiBhdXRvO1xyXG4gICAgbWFyZ2luLXJpZ2h0OiBhdXRvO1xyXG4gICAgZm9udC1mYW1pbHk6IFBvcHBpbnM7XHJcbiAgICBmb250LXN0eWxlOiBub3JtYWw7XHJcbiAgICBmb250LXdlaWdodDogbm9ybWFsO1xyXG4gICAgZm9udC1zaXplOiA2MHB4O1xyXG4gICAgbGluZS1oZWlnaHQ6IDkwcHg7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7ICBcclxuICAgIGNvbG9yOiAjMTA5Q0YxOyAgXHJcbn1cclxuLnJvd1NpbGFiYXtcclxuICAgIG1hcmdpbi10b3A6IDUwcHg7XHJcbiAgICBtYXJnaW4tbGVmdDogNTNweDtcclxuICAgIG1hcmdpbi1yaWdodDogNjJweDtcclxufVxyXG4uc2lsYWJhe1xyXG4gICAgd2lkdGg6IDg3cHg7XHJcbiAgICBoZWlnaHQ6IDg3cHg7XHJcbiAgICBib3JkZXItcmFkaXVzOiAxMDBweDtcclxuICAgIG1hcmdpbi1sZWZ0OiBhdXRvO1xyXG4gICAgbWFyZ2luLXJpZ2h0OmF1dG87XHJcblxyXG4gICAgZm9udC1mYW1pbHk6IFBvcHBpbnM7XHJcbiAgICBmb250LXN0eWxlOiBub3JtYWw7XHJcbiAgICBmb250LXdlaWdodDogbm9ybWFsO1xyXG4gICAgZm9udC1zaXplOiAzNXB4O1xyXG4gICAgbGluZS1oZWlnaHQ6IDUycHg7XHJcbiAgICB0ZXh0LXRyYW5zZm9ybTogaW5pdGlhbDtcclxuXHJcbiAgICBiYWNrZ3JvdW5kOiAjQTlCMEYwO1xyXG4gICAgY29sb3I6ICM1RjY1OUM7XHJcbn0iLCIucHJpbmNpcGFsIHtcbiAgd2lkdGg6IDgxOHB4O1xuICBoZWlnaHQ6IDYyNHB4O1xuICBiYWNrZ3JvdW5kOiAjRkZGRkZGO1xuICBib3JkZXI6IDJweCBzb2xpZCAjRkZGRkZGO1xuICBib3gtc2l6aW5nOiBib3JkZXItYm94O1xuICBib3gtc2hhZG93OiAwcHggNHB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMjUpO1xuICBib3JkZXItcmFkaXVzOiAxMHB4O1xufVxuXG4uYXVkaW9Gb25lbWEge1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIG1hcmdpbi1sZWZ0OiAyMjZweDtcbiAgbWFyZ2luLXJpZ2h0OiAyMzVweDtcbiAgbWFyZ2luLXRvcDogNTVweDtcbn1cblxuLmltYWdlbiB7XG4gIHdpZHRoOiAyODdweDtcbiAgaGVpZ2h0OiAyODdweDtcbiAgYm9yZGVyOiAycHggc29saWQgI0M0QzRDNDtcbn1cblxuLmJ0blBsYXkge1xuICB3aWR0aDogMTAzcHg7XG4gIGhlaWdodDogMTAzcHg7XG4gIGJveC1zaGFkb3c6IDBweCA0cHggNHB4IHJnYmEoMCwgMCwgMCwgMC4yNSk7XG4gIGJvcmRlci1yYWRpdXM6IDEwMHB4O1xuICBiYWNrZ3JvdW5kOiAjN0E4NEREO1xufVxuXG4ucm93UGFsYWJyYSB7XG4gIG1hcmdpbi1sZWZ0OiAzMDlweDtcbiAgbWFyZ2luLXJpZ2h0OiAzMThweDtcbn1cblxuLnBhbGFicmEge1xuICBtYXJnaW4tbGVmdDogYXV0bztcbiAgbWFyZ2luLXJpZ2h0OiBhdXRvO1xuICBmb250LWZhbWlseTogUG9wcGlucztcbiAgZm9udC1zdHlsZTogbm9ybWFsO1xuICBmb250LXdlaWdodDogbm9ybWFsO1xuICBmb250LXNpemU6IDYwcHg7XG4gIGxpbmUtaGVpZ2h0OiA5MHB4O1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIGNvbG9yOiAjMTA5Q0YxO1xufVxuXG4ucm93U2lsYWJhIHtcbiAgbWFyZ2luLXRvcDogNTBweDtcbiAgbWFyZ2luLWxlZnQ6IDUzcHg7XG4gIG1hcmdpbi1yaWdodDogNjJweDtcbn1cblxuLnNpbGFiYSB7XG4gIHdpZHRoOiA4N3B4O1xuICBoZWlnaHQ6IDg3cHg7XG4gIGJvcmRlci1yYWRpdXM6IDEwMHB4O1xuICBtYXJnaW4tbGVmdDogYXV0bztcbiAgbWFyZ2luLXJpZ2h0OiBhdXRvO1xuICBmb250LWZhbWlseTogUG9wcGlucztcbiAgZm9udC1zdHlsZTogbm9ybWFsO1xuICBmb250LXdlaWdodDogbm9ybWFsO1xuICBmb250LXNpemU6IDM1cHg7XG4gIGxpbmUtaGVpZ2h0OiA1MnB4O1xuICB0ZXh0LXRyYW5zZm9ybTogaW5pdGlhbDtcbiAgYmFja2dyb3VuZDogI0E5QjBGMDtcbiAgY29sb3I6ICM1RjY1OUM7XG59Il19 */";
     /***/
   },
 
@@ -2655,7 +2777,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = ".principal {\n  position: absolute;\n  width: 302px;\n  height: 623px;\n  background: #FCD260;\n  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);\n  border-radius: 10px;\n}\n\n.imagen {\n  position: absolute;\n  width: 263px;\n  height: 262px;\n  left: 16px;\n  right: 23px;\n  top: 206px;\n}\n\n.titulo {\n  position: absolute;\n  width: 226px;\n  height: 74px;\n  left: 50px;\n  right: 41px;\n  top: 15px;\n  font-family: Poppins;\n  font-style: normal;\n  font-weight: bold;\n  font-size: 45px;\n  line-height: 67px;\n  color: #FFFFFF;\n}\n\n.fonema {\n  position: absolute;\n  width: 301px;\n  height: 74px;\n  left: 96px;\n  right: 41px;\n  top: 85px;\n  font-family: Poppins;\n  font-style: normal;\n  font-weight: bold;\n  font-size: 45px;\n  line-height: 67px;\n  color: #FFFFFF;\n}\n\n.videoFonema {\n  margin-top: 65px;\n  margin-right: 100px;\n}\n\n.mensaje {\n  width: 303px;\n  height: 42px;\n  margin-top: 450px;\n  font-family: Poppins;\n  font-style: normal;\n  font-weight: bold;\n  font-size: 25px;\n  line-height: 37px;\n  text-align: center;\n  color: #FFFFFF;\n}\n\n.comando1 {\n  position: absolute;\n  top: 406px;\n  background: rgba(255, 230, 190, 0.94);\n  border-radius: 15px;\n}\n\n.comando2 {\n  position: absolute;\n  top: 467px;\n  background: rgba(255, 230, 190, 0.94);\n  border-radius: 15px;\n}\n\n.comando3 {\n  position: absolute;\n  top: 520px;\n  background: rgba(255, 230, 190, 0.94);\n  border-radius: 15px;\n}\n\n.ion-segment-button {\n  background: rgba(255, 230, 190, 0.94);\n  border-radius: 15px;\n  color: #5F659C;\n  top: 392px;\n}\n\n.btnComando1 {\n  position: absolute;\n  width: 259px;\n  height: 48px;\n  left: 20px;\n  right: 23px;\n  background: rgba(255, 230, 190, 0.94);\n  border-radius: 15px;\n  color: #5F659C;\n  top: 392px;\n}\n\n.btnComando2 {\n  position: absolute;\n  width: 259px;\n  height: 48px;\n  left: 20px;\n  right: 23px;\n  background: rgba(255, 230, 190, 0.94);\n  border-radius: 15px;\n  color: #5F659C;\n  top: 453px;\n}\n\n.btnComando3 {\n  position: absolute;\n  width: 259px;\n  height: 48px;\n  left: 20px;\n  right: 23px;\n  background: rgba(255, 230, 190, 0.94);\n  border-radius: 15px;\n  color: #5F659C;\n  top: 520px;\n}\n\n.btnPlay {\n  width: 60px;\n  height: 60px;\n  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);\n  border-radius: 100px;\n  background: #7A84DD;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9waG9uZW1lLXZpZXcvYmFyL0M6XFxVc2Vyc1xcYmVybmFcXERvY3VtZW50c1xcR2l0SHViXFxCbGFwcEZvbmVtYXNcXGJsYXBwL3NyY1xcYXBwXFxjb21wb25lbnRzXFxwaG9uZW1lLXZpZXdcXGJhclxcYmFyLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9jb21wb25lbnRzL3Bob25lbWUtdmlldy9iYXIvYmFyLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksa0JBQUE7RUFDQyxZQUFBO0VBQ0EsYUFBQTtFQUNBLG1CQUFBO0VBQ0EsMkNBQUE7RUFDQSxtQkFBQTtBQ0NMOztBRENDO0VBQ0ksa0JBQUE7RUFDQSxZQUFBO0VBQ0EsYUFBQTtFQUNBLFVBQUE7RUFDQSxXQUFBO0VBQ0EsVUFBQTtBQ0VMOztBREFDO0VBQ0ksa0JBQUE7RUFDQSxZQUFBO0VBQ0EsWUFBQTtFQUNBLFVBQUE7RUFDQSxXQUFBO0VBQ0EsU0FBQTtFQUVBLG9CQUFBO0VBQ0Esa0JBQUE7RUFDQSxpQkFBQTtFQUNBLGVBQUE7RUFDQSxpQkFBQTtFQUVBLGNBQUE7QUNDTDs7QURDQztFQUNHLGtCQUFBO0VBQ0EsWUFBQTtFQUNBLFlBQUE7RUFDQSxVQUFBO0VBQ0EsV0FBQTtFQUNBLFNBQUE7RUFFQSxvQkFBQTtFQUNBLGtCQUFBO0VBQ0EsaUJBQUE7RUFDQSxlQUFBO0VBQ0EsaUJBQUE7RUFFQSxjQUFBO0FDQUo7O0FER0M7RUFDSSxnQkFBQTtFQUNBLG1CQUFBO0FDQUw7O0FER0M7RUFDRyxZQUFBO0VBQ0EsWUFBQTtFQUNBLGlCQUFBO0VBQ0Esb0JBQUE7RUFDQSxrQkFBQTtFQUNBLGlCQUFBO0VBQ0EsZUFBQTtFQUNBLGlCQUFBO0VBQ0Esa0JBQUE7RUFFQSxjQUFBO0FDREo7O0FESUM7RUFDSSxrQkFBQTtFQUNBLFVBQUE7RUFDQSxxQ0FBQTtFQUNBLG1CQUFBO0FDREw7O0FER0M7RUFDSSxrQkFBQTtFQUNBLFVBQUE7RUFDQSxxQ0FBQTtFQUNBLG1CQUFBO0FDQUw7O0FERUM7RUFDSSxrQkFBQTtFQUNBLFVBQUE7RUFDQSxxQ0FBQTtFQUNBLG1CQUFBO0FDQ0w7O0FEQ0M7RUFDSSxxQ0FBQTtFQUNBLG1CQUFBO0VBQ0EsY0FBQTtFQUNBLFVBQUE7QUNFTDs7QURBQztFQUNJLGtCQUFBO0VBQ0EsWUFBQTtFQUNBLFlBQUE7RUFDQSxVQUFBO0VBQ0EsV0FBQTtFQUNBLHFDQUFBO0VBQ0EsbUJBQUE7RUFDQSxjQUFBO0VBQ0EsVUFBQTtBQ0dMOztBRERDO0VBQ0ksa0JBQUE7RUFDQSxZQUFBO0VBQ0EsWUFBQTtFQUNBLFVBQUE7RUFDQSxXQUFBO0VBQ0EscUNBQUE7RUFDQSxtQkFBQTtFQUNBLGNBQUE7RUFDQSxVQUFBO0FDSUw7O0FERkM7RUFDSSxrQkFBQTtFQUNBLFlBQUE7RUFDQSxZQUFBO0VBQ0EsVUFBQTtFQUNBLFdBQUE7RUFDQSxxQ0FBQTtFQUNBLG1CQUFBO0VBQ0EsY0FBQTtFQUNBLFVBQUE7QUNLTDs7QURGQztFQUNHLFdBQUE7RUFDQSxZQUFBO0VBQ0EsMkNBQUE7RUFDQSxvQkFBQTtFQUNBLG1CQUFBO0FDS0oiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL3Bob25lbWUtdmlldy9iYXIvYmFyLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnByaW5jaXBhbHtcclxuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgICB3aWR0aDogMzAycHg7XHJcbiAgICAgaGVpZ2h0OiA2MjNweDtcclxuICAgICBiYWNrZ3JvdW5kOiAjRkNEMjYwO1xyXG4gICAgIGJveC1zaGFkb3c6IDBweCA0cHggNHB4IHJnYmEoMCwgMCwgMCwgMC4yNSk7XHJcbiAgICAgYm9yZGVyLXJhZGl1czogMTBweDsgICAgXHJcbiB9XHJcbiAuaW1hZ2Vue1xyXG4gICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgICB3aWR0aDogMjYzcHg7XHJcbiAgICAgaGVpZ2h0OiAyNjJweDtcclxuICAgICBsZWZ0OiAxNnB4O1xyXG4gICAgIHJpZ2h0OiAyM3B4O1xyXG4gICAgIHRvcDogMjA2cHg7ICAgIFxyXG4gfVxyXG4gLnRpdHVsb3tcclxuICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICAgd2lkdGg6IDIyNnB4O1xyXG4gICAgIGhlaWdodDogNzRweDtcclxuICAgICBsZWZ0OiA1MHB4O1xyXG4gICAgIHJpZ2h0OiA0MXB4O1xyXG4gICAgIHRvcDogMTVweDtcclxuIFxyXG4gICAgIGZvbnQtZmFtaWx5OiBQb3BwaW5zO1xyXG4gICAgIGZvbnQtc3R5bGU6IG5vcm1hbDtcclxuICAgICBmb250LXdlaWdodDogYm9sZDtcclxuICAgICBmb250LXNpemU6IDQ1cHg7XHJcbiAgICAgbGluZS1oZWlnaHQ6IDY3cHg7XHJcbiAgICAgXHJcbiAgICAgY29sb3I6ICNGRkZGRkY7ICAgIFxyXG4gfVxyXG4gLmZvbmVtYXtcclxuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgIHdpZHRoOiAzMDFweDtcclxuICAgIGhlaWdodDogNzRweDtcclxuICAgIGxlZnQ6IDk2cHg7XHJcbiAgICByaWdodDogNDFweDtcclxuICAgIHRvcDogODVweDtcclxuXHJcbiAgICBmb250LWZhbWlseTogUG9wcGlucztcclxuICAgIGZvbnQtc3R5bGU6IG5vcm1hbDtcclxuICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xyXG4gICAgZm9udC1zaXplOiA0NXB4O1xyXG4gICAgbGluZS1oZWlnaHQ6IDY3cHg7XHJcbiAgICBcclxuICAgIGNvbG9yOiAjRkZGRkZGOyAgICAgIFxyXG4gfVxyXG5cclxuIC52aWRlb0ZvbmVtYXtcclxuICAgICBtYXJnaW4tdG9wOiA2NXB4O1xyXG4gICAgIG1hcmdpbi1yaWdodDogMTAwcHg7XHJcbiB9XHJcblxyXG4gLm1lbnNhamV7XHJcbiAgICB3aWR0aDogMzAzcHg7XHJcbiAgICBoZWlnaHQ6IDQycHg7IFxyXG4gICAgbWFyZ2luLXRvcDo0NTBweDtcclxuICAgIGZvbnQtZmFtaWx5OiBQb3BwaW5zO1xyXG4gICAgZm9udC1zdHlsZTogbm9ybWFsO1xyXG4gICAgZm9udC13ZWlnaHQ6IGJvbGQ7XHJcbiAgICBmb250LXNpemU6IDI1cHg7XHJcbiAgICBsaW5lLWhlaWdodDogMzdweDtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuXHJcbiAgICBjb2xvcjogI0ZGRkZGRjtcclxuIH1cclxuIFxyXG4gLmNvbWFuZG8xe1xyXG4gICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgICB0b3A6IDQwNnB4OyAgXHJcbiAgICAgYmFja2dyb3VuZDogcmdiYSgyNTUsIDIzMCwgMTkwLCAwLjk0KTsgICAgIFxyXG4gICAgIGJvcmRlci1yYWRpdXM6IDE1cHg7ICAgIFxyXG4gfVxyXG4gLmNvbWFuZG8ye1xyXG4gICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgICB0b3A6IDQ2N3B4O1xyXG4gICAgIGJhY2tncm91bmQ6IHJnYmEoMjU1LCAyMzAsIDE5MCwgMC45NCk7ICAgICBcclxuICAgICBib3JkZXItcmFkaXVzOiAxNXB4OyAgICAgICBcclxuIH1cclxuIC5jb21hbmRvM3tcclxuICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICAgdG9wOiA1MjBweDsgXHJcbiAgICAgYmFja2dyb3VuZDogcmdiYSgyNTUsIDIzMCwgMTkwLCAwLjk0KTsgICAgIFxyXG4gICAgIGJvcmRlci1yYWRpdXM6IDE1cHg7ICAgICAgXHJcbiB9XHJcbiAuaW9uLXNlZ21lbnQtYnV0dG9ue1xyXG4gICAgIGJhY2tncm91bmQ6IHJnYmEoMjU1LCAyMzAsIDE5MCwgMC45NCk7XHJcbiAgICAgYm9yZGVyLXJhZGl1czogMTVweDsgIFxyXG4gICAgIGNvbG9yOiAjNUY2NTlDOyAgICAgIFxyXG4gICAgIHRvcDogMzkycHg7ICAgICBcclxuIH1cclxuIC5idG5Db21hbmRvMXtcclxuICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICAgd2lkdGg6IDI1OXB4O1xyXG4gICAgIGhlaWdodDogNDhweDtcclxuICAgICBsZWZ0OiAyMHB4O1xyXG4gICAgIHJpZ2h0OiAyM3B4O1xyXG4gICAgIGJhY2tncm91bmQ6IHJnYmEoMjU1LCAyMzAsIDE5MCwgMC45NCk7XHJcbiAgICAgYm9yZGVyLXJhZGl1czogMTVweDsgIFxyXG4gICAgIGNvbG9yOiAjNUY2NTlDOyAgICAgIFxyXG4gICAgIHRvcDogMzkycHg7ICBcclxuIH1cclxuIC5idG5Db21hbmRvMntcclxuICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICAgd2lkdGg6IDI1OXB4O1xyXG4gICAgIGhlaWdodDogNDhweDtcclxuICAgICBsZWZ0OiAyMHB4O1xyXG4gICAgIHJpZ2h0OiAyM3B4O1xyXG4gICAgIGJhY2tncm91bmQ6IHJnYmEoMjU1LCAyMzAsIDE5MCwgMC45NCk7XHJcbiAgICAgYm9yZGVyLXJhZGl1czogMTVweDsgIFxyXG4gICAgIGNvbG9yOiAjNUY2NTlDOyAgICAgIFxyXG4gICAgIHRvcDogNDUzcHg7XHJcbiB9XHJcbiAuYnRuQ29tYW5kbzN7XHJcbiAgICAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gICAgIHdpZHRoOiAyNTlweDtcclxuICAgICBoZWlnaHQ6IDQ4cHg7XHJcbiAgICAgbGVmdDogMjBweDtcclxuICAgICByaWdodDogMjNweDtcclxuICAgICBiYWNrZ3JvdW5kOiByZ2JhKDI1NSwgMjMwLCAxOTAsIDAuOTQpO1xyXG4gICAgIGJvcmRlci1yYWRpdXM6IDE1cHg7ICBcclxuICAgICBjb2xvcjogIzVGNjU5QzsgICAgICBcclxuICAgICB0b3A6IDUyMHB4O1xyXG4gfVxyXG5cclxuIC5idG5QbGF5e1xyXG4gICAgd2lkdGg6IDYwcHg7XHJcbiAgICBoZWlnaHQ6IDYwcHg7ICAgXHJcbiAgICBib3gtc2hhZG93OiAwcHggNHB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMjUpOyAgXHJcbiAgICBib3JkZXItcmFkaXVzOiAxMDBweDsgIFxyXG4gICAgYmFja2dyb3VuZDogIzdBODRERDtcclxufSIsIi5wcmluY2lwYWwge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHdpZHRoOiAzMDJweDtcbiAgaGVpZ2h0OiA2MjNweDtcbiAgYmFja2dyb3VuZDogI0ZDRDI2MDtcbiAgYm94LXNoYWRvdzogMHB4IDRweCA0cHggcmdiYSgwLCAwLCAwLCAwLjI1KTtcbiAgYm9yZGVyLXJhZGl1czogMTBweDtcbn1cblxuLmltYWdlbiB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgd2lkdGg6IDI2M3B4O1xuICBoZWlnaHQ6IDI2MnB4O1xuICBsZWZ0OiAxNnB4O1xuICByaWdodDogMjNweDtcbiAgdG9wOiAyMDZweDtcbn1cblxuLnRpdHVsbyB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgd2lkdGg6IDIyNnB4O1xuICBoZWlnaHQ6IDc0cHg7XG4gIGxlZnQ6IDUwcHg7XG4gIHJpZ2h0OiA0MXB4O1xuICB0b3A6IDE1cHg7XG4gIGZvbnQtZmFtaWx5OiBQb3BwaW5zO1xuICBmb250LXN0eWxlOiBub3JtYWw7XG4gIGZvbnQtd2VpZ2h0OiBib2xkO1xuICBmb250LXNpemU6IDQ1cHg7XG4gIGxpbmUtaGVpZ2h0OiA2N3B4O1xuICBjb2xvcjogI0ZGRkZGRjtcbn1cblxuLmZvbmVtYSB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgd2lkdGg6IDMwMXB4O1xuICBoZWlnaHQ6IDc0cHg7XG4gIGxlZnQ6IDk2cHg7XG4gIHJpZ2h0OiA0MXB4O1xuICB0b3A6IDg1cHg7XG4gIGZvbnQtZmFtaWx5OiBQb3BwaW5zO1xuICBmb250LXN0eWxlOiBub3JtYWw7XG4gIGZvbnQtd2VpZ2h0OiBib2xkO1xuICBmb250LXNpemU6IDQ1cHg7XG4gIGxpbmUtaGVpZ2h0OiA2N3B4O1xuICBjb2xvcjogI0ZGRkZGRjtcbn1cblxuLnZpZGVvRm9uZW1hIHtcbiAgbWFyZ2luLXRvcDogNjVweDtcbiAgbWFyZ2luLXJpZ2h0OiAxMDBweDtcbn1cblxuLm1lbnNhamUge1xuICB3aWR0aDogMzAzcHg7XG4gIGhlaWdodDogNDJweDtcbiAgbWFyZ2luLXRvcDogNDUwcHg7XG4gIGZvbnQtZmFtaWx5OiBQb3BwaW5zO1xuICBmb250LXN0eWxlOiBub3JtYWw7XG4gIGZvbnQtd2VpZ2h0OiBib2xkO1xuICBmb250LXNpemU6IDI1cHg7XG4gIGxpbmUtaGVpZ2h0OiAzN3B4O1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIGNvbG9yOiAjRkZGRkZGO1xufVxuXG4uY29tYW5kbzEge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHRvcDogNDA2cHg7XG4gIGJhY2tncm91bmQ6IHJnYmEoMjU1LCAyMzAsIDE5MCwgMC45NCk7XG4gIGJvcmRlci1yYWRpdXM6IDE1cHg7XG59XG5cbi5jb21hbmRvMiB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgdG9wOiA0NjdweDtcbiAgYmFja2dyb3VuZDogcmdiYSgyNTUsIDIzMCwgMTkwLCAwLjk0KTtcbiAgYm9yZGVyLXJhZGl1czogMTVweDtcbn1cblxuLmNvbWFuZG8zIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB0b3A6IDUyMHB4O1xuICBiYWNrZ3JvdW5kOiByZ2JhKDI1NSwgMjMwLCAxOTAsIDAuOTQpO1xuICBib3JkZXItcmFkaXVzOiAxNXB4O1xufVxuXG4uaW9uLXNlZ21lbnQtYnV0dG9uIHtcbiAgYmFja2dyb3VuZDogcmdiYSgyNTUsIDIzMCwgMTkwLCAwLjk0KTtcbiAgYm9yZGVyLXJhZGl1czogMTVweDtcbiAgY29sb3I6ICM1RjY1OUM7XG4gIHRvcDogMzkycHg7XG59XG5cbi5idG5Db21hbmRvMSB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgd2lkdGg6IDI1OXB4O1xuICBoZWlnaHQ6IDQ4cHg7XG4gIGxlZnQ6IDIwcHg7XG4gIHJpZ2h0OiAyM3B4O1xuICBiYWNrZ3JvdW5kOiByZ2JhKDI1NSwgMjMwLCAxOTAsIDAuOTQpO1xuICBib3JkZXItcmFkaXVzOiAxNXB4O1xuICBjb2xvcjogIzVGNjU5QztcbiAgdG9wOiAzOTJweDtcbn1cblxuLmJ0bkNvbWFuZG8yIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB3aWR0aDogMjU5cHg7XG4gIGhlaWdodDogNDhweDtcbiAgbGVmdDogMjBweDtcbiAgcmlnaHQ6IDIzcHg7XG4gIGJhY2tncm91bmQ6IHJnYmEoMjU1LCAyMzAsIDE5MCwgMC45NCk7XG4gIGJvcmRlci1yYWRpdXM6IDE1cHg7XG4gIGNvbG9yOiAjNUY2NTlDO1xuICB0b3A6IDQ1M3B4O1xufVxuXG4uYnRuQ29tYW5kbzMge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHdpZHRoOiAyNTlweDtcbiAgaGVpZ2h0OiA0OHB4O1xuICBsZWZ0OiAyMHB4O1xuICByaWdodDogMjNweDtcbiAgYmFja2dyb3VuZDogcmdiYSgyNTUsIDIzMCwgMTkwLCAwLjk0KTtcbiAgYm9yZGVyLXJhZGl1czogMTVweDtcbiAgY29sb3I6ICM1RjY1OUM7XG4gIHRvcDogNTIwcHg7XG59XG5cbi5idG5QbGF5IHtcbiAgd2lkdGg6IDYwcHg7XG4gIGhlaWdodDogNjBweDtcbiAgYm94LXNoYWRvdzogMHB4IDRweCA0cHggcmdiYSgwLCAwLCAwLCAwLjI1KTtcbiAgYm9yZGVyLXJhZGl1czogMTAwcHg7XG4gIGJhY2tncm91bmQ6ICM3QTg0REQ7XG59Il19 */";
+    __webpack_exports__["default"] = ".principal {\n  position: absolute;\n  width: 302px;\n  height: 623px;\n  background: #FCD260;\n  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);\n  border-radius: 10px;\n}\n\n.imagen {\n  position: absolute;\n  width: 262px;\n  height: 262px;\n  left: 16px;\n  right: 23px;\n  top: 206px;\n  border-radius: 100px;\n}\n\n.titulo {\n  position: absolute;\n  width: 226px;\n  height: 74px;\n  left: 50px;\n  right: 41px;\n  top: 15px;\n  font-family: Poppins;\n  font-style: normal;\n  font-weight: bold;\n  font-size: 45px;\n  line-height: 67px;\n  color: #FFFFFF;\n}\n\n.fonema {\n  position: absolute;\n  width: 301px;\n  height: 74px;\n  left: 96px;\n  right: 41px;\n  top: 85px;\n  font-family: Poppins;\n  font-style: normal;\n  font-weight: bold;\n  font-size: 45px;\n  line-height: 67px;\n  color: #FFFFFF;\n}\n\n.videoFonema {\n  margin-top: 65px;\n  margin-right: 100px;\n}\n\n.mensaje {\n  width: 303px;\n  height: 42px;\n  margin-top: 450px;\n  font-family: Poppins;\n  font-style: normal;\n  font-weight: bold;\n  font-size: 25px;\n  line-height: 37px;\n  text-align: center;\n  color: #FFFFFF;\n}\n\n.comando1 {\n  position: absolute;\n  top: 406px;\n  background: rgba(255, 230, 190, 0.94);\n  border-radius: 15px;\n}\n\n.comando2 {\n  position: absolute;\n  top: 467px;\n  background: rgba(255, 230, 190, 0.94);\n  border-radius: 15px;\n}\n\n.comando3 {\n  position: absolute;\n  top: 520px;\n  background: rgba(255, 230, 190, 0.94);\n  border-radius: 15px;\n}\n\n.ion-segment-button {\n  background: rgba(255, 230, 190, 0.94);\n  border-radius: 15px;\n  color: #5F659C;\n  top: 392px;\n}\n\n.btnComando1 {\n  position: absolute;\n  width: 259px;\n  height: 48px;\n  left: 20px;\n  right: 23px;\n  background: rgba(255, 230, 190, 0.94);\n  border-radius: 15px;\n  color: #5F659C;\n  top: 392px;\n}\n\n.btnComando2 {\n  position: absolute;\n  width: 259px;\n  height: 48px;\n  left: 20px;\n  right: 23px;\n  background: rgba(255, 230, 190, 0.94);\n  border-radius: 15px;\n  color: #5F659C;\n  top: 453px;\n}\n\n.btnComando3 {\n  position: absolute;\n  width: 259px;\n  height: 48px;\n  left: 20px;\n  right: 23px;\n  background: rgba(255, 230, 190, 0.94);\n  border-radius: 15px;\n  color: #5F659C;\n  top: 520px;\n}\n\n.btnPlay {\n  width: 60px;\n  height: 60px;\n  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);\n  border-radius: 100px;\n  background: #7A84DD;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9waG9uZW1lLXZpZXcvYmFyL0M6XFxVc2Vyc1xcYmVybmFcXERvY3VtZW50c1xcR2l0SHViXFxCbGFwcEZvbmVtYXNcXGJsYXBwL3NyY1xcYXBwXFxjb21wb25lbnRzXFxwaG9uZW1lLXZpZXdcXGJhclxcYmFyLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9jb21wb25lbnRzL3Bob25lbWUtdmlldy9iYXIvYmFyLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksa0JBQUE7RUFDQyxZQUFBO0VBQ0EsYUFBQTtFQUNBLG1CQUFBO0VBQ0EsMkNBQUE7RUFDQSxtQkFBQTtBQ0NMOztBRENDO0VBQ0ksa0JBQUE7RUFDQSxZQUFBO0VBQ0EsYUFBQTtFQUNBLFVBQUE7RUFDQSxXQUFBO0VBQ0EsVUFBQTtFQUNBLG9CQUFBO0FDRUw7O0FEQUM7RUFDSSxrQkFBQTtFQUNBLFlBQUE7RUFDQSxZQUFBO0VBQ0EsVUFBQTtFQUNBLFdBQUE7RUFDQSxTQUFBO0VBRUEsb0JBQUE7RUFDQSxrQkFBQTtFQUNBLGlCQUFBO0VBQ0EsZUFBQTtFQUNBLGlCQUFBO0VBRUEsY0FBQTtBQ0NMOztBRENDO0VBQ0csa0JBQUE7RUFDQSxZQUFBO0VBQ0EsWUFBQTtFQUNBLFVBQUE7RUFDQSxXQUFBO0VBQ0EsU0FBQTtFQUVBLG9CQUFBO0VBQ0Esa0JBQUE7RUFDQSxpQkFBQTtFQUNBLGVBQUE7RUFDQSxpQkFBQTtFQUVBLGNBQUE7QUNBSjs7QURHQztFQUNJLGdCQUFBO0VBQ0EsbUJBQUE7QUNBTDs7QURHQztFQUNHLFlBQUE7RUFDQSxZQUFBO0VBQ0EsaUJBQUE7RUFDQSxvQkFBQTtFQUNBLGtCQUFBO0VBQ0EsaUJBQUE7RUFDQSxlQUFBO0VBQ0EsaUJBQUE7RUFDQSxrQkFBQTtFQUVBLGNBQUE7QUNESjs7QURJQztFQUNJLGtCQUFBO0VBQ0EsVUFBQTtFQUNBLHFDQUFBO0VBQ0EsbUJBQUE7QUNETDs7QURHQztFQUNJLGtCQUFBO0VBQ0EsVUFBQTtFQUNBLHFDQUFBO0VBQ0EsbUJBQUE7QUNBTDs7QURFQztFQUNJLGtCQUFBO0VBQ0EsVUFBQTtFQUNBLHFDQUFBO0VBQ0EsbUJBQUE7QUNDTDs7QURDQztFQUNJLHFDQUFBO0VBQ0EsbUJBQUE7RUFDQSxjQUFBO0VBQ0EsVUFBQTtBQ0VMOztBREFDO0VBQ0ksa0JBQUE7RUFDQSxZQUFBO0VBQ0EsWUFBQTtFQUNBLFVBQUE7RUFDQSxXQUFBO0VBQ0EscUNBQUE7RUFDQSxtQkFBQTtFQUNBLGNBQUE7RUFDQSxVQUFBO0FDR0w7O0FEREM7RUFDSSxrQkFBQTtFQUNBLFlBQUE7RUFDQSxZQUFBO0VBQ0EsVUFBQTtFQUNBLFdBQUE7RUFDQSxxQ0FBQTtFQUNBLG1CQUFBO0VBQ0EsY0FBQTtFQUNBLFVBQUE7QUNJTDs7QURGQztFQUNJLGtCQUFBO0VBQ0EsWUFBQTtFQUNBLFlBQUE7RUFDQSxVQUFBO0VBQ0EsV0FBQTtFQUNBLHFDQUFBO0VBQ0EsbUJBQUE7RUFDQSxjQUFBO0VBQ0EsVUFBQTtBQ0tMOztBREZDO0VBQ0csV0FBQTtFQUNBLFlBQUE7RUFDQSwyQ0FBQTtFQUNBLG9CQUFBO0VBQ0EsbUJBQUE7QUNLSiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcGhvbmVtZS12aWV3L2Jhci9iYXIuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIucHJpbmNpcGFse1xyXG4gICAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gICAgIHdpZHRoOiAzMDJweDtcclxuICAgICBoZWlnaHQ6IDYyM3B4O1xyXG4gICAgIGJhY2tncm91bmQ6ICNGQ0QyNjA7XHJcbiAgICAgYm94LXNoYWRvdzogMHB4IDRweCA0cHggcmdiYSgwLCAwLCAwLCAwLjI1KTtcclxuICAgICBib3JkZXItcmFkaXVzOiAxMHB4OyAgICBcclxuIH1cclxuIC5pbWFnZW57XHJcbiAgICAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gICAgIHdpZHRoOiAyNjJweDtcclxuICAgICBoZWlnaHQ6IDI2MnB4O1xyXG4gICAgIGxlZnQ6IDE2cHg7XHJcbiAgICAgcmlnaHQ6IDIzcHg7XHJcbiAgICAgdG9wOiAyMDZweDsgIFxyXG4gICAgIGJvcmRlci1yYWRpdXM6IDEwMHB4OyAgXHJcbiB9XHJcbiAudGl0dWxve1xyXG4gICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgICB3aWR0aDogMjI2cHg7XHJcbiAgICAgaGVpZ2h0OiA3NHB4O1xyXG4gICAgIGxlZnQ6IDUwcHg7XHJcbiAgICAgcmlnaHQ6IDQxcHg7XHJcbiAgICAgdG9wOiAxNXB4O1xyXG4gXHJcbiAgICAgZm9udC1mYW1pbHk6IFBvcHBpbnM7XHJcbiAgICAgZm9udC1zdHlsZTogbm9ybWFsO1xyXG4gICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xyXG4gICAgIGZvbnQtc2l6ZTogNDVweDtcclxuICAgICBsaW5lLWhlaWdodDogNjdweDtcclxuICAgICBcclxuICAgICBjb2xvcjogI0ZGRkZGRjsgICAgXHJcbiB9XHJcbiAuZm9uZW1he1xyXG4gICAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gICAgd2lkdGg6IDMwMXB4O1xyXG4gICAgaGVpZ2h0OiA3NHB4O1xyXG4gICAgbGVmdDogOTZweDtcclxuICAgIHJpZ2h0OiA0MXB4O1xyXG4gICAgdG9wOiA4NXB4O1xyXG5cclxuICAgIGZvbnQtZmFtaWx5OiBQb3BwaW5zO1xyXG4gICAgZm9udC1zdHlsZTogbm9ybWFsO1xyXG4gICAgZm9udC13ZWlnaHQ6IGJvbGQ7XHJcbiAgICBmb250LXNpemU6IDQ1cHg7XHJcbiAgICBsaW5lLWhlaWdodDogNjdweDtcclxuICAgIFxyXG4gICAgY29sb3I6ICNGRkZGRkY7ICAgICAgXHJcbiB9XHJcblxyXG4gLnZpZGVvRm9uZW1he1xyXG4gICAgIG1hcmdpbi10b3A6IDY1cHg7XHJcbiAgICAgbWFyZ2luLXJpZ2h0OiAxMDBweDtcclxuIH1cclxuXHJcbiAubWVuc2FqZXtcclxuICAgIHdpZHRoOiAzMDNweDtcclxuICAgIGhlaWdodDogNDJweDsgXHJcbiAgICBtYXJnaW4tdG9wOjQ1MHB4O1xyXG4gICAgZm9udC1mYW1pbHk6IFBvcHBpbnM7XHJcbiAgICBmb250LXN0eWxlOiBub3JtYWw7XHJcbiAgICBmb250LXdlaWdodDogYm9sZDtcclxuICAgIGZvbnQtc2l6ZTogMjVweDtcclxuICAgIGxpbmUtaGVpZ2h0OiAzN3B4O1xyXG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG5cclxuICAgIGNvbG9yOiAjRkZGRkZGO1xyXG4gfVxyXG4gXHJcbiAuY29tYW5kbzF7XHJcbiAgICAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gICAgIHRvcDogNDA2cHg7ICBcclxuICAgICBiYWNrZ3JvdW5kOiByZ2JhKDI1NSwgMjMwLCAxOTAsIDAuOTQpOyAgICAgXHJcbiAgICAgYm9yZGVyLXJhZGl1czogMTVweDsgICAgXHJcbiB9XHJcbiAuY29tYW5kbzJ7XHJcbiAgICAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gICAgIHRvcDogNDY3cHg7XHJcbiAgICAgYmFja2dyb3VuZDogcmdiYSgyNTUsIDIzMCwgMTkwLCAwLjk0KTsgICAgIFxyXG4gICAgIGJvcmRlci1yYWRpdXM6IDE1cHg7ICAgICAgIFxyXG4gfVxyXG4gLmNvbWFuZG8ze1xyXG4gICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgICB0b3A6IDUyMHB4OyBcclxuICAgICBiYWNrZ3JvdW5kOiByZ2JhKDI1NSwgMjMwLCAxOTAsIDAuOTQpOyAgICAgXHJcbiAgICAgYm9yZGVyLXJhZGl1czogMTVweDsgICAgICBcclxuIH1cclxuIC5pb24tc2VnbWVudC1idXR0b257XHJcbiAgICAgYmFja2dyb3VuZDogcmdiYSgyNTUsIDIzMCwgMTkwLCAwLjk0KTtcclxuICAgICBib3JkZXItcmFkaXVzOiAxNXB4OyAgXHJcbiAgICAgY29sb3I6ICM1RjY1OUM7ICAgICAgXHJcbiAgICAgdG9wOiAzOTJweDsgICAgIFxyXG4gfVxyXG4gLmJ0bkNvbWFuZG8xe1xyXG4gICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgICB3aWR0aDogMjU5cHg7XHJcbiAgICAgaGVpZ2h0OiA0OHB4O1xyXG4gICAgIGxlZnQ6IDIwcHg7XHJcbiAgICAgcmlnaHQ6IDIzcHg7XHJcbiAgICAgYmFja2dyb3VuZDogcmdiYSgyNTUsIDIzMCwgMTkwLCAwLjk0KTtcclxuICAgICBib3JkZXItcmFkaXVzOiAxNXB4OyAgXHJcbiAgICAgY29sb3I6ICM1RjY1OUM7ICAgICAgXHJcbiAgICAgdG9wOiAzOTJweDsgIFxyXG4gfVxyXG4gLmJ0bkNvbWFuZG8ye1xyXG4gICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgICB3aWR0aDogMjU5cHg7XHJcbiAgICAgaGVpZ2h0OiA0OHB4O1xyXG4gICAgIGxlZnQ6IDIwcHg7XHJcbiAgICAgcmlnaHQ6IDIzcHg7XHJcbiAgICAgYmFja2dyb3VuZDogcmdiYSgyNTUsIDIzMCwgMTkwLCAwLjk0KTtcclxuICAgICBib3JkZXItcmFkaXVzOiAxNXB4OyAgXHJcbiAgICAgY29sb3I6ICM1RjY1OUM7ICAgICAgXHJcbiAgICAgdG9wOiA0NTNweDtcclxuIH1cclxuIC5idG5Db21hbmRvM3tcclxuICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICAgd2lkdGg6IDI1OXB4O1xyXG4gICAgIGhlaWdodDogNDhweDtcclxuICAgICBsZWZ0OiAyMHB4O1xyXG4gICAgIHJpZ2h0OiAyM3B4O1xyXG4gICAgIGJhY2tncm91bmQ6IHJnYmEoMjU1LCAyMzAsIDE5MCwgMC45NCk7XHJcbiAgICAgYm9yZGVyLXJhZGl1czogMTVweDsgIFxyXG4gICAgIGNvbG9yOiAjNUY2NTlDOyAgICAgIFxyXG4gICAgIHRvcDogNTIwcHg7XHJcbiB9XHJcblxyXG4gLmJ0blBsYXl7XHJcbiAgICB3aWR0aDogNjBweDtcclxuICAgIGhlaWdodDogNjBweDsgICBcclxuICAgIGJveC1zaGFkb3c6IDBweCA0cHggNHB4IHJnYmEoMCwgMCwgMCwgMC4yNSk7ICBcclxuICAgIGJvcmRlci1yYWRpdXM6IDEwMHB4OyAgXHJcbiAgICBiYWNrZ3JvdW5kOiAjN0E4NEREO1xyXG59IiwiLnByaW5jaXBhbCB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgd2lkdGg6IDMwMnB4O1xuICBoZWlnaHQ6IDYyM3B4O1xuICBiYWNrZ3JvdW5kOiAjRkNEMjYwO1xuICBib3gtc2hhZG93OiAwcHggNHB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMjUpO1xuICBib3JkZXItcmFkaXVzOiAxMHB4O1xufVxuXG4uaW1hZ2VuIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB3aWR0aDogMjYycHg7XG4gIGhlaWdodDogMjYycHg7XG4gIGxlZnQ6IDE2cHg7XG4gIHJpZ2h0OiAyM3B4O1xuICB0b3A6IDIwNnB4O1xuICBib3JkZXItcmFkaXVzOiAxMDBweDtcbn1cblxuLnRpdHVsbyB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgd2lkdGg6IDIyNnB4O1xuICBoZWlnaHQ6IDc0cHg7XG4gIGxlZnQ6IDUwcHg7XG4gIHJpZ2h0OiA0MXB4O1xuICB0b3A6IDE1cHg7XG4gIGZvbnQtZmFtaWx5OiBQb3BwaW5zO1xuICBmb250LXN0eWxlOiBub3JtYWw7XG4gIGZvbnQtd2VpZ2h0OiBib2xkO1xuICBmb250LXNpemU6IDQ1cHg7XG4gIGxpbmUtaGVpZ2h0OiA2N3B4O1xuICBjb2xvcjogI0ZGRkZGRjtcbn1cblxuLmZvbmVtYSB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgd2lkdGg6IDMwMXB4O1xuICBoZWlnaHQ6IDc0cHg7XG4gIGxlZnQ6IDk2cHg7XG4gIHJpZ2h0OiA0MXB4O1xuICB0b3A6IDg1cHg7XG4gIGZvbnQtZmFtaWx5OiBQb3BwaW5zO1xuICBmb250LXN0eWxlOiBub3JtYWw7XG4gIGZvbnQtd2VpZ2h0OiBib2xkO1xuICBmb250LXNpemU6IDQ1cHg7XG4gIGxpbmUtaGVpZ2h0OiA2N3B4O1xuICBjb2xvcjogI0ZGRkZGRjtcbn1cblxuLnZpZGVvRm9uZW1hIHtcbiAgbWFyZ2luLXRvcDogNjVweDtcbiAgbWFyZ2luLXJpZ2h0OiAxMDBweDtcbn1cblxuLm1lbnNhamUge1xuICB3aWR0aDogMzAzcHg7XG4gIGhlaWdodDogNDJweDtcbiAgbWFyZ2luLXRvcDogNDUwcHg7XG4gIGZvbnQtZmFtaWx5OiBQb3BwaW5zO1xuICBmb250LXN0eWxlOiBub3JtYWw7XG4gIGZvbnQtd2VpZ2h0OiBib2xkO1xuICBmb250LXNpemU6IDI1cHg7XG4gIGxpbmUtaGVpZ2h0OiAzN3B4O1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIGNvbG9yOiAjRkZGRkZGO1xufVxuXG4uY29tYW5kbzEge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHRvcDogNDA2cHg7XG4gIGJhY2tncm91bmQ6IHJnYmEoMjU1LCAyMzAsIDE5MCwgMC45NCk7XG4gIGJvcmRlci1yYWRpdXM6IDE1cHg7XG59XG5cbi5jb21hbmRvMiB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgdG9wOiA0NjdweDtcbiAgYmFja2dyb3VuZDogcmdiYSgyNTUsIDIzMCwgMTkwLCAwLjk0KTtcbiAgYm9yZGVyLXJhZGl1czogMTVweDtcbn1cblxuLmNvbWFuZG8zIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB0b3A6IDUyMHB4O1xuICBiYWNrZ3JvdW5kOiByZ2JhKDI1NSwgMjMwLCAxOTAsIDAuOTQpO1xuICBib3JkZXItcmFkaXVzOiAxNXB4O1xufVxuXG4uaW9uLXNlZ21lbnQtYnV0dG9uIHtcbiAgYmFja2dyb3VuZDogcmdiYSgyNTUsIDIzMCwgMTkwLCAwLjk0KTtcbiAgYm9yZGVyLXJhZGl1czogMTVweDtcbiAgY29sb3I6ICM1RjY1OUM7XG4gIHRvcDogMzkycHg7XG59XG5cbi5idG5Db21hbmRvMSB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgd2lkdGg6IDI1OXB4O1xuICBoZWlnaHQ6IDQ4cHg7XG4gIGxlZnQ6IDIwcHg7XG4gIHJpZ2h0OiAyM3B4O1xuICBiYWNrZ3JvdW5kOiByZ2JhKDI1NSwgMjMwLCAxOTAsIDAuOTQpO1xuICBib3JkZXItcmFkaXVzOiAxNXB4O1xuICBjb2xvcjogIzVGNjU5QztcbiAgdG9wOiAzOTJweDtcbn1cblxuLmJ0bkNvbWFuZG8yIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB3aWR0aDogMjU5cHg7XG4gIGhlaWdodDogNDhweDtcbiAgbGVmdDogMjBweDtcbiAgcmlnaHQ6IDIzcHg7XG4gIGJhY2tncm91bmQ6IHJnYmEoMjU1LCAyMzAsIDE5MCwgMC45NCk7XG4gIGJvcmRlci1yYWRpdXM6IDE1cHg7XG4gIGNvbG9yOiAjNUY2NTlDO1xuICB0b3A6IDQ1M3B4O1xufVxuXG4uYnRuQ29tYW5kbzMge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHdpZHRoOiAyNTlweDtcbiAgaGVpZ2h0OiA0OHB4O1xuICBsZWZ0OiAyMHB4O1xuICByaWdodDogMjNweDtcbiAgYmFja2dyb3VuZDogcmdiYSgyNTUsIDIzMCwgMTkwLCAwLjk0KTtcbiAgYm9yZGVyLXJhZGl1czogMTVweDtcbiAgY29sb3I6ICM1RjY1OUM7XG4gIHRvcDogNTIwcHg7XG59XG5cbi5idG5QbGF5IHtcbiAgd2lkdGg6IDYwcHg7XG4gIGhlaWdodDogNjBweDtcbiAgYm94LXNoYWRvdzogMHB4IDRweCA0cHggcmdiYSgwLCAwLCAwLCAwLjI1KTtcbiAgYm9yZGVyLXJhZGl1czogMTAwcHg7XG4gIGJhY2tncm91bmQ6ICM3QTg0REQ7XG59Il19 */";
     /***/
   },
 
@@ -2876,7 +2998,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = ".principal {\n  width: 818px;\n  height: 624px;\n  background: #FFFFFF;\n  border: 2px solid #FFFFFF;\n  box-sizing: border-box;\n  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);\n  border-radius: 10px;\n}\n\n.audioFonema {\n  margin-left: 226px;\n  margin-right: 235px;\n  margin-top: 91px;\n}\n\n.imagen {\n  width: 357px;\n  height: 358px;\n}\n\n.btnPlay {\n  width: 103px;\n  height: 103px;\n  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);\n  border-radius: 100px;\n  background: #7A84DD;\n}\n\n.rowPalabra {\n  margin-left: 309px;\n  margin-right: 318px;\n}\n\n.palabra {\n  margin-left: 309px;\n  margin-right: 318px;\n  font-family: Poppins;\n  font-style: normal;\n  font-weight: normal;\n  font-size: 60px;\n  line-height: 90px;\n  text-align: center;\n  color: #109CF1;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9waG9uZW1lLXZpZXcvcGhvbmVtZS1wYW5lbC9DOlxcVXNlcnNcXGJlcm5hXFxEb2N1bWVudHNcXEdpdEh1YlxcQmxhcHBGb25lbWFzXFxibGFwcC9zcmNcXGFwcFxcY29tcG9uZW50c1xccGhvbmVtZS12aWV3XFxwaG9uZW1lLXBhbmVsXFxwaG9uZW1lLXBhbmVsLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9jb21wb25lbnRzL3Bob25lbWUtdmlldy9waG9uZW1lLXBhbmVsL3Bob25lbWUtcGFuZWwuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxZQUFBO0VBQ0EsYUFBQTtFQUNBLG1CQUFBO0VBQ0EseUJBQUE7RUFDQSxzQkFBQTtFQUNBLDJDQUFBO0VBQ0EsbUJBQUE7QUNDSjs7QURDQTtFQUNJLGtCQUFBO0VBQ0EsbUJBQUE7RUFDQSxnQkFBQTtBQ0VKOztBREFBO0VBQ0ksWUFBQTtFQUNBLGFBQUE7QUNHSjs7QUREQTtFQUNJLFlBQUE7RUFDQSxhQUFBO0VBQ0EsMkNBQUE7RUFDQSxvQkFBQTtFQUNBLG1CQUFBO0FDSUo7O0FERkE7RUFDSSxrQkFBQTtFQUNBLG1CQUFBO0FDS0o7O0FESEE7RUFDSSxrQkFBQTtFQUNBLG1CQUFBO0VBQ0Esb0JBQUE7RUFDQSxrQkFBQTtFQUNBLG1CQUFBO0VBQ0EsZUFBQTtFQUNBLGlCQUFBO0VBQ0Esa0JBQUE7RUFDQSxjQUFBO0FDTUoiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL3Bob25lbWUtdmlldy9waG9uZW1lLXBhbmVsL3Bob25lbWUtcGFuZWwuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIucHJpbmNpcGFse1xyXG4gICAgd2lkdGg6IDgxOHB4O1xyXG4gICAgaGVpZ2h0OiA2MjRweDtcclxuICAgIGJhY2tncm91bmQ6ICNGRkZGRkY7XHJcbiAgICBib3JkZXI6IDJweCBzb2xpZCAjRkZGRkZGO1xyXG4gICAgYm94LXNpemluZzogYm9yZGVyLWJveDtcclxuICAgIGJveC1zaGFkb3c6IDBweCA0cHggNHB4IHJnYmEoMCwgMCwgMCwgMC4yNSk7XHJcbiAgICBib3JkZXItcmFkaXVzOiAxMHB4OyAgICBcclxufVxyXG4uYXVkaW9Gb25lbWF7XHJcbiAgICBtYXJnaW4tbGVmdDogMjI2cHg7XHJcbiAgICBtYXJnaW4tcmlnaHQ6IDIzNXB4O1xyXG4gICAgbWFyZ2luLXRvcDogOTFweDtcclxufVxyXG4uaW1hZ2Vue1xyXG4gICAgd2lkdGg6IDM1N3B4O1xyXG4gICAgaGVpZ2h0OiAzNThweDsgICAgXHJcbn1cclxuLmJ0blBsYXl7XHJcbiAgICB3aWR0aDogMTAzcHg7XHJcbiAgICBoZWlnaHQ6IDEwM3B4OyAgIFxyXG4gICAgYm94LXNoYWRvdzogMHB4IDRweCA0cHggcmdiYSgwLCAwLCAwLCAwLjI1KTsgIFxyXG4gICAgYm9yZGVyLXJhZGl1czogMTAwcHg7ICBcclxuICAgIGJhY2tncm91bmQ6ICM3QTg0REQ7XHJcbn1cclxuLnJvd1BhbGFicmF7XHJcbiAgICBtYXJnaW4tbGVmdDogMzA5cHg7XHJcbiAgICBtYXJnaW4tcmlnaHQ6IDMxOHB4O1xyXG59XHJcbi5wYWxhYnJhe1xyXG4gICAgbWFyZ2luLWxlZnQ6IDMwOXB4O1xyXG4gICAgbWFyZ2luLXJpZ2h0OiAzMThweDtcclxuICAgIGZvbnQtZmFtaWx5OiBQb3BwaW5zO1xyXG4gICAgZm9udC1zdHlsZTogbm9ybWFsO1xyXG4gICAgZm9udC13ZWlnaHQ6IG5vcm1hbDtcclxuICAgIGZvbnQtc2l6ZTogNjBweDtcclxuICAgIGxpbmUtaGVpZ2h0OiA5MHB4O1xyXG4gICAgdGV4dC1hbGlnbjogY2VudGVyOyAgXHJcbiAgICBjb2xvcjogIzEwOUNGMTsgIFxyXG59IiwiLnByaW5jaXBhbCB7XG4gIHdpZHRoOiA4MThweDtcbiAgaGVpZ2h0OiA2MjRweDtcbiAgYmFja2dyb3VuZDogI0ZGRkZGRjtcbiAgYm9yZGVyOiAycHggc29saWQgI0ZGRkZGRjtcbiAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbiAgYm94LXNoYWRvdzogMHB4IDRweCA0cHggcmdiYSgwLCAwLCAwLCAwLjI1KTtcbiAgYm9yZGVyLXJhZGl1czogMTBweDtcbn1cblxuLmF1ZGlvRm9uZW1hIHtcbiAgbWFyZ2luLWxlZnQ6IDIyNnB4O1xuICBtYXJnaW4tcmlnaHQ6IDIzNXB4O1xuICBtYXJnaW4tdG9wOiA5MXB4O1xufVxuXG4uaW1hZ2VuIHtcbiAgd2lkdGg6IDM1N3B4O1xuICBoZWlnaHQ6IDM1OHB4O1xufVxuXG4uYnRuUGxheSB7XG4gIHdpZHRoOiAxMDNweDtcbiAgaGVpZ2h0OiAxMDNweDtcbiAgYm94LXNoYWRvdzogMHB4IDRweCA0cHggcmdiYSgwLCAwLCAwLCAwLjI1KTtcbiAgYm9yZGVyLXJhZGl1czogMTAwcHg7XG4gIGJhY2tncm91bmQ6ICM3QTg0REQ7XG59XG5cbi5yb3dQYWxhYnJhIHtcbiAgbWFyZ2luLWxlZnQ6IDMwOXB4O1xuICBtYXJnaW4tcmlnaHQ6IDMxOHB4O1xufVxuXG4ucGFsYWJyYSB7XG4gIG1hcmdpbi1sZWZ0OiAzMDlweDtcbiAgbWFyZ2luLXJpZ2h0OiAzMThweDtcbiAgZm9udC1mYW1pbHk6IFBvcHBpbnM7XG4gIGZvbnQtc3R5bGU6IG5vcm1hbDtcbiAgZm9udC13ZWlnaHQ6IG5vcm1hbDtcbiAgZm9udC1zaXplOiA2MHB4O1xuICBsaW5lLWhlaWdodDogOTBweDtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBjb2xvcjogIzEwOUNGMTtcbn0iXX0= */";
+    __webpack_exports__["default"] = ".principal {\n  width: 818px;\n  height: 624px;\n  background: #FFFFFF;\n  border: 2px solid #FFFFFF;\n  box-sizing: border-box;\n  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);\n  border-radius: 10px;\n}\n\n.audioFonema {\n  margin-left: 226px;\n  margin-right: 235px;\n  margin-top: 91px;\n}\n\n.imagen {\n  width: 357px;\n  height: 358px;\n  border: 2px solid #E5E5E5;\n  background-size: auto;\n}\n\n.btnPlay {\n  width: 103px;\n  height: 103px;\n  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);\n  border-radius: 100px;\n  background: #7A84DD;\n}\n\n.rowPalabra {\n  margin-left: 309px;\n  margin-right: 318px;\n}\n\n.palabra {\n  margin-left: 309px;\n  margin-right: 318px;\n  font-family: Poppins;\n  font-style: normal;\n  font-weight: normal;\n  font-size: 60px;\n  line-height: 90px;\n  text-align: center;\n  color: #109CF1;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9waG9uZW1lLXZpZXcvcGhvbmVtZS1wYW5lbC9DOlxcVXNlcnNcXGJlcm5hXFxEb2N1bWVudHNcXEdpdEh1YlxcQmxhcHBGb25lbWFzXFxibGFwcC9zcmNcXGFwcFxcY29tcG9uZW50c1xccGhvbmVtZS12aWV3XFxwaG9uZW1lLXBhbmVsXFxwaG9uZW1lLXBhbmVsLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9jb21wb25lbnRzL3Bob25lbWUtdmlldy9waG9uZW1lLXBhbmVsL3Bob25lbWUtcGFuZWwuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxZQUFBO0VBQ0EsYUFBQTtFQUNBLG1CQUFBO0VBQ0EseUJBQUE7RUFDQSxzQkFBQTtFQUNBLDJDQUFBO0VBQ0EsbUJBQUE7QUNDSjs7QURDQTtFQUNJLGtCQUFBO0VBQ0EsbUJBQUE7RUFDQSxnQkFBQTtBQ0VKOztBREFBO0VBQ0ksWUFBQTtFQUNBLGFBQUE7RUFDQSx5QkFBQTtFQUNBLHFCQUFBO0FDR0o7O0FEREE7RUFDSSxZQUFBO0VBQ0EsYUFBQTtFQUNBLDJDQUFBO0VBQ0Esb0JBQUE7RUFDQSxtQkFBQTtBQ0lKOztBREZBO0VBQ0ksa0JBQUE7RUFDQSxtQkFBQTtBQ0tKOztBREhBO0VBQ0ksa0JBQUE7RUFDQSxtQkFBQTtFQUNBLG9CQUFBO0VBQ0Esa0JBQUE7RUFDQSxtQkFBQTtFQUNBLGVBQUE7RUFDQSxpQkFBQTtFQUNBLGtCQUFBO0VBQ0EsY0FBQTtBQ01KIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9waG9uZW1lLXZpZXcvcGhvbmVtZS1wYW5lbC9waG9uZW1lLXBhbmVsLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnByaW5jaXBhbHtcclxuICAgIHdpZHRoOiA4MThweDtcclxuICAgIGhlaWdodDogNjI0cHg7XHJcbiAgICBiYWNrZ3JvdW5kOiAjRkZGRkZGO1xyXG4gICAgYm9yZGVyOiAycHggc29saWQgI0ZGRkZGRjtcclxuICAgIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XHJcbiAgICBib3gtc2hhZG93OiAwcHggNHB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMjUpO1xyXG4gICAgYm9yZGVyLXJhZGl1czogMTBweDsgICAgXHJcbn1cclxuLmF1ZGlvRm9uZW1he1xyXG4gICAgbWFyZ2luLWxlZnQ6IDIyNnB4O1xyXG4gICAgbWFyZ2luLXJpZ2h0OiAyMzVweDtcclxuICAgIG1hcmdpbi10b3A6IDkxcHg7XHJcbn1cclxuLmltYWdlbntcclxuICAgIHdpZHRoOiAzNTdweDtcclxuICAgIGhlaWdodDogMzU4cHg7ICAgXHJcbiAgICBib3JkZXI6IDJweCBzb2xpZCAjRTVFNUU1O1xyXG4gICAgYmFja2dyb3VuZC1zaXplOiBhdXRvO1xyXG59XHJcbi5idG5QbGF5e1xyXG4gICAgd2lkdGg6IDEwM3B4O1xyXG4gICAgaGVpZ2h0OiAxMDNweDsgICBcclxuICAgIGJveC1zaGFkb3c6IDBweCA0cHggNHB4IHJnYmEoMCwgMCwgMCwgMC4yNSk7ICBcclxuICAgIGJvcmRlci1yYWRpdXM6IDEwMHB4OyAgXHJcbiAgICBiYWNrZ3JvdW5kOiAjN0E4NEREO1xyXG59XHJcbi5yb3dQYWxhYnJhe1xyXG4gICAgbWFyZ2luLWxlZnQ6IDMwOXB4O1xyXG4gICAgbWFyZ2luLXJpZ2h0OiAzMThweDtcclxufVxyXG4ucGFsYWJyYXtcclxuICAgIG1hcmdpbi1sZWZ0OiAzMDlweDtcclxuICAgIG1hcmdpbi1yaWdodDogMzE4cHg7XHJcbiAgICBmb250LWZhbWlseTogUG9wcGlucztcclxuICAgIGZvbnQtc3R5bGU6IG5vcm1hbDtcclxuICAgIGZvbnQtd2VpZ2h0OiBub3JtYWw7XHJcbiAgICBmb250LXNpemU6IDYwcHg7XHJcbiAgICBsaW5lLWhlaWdodDogOTBweDtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjsgIFxyXG4gICAgY29sb3I6ICMxMDlDRjE7ICBcclxufSIsIi5wcmluY2lwYWwge1xuICB3aWR0aDogODE4cHg7XG4gIGhlaWdodDogNjI0cHg7XG4gIGJhY2tncm91bmQ6ICNGRkZGRkY7XG4gIGJvcmRlcjogMnB4IHNvbGlkICNGRkZGRkY7XG4gIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XG4gIGJveC1zaGFkb3c6IDBweCA0cHggNHB4IHJnYmEoMCwgMCwgMCwgMC4yNSk7XG4gIGJvcmRlci1yYWRpdXM6IDEwcHg7XG59XG5cbi5hdWRpb0ZvbmVtYSB7XG4gIG1hcmdpbi1sZWZ0OiAyMjZweDtcbiAgbWFyZ2luLXJpZ2h0OiAyMzVweDtcbiAgbWFyZ2luLXRvcDogOTFweDtcbn1cblxuLmltYWdlbiB7XG4gIHdpZHRoOiAzNTdweDtcbiAgaGVpZ2h0OiAzNThweDtcbiAgYm9yZGVyOiAycHggc29saWQgI0U1RTVFNTtcbiAgYmFja2dyb3VuZC1zaXplOiBhdXRvO1xufVxuXG4uYnRuUGxheSB7XG4gIHdpZHRoOiAxMDNweDtcbiAgaGVpZ2h0OiAxMDNweDtcbiAgYm94LXNoYWRvdzogMHB4IDRweCA0cHggcmdiYSgwLCAwLCAwLCAwLjI1KTtcbiAgYm9yZGVyLXJhZGl1czogMTAwcHg7XG4gIGJhY2tncm91bmQ6ICM3QTg0REQ7XG59XG5cbi5yb3dQYWxhYnJhIHtcbiAgbWFyZ2luLWxlZnQ6IDMwOXB4O1xuICBtYXJnaW4tcmlnaHQ6IDMxOHB4O1xufVxuXG4ucGFsYWJyYSB7XG4gIG1hcmdpbi1sZWZ0OiAzMDlweDtcbiAgbWFyZ2luLXJpZ2h0OiAzMThweDtcbiAgZm9udC1mYW1pbHk6IFBvcHBpbnM7XG4gIGZvbnQtc3R5bGU6IG5vcm1hbDtcbiAgZm9udC13ZWlnaHQ6IG5vcm1hbDtcbiAgZm9udC1zaXplOiA2MHB4O1xuICBsaW5lLWhlaWdodDogOTBweDtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBjb2xvcjogIzEwOUNGMTtcbn0iXX0= */";
     /***/
   },
 
@@ -4727,14 +4849,27 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _ionic_angular__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
     /*! @ionic/angular */
     "./node_modules/@ionic/angular/fesm2015/ionic-angular.js");
+    /* harmony import */
+
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/fesm2015/router.js");
+    /* harmony import */
+
+
+    var _data_categorias_data_categorias__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! ../../../../data/categorias/data.categorias */
+    "./src/data/categorias/data.categorias.ts");
 
     var CategoriesPanelComponent =
     /*#__PURE__*/
     function () {
-      function CategoriesPanelComponent(navCtrl) {
+      function CategoriesPanelComponent(navCtrl, router) {
         _classCallCheck(this, CategoriesPanelComponent);
 
         this.navCtrl = navCtrl;
+        this.router = router;
       }
 
       _createClass(CategoriesPanelComponent, [{
@@ -4742,8 +4877,24 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         value: function ngOnInit() {}
       }, {
         key: "goToCategories",
-        value: function goToCategories($event) {
-          this.navCtrl.navigateForward('/categoria');
+        value: function goToCategories(value) {
+          var categoryData = this.getCategory(value);
+          this.router.navigate(['/categoria'], {
+            queryParams: {
+              category: JSON.stringify(categoryData)
+            }
+          }); //this.navCtrl.navigateForward('/categoria', true, );
+        }
+      }, {
+        key: "getCategory",
+        value: function getCategory(categoryName) {
+          categoryName = categoryName.toUpperCase();
+
+          for (var i = 0; i < _data_categorias_data_categorias__WEBPACK_IMPORTED_MODULE_4__["CATEGORIAS"].length; i++) {
+            if (_data_categorias_data_categorias__WEBPACK_IMPORTED_MODULE_4__["CATEGORIAS"][i].nombre.toUpperCase() == categoryName) {
+              return _data_categorias_data_categorias__WEBPACK_IMPORTED_MODULE_4__["CATEGORIAS"][i];
+            }
+          }
         }
       }]);
 
@@ -4753,6 +4904,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     CategoriesPanelComponent.ctorParameters = function () {
       return [{
         type: _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["NavController"]
+      }, {
+        type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]
       }];
     };
 
@@ -4764,7 +4917,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
       /*! ./categories-panel.component.scss */
       "./src/app/components/semantics/categories-panel/categories-panel.component.scss")).default]
-    }), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_angular__WEBPACK_IMPORTED_MODULE_2__["NavController"]])], CategoriesPanelComponent);
+    }), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_angular__WEBPACK_IMPORTED_MODULE_2__["NavController"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]])], CategoriesPanelComponent);
     /***/
   },
 
@@ -5682,8 +5835,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       consonante: 'ch',
       data: [{
         nombre: 'Chu-rros',
-        audio: 'assets/audio/fonemas/consonantes/ch/churros.mp3',
-        imagen: 'assets/img/fonemas/consonantes/ch/churros.jpg',
+        audio: 'assets/audio/fonemas/consonantes/ch/Churros.mp3',
+        imagen: 'assets/img/fonemas/consonantes/ch/Churros.jpg',
         duracion: 4,
         reproduciendo: false
       }],
@@ -5869,55 +6022,55 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       data: [{
         nombre: 'Ja-rra',
         audio: 'assets/audio/fonemas/consonantes/j/jarra.mp3',
-        imagen: 'assets/img/fonemas/consonantes/j/jarra.jpg',
+        imagen: 'assets/img/fonemas/consonantes/j/Jarra.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Je-fe',
         audio: 'assets/audio/fonemas/consonantes/j/jefe.mp3',
-        imagen: 'assets/img/fonemas/consonantes/j/jefe.jpg',
+        imagen: 'assets/img/fonemas/consonantes/j/Jefe.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Ji-ne-te',
         audio: 'assets/audio/fonemas/consonantes/j/jinete.mp3',
-        imagen: 'assets/img/fonemas/consonantes/j/jinete.jpg',
+        imagen: 'assets/img/fonemas/consonantes/j/Jinete.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Ji-ra-fa',
         audio: 'assets/audio/fonemas/consonantes/j/jirafa.mp3',
-        imagen: 'assets/img/fonemas/consonantes/j/jirafa.jpg',
+        imagen: 'assets/img/fonemas/consonantes/j/Jirafa.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Jo-ya',
         audio: 'assets/audio/fonemas/consonantes/j/joya.mp3',
-        imagen: 'assets/img/fonemas/consonantes/j/joya.jpg',
+        imagen: 'assets/img/fonemas/consonantes/j/Joya.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Jue-go',
         audio: 'assets/audio/fonemas/consonantes/j/juego.mp3',
-        imagen: 'assets/img/fonemas/consonantes/j/juego.jpg',
+        imagen: 'assets/img/fonemas/consonantes/j/Juego.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Ju-go',
         audio: 'assets/audio/fonemas/consonantes/j/jugo.mp3',
-        imagen: 'assets/img/fonemas/consonantes/j/jugo.jpg',
+        imagen: 'assets/img/fonemas/consonantes/j/Jugo.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Ju-gue-te',
         audio: 'assets/audio/fonemas/consonantes/j/juguete.mp3',
-        imagen: 'assets/img/fonemas/consonantes/j/juguete.jpg',
+        imagen: 'assets/img/fonemas/consonantes/j/Juguete.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Ju-gue-tes',
         audio: 'assets/audio/fonemas/consonantes/j/juguetes.mp3',
-        imagen: 'assets/img/fonemas/consonantes/j/juguetes.jpg',
+        imagen: 'assets/img/fonemas/consonantes/j/Juguetes.jpg',
         duracion: 4,
         reproduciendo: false
       }],
@@ -5952,139 +6105,139 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       consonante: 'l',
       data: [{
         nombre: 'La-gar-ti-ja',
-        audio: 'assets/audio/fonemas/consonantes/l/Lagartija.mp3',
+        audio: 'assets/audio/fonemas/consonantes/l/lagartija.mp3',
         imagen: 'assets/img/fonemas/consonantes/l/Lagartija.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'La-go',
-        audio: 'assets/audio/fonemas/consonantes/l/Lago.mp3',
+        audio: 'assets/audio/fonemas/consonantes/l/lago.mp3',
         imagen: 'assets/img/fonemas/consonantes/l/Lago.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'La-gu-na',
-        audio: 'assets/audio/fonemas/consonantes/l/Laguna.mp3',
+        audio: 'assets/audio/fonemas/consonantes/l/laguna.mp3',
         imagen: 'assets/img/fonemas/consonantes/l/Laguna.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Lám-pa-ra',
-        audio: 'assets/audio/fonemas/consonantes/l/Lampara.mp3',
+        audio: 'assets/audio/fonemas/consonantes/l/lampara.mp3',
         imagen: 'assets/img/fonemas/consonantes/l/Lampara.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'La-pa',
-        audio: 'assets/audio/fonemas/consonantes/l/Lapa.mp3',
+        audio: 'assets/audio/fonemas/consonantes/l/lapa.mp3',
         imagen: 'assets/img/fonemas/consonantes/l/Lapa.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Lá-pi-ces',
-        audio: 'assets/audio/fonemas/consonantes/l/Lapices.mp3',
+        audio: 'assets/audio/fonemas/consonantes/l/lapices.mp3',
         imagen: 'assets/img/fonemas/consonantes/l/Lapices.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Lá-piz',
-        audio: 'assets/audio/fonemas/consonantes/l/Lapiz.mp3',
+        audio: 'assets/audio/fonemas/consonantes/l/lapiz.mp3',
         imagen: 'assets/img/fonemas/consonantes/l/Lapiz.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'La-ta',
-        audio: 'assets/audio/fonemas/consonantes/l/Lata.mp3',
+        audio: 'assets/audio/fonemas/consonantes/l/lata.mp3',
         imagen: 'assets/img/fonemas/consonantes/l/Lata.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'La-zo',
-        audio: 'assets/audio/fonemas/consonantes/l/Lazo.mp3',
+        audio: 'assets/audio/fonemas/consonantes/l/lazo.mp3',
         imagen: 'assets/img/fonemas/consonantes/l/Lazo.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Le-che',
-        audio: 'assets/audio/fonemas/consonantes/l/Leche.mp3',
+        audio: 'assets/audio/fonemas/consonantes/l/leche.mp3',
         imagen: 'assets/img/fonemas/consonantes/l/Leche.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Le-chu-za',
-        audio: 'assets/audio/fonemas/consonantes/l/Lechuza.mp3',
+        audio: 'assets/audio/fonemas/consonantes/l/lechuza.mp3',
         imagen: 'assets/img/fonemas/consonantes/l/Lechuza.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Le-gos',
-        audio: 'assets/audio/fonemas/consonantes/l/Legos.mp3',
+        audio: 'assets/audio/fonemas/consonantes/l/legos.mp3',
         imagen: 'assets/img/fonemas/consonantes/l/Legos.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Le-ña',
-        audio: 'assets/audio/fonemas/consonantes/l/Leña.mp3',
+        audio: 'assets/audio/fonemas/consonantes/l/leña.mp3',
         imagen: 'assets/img/fonemas/consonantes/l/Leña.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Le-ón',
-        audio: 'assets/audio/fonemas/consonantes/l/León.mp3',
+        audio: 'assets/audio/fonemas/consonantes/l/león.mp3',
         imagen: 'assets/img/fonemas/consonantes/l/León.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Lo-bo',
-        audio: 'assets/audio/fonemas/consonantes/l/Lobo.mp3',
+        audio: 'assets/audio/fonemas/consonantes/l/lobo.mp3',
         imagen: 'assets/img/fonemas/consonantes/l/Lobo.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Lo-co-mo-to-ra',
-        audio: 'assets/audio/fonemas/consonantes/l/Locotora.mp3',
+        audio: 'assets/audio/fonemas/consonantes/l/locotora.mp3',
         imagen: 'assets/img/fonemas/consonantes/l/Locomotora.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Lo-ma',
-        audio: 'assets/audio/fonemas/consonantes/l/Loma.mp3',
+        audio: 'assets/audio/fonemas/consonantes/l/loma.mp3',
         imagen: 'assets/img/fonemas/consonantes/l/Loma.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Lo-ra',
-        audio: 'assets/audio/fonemas/consonantes/l/Lora.mp3',
+        audio: 'assets/audio/fonemas/consonantes/l/lora.mp3',
         imagen: 'assets/img/fonemas/consonantes/l/Lora.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Lo-ro',
-        audio: 'assets/audio/fonemas/consonantes/l/Loro.mp3',
+        audio: 'assets/audio/fonemas/consonantes/l/loro.mp3',
         imagen: 'assets/img/fonemas/consonantes/l/Loro.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Lu-ciér-na-ga',
-        audio: 'assets/audio/fonemas/consonantes/l/Luciernaga.mp3',
+        audio: 'assets/audio/fonemas/consonantes/l/luciernaga.mp3',
         imagen: 'assets/img/fonemas/consonantes/l/Luciernaga.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Lu-na',
-        audio: 'assets/audio/fonemas/consonantes/l/Luna.mp3',
+        audio: 'assets/audio/fonemas/consonantes/l/luna.mp3',
         imagen: 'assets/img/fonemas/consonantes/l/Luna.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Lu-na-res',
-        audio: 'assets/audio/fonemas/consonantes/l/Lunares.mp3',
+        audio: 'assets/audio/fonemas/consonantes/l/lunares.mp3',
         imagen: 'assets/img/fonemas/consonantes/l/Lunares.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Lu-pi-ta',
-        audio: 'assets/audio/fonemas/consonantes/l/Lupita.mp3',
+        audio: 'assets/audio/fonemas/consonantes/l/lupita.mp3',
         imagen: 'assets/img/fonemas/consonantes/l/Lupita.jpg',
         duracion: 4,
         reproduciendo: false
@@ -6112,6 +6265,84 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         nombre: 'Lu',
         audio: 'assets/audio/fonemas/silabas/l/Lu.mp3',
+        duracion: 4,
+        reproduciendo: false
+      }]
+    }, // Consonante LL
+    {
+      consonante: 'LLll Yy',
+      data: [{
+        nombre: 'Lla-ma',
+        audio: 'assets/audio/fonemas/consonantes/llyy/Llama.mp3',
+        imagen: 'assets/img/fonemas/consonantes/llyy/Llama.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Lla-ve',
+        audio: 'assets/audio/fonemas/consonantes/llyy/Llave.mp3',
+        imagen: 'assets/img/fonemas/consonantes/llyy/Llave.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Lle-no',
+        audio: 'assets/audio/fonemas/consonantes/llyy/Lleno.mp3',
+        imagen: 'assets/img/fonemas/consonantes/llyy/Lleno.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Llo-ran-do',
+        audio: 'assets/audio/fonemas/consonantes/llyy/Llorando.mp3',
+        imagen: 'assets/img/fonemas/consonantes/llyy/Llorando.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Llu-via',
+        audio: 'assets/audio/fonemas/consonantes/llyy/Lluvia.mp3',
+        imagen: 'assets/img/fonemas/consonantes/llyy/Lluvia.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Ye-güi-ta',
+        audio: 'assets/audio/fonemas/consonantes/llyy/Yeguita.mp3',
+        imagen: 'assets/img/fonemas/consonantes/llyy/Yeguita.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Ye-ma',
+        audio: 'assets/audio/fonemas/consonantes/llyy/Yema.mp3',
+        imagen: 'assets/img/fonemas/consonantes/llyy/Yema.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Yun-que',
+        audio: 'assets/audio/fonemas/consonantes/llyy/Yunque.mp3',
+        imagen: 'assets/img/fonemas/consonantes/llyy/Yunque.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }],
+      dataS: [{
+        nombre: 'Ya',
+        audio: 'assets/audio/fonemas/silabas/llyy/Ya.mp3',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Ye',
+        audio: 'assets/audio/fonemas/silabas/llyy/Ye.mp3',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Yi',
+        audio: 'assets/audio/fonemas/silabas/llyy/Yi.mp3',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Yo',
+        audio: 'assets/audio/fonemas/silabas/llyy/Yo.mp3',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Yu',
+        audio: 'assets/audio/fonemas/silabas/llyy/Yu.mp3',
         duracion: 4,
         reproduciendo: false
       }]
@@ -6415,7 +6646,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         nombre: 'Pá-ja-ro',
         audio: 'assets/audio/fonemas/consonantes/p/Pajaro.mp3',
-        imagen: 'assets/img/fonemas/consonantes/p/Pajaro.jpg',
+        imagen: 'assets/img/fonemas/consonantes/p/Pájaro.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
@@ -6455,9 +6686,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         duracion: 4,
         reproduciendo: false
       }, {
-        nombre: 'Pa-lo-mi-ta',
+        nombre: 'Pa-lo-mi-tas',
         audio: 'assets/audio/fonemas/consonantes/p/Palomita.mp3',
-        imagen: 'assets/img/fonemas/consonantes/p/Palomita.jpg',
+        imagen: 'assets/img/fonemas/consonantes/p/Palomitas.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
@@ -6470,12 +6701,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         nombre: 'Pan-da',
         audio: 'assets/audio/fonemas/consonantes/p/Panda.mp3',
         imagen: 'assets/img/fonemas/consonantes/p/Panda.jpg',
-        duracion: 4,
-        reproduciendo: false
-      }, {
-        nombre: 'Pa-lo-ma',
-        audio: 'assets/audio/fonemas/consonantes/p/Paloma.mp3',
-        imagen: 'assets/img/fonemas/consonantes/p/Paloma.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
@@ -6696,8 +6921,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         reproduciendo: false
       }, {
         nombre: 'Po-li-cia',
-        audio: 'assets/audio/fonemas/consonantes/p/Policia.mp3',
-        imagen: 'assets/img/fonemas/consonantes/p/Policia.jpg',
+        audio: 'assets/audio/fonemas/consonantes/p/Policía.mp3',
+        imagen: 'assets/img/fonemas/consonantes/p/Policía.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
@@ -6732,8 +6957,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         reproduciendo: false
       }, {
         nombre: 'Pri-mo',
-        audio: 'assets/audio/fonemas/consonantes/p/Prima.mp3',
-        imagen: 'assets/img/fonemas/consonantes/p/Prima.jpg',
+        audio: 'assets/audio/fonemas/consonantes/p/Primo.mp3',
+        imagen: 'assets/img/fonemas/consonantes/p/Primo.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
@@ -6911,7 +7136,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     {
       consonante: 's',
       data: [{
-        nombre: 'Sa-ba-na',
+        nombre: 'Sá-ba-na',
         audio: 'assets/audio/fonemas/consonantes/s/Sabana.mp3',
         imagen: 'assets/img/fonemas/consonantes/s/Sabana.jpg',
         duracion: 4,
@@ -6937,7 +7162,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         nombre: 'Sal-chi-cha',
         audio: 'assets/audio/fonemas/consonantes/s/Salchicha.mp3',
-        imagen: 'assets/img/fonemas/consonantes/r/Salchicha.jpg',
+        imagen: 'assets/img/fonemas/consonantes/s/Salchicha.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
@@ -7087,6 +7312,300 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         duracion: 4,
         reproduciendo: false
       }]
+    }, // Consonante T
+    {
+      consonante: 't',
+      data: [{
+        nombre: 'Ta-ja-da',
+        audio: 'assets/audio/fonemas/consonantes/t/Tajada.mp3',
+        imagen: 'assets/img/fonemas/consonantes/t/Tajada.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Tam-bor',
+        audio: 'assets/audio/fonemas/consonantes/t/Tambor.mp3',
+        imagen: 'assets/img/fonemas/consonantes/t/Tambor.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Ta-pa',
+        audio: 'assets/audio/fonemas/consonantes/t/Tapa.mp3',
+        imagen: 'assets/img/fonemas/consonantes/t/Tapa.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Ta-pe-te',
+        audio: 'assets/audio/fonemas/consonantes/t/Tapete.mp3',
+        imagen: 'assets/img/fonemas/consonantes/t/Tapete.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Tar-de',
+        audio: 'assets/audio/fonemas/consonantes/t/Tarde.mp3',
+        imagen: 'assets/img/fonemas/consonantes/t/Tarde.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Ta-xi',
+        audio: 'assets/audio/fonemas/consonantes/t/Taxi.mp3',
+        imagen: 'assets/img/fonemas/consonantes/t/Taxi.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Ta-za',
+        audio: 'assets/audio/fonemas/consonantes/t/Taza.mp3',
+        imagen: 'assets/img/fonemas/consonantes/t/Taza.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Ta-zón',
+        audio: 'assets/audio/fonemas/consonantes/t/Tazón.mp3',
+        imagen: 'assets/img/fonemas/consonantes/t/Tazón.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Te-cho',
+        audio: 'assets/audio/fonemas/consonantes/t/Techo.mp3',
+        imagen: 'assets/img/fonemas/consonantes/t/Techo.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Te-la',
+        audio: 'assets/audio/fonemas/consonantes/t/Tela.mp3',
+        imagen: 'assets/img/fonemas/consonantes/t/Tela.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Te-lé-fo-no',
+        audio: 'assets/audio/fonemas/consonantes/t/Teléfono.mp3',
+        imagen: 'assets/img/fonemas/consonantes/t/Teléfono.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Te-le-vi-sor',
+        audio: 'assets/audio/fonemas/consonantes/t/Televisor.mp3',
+        imagen: 'assets/img/fonemas/consonantes/t/Televisor.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Te-ne-dor',
+        audio: 'assets/audio/fonemas/consonantes/t/Tenedor.mp3',
+        imagen: 'assets/img/fonemas/consonantes/t/Tenedor.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Te-nis',
+        audio: 'assets/audio/fonemas/consonantes/t/Tenis.mp3',
+        imagen: 'assets/img/fonemas/consonantes/t/Tenis.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Tex-to',
+        audio: 'assets/audio/fonemas/consonantes/t/Texto.mp3',
+        imagen: 'assets/img/fonemas/consonantes/t/Texto.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Tía',
+        audio: 'assets/audio/fonemas/consonantes/t/Tía.mp3',
+        imagen: 'assets/img/fonemas/consonantes/t/Tía.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Ti-bu-rón',
+        audio: 'assets/audio/fonemas/consonantes/t/Tiburón.mp3',
+        imagen: 'assets/img/fonemas/consonantes/t/Tiburón.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Ti-gre',
+        audio: 'assets/audio/fonemas/consonantes/t/Tigre.mp3',
+        imagen: 'assets/img/fonemas/consonantes/t/Tigre.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Ti-je-ras',
+        audio: 'assets/audio/fonemas/consonantes/t/Tijeras.mp3',
+        imagen: 'assets/img/fonemas/consonantes/t/Tijeras.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Ti-na',
+        audio: 'assets/audio/fonemas/consonantes/t/Tina.mp3',
+        imagen: 'assets/img/fonemas/consonantes/t/Tina.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Ti-na-ja',
+        audio: 'assets/audio/fonemas/consonantes/t/Tinaja.mp3',
+        imagen: 'assets/img/fonemas/consonantes/t/Tinaja.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Tin-ta',
+        audio: 'assets/audio/fonemas/consonantes/t/Tinta.mp3',
+        imagen: 'assets/img/fonemas/consonantes/t/Tinta.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Tío',
+        audio: 'assets/audio/fonemas/consonantes/t/Tío.mp3',
+        imagen: 'assets/img/fonemas/consonantes/t/Tío.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'To-bo-gán',
+        audio: 'assets/audio/fonemas/consonantes/t/Tobogán.mp3',
+        imagen: 'assets/img/fonemas/consonantes/t/Tobogán.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'To-mi-llo',
+        audio: 'assets/audio/fonemas/consonantes/t/Tomillo.mp3',
+        imagen: 'assets/img/fonemas/consonantes/t/Tomillo.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'To-ro',
+        audio: 'assets/audio/fonemas/consonantes/t/Toro.mp3',
+        imagen: 'assets/img/fonemas/consonantes/t/Toro.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Tor-ti-lla',
+        audio: 'assets/audio/fonemas/consonantes/t/Tortilla.mp3',
+        imagen: 'assets/img/fonemas/consonantes/t/Tortilla.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Tor-tu-ga',
+        audio: 'assets/audio/fonemas/consonantes/t/Tortuga.mp3',
+        imagen: 'assets/img/fonemas/consonantes/t/Tortuga.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Tos',
+        audio: 'assets/audio/fonemas/consonantes/t/Tos.mp3',
+        imagen: 'assets/img/fonemas/consonantes/t/Tos.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Tos-ta-das',
+        audio: 'assets/audio/fonemas/consonantes/t/Tostadas.mp3',
+        imagen: 'assets/img/fonemas/consonantes/t/Tostadas.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Trai-ler',
+        audio: 'assets/audio/fonemas/consonantes/t/Trailer.mp3',
+        imagen: 'assets/img/fonemas/consonantes/t/Trailer.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Tren',
+        audio: 'assets/audio/fonemas/consonantes/t/Tren.mp3',
+        imagen: 'assets/img/fonemas/consonantes/t/Tren.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Trom-pe-ta',
+        audio: 'assets/audio/fonemas/consonantes/t/Trompeta.mp3',
+        imagen: 'assets/img/fonemas/consonantes/t/Trompeta.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Tu-cán',
+        audio: 'assets/audio/fonemas/consonantes/t/Tucán.mp3',
+        imagen: 'assets/img/fonemas/consonantes/t/Tucán.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Tu-co',
+        audio: 'assets/audio/fonemas/consonantes/t/Tuco.mp3',
+        imagen: 'assets/img/fonemas/consonantes/t/Tuco.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Tu-li-pán',
+        audio: 'assets/audio/fonemas/consonantes/t/Tulipán.mp3',
+        imagen: 'assets/img/fonemas/consonantes/t/Tulipán.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Tu-na',
+        audio: 'assets/audio/fonemas/consonantes/t/Tuna.mp3',
+        imagen: 'assets/img/fonemas/consonantes/t/Tuna.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }],
+      dataS: [{
+        nombre: 'Ta',
+        audio: 'assets/audio/fonemas/silabas/t/Ta.mp3',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Te',
+        audio: 'assets/audio/fonemas/silabas/t/Te.mp3',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Ti',
+        audio: 'assets/audio/fonemas/silabas/T/Ti.mp3',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'To',
+        audio: 'assets/audio/fonemas/silabas/t/To.mp3',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Su',
+        audio: 'assets/audio/fonemas/silabas/t/Tu.mp3',
+        duracion: 4,
+        reproduciendo: false
+      }]
+    }, // Consonante X
+    {
+      consonante: 'x',
+      data: [{
+        nombre: 'Xi-ló-fo-no',
+        audio: 'assets/audio/fonemas/consonantes/x/Xilofono.mp3',
+        imagen: 'assets/img/fonemas/consonantes/x/Xilofono.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Xi-nia',
+        audio: 'assets/audio/fonemas/consonantes/x/Xinia.mp3',
+        imagen: 'assets/img/fonemas/consonantes/x/Xinia.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }],
+      dataS: [{
+        nombre: 'Xa',
+        audio: 'assets/audio/fonemas/silabas/x/Xa.mp3',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Xe',
+        audio: 'assets/audio/fonemas/silabas/x/Xe.mp3',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Xi',
+        audio: 'assets/audio/fonemas/silabas/x/Xi.mp3',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Xo',
+        audio: 'assets/audio/fonemas/silabas/x/Xo.mp3',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Xu',
+        audio: 'assets/audio/fonemas/silabas/x/Xu.mp3',
+        duracion: 4,
+        reproduciendo: false
+      }]
     }];
     /***/
   },
@@ -7193,7 +7712,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         nombre: 'Escudo',
         audio: 'assets/audio/fonemas/vocales/e/escudo.mp3',
-        imagen: 'assets/img/fonemas/vocales/e/escudi.jpg',
+        imagen: 'assets/img/fonemas/vocales/e/escudo.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
@@ -7204,8 +7723,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         reproduciendo: false
       }, {
         nombre: 'Espárrago',
-        audio: 'assets/audio/fonemas/vocales/e/esparrago.mp3',
-        imagen: 'assets/img/fonemas/vocales/e/esparrago.jpg',
+        audio: 'assets/audio/fonemas/vocales/e/esparragos.mp3',
+        imagen: 'assets/img/fonemas/vocales/e/espárragos.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
@@ -7346,6 +7865,104 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   },
 
   /***/
+  "./src/data/categorias/data.categorias.ts":
+  /*!************************************************!*\
+    !*** ./src/data/categorias/data.categorias.ts ***!
+    \************************************************/
+
+  /*! exports provided: CATEGORIAS */
+
+  /***/
+  function srcDataCategoriasDataCategoriasTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "CATEGORIAS", function () {
+      return CATEGORIAS;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+
+    var CATEGORIAS = [{
+      nombre: 'Imagen de mí mismo',
+      imagen: 'assets\img\semanticas\categories-bar\imagen.png',
+      subcategoria: []
+    }, {
+      nombre: 'Partes del Cuerpo',
+      imagen: 'assets\img\semanticas\categories-bar\cuerpo.png',
+      subcategoria: []
+    }, {
+      nombre: 'Familia',
+      imagen: 'assets\img\semanticas\categories-bar\familia.png',
+      subcategoria: []
+    }, {
+      nombre: 'Alimentos',
+      imagen: 'assets\img\semanticas\categories-bar\alimentos.png',
+      subcategoria: [{
+        nombre: 'Frutas'
+      }, {
+        nombre: 'Vegetales'
+      }, {
+        nombre: 'Alimentos Salados'
+      }, {
+        nombre: 'Alimentos Dulces'
+      }, {
+        nombre: 'Bebidas'
+      }]
+    }, {
+      nombre: 'Animales',
+      imagen: 'assets\img\semanticas\categories-bar\animales.png',
+      subcategoria: [{
+        nombre: 'Animales de la Granja'
+      }, {
+        nombre: 'Animales Domésticos'
+      }, {
+        nombre: 'Salvajes'
+      }]
+    }, {
+      nombre: 'Juguetes',
+      imagen: 'assets\img\semanticas\categories-bar\juguetes.png',
+      subcategoria: [{
+        nombre: ''
+      }]
+    }, {
+      nombre: 'Prendas de Vestir',
+      imagen: 'assets\img\semanticas\categories-bar\prendas.png',
+      subcategoria: [{
+        nombre: 'Ropa de Hombre'
+      }, {
+        nombre: 'Ropa de Mujer'
+      }, {
+        nombre: 'Ropa de Playa'
+      }]
+    }, {
+      nombre: 'Partes de la Casa',
+      imagen: 'assets\img\semanticas\categories-bar\casa.png',
+      subcategoria: []
+    }, {
+      nombre: 'Medios de Transporte',
+      imagen: 'assets\img\semanticas\categories-bar\transporte.png',
+      subcategoria: []
+    }, {
+      nombre: 'Servidores de la Comunidad',
+      imagen: 'assets\img\semanticas\categories-bar\servidores.png',
+      subcategoria: []
+    }, {
+      nombre: 'Instrumentos Musicales',
+      imagen: 'assets\img\semanticas\categories-bar\instrumentos.png',
+      subcategoria: []
+    }];
+    /***/
+  },
+
+  /***/
   "./src/data/categorias/data.subcategorias.ts":
   /*!***************************************************!*\
     !*** ./src/data/categorias/data.subcategorias.ts ***!
@@ -7378,29 +7995,29 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         verbo: ' soy',
         predicado: 'yo',
         imagenSujeto: '',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: 'assets\img\semanticas\categorias\imagen\Yo.jpg'
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/imagen/Yo.jpg'
       }, {
         sujeto: 'Yo',
         verbo: 'me llamo',
         predicado: 'Nombre',
-        imagenSujeto: 'assets\img\semanticas\estructura\sujeto\Yo.jpg',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: 'assets\img\semanticas\categorias\imagen\Nombre.jpg'
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/imagen/Nombre.jpg'
       }, {
         sujeto: 'Yo',
         verbo: 'vivo',
         predicado: 'Lugar',
-        imagenSujeto: 'assets\img\semanticas\estructura\sujeto\Yo.jpg',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: 'assets\img\semanticas\categorias\imagen\Lugar.jpg'
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/imagen/Lugar.jpg'
       }, {
         sujeto: 'Yo',
         verbo: 'estoy',
-        predicado: ' en el Centro de Apoyos Hospital Calderón Guardia',
-        imagenSujeto: 'assets\img\semanticas\estructura\sujeto\Yo.jpg',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: 'assets\img\semanticas\categorias\imagen\Centro.jpg'
+        predicado: ' en el Centro de Apoyos',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/imagen/Centro.jpg'
       }]
     }, {
       nombre: 'Partes del Cuerpo',
@@ -7408,212 +8025,212 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         sujeto: 'Yo',
         verbo: 'tengo',
         predicado: 'cabeza',
-        imagenSujeto: 'assets\img\semanticas\estructura\sujeto\Yo.jpg',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: 'assets\img\semanticas\categorias\cuerpo\Cabeza.jpg'
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/cuerpo/Cabeza.jpg'
       }, {
         sujeto: 'Yo',
         verbo: 'tengo',
         predicado: 'pelo',
-        imagenSujeto: 'assets\img\semanticas\estructura\sujeto\Yo.jpg',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: 'assets\img\semanticas\categorias\cuerpo\Pelo.jpg'
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/cuerpo/Pelo.jpg'
       }, {
         sujeto: 'Yo',
         verbo: 'tengo',
         predicado: 'frente',
-        imagenSujeto: 'assets\img\semanticas\estructura\sujeto\Yo.jpg',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: 'assets\img\semanticas\categorias\cuerpo\Frente.jpg'
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/cuerpo/Frente.jpg'
       }, {
         sujeto: 'Yo',
         verbo: 'tengo',
         predicado: 'mejillas',
-        imagenSujeto: 'assets\img\semanticas\estructura\sujeto\Yo.jpg',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: 'assets\img\semanticas\categorias\cuerpo\Mejillas.jpg'
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/cuerpo/Mejillas.jpg'
       }, {
         sujeto: 'Yo',
         verbo: 'tengo',
         predicado: 'ojos',
-        imagenSujeto: 'assets\img\semanticas\estructura\sujeto\Yo.jpg',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: 'assets\img\semanticas\categorias\cuerpo\Ojos.jpg'
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/cuerpo/Ojos.jpg'
       }, {
         sujeto: 'Yo',
         verbo: 'tengo',
         predicado: 'cejas',
-        imagenSujeto: 'assets\img\semanticas\estructura\sujeto\Yo.jpg',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: 'assets\img\semanticas\categorias\cuerpo\Cejas.jpg'
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/cuerpo/Cejas.jpg'
       }, {
         sujeto: 'Yo',
         verbo: 'tengo',
         predicado: 'pestaña',
-        imagenSujeto: 'assets\img\semanticas\estructura\sujeto\Yo.jpg',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: 'assets\img\semanticas\categorias\cuerpo\Pestaña.jpg'
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/cuerpo/Pestaña.jpg'
       }, {
         sujeto: 'Yo',
         verbo: 'tengo',
         predicado: 'nariz',
-        imagenSujeto: 'assets\img\semanticas\estructura\sujeto\Yo.jpg',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: 'assets\img\semanticas\categorias\cuerpo\Cabeza.jpg'
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/cuerpo/Cabeza.jpg'
       }, {
         sujeto: 'Yo',
         verbo: 'tengo',
         predicado: 'boca',
-        imagenSujeto: 'assets\img\semanticas\estructura\sujeto\Yo.jpg',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: 'assets\img\semanticas\categorias\cuerpo\Boca.jpg'
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/cuerpo/Boca.jpg'
       }, {
         sujeto: 'Yo',
         verbo: 'tengo',
         predicado: 'dientes',
-        imagenSujeto: 'assets\img\semanticas\estructura\sujeto\Yo.jpg',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: 'assets\img\semanticas\categorias\cuerpo\Dientes.jpg'
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/cuerpo/Dientes.jpg'
       }, {
         sujeto: 'Yo',
         verbo: 'tengo',
         predicado: 'lengua',
-        imagenSujeto: 'assets\img\semanticas\estructura\sujeto\Yo.jpg',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: 'assets\img\semanticas\categorias\cuerpo\Lengua.jpg'
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/cuerpo/Lengua.jpg'
       }, {
         sujeto: 'Yo',
         verbo: 'tengo',
         predicado: 'labios',
-        imagenSujeto: 'assets\img\semanticas\estructura\sujeto\Yo.jpg',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: 'assets\img\semanticas\categorias\cuerpo\Labios.jpg'
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/cuerpo/Labios.jpg'
       }, {
         sujeto: 'Yo',
         verbo: 'tengo',
         predicado: 'barbilla',
-        imagenSujeto: 'assets\img\semanticas\estructura\sujeto\Yo.jpg',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: 'assets\img\semanticas\categorias\cuerpo\Barbilla.jpg'
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/cuerpo/Barbilla.jpg'
       }, {
         sujeto: 'Yo',
         verbo: 'tengo',
         predicado: 'orejas',
         imagenSujeto: '',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: 'assets\img\semanticas\categorias\cuerpo\Orejas.jpg'
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/cuerpo/Orejas.jpg'
       }, {
         sujeto: 'Yo',
         verbo: 'tengo',
         predicado: 'cuello',
-        imagenSujeto: 'assets\img\semanticas\estructura\sujeto\Yo.jpg',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: 'assets\img\semanticas\categorias\cuerpo\Cuello.jpg'
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/cuerpo/Cuello.jpg'
       }, {
         sujeto: 'Yo',
         verbo: 'tengo',
         predicado: 'nuca',
-        imagenSujeto: 'assets\img\semanticas\estructura\sujeto\Yo.jpg',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: 'assets\img\semanticas\categorias\cuerpo\Nuca.jpg'
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/cuerpo/Nuca.jpg'
       }, {
         sujeto: 'Yo',
         verbo: 'tengo',
         predicado: 'espalda',
-        imagenSujeto: 'assets\img\semanticas\estructura\sujeto\Yo.jpg',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: 'assets\img\semanticas\categorias\cuerpo\Espalda.jpg'
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/cuerpo/Espalda.jpg'
       }, {
         sujeto: 'Yo',
         verbo: 'tengo',
         predicado: 'hombros',
-        imagenSujeto: 'assets\img\semanticas\estructura\sujeto\Yo.jpg',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: 'assets\img\semanticas\categorias\cuerpo\Hombros.jpg'
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/cuerpo/Hombros.jpg'
       }, {
         sujeto: 'Yo',
         verbo: 'tengo',
         predicado: 'estómago',
-        imagenSujeto: 'assets\img\semanticas\estructura\sujeto\Yo.jpg',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: 'assets\img\semanticas\categorias\cuerpo\Estómago.jpg'
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/cuerpo/Estómago.jpg'
       }, {
         sujeto: 'Yo',
         verbo: 'tengo',
         predicado: 'brazos',
-        imagenSujeto: 'assets\img\semanticas\estructura\sujeto\Yo.jpg',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: 'assets\img\semanticas\categorias\cuerpo\Brazos.jpg'
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/cuerpo/Brazos.jpg'
       }, {
         sujeto: 'Yo',
         verbo: 'tengo',
         predicado: 'codos',
-        imagenSujeto: 'assets\img\semanticas\estructura\sujeto\Yo.jpg',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: 'assets\img\semanticas\categorias\cuerpo\Codos.jpg'
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/cuerpo/Codos.jpg'
       }, {
         sujeto: 'Yo',
         verbo: 'tengo',
         predicado: 'manos',
-        imagenSujeto: 'assets\img\semanticas\estructura\sujeto\Yo.jpg',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: 'assets\img\semanticas\categorias\cuerpo\Manos.jpg'
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/cuerpo/Manos.jpg'
       }, {
         sujeto: 'Yo',
         verbo: 'tengo',
         predicado: 'dedos',
-        imagenSujeto: 'assets\img\semanticas\estructura\sujeto\Yo.jpg',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: 'assets\img\semanticas\categorias\cuerpo\Dedos.jpg'
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/cuerpo/Dedos.jpg'
       }, {
         sujeto: 'Yo',
         verbo: 'tengo',
         predicado: 'uñas',
-        imagenSujeto: 'assets\img\semanticas\estructura\sujeto\Yo.jpg',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: "assetsimgsemanticascategoriascuerpoU\xF1as.jpg"
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/cuerpo/Uñas.jpg'
       }, {
         sujeto: 'Yo',
         verbo: 'tengo',
         predicado: 'cintura',
-        imagenSujeto: 'assets\img\semanticas\estructura\sujeto\Yo.jpg',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: 'assets\img\semanticas\categorias\cuerpo\Cintura.jpg'
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/cuerpo/Cintura.jpg'
       }, {
         sujeto: 'Yo',
         verbo: 'tengo',
         predicado: 'piernas',
-        imagenSujeto: 'assets\img\semanticas\estructura\sujeto\Yo.jpg',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: 'assets\img\semanticas\categorias\cuerpo\Piernas.jpg'
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/cuerpo/Piernas.jpg'
       }, {
         sujeto: 'Yo',
         verbo: 'tengo',
         predicado: 'rodillas',
-        imagenSujeto: 'assets\img\semanticas\estructura\sujeto\Yo.jpg',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: 'assets\img\semanticas\categorias\cuerpo\Rodillas.jpg'
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/cuerpo/Rodillas.jpg'
       }, {
         sujeto: 'Yo',
         verbo: 'tengo',
         predicado: 'tobillos',
-        imagenSujeto: 'assets\img\semanticas\estructura\sujeto\Yo.jpg',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: 'assets\img\semanticas\categorias\cuerpo\Tobillos.jpg'
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/cuerpo/Tobillos.jpg'
       }, {
         sujeto: 'Yo',
         verbo: 'tengo',
         predicado: 'talones',
-        imagenSujeto: 'assets\img\semanticas\estructura\sujeto\Yo.jpg',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: 'assets\img\semanticas\categorias\cuerpo\Talones.jpg'
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/cuerpo/Talones.jpg'
       }, {
         sujeto: 'Yo',
         verbo: 'tengo',
         predicado: 'pies',
-        imagenSujeto: 'assets\img\semanticas\estructura\sujeto\Yo.jpg',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: 'assets\img\semanticas\categorias\cuerpo\Pies.jpg'
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/cuerpo/Pies.jpg'
       }]
     }, {
       nombre: 'Familia',
@@ -7621,222 +8238,607 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         sujeto: 'Yo',
         verbo: 'tengo',
         predicado: 'mamá',
-        imagenSujeto: '',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: 'assets\img\semanticas\categorias\familia\Mamá.jpg'
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/familia/Mamá.jpg'
       }, {
         sujeto: 'Ella',
         verbo: 'se llama',
         predicado: 'Nombre',
         imagenSujeto: '',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: 'assets\img\semanticas\categorias\familia\Mamá.jpg'
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/familia/Mamá.jpg'
       }, {
         sujeto: 'Yo',
         verbo: 'tengo',
         predicado: 'papá',
-        imagenSujeto: '',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: 'assets\img\semanticas\categorias\familia\Papá.jpg'
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/familia/Papá.jpg'
       }, {
         sujeto: 'ÉL',
         verbo: 'se llama',
         predicado: 'Nombre',
         imagenSujeto: '',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: 'assets\img\semanticas\categorias\familia\Papá.jpg'
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/familia/Papá.jpg'
       }, {
         sujeto: 'Yo',
         verbo: 'tengo',
         predicado: 'abuelita',
-        imagenSujeto: '',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: 'assets\img\semanticas\categorias\familia\Abuelita.jpg'
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/familia/Abuelita.jpg'
       }, {
         sujeto: 'Ella',
         verbo: 'se llama',
         predicado: 'Nombre',
         imagenSujeto: '',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: 'assets\img\semanticas\categorias\familia\Abuelita.jpg'
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/familia/Abuelita.jpg'
       }, {
         sujeto: 'Yo',
         verbo: 'tengo',
         predicado: 'abuelito',
-        imagenSujeto: '',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: 'assets\img\semanticas\categorias\familia\Abuelito.jpg'
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/familia/Abuelito.jpg'
       }, {
         sujeto: 'Él',
         verbo: 'se llama',
         predicado: 'Nombre',
         imagenSujeto: '',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: 'assets\img\semanticas\categorias\familia\Abuelito.jpg'
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/familia/Abuelito.jpg'
       }, {
         sujeto: 'Yo',
         verbo: 'tengo',
         predicado: 'prima',
-        imagenSujeto: '',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: 'assets\img\semanticas\categorias\familia\Prima.jpg'
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/familia/Prima.jpg'
       }, {
         sujeto: 'Ella',
         verbo: 'se llama',
         predicado: 'Nombre',
         imagenSujeto: '',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: 'assets\img\semanticas\categorias\familia\Prima.jpg'
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/familia/Prima.jpg'
       }, {
         sujeto: 'Yo',
         verbo: 'tengo',
         predicado: 'primo',
-        imagenSujeto: '',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: 'assets\img\semanticas\categorias\familia\Primo.jpg'
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/familia/Primo.jpg'
       }, {
         sujeto: 'Él',
         verbo: 'se llama',
         predicado: 'Nombre',
         imagenSujeto: '',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: 'assets\img\semanticas\categorias\familia\Primo.jpg'
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/familia/Primo.jpg'
       }, {
         sujeto: 'Yo',
         verbo: 'tengo',
         predicado: 'tío',
-        imagenSujeto: '',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: 'assets\img\semanticas\categorias\familia\Tío.jpg'
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/familia/Tío.jpg'
       }, {
         sujeto: 'Él',
         verbo: 'se llama',
         predicado: 'Nombre',
         imagenSujeto: '',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: 'assets\img\semanticas\categorias\familia\Tío.jpg'
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/familia/Tío.jpg'
       }, {
         sujeto: 'Yo',
         verbo: 'tengo',
         predicado: 'tía',
-        imagenSujeto: '',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: 'assets\img\semanticas\categorias\familia\Tía.jpg'
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/familia/Tía.jpg'
       }, {
         sujeto: 'Ella',
         verbo: 'se llama',
         predicado: 'Nombre',
         imagenSujeto: '',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: 'assets\img\semanticas\categorias\familia\Tía.jpg'
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/familia/Tía.jpg'
       }, {
         sujeto: 'Yo',
         verbo: 'tengo',
         predicado: 'Padrino',
-        imagenSujeto: '',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: 'assets\img\semanticas\categorias\familia\Padrino.jpg'
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/familia/Padrino.jpg'
       }, {
         sujeto: 'Él',
         verbo: 'se llama',
         predicado: 'Nombre',
         imagenSujeto: '',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: 'assets\img\semanticas\categorias\familia\Padrino.jpg'
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/familia/Padrino.jpg'
       }, {
         sujeto: 'Yo',
         verbo: 'tengo',
         predicado: 'Madrina',
-        imagenSujeto: '',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: 'assets\img\semanticas\categorias\familia\Tía.jpg'
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/familia/Tía.jpg'
       }, {
         sujeto: 'Ella',
         verbo: 'se llama',
         predicado: 'Nombre',
         imagenSujeto: '',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: 'assets\img\semanticas\categorias\familia\Madrina.jpg'
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/familia/Madrina.jpg'
       }]
     }, {
       nombre: 'Frutas',
       data: [{
-        sujeto: '',
-        verbo: '',
-        predicado: '',
-        imagenSujeto: '',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: ''
+        sujeto: 'Yo',
+        verbo: 'como',
+        predicado: 'banano',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/frutas/Banano.jpg'
+      }, {
+        sujeto: 'Yo',
+        verbo: 'como',
+        predicado: 'naranja',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/frutas/Naranja.jpg'
+      }, {
+        sujeto: 'Yo',
+        verbo: 'como',
+        predicado: 'manzana',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/frutas/Manzana.jpg'
+      }, {
+        sujeto: 'Yo',
+        verbo: 'como',
+        predicado: 'uvas',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/frutas/Uvas.jpg'
+      }, {
+        sujeto: 'Yo',
+        verbo: 'como',
+        predicado: 'sandía',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/frutas/Sandía.jpg'
+      }, {
+        sujeto: 'Yo',
+        verbo: 'como',
+        predicado: 'papaya',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/frutas/Papaya.jpg'
+      }, {
+        sujeto: 'Yo',
+        verbo: 'como',
+        predicado: 'melón',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/frutas/Melón.jpg'
+      }, {
+        sujeto: 'Yo',
+        verbo: 'como',
+        predicado: 'piña',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/frutas/Piña.jpg'
+      }, {
+        sujeto: 'Yo',
+        verbo: 'como',
+        predicado: 'fresas',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/frutas/fresas.jpg'
+      }, {
+        sujeto: 'Yo',
+        verbo: 'como',
+        predicado: 'cas',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/frutas/Cas.jpg'
       }]
     }, {
       nombre: 'Vegetales',
       data: [{
-        sujeto: '',
-        verbo: '',
-        predicado: '',
-        imagenSujeto: '',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: ''
+        sujeto: 'Yo',
+        verbo: 'como',
+        predicado: 'aguacate',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/vegetales/Aguacate.jpg'
+      }, {
+        sujeto: 'Yo',
+        verbo: 'como',
+        predicado: 'ajo',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/vegetales/Ajo.jpg'
+      }, {
+        sujeto: 'Yo',
+        verbo: 'como',
+        predicado: 'coliflor',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/vegetales/Coliflor.jpg'
+      }, {
+        sujeto: 'Yo',
+        verbo: 'como',
+        predicado: 'espárragos',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/vegetales/Espárragos.jpg'
+      }, {
+        sujeto: 'Yo',
+        verbo: 'como',
+        predicado: 'espinacas',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/vegetales/Espinacas.jpg'
+      }, {
+        sujeto: 'Yo',
+        verbo: 'como',
+        predicado: 'verduras',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/vegetales/Verduras.jpg'
       }]
     }, {
       nombre: 'Alimentos Salados',
       data: [{
-        sujeto: '',
-        verbo: '',
-        predicado: '',
-        imagenSujeto: '',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: ''
+        sujeto: 'Yo',
+        verbo: 'como',
+        predicado: 'chuleta',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/salados/Chuleta.jpg'
+      }, {
+        sujeto: 'Yo',
+        verbo: 'como',
+        predicado: 'matequilla',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/salados/Mantequilla.jpg'
+      }, {
+        sujeto: 'Yo',
+        verbo: 'como',
+        predicado: 'pasta',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/salados/Pasta.jpg'
+      }, {
+        sujeto: 'Yo',
+        verbo: 'como',
+        predicado: 'sopa',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/salados/Sopa.jpg'
+      }, {
+        sujeto: 'Yo',
+        verbo: 'como',
+        predicado: 'tortilla',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/salados/Tortilla.jpg'
+      }, {
+        sujeto: 'Yo',
+        verbo: 'como',
+        predicado: 'tostadas',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/salados/Tostadas.jpg'
       }]
     }, {
       nombre: 'Alimentos Dulces',
       data: [{
-        sujeto: '',
-        verbo: '',
-        predicado: '',
-        imagenSujeto: '',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: ''
+        sujeto: 'Yo',
+        verbo: 'como',
+        predicado: 'chocolate',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/dulces/Chocolate.jpg'
+      }, {
+        sujeto: 'Yo',
+        verbo: 'como',
+        predicado: 'chocolates',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/dulces/Chocolates.jpg'
+      }, {
+        sujeto: 'Yo',
+        verbo: 'como',
+        predicado: 'chocoleta',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/dulces/Chocoleta.jpg'
+      }, {
+        sujeto: 'Yo',
+        verbo: 'como',
+        predicado: 'chupa',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/dulces/Chupa.jpg'
+      }, {
+        sujeto: 'Yo',
+        verbo: 'como',
+        predicado: 'churros',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/dulces/Churros.jpg'
+      }, {
+        sujeto: 'Yo',
+        verbo: 'como',
+        predicado: 'churros',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/dulces/Churros.jpg'
+      }, {
+        sujeto: 'Yo',
+        verbo: 'como',
+        predicado: 'confite',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/dulces/Confite.jpg'
+      }, {
+        sujeto: 'Yo',
+        verbo: 'como',
+        predicado: 'confites',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/dulces/Confites.jpg'
+      }, {
+        sujeto: 'Yo',
+        verbo: 'como',
+        predicado: 'dona',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/dulces/Dona.jpg'
+      }, {
+        sujeto: 'Yo',
+        verbo: 'como',
+        predicado: 'queque',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/dulces/Queque.jpg'
       }]
     }, {
       nombre: 'Bebidas',
       data: [{
-        sujeto: '',
-        verbo: '',
-        predicado: '',
-        imagenSujeto: '',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: ''
+        sujeto: 'Yo',
+        verbo: 'como',
+        predicado: 'café',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/bebidas/Café.jpg'
+      }, {
+        sujeto: 'Yo',
+        verbo: 'como',
+        predicado: 'coca cola',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/bebidas/CocaCola.jpg'
+      }, {
+        sujeto: 'Yo',
+        verbo: 'como',
+        predicado: 'leche',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/bebidas/Leche.jpg'
       }]
     }, {
       nombre: 'Animales de la Granja',
       data: [{
-        sujeto: '',
-        verbo: '',
-        predicado: '',
-        imagenSujeto: '',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: ''
+        sujeto: 'Esta',
+        verbo: 'es',
+        predicado: 'una vaca',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Esta.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/granja/Vaca.jpg'
+      }, {
+        sujeto: 'La vaca',
+        verbo: 'hace',
+        predicado: 'Mu Mu Mu',
+        imagenSujeto: 'assets/img/semanticas/categorias/granja/Vaca.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/granja/Vaca.jpg'
+      }, {
+        sujeto: 'Esta',
+        verbo: 'es',
+        predicado: 'una gallina',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Esta.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/granja/Gallina.jpg'
+      }, {
+        sujeto: 'La gallina',
+        verbo: 'hace',
+        predicado: 'Co Co Co',
+        imagenSujeto: 'assets/img/semanticas/categorias/granja/Gallina.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/granja/Gallina.jpg'
+      }, {
+        sujeto: 'Este',
+        verbo: 'es',
+        predicado: 'un pato',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Este.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/granja/Pato.jpg'
+      }, {
+        sujeto: 'El pato',
+        verbo: 'hace',
+        predicado: 'Cuac Cuac Cuac',
+        imagenSujeto: 'assets/img/semanticas/categorias/granja/Pato.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/granja/Pato.jpg'
+      }, {
+        sujeto: 'Este',
+        verbo: 'es',
+        predicado: 'un caballo',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Esta.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/granja/Caballo.jpg'
+      }, {
+        sujeto: 'El caballo',
+        verbo: 'hace',
+        predicado: 'Jim Jim Jim',
+        imagenSujeto: 'assets/img/semanticas/categorias/granja/Caballo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/granja/Caballo.jpg'
+      }, {
+        sujeto: 'Esta',
+        verbo: 'es',
+        predicado: 'una cabra',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Esta.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/granja/Cabra.jpg'
+      }, {
+        sujeto: 'La cabra',
+        verbo: 'hace',
+        predicado: 'Bee Bee Bee',
+        imagenSujeto: 'assets/img/semanticas/categorias/granja/Cabra.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/granja/Cabra.jpg'
+      }, {
+        sujeto: 'Este',
+        verbo: 'es',
+        predicado: 'un gallo',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Esta.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/granja/Gallo.jpg'
+      }, {
+        sujeto: 'El gallo',
+        verbo: 'hace',
+        predicado: 'Ki Ki Ri Ki',
+        imagenSujeto: 'assets/img/semanticas/categorias/granja/Jim.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/granja/Jim.jpg'
+      }, {
+        sujeto: 'Este',
+        verbo: 'es',
+        predicado: 'un pollito',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Esta.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/granja/Pollito.jpg'
+      }, {
+        sujeto: 'El pollito',
+        verbo: 'hace',
+        predicado: 'Pío Pío Pío',
+        imagenSujeto: 'assets/img/semanticas/categorias/granja/Pollito.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/granja/Pollito.jpg'
       }]
     }, {
       nombre: 'Animales Domésticos',
       data: [{
-        sujeto: '',
-        verbo: '',
-        predicado: '',
-        imagenSujeto: '',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: ''
+        sujeto: 'Este',
+        verbo: 'es',
+        predicado: 'un conejo',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Este.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/domesticos/Conejo.jpg'
+      }, {
+        sujeto: 'Esta',
+        verbo: 'es',
+        predicado: 'una lora',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Esta.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/domesticos/Lora.jpg'
+      }, {
+        sujeto: 'Estos',
+        verbo: 'son',
+        predicado: 'unos peces',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Estos.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/domesticos/Peces.jpg'
+      }, {
+        sujeto: 'Este',
+        verbo: 'es',
+        predicado: 'un perico',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Este.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/domesticos/Perico.jpg'
+      }, {
+        sujeto: 'Este',
+        verbo: 'es',
+        predicado: 'un perro',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Este.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/domesticos/Perro.jpg'
+      }, {
+        sujeto: 'El perro',
+        verbo: 'hace',
+        predicado: 'Guau Guau Guau',
+        imagenSujeto: 'assets/img/semanticas/categorias/granja/Perro.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/granja/Perro.jpg'
+      }, {
+        sujeto: 'Esta',
+        verbo: 'es',
+        predicado: 'una tortuga',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Esta.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/domesticos/Tortuga.jpg'
       }]
     }, {
       nombre: 'Animales Salvajes',
       data: [{
-        sujeto: '',
-        verbo: '',
-        predicado: '',
-        imagenSujeto: '',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: ''
+        sujeto: 'Esta',
+        verbo: 'es',
+        predicado: 'una cebra',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Esta.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/salvajes/Cebra.jpg'
+      }, {
+        sujeto: 'Esta',
+        verbo: 'es',
+        predicado: 'una jirafa',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Esta.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/salvajes/Jirafa.jpg'
+      }, {
+        sujeto: 'Este',
+        verbo: 'es',
+        predicado: 'un león',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Este.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/salvajes/León.jpg'
+      }, {
+        sujeto: 'Este',
+        verbo: 'es',
+        predicado: 'un mono',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Este.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/salvajes/Mono.jpg'
+      }, {
+        sujeto: 'Este',
+        verbo: 'es',
+        predicado: 'un oso',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Este.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/salvajes/Oso.jpg'
+      }, {
+        sujeto: 'Esta',
+        verbo: 'es',
+        predicado: 'una serpiente',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Esta.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/salvajes/León.jpg'
+      }, {
+        sujeto: 'Este',
+        verbo: 'es',
+        predicado: 'un tigre',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Este.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/salvajes/Tigre.jpg'
       }]
     }, {
       nombre: 'Juguetes',
@@ -7845,78 +8847,449 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         verbo: '',
         predicado: '',
         imagenSujeto: '',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
         imagenPredicado: ''
       }]
     }, {
       nombre: 'Ropa de Hombre',
       data: [{
-        sujeto: '',
-        verbo: '',
-        predicado: '',
-        imagenSujeto: '',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: ''
+        sujeto: 'Yo',
+        verbo: 'uso',
+        predicado: 'bota',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/ropaH/Bota.jpg'
+      }, {
+        sujeto: 'Yo',
+        verbo: 'uso',
+        predicado: 'camisa',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/ropaH/Camisa.jpg'
+      }, {
+        sujeto: 'Yo',
+        verbo: 'uso',
+        predicado: 'corbata',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/ropaH/Corbata.jpg'
+      }, {
+        sujeto: 'Yo',
+        verbo: 'uso',
+        predicado: 'pantalón corto',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/ropaH/PantalónCorto.jpg'
+      }, {
+        sujeto: 'Yo',
+        verbo: 'uso',
+        predicado: 'pantalones',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/ropaH/Pantalones.jpg'
+      }, {
+        sujeto: 'Yo',
+        verbo: 'uso',
+        predicado: 'pantalón largo',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/ropaH/PantalónLargo.jpg'
+      }, {
+        sujeto: 'Yo',
+        verbo: 'uso',
+        predicado: 'zapato',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/ropaH/Zapato.jpg'
+      }, {
+        sujeto: 'Yo',
+        verbo: 'uso',
+        predicado: 'zapatos',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/ropaH/Zapatos.jpg'
       }]
     }, {
       nombre: 'Ropa de Mujer',
       data: [{
-        sujeto: '',
-        verbo: '',
-        predicado: '',
-        imagenSujeto: '',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: ''
+        sujeto: 'Ella',
+        verbo: 'usa',
+        predicado: 'abrigo',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Ella.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/ropaM/Abrigo.jpg'
+      }, {
+        sujeto: 'Ella',
+        verbo: 'usa',
+        predicado: 'blusa',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Ella.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/ropaM/Blusa.jpg'
+      }, {
+        sujeto: 'Ella',
+        verbo: 'usa',
+        predicado: 'chaleco',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Ella.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/ropaM/Chaleco.jpg'
+      }, {
+        sujeto: 'Ella',
+        verbo: 'usa',
+        predicado: 'colas',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Ella.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/ropaM/Colas.jpg'
+      }, {
+        sujeto: 'Ella',
+        verbo: 'usa',
+        predicado: 'diadema',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Ella.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/ropaM/Diadema.jpg'
+      }, {
+        sujeto: 'Ella',
+        verbo: 'usa',
+        predicado: 'pijama',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Ella.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/ropaM/Pijama.jpg'
+      }, {
+        sujeto: 'Ella',
+        verbo: 'usa',
+        predicado: 'vestido',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Ella.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/ropaM/Vestido.jpg'
+      }, {
+        sujeto: 'Ella',
+        verbo: 'usa',
+        predicado: 'zapatos',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Ella.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/ropaM/Zapatos.jpg'
       }]
     }, {
-      nombre: 'Ropa Interior',
+      nombre: 'Ropa de Playa',
       data: [{
-        sujeto: '',
-        verbo: '',
-        predicado: '',
-        imagenSujeto: '',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: ''
+        sujeto: 'Ella',
+        verbo: 'usa',
+        predicado: 'pantaloneta',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Ella.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/ropaP/Pantaloneta.jpg'
+      }, {
+        sujeto: 'Ella',
+        verbo: 'usa',
+        predicado: 'vestido de baño',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Ella.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/ropaP/Vestido.jpg'
       }]
     }, {
       nombre: 'Partes de la Casa',
       data: [{
-        sujeto: '',
-        verbo: '',
-        predicado: '',
-        imagenSujeto: '',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: ''
+        sujeto: 'Yo',
+        verbo: 'estoy',
+        predicado: 'en el servicio sanitario',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/casa/Sanitario.jpg'
+      }, {
+        sujeto: 'Yo',
+        verbo: 'veo',
+        predicado: 'la cocina',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/casa/Cocina.jpg'
+      }, {
+        sujeto: 'Yo',
+        verbo: 'como',
+        predicado: 'en el comedor',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/casa/Comedor.jpg'
+      }, {
+        sujeto: 'Yo',
+        verbo: 'estoy',
+        predicado: 'en el corredor',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/casa/Sanitario.jpg'
+      }, {
+        sujeto: 'Yo',
+        verbo: 'duermo',
+        predicado: 'en el cuarto',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/casa/Cuarto.jpg'
+      }, {
+        sujeto: 'Yo',
+        verbo: 'estoy',
+        predicado: 'en el baño',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/casa/Baño.jpg'
       }]
     }, {
       nombre: 'Medios de Transporte',
       data: [{
-        sujeto: '',
-        verbo: '',
-        predicado: '',
-        imagenSujeto: '',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: ''
+        sujeto: 'Usted',
+        verbo: 'va',
+        predicado: 'en carro',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Usted.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/transporte/Carro.jpg'
+      }, {
+        sujeto: 'Ellos',
+        verbo: 'ven',
+        predicado: 'el bus',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Ellos.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/transporte/Bus.jpg'
+      }, {
+        sujeto: 'Nosotros',
+        verbo: 'oímos',
+        predicado: 'el trailer',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Nosotros.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/transporte/Trailer.jpg'
+      }, {
+        sujeto: 'Ellas',
+        verbo: 'usan',
+        predicado: 'el taxi',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Ellas.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/transporte/Taxi.jpg'
+      }, {
+        sujeto: 'Ellos',
+        verbo: 'usan',
+        predicado: 'la motocicleta',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Ellos.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/transporte/Motocicleta.jpg'
+      }, {
+        sujeto: 'Yo',
+        verbo: 'pinto',
+        predicado: 'la carreta',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/transporte/Carreta.jpg'
+      }, {
+        sujeto: 'Ella',
+        verbo: 'va',
+        predicado: 'en tren',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Ella.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/transporte/Tren.jpg'
+      }, {
+        sujeto: 'Él',
+        verbo: 'vuela',
+        predicado: 'en avión',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Él.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/transporte/Avión.jpg'
+      }, {
+        sujeto: 'Nosotros',
+        verbo: 'oímos',
+        predicado: 'el helicóptero',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Nosotros.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/transporte/Helicóptero.jpg'
+      }, {
+        sujeto: 'Ustedes',
+        verbo: 'pasean',
+        predicado: 'en barco',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Ustedes.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/transporte/Barco.jpg'
+      }, {
+        sujeto: 'Nosotros',
+        verbo: 'vemos',
+        predicado: 'el submarino',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Submarino.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/transporte/Submarino.jpg'
+      }, {
+        sujeto: 'Ellos',
+        verbo: 'oyen',
+        predicado: 'el cohete',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Ellos.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/transporte/Cohete.jpg'
       }]
     }, {
       nombre: 'Servidores de la Comunidad',
       data: [{
-        sujeto: '',
-        verbo: '',
-        predicado: '',
-        imagenSujeto: '',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: ''
+        sujeto: 'El doctor',
+        verbo: 'cura',
+        predicado: 'a los enfermos',
+        imagenSujeto: 'assets/img/semanticas/categorias/servidores/Doctor.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/estructura/predicado/Enfermos.jpg'
+      }, {
+        sujeto: 'El dentista',
+        verbo: 'limpia',
+        predicado: 'los dientes',
+        imagenSujeto: 'assets/img/semanticas/categorias/servidores/Dentista.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/estructura/predicado/Dientes.jpg'
+      }, {
+        sujeto: 'El veterinario',
+        verbo: 'cura',
+        predicado: 'animales',
+        imagenSujeto: 'assets/img/semanticas/categorias/servidores/Veterinario.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/estructura/predicado/Animales.jpg'
+      }, {
+        sujeto: 'La maestra',
+        verbo: 'enseña',
+        predicado: 'a los niños',
+        imagenSujeto: 'assets/img/semanticas/categorias/servidores/Maestra.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/estructura/predicado/Niños.jpg'
+      }, {
+        sujeto: 'La secretaria',
+        verbo: 'hace',
+        predicado: 'cartas',
+        imagenSujeto: 'assets/img/semanticas/categorias/servidores/Secretaria.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/estructura/predicado/Cartas.jpg'
+      }, {
+        sujeto: 'El panadero',
+        verbo: 'hace',
+        predicado: 'pan',
+        imagenSujeto: 'assets/img/semanticas/categorias/servidores/Panadero.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/estructura/predicado/Pan.jpg'
+      }, {
+        sujeto: 'El carnicero',
+        verbo: 'vende',
+        predicado: 'carnes',
+        imagenSujeto: 'assets/img/semanticas/categorias/servidores/Carnicero.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/estructura/predicado/Carnes.jpg'
+      }, {
+        sujeto: 'El pulpero',
+        verbo: 'vende',
+        predicado: 'arroz',
+        imagenSujeto: 'assets/img/semanticas/categorias/servidores/Pulpero.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/estructura/predicado/Arroz.jpg'
+      }, {
+        sujeto: 'El chofer',
+        verbo: 'maneja',
+        predicado: 'el bus',
+        imagenSujeto: 'assets/img/semanticas/categorias/servidores/Chofer.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/estructura/predicado/Bus.jpg'
+      }, {
+        sujeto: 'El cartero',
+        verbo: 'entrega',
+        predicado: 'cartas',
+        imagenSujeto: 'assets/img/semanticas/categorias/servidores/Cartero.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/estructura/predicado/Cartas.jpg'
+      }, {
+        sujeto: 'El bombero',
+        verbo: 'apaga',
+        predicado: 'el fuego',
+        imagenSujeto: 'assets/img/semanticas/categorias/servidores/Bombero.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/estructura/predicado/Fuego.jpg'
+      }, {
+        sujeto: 'El policía',
+        verbo: 'cuida',
+        predicado: 'a los niños',
+        imagenSujeto: 'assets/img/semanticas/categorias/servidores/Policía.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/estructura/predicado/Niños.jpg'
+      }, {
+        sujeto: 'El mecánico',
+        verbo: 'arregla',
+        predicado: 'el carro',
+        imagenSujeto: 'assets/img/semanticas/categorias/servidores/Mecánico.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/estructura/predicado/Carro.jpg'
+      }, {
+        sujeto: 'El carpintero',
+        verbo: 'hace',
+        predicado: 'muebles',
+        imagenSujeto: 'assets/img/semanticas/categorias/servidores/Carpintero.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/estructura/predicado/Muebles.jpg'
+      }, {
+        sujeto: 'El pintor',
+        verbo: 'pinta',
+        predicado: 'la casa',
+        imagenSujeto: 'assets/img/semanticas/categorias/servidores/Pintor.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/estructura/predicado/Casa.jpg'
+      }, {
+        sujeto: 'El agricultor',
+        verbo: 'siembra',
+        predicado: 'verduras',
+        imagenSujeto: 'assets/img/semanticas/categorias/servidores/Doctor.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/estructura/predicado/Enfermos.jpg'
       }]
     }, {
       nombre: 'Instrumentos Musicales',
       data: [{
-        sujeto: '',
-        verbo: '',
-        predicado: '',
-        imagenSujeto: '',
-        imagenVerbo: 'assets\img\semanticas\estructura\verbo\Verbo.jpg',
-        imagenPredicado: ''
+        sujeto: 'El tambor',
+        verbo: 'suena',
+        predicado: 'pum pum',
+        imagenSujeto: 'assets/img/semanticas/categorias/instrumentos/Tambor.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/instrumentos/Tambor.jpg'
+      }, {
+        sujeto: 'La trompeta',
+        verbo: 'suena',
+        predicado: 'tu tu tuuu',
+        imagenSujeto: 'assets/img/semanticas/categorias/instrumentos/Trompeta.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/instrumentos/Trompeta.jpg'
+      }, {
+        sujeto: 'La campana',
+        verbo: 'suena',
+        predicado: 'din don',
+        imagenSujeto: 'assets/img/semanticas/categorias/instrumentos/Campana.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/instrumentos/Campana.jpg'
+      }, {
+        sujeto: 'El piano',
+        verbo: 'suena',
+        predicado: 'tilililin',
+        imagenSujeto: 'assets/img/semanticas/categorias/instrumentos/Campana.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/instrumentos/Campana.jpg'
+      }, {
+        sujeto: 'Las maracas',
+        verbo: 'suenan',
+        predicado: 'chk chk',
+        imagenSujeto: 'assets/img/semanticas/categorias/instrumentos/Maracas.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/instrumentos/Maracas.jpg'
+      }, {
+        sujeto: 'El guitarra',
+        verbo: 'suena',
+        predicado: 'chin chin',
+        imagenSujeto: 'assets/img/semanticas/categorias/instrumentos/Guitarra.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/instrumentos/Guitarra.jpg'
+      }, {
+        sujeto: 'La flauta',
+        verbo: 'suena',
+        predicado: 'fi fi fiiii',
+        imagenSujeto: 'assets/img/semanticas/categorias/instrumentos/Flauta.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/instrumentos/Flauta.jpg'
+      }, {
+        sujeto: 'Los platillos',
+        verbo: 'suenan',
+        predicado: 'tilililin',
+        imagenSujeto: 'assets/img/semanticas/categorias/instrumentos/Platillos.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/instrumentos/Platillos.jpg'
       }]
     }];
     /***/
@@ -7951,49 +9324,49 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var VIDEOS = [{
       nombre: 'a',
       video: 'assets/video/fonemas/vidFonA.mp4',
-      imagen: 'assets/img/fonemaA.svg',
+      imagen: 'assets/img/fonemas/phoneme-bar/fonemaA.png',
       mensaje: 'Aaaaaaaa (Sirena de ambulancia)',
       duracion: 4,
       reproduciendo: false
     }, {
       nombre: 'b',
       video: 'assets/video/fonemas/vidFonB.mp4',
-      imagen: 'assets/img/fonemaB.svg',
+      imagen: 'assets/img/fonemas/phoneme-bar/fonemaB.png',
       mensaje: 'Beeeee Beeeee (Oveja)',
       duracion: 4,
       reproduciendo: false
     }, {
       nombre: 'c',
       video: 'assets/video/fonemas/vidFonC.mp4',
-      imagen: 'assets/img/fonemaC.svg',
+      imagen: 'assets/img/fonemas/phoneme-bar/fonemaC.png',
       mensaje: 'Cuac Cuac Cuac (Pato)',
       duracion: 4,
       reproduciendo: false
     }, {
       nombre: 'ch',
       video: 'assets/video/fonemas/vidFonCh.mp4',
-      imagen: 'assets/img/fonemaCh.svg',
+      imagen: 'assets/img/fonemas/phoneme-bar/fonemaCh.png',
       mensaje: 'Chuuuu Chuuu Chuuu (Trencito)',
       duracion: 4,
       reproduciendo: false
     }, {
       nombre: 'd',
       video: 'assets/video/fonemas/vidFonD.mp4',
-      imagen: 'assets/img/fonemaD.svg',
+      imagen: 'assets/img/fonemas/phoneme-bar/fonemaD.png',
       mensaje: 'Dddddddddd (Abejas cerca de panal)',
       duracion: 4,
       reproduciendo: false
     }, {
       nombre: 'e',
       video: 'assets/video/fonemas/vidFonE.mp4',
-      imagen: 'assets/img/fonemaE.svg',
+      imagen: 'assets/img/fonemas/phoneme-bar/fonemaE.png',
       mensaje: 'Ehhh Ehhh Ehhh (Alegría)',
       duracion: 4,
       reproduciendo: false
     }, {
       nombre: 'f',
       video: 'assets/video/fonemas/vidFonF.mp4',
-      imagen: 'assets/img/fonemaF.svg',
+      imagen: 'assets/img/fonemas/phoneme-bar/fonemaF.png',
       mensaje: 'Fiiii Fiiii Fiiii (Soplando flauta)',
       duracion: 4,
       reproduciendo: false
@@ -8007,14 +9380,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }, {
       nombre: 'i',
       video: 'assets/video/fonemas/vidFonI.mp4',
-      imagen: 'assets/img/fonemaI.svg',
+      imagen: 'assets/img/fonemas/phoneme-bar/fonemaI.png',
       mensaje: 'Iiiii Iiiii Iiiii (Ratoncito)',
       duracion: 4,
       reproduciendo: false
     }, {
       nombre: 'j',
       video: 'assets/video/fonemas/vidFonJ.mp4',
-      imagen: 'assets/img/fonemaJ.svg',
+      imagen: 'assets/img/fonemas/phoneme-bar/fonemaJ.png',
       mensaje: 'Jajajajajajaja (risas)',
       duracion: 4,
       reproduciendo: false
@@ -8042,21 +9415,21 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }, {
       nombre: 'm',
       video: 'assets/video/fonemas/vidFonM.mp4',
-      imagen: 'assets/img/fonemaM.svg',
+      imagen: 'assets/img/fonemas/phoneme-bar/fonemaM.png',
       mensaje: 'Muuu Muuu Muuu (Vaca)',
       duracion: 4,
       reproduciendo: false
     }, {
       nombre: 'n',
-      video: 'assets/video/fonemas/vidFonNn.mp4',
-      imagen: 'assets/img/fonemaNn.svg',
+      video: 'assets/video/fonemas/vidFonN.mp4',
+      imagen: 'assets/img/fonemas/phoneme-bar/fonemaN.png',
       mensaje: 'Ni No Ni No Ni No (Minions)',
       duracion: 4,
       reproduciendo: false
     }, {
       nombre: 'ñ',
       video: 'assets/video/fonemas/vidFonÑ.mp4',
-      imagen: 'assets/img/fonemaÑ.svg',
+      imagen: 'assets/img/fonemas/phoneme-bar/fonemaÑ.png',
       mensaje: 'Ñooo Ñooo Ñooo (Chanchito)',
       duracion: 4,
       reproduciendo: false
@@ -8068,15 +9441,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       duracion: 4,
       reproduciendo: false
     }, {
-      nombre: 'Pp',
+      nombre: 'p',
       video: 'assets/video/fonemas/vidFonP.mp4',
       imagen: 'assets/img/fonemaP.svg',
-      mensaje: '',
+      mensaje: 'Pum Pum Pum (Tambor)',
       duracion: 4,
       reproduciendo: false
     }, {
       nombre: 'r',
-      video: 'assets/video/fonemas/vidFonRr.mp4',
+      video: 'assets/video/fonemas/vidFonR.mp4',
       imagen: 'assets/img/fonemaRr.svg',
       mensaje: 'Ra Ra Ra Ra Ra (Cantando)',
       duracion: 4,
@@ -8084,21 +9457,21 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }, {
       nombre: 'rr',
       video: 'assets/video/fonemas/vidFonRR.mp4',
-      imagen: 'assets/img/fonemaRR.svg',
+      imagen: 'assets/img/fonemas/phoneme-bar/fonemaRR.png',
       mensaje: 'Rrrrrrrrrrrr (Moto)',
       duracion: 4,
       reproduciendo: false
     }, {
-      nombre: 'Ss',
+      nombre: 's',
       video: 'assets/video/fonemas/vidFonS.mp4',
-      imagen: 'assets/img/fonemaS.svg',
+      imagen: 'assets/img/fonemas/phoneme-bar/fonemaSs.png',
       mensaje: 'Sssssssss (Serpiente)',
       duracion: 4,
       reproduciendo: false
     }, {
       nombre: 't',
       video: 'assets/video/fonemas/vidFonT.mp4',
-      imagen: 'assets/img/fonemaT.svg',
+      imagen: 'assets/img/fonemas/phoneme-bar/fonemaT.png',
       mensaje: 'Tilín Tilín Tilín (Campana)',
       duracion: 4,
       reproduciendo: false
@@ -8112,14 +9485,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }, {
       nombre: 'x',
       video: 'assets/video/fonemas/vidFonX.mp4',
-      imagen: 'assets/img/fonemaX.svg',
+      imagen: 'assets/img/fonemas/phoneme-bar/fonemaX.png',
       mensaje: 'Xxxx Xxxx Xxxx (spray)',
       duracion: 4,
       reproduciendo: false
     }, {
-      nombre: 'y',
+      nombre: 'LLll Yy',
       video: 'assets/video/fonemas/vidFonY.mp4',
-      imagen: 'assets/img/fonemaY.svg',
+      imagen: 'assets/img/fonemas/phoneme-bar/fonemaY.png',
       mensaje: 'Yyyyyyyy (Avión volando)',
       duracion: 4,
       reproduciendo: false

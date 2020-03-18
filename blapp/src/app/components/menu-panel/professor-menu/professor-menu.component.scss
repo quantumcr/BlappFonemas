@@ -30,32 +30,47 @@
      }  
      .opciones{
         top: 140px;
+        margin-left: 91px;
+        margin-right: 91px;
+        text-align: center;
+
     }  
     .opcionFonema{
+     
         width: 150px;
         height: 150px;
         background: url('../../../../assets/svg/menu-panel/fonemas.svg');
         background-size: 150px 150px;
+        background-position: center;
+        text-align: center;
+        left: 40px;
+        right: auto;
     }  
     .opcionSemantica{
-
-        left: 50px;
         width: 150px;
         height: 150px;
         background: url('../../../../assets/svg/menu-panel/semanticas.svg');
         background-size: 150px 150px;
+        background-position: center;
+        text-align: center;
+        left: auto;
+        right: 47px;
     } 
     .opcionEstudiantes{
-         //left: 40px;
          width: 150px;
          height: 150px;
         background: url('../../../../assets/svg/menu-panel/estudiantes.svg');
         background-size: 150px 150px;
+        background-position: center;
+        text-align: center;
+        left: 40px;
+        right: auto;
     }   
     .textoOpcion{
         width: 365px;
         height: 45px;
-        //left: 317px;
+        left: auto;
+        right: auto;
         top: 621px;
         
         font-family: Poppins;
@@ -63,12 +78,17 @@
         font-weight: bold;
         font-size: 20px;
         line-height: 45px;
-        text-align: center;
+
         
         /* identical to box height */
         
         color: #5F659C;    
     } 
+    .rowTexto{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
     .btnLogout{
         position: absolute;
         left: 142px;

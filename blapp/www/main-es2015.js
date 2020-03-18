@@ -703,6 +703,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _services_auth_guard_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./services/auth-guard.service */ "./src/app/services/auth-guard.service.ts");
+
 
 
 
@@ -714,34 +716,42 @@ const routes = [
     },
     {
         path: 'menu',
+        canActivate: [_services_auth_guard_service__WEBPACK_IMPORTED_MODULE_3__["AuthGuardService"]],
         loadChildren: () => Promise.all(/*! import() | pages-menu-menu-module */[__webpack_require__.e("default~pages-categoria-categoria-module~pages-consonantes-consonantes-module~pages-docentes-docente~625ffebc"), __webpack_require__.e("pages-menu-menu-module")]).then(__webpack_require__.bind(null, /*! ./pages/menu/menu.module */ "./src/app/pages/menu/menu.module.ts")).then(m => m.MenuPageModule)
     },
     {
         path: 'docentes',
+        canActivate: [_services_auth_guard_service__WEBPACK_IMPORTED_MODULE_3__["AuthGuardService"]],
         loadChildren: () => Promise.all(/*! import() | pages-docentes-docentes-module */[__webpack_require__.e("default~pages-categoria-categoria-module~pages-consonantes-consonantes-module~pages-docentes-docente~625ffebc"), __webpack_require__.e("pages-docentes-docentes-module")]).then(__webpack_require__.bind(null, /*! ./pages/docentes/docentes.module */ "./src/app/pages/docentes/docentes.module.ts")).then(m => m.DocentesPageModule)
     },
     {
         path: 'fonemas',
+        canActivate: [_services_auth_guard_service__WEBPACK_IMPORTED_MODULE_3__["AuthGuardService"]],
         loadChildren: () => Promise.all(/*! import() | pages-fonemas-fonemas-module */[__webpack_require__.e("default~pages-categoria-categoria-module~pages-consonantes-consonantes-module~pages-docentes-docente~625ffebc"), __webpack_require__.e("pages-fonemas-fonemas-module")]).then(__webpack_require__.bind(null, /*! ./pages/fonemas/fonemas.module */ "./src/app/pages/fonemas/fonemas.module.ts")).then(m => m.FonemasPageModule)
     },
     {
         path: 'semanticas',
+        canActivate: [_services_auth_guard_service__WEBPACK_IMPORTED_MODULE_3__["AuthGuardService"]],
         loadChildren: () => Promise.all(/*! import() | pages-semanticas-semanticas-module */[__webpack_require__.e("default~pages-categoria-categoria-module~pages-consonantes-consonantes-module~pages-docentes-docente~625ffebc"), __webpack_require__.e("pages-semanticas-semanticas-module")]).then(__webpack_require__.bind(null, /*! ./pages/semanticas/semanticas.module */ "./src/app/pages/semanticas/semanticas.module.ts")).then(m => m.SemanticasPageModule)
     },
     {
         path: 'estudiantes',
+        canActivate: [_services_auth_guard_service__WEBPACK_IMPORTED_MODULE_3__["AuthGuardService"]],
         loadChildren: () => Promise.all(/*! import() | pages-estudiantes-estudiantes-module */[__webpack_require__.e("default~pages-categoria-categoria-module~pages-consonantes-consonantes-module~pages-docentes-docente~625ffebc"), __webpack_require__.e("pages-estudiantes-estudiantes-module")]).then(__webpack_require__.bind(null, /*! ./pages/estudiantes/estudiantes.module */ "./src/app/pages/estudiantes/estudiantes.module.ts")).then(m => m.EstudiantesPageModule)
     },
     {
         path: 'fonema/:value',
+        canActivate: [_services_auth_guard_service__WEBPACK_IMPORTED_MODULE_3__["AuthGuardService"]],
         loadChildren: () => Promise.all(/*! import() | pages-fonema-fonema-module */[__webpack_require__.e("default~pages-categoria-categoria-module~pages-consonantes-consonantes-module~pages-docentes-docente~625ffebc"), __webpack_require__.e("pages-fonema-fonema-module")]).then(__webpack_require__.bind(null, /*! ./pages/fonema/fonema.module */ "./src/app/pages/fonema/fonema.module.ts")).then(m => m.FonemaPageModule)
     },
     {
         path: 'categoria',
+        canActivate: [_services_auth_guard_service__WEBPACK_IMPORTED_MODULE_3__["AuthGuardService"]],
         loadChildren: () => Promise.all(/*! import() | pages-categoria-categoria-module */[__webpack_require__.e("default~pages-categoria-categoria-module~pages-consonantes-consonantes-module~pages-docentes-docente~625ffebc"), __webpack_require__.e("pages-categoria-categoria-module")]).then(__webpack_require__.bind(null, /*! ./pages/categoria/categoria.module */ "./src/app/pages/categoria/categoria.module.ts")).then(m => m.CategoriaPageModule)
     },
     {
         path: 'consonantes/:value',
+        canActivate: [_services_auth_guard_service__WEBPACK_IMPORTED_MODULE_3__["AuthGuardService"]],
         loadChildren: () => Promise.all(/*! import() | pages-consonantes-consonantes-module */[__webpack_require__.e("default~pages-categoria-categoria-module~pages-consonantes-consonantes-module~pages-docentes-docente~625ffebc"), __webpack_require__.e("pages-consonantes-consonantes-module")]).then(__webpack_require__.bind(null, /*! ./pages/consonantes/consonantes.module */ "./src/app/pages/consonantes/consonantes.module.ts")).then(m => m.ConsonantesPageModule)
     },
 ];
@@ -893,6 +903,52 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"]]
     })
 ], AppModule);
+
+
+
+/***/ }),
+
+/***/ "./src/app/services/auth-guard.service.ts":
+/*!************************************************!*\
+  !*** ./src/app/services/auth-guard.service.ts ***!
+  \************************************************/
+/*! exports provided: AuthGuardService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AuthGuardService", function() { return AuthGuardService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _authentication_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./authentication.service */ "./src/app/services/authentication.service.ts");
+
+
+
+
+let AuthGuardService = class AuthGuardService {
+    constructor(auth, router) {
+        this.auth = auth;
+        this.router = router;
+    }
+    canActivate() {
+        if (!this.auth.isLoggedIn()) {
+            this.router.navigateByUrl('/inicio');
+            return false;
+        }
+        return true;
+    }
+};
+AuthGuardService.ctorParameters = () => [
+    { type: _authentication_service__WEBPACK_IMPORTED_MODULE_3__["AuthenticationService"] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] }
+];
+AuthGuardService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: 'root'
+    }),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_authentication_service__WEBPACK_IMPORTED_MODULE_3__["AuthenticationService"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]])
+], AuthGuardService);
 
 
 

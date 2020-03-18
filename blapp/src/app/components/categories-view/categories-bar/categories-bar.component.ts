@@ -1,6 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { CategoriaI } from '../../../../data/categorias/data.categorias';
 
+
 @Component({
   selector: 'app-categories-bar',
   templateUrl: './categories-bar.component.html',

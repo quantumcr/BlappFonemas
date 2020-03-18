@@ -1,14 +1,14 @@
 <div class="principal">
     <ion-grid>
         <ion-row class="rowSilaba">
-            <ion-col>
-                <ion-segment-button fill="round" class="silaba">Ma</ion-segment-button>
+            <ion-col cdkDrop>
+                <ion-segment-button fill="round" class="silaba">{{silaba1}}</ion-segment-button>
             </ion-col>
             <ion-col>
-                <ion-segment-button fill="round" class="silaba">Me</ion-segment-button>
+                <ion-segment-button fill="round" class="silaba">{{silaba2}}</ion-segment-button>
             </ion-col>
         </ion-row>
-        <ion-row class="row">
+        <ion-row class="row" cdkDropList>
             <ion-col >
                 <div style="position: relative;" cdkDrag>
                     <div style="position: absolute; left: 0px; top: 0px;">
