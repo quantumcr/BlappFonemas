@@ -46,7 +46,6 @@ export const CATEGORIAS = [
         nombre: 'Juguetes',
         imagen: 'assets\img\semanticas\categories-bar\juguetes.png',
         subcategoria: [
-            {nombre: ''}
         ]
     },
     {
