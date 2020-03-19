@@ -1,3 +1,22 @@
+export interface PhonemeVocalI {
+    vocal: string;
+    data: [{
+        nombre: string;
+        audio: string;
+        imagen: string;
+        duracion: number;
+        reproduciendo: Boolean;
+    }]
+}
+
+export interface OneDataPhonemeVocalI {
+    nombre: string;
+    audio: string;
+    imagen: string;
+    duracion: number;
+    reproduciendo: Boolean;
+}
+
 export const VOCALES = [
     // Vocal A
     {

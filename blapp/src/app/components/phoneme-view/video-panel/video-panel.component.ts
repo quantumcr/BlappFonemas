@@ -7,8 +7,13 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class VideoPanelComponent implements OnInit {
   @Input() video: string ;
-  constructor() { }
+  
+  constructor(
 
-  ngOnInit() {}
+  ) { }
+
+  ngOnInit() {
+    
+  }
 
 }

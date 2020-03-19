@@ -3,18 +3,18 @@
     <ion-row class="audioFonema">   
       <div>
         <ion-avatar class="imagen">
-          <ion-img src={{imagen}}></ion-img>
+          <ion-img id="imagen" src={{phonemeOneData.imagen}} class="imagen"></ion-img>
         </ion-avatar>
 
         <div style="position: absolute; left: 227px; top: 346px;">
-          <ion-segment-button value="audio" class="btnPlay" (click)="playAudio($event)">
+          <ion-segment-button class="btnPlay" (click)="audio.play()">
             <ion-icon src="assets/icon/play.svg"></ion-icon>
           </ion-segment-button>
         </div>
       </div>    
     </ion-row>
     <ion-row>
-      <ion-label class="palabra">{{palabra}}</ion-label>
+      <ion-label class="palabra">{{phonemeOneData.nombre}}</ion-label>
     </ion-row>
   </ion-grid>
 </div>

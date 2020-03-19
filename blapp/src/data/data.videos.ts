@@ -132,7 +132,7 @@ export const VIDEOS = [
     {
         nombre: 'o',
         video: 'assets/video/fonemas/vidFonO.mp4',
-        imagen: 'assets/img/fonemaO.svg',
+        imagen: 'assets/img/fonemas/phoneme-bar/fonemaO.png',
         mensaje: 'Ohhh Ohhh Ohhh (Asombro)',
         duracion: 4,
         reproduciendo: false
@@ -140,7 +140,7 @@ export const VIDEOS = [
     {
         nombre: 'p',
         video: 'assets/video/fonemas/vidFonP.mp4',
-        imagen: 'assets/img/fonemaP.svg',
+        imagen: '',
         mensaje: 'Pum Pum Pum (Tambor)',
         duracion: 4,
         reproduciendo: false

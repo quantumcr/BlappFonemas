@@ -34,7 +34,7 @@ const routes: Routes = [
     loadChildren: () => import('./pages/estudiantes/estudiantes.module').then( m => m.EstudiantesPageModule)
   },
   {
-    path: 'fonema/:value',
+    path: 'fonema',
     canActivate: [AuthGuardService],
     loadChildren: () => import('./pages/fonema/fonema.module').then( m => m.FonemaPageModule)
   },
@@ -44,7 +44,7 @@ const routes: Routes = [
     loadChildren: () => import('./pages/categoria/categoria.module').then( m => m.CategoriaPageModule)
   },
   {
-    path: 'consonantes/:value',
+    path: 'consonantes',
     canActivate: [AuthGuardService],
     loadChildren: () => import('./pages/consonantes/consonantes.module').then( m => m.ConsonantesPageModule)
   },
