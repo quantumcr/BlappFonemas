@@ -11,7 +11,7 @@
     <div class="buttons">
       <ion-row *ngFor="let subcategory of category.subcategoria">
         <ion-col>
-          <ion-segment-button value="{{subcategory.nombre}}" onclick="" class="button">{{subcategory.nombre}}</ion-segment-button>
+          <ion-segment-button value="{{subcategory.nombre}}" (click)="subcategorySelected(subcategory.nombre)" class="button">{{subcategory.nombre}}</ion-segment-button>
         </ion-col>
       </ion-row>
     </div>
