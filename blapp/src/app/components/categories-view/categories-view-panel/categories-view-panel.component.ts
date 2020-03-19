@@ -26,10 +26,10 @@ export class CategoriesViewPanelComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    // console.log(this.subcategoryOneData.imagenVerbo);
-    // document.getElementById("sujeto").setAttribute('src', this.subcategoryOneData.imagenSujeto);
-    // document.getElementById("verbo").setAttribute('src', this.subcategoryOneData.imagenVerbo);
-    // document.getElementById("predicado").setAttribute('src', this.subcategoryOneData.imagenPredicado);
+    console.log(this.subcategoryOneData.imagenVerbo);
+    document.getElementById("sujeto").setAttribute('src', this.subcategoryOneData.imagenSujeto);
+    document.getElementById("verbo").setAttribute('src', this.subcategoryOneData.imagenVerbo);
+    document.getElementById("predicado").setAttribute('src', this.subcategoryOneData.imagenPredicado);
     /*
     if (this.category.subcategoria != []) {
       
@@ -93,10 +93,10 @@ export class CategoriesViewPanelComponent implements OnInit {
   ngOnChanges(): void {
     //Called before any other lifecycle hook. Use it to inject dependencies, but avoid any serious work here.
     //Add '${implements OnChanges}' to the class.
-    // console.log(this.subcategoryOneData);
-    // document.getElementById("sujeto").setAttribute('src', this.subcategoryOneData.imagenSujeto);
-    // document.getElementById("verbo").setAttribute('src', this.subcategoryOneData.imagenVerbo);
-    // document.getElementById("predicado").setAttribute('src', this.subcategoryOneData.imagenPredicado);
+    console.log(this.subcategoryOneData);
+    document.getElementById("sujeto").setAttribute('src', this.subcategoryOneData.imagenSujeto);
+    document.getElementById("verbo").setAttribute('src', this.subcategoryOneData.imagenVerbo);
+    document.getElementById("predicado").setAttribute('src', this.subcategoryOneData.imagenPredicado);
   }
 
   onload(){
