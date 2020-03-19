@@ -21,7 +21,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"principal\">\r\n  <ion-grid>\r\n    <ion-row class=\"component\">\r\n      <ion-col>\r\n        <app-menu-panel [tipo]=\"tipoUsuario\"></app-menu-panel>\r\n      </ion-col>\r\n    </ion-row>\r\n  </ion-grid>\r\n</div>\r\n";
+    __webpack_exports__["default"] = "<div class=\"principal\">\r\n  <div>\r\n    <ion-grid>\r\n      <ion-row class=\"component\">\r\n        <ion-col>\r\n          <app-menu-panel [tipo]=\"tipoUsuario\"></app-menu-panel>\r\n        </ion-col>\r\n      </ion-row>\r\n    </ion-grid>\r\n    <div style=\"position: absolute; left: 1055px; top: 0px;\"> \r\n      <ion-img src=\"assets/svg/shapes/menuCircle.svg\"></ion-img>\r\n    </div>\r\n    <div style=\"position: absolute; left: 201; top: 589px;\"> \r\n      <ion-img src=\"assets/svg/shapes/menuForm.svg\"></ion-img>\r\n    </div>\r\n  </div>\r\n</div>\r\n";
     /***/
   },
 
@@ -221,14 +221,21 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
     /*! @angular/router */
     "./node_modules/@angular/router/fesm2015/router.js");
+    /* harmony import */
+
+
+    var _services_authentication_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! ../../services/authentication.service */
+    "./src/app/services/authentication.service.ts");
 
     var MenuPage =
     /*#__PURE__*/
     function () {
-      function MenuPage(activatedRoute) {
+      function MenuPage(activatedRoute, authenticationService) {
         _classCallCheck(this, MenuPage);
 
         this.activatedRoute = activatedRoute;
+        this.authenticationService = authenticationService;
       }
 
       _createClass(MenuPage, [{
@@ -239,6 +246,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           this.activatedRoute.queryParams.subscribe(function (params) {
             _this.tipoUsuario = JSON.parse(params['tipo']);
           });
+
+          if (this.authenticationService.getUserDetails().tipo.toUpperCase() == "ESTUDIANTE") {
+            this.tipoUsuario = false;
+          } else if (this.authenticationService.getUserDetails().tipo.toUpperCase() == "DOCENTE") {
+            this.tipoUsuario = true;
+          }
         }
       }]);
 
@@ -248,6 +261,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     MenuPage.ctorParameters = function () {
       return [{
         type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"]
+      }, {
+        type: _services_authentication_service__WEBPACK_IMPORTED_MODULE_3__["AuthenticationService"]
       }];
     };
 
@@ -259,7 +274,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
       /*! ./menu.page.scss */
       "./src/app/pages/menu/menu.page.scss")).default]
-    }), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"]])], MenuPage);
+    }), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"], _services_authentication_service__WEBPACK_IMPORTED_MODULE_3__["AuthenticationService"]])], MenuPage);
     /***/
   }
 }]);

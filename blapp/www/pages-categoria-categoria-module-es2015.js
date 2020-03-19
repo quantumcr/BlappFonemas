@@ -9,7 +9,7 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"principal\">\r\n  <ion-grid>\r\n    <ion-row class=\"component\">\r\n      <ion-col>\r\n        <app-categories-view [category]=\"categoria\"></app-categories-view>\r\n      </ion-col>\r\n    </ion-row>\r\n  </ion-grid>\r\n</div>\r\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"principal\">\r\n  <div>\r\n    <ion-grid>\r\n      <ion-row class=\"component\">\r\n        <ion-col>\r\n          <app-categories-view [category]=\"categoria\"></app-categories-view>\r\n        </ion-col>\r\n      </ion-row>\r\n    </ion-grid>\r\n\r\n    <div style=\"position: absolute; left: 1180px; top: 0px;\">\r\n      <ion-img src=\"assets/svg/shapes/categoriesCircle.svg\"></ion-img>\r\n    </div>\r\n  </div>\r\n\r\n</div>\r\n");
 
 /***/ }),
 

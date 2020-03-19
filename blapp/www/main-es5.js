@@ -883,7 +883,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         });
       }
     }, {
-      path: 'fonema/:value',
+      path: 'fonema',
       canActivate: [_services_auth_guard_service__WEBPACK_IMPORTED_MODULE_3__["AuthGuardService"]],
       loadChildren: function loadChildren() {
         return Promise.all(
@@ -907,7 +907,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         });
       }
     }, {
-      path: 'consonantes/:value',
+      path: 'consonantes',
       canActivate: [_services_auth_guard_service__WEBPACK_IMPORTED_MODULE_3__["AuthGuardService"]],
       loadChildren: function loadChildren() {
         return Promise.all(

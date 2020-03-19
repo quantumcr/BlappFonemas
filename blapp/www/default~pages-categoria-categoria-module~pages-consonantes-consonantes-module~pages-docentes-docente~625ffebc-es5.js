@@ -41,7 +41,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"principal\">\r\n  <ion-grid >\r\n    <ion-row>\r\n      <ion-col>\r\n        <ion-segment-button value='back' class=\"btnBack\" (click)='back($event)'>\r\n          <ion-icon class=\"backIcon\"></ion-icon>\r\n        </ion-segment-button>\r\n      </ion-col>\r\n      <ion-col >\r\n        <ion-segment-button value=\"home\" class=\"btnHome\" (click)=\"goToHome($event)\">\r\n          <ion-icon class=\"homeIcon\"></ion-icon>\r\n        </ion-segment-button>\r\n      </ion-col>\r\n      \r\n      <ion-col >\r\n        <ion-segment-button value='forward' class=\"btnForward\" (click)=\"forward($event)\">\r\n          <ion-icon class=\"forwardIcon\"></ion-icon>\r\n        </ion-segment-button>\r\n      </ion-col>      \r\n    </ion-row>\r\n  </ion-grid>\r\n</div>\r\n";
+    __webpack_exports__["default"] = "<div class=\"principal\">\r\n  <ion-grid >\r\n    <ion-row>\r\n      <ion-col>\r\n        <ion-segment-button class=\"btnBack\" (click)='back($event)'>\r\n          <ion-icon class=\"backIcon\"></ion-icon>\r\n        </ion-segment-button>\r\n      </ion-col>\r\n      <ion-col >\r\n        <ion-segment-button class=\"btnHome\" (click)=\"goToHome($event)\">\r\n          <ion-icon class=\"homeIcon\"></ion-icon>\r\n        </ion-segment-button>\r\n      </ion-col>\r\n      \r\n      <ion-col >\r\n        <ion-segment-button class=\"btnForward\" (click)=\"forward($event)\">\r\n          <ion-icon class=\"forwardIcon\"></ion-icon>\r\n        </ion-segment-button>\r\n      </ion-col>      \r\n    </ion-row>\r\n  </ion-grid>\r\n</div>\r\n";
     /***/
   },
 
@@ -201,7 +201,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"principal\">\r\n  <ion-grid>\r\n    <ion-row>\r\n      <ion-label class=\"titulo\">FONEMA</ion-label>\r\n    </ion-row>\r\n    <ion-row>\r\n      <ion-label class=\"fonema\">/ {{fonema}} /</ion-label>\r\n    </ion-row>\r\n    <ion-row class=\"videoFonema\">\r\n      <div>\r\n        <div >\r\n          <ion-img src={{imagen}} class=\"imagen\"></ion-img>\r\n        </div>\r\n        <div style=\"position: absolute; left: 37px; top: 421px;\">\r\n          <ion-segment-button *ngIf=\"visibleVideo\"  value=\"video\" class=\"btnPlay\" (click)=\"openPanel($event)\">\r\n            <ion-icon  src=\"assets/icon/play.svg\"></ion-icon>\r\n          </ion-segment-button>\r\n          <ion-segment-button *ngIf=\"visibleAudio\"  value=\"phoneme\" class=\"btnPlay\" (click)=\"openPanel($event)\">\r\n            <ion-icon src=\"assets/icon/audio.svg\"></ion-icon>\r\n          </ion-segment-button>          \r\n        </div>\r\n      </div>\r\n    </ion-row>\r\n    <ion-row>\r\n      <ion-label class=\"mensaje\">{{mensaje}}</ion-label>\r\n    </ion-row>\r\n  </ion-grid>\r\n</div>";
+    __webpack_exports__["default"] = "<div class=\"principal\">\r\n  <ion-grid>\r\n    <ion-row>\r\n      <ion-label class=\"titulo\">FONEMA</ion-label>\r\n    </ion-row>\r\n    <ion-row>\r\n      <ion-label class=\"fonema\">/ {{fonema}} /</ion-label>\r\n    </ion-row>\r\n    <ion-row class=\"videoFonema\">\r\n      <div>\r\n        <div >\r\n          <ion-img src={{imagen}} class=\"imagen\"></ion-img>\r\n        </div>\r\n        <div style=\"position: absolute; left: 37px; top: 421px;\">\r\n          <ion-segment-button *ngIf=\"visibleVideo\" value=\"video\" class=\"btnPlay\" (click)=\"openPanel($event)\">\r\n            <ion-icon  src=\"assets/icon/play.svg\"></ion-icon>\r\n          </ion-segment-button>\r\n          <ion-segment-button *ngIf=\"visibleAudio\" value=\"phoneme\" class=\"btnPlay\" (click)=\"openPanel($event)\">\r\n            <ion-icon src=\"assets/icon/audio.svg\"></ion-icon>\r\n          </ion-segment-button>          \r\n        </div>\r\n      </div>\r\n    </ion-row>\r\n    <ion-row>\r\n      <ion-label class=\"mensaje\">{{mensaje}}</ion-label>\r\n    </ion-row>\r\n  </ion-grid>\r\n</div>";
     /***/
   },
 
@@ -241,7 +241,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"principal\">\r\n  <ion-grid>\r\n    <ion-row class=\"rowSilaba\">\r\n        <ion-col>\r\n          <ion-segment-button value='0' fill=\"round\" class=\"silaba\" (click)=\"playAudioS($event)\">{{silaba1}}</ion-segment-button>\r\n        </ion-col>\r\n        <ion-col>\r\n          <ion-segment-button value= '1' fill=\"round\"  class=\"silaba\" (click)=\"playAudioS($event)\">{{silaba2}}</ion-segment-button>\r\n        </ion-col>\r\n        <ion-col>\r\n          <ion-segment-button value='2' fill=\"round\"  class=\"silaba\" (click)=\"playAudioS($event)\">{{silaba3}}</ion-segment-button>\r\n        </ion-col>\r\n        <ion-col>\r\n          <ion-segment-button value='3' fill=\"round\"  class=\"silaba\" (click)=\"playAudioS($event)\">{{silaba4}}</ion-segment-button>\r\n        </ion-col>\r\n        <ion-col>\r\n          <ion-segment-button value='4' fill=\"round\"  class=\"silaba\" (click)=\"playAudioS($event)\">{{silaba5}}</ion-segment-button>\r\n        </ion-col> \r\n    </ion-row>\r\n    <ion-row class=\"audioFonema\">\r\n      <div>\r\n        <ion-avatar class=\"imagen\">\r\n          <ion-img src={{imagen}}></ion-img>\r\n        </ion-avatar>\r\n\r\n        <div style=\"position: absolute; left: 227px; top: 406px;\">\r\n          <ion-segment-button value=\"audio\" class=\"btnPlay\" (click)=\"playAudio($event)\">\r\n            <ion-icon src=\"assets/icon/play.svg\"></ion-icon>\r\n          </ion-segment-button>\r\n        </div>\r\n      </div>    \r\n    </ion-row>\r\n    <ion-row>\r\n      <ion-label class=\"palabra\">{{palabra}}</ion-label>\r\n    </ion-row>\r\n  </ion-grid>\r\n</div>\r\n";
+    __webpack_exports__["default"] = "<div class=\"principal\">\r\n  <ion-grid>\r\n    <ion-row class=\"rowSilaba\">\r\n        <ion-col>\r\n          <ion-segment-button fill=\"round\" class=\"silaba\" (click)=\"playAudioS(0)\">{{dataSPhonemeConsonant[0].nombre}}</ion-segment-button>\r\n        </ion-col>\r\n        <ion-col>\r\n          <ion-segment-button fill=\"round\"  class=\"silaba\" (click)=\"playAudioS(1)\">{{dataSPhonemeConsonant[1].nombre}}</ion-segment-button>\r\n        </ion-col>\r\n        <ion-col>\r\n          <ion-segment-button fill=\"round\"  class=\"silaba\" (click)=\"playAudioS(2)\">{{dataSPhonemeConsonant[2].nombre}}</ion-segment-button>\r\n        </ion-col>\r\n        <ion-col>\r\n          <ion-segment-button fill=\"round\"  class=\"silaba\" (click)=\"playAudioS(3)\">{{dataSPhonemeConsonant[3].nombre}}</ion-segment-button>\r\n        </ion-col>\r\n        <ion-col>\r\n          <ion-segment-button fill=\"round\"  class=\"silaba\" (click)=\"playAudioS(4)\">{{dataSPhonemeConsonant[4].nombre}}</ion-segment-button>\r\n        </ion-col> \r\n    </ion-row>\r\n    <ion-row class=\"audioFonema\">\r\n      <div>\r\n        <ion-avatar class=\"imagen\">\r\n          <ion-img src={{oneDataPhonemeConsonant.imagen}}  class=\"imagen\"></ion-img>\r\n        </ion-avatar>\r\n\r\n        <div style=\"position: absolute; left: 227px; top: 346px;\">\r\n          <ion-segment-button class=\"btnPlay\" (click)=\"playRecord()\">\r\n            <ion-icon src=\"assets/icon/play.svg\"></ion-icon>\r\n          </ion-segment-button>\r\n        </div>\r\n      </div>    \r\n    </ion-row>\r\n    <ion-row>\r\n      <ion-label class=\"palabra\">{{oneDataPhonemeConsonant.nombre}}</ion-label>\r\n    </ion-row>\r\n  </ion-grid>\r\n</div>\r\n";
     /***/
   },
 
@@ -281,7 +281,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"principal\">\r\n  <ion-grid>\r\n    <ion-row>\r\n      <ion-col class=\"bar\">\r\n        <app-consonant-bar [fonema]=\"valueFonemaView\" [imagen]=\"videoData.imagen\" [mensaje]=\"videoData.mensaje\"  (barEvent)=\"selectPanel($event)\" ></app-consonant-bar>\r\n      </ion-col>\r\n      <ion-col class=\"panel\">\r\n        <app-consonant-phoneme-panel [fonema]=\"valueFonemaView\" *ngIf=\"visiblePhoneme\" [comando]=\"comandoFonema\"></app-consonant-phoneme-panel>\r\n        <app-consonant-phoneme-video-panel [video]=\"videoData.video\" *ngIf=\"visibleVideo\"></app-consonant-phoneme-video-panel>\r\n      </ion-col>\r\n    </ion-row>\r\n    <ion-row class=\"navigation\">\r\n      <ion-col>\r\n        <app-navigation></app-navigation>\r\n      </ion-col>\r\n    </ion-row>\r\n  </ion-grid>\r\n</div>\r\n";
+    __webpack_exports__["default"] = "<div class=\"principal\">\r\n  <ion-grid>\r\n    <ion-row>\r\n      <ion-col class=\"bar\">\r\n        <app-consonant-bar [fonema]=\"phoneme.consonante\" [imagen]=\"videoData.imagen\" [mensaje]=\"videoData.mensaje\"  (barEvent)=\"selectPanel($event)\"></app-consonant-bar>\r\n      </ion-col>\r\n      <ion-col class=\"panel\">\r\n        <app-consonant-phoneme-panel *ngIf=\"visiblePhoneme\" [oneDataPhonemeConsonant]=\"phoneme.data[indexData]\" [dataSPhonemeConsonant]=\"phoneme.dataS\" [comando]=\"comandoFonema\"></app-consonant-phoneme-panel>\r\n        <app-consonant-phoneme-video-panel [video]=\"videoData.video\" *ngIf=\"visibleVideo\"></app-consonant-phoneme-video-panel>\r\n      </ion-col>\r\n    </ion-row>\r\n    <ion-row class=\"navigation\">\r\n      <ion-col>\r\n        <!--<app-navigation></app-navigation>-->\r\n        <app-phoneme-nav (forwardEmit)=\"incIndexData()\" (backEmit)=\"decIndexData()\"></app-phoneme-nav>\r\n      </ion-col>\r\n    </ion-row>\r\n  </ion-grid>\r\n</div>\r\n";
     /***/
   },
 
@@ -301,7 +301,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"principal\">\r\n  <ion-grid>\r\n    <ion-row>\r\n      <ion-label class=\"titulo\">FONEMA</ion-label>\r\n    </ion-row>\r\n    <ion-row>\r\n      <ion-label class=\"fonema\">/ {{fonema}} /</ion-label>\r\n    </ion-row>\r\n    <ion-row class=\"videoFonema\">\r\n      <div>\r\n        <div shape=\"round\">\r\n          <ion-img src={{imagen}} class=\"imagen\"></ion-img>\r\n        </div>\r\n        <div style=\"position: absolute; left: 37px; top: 421px;\">\r\n          <ion-segment-button *ngIf=\"visibleVideo\"  value=\"video\" class=\"btnPlay\" (click)=\"openPanel($event)\">\r\n            <ion-icon  src=\"assets/icon/play.svg\"></ion-icon>\r\n          </ion-segment-button>\r\n          <ion-segment-button *ngIf=\"visibleAudio\"  value=\"phoneme\" class=\"btnPlay\" (click)=\"openPanel($event)\">\r\n            <ion-icon src=\"assets/icon/audio.svg\"></ion-icon>\r\n          </ion-segment-button>          \r\n        </div>\r\n      </div>\r\n    </ion-row>\r\n    <ion-row>\r\n      <ion-label class=\"mensaje\">{{mensaje}}</ion-label>\r\n    </ion-row>\r\n  </ion-grid>\r\n</div>\r\n";
+    __webpack_exports__["default"] = "<div class=\"principal\">\r\n  <ion-grid>\r\n    <ion-row>\r\n      <ion-label class=\"titulo\">FONEMA</ion-label>\r\n    </ion-row>\r\n    <ion-row>\r\n      <ion-label class=\"fonema\">/ {{fonema}} /</ion-label>\r\n    </ion-row>\r\n    <ion-row class=\"videoFonema\">\r\n      <div>\r\n        <div shape=\"round\">\r\n          <ion-img src={{imagen}} class=\"imagen\"></ion-img>\r\n        </div>\r\n        <div style=\"position: absolute; left: 37px; top: 421px;\">\r\n          <ion-segment-button *ngIf=\"visibleVideo\" value=\"video\" class=\"btnPlay\" (click)=\"openPanel($event)\">\r\n            <ion-icon  src=\"assets/icon/play.svg\"></ion-icon>\r\n          </ion-segment-button>\r\n          <ion-segment-button *ngIf=\"visibleAudio\" value=\"phoneme\" class=\"btnPlay\" (click)=\"openPanel($event)\">\r\n            <ion-icon src=\"assets/icon/audio.svg\"></ion-icon>\r\n          </ion-segment-button>          \r\n        </div>\r\n      </div>\r\n    </ion-row>\r\n    <ion-row>\r\n      <ion-label class=\"mensaje\">{{mensaje}}</ion-label>\r\n    </ion-row>\r\n  </ion-grid>\r\n</div>\r\n";
     /***/
   },
 
@@ -321,7 +321,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"principal\">\r\n  <ion-grid >\r\n    <ion-row>\r\n      <ion-col>\r\n        <ion-segment-button value='back' class=\"btnBack\" (click)='back($event)'>\r\n          <ion-icon class=\"backIcon\"></ion-icon>\r\n        </ion-segment-button>\r\n      </ion-col>\r\n      <ion-col >\r\n        <ion-segment-button value=\"home\" class=\"btnHome\" (click)=\"goToHome($event)\">\r\n          <ion-icon class=\"homeIcon\"></ion-icon>\r\n        </ion-segment-button>\r\n      </ion-col>\r\n      \r\n      <ion-col >\r\n        <ion-segment-button value='forward' class=\"btnForward\" (click)=\"forward($event)\">\r\n          <ion-icon class=\"forwardIcon\"></ion-icon>\r\n        </ion-segment-button>\r\n      </ion-col>      \r\n    </ion-row>\r\n  </ion-grid>\r\n</div>\r\n";
+    __webpack_exports__["default"] = "<div class=\"principal\">\r\n  <ion-grid >\r\n    <ion-row>\r\n      <ion-col>\r\n        <ion-segment-button class=\"btnBack\" (click)='back($event)'>\r\n          <ion-icon class=\"backIcon\"></ion-icon>\r\n        </ion-segment-button>\r\n      </ion-col>\r\n      <ion-col >\r\n        <ion-segment-button class=\"btnHome\" (click)=\"goToHome($event)\">\r\n          <ion-icon class=\"homeIcon\"></ion-icon>\r\n        </ion-segment-button>\r\n      </ion-col>\r\n      \r\n      <ion-col >\r\n        <ion-segment-button class=\"btnForward\" (click)=\"forward($event)\">\r\n          <ion-icon class=\"forwardIcon\"></ion-icon>\r\n        </ion-segment-button>\r\n      </ion-col>      \r\n    </ion-row>\r\n  </ion-grid>\r\n</div>\r\n";
     /***/
   },
 
@@ -341,7 +341,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"principal\">\r\n  <ion-grid>\r\n    <ion-row class=\"audioFonema\">   \r\n      <div>\r\n        <ion-avatar class=\"imagen\">\r\n          <ion-img src={{imagen}}></ion-img>\r\n        </ion-avatar>\r\n\r\n        <div style=\"position: absolute; left: 227px; top: 346px;\">\r\n          <ion-segment-button value=\"audio\" class=\"btnPlay\" (click)=\"playAudio($event)\">\r\n            <ion-icon src=\"assets/icon/play.svg\"></ion-icon>\r\n          </ion-segment-button>\r\n        </div>\r\n      </div>    \r\n    </ion-row>\r\n    <ion-row>\r\n      <ion-label class=\"palabra\">{{palabra}}</ion-label>\r\n    </ion-row>\r\n  </ion-grid>\r\n</div>\r\n\r\n";
+    __webpack_exports__["default"] = "<div class=\"principal\">\r\n  <ion-grid>\r\n    <ion-row class=\"audioFonema\">   \r\n      <div>\r\n        <ion-avatar class=\"imagen\">\r\n          <ion-img id=\"imagen\" src={{phonemeOneData.imagen}} class=\"imagen\"></ion-img>\r\n        </ion-avatar>\r\n\r\n        <div style=\"position: absolute; left: 227px; top: 346px;\">\r\n          <ion-segment-button class=\"btnPlay\" (click)=\"audio.play()\">\r\n            <ion-icon src=\"assets/icon/play.svg\"></ion-icon>\r\n          </ion-segment-button>\r\n        </div>\r\n      </div>    \r\n    </ion-row>\r\n    <ion-row>\r\n      <ion-label class=\"palabra\">{{phonemeOneData.nombre}}</ion-label>\r\n    </ion-row>\r\n  </ion-grid>\r\n</div>\r\n\r\n";
     /***/
   },
 
@@ -361,7 +361,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"principal\">\r\n  <ion-grid>\r\n    <ion-row>\r\n      <ion-col class=\"bar\">\r\n        <app-bar [fonema]=\"valueFonemaView\" [imagen]=\"videoData.imagen\" [mensaje]=\"videoData.mensaje\"  (barEvent)=\"selectPanel($event)\" ></app-bar>\r\n      </ion-col>\r\n      <ion-col class=\"panel\">\r\n        <app-phoneme-panel [fonema]=\"valueFonemaView\" *ngIf=\"visiblePhoneme\" [comando]=\"comandoFonema\"></app-phoneme-panel>\r\n        <app-video-panel [video]=\"videoData.video\" *ngIf=\"visibleVideo\"></app-video-panel>\r\n      </ion-col>\r\n    </ion-row>\r\n    <ion-row class=\"navigation\">\r\n      <ion-col>\r\n        <app-phoneme-nav (navigationEvent)=\"ejecutarAccion($event)\"></app-phoneme-nav>\r\n      </ion-col>\r\n    </ion-row>\r\n  </ion-grid>\r\n</div>\r\n";
+    __webpack_exports__["default"] = "<div class=\"principal\">\r\n  <ion-grid>\r\n    <ion-row>\r\n      <ion-col class=\"bar\">\r\n        <app-bar [fonema]=\"phoneme.vocal\" [imagen]=\"videoData.imagen\" [mensaje]=\"videoData.mensaje\"  (barEvent)=\"selectPanel($event)\" ></app-bar>\r\n      </ion-col>\r\n      <ion-col class=\"panel\">\r\n        <app-phoneme-panel *ngIf=\"visiblePhoneme\" [phonemeOneData]=\"phoneme.data[indexData]\"></app-phoneme-panel>\r\n        <app-video-panel *ngIf=\"visibleVideo\" [video]=\"videoData.video\"></app-video-panel>\r\n      </ion-col>\r\n    </ion-row>\r\n    <ion-row class=\"navigation\">\r\n      <ion-col>\r\n        <app-phoneme-nav (forwardEmit)=\"incIndexData()\" (backEmit)=\"decIndexData()\"></app-phoneme-nav>\r\n      </ion-col>\r\n    </ion-row>\r\n  </ion-grid>\r\n</div>\r\n";
     /***/
   },
 
@@ -401,7 +401,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"principal\">\r\n    <ion-grid class=\"grid\">\r\n        <ion-row class=\"row\">\r\n            <ion-col>\r\n                <ion-segment-button value=\"p\" class=\"phonemeButton\" (click)=\"goToPhoneme($event)\">Pp</ion-segment-button>\r\n            </ion-col>\r\n            <ion-col>\r\n                <ion-segment-button value=\"m\" class=\"phonemeButton\" (click)=\"goToPhoneme($event)\">Mm</ion-segment-button>\r\n            </ion-col>\r\n            <ion-col>\r\n                <ion-segment-button value=\"b\" class=\"phonemeButton\" (click)=\"goToPhoneme($event)\">Bb</ion-segment-button>\r\n            </ion-col>                        \r\n        </ion-row>\r\n\r\n        <ion-row class=\"row\">\r\n            <ion-col>\r\n                <ion-segment-button value=\"d\" class=\"phonemeButton\" (click)=\"goToPhoneme($event)\">Dd</ion-segment-button>\r\n            </ion-col>\r\n            <ion-col>\r\n                <ion-segment-button value=\"t\" class=\"phonemeButton\" (click)=\"goToPhoneme($event)\">Tt</ion-segment-button>\r\n            </ion-col>\r\n            <ion-col>\r\n                <ion-segment-button value=\"g\" class=\"phonemeButton\" (click)=\"goToPhoneme($event)\">Gg</ion-segment-button>\r\n            </ion-col>                        \r\n        </ion-row>  \r\n        \r\n        <ion-row class=\"row\">\r\n            <ion-col>\r\n                <ion-segment-button value=\"Cc Kk Qq\" class=\"phonemeButton\" (click)=\"goToPhoneme($event)\">Cc Kk Qq</ion-segment-button>\r\n            </ion-col>\r\n            <ion-col>\r\n                <ion-segment-button value=\"f\" class=\"phonemeButton\" (click)=\"goToPhoneme($event)\">Ff</ion-segment-button>\r\n            </ion-col>\r\n            <ion-col>\r\n                <ion-segment-button value=\"ch\" class=\"phonemeButton\" (click)=\"goToPhoneme($event)\">Ch ch</ion-segment-button>\r\n            </ion-col>                        \r\n        </ion-row> \r\n\r\n        <ion-row class=\"row\">\r\n            <ion-col>\r\n                <ion-segment-button value=\"j\" class=\"phonemeButton\" (click)=\"goToPhoneme($event)\">Jj</ion-segment-button>\r\n            </ion-col>\r\n            <ion-col>\r\n                <ion-segment-button value=\"s\" class=\"phonemeButton\" (click)=\"goToPhoneme($event)\">Ss</ion-segment-button>\r\n            </ion-col>\r\n            <ion-col>\r\n                <ion-segment-button value=\"n\" class=\"phonemeButton\" (click)=\"goToPhoneme($event)\">Nn</ion-segment-button>\r\n            </ion-col>                        \r\n        </ion-row>   \r\n\r\n        <ion-row class=\"row\">\r\n            <ion-col>\r\n                <ion-segment-button value=\"ñ\" class=\"phonemeButton\" (click)=\"goToPhoneme($event)\">Ññ</ion-segment-button>\r\n            </ion-col>\r\n            <ion-col>\r\n                <ion-segment-button value=\"l\" class=\"phonemeButton\" (click)=\"goToPhoneme($event)\">Ll</ion-segment-button>\r\n            </ion-col>\r\n            <ion-col>\r\n                <ion-segment-button value=\"LLll Yy\" class=\"phonemeButton\" (click)=\"goToPhoneme($event)\">LLll Yy</ion-segment-button>\r\n            </ion-col>                        \r\n        </ion-row>\r\n        \r\n        <ion-row class=\"row\">\r\n            <ion-col>\r\n                <ion-segment-button value=\"r\" class=\"phonemeButton\" (click)=\"goToPhoneme($event)\">Rr</ion-segment-button>\r\n            </ion-col>\r\n            <ion-col>\r\n                <ion-segment-button value=\"rr\" class=\"phonemeButton\" (click)=\"goToPhoneme($event)\">RR rr</ion-segment-button>\r\n            </ion-col>\r\n            <ion-col>\r\n                <ion-segment-button value=\"x\" class=\"phonemeButton\" (click)=\"goToPhoneme($event)\">Xx</ion-segment-button>\r\n            </ion-col>                        \r\n        </ion-row>        \r\n    </ion-grid>\r\n</div>";
+    __webpack_exports__["default"] = "<div class=\"principal\">\r\n    <ion-grid class=\"grid\">\r\n        <ion-row class=\"row\">\r\n            <ion-col>\r\n                <ion-segment-button class=\"phonemeButton\" (click)=\"goToPhoneme('p')\">Pp</ion-segment-button>\r\n            </ion-col>\r\n            <ion-col>\r\n                <ion-segment-button class=\"phonemeButton\" (click)=\"goToPhoneme('m')\">Mm</ion-segment-button>\r\n            </ion-col>\r\n            <ion-col>\r\n                <ion-segment-button class=\"phonemeButton\" (click)=\"goToPhoneme('b')\">Bb</ion-segment-button>\r\n            </ion-col>                        \r\n        </ion-row>\r\n\r\n        <ion-row class=\"row\">\r\n            <ion-col>\r\n                <ion-segment-button class=\"phonemeButton\" (click)=\"goToPhoneme('d')\">Dd</ion-segment-button>\r\n            </ion-col>\r\n            <ion-col>\r\n                <ion-segment-button class=\"phonemeButton\" (click)=\"goToPhoneme('t')\">Tt</ion-segment-button>\r\n            </ion-col>\r\n            <ion-col>\r\n                <ion-segment-button class=\"phonemeButton\" (click)=\"goToPhoneme('g')\">Gg</ion-segment-button>\r\n            </ion-col>                        \r\n        </ion-row>  \r\n        \r\n        <ion-row class=\"row\">\r\n            <ion-col>\r\n                <ion-segment-button class=\"phonemeButton\" (click)=\"goToPhoneme('Cc Kk Qq')\">Cc Kk Qq</ion-segment-button>\r\n            </ion-col>\r\n            <ion-col>\r\n                <ion-segment-button class=\"phonemeButton\" (click)=\"goToPhoneme('f')\">Ff</ion-segment-button>\r\n            </ion-col>\r\n            <ion-col>\r\n                <ion-segment-button class=\"phonemeButton\" (click)=\"goToPhoneme('ch')\">Ch ch</ion-segment-button>\r\n            </ion-col>                        \r\n        </ion-row> \r\n\r\n        <ion-row class=\"row\">\r\n            <ion-col>\r\n                <ion-segment-button class=\"phonemeButton\" (click)=\"goToPhoneme('j')\">Jj</ion-segment-button>\r\n            </ion-col>\r\n            <ion-col>\r\n                <ion-segment-button class=\"phonemeButton\" (click)=\"goToPhoneme('s')\">Ss</ion-segment-button>\r\n            </ion-col>\r\n            <ion-col>\r\n                <ion-segment-button class=\"phonemeButton\" (click)=\"goToPhoneme('n')\">Nn</ion-segment-button>\r\n            </ion-col>                        \r\n        </ion-row>   \r\n\r\n        <ion-row class=\"row\">\r\n            <ion-col>\r\n                <ion-segment-button class=\"phonemeButton\" (click)=\"goToPhoneme('ñ')\">Ññ</ion-segment-button>\r\n            </ion-col>\r\n            <ion-col>\r\n                <ion-segment-button class=\"phonemeButton\" (click)=\"goToPhoneme('l')\">Ll</ion-segment-button>\r\n            </ion-col>\r\n            <ion-col>\r\n                <ion-segment-button class=\"phonemeButton\" (click)=\"goToPhoneme('LLll Yy')\">LLll Yy</ion-segment-button>\r\n            </ion-col>                        \r\n        </ion-row>\r\n        \r\n        <ion-row class=\"row\">\r\n            <ion-col>\r\n                <ion-segment-button class=\"phonemeButton\" (click)=\"goToPhoneme('r')\">Rr</ion-segment-button>\r\n            </ion-col>\r\n            <ion-col>\r\n                <ion-segment-button class=\"phonemeButton\" (click)=\"goToPhoneme('rr')\">RR rr</ion-segment-button>\r\n            </ion-col>\r\n            <ion-col>\r\n                <ion-segment-button class=\"phonemeButton\" (click)=\"goToPhoneme('x')\">Xx</ion-segment-button>\r\n            </ion-col>\r\n        </ion-row>\r\n    </ion-grid>\r\n</div>";
     /***/
   },
 
@@ -481,7 +481,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"principal\">\r\n  <ion-grid class=\"grid\">\r\n    <ion-row class=\"row\">\r\n      <ion-col>\r\n          <ion-segment-button value=\"a\" class=\"phonemeButton\" (click)=\"goToPhoneme($event)\">Aa</ion-segment-button>\r\n      </ion-col>\r\n      <ion-col>\r\n          <ion-segment-button value=\"e\" class=\"phonemeButton\" (click)=\"goToPhoneme($event)\">Ee</ion-segment-button>\r\n      </ion-col>\r\n      <ion-col>\r\n          <ion-segment-button value=\"o\" class=\"phonemeButton\" (click)=\"goToPhoneme($event)\">Oo</ion-segment-button>\r\n      </ion-col>                        \r\n    </ion-row>\r\n    <ion-row class=\"rowDebiles\">\r\n      <ion-col>\r\n          <ion-segment-button value=\"i\" class=\"phonemeButton\" (click)=\"goToPhoneme($event)\">Ii</ion-segment-button>\r\n      </ion-col>\r\n      <ion-col>\r\n          <ion-segment-button value=\"u\" class=\"phonemeButton\" (click)=\"goToPhoneme($event)\">Uu</ion-segment-button>\r\n      </ion-col>\r\n                       \r\n    </ion-row>    \r\n\r\n  </ion-grid>\r\n</div>\r\n";
+    __webpack_exports__["default"] = "<div class=\"principal\">\r\n  <ion-grid class=\"grid\">\r\n    <ion-row class=\"row\">\r\n      <ion-col>\r\n          <ion-segment-button class=\"phonemeButton\" (click)=\"goToPhoneme('a')\">Aa</ion-segment-button>\r\n      </ion-col>\r\n      <ion-col>\r\n          <ion-segment-button class=\"phonemeButton\" (click)=\"goToPhoneme('e')\">Ee</ion-segment-button>\r\n      </ion-col>\r\n      <ion-col>\r\n          <ion-segment-button class=\"phonemeButton\" (click)=\"goToPhoneme('o')\">Oo</ion-segment-button>\r\n      </ion-col>                        \r\n    </ion-row>\r\n    <ion-row class=\"rowDebiles\">\r\n      <ion-col>\r\n          <ion-segment-button class=\"phonemeButton\" (click)=\"goToPhoneme('i')\">Ii</ion-segment-button>\r\n      </ion-col>\r\n      <ion-col>\r\n          <ion-segment-button class=\"phonemeButton\" (click)=\"goToPhoneme('u')\">Uu</ion-segment-button>\r\n      </ion-col>\r\n                       \r\n    </ion-row>    \r\n\r\n  </ion-grid>\r\n</div>\r\n";
     /***/
   },
 
@@ -2280,13 +2280,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "openPanel",
         value: function openPanel(event) {
-          console.log(event.target.value);
           this.barEvent.emit(event.target.value);
           this.setVisible(event.target.value);
         }
-      }, {
-        key: "playVideo",
-        value: function playVideo() {}
+        /*
+        playVideo() {
+            }
+        */
+
       }, {
         key: "setVisible",
         value: function setVisible(value) {
@@ -2305,7 +2306,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       return ConsonantBarComponent;
     }();
 
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)], ConsonantBarComponent.prototype, "Video", void 0);
     tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)], ConsonantBarComponent.prototype, "fonema", void 0);
     tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)], ConsonantBarComponent.prototype, "mensaje", void 0);
     tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)], ConsonantBarComponent.prototype, "imagen", void 0);
@@ -2452,91 +2452,85 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
     /*! @angular/core */
     "./node_modules/@angular/core/fesm2015/core.js");
-    /* harmony import */
-
-
-    var _data_audio_fonemas_consonantes_data_consonantes__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
-    /*! ../../../../data/audio/fonemas/consonantes/data.consonantes */
-    "./src/data/audio/fonemas/consonantes/data.consonantes.ts");
 
     var ConsonantPhonemePanelComponent =
     /*#__PURE__*/
     function () {
+      /*
+      @Input() silaba1: string;
+      @Input() silaba2: string;
+      @Input() silaba3: string;
+      @Input() silaba4: string;
+      @Input() silaba5: string;
+      */
       function ConsonantPhonemePanelComponent() {
         _classCallCheck(this, ConsonantPhonemePanelComponent);
 
-        this.audios = [];
-        this.silabas = [];
-        this.audio = new Audio();
+        this.record = new Audio();
       }
 
       _createClass(ConsonantPhonemePanelComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
+          /*
           this.getAudios(this.fonema);
           this.getSilabas();
           this.imagen = this.audios[0].imagen;
           this.palabra = this.audios[0].nombre;
           this.cantidadAudios = 0;
+          */
         }
       }, {
-        key: "playAudio",
-        value: function playAudio(event) {
-          if (this.cantidadAudios == this.audios.length) {
+        key: "ngOnChanges",
+        value: function ngOnChanges() {
+          //Called before any other lifecycle hook. Use it to inject dependencies, but avoid any serious work here.
+          //Add '${implements OnChanges}' to the class.
+          console.log(this.oneDataPhonemeConsonant);
+        }
+        /*
+        playAudio(event: any) {
+          if (this.cantidadAudios == this.audios.length){
             this.cantidadAudios = 0;
           }
-
-          this.palabra = this.audios[this.cantidadAudios].nombre;
-          this.imagen = this.audios[this.cantidadAudios].imagen;
+          this.palabra=this.audios[this.cantidadAudios].nombre;
+          this.imagen= this.audios[this.cantidadAudios].imagen;
           this.audio.src = this.audios[this.cantidadAudios].audio;
           this.audio.load();
           this.audio.play();
           console.log(event.target.value);
           console.log('Soy el audio');
-          this.cantidadAudios++;
+          this.cantidadAudios ++;
           console.log(this.comando);
         }
+        */
+
       }, {
         key: "playAudioS",
-        value: function playAudioS(event) {
+        value: function playAudioS(index) {
+          this.record.src = this.dataSPhonemeConsonant[index].audio;
+          this.record.load();
+          this.record.play();
+          /*
           this.audio.src = this.silabas[event.target.value].audio;
           this.audio.load();
           this.audio.play();
+          */
         }
       }, {
-        key: "getAudios",
-        value: function getAudios(value) {
-          for (var i = 0; i < _data_audio_fonemas_consonantes_data_consonantes__WEBPACK_IMPORTED_MODULE_2__["CONSONANTES"].length; i++) {
-            if (_data_audio_fonemas_consonantes_data_consonantes__WEBPACK_IMPORTED_MODULE_2__["CONSONANTES"][i].consonante === value) {
-              this.audios = _data_audio_fonemas_consonantes_data_consonantes__WEBPACK_IMPORTED_MODULE_2__["CONSONANTES"][i].data;
-              this.silabas = _data_audio_fonemas_consonantes_data_consonantes__WEBPACK_IMPORTED_MODULE_2__["CONSONANTES"][i].dataS;
-              break;
-            }
-          }
-        }
-      }, {
-        key: "getSilabas",
-        value: function getSilabas() {
-          this.silaba1 = this.silabas[0].nombre;
-          this.silaba2 = this.silabas[1].nombre;
-          this.silaba3 = this.silabas[2].nombre;
-          this.silaba4 = this.silabas[3].nombre;
-          this.silaba5 = this.silabas[4].nombre;
+        key: "playRecord",
+        value: function playRecord() {
+          this.record.src = this.oneDataPhonemeConsonant.audio;
+          this.record.load();
+          this.record.play();
         }
       }]);
 
       return ConsonantPhonemePanelComponent;
     }();
 
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)], ConsonantPhonemePanelComponent.prototype, "fonema", void 0);
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)], ConsonantPhonemePanelComponent.prototype, "imagen", void 0);
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)], ConsonantPhonemePanelComponent.prototype, "palabra", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Array)], ConsonantPhonemePanelComponent.prototype, "dataSPhonemeConsonant", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Object)], ConsonantPhonemePanelComponent.prototype, "oneDataPhonemeConsonant", void 0);
     tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)], ConsonantPhonemePanelComponent.prototype, "comando", void 0);
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)], ConsonantPhonemePanelComponent.prototype, "silaba1", void 0);
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)], ConsonantPhonemePanelComponent.prototype, "silaba2", void 0);
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)], ConsonantPhonemePanelComponent.prototype, "silaba3", void 0);
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)], ConsonantPhonemePanelComponent.prototype, "silaba4", void 0);
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)], ConsonantPhonemePanelComponent.prototype, "silaba5", void 0);
     ConsonantPhonemePanelComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
       selector: 'app-consonant-phoneme-panel',
       template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
@@ -2699,6 +2693,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       function PhonemeConsonantViewComponent() {
         _classCallCheck(this, PhonemeConsonantViewComponent);
 
+        this.indexData = 0;
         this.videoData = new _models_video_selected__WEBPACK_IMPORTED_MODULE_2__["VideoSelected"]();
         this.visiblePhoneme = true;
         this.visibleVideo = false;
@@ -2707,7 +2702,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(PhonemeConsonantViewComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          this.getVideo(this.valueFonemaView);
+          this.getVideo(this.phoneme.consonante);
         }
       }, {
         key: "selectPanel",
@@ -2743,12 +2738,30 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             }
           }
         }
+      }, {
+        key: "incIndexData",
+        value: function incIndexData() {
+          if (this.phoneme.data.length - 1 == this.indexData) {
+            this.indexData = 0;
+          } else {
+            this.indexData++;
+          }
+        }
+      }, {
+        key: "decIndexData",
+        value: function decIndexData() {
+          if (this.indexData == 0) {
+            this.indexData = this.phoneme.data.length - 1;
+          } else {
+            this.indexData--;
+          }
+        }
       }]);
 
       return PhonemeConsonantViewComponent;
     }();
 
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)], PhonemeConsonantViewComponent.prototype, "valueFonemaView", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Object)], PhonemeConsonantViewComponent.prototype, "phoneme", void 0);
     PhonemeConsonantViewComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
       selector: 'app-phoneme-consonant-view',
       template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
@@ -2811,7 +2824,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
     var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
     /*! @angular/core */
-    "./node_modules/@angular/core/fesm2015/core.js");
+    "./node_modules/@angular/core/fesm2015/core.js"); //import { VIDEOS } from '../../../../data/data.videos';
+    //import { Video } from '../../../interfaces/video';
+
 
     var BarComponent =
     /*#__PURE__*/
@@ -2830,13 +2845,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "openPanel",
         value: function openPanel(event) {
-          console.log(event.target.value);
           this.barEvent.emit(event.target.value);
           this.setVisible(event.target.value);
         }
-      }, {
-        key: "playVideo",
-        value: function playVideo() {}
+        /*
+        playVideo() {
+            }
+        */
+
       }, {
         key: "setVisible",
         value: function setVisible(value) {
@@ -2855,7 +2871,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       return BarComponent;
     }();
 
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)], BarComponent.prototype, "Video", void 0);
     tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)], BarComponent.prototype, "fonema", void 0);
     tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)], BarComponent.prototype, "mensaje", void 0);
     tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)], BarComponent.prototype, "imagen", void 0);
@@ -2933,11 +2948,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var PhonemeNavComponent =
     /*#__PURE__*/
     function () {
+      //@Output() navigationEvent = new EventEmitter();
       function PhonemeNavComponent(navCtrl) {
         _classCallCheck(this, PhonemeNavComponent);
 
         this.navCtrl = navCtrl;
-        this.navigationEvent = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
+        this.forwardEmit = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
+        this.backEmit = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
       }
 
       _createClass(PhonemeNavComponent, [{
@@ -2950,13 +2967,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         }
       }, {
         key: "forward",
-        value: function forward(event) {
-          this.navigationEvent.emit(event.target.value);
+        value: function forward() {
+          this.forwardEmit.emit();
         }
       }, {
         key: "back",
-        value: function back(event) {
-          this.navigationEvent.emit(event.target.value);
+        value: function back() {
+          this.backEmit.emit();
         }
       }]);
 
@@ -2969,7 +2986,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }];
     };
 
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Object)], PhonemeNavComponent.prototype, "navigationEvent", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Object)], PhonemeNavComponent.prototype, "forwardEmit", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Object)], PhonemeNavComponent.prototype, "backEmit", void 0);
     PhonemeNavComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
       selector: 'app-phoneme-nav',
       template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
@@ -3033,87 +3051,52 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
     /*! @angular/core */
     "./node_modules/@angular/core/fesm2015/core.js");
-    /* harmony import */
-
-
-    var _data_audio_fonemas_vocales_data_vocales__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
-    /*! ../../../../data/audio/fonemas/vocales/data.vocales */
-    "./src/data/audio/fonemas/vocales/data.vocales.ts");
 
     var PhonemePanelComponent =
     /*#__PURE__*/
     function () {
+      //audios = [];
+      //cantidadAudios: number;
+      //audio = new Audio();
+      //@Input() fonema: string;
+      //@Input() imagen: string;
+      //@Input() palabra: string;
+      //@Input() comando: string;
       function PhonemePanelComponent() {
         _classCallCheck(this, PhonemePanelComponent);
 
-        this.audios = [];
         this.audio = new Audio();
       }
 
       _createClass(PhonemePanelComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
+          this.audio.src = this.phonemeOneData.audio;
+          this.audio.load(); //document.getElementById('imagen').setAttribute('src', this.phonemeOneData.imagen);
+
+          /*
           this.getAudios(this.fonema);
           console.log(this.audios[0].audio);
           this.imagen = this.audios[0].imagen;
           this.palabra = this.audios[0].nombre;
           console.log(this.imagen);
           this.cantidadAudios = 0;
+          */
         }
       }, {
-        key: "playAudio",
-        value: function playAudio(event) {
-          console.log(this.cantidadAudios);
-
-          if (this.cantidadAudios == this.audios.length) {
-            this.cantidadAudios = 0;
-          }
-
-          this.palabra = this.audios[this.cantidadAudios].nombre;
-          this.imagen = this.audios[this.cantidadAudios].imagen;
-          this.audio.src = this.audios[this.cantidadAudios].audio;
-          this.audio.load();
-          this.audio.play();
-          console.log(event.target.value);
-          console.log('Soy el audio');
-          this.cantidadAudios++;
-          console.log(this.comando);
-        }
-      }, {
-        key: "reviewAudio",
-        value: function reviewAudio(event) {
-          this.cantidadAudios--;
-
-          if (this.cantidadAudios < this.audios.length) {
-            this.cantidadAudios = 0;
-          }
-
-          this.palabra = this.audios[this.cantidadAudios].nombre;
-          this.audio.src = this.audios[this.cantidadAudios].audio;
-          this.audio.load();
-          this.audio.play();
-          console.log(event.target.value);
-          console.log('Soy el audio');
-        }
-      }, {
-        key: "getAudios",
-        value: function getAudios(value) {
-          for (var i = 0; i < _data_audio_fonemas_vocales_data_vocales__WEBPACK_IMPORTED_MODULE_2__["VOCALES"].length; i++) {
-            if (_data_audio_fonemas_vocales_data_vocales__WEBPACK_IMPORTED_MODULE_2__["VOCALES"][i].vocal === value) {
-              this.audios = _data_audio_fonemas_vocales_data_vocales__WEBPACK_IMPORTED_MODULE_2__["VOCALES"][i].data;
-              break;
-            }
-          }
+        key: "ngOnChanges",
+        value: function ngOnChanges() {
+          //Called before any other lifecycle hook. Use it to inject dependencies, but avoid any serious work here.
+          //Add '${implements OnChanges}' to the class.
+          this.audio.src = this.phonemeOneData.audio;
+          this.audio.load(); //document.getElementById('imagen').setAttribute('src', this.phonemeOneData.imagen);
         }
       }]);
 
       return PhonemePanelComponent;
     }();
 
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)], PhonemePanelComponent.prototype, "fonema", void 0);
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)], PhonemePanelComponent.prototype, "imagen", void 0);
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)], PhonemePanelComponent.prototype, "palabra", void 0);
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)], PhonemePanelComponent.prototype, "comando", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Object)], PhonemePanelComponent.prototype, "phonemeOneData", void 0);
     PhonemePanelComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
       selector: 'app-phoneme-panel',
       template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
@@ -3193,8 +3176,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var PhonemeViewComponent =
     /*#__PURE__*/
     function () {
+      //public comandoFonema: string;
       function PhonemeViewComponent() {
         _classCallCheck(this, PhonemeViewComponent);
+
+        this.indexData = 0; //@Input() valueFonemaView: string;
 
         this.videoData = new _models_video_selected__WEBPACK_IMPORTED_MODULE_3__["VideoSelected"]();
         this.visiblePhoneme = true;
@@ -3204,12 +3190,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(PhonemeViewComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          this.getVideo(this.valueFonemaView);
+          this.getVideo(this.phoneme.vocal);
         }
       }, {
         key: "selectPanel",
         value: function selectPanel(value) {
-          console.log(value);
           this.setVisible(value);
         }
       }, {
@@ -3240,15 +3225,36 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             }
           }
         }
+        /*
+        ejecutarAccion($event) {
+          
+        }
+        */
+
       }, {
-        key: "ejecutarAccion",
-        value: function ejecutarAccion($event) {}
+        key: "incIndexData",
+        value: function incIndexData() {
+          if (this.phoneme.data.length - 1 == this.indexData) {
+            this.indexData = 0;
+          } else {
+            this.indexData++;
+          }
+        }
+      }, {
+        key: "decIndexData",
+        value: function decIndexData() {
+          if (this.indexData == 0) {
+            this.indexData = this.phoneme.data.length - 1;
+          } else {
+            this.indexData--;
+          }
+        }
       }]);
 
       return PhonemeViewComponent;
     }();
 
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)], PhonemeViewComponent.prototype, "valueFonemaView", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Object)], PhonemeViewComponent.prototype, "phoneme", void 0);
     PhonemeViewComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
       selector: 'app-phoneme-view',
       template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
@@ -3398,14 +3404,28 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _ionic_angular__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
     /*! @ionic/angular */
     "./node_modules/@ionic/angular/fesm2015/ionic-angular.js");
+    /* harmony import */
+
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/fesm2015/router.js");
+    /* harmony import */
+
+
+    var _data_audio_fonemas_consonantes_data_consonantes__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! ../../../../data/audio/fonemas/consonantes/data.consonantes */
+    "./src/data/audio/fonemas/consonantes/data.consonantes.ts");
 
     var ConsonantPanelComponent =
     /*#__PURE__*/
     function () {
-      function ConsonantPanelComponent(navCtrl) {
+      //public value:string;
+      function ConsonantPanelComponent(navCtrl, route) {
         _classCallCheck(this, ConsonantPanelComponent);
 
         this.navCtrl = navCtrl;
+        this.route = route;
       }
 
       _createClass(ConsonantPanelComponent, [{
@@ -3413,10 +3433,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         value: function ngOnInit() {}
       }, {
         key: "goToPhoneme",
-        value: function goToPhoneme(event) {
-          console.log(event.target.value);
-          this.value = event.target.value;
-          this.navCtrl.navigateForward(['/consonantes', this.value]);
+        value: function goToPhoneme(phonemeConsonantNameSelected) {
+          var phonemeConsonantData = this.getPhonemeConsonant(phonemeConsonantNameSelected);
+          this.route.navigate(['/consonantes'], {
+            queryParams: {
+              phoneme: JSON.stringify(phonemeConsonantData)
+            }
+          }); //console.log(event.target.value);
+          //this.value = event.target.value;
+          //this.navCtrl.navigateForward(['/consonantes',this.value]);
+        }
+      }, {
+        key: "getPhonemeConsonant",
+        value: function getPhonemeConsonant(phonemeConsonanName) {
+          phonemeConsonanName = phonemeConsonanName.toUpperCase();
+
+          for (var i = 0; i < _data_audio_fonemas_consonantes_data_consonantes__WEBPACK_IMPORTED_MODULE_4__["CONSONANTES"].length; i++) {
+            if (_data_audio_fonemas_consonantes_data_consonantes__WEBPACK_IMPORTED_MODULE_4__["CONSONANTES"][i].consonante.toUpperCase() == phonemeConsonanName) {
+              return _data_audio_fonemas_consonantes_data_consonantes__WEBPACK_IMPORTED_MODULE_4__["CONSONANTES"][i];
+            }
+          }
         }
       }]);
 
@@ -3426,6 +3462,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     ConsonantPanelComponent.ctorParameters = function () {
       return [{
         type: _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["NavController"]
+      }, {
+        type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]
       }];
     };
 
@@ -3437,7 +3475,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
       /*! ./consonant-panel.component.scss */
       "./src/app/components/phoneme/consonant-panel/consonant-panel.component.scss")).default]
-    }), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_angular__WEBPACK_IMPORTED_MODULE_2__["NavController"]])], ConsonantPanelComponent);
+    }), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_angular__WEBPACK_IMPORTED_MODULE_2__["NavController"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]])], ConsonantPanelComponent);
     /***/
   },
 
@@ -3810,14 +3848,27 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _ionic_angular__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
     /*! @ionic/angular */
     "./node_modules/@ionic/angular/fesm2015/ionic-angular.js");
+    /* harmony import */
+
+
+    var _data_audio_fonemas_vocales_data_vocales__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! ../../../../data/audio/fonemas/vocales/data.vocales */
+    "./src/data/audio/fonemas/vocales/data.vocales.ts");
+    /* harmony import */
+
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/fesm2015/router.js");
 
     var VocalPanelComponent =
     /*#__PURE__*/
     function () {
-      function VocalPanelComponent(navCtrl) {
+      function VocalPanelComponent(navCtrl, route) {
         _classCallCheck(this, VocalPanelComponent);
 
         this.navCtrl = navCtrl;
+        this.route = route;
       }
 
       _createClass(VocalPanelComponent, [{
@@ -3825,10 +3876,24 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         value: function ngOnInit() {}
       }, {
         key: "goToPhoneme",
-        value: function goToPhoneme(event) {
-          console.log(event.target.value);
-          this.value = event.target.value;
-          this.navCtrl.navigateForward(['/fonema', this.value]);
+        value: function goToPhoneme(phonemeNameSelected) {
+          var phonemeVocalData = this.getPhonemeVocal(phonemeNameSelected);
+          this.route.navigate(['/fonema'], {
+            queryParams: {
+              phoneme: JSON.stringify(phonemeVocalData)
+            }
+          }); //this.navCtrl.navigateForward(['/fonema', this.value]);
+        }
+      }, {
+        key: "getPhonemeVocal",
+        value: function getPhonemeVocal(phonemeVocalName) {
+          phonemeVocalName = phonemeVocalName.toUpperCase();
+
+          for (var i = 0; i < _data_audio_fonemas_vocales_data_vocales__WEBPACK_IMPORTED_MODULE_3__["VOCALES"].length; i++) {
+            if (_data_audio_fonemas_vocales_data_vocales__WEBPACK_IMPORTED_MODULE_3__["VOCALES"][i].vocal.toUpperCase() == phonemeVocalName) {
+              return _data_audio_fonemas_vocales_data_vocales__WEBPACK_IMPORTED_MODULE_3__["VOCALES"][i];
+            }
+          }
         }
       }]);
 
@@ -3838,6 +3903,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     VocalPanelComponent.ctorParameters = function () {
       return [{
         type: _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["NavController"]
+      }, {
+        type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"]
       }];
     };
 
@@ -3849,7 +3916,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
       /*! ./vocal-panel.component.scss */
       "./src/app/components/phoneme/vocal-panel/vocal-panel.component.scss")).default]
-    }), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_angular__WEBPACK_IMPORTED_MODULE_2__["NavController"]])], VocalPanelComponent);
+    }), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_angular__WEBPACK_IMPORTED_MODULE_2__["NavController"], _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"]])], VocalPanelComponent);
     /***/
   },
 
@@ -5890,7 +5957,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         reproduciendo: false
       }, {
         nombre: 'Chu',
-        audio: 'assets/audio/fonemas/silabas/ch/Cha.mp3',
+        audio: 'assets/audio/fonemas/silabas/ch/Chu.mp3',
         duracion: 4,
         reproduciendo: false
       }]
@@ -6251,7 +6318,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         nombre: 'Lo-co-mo-to-ra',
         silaba: 'Lo',
-        audio: 'assets/audio/fonemas/consonantes/l/locotora.mp3',
+        audio: 'assets/audio/fonemas/consonantes/l/locomotora.mp3',
         imagen: 'assets/img/fonemas/consonantes/l/Locomotora.jpg',
         duracion: 4,
         reproduciendo: false
@@ -6628,8 +6695,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         nombre: 'No-mo',
         silaba: 'No',
-        audio: 'assets/audio/fonemas/consonantes/n/Nancy.mp3',
-        imagen: 'assets/img/fonemas/consonantes/n/Nancy.jpg',
+        audio: 'assets/audio/fonemas/consonantes/n/Nomo.mp3',
+        imagen: 'assets/img/fonemas/consonantes/n/Nomo.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
@@ -6656,19 +6723,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         nombre: 'Nú-me-ros',
         silaba: 'Nu',
-        audio: 'assets/audio/fonemas/consonantes/n/Números.mp3',
+        audio: 'assets/audio/fonemas/consonantes/n/Numeros.mp3',
         imagen: 'assets/img/fonemas/consonantes/n/Números.jpg',
         duracion: 4,
         reproduciendo: false
       }],
       dataS: [{
         nombre: 'Na',
-        audio: 'assets/audio/fonemas/silabas/n/na.mp3',
+        audio: 'assets/audio/fonemas/silabas/n/Na.mp3',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Ne',
-        audio: 'assets/audio/fonemas/silabas/n/ne.mp3',
+        audio: 'assets/audio/fonemas/silabas/n/Ne.mp3',
         duracion: 4,
         reproduciendo: false
       }, {
@@ -7073,7 +7140,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         nombre: 'Po-li-cia',
         silaba: 'Po',
-        audio: 'assets/audio/fonemas/consonantes/p/Policía.mp3',
+        audio: 'assets/audio/fonemas/consonantes/p/Policia.mp3',
         imagen: 'assets/img/fonemas/consonantes/p/Policía.jpg',
         duracion: 4,
         reproduciendo: false
@@ -7370,7 +7437,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         nombre: 'Se-má-fo-ro',
         silaba: 'Se',
-        audio: 'assets/audio/fonemas/consonantes/s/Semáforo.mp3',
+        audio: 'assets/audio/fonemas/consonantes/s/Semaforo.mp3',
         imagen: 'assets/img/fonemas/consonantes/s/Semáforo.jpg',
         duracion: 4,
         reproduciendo: false
@@ -7746,7 +7813,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         reproduciendo: false
       }, {
         nombre: 'Ti',
-        audio: 'assets/audio/fonemas/silabas/T/Ti.mp3',
+        audio: 'assets/audio/fonemas/silabas/t/Ti.mp3',
         duracion: 4,
         reproduciendo: false
       }, {
@@ -7755,7 +7822,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         duracion: 4,
         reproduciendo: false
       }, {
-        nombre: 'Su',
+        nombre: 'Tu',
         audio: 'assets/audio/fonemas/silabas/t/Tu.mp3',
         duracion: 4,
         reproduciendo: false
@@ -8011,50 +8078,50 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       vocal: 'u',
       data: [{
         nombre: 'Unicornio',
-        audio: 'assets/audio/fonemas/vocales/u/unicornio.mp3',
+        audio: 'assets/audio/fonemas/vocales/u/Unicornio.mp3',
         imagen: 'assets/img/fonemas/vocales/u/unicornio.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Uniforme',
-        audio: 'assets/audio/fonemas/vocales/u/uniforme.mp3',
+        audio: 'assets/audio/fonemas/vocales/u/Uniforme.mp3',
         imagen: 'assets/img/fonemas/vocales/u/uniforme.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Universo',
-        audio: 'assets/audio/fonemas/vocales/u/universo.mp3',
+        audio: 'assets/audio/fonemas/vocales/u/Universo.mp3',
         imagen: 'assets/img/fonemas/vocales/u/universo.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Uno',
-        audio: 'assets/audio/fonemas/vocales/u/uno.mp3',
+        audio: 'assets/audio/fonemas/vocales/u/Uno.mp3',
         imagen: 'assets/img/fonemas/vocales/u/uno.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Uña',
-        audio: 'assets/audio/fonemas/vocales/u/uña.mp3',
+        audio: 'assets/audio/fonemas/vocales/u/Uña.mp3',
         imagen: 'assets/img/fonemas/vocales/u/uña.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Urna',
-        audio: 'assets/audio/fonemas/vocales/u/urna.mp3',
+        audio: 'assets/audio/fonemas/vocales/u/Urna.mp3',
         imagen: 'assets/img/fonemas/vocales/u/urna.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Urraca',
-        audio: 'assets/audio/fonemas/vocales/u/urraca.mp3',
+        audio: 'assets/audio/fonemas/vocales/u/Urraca.mp3',
         imagen: 'assets/img/fonemas/vocales/u/urraca.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Útiles',
-        audio: 'assets/audio/fonemas/vocales/u/unicornio.mp3',
-        imagen: 'assets/img/fonemas/vocales/u/unicornio.jpg',
+        audio: 'assets/audio/fonemas/vocales/u/Útiles.mp3',
+        imagen: 'assets/img/fonemas/vocales/u/utiles.jpg',
         duracion: 4,
         reproduciendo: false
       }]
@@ -8127,9 +8194,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }, {
       nombre: 'Juguetes',
       imagen: 'assets\img\semanticas\categories-bar\juguetes.png',
-      subcategoria: [{
-        nombre: ''
-      }]
+      subcategoria: []
     }, {
       nombre: 'Prendas de Vestir',
       imagen: 'assets\img\semanticas\categories-bar\prendas.png',
@@ -8267,7 +8332,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         predicado: 'pestaña',
         imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
         imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
-        imagenPredicado: 'assets/img/semanticas/categorias/cuerpo/Pestaña.jpg'
+        imagenPredicado: 'assets/img/semanticas/categorias/cuerpo/Pestañas.jpg'
       }, {
         sujeto: 'Yo',
         verbo: 'tengo',
@@ -8314,7 +8379,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         sujeto: 'Yo',
         verbo: 'tengo',
         predicado: 'orejas',
-        imagenSujeto: '',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
         imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
         imagenPredicado: 'assets/img/semanticas/categorias/cuerpo/Orejas.jpg'
       }, {
@@ -9041,12 +9106,103 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }, {
       nombre: 'Juguetes',
       data: [{
-        sujeto: '',
-        verbo: '',
-        predicado: '',
-        imagenSujeto: '',
+        sujeto: 'Yo',
+        verbo: 'juego',
+        predicado: 'bola',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
         imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
-        imagenPredicado: ''
+        imagenPredicado: 'assets/img/semanticas/categorias/juguetes/Bola.jpg'
+      }, {
+        sujeto: 'Ella',
+        verbo: 'juega',
+        predicado: 'muñecas',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Ella.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/juguetes/Muñeca.jpg'
+      }, {
+        sujeto: 'Ella',
+        verbo: 'juega',
+        predicado: 'tucos',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Ella.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/juguetes/Tucos.jpg'
+      }, {
+        sujeto: 'Él',
+        verbo: 'juega',
+        predicado: 'bicicleta',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Él.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/juguetes/Bicicleta.jpg'
+      }, {
+        sujeto: 'Yo',
+        verbo: 'juego',
+        predicado: 'patines',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/juguetes/Patines.jpg'
+      }, {
+        sujeto: 'Ella',
+        verbo: 'juega',
+        predicado: 'motos',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Ella.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/juguetes/Moto.jpg'
+      }, {
+        sujeto: 'Yo',
+        verbo: 'juego',
+        predicado: 'rompecabezas',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/juguetes/Rompecabezas.jpg'
+      }, {
+        sujeto: 'Ella',
+        verbo: 'juega',
+        predicado: 'aviones',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Ella.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/juguetes/Aviones.jpg'
+      }, {
+        sujeto: 'Yo',
+        verbo: 'juego',
+        predicado: 'trastes',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/juguetes/Muñecas.jpg'
+      }, {
+        sujeto: 'Él',
+        verbo: 'juega',
+        predicado: 'bingo',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Él.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/juguetes/Bingo.jpg'
+      }, {
+        sujeto: 'Ella',
+        verbo: 'juega',
+        predicado: 'lotería',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Ella.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/juguetes/Lotería.jpg'
+      }, {
+        sujeto: 'Él',
+        verbo: 'juega',
+        predicado: 'Hula Hula',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Él.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/juguetes/HulaHula.jpg'
+      }, {
+        sujeto: 'Yo',
+        verbo: 'juego',
+        predicado: 'Suiza',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/juguetes/Suiza.jpg'
+      }, {
+        sujeto: 'Ella',
+        verbo: 'juega',
+        predicado: 'nintendo',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Ella.jpg',
+        imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+        imagenPredicado: 'assets/img/semanticas/categorias/juguetes/Nintendo.jpg'
       }]
     }, {
       nombre: 'Ropa de Hombre',
@@ -9634,14 +9790,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }, {
       nombre: 'o',
       video: 'assets/video/fonemas/vidFonO.mp4',
-      imagen: 'assets/img/fonemaO.svg',
+      imagen: 'assets/img/fonemas/phoneme-bar/fonemaO.png',
       mensaje: 'Ohhh Ohhh Ohhh (Asombro)',
       duracion: 4,
       reproduciendo: false
     }, {
       nombre: 'p',
       video: 'assets/video/fonemas/vidFonP.mp4',
-      imagen: 'assets/img/fonemaP.svg',
+      imagen: '',
       mensaje: 'Pum Pum Pum (Tambor)',
       duracion: 4,
       reproduciendo: false

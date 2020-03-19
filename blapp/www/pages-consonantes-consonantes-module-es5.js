@@ -21,7 +21,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"principal\">\r\n  <ion-grid>\r\n    <ion-row class=\"component\">\r\n      <ion-col >\r\n        <app-phoneme-consonant-view [valueFonemaView]=\"valueFonema\"></app-phoneme-consonant-view>\r\n      </ion-col>\r\n    </ion-row>   \r\n  </ion-grid>\r\n</div>\r\n";
+    __webpack_exports__["default"] = "<div class=\"principal\">\r\n  <ion-grid>\r\n    <ion-row class=\"component\">\r\n      <ion-col >\r\n        <app-phoneme-consonant-view [phoneme]=\"phonemeConsonant\"></app-phoneme-consonant-view>\r\n      </ion-col>\r\n    </ion-row>   \r\n  </ion-grid>\r\n</div>\r\n";
     /***/
   },
 
@@ -225,18 +225,23 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var ConsonantesPage =
     /*#__PURE__*/
     function () {
-      function ConsonantesPage(activateRoute) {
+      //public valueFonema = null;
+      //public mensajeFonema: string;
+      function ConsonantesPage(activatedRoute) {
         _classCallCheck(this, ConsonantesPage);
 
-        this.activateRoute = activateRoute;
-        this.valueFonema = null;
+        this.activatedRoute = activatedRoute;
       }
 
       _createClass(ConsonantesPage, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          this.valueFonema = this.activateRoute.snapshot.paramMap.get('value');
-          console.log(this.valueFonema);
+          var _this = this;
+
+          this.activatedRoute.queryParams.subscribe(function (params) {
+            _this.phonemeConsonant = JSON.parse(params['phoneme']);
+          }); //this.valueFonema = this.activateRoute.snapshot.paramMap.get('value');
+          //console.log(this.valueFonema);
         }
       }]);
 

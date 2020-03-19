@@ -26,17 +26,17 @@
     <ion-row>
       <ion-col>
         <div class="semantica">
-          <ion-label class="palabras">sujeto</ion-label>
+          <ion-label class="palabras">{{sujeto}}</ion-label>
         </div>
       </ion-col>
       <ion-col>
         <div class="semantica">
-          <ion-label class="palabras">verbo</ion-label>
+          <ion-label class="palabras">{{verbo}}</ion-label>
         </div>
       </ion-col>
       <ion-col>
         <div class="semantica">
-          <ion-label class="palabras">predicado</ion-label>
+          <ion-label class="palabras">{{predicado}}</ion-label>
         </div>
       </ion-col>
     </ion-row>
@@ -44,23 +44,23 @@
     <ion-row class="options">
       <ion-col>
         <div class="element" cdkDrop>
-          <div cdkDrag>
-            <ion-img src="assets/img/fonemas/game-panel/mama.png"></ion-img>
-          </div>
+          <ion-avatar class="imagen" cdkDrag>
+            <ion-img src={{imagen1}}></ion-img>
+          </ion-avatar>
         </div>        
       </ion-col>
       <ion-col>
         <div class="element" cdkDrop>
-          <div cdkDrag>
-            <ion-img src="assets/img/fonemas/game-panel/mama.png"></ion-img>
-          </div>
+          <ion-avatar class="imagen" cdkDrag>
+            <ion-img src={{imagen2}}></ion-img>
+          </ion-avatar>
         </div>  
       </ion-col>
       <ion-col>
         <div class="element" cdkDrop>
-          <div cdkDrag>
-            <ion-img src="assets/img/fonemas/game-panel/mama.png"></ion-img>
-          </div>
+          <ion-avatar class="imagen" cdkDrag>
+            <ion-img src={{imagen3}}></ion-img>
+          </ion-avatar>
         </div>  
       </ion-col>
     </ion-row> 

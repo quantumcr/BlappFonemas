@@ -740,7 +740,7 @@ const routes = [
         loadChildren: () => Promise.all(/*! import() | pages-estudiantes-estudiantes-module */[__webpack_require__.e("default~pages-categoria-categoria-module~pages-consonantes-consonantes-module~pages-docentes-docente~625ffebc"), __webpack_require__.e("pages-estudiantes-estudiantes-module")]).then(__webpack_require__.bind(null, /*! ./pages/estudiantes/estudiantes.module */ "./src/app/pages/estudiantes/estudiantes.module.ts")).then(m => m.EstudiantesPageModule)
     },
     {
-        path: 'fonema/:value',
+        path: 'fonema',
         canActivate: [_services_auth_guard_service__WEBPACK_IMPORTED_MODULE_3__["AuthGuardService"]],
         loadChildren: () => Promise.all(/*! import() | pages-fonema-fonema-module */[__webpack_require__.e("default~pages-categoria-categoria-module~pages-consonantes-consonantes-module~pages-docentes-docente~625ffebc"), __webpack_require__.e("pages-fonema-fonema-module")]).then(__webpack_require__.bind(null, /*! ./pages/fonema/fonema.module */ "./src/app/pages/fonema/fonema.module.ts")).then(m => m.FonemaPageModule)
     },
@@ -750,7 +750,7 @@ const routes = [
         loadChildren: () => Promise.all(/*! import() | pages-categoria-categoria-module */[__webpack_require__.e("default~pages-categoria-categoria-module~pages-consonantes-consonantes-module~pages-docentes-docente~625ffebc"), __webpack_require__.e("pages-categoria-categoria-module")]).then(__webpack_require__.bind(null, /*! ./pages/categoria/categoria.module */ "./src/app/pages/categoria/categoria.module.ts")).then(m => m.CategoriaPageModule)
     },
     {
-        path: 'consonantes/:value',
+        path: 'consonantes',
         canActivate: [_services_auth_guard_service__WEBPACK_IMPORTED_MODULE_3__["AuthGuardService"]],
         loadChildren: () => Promise.all(/*! import() | pages-consonantes-consonantes-module */[__webpack_require__.e("default~pages-categoria-categoria-module~pages-consonantes-consonantes-module~pages-docentes-docente~625ffebc"), __webpack_require__.e("pages-consonantes-consonantes-module")]).then(__webpack_require__.bind(null, /*! ./pages/consonantes/consonantes.module */ "./src/app/pages/consonantes/consonantes.module.ts")).then(m => m.ConsonantesPageModule)
     },
