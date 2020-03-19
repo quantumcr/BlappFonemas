@@ -158,7 +158,7 @@ export const CONSONANTES = [
             },
             {
                 nombre: 'Chu',
-                audio: 'assets/audio/fonemas/silabas/ch/Cha.mp3',
+                audio: 'assets/audio/fonemas/silabas/ch/Chu.mp3',
                 duracion: 4,
                 reproduciendo: false
             }
@@ -588,7 +588,7 @@ export const CONSONANTES = [
             {
                 nombre: 'Lo-co-mo-to-ra',
                 silaba: 'Lo',
-                audio: 'assets/audio/fonemas/consonantes/l/locotora.mp3',
+                audio: 'assets/audio/fonemas/consonantes/l/locomotora.mp3',
                 imagen: 'assets/img/fonemas/consonantes/l/Locomotora.jpg',
                 duracion: 4,
                 reproduciendo: false
@@ -800,7 +800,7 @@ export const CONSONANTES = [
             {
                 nombre: 'Ma-dri-na',
                 silaba: 'Ma',
-                audio: 'assets/audio/fonemas/consonantes/m/madrina.mp3',
+                audio: 'assets/audio/fonemas/consonantes/m/Madrina.mp3',
                 imagen: 'assets/img/fonemas/consonantes/m/Madrina.jpg',
                 duracion: 4,
                 reproduciendo: false
@@ -1030,8 +1030,8 @@ export const CONSONANTES = [
             {
                 nombre: 'No-mo',
                 silaba: 'No',
-                audio: 'assets/audio/fonemas/consonantes/n/Nancy.mp3',
-                imagen: 'assets/img/fonemas/consonantes/n/Nancy.jpg',
+                audio: 'assets/audio/fonemas/consonantes/n/Nomo.mp3',
+                imagen: 'assets/img/fonemas/consonantes/n/Nomo.jpg',
                 duracion: 4,
                 reproduciendo: false
             },
@@ -1062,7 +1062,7 @@ export const CONSONANTES = [
             {
                 nombre: 'Nú-me-ros',
                 silaba: 'Nu',
-                audio: 'assets/audio/fonemas/consonantes/n/Números.mp3',
+                audio: 'assets/audio/fonemas/consonantes/n/Numeros.mp3',
                 imagen: 'assets/img/fonemas/consonantes/n/Números.jpg',
                 duracion: 4,
                 reproduciendo: false
@@ -1071,13 +1071,13 @@ export const CONSONANTES = [
         dataS: [
             {
                 nombre: 'Na',
-                audio: 'assets/audio/fonemas/silabas/n/na.mp3',
+                audio: 'assets/audio/fonemas/silabas/n/Na.mp3',
                 duracion: 4,
                 reproduciendo: false
             },
             {
                 nombre: 'Ne',
-                audio: 'assets/audio/fonemas/silabas/n/ne.mp3',
+                audio: 'assets/audio/fonemas/silabas/n/Ne.mp3',
                 duracion: 4,
                 reproduciendo: false
             },
@@ -1547,7 +1547,7 @@ export const CONSONANTES = [
             {
                 nombre: 'Po-li-cia',
                 silaba: 'Po',
-                audio: 'assets/audio/fonemas/consonantes/p/Policía.mp3',
+                audio: 'assets/audio/fonemas/consonantes/p/Policia.mp3',
                 imagen: 'assets/img/fonemas/consonantes/p/Policía.jpg',
                 duracion: 4,
                 reproduciendo: false
@@ -1894,7 +1894,7 @@ export const CONSONANTES = [
             {
                 nombre: 'Se-má-fo-ro',
                 silaba: 'Se',
-                audio: 'assets/audio/fonemas/consonantes/s/Semáforo.mp3',
+                audio: 'assets/audio/fonemas/consonantes/s/Semaforo.mp3',
                 imagen: 'assets/img/fonemas/consonantes/s/Semáforo.jpg',
                 duracion: 4,
                 reproduciendo: false
@@ -2330,7 +2330,7 @@ export const CONSONANTES = [
             },
             {
                 nombre: 'Ti',
-                audio: 'assets/audio/fonemas/silabas/T/Ti.mp3',
+                audio: 'assets/audio/fonemas/silabas/t/Ti.mp3',
                 duracion: 4,
                 reproduciendo: false
             },
@@ -2341,7 +2341,7 @@ export const CONSONANTES = [
                 reproduciendo: false
             },
             {
-                nombre: 'Su',
+                nombre: 'Tu',
                 audio: 'assets/audio/fonemas/silabas/t/Tu.mp3',
                 duracion: 4,
                 reproduciendo: false

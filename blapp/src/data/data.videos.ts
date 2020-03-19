@@ -140,7 +140,7 @@ export const VIDEOS = [
     {
         nombre: 'p',
         video: 'assets/video/fonemas/vidFonP.mp4',
-        imagen: 'assets/img/fonemaP.svg',
+        imagen: '',
         mensaje: 'Pum Pum Pum (Tambor)',
         duracion: 4,
         reproduciendo: false
