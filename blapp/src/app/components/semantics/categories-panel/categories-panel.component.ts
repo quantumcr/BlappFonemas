@@ -30,7 +30,7 @@ export class CategoriesPanelComponent implements OnInit {
     for (let i = 0; i < CATEGORIAS.length; i++) {
       if (CATEGORIAS[i].nombre.toUpperCase() == categoryName) {
         return CATEGORIAS[i] as unknown as CategoriaI;
-      }      
+      }
     }
   }
 

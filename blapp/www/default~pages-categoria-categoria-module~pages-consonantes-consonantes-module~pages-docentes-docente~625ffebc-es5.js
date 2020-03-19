@@ -21,7 +21,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"principal\">\r\n  <ion-grid>\r\n    <ion-row>\r\n      <ion-img src=\"assets\\img\\semanticas\\semantics-bar\\semanticas.png\" class=\"imagen\"></ion-img>\r\n    </ion-row>\r\n\r\n    <ion-row>\r\n      <ion-label class=\"titulo\">{{this.category.nombre.toUpperCase()}}</ion-label>      \r\n    </ion-row>\r\n    \r\n    <div>\r\n      <ion-row *ngFor=\"let subcategory of category.subcategoria\">\r\n        <ion-col>\r\n          <ion-segment-button value=\"{{subcategory.nombre}}\" onclick=\"\">{{subcategory.nombre}}</ion-segment-button>\r\n        </ion-col>\r\n      </ion-row>\r\n    </div>\r\n  </ion-grid>\r\n</div>\r\n\r\n";
+    __webpack_exports__["default"] = "<div class=\"principal\">\r\n  <ion-grid>\r\n    <ion-row>\r\n      <ion-img src=\"assets\\img\\semanticas\\semantics-bar\\semanticas.png\" class=\"imagen\"></ion-img>\r\n    </ion-row>\r\n\r\n    <ion-row>\r\n      <ion-label class=\"titulo\">{{this.category.nombre.toUpperCase()}}</ion-label>      \r\n    </ion-row>\r\n    \r\n    <div class=\"buttons\">\r\n      <ion-row *ngFor=\"let subcategory of category.subcategoria\">\r\n        <ion-col>\r\n          <ion-segment-button value=\"{{subcategory.nombre}}\" onclick=\"\" class=\"button\">{{subcategory.nombre}}</ion-segment-button>\r\n        </ion-col>\r\n      </ion-row>\r\n    </div>\r\n  </ion-grid>\r\n</div>\r\n\r\n";
     /***/
   },
 
@@ -441,7 +441,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"principal\">\r\n    <ion-grid>\r\n        <ion-row class=\"rowSilaba\">\r\n            <ion-col>\r\n                <ion-segment-button fill=\"round\" class=\"silaba\">Ma</ion-segment-button>\r\n            </ion-col>\r\n            <ion-col>\r\n                <ion-segment-button fill=\"round\" class=\"silaba\">Me</ion-segment-button>\r\n            </ion-col>\r\n        </ion-row>\r\n        <ion-row class=\"row\">\r\n            <ion-col >\r\n                <div style=\"position: relative;\" cdkDrag>\r\n                    <div style=\"position: absolute; left: 0px; top: 0px;\">\r\n                        <ion-img src=\"assets/img/fonemas/game-panel/mama.png\" class=\"imagen\"></ion-img>\r\n                    </div>\r\n                    <div style=\"position: absolute; left: 0px; right: 120px; top: 126px;\">\r\n                        <ion-segment-button value=\"audio1\" class=\"btnPlay\" (click)=\"playAudio($event)\">\r\n                            <ion-icon src=\"assets/icon/play.svg\"></ion-icon>\r\n                        </ion-segment-button>\r\n                    </div>\r\n                  </div>\r\n            </ion-col>\r\n            <ion-col>\r\n                <div style=\"position: relative;\" cdkDrag>\r\n                    <div style=\"position: absolute; left: 0px; top: 0px;\">\r\n                        <ion-img src=\"assets/img/fonemas/game-panel/mama.png\" class=\"imagen\"></ion-img>\r\n                    </div>\r\n                    <div style=\"position: absolute; left: 0px; right: 120px; top: 126px;\">\r\n                        <ion-segment-button value=\"audio2\" class=\"btnPlay\" (click)=\"playAudio($event)\">\r\n                            <ion-icon src=\"assets/icon/play.svg\"></ion-icon>\r\n                        </ion-segment-button>\r\n                    </div>\r\n                  </div>              \r\n            </ion-col>  \r\n            <ion-col>\r\n                <div style=\"position: relative;\" cdkDrag>\r\n                    <div style=\"position: absolute; left: 0px; top: 0px;\">\r\n                        <ion-img src=\"assets/img/fonemas/game-panel/mama.png\" class=\"imagen\"></ion-img>\r\n                    </div>\r\n                    <div style=\"position: absolute; left: 0px; right: 120px; top: 126px;\">\r\n                        <ion-segment-button value=\"audio3\" class=\"btnPlay\" (click)=\"playAudio($event)\">\r\n                            <ion-icon src=\"assets/icon/play.svg\"></ion-icon>\r\n                        </ion-segment-button>\r\n                    </div>\r\n                  </div>             \r\n            </ion-col>                   \r\n        </ion-row>\r\n    </ion-grid>\r\n</div>\r\n";
+    __webpack_exports__["default"] = "<div class=\"principal\">\r\n    <ion-grid>\r\n        <ion-row class=\"rowSilaba\">\r\n            <ion-col cdkDrop>\r\n                <ion-segment-button fill=\"round\" class=\"silaba\">{{silaba1}}</ion-segment-button>\r\n            </ion-col>\r\n            <ion-col>\r\n                <ion-segment-button fill=\"round\" class=\"silaba\">{{silaba2}}</ion-segment-button>\r\n            </ion-col>\r\n        </ion-row>\r\n        <ion-row class=\"row\" cdkDropList>\r\n            <ion-col >\r\n                <div style=\"position: relative;\" cdkDrag>\r\n                    <div style=\"position: absolute; left: 0px; top: 0px;\">\r\n                        <ion-img src=\"assets/img/fonemas/game-panel/mama.png\" class=\"imagen\"></ion-img>\r\n                    </div>\r\n                    <div style=\"position: absolute; left: 0px; right: 120px; top: 126px;\">\r\n                        <ion-segment-button value=\"audio1\" class=\"btnPlay\" (click)=\"playAudio($event)\">\r\n                            <ion-icon src=\"assets/icon/play.svg\"></ion-icon>\r\n                        </ion-segment-button>\r\n                    </div>\r\n                  </div>\r\n            </ion-col>\r\n            <ion-col>\r\n                <div style=\"position: relative;\" cdkDrag>\r\n                    <div style=\"position: absolute; left: 0px; top: 0px;\">\r\n                        <ion-img src=\"assets/img/fonemas/game-panel/mama.png\" class=\"imagen\"></ion-img>\r\n                    </div>\r\n                    <div style=\"position: absolute; left: 0px; right: 120px; top: 126px;\">\r\n                        <ion-segment-button value=\"audio2\" class=\"btnPlay\" (click)=\"playAudio($event)\">\r\n                            <ion-icon src=\"assets/icon/play.svg\"></ion-icon>\r\n                        </ion-segment-button>\r\n                    </div>\r\n                  </div>              \r\n            </ion-col>  \r\n            <ion-col>\r\n                <div style=\"position: relative;\" cdkDrag>\r\n                    <div style=\"position: absolute; left: 0px; top: 0px;\">\r\n                        <ion-img src=\"assets/img/fonemas/game-panel/mama.png\" class=\"imagen\"></ion-img>\r\n                    </div>\r\n                    <div style=\"position: absolute; left: 0px; right: 120px; top: 126px;\">\r\n                        <ion-segment-button value=\"audio3\" class=\"btnPlay\" (click)=\"playAudio($event)\">\r\n                            <ion-icon src=\"assets/icon/play.svg\"></ion-icon>\r\n                        </ion-segment-button>\r\n                    </div>\r\n                  </div>             \r\n            </ion-col>                   \r\n        </ion-row>\r\n    </ion-grid>\r\n</div>\r\n";
     /***/
   },
 
@@ -781,7 +781,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = ".principal {\n  position: absolute;\n  width: 302px;\n  height: 623px;\n  background: #52D7C6;\n  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);\n  border-radius: 10px;\n}\n\n.imagen {\n  position: absolute;\n  width: 213px;\n  height: 213px;\n  left: 44px;\n  right: 45px;\n  top: 43px;\n}\n\n.titulo {\n  position: absolute;\n  width: 260px;\n  height: 74px;\n  left: 22px;\n  right: 20px;\n  top: 265px;\n  font-family: Poppins;\n  font-style: normal;\n  font-weight: bold;\n  font-size: 40px;\n  line-height: 67px;\n  text-align: center;\n  color: #FFFFFF;\n}\n\n.titulo2 {\n  position: absolute;\n  width: 260px;\n  height: 74px;\n  left: 22px;\n  right: 20px;\n  top: 369px;\n  font-family: Poppins;\n  font-style: normal;\n  font-weight: bold;\n  font-size: 38px;\n  line-height: 67px;\n  text-align: center;\n  color: #FFFFFF;\n}\n\n.comando1 {\n  position: absolute;\n  top: 406px;\n  background: rgba(255, 230, 190, 0.94);\n  border-radius: 15px;\n}\n\n.comando2 {\n  position: absolute;\n  top: 467px;\n  background: rgba(255, 230, 190, 0.94);\n  border-radius: 15px;\n}\n\n.comando3 {\n  position: absolute;\n  top: 520px;\n  background: rgba(255, 230, 190, 0.94);\n  border-radius: 15px;\n}\n\n.ion-segment-button {\n  background: rgba(255, 230, 190, 0.94);\n  border-radius: 15px;\n  color: #5F659C;\n  top: 392px;\n}\n\n.btnComando1 {\n  position: absolute;\n  width: 259px;\n  height: 48px;\n  left: 20px;\n  right: 23px;\n  background: #BCFFF7;\n  border-radius: 15px;\n  color: #5F659C;\n  top: 442px;\n  font-family: Poppins;\n  font-style: normal;\n  font-weight: bold;\n  font-size: 20px;\n  line-height: 30px;\n  /* identical to box height */\n  color: #5F659C;\n}\n\n.btnComando2 {\n  position: absolute;\n  width: 259px;\n  height: 48px;\n  left: 20px;\n  right: 23px;\n  background: rgba(255, 230, 190, 0.94);\n  background: #BCFFF7;\n  border-radius: 15px;\n  color: #5F659C;\n  top: 503px;\n  font-family: Poppins;\n  font-style: normal;\n  font-weight: bold;\n  font-size: 20px;\n  line-height: 30px;\n  /* identical to box height */\n  color: #5F659C;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9jYXRlZ29yaWVzLXZpZXcvY2F0ZWdvcmllcy1iYXIvQzpcXFVzZXJzXFxiZXJuYVxcRG9jdW1lbnRzXFxHaXRIdWJcXEJsYXBwRm9uZW1hc1xcYmxhcHAvc3JjXFxhcHBcXGNvbXBvbmVudHNcXGNhdGVnb3JpZXMtdmlld1xcY2F0ZWdvcmllcy1iYXJcXGNhdGVnb3JpZXMtYmFyLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9jb21wb25lbnRzL2NhdGVnb3JpZXMtdmlldy9jYXRlZ29yaWVzLWJhci9jYXRlZ29yaWVzLWJhci5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFDSTtFQUNJLGtCQUFBO0VBQ0EsWUFBQTtFQUNBLGFBQUE7RUFDQSxtQkFBQTtFQUNBLDJDQUFBO0VBQ0EsbUJBQUE7QUNBUjs7QURFSTtFQUNJLGtCQUFBO0VBQ0EsWUFBQTtFQUNBLGFBQUE7RUFDQSxVQUFBO0VBQ0EsV0FBQTtFQUNBLFNBQUE7QUNDUjs7QURDSTtFQUNJLGtCQUFBO0VBQ0EsWUFBQTtFQUNBLFlBQUE7RUFDQSxVQUFBO0VBQ0EsV0FBQTtFQUNBLFVBQUE7RUFFQSxvQkFBQTtFQUNBLGtCQUFBO0VBQ0EsaUJBQUE7RUFDQSxlQUFBO0VBQ0EsaUJBQUE7RUFDQSxrQkFBQTtFQUVBLGNBQUE7QUNBUjs7QURFSTtFQUNJLGtCQUFBO0VBQ0EsWUFBQTtFQUNBLFlBQUE7RUFDQSxVQUFBO0VBQ0EsV0FBQTtFQUNBLFVBQUE7RUFFQSxvQkFBQTtFQUNBLGtCQUFBO0VBQ0EsaUJBQUE7RUFDQSxlQUFBO0VBQ0EsaUJBQUE7RUFDQSxrQkFBQTtFQUVBLGNBQUE7QUNEUjs7QURHSTtFQUNJLGtCQUFBO0VBQ0EsVUFBQTtFQUNBLHFDQUFBO0VBQ0EsbUJBQUE7QUNBUjs7QURFSTtFQUNJLGtCQUFBO0VBQ0EsVUFBQTtFQUNBLHFDQUFBO0VBQ0EsbUJBQUE7QUNDUjs7QURDSTtFQUNJLGtCQUFBO0VBQ0EsVUFBQTtFQUNBLHFDQUFBO0VBQ0EsbUJBQUE7QUNFUjs7QURBSTtFQUNJLHFDQUFBO0VBQ0EsbUJBQUE7RUFDQSxjQUFBO0VBQ0EsVUFBQTtBQ0dSOztBRERJO0VBQ0ksa0JBQUE7RUFDQSxZQUFBO0VBQ0EsWUFBQTtFQUNBLFVBQUE7RUFDQSxXQUFBO0VBQ0EsbUJBQUE7RUFDQSxtQkFBQTtFQUNBLGNBQUE7RUFDQSxVQUFBO0VBRUEsb0JBQUE7RUFDQSxrQkFBQTtFQUNBLGlCQUFBO0VBQ0EsZUFBQTtFQUNBLGlCQUFBO0VBRUEsNEJBQUE7RUFFQSxjQUFBO0FDQ1I7O0FEQ0k7RUFDSSxrQkFBQTtFQUNBLFlBQUE7RUFDQSxZQUFBO0VBQ0EsVUFBQTtFQUNBLFdBQUE7RUFDQSxxQ0FBQTtFQUNBLG1CQUFBO0VBQ0EsbUJBQUE7RUFDQSxjQUFBO0VBQ0EsVUFBQTtFQUVBLG9CQUFBO0VBQ0Esa0JBQUE7RUFDQSxpQkFBQTtFQUNBLGVBQUE7RUFDQSxpQkFBQTtFQUVBLDRCQUFBO0VBRUEsY0FBQTtBQ0RSIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9jYXRlZ29yaWVzLXZpZXcvY2F0ZWdvcmllcy1iYXIvY2F0ZWdvcmllcy1iYXIuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJcclxuICAgIC5wcmluY2lwYWx7XHJcbiAgICAgICAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gICAgICAgIHdpZHRoOiAzMDJweDtcclxuICAgICAgICBoZWlnaHQ6IDYyM3B4O1xyXG4gICAgICAgIGJhY2tncm91bmQ6ICM1MkQ3QzY7XHJcbiAgICAgICAgYm94LXNoYWRvdzogMHB4IDRweCA0cHggcmdiYSgwLCAwLCAwLCAwLjI1KTtcclxuICAgICAgICBib3JkZXItcmFkaXVzOiAxMHB4O1xyXG4gICAgfVxyXG4gICAgLmltYWdlbntcclxuICAgICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICAgICAgd2lkdGg6IDIxM3B4O1xyXG4gICAgICAgIGhlaWdodDogMjEzcHg7XHJcbiAgICAgICAgbGVmdDogNDRweDtcclxuICAgICAgICByaWdodDogNDVweDtcclxuICAgICAgICB0b3A6IDQzcHg7ICAgIFxyXG4gICAgfVxyXG4gICAgLnRpdHVsb3tcclxuICAgICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICAgICAgd2lkdGg6IDI2MHB4O1xyXG4gICAgICAgIGhlaWdodDogNzRweDtcclxuICAgICAgICBsZWZ0OiAyMnB4O1xyXG4gICAgICAgIHJpZ2h0OiAyMHB4O1xyXG4gICAgICAgIHRvcDogMjY1cHg7XHJcbiAgICBcclxuICAgICAgICBmb250LWZhbWlseTogUG9wcGlucztcclxuICAgICAgICBmb250LXN0eWxlOiBub3JtYWw7XHJcbiAgICAgICAgZm9udC13ZWlnaHQ6IGJvbGQ7XHJcbiAgICAgICAgZm9udC1zaXplOiA0MHB4O1xyXG4gICAgICAgIGxpbmUtaGVpZ2h0OiA2N3B4O1xyXG4gICAgICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgICAgICBcclxuICAgICAgICBjb2xvcjogI0ZGRkZGRjsgICAgXHJcbiAgICB9XHJcbiAgICAudGl0dWxvMntcclxuICAgICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICAgICAgd2lkdGg6IDI2MHB4O1xyXG4gICAgICAgIGhlaWdodDogNzRweDtcclxuICAgICAgICBsZWZ0OiAyMnB4O1xyXG4gICAgICAgIHJpZ2h0OiAyMHB4O1xyXG4gICAgICAgIHRvcDogMzY5cHg7XHJcblxyXG4gICAgICAgIGZvbnQtZmFtaWx5OiBQb3BwaW5zO1xyXG4gICAgICAgIGZvbnQtc3R5bGU6IG5vcm1hbDtcclxuICAgICAgICBmb250LXdlaWdodDogYm9sZDtcclxuICAgICAgICBmb250LXNpemU6IDM4cHg7XHJcbiAgICAgICAgbGluZS1oZWlnaHQ6IDY3cHg7XHJcbiAgICAgICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgICAgIFxyXG4gICAgICAgIGNvbG9yOiAjRkZGRkZGOyAgICBcclxuICAgIH1cclxuICAgIC5jb21hbmRvMXtcclxuICAgICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICAgICAgdG9wOiA0MDZweDsgIFxyXG4gICAgICAgIGJhY2tncm91bmQ6IHJnYmEoMjU1LCAyMzAsIDE5MCwgMC45NCk7ICAgICBcclxuICAgICAgICBib3JkZXItcmFkaXVzOiAxNXB4OyAgICBcclxuICAgIH1cclxuICAgIC5jb21hbmRvMntcclxuICAgICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICAgICAgdG9wOiA0NjdweDtcclxuICAgICAgICBiYWNrZ3JvdW5kOiByZ2JhKDI1NSwgMjMwLCAxOTAsIDAuOTQpOyAgICAgXHJcbiAgICAgICAgYm9yZGVyLXJhZGl1czogMTVweDsgICAgICAgXHJcbiAgICB9XHJcbiAgICAuY29tYW5kbzN7XHJcbiAgICAgICAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gICAgICAgIHRvcDogNTIwcHg7IFxyXG4gICAgICAgIGJhY2tncm91bmQ6IHJnYmEoMjU1LCAyMzAsIDE5MCwgMC45NCk7ICAgICBcclxuICAgICAgICBib3JkZXItcmFkaXVzOiAxNXB4OyAgICAgIFxyXG4gICAgfVxyXG4gICAgLmlvbi1zZWdtZW50LWJ1dHRvbntcclxuICAgICAgICBiYWNrZ3JvdW5kOiByZ2JhKDI1NSwgMjMwLCAxOTAsIDAuOTQpO1xyXG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDE1cHg7ICBcclxuICAgICAgICBjb2xvcjogIzVGNjU5QzsgICAgICBcclxuICAgICAgICB0b3A6IDM5MnB4OyAgICAgXHJcbiAgICB9XHJcbiAgICAuYnRuQ29tYW5kbzF7XHJcbiAgICAgICAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gICAgICAgIHdpZHRoOiAyNTlweDtcclxuICAgICAgICBoZWlnaHQ6IDQ4cHg7XHJcbiAgICAgICAgbGVmdDogMjBweDtcclxuICAgICAgICByaWdodDogMjNweDtcclxuICAgICAgICBiYWNrZ3JvdW5kOiAjQkNGRkY3O1xyXG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDE1cHg7XHJcbiAgICAgICAgY29sb3I6ICM1RjY1OUM7ICAgICAgXHJcbiAgICAgICAgdG9wOiA0NDJweDsgIFxyXG5cclxuICAgICAgICBmb250LWZhbWlseTogUG9wcGlucztcclxuICAgICAgICBmb250LXN0eWxlOiBub3JtYWw7XHJcbiAgICAgICAgZm9udC13ZWlnaHQ6IGJvbGQ7XHJcbiAgICAgICAgZm9udC1zaXplOiAyMHB4O1xyXG4gICAgICAgIGxpbmUtaGVpZ2h0OiAzMHB4O1xyXG4gICAgICAgIFxyXG4gICAgICAgIC8qIGlkZW50aWNhbCB0byBib3ggaGVpZ2h0ICovXHJcbiAgICAgICAgXHJcbiAgICAgICAgY29sb3I6ICM1RjY1OUM7ICAgICBcclxuICAgIH1cclxuICAgIC5idG5Db21hbmRvMntcclxuICAgICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICAgICAgd2lkdGg6IDI1OXB4O1xyXG4gICAgICAgIGhlaWdodDogNDhweDtcclxuICAgICAgICBsZWZ0OiAyMHB4O1xyXG4gICAgICAgIHJpZ2h0OiAyM3B4O1xyXG4gICAgICAgIGJhY2tncm91bmQ6IHJnYmEoMjU1LCAyMzAsIDE5MCwgMC45NCk7XHJcbiAgICAgICAgYmFja2dyb3VuZDogI0JDRkZGNztcclxuICAgICAgICBib3JkZXItcmFkaXVzOiAxNXB4O1xyXG4gICAgICAgIGNvbG9yOiAjNUY2NTlDOyAgICAgIFxyXG4gICAgICAgIHRvcDogNTAzcHg7XHJcblxyXG4gICAgICAgIGZvbnQtZmFtaWx5OiBQb3BwaW5zO1xyXG4gICAgICAgIGZvbnQtc3R5bGU6IG5vcm1hbDtcclxuICAgICAgICBmb250LXdlaWdodDogYm9sZDtcclxuICAgICAgICBmb250LXNpemU6IDIwcHg7XHJcbiAgICAgICAgbGluZS1oZWlnaHQ6IDMwcHg7XHJcbiAgICAgICAgXHJcbiAgICAgICAgLyogaWRlbnRpY2FsIHRvIGJveCBoZWlnaHQgKi9cclxuICAgICAgICBcclxuICAgICAgICBjb2xvcjogIzVGNjU5QzsgICAgIFxyXG4gICAgfSAgICAiLCIucHJpbmNpcGFsIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB3aWR0aDogMzAycHg7XG4gIGhlaWdodDogNjIzcHg7XG4gIGJhY2tncm91bmQ6ICM1MkQ3QzY7XG4gIGJveC1zaGFkb3c6IDBweCA0cHggNHB4IHJnYmEoMCwgMCwgMCwgMC4yNSk7XG4gIGJvcmRlci1yYWRpdXM6IDEwcHg7XG59XG5cbi5pbWFnZW4ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHdpZHRoOiAyMTNweDtcbiAgaGVpZ2h0OiAyMTNweDtcbiAgbGVmdDogNDRweDtcbiAgcmlnaHQ6IDQ1cHg7XG4gIHRvcDogNDNweDtcbn1cblxuLnRpdHVsbyB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgd2lkdGg6IDI2MHB4O1xuICBoZWlnaHQ6IDc0cHg7XG4gIGxlZnQ6IDIycHg7XG4gIHJpZ2h0OiAyMHB4O1xuICB0b3A6IDI2NXB4O1xuICBmb250LWZhbWlseTogUG9wcGlucztcbiAgZm9udC1zdHlsZTogbm9ybWFsO1xuICBmb250LXdlaWdodDogYm9sZDtcbiAgZm9udC1zaXplOiA0MHB4O1xuICBsaW5lLWhlaWdodDogNjdweDtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBjb2xvcjogI0ZGRkZGRjtcbn1cblxuLnRpdHVsbzIge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHdpZHRoOiAyNjBweDtcbiAgaGVpZ2h0OiA3NHB4O1xuICBsZWZ0OiAyMnB4O1xuICByaWdodDogMjBweDtcbiAgdG9wOiAzNjlweDtcbiAgZm9udC1mYW1pbHk6IFBvcHBpbnM7XG4gIGZvbnQtc3R5bGU6IG5vcm1hbDtcbiAgZm9udC13ZWlnaHQ6IGJvbGQ7XG4gIGZvbnQtc2l6ZTogMzhweDtcbiAgbGluZS1oZWlnaHQ6IDY3cHg7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgY29sb3I6ICNGRkZGRkY7XG59XG5cbi5jb21hbmRvMSB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgdG9wOiA0MDZweDtcbiAgYmFja2dyb3VuZDogcmdiYSgyNTUsIDIzMCwgMTkwLCAwLjk0KTtcbiAgYm9yZGVyLXJhZGl1czogMTVweDtcbn1cblxuLmNvbWFuZG8yIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB0b3A6IDQ2N3B4O1xuICBiYWNrZ3JvdW5kOiByZ2JhKDI1NSwgMjMwLCAxOTAsIDAuOTQpO1xuICBib3JkZXItcmFkaXVzOiAxNXB4O1xufVxuXG4uY29tYW5kbzMge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHRvcDogNTIwcHg7XG4gIGJhY2tncm91bmQ6IHJnYmEoMjU1LCAyMzAsIDE5MCwgMC45NCk7XG4gIGJvcmRlci1yYWRpdXM6IDE1cHg7XG59XG5cbi5pb24tc2VnbWVudC1idXR0b24ge1xuICBiYWNrZ3JvdW5kOiByZ2JhKDI1NSwgMjMwLCAxOTAsIDAuOTQpO1xuICBib3JkZXItcmFkaXVzOiAxNXB4O1xuICBjb2xvcjogIzVGNjU5QztcbiAgdG9wOiAzOTJweDtcbn1cblxuLmJ0bkNvbWFuZG8xIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB3aWR0aDogMjU5cHg7XG4gIGhlaWdodDogNDhweDtcbiAgbGVmdDogMjBweDtcbiAgcmlnaHQ6IDIzcHg7XG4gIGJhY2tncm91bmQ6ICNCQ0ZGRjc7XG4gIGJvcmRlci1yYWRpdXM6IDE1cHg7XG4gIGNvbG9yOiAjNUY2NTlDO1xuICB0b3A6IDQ0MnB4O1xuICBmb250LWZhbWlseTogUG9wcGlucztcbiAgZm9udC1zdHlsZTogbm9ybWFsO1xuICBmb250LXdlaWdodDogYm9sZDtcbiAgZm9udC1zaXplOiAyMHB4O1xuICBsaW5lLWhlaWdodDogMzBweDtcbiAgLyogaWRlbnRpY2FsIHRvIGJveCBoZWlnaHQgKi9cbiAgY29sb3I6ICM1RjY1OUM7XG59XG5cbi5idG5Db21hbmRvMiB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgd2lkdGg6IDI1OXB4O1xuICBoZWlnaHQ6IDQ4cHg7XG4gIGxlZnQ6IDIwcHg7XG4gIHJpZ2h0OiAyM3B4O1xuICBiYWNrZ3JvdW5kOiByZ2JhKDI1NSwgMjMwLCAxOTAsIDAuOTQpO1xuICBiYWNrZ3JvdW5kOiAjQkNGRkY3O1xuICBib3JkZXItcmFkaXVzOiAxNXB4O1xuICBjb2xvcjogIzVGNjU5QztcbiAgdG9wOiA1MDNweDtcbiAgZm9udC1mYW1pbHk6IFBvcHBpbnM7XG4gIGZvbnQtc3R5bGU6IG5vcm1hbDtcbiAgZm9udC13ZWlnaHQ6IGJvbGQ7XG4gIGZvbnQtc2l6ZTogMjBweDtcbiAgbGluZS1oZWlnaHQ6IDMwcHg7XG4gIC8qIGlkZW50aWNhbCB0byBib3ggaGVpZ2h0ICovXG4gIGNvbG9yOiAjNUY2NTlDO1xufSJdfQ== */";
+    __webpack_exports__["default"] = ".principal {\n  position: absolute;\n  width: 302px;\n  height: 623px;\n  background: #52D7C6;\n  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);\n  border-radius: 10px;\n}\n\n.imagen {\n  position: absolute;\n  width: 213px;\n  height: 213px;\n  left: 44px;\n  right: 45px;\n  top: 43px;\n}\n\n.titulo {\n  position: absolute;\n  width: 260px;\n  height: 74px;\n  left: 22px;\n  right: 20px;\n  top: 265px;\n  font-family: Poppins;\n  font-style: normal;\n  font-weight: bold;\n  font-size: 40px;\n  line-height: 67px;\n  text-align: center;\n  color: #FFFFFF;\n}\n\n.titulo2 {\n  position: absolute;\n  width: 260px;\n  height: 74px;\n  left: 22px;\n  right: 20px;\n  top: 369px;\n  font-family: Poppins;\n  font-style: normal;\n  font-weight: bold;\n  font-size: 38px;\n  line-height: 67px;\n  text-align: center;\n  color: #FFFFFF;\n}\n\n.comando1 {\n  position: absolute;\n  top: 406px;\n  background: rgba(255, 230, 190, 0.94);\n  border-radius: 15px;\n}\n\n.comando2 {\n  position: absolute;\n  top: 467px;\n  background: rgba(255, 230, 190, 0.94);\n  border-radius: 15px;\n}\n\n.comando3 {\n  position: absolute;\n  top: 520px;\n  background: rgba(255, 230, 190, 0.94);\n  border-radius: 15px;\n}\n\n.ion-segment-button {\n  background: rgba(255, 230, 190, 0.94);\n  border-radius: 15px;\n  color: #5F659C;\n  top: 392px;\n}\n\n.btnComando1 {\n  position: absolute;\n  width: 259px;\n  height: 48px;\n  left: 20px;\n  right: 23px;\n  background: #BCFFF7;\n  border-radius: 15px;\n  color: #5F659C;\n  top: 442px;\n  font-family: Poppins;\n  font-style: normal;\n  font-weight: bold;\n  font-size: 20px;\n  line-height: 30px;\n  /* identical to box height */\n  color: #5F659C;\n}\n\n.btnComando2 {\n  position: absolute;\n  width: 259px;\n  height: 48px;\n  left: 20px;\n  right: 23px;\n  background: rgba(255, 230, 190, 0.94);\n  background: #BCFFF7;\n  border-radius: 15px;\n  color: #5F659C;\n  top: 503px;\n  font-family: Poppins;\n  font-style: normal;\n  font-weight: bold;\n  font-size: 20px;\n  line-height: 30px;\n  /* identical to box height */\n  color: #5F659C;\n}\n\n.buttons {\n  margin-top: 319px;\n  margin-left: auto;\n  margin-right: auto;\n}\n\n.button {\n  width: 259px;\n  height: 48px;\n  background: #BCFFF7;\n  border-radius: 15px;\n  margin-left: auto;\n  margin-right: auto;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9jYXRlZ29yaWVzLXZpZXcvY2F0ZWdvcmllcy1iYXIvQzpcXFVzZXJzXFxiZXJuYVxcRG9jdW1lbnRzXFxHaXRIdWJcXEJsYXBwRm9uZW1hc1xcYmxhcHAvc3JjXFxhcHBcXGNvbXBvbmVudHNcXGNhdGVnb3JpZXMtdmlld1xcY2F0ZWdvcmllcy1iYXJcXGNhdGVnb3JpZXMtYmFyLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9jb21wb25lbnRzL2NhdGVnb3JpZXMtdmlldy9jYXRlZ29yaWVzLWJhci9jYXRlZ29yaWVzLWJhci5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFDSTtFQUNJLGtCQUFBO0VBQ0EsWUFBQTtFQUNBLGFBQUE7RUFDQSxtQkFBQTtFQUNBLDJDQUFBO0VBQ0EsbUJBQUE7QUNBUjs7QURFSTtFQUNJLGtCQUFBO0VBQ0EsWUFBQTtFQUNBLGFBQUE7RUFDQSxVQUFBO0VBQ0EsV0FBQTtFQUNBLFNBQUE7QUNDUjs7QURDSTtFQUNJLGtCQUFBO0VBQ0EsWUFBQTtFQUNBLFlBQUE7RUFDQSxVQUFBO0VBQ0EsV0FBQTtFQUNBLFVBQUE7RUFFQSxvQkFBQTtFQUNBLGtCQUFBO0VBQ0EsaUJBQUE7RUFDQSxlQUFBO0VBQ0EsaUJBQUE7RUFDQSxrQkFBQTtFQUVBLGNBQUE7QUNBUjs7QURFSTtFQUNJLGtCQUFBO0VBQ0EsWUFBQTtFQUNBLFlBQUE7RUFDQSxVQUFBO0VBQ0EsV0FBQTtFQUNBLFVBQUE7RUFFQSxvQkFBQTtFQUNBLGtCQUFBO0VBQ0EsaUJBQUE7RUFDQSxlQUFBO0VBQ0EsaUJBQUE7RUFDQSxrQkFBQTtFQUVBLGNBQUE7QUNEUjs7QURHSTtFQUNJLGtCQUFBO0VBQ0EsVUFBQTtFQUNBLHFDQUFBO0VBQ0EsbUJBQUE7QUNBUjs7QURFSTtFQUNJLGtCQUFBO0VBQ0EsVUFBQTtFQUNBLHFDQUFBO0VBQ0EsbUJBQUE7QUNDUjs7QURDSTtFQUNJLGtCQUFBO0VBQ0EsVUFBQTtFQUNBLHFDQUFBO0VBQ0EsbUJBQUE7QUNFUjs7QURBSTtFQUNJLHFDQUFBO0VBQ0EsbUJBQUE7RUFDQSxjQUFBO0VBQ0EsVUFBQTtBQ0dSOztBRERJO0VBQ0ksa0JBQUE7RUFDQSxZQUFBO0VBQ0EsWUFBQTtFQUNBLFVBQUE7RUFDQSxXQUFBO0VBQ0EsbUJBQUE7RUFDQSxtQkFBQTtFQUNBLGNBQUE7RUFDQSxVQUFBO0VBRUEsb0JBQUE7RUFDQSxrQkFBQTtFQUNBLGlCQUFBO0VBQ0EsZUFBQTtFQUNBLGlCQUFBO0VBRUEsNEJBQUE7RUFFQSxjQUFBO0FDQ1I7O0FEQ0k7RUFDSSxrQkFBQTtFQUNBLFlBQUE7RUFDQSxZQUFBO0VBQ0EsVUFBQTtFQUNBLFdBQUE7RUFDQSxxQ0FBQTtFQUNBLG1CQUFBO0VBQ0EsbUJBQUE7RUFDQSxjQUFBO0VBQ0EsVUFBQTtFQUVBLG9CQUFBO0VBQ0Esa0JBQUE7RUFDQSxpQkFBQTtFQUNBLGVBQUE7RUFDQSxpQkFBQTtFQUVBLDRCQUFBO0VBRUEsY0FBQTtBQ0RSOztBREdJO0VBQ0ksaUJBQUE7RUFDQSxpQkFBQTtFQUNBLGtCQUFBO0FDQVI7O0FERUk7RUFDSSxZQUFBO0VBQ0EsWUFBQTtFQUNBLG1CQUFBO0VBQ0EsbUJBQUE7RUFDQSxpQkFBQTtFQUNBLGtCQUFBO0FDQ1IiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL2NhdGVnb3JpZXMtdmlldy9jYXRlZ29yaWVzLWJhci9jYXRlZ29yaWVzLWJhci5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIlxyXG4gICAgLnByaW5jaXBhbHtcclxuICAgICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICAgICAgd2lkdGg6IDMwMnB4O1xyXG4gICAgICAgIGhlaWdodDogNjIzcHg7XHJcbiAgICAgICAgYmFja2dyb3VuZDogIzUyRDdDNjtcclxuICAgICAgICBib3gtc2hhZG93OiAwcHggNHB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMjUpO1xyXG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDEwcHg7XHJcbiAgICB9XHJcbiAgICAuaW1hZ2Vue1xyXG4gICAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgICAgICB3aWR0aDogMjEzcHg7XHJcbiAgICAgICAgaGVpZ2h0OiAyMTNweDtcclxuICAgICAgICBsZWZ0OiA0NHB4O1xyXG4gICAgICAgIHJpZ2h0OiA0NXB4O1xyXG4gICAgICAgIHRvcDogNDNweDsgICAgXHJcbiAgICB9XHJcbiAgICAudGl0dWxve1xyXG4gICAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgICAgICB3aWR0aDogMjYwcHg7XHJcbiAgICAgICAgaGVpZ2h0OiA3NHB4O1xyXG4gICAgICAgIGxlZnQ6IDIycHg7XHJcbiAgICAgICAgcmlnaHQ6IDIwcHg7XHJcbiAgICAgICAgdG9wOiAyNjVweDtcclxuICAgIFxyXG4gICAgICAgIGZvbnQtZmFtaWx5OiBQb3BwaW5zO1xyXG4gICAgICAgIGZvbnQtc3R5bGU6IG5vcm1hbDtcclxuICAgICAgICBmb250LXdlaWdodDogYm9sZDtcclxuICAgICAgICBmb250LXNpemU6IDQwcHg7XHJcbiAgICAgICAgbGluZS1oZWlnaHQ6IDY3cHg7XHJcbiAgICAgICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgICAgIFxyXG4gICAgICAgIGNvbG9yOiAjRkZGRkZGOyAgICBcclxuICAgIH1cclxuICAgIC50aXR1bG8ye1xyXG4gICAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgICAgICB3aWR0aDogMjYwcHg7XHJcbiAgICAgICAgaGVpZ2h0OiA3NHB4O1xyXG4gICAgICAgIGxlZnQ6IDIycHg7XHJcbiAgICAgICAgcmlnaHQ6IDIwcHg7XHJcbiAgICAgICAgdG9wOiAzNjlweDtcclxuXHJcbiAgICAgICAgZm9udC1mYW1pbHk6IFBvcHBpbnM7XHJcbiAgICAgICAgZm9udC1zdHlsZTogbm9ybWFsO1xyXG4gICAgICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xyXG4gICAgICAgIGZvbnQtc2l6ZTogMzhweDtcclxuICAgICAgICBsaW5lLWhlaWdodDogNjdweDtcclxuICAgICAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICAgICAgXHJcbiAgICAgICAgY29sb3I6ICNGRkZGRkY7ICAgIFxyXG4gICAgfVxyXG4gICAgLmNvbWFuZG8xe1xyXG4gICAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgICAgICB0b3A6IDQwNnB4OyAgXHJcbiAgICAgICAgYmFja2dyb3VuZDogcmdiYSgyNTUsIDIzMCwgMTkwLCAwLjk0KTsgICAgIFxyXG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDE1cHg7ICAgIFxyXG4gICAgfVxyXG4gICAgLmNvbWFuZG8ye1xyXG4gICAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgICAgICB0b3A6IDQ2N3B4O1xyXG4gICAgICAgIGJhY2tncm91bmQ6IHJnYmEoMjU1LCAyMzAsIDE5MCwgMC45NCk7ICAgICBcclxuICAgICAgICBib3JkZXItcmFkaXVzOiAxNXB4OyAgICAgICBcclxuICAgIH1cclxuICAgIC5jb21hbmRvM3tcclxuICAgICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICAgICAgdG9wOiA1MjBweDsgXHJcbiAgICAgICAgYmFja2dyb3VuZDogcmdiYSgyNTUsIDIzMCwgMTkwLCAwLjk0KTsgICAgIFxyXG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDE1cHg7ICAgICAgXHJcbiAgICB9XHJcbiAgICAuaW9uLXNlZ21lbnQtYnV0dG9ue1xyXG4gICAgICAgIGJhY2tncm91bmQ6IHJnYmEoMjU1LCAyMzAsIDE5MCwgMC45NCk7XHJcbiAgICAgICAgYm9yZGVyLXJhZGl1czogMTVweDsgIFxyXG4gICAgICAgIGNvbG9yOiAjNUY2NTlDOyAgICAgIFxyXG4gICAgICAgIHRvcDogMzkycHg7ICAgICBcclxuICAgIH1cclxuICAgIC5idG5Db21hbmRvMXtcclxuICAgICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICAgICAgd2lkdGg6IDI1OXB4O1xyXG4gICAgICAgIGhlaWdodDogNDhweDtcclxuICAgICAgICBsZWZ0OiAyMHB4O1xyXG4gICAgICAgIHJpZ2h0OiAyM3B4O1xyXG4gICAgICAgIGJhY2tncm91bmQ6ICNCQ0ZGRjc7XHJcbiAgICAgICAgYm9yZGVyLXJhZGl1czogMTVweDtcclxuICAgICAgICBjb2xvcjogIzVGNjU5QzsgICAgICBcclxuICAgICAgICB0b3A6IDQ0MnB4OyAgXHJcblxyXG4gICAgICAgIGZvbnQtZmFtaWx5OiBQb3BwaW5zO1xyXG4gICAgICAgIGZvbnQtc3R5bGU6IG5vcm1hbDtcclxuICAgICAgICBmb250LXdlaWdodDogYm9sZDtcclxuICAgICAgICBmb250LXNpemU6IDIwcHg7XHJcbiAgICAgICAgbGluZS1oZWlnaHQ6IDMwcHg7XHJcbiAgICAgICAgXHJcbiAgICAgICAgLyogaWRlbnRpY2FsIHRvIGJveCBoZWlnaHQgKi9cclxuICAgICAgICBcclxuICAgICAgICBjb2xvcjogIzVGNjU5QzsgICAgIFxyXG4gICAgfVxyXG4gICAgLmJ0bkNvbWFuZG8ye1xyXG4gICAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgICAgICB3aWR0aDogMjU5cHg7XHJcbiAgICAgICAgaGVpZ2h0OiA0OHB4O1xyXG4gICAgICAgIGxlZnQ6IDIwcHg7XHJcbiAgICAgICAgcmlnaHQ6IDIzcHg7XHJcbiAgICAgICAgYmFja2dyb3VuZDogcmdiYSgyNTUsIDIzMCwgMTkwLCAwLjk0KTtcclxuICAgICAgICBiYWNrZ3JvdW5kOiAjQkNGRkY3O1xyXG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDE1cHg7XHJcbiAgICAgICAgY29sb3I6ICM1RjY1OUM7ICAgICAgXHJcbiAgICAgICAgdG9wOiA1MDNweDtcclxuXHJcbiAgICAgICAgZm9udC1mYW1pbHk6IFBvcHBpbnM7XHJcbiAgICAgICAgZm9udC1zdHlsZTogbm9ybWFsO1xyXG4gICAgICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xyXG4gICAgICAgIGZvbnQtc2l6ZTogMjBweDtcclxuICAgICAgICBsaW5lLWhlaWdodDogMzBweDtcclxuICAgICAgICBcclxuICAgICAgICAvKiBpZGVudGljYWwgdG8gYm94IGhlaWdodCAqL1xyXG4gICAgICAgIFxyXG4gICAgICAgIGNvbG9yOiAjNUY2NTlDOyAgICAgXHJcbiAgICB9XHJcbiAgICAuYnV0dG9uc3tcclxuICAgICAgICBtYXJnaW4tdG9wOiAzMTlweDtcclxuICAgICAgICBtYXJnaW4tbGVmdDogYXV0bztcclxuICAgICAgICBtYXJnaW4tcmlnaHQ6IGF1dG87XHJcbiAgICB9XHJcbiAgICAuYnV0dG9ue1xyXG4gICAgICAgIHdpZHRoOiAyNTlweDtcclxuICAgICAgICBoZWlnaHQ6IDQ4cHg7XHJcbiAgICAgICAgYmFja2dyb3VuZDogI0JDRkZGNztcclxuICAgICAgICBib3JkZXItcmFkaXVzOiAxNXB4O1xyXG4gICAgICAgIG1hcmdpbi1sZWZ0OiBhdXRvO1xyXG4gICAgICAgIG1hcmdpbi1yaWdodDogYXV0bztcclxuICAgIH0gICAgIiwiLnByaW5jaXBhbCB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgd2lkdGg6IDMwMnB4O1xuICBoZWlnaHQ6IDYyM3B4O1xuICBiYWNrZ3JvdW5kOiAjNTJEN0M2O1xuICBib3gtc2hhZG93OiAwcHggNHB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMjUpO1xuICBib3JkZXItcmFkaXVzOiAxMHB4O1xufVxuXG4uaW1hZ2VuIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB3aWR0aDogMjEzcHg7XG4gIGhlaWdodDogMjEzcHg7XG4gIGxlZnQ6IDQ0cHg7XG4gIHJpZ2h0OiA0NXB4O1xuICB0b3A6IDQzcHg7XG59XG5cbi50aXR1bG8ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHdpZHRoOiAyNjBweDtcbiAgaGVpZ2h0OiA3NHB4O1xuICBsZWZ0OiAyMnB4O1xuICByaWdodDogMjBweDtcbiAgdG9wOiAyNjVweDtcbiAgZm9udC1mYW1pbHk6IFBvcHBpbnM7XG4gIGZvbnQtc3R5bGU6IG5vcm1hbDtcbiAgZm9udC13ZWlnaHQ6IGJvbGQ7XG4gIGZvbnQtc2l6ZTogNDBweDtcbiAgbGluZS1oZWlnaHQ6IDY3cHg7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgY29sb3I6ICNGRkZGRkY7XG59XG5cbi50aXR1bG8yIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB3aWR0aDogMjYwcHg7XG4gIGhlaWdodDogNzRweDtcbiAgbGVmdDogMjJweDtcbiAgcmlnaHQ6IDIwcHg7XG4gIHRvcDogMzY5cHg7XG4gIGZvbnQtZmFtaWx5OiBQb3BwaW5zO1xuICBmb250LXN0eWxlOiBub3JtYWw7XG4gIGZvbnQtd2VpZ2h0OiBib2xkO1xuICBmb250LXNpemU6IDM4cHg7XG4gIGxpbmUtaGVpZ2h0OiA2N3B4O1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIGNvbG9yOiAjRkZGRkZGO1xufVxuXG4uY29tYW5kbzEge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHRvcDogNDA2cHg7XG4gIGJhY2tncm91bmQ6IHJnYmEoMjU1LCAyMzAsIDE5MCwgMC45NCk7XG4gIGJvcmRlci1yYWRpdXM6IDE1cHg7XG59XG5cbi5jb21hbmRvMiB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgdG9wOiA0NjdweDtcbiAgYmFja2dyb3VuZDogcmdiYSgyNTUsIDIzMCwgMTkwLCAwLjk0KTtcbiAgYm9yZGVyLXJhZGl1czogMTVweDtcbn1cblxuLmNvbWFuZG8zIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB0b3A6IDUyMHB4O1xuICBiYWNrZ3JvdW5kOiByZ2JhKDI1NSwgMjMwLCAxOTAsIDAuOTQpO1xuICBib3JkZXItcmFkaXVzOiAxNXB4O1xufVxuXG4uaW9uLXNlZ21lbnQtYnV0dG9uIHtcbiAgYmFja2dyb3VuZDogcmdiYSgyNTUsIDIzMCwgMTkwLCAwLjk0KTtcbiAgYm9yZGVyLXJhZGl1czogMTVweDtcbiAgY29sb3I6ICM1RjY1OUM7XG4gIHRvcDogMzkycHg7XG59XG5cbi5idG5Db21hbmRvMSB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgd2lkdGg6IDI1OXB4O1xuICBoZWlnaHQ6IDQ4cHg7XG4gIGxlZnQ6IDIwcHg7XG4gIHJpZ2h0OiAyM3B4O1xuICBiYWNrZ3JvdW5kOiAjQkNGRkY3O1xuICBib3JkZXItcmFkaXVzOiAxNXB4O1xuICBjb2xvcjogIzVGNjU5QztcbiAgdG9wOiA0NDJweDtcbiAgZm9udC1mYW1pbHk6IFBvcHBpbnM7XG4gIGZvbnQtc3R5bGU6IG5vcm1hbDtcbiAgZm9udC13ZWlnaHQ6IGJvbGQ7XG4gIGZvbnQtc2l6ZTogMjBweDtcbiAgbGluZS1oZWlnaHQ6IDMwcHg7XG4gIC8qIGlkZW50aWNhbCB0byBib3ggaGVpZ2h0ICovXG4gIGNvbG9yOiAjNUY2NTlDO1xufVxuXG4uYnRuQ29tYW5kbzIge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHdpZHRoOiAyNTlweDtcbiAgaGVpZ2h0OiA0OHB4O1xuICBsZWZ0OiAyMHB4O1xuICByaWdodDogMjNweDtcbiAgYmFja2dyb3VuZDogcmdiYSgyNTUsIDIzMCwgMTkwLCAwLjk0KTtcbiAgYmFja2dyb3VuZDogI0JDRkZGNztcbiAgYm9yZGVyLXJhZGl1czogMTVweDtcbiAgY29sb3I6ICM1RjY1OUM7XG4gIHRvcDogNTAzcHg7XG4gIGZvbnQtZmFtaWx5OiBQb3BwaW5zO1xuICBmb250LXN0eWxlOiBub3JtYWw7XG4gIGZvbnQtd2VpZ2h0OiBib2xkO1xuICBmb250LXNpemU6IDIwcHg7XG4gIGxpbmUtaGVpZ2h0OiAzMHB4O1xuICAvKiBpZGVudGljYWwgdG8gYm94IGhlaWdodCAqL1xuICBjb2xvcjogIzVGNjU5Qztcbn1cblxuLmJ1dHRvbnMge1xuICBtYXJnaW4tdG9wOiAzMTlweDtcbiAgbWFyZ2luLWxlZnQ6IGF1dG87XG4gIG1hcmdpbi1yaWdodDogYXV0bztcbn1cblxuLmJ1dHRvbiB7XG4gIHdpZHRoOiAyNTlweDtcbiAgaGVpZ2h0OiA0OHB4O1xuICBiYWNrZ3JvdW5kOiAjQkNGRkY3O1xuICBib3JkZXItcmFkaXVzOiAxNXB4O1xuICBtYXJnaW4tbGVmdDogYXV0bztcbiAgbWFyZ2luLXJpZ2h0OiBhdXRvO1xufSJdfQ== */";
     /***/
   },
 
@@ -3592,11 +3592,17 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         _classCallCheck(this, PhonemeGamePanelComponent);
 
         this.audio = new Audio();
+        this.palabras = [];
+        this.silabas = [];
+        this.palabrasJuego = [];
       }
 
       _createClass(PhonemeGamePanelComponent, [{
         key: "ngOnInit",
-        value: function ngOnInit() {}
+        value: function ngOnInit() {
+          this.getPalabras();
+          this.getEjemplos();
+        }
       }, {
         key: "playAudio",
         value: function playAudio(event) {
@@ -3605,11 +3611,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.audio.play();
           console.log(event.target.value);
         }
+      }, {
+        key: "getRandomInt",
+        value: function getRandomInt(min, max) {
+          min = Math.ceil(min);
+          max = Math.floor(max);
+          return Math.floor(Math.random() * (max - min)) + min;
+        }
+      }, {
+        key: "getPalabras",
+        value: function getPalabras() {}
+      }, {
+        key: "getEjemplos",
+        value: function getEjemplos() {}
       }]);
 
       return PhonemeGamePanelComponent;
     }();
 
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)], PhonemeGamePanelComponent.prototype, "silaba1", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)], PhonemeGamePanelComponent.prototype, "silaba2", void 0);
     PhonemeGamePanelComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
       selector: 'app-phoneme-game-panel',
       template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
@@ -5769,36 +5790,42 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       consonante: 'b',
       data: [{
         nombre: 'Ba-na-no',
+        silaba: 'Ba',
         audio: 'assets/audio/fonemas/consonantes/b/Banano.mp3',
         imagen: 'assets/img/fonemas/consonantes/b/Banano.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Ba-su-ra',
+        silaba: 'Ba',
         audio: 'assets/audio/fonemas/consonantes/b/Basura.mp3',
         imagen: 'assets/img/fonemas/consonantes/b/Basura.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Bi-ci-cle-ta',
+        silaba: 'Bi',
         audio: 'assets/audio/fonemas/consonantes/b/Bicicleta.mp3',
         imagen: 'assets/img/fonemas/consonantes/b/Bicicleta.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Bom-be-ro',
+        silaba: 'Bo',
         audio: 'assets/audio/fonemas/consonantes/b/Bombero.mp3',
         imagen: 'assets/img/fonemas/consonantes/b/Bombero.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Bo-rra-dor',
+        silaba: 'Bo',
         audio: 'assets/audio/fonemas/consonantes/b/Borrador.mp3',
         imagen: 'assets/img/fonemas/consonantes/b/Borrador.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Bo-tón',
+        silaba: 'Bo',
         audio: 'assets/audio/fonemas/consonantes/b/Botón.mp3',
         imagen: 'assets/img/fonemas/consonantes/b/Botón.jpg',
         duracion: 4,
@@ -5835,6 +5862,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       consonante: 'ch',
       data: [{
         nombre: 'Chu-rros',
+        silaba: 'Chu',
         audio: 'assets/audio/fonemas/consonantes/ch/Churros.mp3',
         imagen: 'assets/img/fonemas/consonantes/ch/Churros.jpg',
         duracion: 4,
@@ -5871,24 +5899,28 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       consonante: 'd',
       data: [{
         nombre: 'Del-fín',
+        silaba: 'De',
         audio: 'assets/audio/fonemas/consonantes/d/Delfín.mp3',
         imagen: 'assets/img/fonemas/consonantes/d/Delfín.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'De-por-tes',
+        silaba: 'De',
         audio: 'assets/audio/fonemas/consonantes/d/Deportes.mp3',
         imagen: 'assets/img/fonemas/consonantes/d/Deportes.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Di-bu-jo',
+        silaba: 'Di',
         audio: 'assets/audio/fonemas/consonantes/d/Dibujo.mp3',
         imagen: 'assets/img/fonemas/consonantes/d/Dibujo.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Dien-tes',
+        silaba: 'Di',
         audio: 'assets/audio/fonemas/consonantes/d/Dientes.mp3',
         imagen: 'assets/img/fonemas/consonantes/d/Dientes.jpg',
         duracion: 4,
@@ -5925,26 +5957,23 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       consonante: 'f',
       data: [{
         nombre: 'Fa-mi-lia',
+        silaba: 'Fa',
         audio: 'assets/audio/fonemas/consonantes/f/Familia.mp3',
         imagen: 'assets/img/fonemas/consonantes/f/Familia.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Fies-ta',
+        silaba: 'Fi',
         audio: 'assets/audio/fonemas/consonantes/f/Fiesta.mp3',
         imagen: 'assets/img/fonemas/consonantes/f/Fiesta.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Fan-tas-ma',
+        silaba: 'Fa',
         audio: 'assets/audio/fonemas/consonantes/f/Fantasma.mp3',
         imagen: 'assets/img/fonemas/consonantes/f/Fantasma.jpg',
-        duracion: 4,
-        reproduciendo: false
-      }, {
-        nombre: 'Flo-res',
-        audio: 'assets/audio/fonemas/consonantes/f/Flores.mp3',
-        imagen: 'assets/img/fonemas/consonantes/f/Flores.jpg',
         duracion: 4,
         reproduciendo: false
       }],
@@ -5979,12 +6008,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       consonante: 'g',
       data: [{
         nombre: 'Ga-ve-ta',
+        silaba: 'Ga',
         audio: 'assets/audio/fonemas/consonantes/g/Gaveta.mp3',
         imagen: 'assets/img/fonemas/consonantes/g/Gaveta.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Go-rra',
+        silaba: 'Go',
         audio: 'assets/audio/fonemas/consonantes/g/Gorra.mp3',
         imagen: 'assets/img/fonemas/consonantes/g/Gorra.jpg',
         duracion: 4,
@@ -6021,54 +6052,63 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       consonante: 'j',
       data: [{
         nombre: 'Ja-rra',
+        silaba: 'Ja',
         audio: 'assets/audio/fonemas/consonantes/j/jarra.mp3',
         imagen: 'assets/img/fonemas/consonantes/j/Jarra.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Je-fe',
+        silaba: 'Je',
         audio: 'assets/audio/fonemas/consonantes/j/jefe.mp3',
         imagen: 'assets/img/fonemas/consonantes/j/Jefe.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Ji-ne-te',
+        silaba: 'Ji',
         audio: 'assets/audio/fonemas/consonantes/j/jinete.mp3',
         imagen: 'assets/img/fonemas/consonantes/j/Jinete.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Ji-ra-fa',
+        silaba: 'Ji',
         audio: 'assets/audio/fonemas/consonantes/j/jirafa.mp3',
         imagen: 'assets/img/fonemas/consonantes/j/Jirafa.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Jo-ya',
+        silaba: 'Jo',
         audio: 'assets/audio/fonemas/consonantes/j/joya.mp3',
         imagen: 'assets/img/fonemas/consonantes/j/Joya.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Jue-go',
+        silaba: 'Ju',
         audio: 'assets/audio/fonemas/consonantes/j/juego.mp3',
         imagen: 'assets/img/fonemas/consonantes/j/Juego.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Ju-go',
+        silaba: 'Ju',
         audio: 'assets/audio/fonemas/consonantes/j/jugo.mp3',
         imagen: 'assets/img/fonemas/consonantes/j/Jugo.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Ju-gue-te',
+        silaba: 'Ju',
         audio: 'assets/audio/fonemas/consonantes/j/juguete.mp3',
         imagen: 'assets/img/fonemas/consonantes/j/Juguete.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Ju-gue-tes',
+        silaba: 'Ju',
         audio: 'assets/audio/fonemas/consonantes/j/juguetes.mp3',
         imagen: 'assets/img/fonemas/consonantes/j/Juguetes.jpg',
         duracion: 4,
@@ -6105,138 +6145,161 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       consonante: 'l',
       data: [{
         nombre: 'La-gar-ti-ja',
+        silaba: 'La',
         audio: 'assets/audio/fonemas/consonantes/l/lagartija.mp3',
         imagen: 'assets/img/fonemas/consonantes/l/Lagartija.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'La-go',
+        silaba: 'La',
         audio: 'assets/audio/fonemas/consonantes/l/lago.mp3',
         imagen: 'assets/img/fonemas/consonantes/l/Lago.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'La-gu-na',
+        silaba: 'La',
         audio: 'assets/audio/fonemas/consonantes/l/laguna.mp3',
         imagen: 'assets/img/fonemas/consonantes/l/Laguna.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Lám-pa-ra',
+        silaba: 'La',
         audio: 'assets/audio/fonemas/consonantes/l/lampara.mp3',
         imagen: 'assets/img/fonemas/consonantes/l/Lampara.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'La-pa',
+        silaba: 'La',
         audio: 'assets/audio/fonemas/consonantes/l/lapa.mp3',
         imagen: 'assets/img/fonemas/consonantes/l/Lapa.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Lá-pi-ces',
+        silaba: 'La',
         audio: 'assets/audio/fonemas/consonantes/l/lapices.mp3',
         imagen: 'assets/img/fonemas/consonantes/l/Lapices.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Lá-piz',
+        silaba: 'La',
         audio: 'assets/audio/fonemas/consonantes/l/lapiz.mp3',
         imagen: 'assets/img/fonemas/consonantes/l/Lapiz.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'La-ta',
+        silaba: 'La',
         audio: 'assets/audio/fonemas/consonantes/l/lata.mp3',
         imagen: 'assets/img/fonemas/consonantes/l/Lata.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'La-zo',
+        silaba: 'La',
         audio: 'assets/audio/fonemas/consonantes/l/lazo.mp3',
         imagen: 'assets/img/fonemas/consonantes/l/Lazo.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Le-che',
+        silaba: 'Le',
         audio: 'assets/audio/fonemas/consonantes/l/leche.mp3',
         imagen: 'assets/img/fonemas/consonantes/l/Leche.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Le-chu-za',
+        silaba: 'Le',
         audio: 'assets/audio/fonemas/consonantes/l/lechuza.mp3',
         imagen: 'assets/img/fonemas/consonantes/l/Lechuza.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Le-gos',
+        silaba: 'Le',
         audio: 'assets/audio/fonemas/consonantes/l/legos.mp3',
         imagen: 'assets/img/fonemas/consonantes/l/Legos.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Le-ña',
+        silaba: 'Le',
         audio: 'assets/audio/fonemas/consonantes/l/leña.mp3',
         imagen: 'assets/img/fonemas/consonantes/l/Leña.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Le-ón',
+        silaba: 'Le',
         audio: 'assets/audio/fonemas/consonantes/l/león.mp3',
         imagen: 'assets/img/fonemas/consonantes/l/León.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Lo-bo',
+        silaba: 'Lo',
         audio: 'assets/audio/fonemas/consonantes/l/lobo.mp3',
         imagen: 'assets/img/fonemas/consonantes/l/Lobo.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Lo-co-mo-to-ra',
+        silaba: 'Lo',
         audio: 'assets/audio/fonemas/consonantes/l/locotora.mp3',
         imagen: 'assets/img/fonemas/consonantes/l/Locomotora.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Lo-ma',
+        silaba: 'Lo',
         audio: 'assets/audio/fonemas/consonantes/l/loma.mp3',
         imagen: 'assets/img/fonemas/consonantes/l/Loma.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Lo-ra',
+        silaba: 'Lo',
         audio: 'assets/audio/fonemas/consonantes/l/lora.mp3',
         imagen: 'assets/img/fonemas/consonantes/l/Lora.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Lo-ro',
+        silaba: 'Lo',
         audio: 'assets/audio/fonemas/consonantes/l/loro.mp3',
         imagen: 'assets/img/fonemas/consonantes/l/Loro.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Lu-ciér-na-ga',
+        silaba: 'Lu',
         audio: 'assets/audio/fonemas/consonantes/l/luciernaga.mp3',
         imagen: 'assets/img/fonemas/consonantes/l/Luciernaga.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Lu-na',
+        silaba: 'Lu',
         audio: 'assets/audio/fonemas/consonantes/l/luna.mp3',
         imagen: 'assets/img/fonemas/consonantes/l/Luna.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Lu-na-res',
+        silaba: 'Lu',
         audio: 'assets/audio/fonemas/consonantes/l/lunares.mp3',
         imagen: 'assets/img/fonemas/consonantes/l/Lunares.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Lu-pi-ta',
+        silaba: 'Lu',
         audio: 'assets/audio/fonemas/consonantes/l/lupita.mp3',
         imagen: 'assets/img/fonemas/consonantes/l/Lupita.jpg',
         duracion: 4,
@@ -6273,48 +6336,56 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       consonante: 'LLll Yy',
       data: [{
         nombre: 'Lla-ma',
+        silaba: 'Lla',
         audio: 'assets/audio/fonemas/consonantes/llyy/Llama.mp3',
         imagen: 'assets/img/fonemas/consonantes/llyy/Llama.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Lla-ve',
+        silaba: 'Lla',
         audio: 'assets/audio/fonemas/consonantes/llyy/Llave.mp3',
         imagen: 'assets/img/fonemas/consonantes/llyy/Llave.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Lle-no',
+        silaba: 'Lle',
         audio: 'assets/audio/fonemas/consonantes/llyy/Lleno.mp3',
         imagen: 'assets/img/fonemas/consonantes/llyy/Lleno.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Llo-ran-do',
+        silaba: 'Llo',
         audio: 'assets/audio/fonemas/consonantes/llyy/Llorando.mp3',
         imagen: 'assets/img/fonemas/consonantes/llyy/Llorando.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Llu-via',
+        silaba: 'Llu',
         audio: 'assets/audio/fonemas/consonantes/llyy/Lluvia.mp3',
         imagen: 'assets/img/fonemas/consonantes/llyy/Lluvia.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Ye-güi-ta',
+        silaba: 'Ye',
         audio: 'assets/audio/fonemas/consonantes/llyy/Yeguita.mp3',
         imagen: 'assets/img/fonemas/consonantes/llyy/Yeguita.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Ye-ma',
+        silaba: 'Ye',
         audio: 'assets/audio/fonemas/consonantes/llyy/Yema.mp3',
         imagen: 'assets/img/fonemas/consonantes/llyy/Yema.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Yun-que',
+        silaba: 'Yu',
         audio: 'assets/audio/fonemas/consonantes/llyy/Yunque.mp3',
         imagen: 'assets/img/fonemas/consonantes/llyy/Yunque.jpg',
         duracion: 4,
@@ -6351,84 +6422,98 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       consonante: 'm',
       data: [{
         nombre: 'Ma-che-te',
+        silaba: 'Ma',
         audio: 'assets/audio/fonemas/consonantes/m/Machete.mp3',
         imagen: 'assets/img/fonemas/consonantes/m/Machete.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Ma-dri-na',
+        silaba: 'Ma',
         audio: 'assets/audio/fonemas/consonantes/m/Madrina.mp3',
         imagen: 'assets/img/fonemas/consonantes/m/Madrina.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Ma-es-tra',
+        silaba: 'Ma',
         audio: 'assets/audio/fonemas/consonantes/m/Maestra.mp3',
         imagen: 'assets/img/fonemas/consonantes/m/Maestra.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Ma-go',
+        silaba: 'Ma',
         audio: 'assets/audio/fonemas/consonantes/m/Mago.mp3',
         imagen: 'assets/img/fonemas/consonantes/m/Mago.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Ma-le-ta',
+        silaba: 'Ma',
         audio: 'assets/audio/fonemas/consonantes/m/Maleta.mp3',
         imagen: 'assets/img/fonemas/consonantes/m/Maleta.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Ma-má',
+        silaba: 'Ma',
         audio: 'assets/audio/fonemas/consonantes/m/Mama.mp3',
         imagen: 'assets/img/fonemas/consonantes/m/Mama.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Man-da-ri-na',
+        silaba: 'Ma',
         audio: 'assets/audio/fonemas/consonantes/m/Mandarina.mp3',
         imagen: 'assets/img/fonemas/consonantes/m/Mandarina.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Man-go',
+        silaba: 'Ma',
         audio: 'assets/audio/fonemas/consonantes/m/Mango.mp3',
         imagen: 'assets/img/fonemas/consonantes/m/Mango.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Man-gue-ra',
+        silaba: 'Ma',
         audio: 'assets/audio/fonemas/consonantes/m/Manguera.mp3',
         imagen: 'assets/img/fonemas/consonantes/m/Manguera.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Ma-ní',
+        silaba: 'Ma',
         audio: 'assets/audio/fonemas/consonantes/m/Maní.mp3',
         imagen: 'assets/img/fonemas/consonantes/m/Maní.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Man-tel',
+        silaba: 'Ma',
         audio: 'assets/audio/fonemas/consonantes/m/Mantel.mp3',
         imagen: 'assets/img/fonemas/consonantes/m/Mantel.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Man-te-qui-lla',
+        silaba: 'Ma',
         audio: 'assets/audio/fonemas/consonantes/m/Mantequilla.mp3',
         imagen: 'assets/img/fonemas/consonantes/m/Mantequilla.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Ma-ña-na',
+        silaba: 'Ma',
         audio: 'assets/audio/fonemas/consonantes/m/Mañana.mp3',
         imagen: 'assets/img/fonemas/consonantes/m/Mañana.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Man-za-nas',
+        silaba: 'Ma',
         audio: 'assets/audio/fonemas/consonantes/m/Manzanas.mp3',
         imagen: 'assets/img/fonemas/consonantes/m/Manzanas.jpg',
         duracion: 4,
@@ -6465,96 +6550,112 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       consonante: 'n',
       data: [{
         nombre: 'Na-chos',
+        silaba: 'Na',
         audio: 'assets/audio/fonemas/consonantes/n/Nachos.mp3',
         imagen: 'assets/img/fonemas/consonantes/n/Nachos.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Nan-cy',
+        silaba: 'Na',
         audio: 'assets/audio/fonemas/consonantes/n/Nancy.mp3',
         imagen: 'assets/img/fonemas/consonantes/n/Nancy.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Na-ti-lla',
+        silaba: 'Na',
         audio: 'assets/audio/fonemas/consonantes/n/Natilla.mp3',
         imagen: 'assets/img/fonemas/consonantes/n/Natilla.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Na-va-ja',
+        silaba: 'Na',
         audio: 'assets/audio/fonemas/consonantes/n/Navaja.mp3',
         imagen: 'assets/img/fonemas/consonantes/n/Navaja.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Na-ve',
+        silaba: 'Na',
         audio: 'assets/audio/fonemas/consonantes/n/Nave.mp3',
         imagen: 'assets/img/fonemas/consonantes/n/Nave.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Ne-va-da',
+        silaba: 'Ne',
         audio: 'assets/audio/fonemas/consonantes/n/Nevada.mp3',
         imagen: 'assets/img/fonemas/consonantes/n/Nevada.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Ni-do',
+        silaba: 'Ni',
         audio: 'assets/audio/fonemas/consonantes/n/Nido.mp3',
         imagen: 'assets/img/fonemas/consonantes/n/Nido.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Ni-ña',
+        silaba: 'Ni',
         audio: 'assets/audio/fonemas/consonantes/n/Niña.mp3',
         imagen: 'assets/img/fonemas/consonantes/n/Niña.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Ni-ñe-ra',
+        silaba: 'Ni',
         audio: 'assets/audio/fonemas/consonantes/n/Niñera.mp3',
         imagen: 'assets/img/fonemas/consonantes/n/Niñera.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Ni-ños',
+        silaba: 'Ni',
         audio: 'assets/audio/fonemas/consonantes/n/Niños.mp3',
         imagen: 'assets/img/fonemas/consonantes/n/Niños.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'No-che',
+        silaba: 'No',
         audio: 'assets/audio/fonemas/consonantes/n/Noche.mp3',
         imagen: 'assets/img/fonemas/consonantes/n/Noche.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'No-mo',
+        silaba: 'No',
         audio: 'assets/audio/fonemas/consonantes/n/Nancy.mp3',
         imagen: 'assets/img/fonemas/consonantes/n/Nancy.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Nu-be',
+        silaba: 'Nu',
         audio: 'assets/audio/fonemas/consonantes/n/Nube.mp3',
         imagen: 'assets/img/fonemas/consonantes/n/Nube.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Nu-do',
+        silaba: 'Nu',
         audio: 'assets/audio/fonemas/consonantes/n/Nudo.mp3',
         imagen: 'assets/img/fonemas/consonantes/n/Nudo.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Nuez',
+        silaba: 'Nu',
         audio: 'assets/audio/fonemas/consonantes/n/Nuez.mp3',
         imagen: 'assets/img/fonemas/consonantes/n/Nuez.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Nú-me-ros',
+        silaba: 'Nu',
         audio: 'assets/audio/fonemas/consonantes/n/Números.mp3',
         imagen: 'assets/img/fonemas/consonantes/n/Números.jpg',
         duracion: 4,
@@ -6591,18 +6692,21 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       consonante: 'ñ',
       data: [{
         nombre: 'Ña-me',
+        silaba: 'Ña',
         audio: 'assets/audio/fonemas/consonantes/ñ/Ñame.mp3',
         imagen: 'assets/img/fonemas/consonantes/ñ/Ñame.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Ñam-pí',
+        silaba: 'Ña',
         audio: 'assets/audio/fonemas/consonantes/ñ/Ñampí.mp3',
         imagen: 'assets/img/fonemas/consonantes/ñ/Ñampí.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Ñan-dú',
+        silaba: 'Ña',
         audio: 'assets/audio/fonemas/consonantes/ñ/Ñandú.mp3',
         imagen: 'assets/img/fonemas/consonantes/ñ/Ñandú.jpg',
         duracion: 4,
@@ -6639,348 +6743,385 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       consonante: 'p',
       data: [{
         nombre: 'Pa-dri-no',
+        silaba: 'Pa',
         audio: 'assets/audio/fonemas/consonantes/p/Padrino.mp3',
         imagen: 'assets/img/fonemas/consonantes/p/Padrino.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Pá-ja-ro',
+        silaba: 'Pa',
         audio: 'assets/audio/fonemas/consonantes/p/Pajaro.mp3',
         imagen: 'assets/img/fonemas/consonantes/p/Pájaro.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Pa-ji-lla',
+        silaba: 'Pa',
         audio: 'assets/audio/fonemas/consonantes/p/Pajilla.mp3',
         imagen: 'assets/img/fonemas/consonantes/p/Pajilla.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Pa-la',
+        silaba: 'Pa',
         audio: 'assets/audio/fonemas/consonantes/p/Pala.mp3',
         imagen: 'assets/img/fonemas/consonantes/p/Pala.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Pa-le-ta',
+        silaba: 'Pa',
         audio: 'assets/audio/fonemas/consonantes/p/Paleta.mp3',
         imagen: 'assets/img/fonemas/consonantes/p/Paleta.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Pal-me-ra',
+        silaba: 'Pa',
         audio: 'assets/audio/fonemas/consonantes/p/Palmera.mp3',
         imagen: 'assets/img/fonemas/consonantes/p/Palmera.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Pa-lo-ma',
+        silaba: 'Pa',
         audio: 'assets/audio/fonemas/consonantes/p/Paloma.mp3',
         imagen: 'assets/img/fonemas/consonantes/p/Paloma.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Pa-lo-mas',
+        silaba: 'Pa',
         audio: 'assets/audio/fonemas/consonantes/p/Palomas.mp3',
         imagen: 'assets/img/fonemas/consonantes/p/Palomas.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Pa-lo-mi-tas',
+        silaba: 'Pa',
         audio: 'assets/audio/fonemas/consonantes/p/Palomita.mp3',
         imagen: 'assets/img/fonemas/consonantes/p/Palomitas.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Pa-na-de-ro',
+        silaba: 'Pa',
         audio: 'assets/audio/fonemas/consonantes/p/Panadero.mp3',
         imagen: 'assets/img/fonemas/consonantes/p/Panadero.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Pan-da',
+        silaba: 'Pa',
         audio: 'assets/audio/fonemas/consonantes/p/Panda.mp3',
         imagen: 'assets/img/fonemas/consonantes/p/Panda.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Pan-ta-lo-nes',
+        silaba: 'Pa',
         audio: 'assets/audio/fonemas/consonantes/p/Pantalones.mp3',
         imagen: 'assets/img/fonemas/consonantes/p/Pantalones.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Pan-ta-lo-ne-ta',
+        silaba: 'Pa',
         audio: 'assets/audio/fonemas/consonantes/p/Pantaloneta.mp3',
         imagen: 'assets/img/fonemas/consonantes/p/Pantaloneta.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Pa-ñue-lo',
+        silaba: 'Pa',
         audio: 'assets/audio/fonemas/consonantes/p/Pañuelo.mp3',
         imagen: 'assets/img/fonemas/consonantes/p/Pañuelo.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Pa-pá',
+        silaba: 'Pa',
         audio: 'assets/audio/fonemas/consonantes/p/Papá.mp3',
         imagen: 'assets/img/fonemas/consonantes/p/Papá.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Pa-pel',
+        silaba: 'Pa',
         audio: 'assets/audio/fonemas/consonantes/p/Papel.mp3',
         imagen: 'assets/img/fonemas/consonantes/p/Papel.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Pa-que-te',
+        silaba: 'Pa',
         audio: 'assets/audio/fonemas/consonantes/p/Paquete.mp3',
         imagen: 'assets/img/fonemas/consonantes/p/Paquete.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Pa-qui-to',
+        silaba: 'Pa',
         audio: 'assets/audio/fonemas/consonantes/p/Paquito.mp3',
         imagen: 'assets/img/fonemas/consonantes/p/Paquito.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Pas-ta',
+        silaba: 'Pa',
         audio: 'assets/audio/fonemas/consonantes/p/Pasta.mp3',
         imagen: 'assets/img/fonemas/consonantes/p/Pasta.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Pa-ta',
+        silaba: 'Pa',
         audio: 'assets/audio/fonemas/consonantes/p/Pata.mp3',
         imagen: 'assets/img/fonemas/consonantes/p/Pata.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Pa-ti-nar',
+        silaba: 'Pa',
         audio: 'assets/audio/fonemas/consonantes/p/Patinar.mp3',
         imagen: 'assets/img/fonemas/consonantes/p/Patinar.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Pa-ti-nes',
+        silaba: 'Pa',
         audio: 'assets/audio/fonemas/consonantes/p/Patines.mp3',
         imagen: 'assets/img/fonemas/consonantes/p/Patines.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Pa-to',
+        silaba: 'Pa',
         audio: 'assets/audio/fonemas/consonantes/p/Pato.mp3',
         imagen: 'assets/img/fonemas/consonantes/p/Pato.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Pa-vo',
+        silaba: 'Pa',
         audio: 'assets/audio/fonemas/consonantes/p/Pavo.mp3',
         imagen: 'assets/img/fonemas/consonantes/p/Pavo.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Pa-ya-so',
+        silaba: 'Pa',
         audio: 'assets/audio/fonemas/consonantes/p/Payaso.mp3',
         imagen: 'assets/img/fonemas/consonantes/p/Payaso.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Pe-ces',
+        silaba: 'Pe',
         audio: 'assets/audio/fonemas/consonantes/p/Peces.mp3',
         imagen: 'assets/img/fonemas/consonantes/p/Peces.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Pe-lo-ta',
+        silaba: 'Pe',
         audio: 'assets/audio/fonemas/consonantes/p/Pelota.mp3',
         imagen: 'assets/img/fonemas/consonantes/p/Pelota.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Pe-pe',
+        silaba: 'Pe',
         audio: 'assets/audio/fonemas/consonantes/p/Pepe.mp3',
         imagen: 'assets/img/fonemas/consonantes/p/Pepe.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Pe-ra',
+        silaba: 'Pe',
         audio: 'assets/audio/fonemas/consonantes/p/Pera.mp3',
         imagen: 'assets/img/fonemas/consonantes/p/Pera.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Per-fu-me',
+        silaba: 'Pe',
         audio: 'assets/audio/fonemas/consonantes/p/Perfume.mp3',
         imagen: 'assets/img/fonemas/consonantes/p/Perfume.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Pe-ri-co',
+        silaba: 'Pe',
         audio: 'assets/audio/fonemas/consonantes/p/Perico.mp3',
         imagen: 'assets/img/fonemas/consonantes/p/Perico.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Pe-rro',
+        silaba: 'Pe',
         audio: 'assets/audio/fonemas/consonantes/p/Perro.mp3',
         imagen: 'assets/img/fonemas/consonantes/p/Perro.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Pez',
+        silaba: 'Pe',
         audio: 'assets/audio/fonemas/consonantes/p/Pez.mp3',
         imagen: 'assets/img/fonemas/consonantes/p/Pez.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Pia-no',
+        silaba: 'Pi',
         audio: 'assets/audio/fonemas/consonantes/p/Piano.mp3',
         imagen: 'assets/img/fonemas/consonantes/p/Piano.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Pi-chel',
+        silaba: 'Pi',
         audio: 'assets/audio/fonemas/consonantes/p/Pichel.mp3',
         imagen: 'assets/img/fonemas/consonantes/p/Pichel.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Pie',
+        silaba: 'Pi',
         audio: 'assets/audio/fonemas/consonantes/p/Pie.mp3',
         imagen: 'assets/img/fonemas/consonantes/p/Pie.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Pi-ja-ma',
+        silaba: 'Pi',
         audio: 'assets/audio/fonemas/consonantes/p/Pijama.mp3',
         imagen: 'assets/img/fonemas/consonantes/p/Pijama.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Pin-cel',
+        silaba: 'Pi',
         audio: 'assets/audio/fonemas/consonantes/p/Pincel.mp3',
         imagen: 'assets/img/fonemas/consonantes/p/Pincel.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Pi-no',
+        silaba: 'Pi',
         audio: 'assets/audio/fonemas/consonantes/p/Pino.mp3',
         imagen: 'assets/img/fonemas/consonantes/p/Pino.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Pin-tor',
+        silaba: 'Pi',
         audio: 'assets/audio/fonemas/consonantes/p/Pintor.mp3',
         imagen: 'assets/img/fonemas/consonantes/p/Pintor.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Pin-za',
+        silaba: 'Pi',
         audio: 'assets/audio/fonemas/consonantes/p/Pinza.mp3',
         imagen: 'assets/img/fonemas/consonantes/p/Pinza.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Pi-ña-ta',
+        silaba: 'Pi',
         audio: 'assets/audio/fonemas/consonantes/p/Piñata.mp3',
         imagen: 'assets/img/fonemas/consonantes/p/Piñata.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Pi-pa',
+        silaba: 'Pi',
         audio: 'assets/audio/fonemas/consonantes/p/Pipa.mp3',
         imagen: 'assets/img/fonemas/consonantes/p/Pipa.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Pi-ra-ta',
+        silaba: 'Pi',
         audio: 'assets/audio/fonemas/consonantes/p/Pirata.mp3',
         imagen: 'assets/img/fonemas/consonantes/p/Pirata.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Pi-to',
+        silaba: 'Pi',
         audio: 'assets/audio/fonemas/consonantes/p/Pito.mp3',
         imagen: 'assets/img/fonemas/consonantes/p/Pito.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Pi-za-rra',
+        silaba: 'Pi',
         audio: 'assets/audio/fonemas/consonantes/p/Pizarra.mp3',
         imagen: 'assets/img/fonemas/consonantes/p/Pizarra.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Pla-ti-llos',
+        silaba: 'Pla',
         audio: 'assets/audio/fonemas/consonantes/p/Platillos.mp3',
         imagen: 'assets/img/fonemas/consonantes/p/Platillos.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Po-li-cia',
+        silaba: 'Po',
         audio: 'assets/audio/fonemas/consonantes/p/Policía.mp3',
         imagen: 'assets/img/fonemas/consonantes/p/Policía.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Po-lli-to',
+        silaba: 'Po',
         audio: 'assets/audio/fonemas/consonantes/p/Pollito.mp3',
         imagen: 'assets/img/fonemas/consonantes/p/Pollito.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Po-ma-da',
+        silaba: 'Po',
         audio: 'assets/audio/fonemas/consonantes/p/Pomada.mp3',
         imagen: 'assets/img/fonemas/consonantes/p/Pomada.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Por-tal',
+        silaba: 'Po',
         audio: 'assets/audio/fonemas/consonantes/p/Portal.mp3',
         imagen: 'assets/img/fonemas/consonantes/p/Portal.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
-        nombre: 'Pren-sas',
-        audio: 'assets/audio/fonemas/consonantes/p/Prensas.mp3',
-        imagen: 'assets/img/fonemas/consonantes/p/Prensas.jpg',
-        duracion: 4,
-        reproduciendo: false
-      }, {
-        nombre: 'Pri-ma',
-        audio: 'assets/audio/fonemas/consonantes/p/Prima.mp3',
-        imagen: 'assets/img/fonemas/consonantes/p/Prima.jpg',
-        duracion: 4,
-        reproduciendo: false
-      }, {
-        nombre: 'Pri-mo',
-        audio: 'assets/audio/fonemas/consonantes/p/Primo.mp3',
-        imagen: 'assets/img/fonemas/consonantes/p/Primo.jpg',
-        duracion: 4,
-        reproduciendo: false
-      }, {
         nombre: 'Pul-pe-ro',
+        silaba: 'Pu',
         audio: 'assets/audio/fonemas/consonantes/p/Pulpero.mp3',
         imagen: 'assets/img/fonemas/consonantes/p/Pulpero.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Pul-po',
+        silaba: 'Pu',
         audio: 'assets/audio/fonemas/consonantes/p/Pulpo.mp3',
         imagen: 'assets/img/fonemas/consonantes/p/Pulpo.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Pu-ma',
+        silaba: 'Pu',
         audio: 'assets/audio/fonemas/consonantes/p/Puma.mp3',
         imagen: 'assets/img/fonemas/consonantes/p/Puma.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Pu-ño',
+        silaba: 'Pu',
         audio: 'assets/audio/fonemas/consonantes/p/Puño.mp3',
         imagen: 'assets/img/fonemas/consonantes/p/Puño.jpg',
         duracion: 4,
@@ -7017,42 +7158,49 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       consonante: 'r',
       data: [{
         nombre: 'Ra-mo',
+        silaba: 'Ra',
         audio: 'assets/audio/fonemas/consonantes/r/Ramo.mp3',
         imagen: 'assets/img/fonemas/consonantes/r/Ramo.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Ra-na',
+        silaba: 'Ra',
         audio: 'assets/audio/fonemas/consonantes/r/Rana.mp3',
         imagen: 'assets/img/fonemas/consonantes/r/Rana.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Ra-tón',
+        silaba: 'Ra',
         audio: 'assets/audio/fonemas/consonantes/r/Ratón.mp3',
         imagen: 'assets/img/fonemas/consonantes/r/Ratón.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Ra-yo',
+        silaba: 'Ra',
         audio: 'assets/audio/fonemas/consonantes/r/Rayo.mp3',
         imagen: 'assets/img/fonemas/consonantes/r/Rayo.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Re-ga-de-ra',
+        silaba: 'Re',
         audio: 'assets/audio/fonemas/consonantes/r/Regadera.mp3',
         imagen: 'assets/img/fonemas/consonantes/r/Regadera.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Re-ga-lo',
+        silaba: 'Re',
         audio: 'assets/audio/fonemas/consonantes/r/Regalo.mp3',
         imagen: 'assets/img/fonemas/consonantes/r/Regalo.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Re-loj',
+        silaba: 'Re',
         audio: 'assets/audio/fonemas/consonantes/r/Reloj.mp3',
         imagen: 'assets/img/fonemas/consonantes/r/Reloj.jpg',
         duracion: 4,
@@ -7065,42 +7213,49 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         reproduciendo: false
       }, {
         nombre: 'Ri-sa',
+        silaba: 'Ri',
         audio: 'assets/audio/fonemas/consonantes/r/Risa.mp3',
         imagen: 'assets/img/fonemas/consonantes/r/Risa.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Ro-bot',
+        silaba: 'Ro',
         audio: 'assets/audio/fonemas/consonantes/r/Robot.mp3',
         imagen: 'assets/img/fonemas/consonantes/r/Robot.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Ro-ca',
+        silaba: 'Ro',
         audio: 'assets/audio/fonemas/consonantes/r/Roca.mp3',
         imagen: 'assets/img/fonemas/consonantes/r/Roca.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Ro-jo',
+        silaba: 'Ro',
         audio: 'assets/audio/fonemas/consonantes/r/Rojo.mp3',
         imagen: 'assets/img/fonemas/consonantes/r/Rojo.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Ro-sa',
+        silaba: 'Ro',
         audio: 'assets/audio/fonemas/consonantes/r/Rosa.mp3',
         imagen: 'assets/img/fonemas/consonantes/r/Rosa.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Ro-sa-do',
+        silaba: 'Ro',
         audio: 'assets/audio/fonemas/consonantes/r/Rosado.mp3',
         imagen: 'assets/img/fonemas/consonantes/r/Rosado.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Ros-qui-lla',
+        silaba: 'Ro',
         audio: 'assets/audio/fonemas/consonantes/r/Rosquilla.mp3',
         imagen: 'assets/img/fonemas/consonantes/r/Rosquilla.jpg',
         duracion: 4,
@@ -7137,150 +7292,175 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       consonante: 's',
       data: [{
         nombre: 'Sá-ba-na',
+        silaba: 'Sa',
         audio: 'assets/audio/fonemas/consonantes/s/Sabana.mp3',
         imagen: 'assets/img/fonemas/consonantes/s/Sabana.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Sa-co',
+        silaba: 'Sa',
         audio: 'assets/audio/fonemas/consonantes/s/Saco.mp3',
         imagen: 'assets/img/fonemas/consonantes/s/Saco.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Sal',
+        silaba: 'Sa',
         audio: 'assets/audio/fonemas/consonantes/s/Sal.mp3',
         imagen: 'assets/img/fonemas/consonantes/s/Sal.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Sa-la',
+        silaba: 'Sa',
         audio: 'assets/audio/fonemas/consonantes/s/Sala.mp3',
         imagen: 'assets/img/fonemas/consonantes/s/Sala.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Sal-chi-cha',
+        silaba: 'Sa',
         audio: 'assets/audio/fonemas/consonantes/s/Salchicha.mp3',
         imagen: 'assets/img/fonemas/consonantes/s/Salchicha.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Sa-ni-ta-rio',
+        silaba: 'Sa',
         audio: 'assets/audio/fonemas/consonantes/s/Sanitario.mp3',
         imagen: 'assets/img/fonemas/consonantes/s/Sanitario.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Sa-po',
+        silaba: 'Sa',
         audio: 'assets/audio/fonemas/consonantes/s/Sapo.mp3',
         imagen: 'assets/img/fonemas/consonantes/s/Sapo.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Sar-di-na',
+        silaba: 'Sa',
         audio: 'assets/audio/fonemas/consonantes/s/Sardina.mp3',
         imagen: 'assets/img/fonemas/consonantes/s/Sardina.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Sar-tén',
+        silaba: 'Sa',
         audio: 'assets/audio/fonemas/consonantes/s/Sartén.mp3',
         imagen: 'assets/img/fonemas/consonantes/s/Sartén.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Se-cre-ta-ria',
+        silaba: 'Se',
         audio: 'assets/audio/fonemas/consonantes/s/Secretaria.mp3',
         imagen: 'assets/img/fonemas/consonantes/s/Secretaria.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Sel-va',
+        silaba: 'Se',
         audio: 'assets/audio/fonemas/consonantes/s/Selva.mp3',
         imagen: 'assets/img/fonemas/consonantes/s/Selva.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Se-má-fo-ro',
+        silaba: 'Se',
         audio: 'assets/audio/fonemas/consonantes/s/Semáforo.mp3',
         imagen: 'assets/img/fonemas/consonantes/s/Semáforo.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Se-mi-lla',
+        silaba: 'Se',
         audio: 'assets/audio/fonemas/consonantes/s/Semilla.mp3',
         imagen: 'assets/img/fonemas/consonantes/s/Semilla.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Ser-pien-te',
+        silaba: 'Se',
         audio: 'assets/audio/fonemas/consonantes/s/Serpiente.mp3',
         imagen: 'assets/img/fonemas/consonantes/s/Serpiente.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Se-rru-cho',
+        silaba: 'Se',
         audio: 'assets/audio/fonemas/consonantes/s/Serrucho.mp3',
         imagen: 'assets/img/fonemas/consonantes/s/Serrucho.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Sex-to',
+        silaba: 'Se',
         audio: 'assets/audio/fonemas/consonantes/s/Sexto.mp3',
         imagen: 'assets/img/fonemas/consonantes/s/Sexto.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Se-xy',
+        silaba: 'Se',
         audio: 'assets/audio/fonemas/consonantes/s/Sexy.mp3',
         imagen: 'assets/img/fonemas/consonantes/s/Sexy.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Si-lla',
+        silaba: 'Si',
         audio: 'assets/audio/fonemas/consonantes/s/Silla.mp3',
         imagen: 'assets/img/fonemas/consonantes/s/Silla.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Si-llón',
+        silaba: 'Si',
         audio: 'assets/audio/fonemas/consonantes/s/Sillón.mp3',
         imagen: 'assets/img/fonemas/consonantes/s/Sillón.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Si-llo-nes',
+        silaba: 'Si',
         audio: 'assets/audio/fonemas/consonantes/s/Sillones.mp3',
         imagen: 'assets/img/fonemas/consonantes/s/Sillones.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'So-fá',
+        silaba: 'So',
         audio: 'assets/audio/fonemas/consonantes/s/Sofá.mp3',
         imagen: 'assets/img/fonemas/consonantes/s/Sofá.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Sol',
+        silaba: 'So',
         audio: 'assets/audio/fonemas/consonantes/s/Sol.mp3',
         imagen: 'assets/img/fonemas/consonantes/s/Sol.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'So-pa',
+        silaba: 'So',
         audio: 'assets/audio/fonemas/consonantes/s/Sopa.mp3',
         imagen: 'assets/img/fonemas/consonantes/s/Sopa.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Sub-ma-ri-no',
+        silaba: 'Su',
         audio: 'assets/audio/fonemas/consonantes/s/Submarino.mp3',
         imagen: 'assets/img/fonemas/consonantes/s/Submarino.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Sué-ter',
+        silaba: 'Su',
         audio: 'assets/audio/fonemas/consonantes/s/Suéter.mp3',
         imagen: 'assets/img/fonemas/consonantes/s/Suéter.jpg',
         duracion: 4,
@@ -7317,222 +7497,238 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       consonante: 't',
       data: [{
         nombre: 'Ta-ja-da',
+        silaba: 'Ta',
         audio: 'assets/audio/fonemas/consonantes/t/Tajada.mp3',
         imagen: 'assets/img/fonemas/consonantes/t/Tajada.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Tam-bor',
+        silaba: 'Ta',
         audio: 'assets/audio/fonemas/consonantes/t/Tambor.mp3',
         imagen: 'assets/img/fonemas/consonantes/t/Tambor.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Ta-pa',
+        silaba: 'Ta',
         audio: 'assets/audio/fonemas/consonantes/t/Tapa.mp3',
         imagen: 'assets/img/fonemas/consonantes/t/Tapa.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Ta-pe-te',
+        silaba: 'Ta',
         audio: 'assets/audio/fonemas/consonantes/t/Tapete.mp3',
         imagen: 'assets/img/fonemas/consonantes/t/Tapete.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Tar-de',
+        silaba: 'Ta',
         audio: 'assets/audio/fonemas/consonantes/t/Tarde.mp3',
         imagen: 'assets/img/fonemas/consonantes/t/Tarde.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Ta-xi',
+        silaba: 'Ta',
         audio: 'assets/audio/fonemas/consonantes/t/Taxi.mp3',
         imagen: 'assets/img/fonemas/consonantes/t/Taxi.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Ta-za',
+        silaba: 'Ta',
         audio: 'assets/audio/fonemas/consonantes/t/Taza.mp3',
         imagen: 'assets/img/fonemas/consonantes/t/Taza.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Ta-zón',
+        silaba: 'Ta',
         audio: 'assets/audio/fonemas/consonantes/t/Tazón.mp3',
         imagen: 'assets/img/fonemas/consonantes/t/Tazón.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Te-cho',
+        silaba: 'Te',
         audio: 'assets/audio/fonemas/consonantes/t/Techo.mp3',
         imagen: 'assets/img/fonemas/consonantes/t/Techo.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Te-la',
+        silaba: 'Te',
         audio: 'assets/audio/fonemas/consonantes/t/Tela.mp3',
         imagen: 'assets/img/fonemas/consonantes/t/Tela.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Te-lé-fo-no',
+        silaba: 'Te',
         audio: 'assets/audio/fonemas/consonantes/t/Teléfono.mp3',
         imagen: 'assets/img/fonemas/consonantes/t/Teléfono.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Te-le-vi-sor',
+        silaba: 'Te',
         audio: 'assets/audio/fonemas/consonantes/t/Televisor.mp3',
         imagen: 'assets/img/fonemas/consonantes/t/Televisor.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Te-ne-dor',
+        silaba: 'Te',
         audio: 'assets/audio/fonemas/consonantes/t/Tenedor.mp3',
         imagen: 'assets/img/fonemas/consonantes/t/Tenedor.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Te-nis',
+        silaba: 'Te',
         audio: 'assets/audio/fonemas/consonantes/t/Tenis.mp3',
         imagen: 'assets/img/fonemas/consonantes/t/Tenis.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Tex-to',
+        silaba: 'Te',
         audio: 'assets/audio/fonemas/consonantes/t/Texto.mp3',
         imagen: 'assets/img/fonemas/consonantes/t/Texto.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Tía',
+        silaba: 'Ti',
         audio: 'assets/audio/fonemas/consonantes/t/Tía.mp3',
         imagen: 'assets/img/fonemas/consonantes/t/Tía.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Ti-bu-rón',
+        silaba: 'Ti',
         audio: 'assets/audio/fonemas/consonantes/t/Tiburón.mp3',
         imagen: 'assets/img/fonemas/consonantes/t/Tiburón.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Ti-gre',
+        silaba: 'Ti',
         audio: 'assets/audio/fonemas/consonantes/t/Tigre.mp3',
         imagen: 'assets/img/fonemas/consonantes/t/Tigre.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Ti-je-ras',
+        silaba: 'Ti',
         audio: 'assets/audio/fonemas/consonantes/t/Tijeras.mp3',
         imagen: 'assets/img/fonemas/consonantes/t/Tijeras.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Ti-na',
+        silaba: 'Ti',
         audio: 'assets/audio/fonemas/consonantes/t/Tina.mp3',
         imagen: 'assets/img/fonemas/consonantes/t/Tina.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Ti-na-ja',
+        silaba: 'Ti',
         audio: 'assets/audio/fonemas/consonantes/t/Tinaja.mp3',
         imagen: 'assets/img/fonemas/consonantes/t/Tinaja.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Tin-ta',
+        silaba: 'Ti',
         audio: 'assets/audio/fonemas/consonantes/t/Tinta.mp3',
         imagen: 'assets/img/fonemas/consonantes/t/Tinta.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Tío',
+        silaba: 'Ti',
         audio: 'assets/audio/fonemas/consonantes/t/Tío.mp3',
         imagen: 'assets/img/fonemas/consonantes/t/Tío.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'To-bo-gán',
+        silaba: 'To',
         audio: 'assets/audio/fonemas/consonantes/t/Tobogán.mp3',
         imagen: 'assets/img/fonemas/consonantes/t/Tobogán.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'To-mi-llo',
+        silaba: 'To',
         audio: 'assets/audio/fonemas/consonantes/t/Tomillo.mp3',
         imagen: 'assets/img/fonemas/consonantes/t/Tomillo.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'To-ro',
+        silaba: 'To',
         audio: 'assets/audio/fonemas/consonantes/t/Toro.mp3',
         imagen: 'assets/img/fonemas/consonantes/t/Toro.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Tor-ti-lla',
+        silaba: 'To',
         audio: 'assets/audio/fonemas/consonantes/t/Tortilla.mp3',
         imagen: 'assets/img/fonemas/consonantes/t/Tortilla.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Tor-tu-ga',
+        silaba: 'To',
         audio: 'assets/audio/fonemas/consonantes/t/Tortuga.mp3',
         imagen: 'assets/img/fonemas/consonantes/t/Tortuga.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Tos',
+        silaba: 'To',
         audio: 'assets/audio/fonemas/consonantes/t/Tos.mp3',
         imagen: 'assets/img/fonemas/consonantes/t/Tos.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Tos-ta-das',
+        silaba: 'To',
         audio: 'assets/audio/fonemas/consonantes/t/Tostadas.mp3',
         imagen: 'assets/img/fonemas/consonantes/t/Tostadas.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
-        nombre: 'Trai-ler',
-        audio: 'assets/audio/fonemas/consonantes/t/Trailer.mp3',
-        imagen: 'assets/img/fonemas/consonantes/t/Trailer.jpg',
-        duracion: 4,
-        reproduciendo: false
-      }, {
-        nombre: 'Tren',
-        audio: 'assets/audio/fonemas/consonantes/t/Tren.mp3',
-        imagen: 'assets/img/fonemas/consonantes/t/Tren.jpg',
-        duracion: 4,
-        reproduciendo: false
-      }, {
-        nombre: 'Trom-pe-ta',
-        audio: 'assets/audio/fonemas/consonantes/t/Trompeta.mp3',
-        imagen: 'assets/img/fonemas/consonantes/t/Trompeta.jpg',
-        duracion: 4,
-        reproduciendo: false
-      }, {
         nombre: 'Tu-cán',
+        silaba: 'Tu',
         audio: 'assets/audio/fonemas/consonantes/t/Tucán.mp3',
         imagen: 'assets/img/fonemas/consonantes/t/Tucán.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Tu-co',
+        silaba: 'Tu',
         audio: 'assets/audio/fonemas/consonantes/t/Tuco.mp3',
         imagen: 'assets/img/fonemas/consonantes/t/Tuco.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Tu-li-pán',
+        silaba: 'Tu',
         audio: 'assets/audio/fonemas/consonantes/t/Tulipán.mp3',
         imagen: 'assets/img/fonemas/consonantes/t/Tulipán.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Tu-na',
+        silaba: 'Tu',
         audio: 'assets/audio/fonemas/consonantes/t/Tuna.mp3',
         imagen: 'assets/img/fonemas/consonantes/t/Tuna.jpg',
         duracion: 4,
@@ -7569,12 +7765,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       consonante: 'x',
       data: [{
         nombre: 'Xi-ló-fo-no',
+        silaba: 'Xi',
         audio: 'assets/audio/fonemas/consonantes/x/Xilofono.mp3',
         imagen: 'assets/img/fonemas/consonantes/x/Xilofono.jpg',
         duracion: 4,
         reproduciendo: false
       }, {
         nombre: 'Xi-nia',
+        silaba: 'Xi',
         audio: 'assets/audio/fonemas/consonantes/x/Xinia.mp3',
         imagen: 'assets/img/fonemas/consonantes/x/Xinia.jpg',
         duracion: 4,
@@ -7994,7 +8192,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         sujeto: 'Este',
         verbo: ' soy',
         predicado: 'yo',
-        imagenSujeto: '',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Este.jpg',
         imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
         imagenPredicado: 'assets/img/semanticas/categorias/imagen/Yo.jpg'
       }, {
@@ -8245,7 +8443,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         sujeto: 'Ella',
         verbo: 'se llama',
         predicado: 'Nombre',
-        imagenSujeto: '',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Ella.jpg',
         imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
         imagenPredicado: 'assets/img/semanticas/categorias/familia/Mamá.jpg'
       }, {
@@ -8256,10 +8454,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
         imagenPredicado: 'assets/img/semanticas/categorias/familia/Papá.jpg'
       }, {
-        sujeto: 'ÉL',
+        sujeto: 'Él',
         verbo: 'se llama',
         predicado: 'Nombre',
-        imagenSujeto: '',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Él.jpg',
         imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
         imagenPredicado: 'assets/img/semanticas/categorias/familia/Papá.jpg'
       }, {
@@ -8273,7 +8471,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         sujeto: 'Ella',
         verbo: 'se llama',
         predicado: 'Nombre',
-        imagenSujeto: '',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Ella.jpg',
         imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
         imagenPredicado: 'assets/img/semanticas/categorias/familia/Abuelita.jpg'
       }, {
@@ -8287,7 +8485,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         sujeto: 'Él',
         verbo: 'se llama',
         predicado: 'Nombre',
-        imagenSujeto: '',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Él.jpg',
         imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
         imagenPredicado: 'assets/img/semanticas/categorias/familia/Abuelito.jpg'
       }, {
@@ -8301,7 +8499,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         sujeto: 'Ella',
         verbo: 'se llama',
         predicado: 'Nombre',
-        imagenSujeto: '',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Ella.jpg',
         imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
         imagenPredicado: 'assets/img/semanticas/categorias/familia/Prima.jpg'
       }, {
@@ -8315,7 +8513,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         sujeto: 'Él',
         verbo: 'se llama',
         predicado: 'Nombre',
-        imagenSujeto: '',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Él.jpg',
         imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
         imagenPredicado: 'assets/img/semanticas/categorias/familia/Primo.jpg'
       }, {
@@ -8329,7 +8527,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         sujeto: 'Él',
         verbo: 'se llama',
         predicado: 'Nombre',
-        imagenSujeto: '',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Él.jpg',
         imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
         imagenPredicado: 'assets/img/semanticas/categorias/familia/Tío.jpg'
       }, {
@@ -8343,7 +8541,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         sujeto: 'Ella',
         verbo: 'se llama',
         predicado: 'Nombre',
-        imagenSujeto: '',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Ella.jpg',
         imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
         imagenPredicado: 'assets/img/semanticas/categorias/familia/Tía.jpg'
       }, {
@@ -8357,7 +8555,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         sujeto: 'Él',
         verbo: 'se llama',
         predicado: 'Nombre',
-        imagenSujeto: '',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Él.jpg',
         imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
         imagenPredicado: 'assets/img/semanticas/categorias/familia/Padrino.jpg'
       }, {
@@ -8371,7 +8569,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         sujeto: 'Ella',
         verbo: 'se llama',
         predicado: 'Nombre',
-        imagenSujeto: '',
+        imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Ella.jpg',
         imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
         imagenPredicado: 'assets/img/semanticas/categorias/familia/Madrina.jpg'
       }]
@@ -8439,7 +8637,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         predicado: 'fresas',
         imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
         imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
-        imagenPredicado: 'assets/img/semanticas/categorias/frutas/fresas.jpg'
+        imagenPredicado: 'assets/img/semanticas/categorias/frutas/Fresas.jpg'
       }, {
         sujeto: 'Yo',
         verbo: 'como',
