@@ -12,10 +12,12 @@
             <ion-col >
                 <div style="position: relative;" cdkDrag>
                     <div style="position: absolute; left: 0px; top: 0px;">
-                        <ion-img src="assets/img/fonemas/game-panel/mama.png" class="imagen"></ion-img>
+                        <ion-avatar>
+                            <ion-img src={{palabra1.imagen}} class="imagen"></ion-img>
+                        </ion-avatar>
                     </div>
                     <div style="position: absolute; left: 0px; right: 120px; top: 126px;">
-                        <ion-segment-button value="audio1" class="btnPlay" (click)="playAudio($event)">
+                        <ion-segment-button value={{palabra1.audio}} class="btnPlay" (click)="playAudio($event)">
                             <ion-icon src="assets/icon/play.svg"></ion-icon>
                         </ion-segment-button>
                     </div>
@@ -24,10 +26,12 @@
             <ion-col>
                 <div style="position: relative;" cdkDrag>
                     <div style="position: absolute; left: 0px; top: 0px;">
-                        <ion-img src="assets/img/fonemas/game-panel/mama.png" class="imagen"></ion-img>
+                        <ion-avatar class="imagen">
+                            <ion-img src={{palabra2.imagen}}></ion-img>
+                        </ion-avatar>
                     </div>
                     <div style="position: absolute; left: 0px; right: 120px; top: 126px;">
-                        <ion-segment-button value="audio2" class="btnPlay" (click)="playAudio($event)">
+                        <ion-segment-button value={{palabra2.audio}} class="btnPlay" (click)="playAudio($event)">
                             <ion-icon src="assets/icon/play.svg"></ion-icon>
                         </ion-segment-button>
                     </div>
@@ -36,10 +40,12 @@
             <ion-col>
                 <div style="position: relative;" cdkDrag>
                     <div style="position: absolute; left: 0px; top: 0px;">
-                        <ion-img src="assets/img/fonemas/game-panel/mama.png" class="imagen"></ion-img>
+                        <ion-avatar>
+                            <ion-img src={{palabra3.imagen}} class="imagen"></ion-img>
+                        </ion-avatar>
                     </div>
                     <div style="position: absolute; left: 0px; right: 120px; top: 126px;">
-                        <ion-segment-button value="audio3" class="btnPlay" (click)="playAudio($event)">
+                        <ion-segment-button value={{palabra3.audio}} class="btnPlay" (click)="playAudio($event)">
                             <ion-icon src="assets/icon/play.svg"></ion-icon>
                         </ion-segment-button>
                     </div>

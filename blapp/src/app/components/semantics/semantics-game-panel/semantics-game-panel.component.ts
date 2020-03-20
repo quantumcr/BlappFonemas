@@ -9,9 +9,9 @@ import { SUBCATEGORIAS } from '../../../../data/categorias/data.subcategorias';
 export class SemanticsGamePanelComponent implements OnInit {
   shuffle = require('shuffle-array');
   subcategoria = [];
-  q1 = [];
-  q2 = [];
-  q3 = [];
+  areaSujeto = [];
+  areaVerbo = [];
+  areaPredicado = [];
   @Input() sujeto: string;
   @Input() verbo: string;
   @Input() predicado: string;
