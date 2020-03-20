@@ -41,11 +41,6 @@ export class CategoriesViewComponent implements OnInit {
     this.subcategory = this.getSubcategorySelect(subcategoryName);    
   }
 
-  ngOnChanges(): void {
-    //Called before any other lifecycle hook. Use it to inject dependencies, but avoid any serious work here.
-    //Add '${implements OnChanges}' to the class.
-  }
-
   getSubcategorySelect(subcategoryNameSelected: string): SubcategoryI {
     subcategoryNameSelected = subcategoryNameSelected.toUpperCase();
     for (let i = 0; i < SUBCATEGORIAS.length; i++) {      
@@ -65,10 +60,16 @@ export class CategoriesViewComponent implements OnInit {
 
   decIndexData() {
     if (this.indexData == 0) {
-      this.indexData = this.subcategory.data.length;
+      this.indexData = this.subcategory.data.length - 1;
     } else {
       this.indexData--;
     }
+  }
+
+  ngOnChanges(): void {
+    //Called before any other lifecycle hook. Use it to inject dependencies, but avoid any serious work here.
+    //Add '${implements OnChanges}' to the class.
+    console.log(this.category);
   }
 
 }
