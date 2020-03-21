@@ -593,7 +593,7 @@ export const SUBCATEGORIAS = [
                 predicado: 'espinacas',
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
-                imagenPredicado: 'assets/img/semanticas/categorias/vegetales/Espinacas.jpg',
+                imagenPredicado: 'assets/img/semanticas/categorias/vegetales/Espinaca.jpg',
             },
             {
                 sujeto: 'Yo',
@@ -942,9 +942,9 @@ export const SUBCATEGORIAS = [
                 sujeto: 'El perro',
                 verbo: 'hace',
                 predicado: 'Guau Guau Guau',
-                imagenSujeto: 'assets/img/semanticas/categorias/granja/Perro.jpg',
+                imagenSujeto: 'assets/img/semanticas/categorias/domesticos/Perro.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
-                imagenPredicado: 'assets/img/semanticas/categorias/granja/Perro.jpg',
+                imagenPredicado: 'assets/img/semanticas/categorias/domesticos/Perro.jpg',
             },
             {
                 sujeto: 'Esta',
@@ -1006,7 +1006,7 @@ export const SUBCATEGORIAS = [
                 predicado: 'una serpiente',
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Esta.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
-                imagenPredicado: 'assets/img/semanticas/categorias/salvajes/León.jpg',
+                imagenPredicado: 'assets/img/semanticas/categorias/salvajes/Serpiente.jpg',
             },
             {
                 sujeto: 'Este',
@@ -1067,7 +1067,7 @@ export const SUBCATEGORIAS = [
                 predicado: 'motos',
                 imagenSujeto:  'assets/img/semanticas/estructura/sujeto/Ella.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
-                imagenPredicado: 'assets/img/semanticas/categorias/juguetes/Moto.png',
+                imagenPredicado: 'assets/img/semanticas/categorias/juguetes/Moto.PNG',
             },
             {
                 sujeto: 'Yo',
@@ -1091,7 +1091,7 @@ export const SUBCATEGORIAS = [
                 predicado: 'trastes',
                 imagenSujeto:  'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
-                imagenPredicado: 'assets/img/semanticas/categorias/juguetes/Muñecas.jpg',
+                imagenPredicado: 'assets/img/semanticas/categorias/juguetes/Trastes.jpg',
             },
             {
                 sujeto: 'Él',
@@ -1327,7 +1327,7 @@ export const SUBCATEGORIAS = [
                 predicado: 'en el corredor',
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
-                imagenPredicado: 'assets/img/semanticas/categorias/casa/Sanitario.jpg',
+                imagenPredicado: 'assets/img/semanticas/categorias/casa/Corredor.jpg',
             },
             {
                 sujeto: 'Yo',
@@ -1434,7 +1434,7 @@ export const SUBCATEGORIAS = [
                 sujeto: 'Nosotros',
                 verbo: 'vemos',
                 predicado: 'el submarino',
-                imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Submarino.jpg',
+                imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Nosotros.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/transporte/Submarino.jpg',
             },
@@ -1553,7 +1553,7 @@ export const SUBCATEGORIAS = [
                 predicado: 'el carro',
                 imagenSujeto: 'assets/img/semanticas/categorias/servidores/Mecánico.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
-                imagenPredicado: 'assets/img/semanticas/estructura/predicado/Carro.jpg',
+                imagenPredicado: 'assets/img/semanticas/categorias/transporte/Carro.jpg',
             },
             {
                 sujeto: 'El carpintero',
@@ -1569,15 +1569,15 @@ export const SUBCATEGORIAS = [
                 predicado: 'la casa',
                 imagenSujeto: 'assets/img/semanticas/categorias/servidores/Pintor.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
-                imagenPredicado: 'assets/img/semanticas/estructura/predicado/Casa.jpg',
+                imagenPredicado: 'assets/img/semanticas/estructura/predicado/La casa.jpg',
             },
             {
                 sujeto: 'El agricultor',
                 verbo: 'siembra',
                 predicado: 'verduras',
-                imagenSujeto: 'assets/img/semanticas/categorias/servidores/Doctor.jpg',
+                imagenSujeto: 'assets/img/semanticas/categorias/servidores/Agricultor.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
-                imagenPredicado: 'assets/img/semanticas/estructura/predicado/Enfermos.jpg',
+                imagenPredicado: 'assets/img/semanticas/estructura/predicado/Verduras.jpg',
             },
 
         ]
@@ -1613,9 +1613,9 @@ export const SUBCATEGORIAS = [
                 sujeto: 'El piano',
                 verbo: 'suena',
                 predicado: 'tilililin',
-                imagenSujeto: 'assets/img/semanticas/categorias/instrumentos/Campana.jpg',
+                imagenSujeto: 'assets/img/semanticas/categorias/instrumentos/Piano.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
-                imagenPredicado: 'assets/img/semanticas/categorias/instrumentos/Campana.jpg',
+                imagenPredicado: 'assets/img/semanticas/categorias/instrumentos/Piano.jpg',
             },
             {
                 sujeto: 'Las maracas',

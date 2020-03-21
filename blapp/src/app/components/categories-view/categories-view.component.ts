@@ -37,14 +37,15 @@ export class CategoriesViewComponent implements OnInit {
 
   }
 
-  changeSubcategory(subcategoryName: string) {
-    this.subcategory = this.getSubcategorySelect(subcategoryName);    
+  changeSubcategory(subcategoryName: string) {    
+    this.subcategory = this.getSubcategorySelect(subcategoryName);
   }
 
   getSubcategorySelect(subcategoryNameSelected: string): SubcategoryI {
     subcategoryNameSelected = subcategoryNameSelected.toUpperCase();
     for (let i = 0; i < SUBCATEGORIAS.length; i++) {      
       if (SUBCATEGORIAS[i].nombre.toUpperCase() == subcategoryNameSelected) {
+        this.indexData = 0;
         return SUBCATEGORIAS[i] as unknown as SubcategoryI;
       }
     }
