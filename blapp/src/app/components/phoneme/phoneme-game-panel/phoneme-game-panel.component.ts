@@ -14,14 +14,18 @@ export class PhonemeGamePanelComponent implements OnInit {
   @Input() silaba1: string;
   @Input() silaba2: string;
 
+  @Input() palabra1;
+  @Input() palabra2;
+  @Input() palabra3;
   constructor() { }
   ngOnInit() {
     this.getPalabras();
     this.getEjemplos();
+    this.getSilabas();
   }
 
   playAudio(event: any) {
-    this.audio.src = 'assets/audio/Mama.mp3';
+    this.audio.src = event.target.value;
     this.audio.load();
     this.audio.play();
     console.log(event.target.value);
@@ -32,10 +36,21 @@ export class PhonemeGamePanelComponent implements OnInit {
     return Math.floor(Math.random() * (max - min)) + min;
   }
   getPalabras() {
-
+    const value = this.getRandomInt(0, CONSONANTES.length);
+    this.palabras = CONSONANTES[value].data;
+    this.silabas = CONSONANTES[value].dataS;
   }
   getEjemplos() {
-
+    for (let i = 0; i < 3; i++) {
+      this.palabrasJuego.push(this.palabras[this.getRandomInt(0, this.palabras.length)]);
+    }
+    this.palabra1 = this.palabrasJuego[0];
+    this.palabra2 = this.palabrasJuego[1];
+    this.palabra3 = this.palabrasJuego[2];
+  }
+  getSilabas() {
+    this.silaba1 = this.palabrasJuego[0].silaba;
+    this.silaba2 = this.palabrasJuego[1].silaba;
   }
 
 }
