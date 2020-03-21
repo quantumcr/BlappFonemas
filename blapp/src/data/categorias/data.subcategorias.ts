@@ -343,7 +343,7 @@ export const SUBCATEGORIAS = [
                 predicado: 'abuelita',
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
-                imagenPredicado: 'assets/img/semanticas/categorias/familia/Abuelita.jpg',
+                imagenPredicado: 'assets/img/semanticas/categorias/familia/Abuela.jpg',
             },
             {
                 sujeto: 'Ella',
@@ -351,7 +351,7 @@ export const SUBCATEGORIAS = [
                 predicado: 'Nombre',
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Ella.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
-                imagenPredicado: 'assets/img/semanticas/categorias/familia/Abuelita.jpg',
+                imagenPredicado: 'assets/img/semanticas/categorias/familia/Abuela.jpg',
             },
             {
                 sujeto: 'Yo',
@@ -359,7 +359,7 @@ export const SUBCATEGORIAS = [
                 predicado: 'abuelito',
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
-                imagenPredicado: 'assets/img/semanticas/categorias/familia/Abuelito.jpg',
+                imagenPredicado: 'assets/img/semanticas/categorias/familia/Abuelo.jpg',
             },
             {
                 sujeto: 'Él',
@@ -367,7 +367,7 @@ export const SUBCATEGORIAS = [
                 predicado: 'Nombre',
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Él.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
-                imagenPredicado: 'assets/img/semanticas/categorias/familia/Abuelito.jpg',
+                imagenPredicado: 'assets/img/semanticas/categorias/familia/Abuelo.jpg',
             },
             {
                 sujeto: 'Yo',
@@ -872,9 +872,9 @@ export const SUBCATEGORIAS = [
                 sujeto: 'El gallo',
                 verbo: 'hace',
                 predicado: 'Ki Ki Ri Ki',
-                imagenSujeto: 'assets/img/semanticas/categorias/granja/Jim.jpg',
+                imagenSujeto: 'assets/img/semanticas/categorias/granja/Gallo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
-                imagenPredicado: 'assets/img/semanticas/categorias/granja/Jim.jpg',
+                imagenPredicado: 'assets/img/semanticas/categorias/granja/Gallo.jpg',
             },
 
             {
@@ -1067,7 +1067,7 @@ export const SUBCATEGORIAS = [
                 predicado: 'motos',
                 imagenSujeto:  'assets/img/semanticas/estructura/sujeto/Ella.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
-                imagenPredicado: 'assets/img/semanticas/categorias/juguetes/Moto.jpg',
+                imagenPredicado: 'assets/img/semanticas/categorias/juguetes/Moto.png',
             },
             {
                 sujeto: 'Yo',

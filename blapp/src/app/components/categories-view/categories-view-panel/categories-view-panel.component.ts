@@ -26,10 +26,6 @@ export class CategoriesViewPanelComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    console.log(this.subcategoryOneData.imagenVerbo);
-    document.getElementById("sujeto").setAttribute('src', this.subcategoryOneData.imagenSujeto);
-    document.getElementById("verbo").setAttribute('src', this.subcategoryOneData.imagenVerbo);
-    document.getElementById("predicado").setAttribute('src', this.subcategoryOneData.imagenPredicado);
     /*
     if (this.category.subcategoria != []) {
       

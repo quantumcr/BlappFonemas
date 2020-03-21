@@ -26,17 +26,17 @@
     <ion-row>
       <ion-col>
         <div class="semantica">
-          <ion-label class="palabras">{{sujeto}}</ion-label>
+          <ion-label class="palabras">{{subcategoryOneData.sujeto}}</ion-label>
         </div>
       </ion-col>
       <ion-col>
         <div class="semantica">
-          <ion-label class="palabras">{{verbo}}</ion-label>
+          <ion-label class="palabras">{{subcategoryOneData.verbo}}</ion-label>
         </div>
       </ion-col>
       <ion-col>
         <div class="semantica">
-          <ion-label class="palabras">{{predicado}}</ion-label>
+          <ion-label class="palabras">{{subcategoryOneData.predicado}}</ion-label>
         </div>
       </ion-col>
     </ion-row>
@@ -45,21 +45,21 @@
       <ion-col>
         <div class="element" cdkDrop>
           <ion-avatar class="imagen" cdkDrag>
-            <ion-img src={{imagen1}}></ion-img>
+            <ion-img src={{imagenes[0]}}></ion-img>
           </ion-avatar>
         </div>        
       </ion-col>
       <ion-col>
         <div class="element" cdkDrop>
           <ion-avatar class="imagen" cdkDrag>
-            <ion-img src={{imagen2}}></ion-img>
+            <ion-img src={{imagenes[1]}}></ion-img>
           </ion-avatar>
         </div>  
       </ion-col>
       <ion-col>
         <div class="element" cdkDrop>
           <ion-avatar class="imagen" cdkDrag>
-            <ion-img src={{imagen3}}></ion-img>
+            <ion-img src={{imagenes[2]}}></ion-img>
           </ion-avatar>
         </div>  
       </ion-col>

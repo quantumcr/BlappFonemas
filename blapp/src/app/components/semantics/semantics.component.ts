@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SUBCATEGORIAS, SubcategoryI } from '../../../data/categorias/data.subcategorias';
 
 @Component({
   selector: 'app-semantics',
@@ -8,6 +9,9 @@ import { Component, OnInit } from '@angular/core';
 export class SemanticsComponent implements OnInit {
   public visibleCategories = true;
   public visibleGame = false;
+
+  public indexData: number = 0;
+  public subcategory: SubcategoryI;
   
   constructor(
 
@@ -18,8 +22,8 @@ export class SemanticsComponent implements OnInit {
   }
 
   selectPanel(value: string) {
-    console.log(value);
-    this.setVisible(value);
+    this.getSubcategoria();
+    this.setVisible(value);    
   }
 
   setVisible( value) {
@@ -31,7 +35,32 @@ export class SemanticsComponent implements OnInit {
       this.visibleCategories = false;
       this.visibleGame = true;
     }
+  }
 
+  getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min)) + min;
+  }
+
+  getSubcategoria() {
+    this.subcategory = SUBCATEGORIAS[this.getRandomInt(0, SUBCATEGORIAS.length)] as SubcategoryI;
+  }
+
+  incIndexData() {
+    if (this.subcategory.data.length - 1 == this.indexData) {
+      this.indexData = 0;
+    } else {
+      this.indexData++;
+    }
+  }
+
+  decIndexData() {
+    if (this.indexData == 0) {
+      this.indexData = this.subcategory.data.length - 1;
+    } else {
+      this.indexData--;
+    }
   }
 
 }
