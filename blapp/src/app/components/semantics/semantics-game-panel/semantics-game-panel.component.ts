@@ -7,7 +7,7 @@ import { SUBCATEGORIAS } from '../../../../data/categorias/data.subcategorias';
   styleUrls: ['./semantics-game-panel.component.scss'],
 })
 export class SemanticsGamePanelComponent implements OnInit {
-  shuffle = require('shuffle-array');
+  // shuffle = require('shuffle-array');
   subcategoria = [];
   areaSujeto = [];
   areaVerbo = [];
@@ -46,7 +46,7 @@ export class SemanticsGamePanelComponent implements OnInit {
     this.imagenes.push(this.subcategoria[value].imagenSujeto);
     this.imagenes.push(this.subcategoria[value].imagenVerbo);
     this.imagenes.push(this.subcategoria[value].imagenPredicado);
-    this.shuffle(this.imagenes);
+    // this.shuffle(this.imagenes);
   }
 
 }
