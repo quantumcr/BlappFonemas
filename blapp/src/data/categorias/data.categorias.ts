@@ -39,7 +39,7 @@ export const CATEGORIAS = [
         subcategoria: [
             {nombre: 'Animales de la Granja'},
             {nombre: 'Animales Domésticos'},
-            {nombre: 'Salvajes'}
+            {nombre: 'Animales Salvajes'}
         ]
     },
     {
