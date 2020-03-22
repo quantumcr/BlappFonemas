@@ -25,6 +25,8 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+
 	
 /* in-flight clone */
 .gu-mirror {
@@ -55,4 +57,11 @@
   opacity: 0.2;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
   filter: alpha(opacity=20);
+}
+
+@font-face{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../src/assets/fonts/Poppins-Regular.ttf');
 }
