@@ -53,4 +53,5 @@ export class PhonemeGamePanelComponent implements OnInit {
     this.silaba2 = this.palabrasJuego[1].silaba;
   }
 
+
 }
