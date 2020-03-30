@@ -117,9 +117,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony import */
 
 
-    var _index_4e2fa3c6_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
-    /*! ./index-4e2fa3c6.js */
-    "./node_modules/@ionic/core/dist/esm/index-4e2fa3c6.js");
+    var _index_1469ea79_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    /*! ./index-1469ea79.js */
+    "./node_modules/@ionic/core/dist/esm/index-1469ea79.js");
 
     var App =
     /*#__PURE__*/
@@ -1133,7 +1133,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                       cloneElement('ion-title');
                       cloneElement('ion-back-button');
 
-                      _this4.collapsibleMainHeader.classList.add('header-collapse-main');
+                      if (_this4.collapsibleMainHeader !== undefined) {
+                        _this4.collapsibleMainHeader.classList.add('header-collapse-main');
+                      }
                     });
                     this.collapsibleHeaderInitialized = true;
 
@@ -1523,7 +1525,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                     animated = this.animated && _config_3c7f3790_js__WEBPACK_IMPORTED_MODULE_1__["b"].getBoolean('animated', true);
                     animationBuilder = this.animation || opts.animationBuilder || _config_3c7f3790_js__WEBPACK_IMPORTED_MODULE_1__["b"].get('navAnimation');
                     _context11.next = 9;
-                    return Object(_index_4e2fa3c6_js__WEBPACK_IMPORTED_MODULE_7__["t"])(Object.assign({
+                    return Object(_index_1469ea79_js__WEBPACK_IMPORTED_MODULE_7__["t"])(Object.assign({
                       mode: mode,
                       animated: animated,
                       animationBuilder: animationBuilder,

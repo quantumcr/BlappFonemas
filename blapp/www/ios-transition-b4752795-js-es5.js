@@ -1,16 +1,16 @@
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["ios-transition-179652bb-js"], {
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["ios-transition-b4752795-js"], {
   /***/
-  "./node_modules/@ionic/core/dist/esm/ios.transition-179652bb.js":
+  "./node_modules/@ionic/core/dist/esm/ios.transition-b4752795.js":
   /*!**********************************************************************!*\
-    !*** ./node_modules/@ionic/core/dist/esm/ios.transition-179652bb.js ***!
+    !*** ./node_modules/@ionic/core/dist/esm/ios.transition-b4752795.js ***!
     \**********************************************************************/
 
   /*! exports provided: iosTransitionAnimation, shadow */
 
   /***/
-  function node_modulesIonicCoreDistEsmIosTransition179652bbJs(module, __webpack_exports__, __webpack_require__) {
+  function node_modulesIonicCoreDistEsmIosTransitionB4752795Js(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
@@ -59,9 +59,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     /* harmony import */
 
 
-    var _index_4e2fa3c6_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
-    /*! ./index-4e2fa3c6.js */
-    "./node_modules/@ionic/core/dist/esm/index-4e2fa3c6.js");
+    var _index_1469ea79_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! ./index-1469ea79.js */
+    "./node_modules/@ionic/core/dist/esm/index-1469ea79.js");
 
     var DURATION = 540;
 
@@ -240,7 +240,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     };
 
     var animateLargeTitle = function animateLargeTitle(rootAnimation, rtl, backDirection, largeTitleEl, largeTitleBox, backButtonBox) {
-      var TITLE_START_OFFSET = rtl ? "calc(100% - ".concat(largeTitleEl.right, "px)") : "".concat(largeTitleEl.left, "px");
+      var TITLE_START_OFFSET = rtl ? "calc(100% - ".concat(largeTitleBox.right, "px)") : "".concat(largeTitleBox.left, "px");
       var START_TRANSLATE = rtl ? '-18px' : '18px';
       var ORIGIN_X = rtl ? 'right' : 'left';
       var BACKWARDS_KEYFRAMES = [{
@@ -452,7 +452,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
           if (backDirection) {
             // leaving content, back direction
             leavingContent.beforeClearStyles([OPACITY]).fromTo('transform', "translateX(".concat(CENTER, ")"), isRTL ? 'translateX(-100%)' : 'translateX(100%)');
-            var leavingPage = Object(_index_4e2fa3c6_js__WEBPACK_IMPORTED_MODULE_5__["g"])(leavingEl);
+            var leavingPage = Object(_index_1469ea79_js__WEBPACK_IMPORTED_MODULE_5__["g"])(leavingEl);
             rootAnimation.afterAddWrite(function () {
               if (rootAnimation.getDirection() === 'normal') {
                 leavingPage.style.setProperty('display', 'none');
@@ -575,4 +575,4 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
   }
 }]);
-//# sourceMappingURL=ios-transition-179652bb-js-es5.js.map
+//# sourceMappingURL=ios-transition-b4752795-js-es5.js.map

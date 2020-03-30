@@ -99,9 +99,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony import */
 
 
-    var _index_4e2fa3c6_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
-    /*! ./index-4e2fa3c6.js */
-    "./node_modules/@ionic/core/dist/esm/index-4e2fa3c6.js"); // Defaults for the card swipe animation
+    var _index_1469ea79_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
+    /*! ./index-1469ea79.js */
+    "./node_modules/@ionic/core/dist/esm/index-1469ea79.js"); // Defaults for the card swipe animation
 
 
     var SwipeToCloseDefaults = {
@@ -203,14 +203,22 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
     var iosEnterAnimation = function iosEnterAnimation(baseEl, presentingEl) {
       // The top translate Y for the presenting element
-      var backdropAnimation = Object(_animation_56279521_js__WEBPACK_IMPORTED_MODULE_3__["c"])().addElement(baseEl.querySelector('ion-backdrop')).fromTo('opacity', 0.01, 'var(--backdrop-opacity)');
+      var backdropAnimation = Object(_animation_56279521_js__WEBPACK_IMPORTED_MODULE_3__["c"])().addElement(baseEl.querySelector('ion-backdrop')).fromTo('opacity', 0.01, 'var(--backdrop-opacity)').beforeStyles({
+        'pointer-events': 'none'
+      }).afterClearStyles(['pointer-events']);
       var wrapperAnimation = Object(_animation_56279521_js__WEBPACK_IMPORTED_MODULE_3__["c"])().addElement(baseEl.querySelector('.modal-wrapper')).beforeStyles({
         'opacity': 1
-      }).fromTo('transform', 'translateY(100%)', 'translateY(0%)');
+      }).fromTo('transform', 'translateY(100vh)', 'translateY(0vh)');
       var baseAnimation = Object(_animation_56279521_js__WEBPACK_IMPORTED_MODULE_3__["c"])().addElement(baseEl).easing('cubic-bezier(0.32,0.72,0,1)').duration(500).beforeAddClass('show-modal').addAnimation([backdropAnimation, wrapperAnimation]);
 
       if (presentingEl) {
-        var modalTransform = presentingEl.tagName === 'ION-MODAL' && presentingEl.presentingElement !== undefined ? '-10px' : 'max(30px, var(--ion-safe-area-top))';
+        /**
+         * Fallback for browsers that does not support `max()` (ex: Firefox)
+         * No need to wrry about statusbar padding since engines like Gecko
+         * are not used as the engine for standlone Cordova/Capacitor apps
+         */
+        var transformOffset = !CSS.supports('width', 'max(0px, 1px)') ? '30px' : 'max(30px, var(--ion-safe-area-top))';
+        var modalTransform = presentingEl.tagName === 'ION-MODAL' && presentingEl.presentingElement !== undefined ? '-10px' : transformOffset;
         var bodyEl = document.body;
         var toPresentingScale = SwipeToCloseDefaults.MIN_PRESENTING_SCALE;
         var finalTransform = "translateY(".concat(modalTransform, ") scale(").concat(toPresentingScale, ")");
@@ -248,11 +256,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       var backdropAnimation = Object(_animation_56279521_js__WEBPACK_IMPORTED_MODULE_3__["c"])().addElement(baseEl.querySelector('ion-backdrop')).fromTo('opacity', 'var(--backdrop-opacity)', 0.0);
       var wrapperAnimation = Object(_animation_56279521_js__WEBPACK_IMPORTED_MODULE_3__["c"])().addElement(baseEl.querySelector('.modal-wrapper')).beforeStyles({
         'opacity': 1
-      }).fromTo('transform', 'translateY(0%)', 'translateY(100%)');
+      }).fromTo('transform', 'translateY(0vh)', 'translateY(100vh)');
       var baseAnimation = Object(_animation_56279521_js__WEBPACK_IMPORTED_MODULE_3__["c"])().addElement(baseEl).easing('cubic-bezier(0.32,0.72,0,1)').duration(duration).addAnimation([backdropAnimation, wrapperAnimation]);
 
       if (presentingEl) {
-        var modalTransform = presentingEl.tagName === 'ION-MODAL' && presentingEl.presentingElement !== undefined ? '-10px' : 'max(30px, var(--ion-safe-area-top))';
+        var transformOffset = !CSS.supports('width', 'max(0px, 1px)') ? '30px' : 'max(30px, var(--ion-safe-area-top))';
+        var modalTransform = presentingEl.tagName === 'ION-MODAL' && presentingEl.presentingElement !== undefined ? '-10px' : transformOffset;
         var bodyEl = document.body;
         var currentPresentingScale = SwipeToCloseDefaults.MIN_PRESENTING_SCALE;
         var presentingAnimation = Object(_animation_56279521_js__WEBPACK_IMPORTED_MODULE_3__["c"])().addElement(presentingEl).beforeClearStyles(['transform']).afterClearStyles(['transform']).onFinish(function (currentStep) {
@@ -294,7 +303,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       var baseAnimation = Object(_animation_56279521_js__WEBPACK_IMPORTED_MODULE_3__["c"])();
       var backdropAnimation = Object(_animation_56279521_js__WEBPACK_IMPORTED_MODULE_3__["c"])();
       var wrapperAnimation = Object(_animation_56279521_js__WEBPACK_IMPORTED_MODULE_3__["c"])();
-      backdropAnimation.addElement(baseEl.querySelector('ion-backdrop')).fromTo('opacity', 0.01, 'var(--backdrop-opacity)');
+      backdropAnimation.addElement(baseEl.querySelector('ion-backdrop')).fromTo('opacity', 0.01, 'var(--backdrop-opacity)').beforeStyles({
+        'pointer-events': 'none'
+      }).afterClearStyles(['pointer-events']);
       wrapperAnimation.addElement(baseEl.querySelector('.modal-wrapper')).keyframes([{
         offset: 0,
         opacity: 0.01,
@@ -444,7 +455,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                   case 8:
                     this.usersElement = _context2.sent;
                     _context2.next = 11;
-                    return Object(_index_4e2fa3c6_js__WEBPACK_IMPORTED_MODULE_11__["d"])(this.usersElement);
+                    return Object(_index_1469ea79_js__WEBPACK_IMPORTED_MODULE_11__["d"])(this.usersElement);
 
                   case 11:
                     _context2.next = 13;
@@ -633,7 +644,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }], [{
         key: "style",
         get: function get() {
-          return ".sc-ion-modal-ios-h{--width:100%;--min-width:auto;--max-width:auto;--height:100%;--min-height:auto;--max-height:auto;--overflow:hidden;--border-radius:0;--border-width:0;--border-style:none;--border-color:transparent;--background:var(--ion-background-color,#fff);--box-shadow:none;left:0;right:0;top:0;bottom:0;display:-ms-flexbox;display:flex;position:absolute;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center;contain:strict}.overlay-hidden.sc-ion-modal-ios-h{display:none}.modal-wrapper.sc-ion-modal-ios{border-radius:var(--border-radius);width:var(--width);min-width:var(--min-width);max-width:var(--max-width);height:var(--height);min-height:var(--min-height);max-height:var(--max-height);border-width:var(--border-width);border-style:var(--border-style);border-color:var(--border-color);background:var(--background);-webkit-box-shadow:var(--box-shadow);box-shadow:var(--box-shadow);overflow:var(--overflow);z-index:10}\@media only screen and (min-width:768px) and (min-height:600px){.sc-ion-modal-ios-h{--width:600px;--height:500px;--ion-safe-area-top:0px;--ion-safe-area-bottom:0px;--ion-safe-area-right:0px;--ion-safe-area-left:0px}}\@media only screen and (min-width:768px) and (min-height:768px){.sc-ion-modal-ios-h{--width:600px;--height:600px}}.sc-ion-modal-ios-h{--backdrop-opacity:var(--ion-backdrop-opacity,0.4)}\@media only screen and (min-width:768px) and (min-height:600px){.sc-ion-modal-ios-h{--border-radius:10px}}.modal-wrapper.sc-ion-modal-ios{-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0)}.modal-card.sc-ion-modal-ios-h{--backdrop-opacity:0;--width:100%;-ms-flex-align:end;align-items:flex-end}.modal-card.sc-ion-modal-ios-h .modal-wrapper.sc-ion-modal-ios{height:calc(100% - max(30px, var(--ion-safe-area-top)) - 10px)}.modal-card.sc-ion-modal-ios-h .modal-wrapper.sc-ion-modal-ios, [dir=rtl].modal-card.sc-ion-modal-ios-h .modal-wrapper.sc-ion-modal-ios, [dir=rtl] .modal-card.sc-ion-modal-ios-h .modal-wrapper.sc-ion-modal-ios, [dir=rtl].sc-ion-modal-ios-h -no-combinator.modal-card.sc-ion-modal-ios-h .modal-wrapper.sc-ion-modal-ios, [dir=rtl] .sc-ion-modal-ios-h -no-combinator.modal-card.sc-ion-modal-ios-h .modal-wrapper.sc-ion-modal-ios{border-top-left-radius:10px;border-top-right-radius:10px;border-bottom-right-radius:0;border-bottom-left-radius:0}";
+          return ".sc-ion-modal-ios-h{--width:100%;--min-width:auto;--max-width:auto;--height:100%;--min-height:auto;--max-height:auto;--overflow:hidden;--border-radius:0;--border-width:0;--border-style:none;--border-color:transparent;--background:var(--ion-background-color,#fff);--box-shadow:none;left:0;right:0;top:0;bottom:0;display:-ms-flexbox;display:flex;position:absolute;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center;contain:strict}.overlay-hidden.sc-ion-modal-ios-h{display:none}.modal-wrapper.sc-ion-modal-ios{border-radius:var(--border-radius);width:var(--width);min-width:var(--min-width);max-width:var(--max-width);height:var(--height);min-height:var(--min-height);max-height:var(--max-height);border-width:var(--border-width);border-style:var(--border-style);border-color:var(--border-color);background:var(--background);-webkit-box-shadow:var(--box-shadow);box-shadow:var(--box-shadow);overflow:var(--overflow);z-index:10}\@media only screen and (min-width:768px) and (min-height:600px){.sc-ion-modal-ios-h{--width:600px;--height:500px;--ion-safe-area-top:0px;--ion-safe-area-bottom:0px;--ion-safe-area-right:0px;--ion-safe-area-left:0px}}\@media only screen and (min-width:768px) and (min-height:768px){.sc-ion-modal-ios-h{--width:600px;--height:600px}}.sc-ion-modal-ios-h{--backdrop-opacity:var(--ion-backdrop-opacity,0.4)}\@media only screen and (min-width:768px) and (min-height:600px){.sc-ion-modal-ios-h{--border-radius:10px}}.modal-wrapper.sc-ion-modal-ios{-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0)}.modal-card.sc-ion-modal-ios-h{--backdrop-opacity:0;--width:100%;-ms-flex-align:end;align-items:flex-end}.modal-card.sc-ion-modal-ios-h .modal-wrapper.sc-ion-modal-ios{height:calc(100% - 40px)}.modal-card.sc-ion-modal-ios-h .modal-wrapper.sc-ion-modal-ios, [dir=rtl].modal-card.sc-ion-modal-ios-h .modal-wrapper.sc-ion-modal-ios, [dir=rtl] .modal-card.sc-ion-modal-ios-h .modal-wrapper.sc-ion-modal-ios, [dir=rtl].sc-ion-modal-ios-h -no-combinator.modal-card.sc-ion-modal-ios-h .modal-wrapper.sc-ion-modal-ios, [dir=rtl] .sc-ion-modal-ios-h -no-combinator.modal-card.sc-ion-modal-ios-h .modal-wrapper.sc-ion-modal-ios{border-top-left-radius:10px;border-top-right-radius:10px;border-bottom-right-radius:0;border-bottom-left-radius:0}\@supports (width:max(0px,1px)){.modal-card.sc-ion-modal-ios-h .modal-wrapper.sc-ion-modal-ios{height:calc(100% - max(30px, var(--ion-safe-area-top)) - 10px)}}";
         }
       }]);
 

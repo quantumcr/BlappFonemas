@@ -19,7 +19,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _overlays_e336664a_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./overlays-e336664a.js */ "./node_modules/@ionic/core/dist/esm/overlays-e336664a.js");
 /* harmony import */ var _theme_18cbe2cc_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./theme-18cbe2cc.js */ "./node_modules/@ionic/core/dist/esm/theme-18cbe2cc.js");
 /* harmony import */ var _framework_delegate_c2e2e1f4_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./framework-delegate-c2e2e1f4.js */ "./node_modules/@ionic/core/dist/esm/framework-delegate-c2e2e1f4.js");
-/* harmony import */ var _index_4e2fa3c6_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./index-4e2fa3c6.js */ "./node_modules/@ionic/core/dist/esm/index-4e2fa3c6.js");
+/* harmony import */ var _index_1469ea79_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./index-1469ea79.js */ "./node_modules/@ionic/core/dist/esm/index-1469ea79.js");
 
 
 
@@ -114,7 +114,11 @@ const iosEnterAnimation = (baseEl, ev) => {
     const wrapperAnimation = Object(_animation_56279521_js__WEBPACK_IMPORTED_MODULE_3__["c"])();
     backdropAnimation
         .addElement(baseEl.querySelector('ion-backdrop'))
-        .fromTo('opacity', 0.01, 'var(--backdrop-opacity)');
+        .fromTo('opacity', 0.01, 'var(--backdrop-opacity)')
+        .beforeStyles({
+        'pointer-events': 'none'
+    })
+        .afterClearStyles(['pointer-events']);
     wrapperAnimation
         .addElement(baseEl.querySelector('.popover-wrapper'))
         .fromTo('opacity', 0.01, 1);
@@ -212,7 +216,11 @@ const mdEnterAnimation = (baseEl, ev) => {
     const viewportAnimation = Object(_animation_56279521_js__WEBPACK_IMPORTED_MODULE_3__["c"])();
     backdropAnimation
         .addElement(baseEl.querySelector('ion-backdrop'))
-        .fromTo('opacity', 0.01, 'var(--backdrop-opacity)');
+        .fromTo('opacity', 0.01, 'var(--backdrop-opacity)')
+        .beforeStyles({
+        'pointer-events': 'none'
+    })
+        .afterClearStyles(['pointer-events']);
     wrapperAnimation
         .addElement(baseEl.querySelector('.popover-wrapper'))
         .fromTo('opacity', 0.01, 1);
@@ -320,7 +328,7 @@ const Popover = class {
         }
         const data = Object.assign(Object.assign({}, this.componentProps), { popover: this.el });
         this.usersElement = await Object(_framework_delegate_c2e2e1f4_js__WEBPACK_IMPORTED_MODULE_8__["a"])(this.delegate, container, this.component, ['popover-viewport', this.el['s-sc']], data);
-        await Object(_index_4e2fa3c6_js__WEBPACK_IMPORTED_MODULE_9__["d"])(this.usersElement);
+        await Object(_index_1469ea79_js__WEBPACK_IMPORTED_MODULE_9__["d"])(this.usersElement);
         return Object(_overlays_e336664a_js__WEBPACK_IMPORTED_MODULE_6__["e"])(this, 'popoverEnter', iosEnterAnimation, mdEnterAnimation, this.event);
     }
     /**

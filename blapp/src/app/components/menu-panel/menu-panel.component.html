@@ -1,12 +1,10 @@
 <div class="principal">
   <ion-grid>
     <ion-row>
-      <ion-col>
-        
+      <ion-col>      
         <app-students-menu *ngIf="!tipo" titulo="Estudiante" opcion1="Fonemas" opcion2="Categorías semánticas"></app-students-menu>
         
-        <app-professor-menu *ngIf="tipo" titulo="¡Buenos días, Profe!" opcion1="Fonemas" opcion2="Categorías semánticas" opcion3="Estudiantes"></app-professor-menu>
-      
+        <app-professor-menu *ngIf="tipo" titulo="¡Buenos días, Profe!" opcion1="Fonemas" opcion2="Categorías semánticas" opcion3="Estudiantes"></app-professor-menu>    
       </ion-col>
     </ion-row>
   </ion-grid>

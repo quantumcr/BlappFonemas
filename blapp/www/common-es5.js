@@ -209,169 +209,15 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
   },
 
   /***/
-  "./node_modules/@ionic/core/dist/esm/index-3476b023.js":
+  "./node_modules/@ionic/core/dist/esm/index-1469ea79.js":
   /*!*************************************************************!*\
-    !*** ./node_modules/@ionic/core/dist/esm/index-3476b023.js ***!
-    \*************************************************************/
-
-  /*! exports provided: s */
-
-  /***/
-  function node_modulesIonicCoreDistEsmIndex3476b023Js(module, __webpack_exports__, __webpack_require__) {
-    "use strict";
-
-    __webpack_require__.r(__webpack_exports__);
-    /* harmony export (binding) */
-
-
-    __webpack_require__.d(__webpack_exports__, "s", function () {
-      return sanitizeDOMString;
-    });
-    /**
-     * Does a simple sanitization of all elements
-     * in an untrusted string
-     */
-
-
-    var sanitizeDOMString = function sanitizeDOMString(untrustedString) {
-      try {
-        if (typeof untrustedString !== 'string' || untrustedString === '') {
-          return untrustedString;
-        }
-        /**
-         * Create a document fragment
-         * separate from the main DOM,
-         * create a div to do our work in
-         */
-
-
-        var documentFragment = document.createDocumentFragment();
-        var workingDiv = document.createElement('div');
-        documentFragment.appendChild(workingDiv);
-        workingDiv.innerHTML = untrustedString;
-        /**
-         * Remove any elements
-         * that are blocked
-         */
-
-        blockedTags.forEach(function (blockedTag) {
-          var getElementsToRemove = documentFragment.querySelectorAll(blockedTag);
-
-          for (var elementIndex = getElementsToRemove.length - 1; elementIndex >= 0; elementIndex--) {
-            var element = getElementsToRemove[elementIndex];
-
-            if (element.parentNode) {
-              element.parentNode.removeChild(element);
-            } else {
-              documentFragment.removeChild(element);
-            }
-            /**
-             * We still need to sanitize
-             * the children of this element
-             * as they are left behind
-             */
-
-
-            var childElements = getElementChildren(element);
-            /* tslint:disable-next-line */
-
-            for (var childIndex = 0; childIndex < childElements.length; childIndex++) {
-              sanitizeElement(childElements[childIndex]);
-            }
-          }
-        });
-        /**
-         * Go through remaining elements and remove
-         * non-allowed attribs
-         */
-        // IE does not support .children on document fragments, only .childNodes
-
-        var dfChildren = getElementChildren(documentFragment);
-        /* tslint:disable-next-line */
-
-        for (var childIndex = 0; childIndex < dfChildren.length; childIndex++) {
-          sanitizeElement(dfChildren[childIndex]);
-        } // Append document fragment to div
-
-
-        var fragmentDiv = document.createElement('div');
-        fragmentDiv.appendChild(documentFragment); // First child is always the div we did our work in
-
-        var getInnerDiv = fragmentDiv.querySelector('div');
-        return getInnerDiv !== null ? getInnerDiv.innerHTML : fragmentDiv.innerHTML;
-      } catch (err) {
-        console.error(err);
-        return '';
-      }
-    };
-    /**
-     * Clean up current element based on allowed attributes
-     * and then recursively dig down into any child elements to
-     * clean those up as well
-     */
-
-
-    var sanitizeElement = function sanitizeElement(element) {
-      // IE uses childNodes, so ignore nodes that are not elements
-      if (element.nodeType && element.nodeType !== 1) {
-        return;
-      }
-
-      for (var i = element.attributes.length - 1; i >= 0; i--) {
-        var attribute = element.attributes.item(i);
-        var attributeName = attribute.name; // remove non-allowed attribs
-
-        if (!allowedAttributes.includes(attributeName.toLowerCase())) {
-          element.removeAttribute(attributeName);
-          continue;
-        } // clean up any allowed attribs
-        // that attempt to do any JS funny-business
-
-
-        var attributeValue = attribute.value;
-        /* tslint:disable-next-line */
-
-        if (attributeValue != null && attributeValue.toLowerCase().includes('javascript:')) {
-          element.removeAttribute(attributeName);
-        }
-      }
-      /**
-       * Sanitize any nested children
-       */
-
-
-      var childElements = getElementChildren(element);
-      /* tslint:disable-next-line */
-
-      for (var _i = 0; _i < childElements.length; _i++) {
-        sanitizeElement(childElements[_i]);
-      }
-    };
-    /**
-     * IE doesn't always support .children
-     * so we revert to .childNodes instead
-     */
-
-
-    var getElementChildren = function getElementChildren(el) {
-      return el.children != null ? el.children : el.childNodes;
-    };
-
-    var allowedAttributes = ['class', 'id', 'href', 'src', 'name', 'slot'];
-    var blockedTags = ['script', 'style', 'iframe', 'meta', 'link', 'object', 'embed'];
-    /***/
-  },
-
-  /***/
-  "./node_modules/@ionic/core/dist/esm/index-4e2fa3c6.js":
-  /*!*************************************************************!*\
-    !*** ./node_modules/@ionic/core/dist/esm/index-4e2fa3c6.js ***!
+    !*** ./node_modules/@ionic/core/dist/esm/index-1469ea79.js ***!
     \*************************************************************/
 
   /*! exports provided: d, g, l, s, t */
 
   /***/
-  function node_modulesIonicCoreDistEsmIndex4e2fa3c6Js(module, __webpack_exports__, __webpack_require__) {
+  function node_modulesIonicCoreDistEsmIndex1469ea79Js(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
@@ -420,18 +266,18 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
     var iosTransitionAnimation = function iosTransitionAnimation() {
       return __webpack_require__.e(
-      /*! import() | ios-transition-179652bb-js */
-      "ios-transition-179652bb-js").then(__webpack_require__.bind(null,
-      /*! ./ios.transition-179652bb.js */
-      "./node_modules/@ionic/core/dist/esm/ios.transition-179652bb.js"));
+      /*! import() | ios-transition-b4752795-js */
+      "ios-transition-b4752795-js").then(__webpack_require__.bind(null,
+      /*! ./ios.transition-b4752795.js */
+      "./node_modules/@ionic/core/dist/esm/ios.transition-b4752795.js"));
     };
 
     var mdTransitionAnimation = function mdTransitionAnimation() {
       return __webpack_require__.e(
-      /*! import() | md-transition-91524c12-js */
-      "md-transition-91524c12-js").then(__webpack_require__.bind(null,
-      /*! ./md.transition-91524c12.js */
-      "./node_modules/@ionic/core/dist/esm/md.transition-91524c12.js"));
+      /*! import() | md-transition-5ee3c425-js */
+      "md-transition-5ee3c425-js").then(__webpack_require__.bind(null,
+      /*! ./md.transition-5ee3c425.js */
+      "./node_modules/@ionic/core/dist/esm/md.transition-5ee3c425.js"));
     };
 
     var transition = function transition(opts) {
@@ -869,6 +715,160 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     };
     /***/
 
+  },
+
+  /***/
+  "./node_modules/@ionic/core/dist/esm/index-3476b023.js":
+  /*!*************************************************************!*\
+    !*** ./node_modules/@ionic/core/dist/esm/index-3476b023.js ***!
+    \*************************************************************/
+
+  /*! exports provided: s */
+
+  /***/
+  function node_modulesIonicCoreDistEsmIndex3476b023Js(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "s", function () {
+      return sanitizeDOMString;
+    });
+    /**
+     * Does a simple sanitization of all elements
+     * in an untrusted string
+     */
+
+
+    var sanitizeDOMString = function sanitizeDOMString(untrustedString) {
+      try {
+        if (typeof untrustedString !== 'string' || untrustedString === '') {
+          return untrustedString;
+        }
+        /**
+         * Create a document fragment
+         * separate from the main DOM,
+         * create a div to do our work in
+         */
+
+
+        var documentFragment = document.createDocumentFragment();
+        var workingDiv = document.createElement('div');
+        documentFragment.appendChild(workingDiv);
+        workingDiv.innerHTML = untrustedString;
+        /**
+         * Remove any elements
+         * that are blocked
+         */
+
+        blockedTags.forEach(function (blockedTag) {
+          var getElementsToRemove = documentFragment.querySelectorAll(blockedTag);
+
+          for (var elementIndex = getElementsToRemove.length - 1; elementIndex >= 0; elementIndex--) {
+            var element = getElementsToRemove[elementIndex];
+
+            if (element.parentNode) {
+              element.parentNode.removeChild(element);
+            } else {
+              documentFragment.removeChild(element);
+            }
+            /**
+             * We still need to sanitize
+             * the children of this element
+             * as they are left behind
+             */
+
+
+            var childElements = getElementChildren(element);
+            /* tslint:disable-next-line */
+
+            for (var childIndex = 0; childIndex < childElements.length; childIndex++) {
+              sanitizeElement(childElements[childIndex]);
+            }
+          }
+        });
+        /**
+         * Go through remaining elements and remove
+         * non-allowed attribs
+         */
+        // IE does not support .children on document fragments, only .childNodes
+
+        var dfChildren = getElementChildren(documentFragment);
+        /* tslint:disable-next-line */
+
+        for (var childIndex = 0; childIndex < dfChildren.length; childIndex++) {
+          sanitizeElement(dfChildren[childIndex]);
+        } // Append document fragment to div
+
+
+        var fragmentDiv = document.createElement('div');
+        fragmentDiv.appendChild(documentFragment); // First child is always the div we did our work in
+
+        var getInnerDiv = fragmentDiv.querySelector('div');
+        return getInnerDiv !== null ? getInnerDiv.innerHTML : fragmentDiv.innerHTML;
+      } catch (err) {
+        console.error(err);
+        return '';
+      }
+    };
+    /**
+     * Clean up current element based on allowed attributes
+     * and then recursively dig down into any child elements to
+     * clean those up as well
+     */
+
+
+    var sanitizeElement = function sanitizeElement(element) {
+      // IE uses childNodes, so ignore nodes that are not elements
+      if (element.nodeType && element.nodeType !== 1) {
+        return;
+      }
+
+      for (var i = element.attributes.length - 1; i >= 0; i--) {
+        var attribute = element.attributes.item(i);
+        var attributeName = attribute.name; // remove non-allowed attribs
+
+        if (!allowedAttributes.includes(attributeName.toLowerCase())) {
+          element.removeAttribute(attributeName);
+          continue;
+        } // clean up any allowed attribs
+        // that attempt to do any JS funny-business
+
+
+        var attributeValue = attribute.value;
+        /* tslint:disable-next-line */
+
+        if (attributeValue != null && attributeValue.toLowerCase().includes('javascript:')) {
+          element.removeAttribute(attributeName);
+        }
+      }
+      /**
+       * Sanitize any nested children
+       */
+
+
+      var childElements = getElementChildren(element);
+      /* tslint:disable-next-line */
+
+      for (var _i = 0; _i < childElements.length; _i++) {
+        sanitizeElement(childElements[_i]);
+      }
+    };
+    /**
+     * IE doesn't always support .children
+     * so we revert to .childNodes instead
+     */
+
+
+    var getElementChildren = function getElementChildren(el) {
+      return el.children != null ? el.children : el.childNodes;
+    };
+
+    var allowedAttributes = ['class', 'id', 'href', 'src', 'name', 'slot'];
+    var blockedTags = ['script', 'style', 'iframe', 'meta', 'link', 'object', 'embed'];
+    /***/
   },
 
   /***/

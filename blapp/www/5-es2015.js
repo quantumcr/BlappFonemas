@@ -24,7 +24,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _constants_3c3e1099_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./constants-3c3e1099.js */ "./node_modules/@ionic/core/dist/esm/constants-3c3e1099.js");
 /* harmony import */ var _theme_18cbe2cc_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./theme-18cbe2cc.js */ "./node_modules/@ionic/core/dist/esm/theme-18cbe2cc.js");
 /* harmony import */ var _framework_delegate_c2e2e1f4_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./framework-delegate-c2e2e1f4.js */ "./node_modules/@ionic/core/dist/esm/framework-delegate-c2e2e1f4.js");
-/* harmony import */ var _index_4e2fa3c6_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./index-4e2fa3c6.js */ "./node_modules/@ionic/core/dist/esm/index-4e2fa3c6.js");
+/* harmony import */ var _index_1469ea79_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./index-1469ea79.js */ "./node_modules/@ionic/core/dist/esm/index-1469ea79.js");
 
 
 
@@ -646,7 +646,9 @@ const Header = class {
         Object(_core_0a8d4d2e_js__WEBPACK_IMPORTED_MODULE_0__["w"])(() => {
             cloneElement('ion-title');
             cloneElement('ion-back-button');
-            this.collapsibleMainHeader.classList.add('header-collapse-main');
+            if (this.collapsibleMainHeader !== undefined) {
+                this.collapsibleMainHeader.classList.add('header-collapse-main');
+            }
         });
         this.collapsibleHeaderInitialized = true;
     }
@@ -785,7 +787,7 @@ const RouterOutlet = class {
         const { el, mode } = this;
         const animated = this.animated && _config_3c7f3790_js__WEBPACK_IMPORTED_MODULE_1__["b"].getBoolean('animated', true);
         const animationBuilder = this.animation || opts.animationBuilder || _config_3c7f3790_js__WEBPACK_IMPORTED_MODULE_1__["b"].get('navAnimation');
-        await Object(_index_4e2fa3c6_js__WEBPACK_IMPORTED_MODULE_7__["t"])(Object.assign({ mode,
+        await Object(_index_1469ea79_js__WEBPACK_IMPORTED_MODULE_7__["t"])(Object.assign({ mode,
             animated,
             animationBuilder,
             enteringEl,

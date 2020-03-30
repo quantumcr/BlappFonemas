@@ -1,4 +1,6 @@
-.principal{
-    width: 1144px;
-    height: 664px;  
+@media screen and (min-width:1280px) and (orientation: landscape){
+    .principal{
+        width: 1144px;
+        height: 664px;  
+    }
 }

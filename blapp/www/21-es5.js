@@ -1114,11 +1114,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           min.day = min.day || 1;
           max.day = max.day || 31;
           min.hour = min.hour || 0;
-          max.hour = max.hour || 23;
+          max.hour = max.hour === undefined ? 23 : max.hour;
           min.minute = min.minute || 0;
-          max.minute = max.minute || 59;
+          max.minute = max.minute === undefined ? 59 : max.minute;
           min.second = min.second || 0;
-          max.second = max.second || 59; // Ensure min/max constraints
+          max.second = max.second === undefined ? 59 : max.second; // Ensure min/max constraints
 
           if (min.year > max.year) {
             console.error('min.year > max.year');
@@ -1330,7 +1330,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       var baseAnimation = Object(_animation_56279521_js__WEBPACK_IMPORTED_MODULE_3__["c"])();
       var backdropAnimation = Object(_animation_56279521_js__WEBPACK_IMPORTED_MODULE_3__["c"])();
       var wrapperAnimation = Object(_animation_56279521_js__WEBPACK_IMPORTED_MODULE_3__["c"])();
-      backdropAnimation.addElement(baseEl.querySelector('ion-backdrop')).fromTo('opacity', 0.01, 'var(--backdrop-opacity)');
+      backdropAnimation.addElement(baseEl.querySelector('ion-backdrop')).fromTo('opacity', 0.01, 'var(--backdrop-opacity)').beforeStyles({
+        'pointer-events': 'none'
+      }).afterClearStyles(['pointer-events']);
       wrapperAnimation.addElement(baseEl.querySelector('.picker-wrapper')).fromTo('transform', 'translateY(100%)', 'translateY(0%)');
       return baseAnimation.addElement(baseEl).easing('cubic-bezier(.36,.66,.04,1)').duration(400).addAnimation([backdropAnimation, wrapperAnimation]);
     };

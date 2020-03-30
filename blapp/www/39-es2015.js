@@ -21,7 +21,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _overlays_e336664a_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./overlays-e336664a.js */ "./node_modules/@ionic/core/dist/esm/overlays-e336664a.js");
 /* harmony import */ var _theme_18cbe2cc_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./theme-18cbe2cc.js */ "./node_modules/@ionic/core/dist/esm/theme-18cbe2cc.js");
 /* harmony import */ var _framework_delegate_c2e2e1f4_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./framework-delegate-c2e2e1f4.js */ "./node_modules/@ionic/core/dist/esm/framework-delegate-c2e2e1f4.js");
-/* harmony import */ var _index_4e2fa3c6_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./index-4e2fa3c6.js */ "./node_modules/@ionic/core/dist/esm/index-4e2fa3c6.js");
+/* harmony import */ var _index_1469ea79_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./index-1469ea79.js */ "./node_modules/@ionic/core/dist/esm/index-1469ea79.js");
 
 
 
@@ -122,11 +122,15 @@ const iosEnterAnimation = (baseEl, presentingEl) => {
     // The top translate Y for the presenting element
     const backdropAnimation = Object(_animation_56279521_js__WEBPACK_IMPORTED_MODULE_3__["c"])()
         .addElement(baseEl.querySelector('ion-backdrop'))
-        .fromTo('opacity', 0.01, 'var(--backdrop-opacity)');
+        .fromTo('opacity', 0.01, 'var(--backdrop-opacity)')
+        .beforeStyles({
+        'pointer-events': 'none'
+    })
+        .afterClearStyles(['pointer-events']);
     const wrapperAnimation = Object(_animation_56279521_js__WEBPACK_IMPORTED_MODULE_3__["c"])()
         .addElement(baseEl.querySelector('.modal-wrapper'))
         .beforeStyles({ 'opacity': 1 })
-        .fromTo('transform', 'translateY(100%)', 'translateY(0%)');
+        .fromTo('transform', 'translateY(100vh)', 'translateY(0vh)');
     const baseAnimation = Object(_animation_56279521_js__WEBPACK_IMPORTED_MODULE_3__["c"])()
         .addElement(baseEl)
         .easing('cubic-bezier(0.32,0.72,0,1)')
@@ -134,7 +138,13 @@ const iosEnterAnimation = (baseEl, presentingEl) => {
         .beforeAddClass('show-modal')
         .addAnimation([backdropAnimation, wrapperAnimation]);
     if (presentingEl) {
-        const modalTransform = (presentingEl.tagName === 'ION-MODAL' && presentingEl.presentingElement !== undefined) ? '-10px' : 'max(30px, var(--ion-safe-area-top))';
+        /**
+         * Fallback for browsers that does not support `max()` (ex: Firefox)
+         * No need to wrry about statusbar padding since engines like Gecko
+         * are not used as the engine for standlone Cordova/Capacitor apps
+         */
+        const transformOffset = (!CSS.supports('width', 'max(0px, 1px)')) ? '30px' : 'max(30px, var(--ion-safe-area-top))';
+        const modalTransform = (presentingEl.tagName === 'ION-MODAL' && presentingEl.presentingElement !== undefined) ? '-10px' : transformOffset;
         const bodyEl = document.body;
         const toPresentingScale = SwipeToCloseDefaults.MIN_PRESENTING_SCALE;
         const finalTransform = `translateY(${modalTransform}) scale(${toPresentingScale})`;
@@ -168,14 +178,15 @@ const iosLeaveAnimation = (baseEl, presentingEl, duration = 500) => {
     const wrapperAnimation = Object(_animation_56279521_js__WEBPACK_IMPORTED_MODULE_3__["c"])()
         .addElement(baseEl.querySelector('.modal-wrapper'))
         .beforeStyles({ 'opacity': 1 })
-        .fromTo('transform', 'translateY(0%)', 'translateY(100%)');
+        .fromTo('transform', 'translateY(0vh)', 'translateY(100vh)');
     const baseAnimation = Object(_animation_56279521_js__WEBPACK_IMPORTED_MODULE_3__["c"])()
         .addElement(baseEl)
         .easing('cubic-bezier(0.32,0.72,0,1)')
         .duration(duration)
         .addAnimation([backdropAnimation, wrapperAnimation]);
     if (presentingEl) {
-        const modalTransform = (presentingEl.tagName === 'ION-MODAL' && presentingEl.presentingElement !== undefined) ? '-10px' : 'max(30px, var(--ion-safe-area-top))';
+        const transformOffset = (!CSS.supports('width', 'max(0px, 1px)')) ? '30px' : 'max(30px, var(--ion-safe-area-top))';
+        const modalTransform = (presentingEl.tagName === 'ION-MODAL' && presentingEl.presentingElement !== undefined) ? '-10px' : transformOffset;
         const bodyEl = document.body;
         const currentPresentingScale = SwipeToCloseDefaults.MIN_PRESENTING_SCALE;
         const presentingAnimation = Object(_animation_56279521_js__WEBPACK_IMPORTED_MODULE_3__["c"])()
@@ -211,7 +222,11 @@ const mdEnterAnimation = (baseEl) => {
     const wrapperAnimation = Object(_animation_56279521_js__WEBPACK_IMPORTED_MODULE_3__["c"])();
     backdropAnimation
         .addElement(baseEl.querySelector('ion-backdrop'))
-        .fromTo('opacity', 0.01, 'var(--backdrop-opacity)');
+        .fromTo('opacity', 0.01, 'var(--backdrop-opacity)')
+        .beforeStyles({
+        'pointer-events': 'none'
+    })
+        .afterClearStyles(['pointer-events']);
     wrapperAnimation
         .addElement(baseEl.querySelector('.modal-wrapper'))
         .keyframes([
@@ -316,7 +331,7 @@ const Modal = class {
         }
         const componentProps = Object.assign(Object.assign({}, this.componentProps), { modal: this.el });
         this.usersElement = await Object(_framework_delegate_c2e2e1f4_js__WEBPACK_IMPORTED_MODULE_10__["a"])(this.delegate, container, this.component, ['ion-page'], componentProps);
-        await Object(_index_4e2fa3c6_js__WEBPACK_IMPORTED_MODULE_11__["d"])(this.usersElement);
+        await Object(_index_1469ea79_js__WEBPACK_IMPORTED_MODULE_11__["d"])(this.usersElement);
         await Object(_overlays_e336664a_js__WEBPACK_IMPORTED_MODULE_8__["e"])(this, 'modalEnter', iosEnterAnimation, mdEnterAnimation, this.presentingElement);
         const mode = Object(_core_0a8d4d2e_js__WEBPACK_IMPORTED_MODULE_0__["c"])(this);
         if (this.swipeToClose && mode === 'ios') {

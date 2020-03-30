@@ -36,7 +36,11 @@ const iosEnterAnimation = (baseEl) => {
     const wrapperAnimation = Object(_animation_56279521_js__WEBPACK_IMPORTED_MODULE_3__["c"])();
     backdropAnimation
         .addElement(baseEl.querySelector('ion-backdrop'))
-        .fromTo('opacity', 0.01, 'var(--backdrop-opacity)');
+        .fromTo('opacity', 0.01, 'var(--backdrop-opacity)')
+        .beforeStyles({
+        'pointer-events': 'none'
+    })
+        .afterClearStyles(['pointer-events']);
     wrapperAnimation
         .addElement(baseEl.querySelector('.loading-wrapper'))
         .keyframes([
@@ -82,7 +86,11 @@ const mdEnterAnimation = (baseEl) => {
     const wrapperAnimation = Object(_animation_56279521_js__WEBPACK_IMPORTED_MODULE_3__["c"])();
     backdropAnimation
         .addElement(baseEl.querySelector('ion-backdrop'))
-        .fromTo('opacity', 0.01, 'var(--backdrop-opacity)');
+        .fromTo('opacity', 0.01, 'var(--backdrop-opacity)')
+        .beforeStyles({
+        'pointer-events': 'none'
+    })
+        .afterClearStyles(['pointer-events']);
     wrapperAnimation
         .addElement(baseEl.querySelector('.loading-wrapper'))
         .keyframes([

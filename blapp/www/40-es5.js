@@ -73,9 +73,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony import */
 
 
-    var _index_4e2fa3c6_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
-    /*! ./index-4e2fa3c6.js */
-    "./node_modules/@ionic/core/dist/esm/index-4e2fa3c6.js");
+    var _index_1469ea79_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    /*! ./index-1469ea79.js */
+    "./node_modules/@ionic/core/dist/esm/index-1469ea79.js");
 
     var VIEW_STATE_NEW = 1;
     var VIEW_STATE_ATTACHED = 2;
@@ -329,7 +329,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           try {
             for (var _iterator = this.views[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
               var view = _step.value;
-              Object(_index_4e2fa3c6_js__WEBPACK_IMPORTED_MODULE_6__["l"])(view.element, _constants_3c3e1099_js__WEBPACK_IMPORTED_MODULE_4__["d"]);
+              Object(_index_1469ea79_js__WEBPACK_IMPORTED_MODULE_6__["l"])(view.element, _constants_3c3e1099_js__WEBPACK_IMPORTED_MODULE_4__["d"]);
 
               view._destroy();
             }
@@ -1140,9 +1140,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             try {
               for (var _iterator4 = destroyQueue[Symbol.iterator](), _step4; !(_iteratorNormalCompletion4 = (_step4 = _iterator4.next()).done); _iteratorNormalCompletion4 = true) {
                 var _view2 = _step4.value;
-                Object(_index_4e2fa3c6_js__WEBPACK_IMPORTED_MODULE_6__["l"])(_view2.element, _constants_3c3e1099_js__WEBPACK_IMPORTED_MODULE_4__["b"]);
-                Object(_index_4e2fa3c6_js__WEBPACK_IMPORTED_MODULE_6__["l"])(_view2.element, _constants_3c3e1099_js__WEBPACK_IMPORTED_MODULE_4__["c"]);
-                Object(_index_4e2fa3c6_js__WEBPACK_IMPORTED_MODULE_6__["l"])(_view2.element, _constants_3c3e1099_js__WEBPACK_IMPORTED_MODULE_4__["d"]);
+                Object(_index_1469ea79_js__WEBPACK_IMPORTED_MODULE_6__["l"])(_view2.element, _constants_3c3e1099_js__WEBPACK_IMPORTED_MODULE_4__["b"]);
+                Object(_index_1469ea79_js__WEBPACK_IMPORTED_MODULE_6__["l"])(_view2.element, _constants_3c3e1099_js__WEBPACK_IMPORTED_MODULE_4__["c"]);
+                Object(_index_1469ea79_js__WEBPACK_IMPORTED_MODULE_6__["l"])(_view2.element, _constants_3c3e1099_js__WEBPACK_IMPORTED_MODULE_4__["d"]);
               } // once all lifecycle events has been delivered, we can safely detroy the views
 
             } catch (err) {
@@ -1219,7 +1219,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                       leavingEl: leavingEl
                     }, opts);
                     _context6.next = 8;
-                    return Object(_index_4e2fa3c6_js__WEBPACK_IMPORTED_MODULE_6__["t"])(animationOpts);
+                    return Object(_index_1469ea79_js__WEBPACK_IMPORTED_MODULE_6__["t"])(animationOpts);
 
                   case 8:
                     _ref = _context6.sent;
@@ -1320,12 +1320,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             if (i > activeViewIndex) {
               // this view comes after the active view
               // let's unload it
-              Object(_index_4e2fa3c6_js__WEBPACK_IMPORTED_MODULE_6__["l"])(element, _constants_3c3e1099_js__WEBPACK_IMPORTED_MODULE_4__["d"]);
+              Object(_index_1469ea79_js__WEBPACK_IMPORTED_MODULE_6__["l"])(element, _constants_3c3e1099_js__WEBPACK_IMPORTED_MODULE_4__["d"]);
               this.destroyView(view);
             } else if (i < activeViewIndex) {
               // this view comes before the active view
               // and it is not a portal then ensure it is hidden
-              Object(_index_4e2fa3c6_js__WEBPACK_IMPORTED_MODULE_6__["s"])(element, true);
+              Object(_index_1469ea79_js__WEBPACK_IMPORTED_MODULE_6__["s"])(element, true);
             }
           }
         }

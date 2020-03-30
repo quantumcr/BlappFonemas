@@ -87,7 +87,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       var baseAnimation = Object(_animation_56279521_js__WEBPACK_IMPORTED_MODULE_3__["c"])();
       var backdropAnimation = Object(_animation_56279521_js__WEBPACK_IMPORTED_MODULE_3__["c"])();
       var wrapperAnimation = Object(_animation_56279521_js__WEBPACK_IMPORTED_MODULE_3__["c"])();
-      backdropAnimation.addElement(baseEl.querySelector('ion-backdrop')).fromTo('opacity', 0.01, 'var(--backdrop-opacity)');
+      backdropAnimation.addElement(baseEl.querySelector('ion-backdrop')).fromTo('opacity', 0.01, 'var(--backdrop-opacity)').beforeStyles({
+        'pointer-events': 'none'
+      }).afterClearStyles(['pointer-events']);
       wrapperAnimation.addElement(baseEl.querySelector('.loading-wrapper')).keyframes([{
         offset: 0,
         opacity: 0.01,
@@ -129,7 +131,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       var baseAnimation = Object(_animation_56279521_js__WEBPACK_IMPORTED_MODULE_3__["c"])();
       var backdropAnimation = Object(_animation_56279521_js__WEBPACK_IMPORTED_MODULE_3__["c"])();
       var wrapperAnimation = Object(_animation_56279521_js__WEBPACK_IMPORTED_MODULE_3__["c"])();
-      backdropAnimation.addElement(baseEl.querySelector('ion-backdrop')).fromTo('opacity', 0.01, 'var(--backdrop-opacity)');
+      backdropAnimation.addElement(baseEl.querySelector('ion-backdrop')).fromTo('opacity', 0.01, 'var(--backdrop-opacity)').beforeStyles({
+        'pointer-events': 'none'
+      }).afterClearStyles(['pointer-events']);
       wrapperAnimation.addElement(baseEl.querySelector('.loading-wrapper')).keyframes([{
         offset: 0,
         opacity: 0.01,

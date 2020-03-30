@@ -1,8 +1,8 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["ios-transition-179652bb-js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["ios-transition-b4752795-js"],{
 
-/***/ "./node_modules/@ionic/core/dist/esm/ios.transition-179652bb.js":
+/***/ "./node_modules/@ionic/core/dist/esm/ios.transition-b4752795.js":
 /*!**********************************************************************!*\
-  !*** ./node_modules/@ionic/core/dist/esm/ios.transition-179652bb.js ***!
+  !*** ./node_modules/@ionic/core/dist/esm/ios.transition-b4752795.js ***!
   \**********************************************************************/
 /*! exports provided: iosTransitionAnimation, shadow */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -16,7 +16,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _helpers_46f4a262_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./helpers-46f4a262.js */ "./node_modules/@ionic/core/dist/esm/helpers-46f4a262.js");
 /* harmony import */ var _animation_56279521_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./animation-56279521.js */ "./node_modules/@ionic/core/dist/esm/animation-56279521.js");
 /* harmony import */ var _constants_3c3e1099_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./constants-3c3e1099.js */ "./node_modules/@ionic/core/dist/esm/constants-3c3e1099.js");
-/* harmony import */ var _index_4e2fa3c6_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./index-4e2fa3c6.js */ "./node_modules/@ionic/core/dist/esm/index-4e2fa3c6.js");
+/* harmony import */ var _index_1469ea79_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./index-1469ea79.js */ "./node_modules/@ionic/core/dist/esm/index-1469ea79.js");
 
 
 
@@ -149,7 +149,7 @@ const animateBackButton = (rootAnimation, rtl, backDirection, backButtonEl, larg
     rootAnimation.addAnimation([enteringBackButtonTextAnimation, enteringBackButtonIconAnimation]);
 };
 const animateLargeTitle = (rootAnimation, rtl, backDirection, largeTitleEl, largeTitleBox, backButtonBox) => {
-    const TITLE_START_OFFSET = (rtl) ? `calc(100% - ${largeTitleEl.right}px)` : `${largeTitleEl.left}px`;
+    const TITLE_START_OFFSET = (rtl) ? `calc(100% - ${largeTitleBox.right}px)` : `${largeTitleBox.left}px`;
     const START_TRANSLATE = (rtl) ? '-18px' : '18px';
     const ORIGIN_X = (rtl) ? 'right' : 'left';
     const BACKWARDS_KEYFRAMES = [
@@ -346,7 +346,7 @@ const iosTransitionAnimation = (navEl, opts) => {
                 leavingContent
                     .beforeClearStyles([OPACITY])
                     .fromTo('transform', `translateX(${CENTER})`, (isRTL ? 'translateX(-100%)' : 'translateX(100%)'));
-                const leavingPage = Object(_index_4e2fa3c6_js__WEBPACK_IMPORTED_MODULE_5__["g"])(leavingEl);
+                const leavingPage = Object(_index_1469ea79_js__WEBPACK_IMPORTED_MODULE_5__["g"])(leavingEl);
                 rootAnimation.afterAddWrite(() => {
                     if (rootAnimation.getDirection() === 'normal') {
                         leavingPage.style.setProperty('display', 'none');
@@ -472,4 +472,4 @@ const iosTransitionAnimation = (navEl, opts) => {
 /***/ })
 
 }]);
-//# sourceMappingURL=ios-transition-179652bb-js-es2015.js.map
+//# sourceMappingURL=ios-transition-b4752795-js-es2015.js.map

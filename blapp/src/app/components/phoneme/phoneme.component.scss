@@ -1,4 +1,8 @@
 @media screen and(min-width:1280px){
+    .grid{
+        width: 1142px;
+        height: 624px;
+    }
     .principal{
         width: 1142px;
         height: 624px;
@@ -13,6 +17,9 @@
         height: 623px;    
     }
     .navigation{
-        margin-top: 26px;    
-        }    
+        margin-top: 16px;  
+        height: 57px; 
+        width: 1145px;  
+    }   
+
 }
