@@ -19,7 +19,7 @@ const userSchema = new Schema({
  * registra en el sistema
  */
 userSchema.methods.encryptPassword = (password) => {
-    return bcrypt.hashSync(password, bcrypt.genSaltSync(16));
+    return bcrypt.hashSync(password, bcrypt.genSaltSync(process.env.SALT_ROUNDS));
 };
   
 /**

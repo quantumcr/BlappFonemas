@@ -5,7 +5,7 @@ const app = express();
 const passport = require('passport');
 const cors = require('cors');
 
-// Initioalizations
+// Initioalizationsy
 require('./database');
 require('./passport/local-auth');
 
@@ -23,7 +23,7 @@ app.use('/api/users', require('./routes/users.routes'));
 app.use('/api/students', require('./routes/students.routes'));
 
 // Static files
-app.use(express.static(path.join(__dirname, '../blapp/www')));
+app.use(express.static(path.join(__dirname, 'blapp/www')));
 
 // Starting the server
 app.listen(app.get('port'), () => {
