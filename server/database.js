@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const URI = process.env.API_URL;
+const URI = 'mongodb+srv://pbrenes:brenespablo@teca-7rrky.mongodb.net/blapp?retryWrites=true&w=majority';
 //const URI = process.env.API_URL_LOCAL;
 
 mongoose.connect(URI, { useNewUrlParser: true, useFindAndModify: false, useCreateIndex: true, useUnifiedTopology: true })
