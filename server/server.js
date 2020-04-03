@@ -4,10 +4,8 @@ const path = require('path');
 const app = express();
 const passport = require('passport');
 const cors = require('cors');
-const dotenv = require('dotenv');
 
 // Initioalizations
-dotenv.config();
 require('./database');
 require('./passport/local-auth');
 
