@@ -28,20 +28,20 @@ userCtrl.createUser = (req, res, next) => {
  * Controlador del login con passport
  */
 userCtrl.loginUser = (req, res, next) => {
-    console.log("LoginUser", process.env.API_URL);
-    passport.authenticate('local-signin', { session: false }, (err, user, info) => {
+    //console.log("LoginUser", process.env.API_URL);
+    passport.authenticate('local-signin', { session: false }, async (err, user, info) => {
         // Si en el primer paramentro retornado del done() no es null es que hubo un error
         if(err) { return res.status(501).json(err); }
         // Luego si el primer y segundo paramentro son null es por credenciales incorrectas
         if(!user) { return res.status(501).json(info); }
         // Si el segundo paramentro es un usuario es porque las credenciales son correctasuser.generateJwt();
         if(user.tipo == 'Estudiante') {
-            Student.findById(user.idUsuario, (err, student) => {
+            await Student.findById(user.idUsuario, (err, student) => {
                 if(err) { return res.status(501).json(err); }
                 return res.status(200).json( { "token": user.generateJwt(student.nombre) });
             });
         } else {
-            Professor.findById(user.idUsuario, (err, professor) => {
+            await Professor.findById(user.idUsuario, (err, professor) => {
                 if(err) { return res.status(501).json(err); }
                 return res.status(200).json( { "token": user.generateJwt(professor.nombre) });
             });
@@ -51,7 +51,7 @@ userCtrl.loginUser = (req, res, next) => {
 
 userCtrl.putUser = async (req, res) => {
     var params = { email: req.body.email, password: req.body.password };
-    console.log(params.password, req.body);
+    //console.log(params.password, req.body);
     if (params.password == "") {
         delete params.password;
     } else {

@@ -41,8 +41,8 @@ passport.use('local-signin', new LocalStrategy({
     session: false,
     // Con este parametro en true nos deja obtener los datos que vienen en el req
     passReqToCallback: true
-}, (req, username, password, done) => {
-    User.findOne({ email: req.body.email }, (err, user) => {
+}, async (req, username, password, done) => {
+    await User.findOne({ email: req.body.email }, (err, user) => {
         // Revisa si ocurrio un error en la consulta del find()
         if (err) { return done(err); }
         // Si el find() no encuentra un usuario es que el correo ingresado no esta registrado
@@ -63,8 +63,8 @@ passport.use('jwt', new JwtStrategy({
     jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
     secretOrKey: process.env.SECRET_KEY,
     algorithms: process.env.ALGORITHMS
-}, (jwt_payload, done) => {    
-    User.findOne({ _id: jwt_payload._id }, (err, user) => {
+}, async (jwt_payload, done) => {    
+    await User.findOne({ _id: jwt_payload._id }, (err, user) => {
         if(err) { return done(err, false); }
         if(!user) { return done(null, false); }
         return done(null, user);
