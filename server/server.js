@@ -12,7 +12,7 @@ require('./database');
 require('./passport/local-auth');
 
 // Configuraciones
-app.set('port', 3000);
+app.set('port', 3000 || process.env.PORT);
 
 // Middlewares
 app.use(morgan('dev'));
