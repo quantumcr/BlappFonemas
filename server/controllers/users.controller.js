@@ -17,10 +17,21 @@ userCtrl.createUser = (req, res, next) => {
         // Luego si el primer y segundo paramentro son null es por que hubo un con el correo ingresado
         if (!user) { Student.findByIdAndRemove(req.body.idUsuario); return res.status(501).json(info); }
         // Si el segundo paramentro es un usuario es porque fue registrado exitosamente en la base de datos
-        Student.findById(user.idUsuario, (err, student) => {
-            if(err) { return res.status(501).json(err); }
-            return res.status(200).json( { "token": user.generateJwt(student.nombre) });
-        });
+        if (user.tipo == "Estudiante") {
+            Student.findById(user.idUsuario, (err, student) => {
+                if(err) {
+                    return res.status(501).json(err);
+                }
+                return res.status(200).json( { "token": user.generateJwt(student.nombre) });
+            });
+        } else {
+            Professor.findById(user.idUsuario, (err, professor) => {
+                if(err) {
+                    return res.status(501).json(err);
+                }
+                return res.status(200).json( { "token": user.generateJwt(student.nombre) });
+            })
+        }        
     })(req, res, next);
 }
 
