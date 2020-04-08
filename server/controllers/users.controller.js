@@ -29,7 +29,7 @@ userCtrl.createUser = (req, res, next) => {
                 if(err) {
                     return res.status(501).json(err);
                 }
-                return res.status(200).json( { "token": user.generateJwt(student.nombre) });
+                return res.status(200).json( { "token": user.generateJwt(professor.nombre) });
             })
         }        
     })(req, res, next);
