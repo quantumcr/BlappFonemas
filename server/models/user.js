@@ -19,7 +19,7 @@ const userSchema = new Schema({
  * registra en el sistema
  */
 userSchema.methods.encryptPassword = (password) => {
-    return bcrypt.hashSync(password, bcrypt.genSaltSync(16));
+    return bcrypt.hashSync(password, bcrypt.genSaltSync(process.env.SALT_ROUNDS));
 };
   
 /**
@@ -40,7 +40,7 @@ userSchema.methods.generateJwt = function(nombre) {
         tipo: this.tipo,
         nombre: nombre,
         exp: parseInt(expiry.getTime() / 1000),
-    }, 'GW&0o40nzyJxnZ}$v0l)v3g.a°e'); // DO NOT KEEP YOUR SECRET IN THE CODE!
+    }, process.env.SECRET_KEY); // DO NOT KEEP YOUR SECRET IN THE CODE!
 };
 
 module.exports = mongoose.model('user', userSchema);

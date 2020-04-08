@@ -10,7 +10,7 @@ userCtrl = {};
  * El controlador de la creacion de un nuevo usuario con passport
  */
 userCtrl.createUser = (req, res, next) => {
-    // (err, user, info) son datos que son retornados desde el "passport.use('local-signup'" con el done()
+    // (err, user, info) son datos que son retornados desde el "passport.use('local-signup'" con el done()    
     passport.authenticate('local-signup', { session: false }, (err, user, info) => {
         // Si en el primer paramentro retornado del done() no es null es que hubo un error
         if (err) { Student.findByIdAndRemove(req.body.idUsuario); return res.status(501).json(err); }

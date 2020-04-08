@@ -10,7 +10,7 @@ import { User } from '../models/user';
 })
 export class UserService {
 
-  readonly URL_API = 'https://blapp.herokuapp.com/api/users';
+  readonly URL_API = 'http://localhost:3000/api/users';
 
   constructor(
     private http: HttpClient
