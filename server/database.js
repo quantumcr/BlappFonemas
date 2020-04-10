@@ -6,4 +6,5 @@ mongoose.connect(URI, { useNewUrlParser: true, useFindAndModify: false, useCreat
     .then(db => console.log('DB is connected'))
     .catch(err => console.error(err));
 
+
 module.exports = mongoose;
