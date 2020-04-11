@@ -1,9 +1,7 @@
 import { Component, OnInit, Input, EventEmitter, Output, SimpleChanges } from '@angular/core';
 import { SUBCATEGORIAS, SubcategoryI, OneDataI } from '../../../../data/categorias/data.subcategorias';
 import { CategoriaI } from '../../../../data/categorias/data.categorias';
-import { createAnimation, Animation } from '@ionic/core';
-import { AnimationController } from '@ionic/angular';
-import { animation } from '@angular/animations';
+import {AnimationController } from '@ionic/angular';
 
 @Component({
   selector: 'app-categories-view-panel',
@@ -25,62 +23,45 @@ export class CategoriesViewPanelComponent implements OnInit {
   @Input() imagenPredicado: string;
 
   constructor(private animationCtrl: AnimationController) {
-    
   }
-  
-  
 
 
-  ngOnInit() {
+
+  async ngOnInit() {
     this.animacionSujeto();
 
-
-
-    /*
-    if (this.category.subcategoria != []) {
-      
-    }
-    */
-    /*
-    this.getEjemplos('Imagen de mí mismo');
-    this.sujeto = this.ejemplos[0].sujeto;
-    this.verbo = this.ejemplos[0].verbo;
-    this.predicado = this.ejemplos[0].predicado;
-    this.cantidadEjemplos = 0;
-    */
-
   }
-  async animacionSujeto(){
-    const animation: Animation = this.animationCtrl.create()
+  async animacionSujeto() {
+    const animationS = this.animationCtrl.create()
     .addElement(document.querySelector('.star'))
     .duration(1900)
-    .iterations(Infinity)
+    // .iterations(Infinity)
     .keyframes([
       { offset: 0, transform: 'scale(1) rotate(0)' },
       { offset: 0.5, transform: 'scale(1.5) rotate(90deg)' },
       { offset: 1, transform: 'scale(1) rotate(90deg)' }
     ]);
 
-    const animationV: Animation = this.animationCtrl.create()
+    const animationV = this.animationCtrl.create()
     .addElement(document.querySelector('.star2'))
     .duration(1900)
-    .iterations(Infinity)
+    // .iterations(Infinity)
     .keyframes([
       { offset: 0, transform: 'scale(1) rotate(0)' },
       { offset: 0.5, transform: 'scale(1.5) rotate(90deg)' },
       { offset: 1, transform: 'scale(1) rotate(90deg)' }
     ]);
 
-    const animationP: Animation = this.animationCtrl.create()
+    const animationP = this.animationCtrl.create()
     .addElement(document.querySelector('.star3'))
     .duration(1900)
-    .iterations(Infinity)
+    // .iterations(Infinity)
     .keyframes([
       { offset: 0, transform: 'scale(1) rotate(0)' },
       { offset: 0.5, transform: 'scale(1.5) rotate(90deg)' },
       { offset: 1, transform: 'scale(1) rotate(90deg)' }
     ]);
-    await animation.play();
+    await animationS.play();
     await animationV.play();
     await animationP.play();
   }
@@ -138,10 +119,9 @@ export class CategoriesViewPanelComponent implements OnInit {
     document.getElementById("sujeto").setAttribute('src', this.subcategoryOneData.imagenSujeto);
     document.getElementById("verbo").setAttribute('src', this.subcategoryOneData.imagenVerbo);
     document.getElementById("predicado").setAttribute('src', this.subcategoryOneData.imagenPredicado);
+    this.animacionSujeto();
   }
 
-  onload(){
 
-
-}
+  onload() {}
 }
