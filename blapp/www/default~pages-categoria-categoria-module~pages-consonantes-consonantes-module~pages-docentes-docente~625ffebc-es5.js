@@ -69,7 +69,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"principal\">\r\n  <ion-grid>\r\n    <ion-row class=\"imagenes\">\r\n      <ion-col>\r\n        <div class=\"sujeto\">\r\n          <ion-avatar class=\"imagenSujeto\">\r\n            <ion-img id=\"sujeto\" src={{subcategoryOneData.imagenSujeto}}></ion-img>\r\n          </ion-avatar>\r\n        </div>\r\n      </ion-col>\r\n      <ion-col>\r\n        <div class=\"verbo\">\r\n          <div>\r\n            <ion-img id=\"verbo\" src={{subcategoryOneData.imagenVerbo}}></ion-img>\r\n          </div>\r\n        </div>\r\n      </ion-col>\r\n      <ion-col>\r\n        <div class=\"predicado\">\r\n          <ion-avatar class=\"imagenPredicado\">\r\n            <ion-img id=\"predicado\" src={{subcategoryOneData.imagenPredicado}}></ion-img>\r\n          </ion-avatar>\r\n        </div>\r\n      </ion-col>\r\n    </ion-row>\r\n\r\n    <ion-row>\r\n      <ion-col>\r\n        <div>\r\n          <ion-img src=\"assets/svg/semantics/categories-view/trayectoria.svg\" class=\"trayectoria\"></ion-img>\r\n        </div>\r\n      </ion-col>\r\n    </ion-row>\r\n    <ion-row class=\"rowAnimation\">\r\n      <ion-col>\r\n        <ion-img src=\"assets/svg/shapes/star.svg\" class=\"star\"></ion-img>\r\n      </ion-col>\r\n      <ion-col>\r\n        <ion-img src=\"assets/svg/shapes/star.svg\" class=\"star2\"></ion-img>\r\n      </ion-col>\r\n      <ion-col>\r\n        <ion-img src=\"assets/svg/shapes/star.svg\" class=\"star3\"></ion-img>\r\n      </ion-col>\r\n    </ion-row>\r\n    <ion-row>\r\n      <ion-col>\r\n        <div class=\"semantica\">\r\n          <ion-label class=\"pSujeto\">{{subcategoryOneData.sujeto}}</ion-label>\r\n        </div>\r\n      </ion-col>\r\n      <ion-col>\r\n        <div class=\"semantica\">\r\n          <ion-label class=\"pVerbo\">{{subcategoryOneData.verbo}}</ion-label>\r\n        </div>\r\n      </ion-col>\r\n      <ion-col>\r\n        <div class=\"semantica\">\r\n          <ion-label class=\"pPredicado\">{{subcategoryOneData.predicado}}</ion-label>\r\n        </div>\r\n      </ion-col>\r\n    </ion-row>\r\n  </ion-grid>\r\n</div>\r\n";
+    __webpack_exports__["default"] = "<div class=\"principal\">\r\n  <ion-grid>\r\n    <ion-row class=\"imagenes\">\r\n      <ion-col>\r\n        <div class=\"sujeto\">\r\n          <ion-avatar class=\"imagenSujeto\">\r\n            <ion-img id=\"sujeto\" src={{subcategoryOneData.imagenSujeto}}></ion-img>\r\n          </ion-avatar>\r\n        </div>\r\n      </ion-col>\r\n      <ion-col>\r\n        <div class=\"verbo\">\r\n          <div>\r\n            <ion-img id=\"verbo\" src={{subcategoryOneData.imagenVerbo}}></ion-img>\r\n          </div>\r\n        </div>\r\n      </ion-col>\r\n      <ion-col>\r\n        <div class=\"predicado\">\r\n          <ion-avatar class=\"imagenPredicado\">\r\n            <ion-img id=\"predicado\" src={{subcategoryOneData.imagenPredicado}}></ion-img>\r\n          </ion-avatar>\r\n        </div>\r\n      </ion-col>\r\n    </ion-row>\r\n\r\n    <ion-row>\r\n      <ion-col>\r\n        <div>\r\n          <ion-img src=\"assets/svg/semantics/categories-view/trayectoria.svg\" class=\"trayectoria\"></ion-img>\r\n        </div>\r\n      </ion-col>\r\n    </ion-row>\r\n    <ion-row class=\"rowAnimation\">\r\n      <ion-col>\r\n        <ion-img src=\"assets/svg/shapes/star.svg\" class=\"star\"></ion-img>\r\n      </ion-col>\r\n      <ion-col>\r\n        <ion-img src=\"assets/svg/shapes/star.svg\" class=\"star2\"></ion-img>\r\n      </ion-col>\r\n      <ion-col>\r\n        <ion-img src=\"assets/svg/shapes/star.svg\" class=\"star3\"></ion-img>\r\n      </ion-col>\r\n    </ion-row>\r\n    <ion-row>\r\n      <ion-col>\r\n        <div class=\"semantica\">\r\n          <ion-label class=\"pSujeto\" (click)=\"animacionSujeto()\">{{subcategoryOneData.sujeto}}</ion-label>\r\n        </div>\r\n      </ion-col>\r\n      <ion-col>\r\n        <div class=\"semantica\">\r\n          <ion-label class=\"pVerbo\">{{subcategoryOneData.verbo}}</ion-label>\r\n        </div>\r\n      </ion-col>\r\n      <ion-col>\r\n        <div class=\"semantica\">\r\n          <ion-label class=\"pPredicado\">{{subcategoryOneData.predicado}}</ion-label>\r\n        </div>\r\n      </ion-col>\r\n    </ion-row>\r\n  </ion-grid>\r\n</div>\r\n";
     /***/
   },
 
@@ -89,7 +89,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"principal\">\r\n    <ion-grid>\r\n        <ion-row>\r\n          <ion-col class=\"bar\">\r\n            <app-categories-bar [category]=\"category\" (subcategoryEmit)=\"changeSubcategory($event)\" ></app-categories-bar>\r\n          </ion-col>\r\n          <ion-col class=\"panel\">\r\n            <app-categories-view-panel [subcategoryOneData]=\"subcategory.data[indexData]\" ></app-categories-view-panel>\r\n          </ion-col>\r\n        </ion-row>\r\n        <ion-row class=\"navigation\">\r\n          <ion-col>\r\n            <app-categories-navigation (forwardEmit)=\"incIndexData()\" (backEmit)=\"decIndexData()\"></app-categories-navigation>\r\n          </ion-col>\r\n        </ion-row>\r\n      </ion-grid>\r\n</div>";
+    __webpack_exports__["default"] = "<div class=\"principal\">\r\n    <ion-grid>\r\n        <ion-row>\r\n          <ion-col class=\"bar\">\r\n            <app-categories-bar [category]=\"category\" (subcategoryEmit)=\"changeSubcategory($event)\" ></app-categories-bar>\r\n          </ion-col>\r\n          <ion-col class=\"panel\">\r\n            <app-categories-view-panel [subcategoryOneData]=\"subcategory.data[indexData]\"></app-categories-view-panel>\r\n          </ion-col>\r\n        </ion-row>\r\n        <ion-row class=\"navigation\">\r\n          <ion-col>\r\n            <app-categories-navigation (forwardEmit)=\"incIndexData()\" (backEmit)=\"decIndexData()\"></app-categories-navigation>\r\n          </ion-col>\r\n        </ion-row>\r\n      </ion-grid>\r\n</div>";
     /***/
   },
 
@@ -1054,33 +1054,36 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(CategoriesViewPanelComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          this.animacionSujeto();
-          /*
-          if (this.category.subcategoria != []) {
-            
-          }
-          */
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee() {
+            return regeneratorRuntime.wrap(function _callee$(_context) {
+              while (1) {
+                switch (_context.prev = _context.next) {
+                  case 0:
+                    this.animacionSujeto();
 
-          /*
-          this.getEjemplos('Imagen de mí mismo');
-          this.sujeto = this.ejemplos[0].sujeto;
-          this.verbo = this.ejemplos[0].verbo;
-          this.predicado = this.ejemplos[0].predicado;
-          this.cantidadEjemplos = 0;
-          */
+                  case 1:
+                  case "end":
+                    return _context.stop();
+                }
+              }
+            }, _callee, this);
+          }));
         }
       }, {
         key: "animacionSujeto",
         value: function animacionSujeto() {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee() {
-            var animation, animationV, animationP;
-            return regeneratorRuntime.wrap(function _callee$(_context) {
+          regeneratorRuntime.mark(function _callee2() {
+            var animationS, animationV, animationP;
+            return regeneratorRuntime.wrap(function _callee2$(_context2) {
               while (1) {
-                switch (_context.prev = _context.next) {
+                switch (_context2.prev = _context2.next) {
                   case 0:
-                    animation = this.animationCtrl.create().addElement(document.querySelector('.star')).duration(1900).iterations(Infinity).keyframes([{
+                    animationS = this.animationCtrl.create().addElement(document.querySelector('.star')).duration(1900) // .iterations(Infinity)
+                    .keyframes([{
                       offset: 0,
                       transform: 'scale(1) rotate(0)'
                     }, {
@@ -1090,7 +1093,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                       offset: 1,
                       transform: 'scale(1) rotate(90deg)'
                     }]);
-                    animationV = this.animationCtrl.create().addElement(document.querySelector('.star2')).duration(1900).iterations(Infinity).keyframes([{
+                    animationV = this.animationCtrl.create().addElement(document.querySelector('.star2')).duration(1900) // .iterations(Infinity)
+                    .keyframes([{
                       offset: 0,
                       transform: 'scale(1) rotate(0)'
                     }, {
@@ -1100,7 +1104,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                       offset: 1,
                       transform: 'scale(1) rotate(90deg)'
                     }]);
-                    animationP = this.animationCtrl.create().addElement(document.querySelector('.star3')).duration(1900).iterations(Infinity).keyframes([{
+                    animationP = this.animationCtrl.create().addElement(document.querySelector('.star3')).duration(1900) // .iterations(Infinity)
+                    .keyframes([{
                       offset: 0,
                       transform: 'scale(1) rotate(0)'
                     }, {
@@ -1110,23 +1115,23 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                       offset: 1,
                       transform: 'scale(1) rotate(90deg)'
                     }]);
-                    _context.next = 5;
-                    return animation.play();
+                    _context2.next = 5;
+                    return animationS.play();
 
                   case 5:
-                    _context.next = 7;
+                    _context2.next = 7;
                     return animationV.play();
 
                   case 7:
-                    _context.next = 9;
+                    _context2.next = 9;
                     return animationP.play();
 
                   case 9:
                   case "end":
-                    return _context.stop();
+                    return _context2.stop();
                 }
               }
-            }, _callee, this);
+            }, _callee2, this);
           }));
         }
         /*
@@ -1181,6 +1186,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           document.getElementById("sujeto").setAttribute('src', this.subcategoryOneData.imagenSujeto);
           document.getElementById("verbo").setAttribute('src', this.subcategoryOneData.imagenVerbo);
           document.getElementById("predicado").setAttribute('src', this.subcategoryOneData.imagenPredicado);
+          this.animacionSujeto();
         }
       }, {
         key: "onload",

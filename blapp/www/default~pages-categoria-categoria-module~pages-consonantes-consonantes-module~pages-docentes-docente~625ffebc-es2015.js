@@ -35,7 +35,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"principal\">\r\n  <ion-grid>\r\n    <ion-row class=\"imagenes\">\r\n      <ion-col>\r\n        <div class=\"sujeto\">\r\n          <ion-avatar class=\"imagenSujeto\">\r\n            <ion-img id=\"sujeto\" src={{subcategoryOneData.imagenSujeto}}></ion-img>\r\n          </ion-avatar>\r\n        </div>\r\n      </ion-col>\r\n      <ion-col>\r\n        <div class=\"verbo\">\r\n          <div>\r\n            <ion-img id=\"verbo\" src={{subcategoryOneData.imagenVerbo}}></ion-img>\r\n          </div>\r\n        </div>\r\n      </ion-col>\r\n      <ion-col>\r\n        <div class=\"predicado\">\r\n          <ion-avatar class=\"imagenPredicado\">\r\n            <ion-img id=\"predicado\" src={{subcategoryOneData.imagenPredicado}}></ion-img>\r\n          </ion-avatar>\r\n        </div>\r\n      </ion-col>\r\n    </ion-row>\r\n\r\n    <ion-row>\r\n      <ion-col>\r\n        <div>\r\n          <ion-img src=\"assets/svg/semantics/categories-view/trayectoria.svg\" class=\"trayectoria\"></ion-img>\r\n        </div>\r\n      </ion-col>\r\n    </ion-row>\r\n    <ion-row class=\"rowAnimation\">\r\n      <ion-col>\r\n        <ion-img src=\"assets/svg/shapes/star.svg\" class=\"star\"></ion-img>\r\n      </ion-col>\r\n      <ion-col>\r\n        <ion-img src=\"assets/svg/shapes/star.svg\" class=\"star2\"></ion-img>\r\n      </ion-col>\r\n      <ion-col>\r\n        <ion-img src=\"assets/svg/shapes/star.svg\" class=\"star3\"></ion-img>\r\n      </ion-col>\r\n    </ion-row>\r\n    <ion-row>\r\n      <ion-col>\r\n        <div class=\"semantica\">\r\n          <ion-label class=\"pSujeto\">{{subcategoryOneData.sujeto}}</ion-label>\r\n        </div>\r\n      </ion-col>\r\n      <ion-col>\r\n        <div class=\"semantica\">\r\n          <ion-label class=\"pVerbo\">{{subcategoryOneData.verbo}}</ion-label>\r\n        </div>\r\n      </ion-col>\r\n      <ion-col>\r\n        <div class=\"semantica\">\r\n          <ion-label class=\"pPredicado\">{{subcategoryOneData.predicado}}</ion-label>\r\n        </div>\r\n      </ion-col>\r\n    </ion-row>\r\n  </ion-grid>\r\n</div>\r\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"principal\">\r\n  <ion-grid>\r\n    <ion-row class=\"imagenes\">\r\n      <ion-col>\r\n        <div class=\"sujeto\">\r\n          <ion-avatar class=\"imagenSujeto\">\r\n            <ion-img id=\"sujeto\" src={{subcategoryOneData.imagenSujeto}}></ion-img>\r\n          </ion-avatar>\r\n        </div>\r\n      </ion-col>\r\n      <ion-col>\r\n        <div class=\"verbo\">\r\n          <div>\r\n            <ion-img id=\"verbo\" src={{subcategoryOneData.imagenVerbo}}></ion-img>\r\n          </div>\r\n        </div>\r\n      </ion-col>\r\n      <ion-col>\r\n        <div class=\"predicado\">\r\n          <ion-avatar class=\"imagenPredicado\">\r\n            <ion-img id=\"predicado\" src={{subcategoryOneData.imagenPredicado}}></ion-img>\r\n          </ion-avatar>\r\n        </div>\r\n      </ion-col>\r\n    </ion-row>\r\n\r\n    <ion-row>\r\n      <ion-col>\r\n        <div>\r\n          <ion-img src=\"assets/svg/semantics/categories-view/trayectoria.svg\" class=\"trayectoria\"></ion-img>\r\n        </div>\r\n      </ion-col>\r\n    </ion-row>\r\n    <ion-row class=\"rowAnimation\">\r\n      <ion-col>\r\n        <ion-img src=\"assets/svg/shapes/star.svg\" class=\"star\"></ion-img>\r\n      </ion-col>\r\n      <ion-col>\r\n        <ion-img src=\"assets/svg/shapes/star.svg\" class=\"star2\"></ion-img>\r\n      </ion-col>\r\n      <ion-col>\r\n        <ion-img src=\"assets/svg/shapes/star.svg\" class=\"star3\"></ion-img>\r\n      </ion-col>\r\n    </ion-row>\r\n    <ion-row>\r\n      <ion-col>\r\n        <div class=\"semantica\">\r\n          <ion-label class=\"pSujeto\" (click)=\"animacionSujeto()\">{{subcategoryOneData.sujeto}}</ion-label>\r\n        </div>\r\n      </ion-col>\r\n      <ion-col>\r\n        <div class=\"semantica\">\r\n          <ion-label class=\"pVerbo\">{{subcategoryOneData.verbo}}</ion-label>\r\n        </div>\r\n      </ion-col>\r\n      <ion-col>\r\n        <div class=\"semantica\">\r\n          <ion-label class=\"pPredicado\">{{subcategoryOneData.predicado}}</ion-label>\r\n        </div>\r\n      </ion-col>\r\n    </ion-row>\r\n  </ion-grid>\r\n</div>\r\n");
 
 /***/ }),
 
@@ -48,7 +48,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"principal\">\r\n    <ion-grid>\r\n        <ion-row>\r\n          <ion-col class=\"bar\">\r\n            <app-categories-bar [category]=\"category\" (subcategoryEmit)=\"changeSubcategory($event)\" ></app-categories-bar>\r\n          </ion-col>\r\n          <ion-col class=\"panel\">\r\n            <app-categories-view-panel [subcategoryOneData]=\"subcategory.data[indexData]\" ></app-categories-view-panel>\r\n          </ion-col>\r\n        </ion-row>\r\n        <ion-row class=\"navigation\">\r\n          <ion-col>\r\n            <app-categories-navigation (forwardEmit)=\"incIndexData()\" (backEmit)=\"decIndexData()\"></app-categories-navigation>\r\n          </ion-col>\r\n        </ion-row>\r\n      </ion-grid>\r\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"principal\">\r\n    <ion-grid>\r\n        <ion-row>\r\n          <ion-col class=\"bar\">\r\n            <app-categories-bar [category]=\"category\" (subcategoryEmit)=\"changeSubcategory($event)\" ></app-categories-bar>\r\n          </ion-col>\r\n          <ion-col class=\"panel\">\r\n            <app-categories-view-panel [subcategoryOneData]=\"subcategory.data[indexData]\"></app-categories-view-panel>\r\n          </ion-col>\r\n        </ion-row>\r\n        <ion-row class=\"navigation\">\r\n          <ion-col>\r\n            <app-categories-navigation (forwardEmit)=\"incIndexData()\" (backEmit)=\"decIndexData()\"></app-categories-navigation>\r\n          </ion-col>\r\n        </ion-row>\r\n      </ion-grid>\r\n</div>");
 
 /***/ }),
 
@@ -685,26 +685,16 @@ let CategoriesViewPanelComponent = class CategoriesViewPanelComponent {
         this.ejemplos = [];
     }
     ngOnInit() {
-        this.animacionSujeto();
-        /*
-        if (this.category.subcategoria != []) {
-          
-        }
-        */
-        /*
-        this.getEjemplos('Imagen de mí mismo');
-        this.sujeto = this.ejemplos[0].sujeto;
-        this.verbo = this.ejemplos[0].verbo;
-        this.predicado = this.ejemplos[0].predicado;
-        this.cantidadEjemplos = 0;
-        */
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            this.animacionSujeto();
+        });
     }
     animacionSujeto() {
         return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
-            const animation = this.animationCtrl.create()
+            const animationS = this.animationCtrl.create()
                 .addElement(document.querySelector('.star'))
                 .duration(1900)
-                .iterations(Infinity)
+                // .iterations(Infinity)
                 .keyframes([
                 { offset: 0, transform: 'scale(1) rotate(0)' },
                 { offset: 0.5, transform: 'scale(1.5) rotate(90deg)' },
@@ -713,7 +703,7 @@ let CategoriesViewPanelComponent = class CategoriesViewPanelComponent {
             const animationV = this.animationCtrl.create()
                 .addElement(document.querySelector('.star2'))
                 .duration(1900)
-                .iterations(Infinity)
+                // .iterations(Infinity)
                 .keyframes([
                 { offset: 0, transform: 'scale(1) rotate(0)' },
                 { offset: 0.5, transform: 'scale(1.5) rotate(90deg)' },
@@ -722,13 +712,13 @@ let CategoriesViewPanelComponent = class CategoriesViewPanelComponent {
             const animationP = this.animationCtrl.create()
                 .addElement(document.querySelector('.star3'))
                 .duration(1900)
-                .iterations(Infinity)
+                // .iterations(Infinity)
                 .keyframes([
                 { offset: 0, transform: 'scale(1) rotate(0)' },
                 { offset: 0.5, transform: 'scale(1.5) rotate(90deg)' },
                 { offset: 1, transform: 'scale(1) rotate(90deg)' }
             ]);
-            yield animation.play();
+            yield animationS.play();
             yield animationV.play();
             yield animationP.play();
         });
@@ -785,9 +775,9 @@ let CategoriesViewPanelComponent = class CategoriesViewPanelComponent {
         document.getElementById("sujeto").setAttribute('src', this.subcategoryOneData.imagenSujeto);
         document.getElementById("verbo").setAttribute('src', this.subcategoryOneData.imagenVerbo);
         document.getElementById("predicado").setAttribute('src', this.subcategoryOneData.imagenPredicado);
+        this.animacionSujeto();
     }
-    onload() {
-    }
+    onload() { }
 };
 CategoriesViewPanelComponent.ctorParameters = () => [
     { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["AnimationController"] }
