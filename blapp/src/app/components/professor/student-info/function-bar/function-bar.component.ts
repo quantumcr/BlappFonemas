@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-
+import { NavController } from '@ionic/angular';
 @Component({
   selector: 'app-function-bar',
   templateUrl: './function-bar.component.html',
@@ -13,13 +13,17 @@ export class FunctionBarComponent implements OnInit {
   @Output() deleteStudentEvent = new EventEmitter();
   @Output() updateStudentEvent = new EventEmitter();
 
-  constructor() { }
+  constructor(private navCtrl: NavController) { }
 
   ngOnInit() {}
 
   openPanel(event: any) {
     console.log(event.target.value);
     this.functionBarEvent.emit(event.target.value);
+  }
+
+  goToHome(){
+    this.navCtrl.navigateForward('/menu');
   }
 
   updateStudent(){

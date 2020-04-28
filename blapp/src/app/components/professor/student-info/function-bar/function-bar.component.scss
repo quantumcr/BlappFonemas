@@ -34,6 +34,16 @@
     color: #FFFFFF;
 }
 
+.btnBack{
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    background: url('../../../../../assets/svg/students/back.svg');
+    background-size: 100% 100%;
+    background-position: center;
+    margin-top: 16px;
+}
+
 .btnComando1{
     position: absolute;
     width: 303px;
