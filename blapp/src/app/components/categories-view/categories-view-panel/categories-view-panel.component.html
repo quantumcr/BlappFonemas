@@ -3,7 +3,7 @@
     <ion-row class="imagenes">
       <ion-col>
         <div class="sujeto">
-          <ion-avatar class="imagenSujeto">
+          <ion-avatar class="imagenSujeto" (click)="animacionSujeto()">
             <ion-img id="sujeto" src={{subcategoryOneData.imagenSujeto}}></ion-img>
           </ion-avatar>
         </div>
@@ -45,7 +45,7 @@
     <ion-row>
       <ion-col>
         <div class="semantica">
-          <ion-label class="pSujeto" (click)="animacionSujeto()">{{subcategoryOneData.sujeto}}</ion-label>
+          <ion-label class="pSujeto" >{{subcategoryOneData.sujeto}}</ion-label>
         </div>
       </ion-col>
       <ion-col>
