@@ -2,7 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { VideoSelected } from '../../models/video-selected';
 import { VIDEOS } from '../../../data/data.videos';
 import { PhonemeConsonantI } from '../../../data/audio/fonemas/consonantes/data.consonantes';
-
+import { NavController } from '@ionic/angular';
 @Component({
   selector: 'app-phoneme-consonant-view',
   templateUrl: './phoneme-consonant-view.component.html',
@@ -19,7 +19,7 @@ export class PhonemeConsonantViewComponent implements OnInit {
   public comandoFonema: string;
   
   constructor(
-
+    private navCtrl: NavController,
   ) { }
 
   ngOnInit() {
@@ -42,6 +42,9 @@ export class PhonemeConsonantViewComponent implements OnInit {
     }
   }
 
+  comeBackTo(){
+    this.navCtrl.navigateForward('/fonemas');
+  }
   getVideo(value: string) {
     for(let i = 0; i < VIDEOS.length; i++) {
       if (VIDEOS[i].nombre === value) {

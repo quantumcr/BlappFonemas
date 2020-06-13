@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { CONSONANTES, OneDataSPhonemeConsonantI, OneDataPhonemeConsonantI } from '../../../../data/audio/fonemas/consonantes/data.consonantes';
-
+import { NavController } from '@ionic/angular';
 @Component({
   selector: 'app-consonant-phoneme-panel',
   templateUrl: './consonant-phoneme-panel.component.html',
@@ -31,7 +31,7 @@ export class ConsonantPhonemePanelComponent implements OnInit {
   */
 
   constructor(
-    
+    private navCtrl: NavController,
   ) { }
 
   ngOnInit() {        
@@ -43,6 +43,11 @@ export class ConsonantPhonemePanelComponent implements OnInit {
     this.cantidadAudios = 0;
     */
   }
+
+  comeBackTo(){
+    this.navCtrl.navigateForward('/fonemas');
+  }
+
 
   ngOnChanges(): void {
     //Called before any other lifecycle hook. Use it to inject dependencies, but avoid any serious work here.

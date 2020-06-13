@@ -2,7 +2,7 @@ import { Component, OnInit, Input, EventEmitter, Output, SimpleChanges } from '@
 import { SUBCATEGORIAS, SubcategoryI, OneDataI } from '../../../../data/categorias/data.subcategorias';
 import { CategoriaI } from '../../../../data/categorias/data.categorias';
 import {AnimationController } from '@ionic/angular';
-
+import { NavController } from '@ionic/angular';
 @Component({
   selector: 'app-categories-view-panel',
   templateUrl: './categories-view-panel.component.html',
@@ -22,7 +22,9 @@ export class CategoriesViewPanelComponent implements OnInit {
   @Input() imagenVerbo: string;
   @Input() imagenPredicado: string;
 
-  constructor(private animationCtrl: AnimationController) {
+  constructor(
+    private animationCtrl: AnimationController,
+    private navCtrl: NavController,) {
   }
 
 
@@ -30,6 +32,9 @@ export class CategoriesViewPanelComponent implements OnInit {
   async ngOnInit() {
     this.animacionSujeto();
 
+  }
+  comeBackTo(){
+    this.navCtrl.navigateForward('/semanticas');
   }
   async animacionSujeto() {
     const animationS = this.animationCtrl.create()

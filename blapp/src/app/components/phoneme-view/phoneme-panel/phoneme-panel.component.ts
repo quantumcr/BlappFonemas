@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { OneDataPhonemeVocalI } from '../../../../data/audio/fonemas/vocales/data.vocales';
-
+import { NavController } from '@ionic/angular';
 @Component({
   selector: 'app-phoneme-panel',
   templateUrl: './phoneme-panel.component.html',
@@ -19,7 +19,7 @@ export class PhonemePanelComponent implements OnInit {
   //@Input() comando: string;
 
   constructor(
-
+    private navCtrl: NavController,
   ) { }
 
   ngOnInit() {
@@ -34,6 +34,9 @@ export class PhonemePanelComponent implements OnInit {
     console.log(this.imagen);
     this.cantidadAudios = 0;
     */
+  }
+  comeBackTo(){
+    this.navCtrl.navigateForward('/fonemas');
   }
 
   ngOnChanges(): void {
