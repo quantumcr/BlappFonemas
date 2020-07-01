@@ -369,7 +369,7 @@ export const SUBCATEGORIAS = [
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/familia/Abuelo.jpg',
             },
-            {
+            /*{
                 sujeto: 'Yo',
                 verbo: 'tengo',
                 predicado: 'prima',
@@ -400,7 +400,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Él.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/familia/Primo.jpg',
-            },
+            },*/
             {
                 sujeto: 'Yo',
                 verbo: 'tengo',
@@ -579,7 +579,7 @@ export const SUBCATEGORIAS = [
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/vegetales/Coliflor.jpg',
             },
-            {
+            /*{
                 sujeto: 'Yo',
                 verbo: 'como',
                 predicado: 'espárragos',
@@ -594,7 +594,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/vegetales/Espinaca.jpg',
-            },
+            },*/
             {
                 sujeto: 'Yo',
                 verbo: 'como',
@@ -602,6 +602,38 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/vegetales/Verduras.jpg',
+            },
+            {
+                sujeto: 'Yo',
+                verbo: 'como',
+                predicado: 'tomate',
+                imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+                imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+                imagenPredicado: 'assets/img/semanticas/categorias/vegetales/Tomate.jpg',
+            },
+            {
+                sujeto: 'Yo',
+                verbo: 'como',
+                predicado: 'papa',
+                imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+                imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+                imagenPredicado: 'assets/img/semanticas/categorias/vegetales/Papa.jpg',
+            },
+            {
+                sujeto: 'Yo',
+                verbo: 'como',
+                predicado: 'chayote',
+                imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+                imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+                imagenPredicado: 'assets/img/semanticas/categorias/vegetales/Chayote.jpg',
+            },
+            {
+                sujeto: 'Yo',
+                verbo: 'como',
+                predicado: 'zanahoria',
+                imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+                imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+                imagenPredicado: 'assets/img/semanticas/categorias/vegetales/Zanahoria.jpg',
             },
         ]
     },
