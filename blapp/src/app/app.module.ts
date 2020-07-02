@@ -16,7 +16,10 @@ import { UserService } from './services/user.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 
-
+// importaciones de Firebase
+import { firebaseConfig } from '../environments/environment';
+import {AngularFireModule} from '@angular/fire';
+import {AngularFireAuthModule} from '@angular/fire/auth';
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
@@ -28,7 +31,9 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    DragDropModule
+    DragDropModule,
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireAuthModule
   ],
   providers: [
     StatusBar,

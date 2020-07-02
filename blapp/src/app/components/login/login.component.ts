@@ -3,11 +3,14 @@ import { NavController } from '@ionic/angular';
 
 import { UserService } from '../../services/user.service';
 import { AuthenticationService, TokenResponse } from '../../services/authentication.service';
+// Servicio para Firebase
+import { AuthService } from '../../services/auth.service';
 
 import { User } from '../../models/user';
 import { StudentService } from '../../services/student.service';
 import { Student } from '../../models/student';
 import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-login',
@@ -18,6 +21,8 @@ export class LoginComponent implements OnInit {
   @Input() usuario: string;
   @Input() clave: string;
   @Input() comando: string;
+  email: string;
+  password: string;
 
   newUser = new User;
   newStudent = new Student;
@@ -27,7 +32,8 @@ export class LoginComponent implements OnInit {
     private userService: UserService,
     private authenticationService: AuthenticationService,
     private studentService: StudentService,
-    private route: Router
+    private route: Router,
+    private authService: AuthService
   ) { }
 
   ngOnInit() {}
@@ -57,12 +63,20 @@ export class LoginComponent implements OnInit {
       }      
     })
     .catch(err => {
-      console.log("Login Incorrecto :(");
+      console.log("Login Incorrecto :");
     });
+    this.loginFirebase();
   }
 
   goToRegistro() {
     // this.navCtrl.navigateForward('/registro');
+  }
+
+  loginFirebase(){
+    console.log('Estas en el login Firebase');
+    this.authService.login(this.email, this.password).then(res => {
+      this.route.navigate(['/menu']); // Se requiere validar entre estudiantes y docentes
+    }).catch(err => alert('Los datos son incorrectos o el usuario no existe'));
   }
 
 }
