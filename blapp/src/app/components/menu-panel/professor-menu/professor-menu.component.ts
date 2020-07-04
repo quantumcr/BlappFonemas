@@ -2,6 +2,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { NavController } from '@ionic/angular';
 import { AuthenticationService } from '../../../services/authentication.service';
 import { Router } from '@angular/router';
+import { AuthService } from '../../../services/auth.service';
 
 @Component({
   selector: 'app-professor-menu',
@@ -17,7 +18,8 @@ export class ProfessorMenuComponent implements OnInit {
   constructor(
     private navCtrl: NavController,
     private authenticationService: AuthenticationService,
-    private router: Router
+    private router: Router,
+    public authService: AuthService
   ) { }
 
   ngOnInit() {}
@@ -28,8 +30,8 @@ export class ProfessorMenuComponent implements OnInit {
   }
 
   logout() {
-    this.authenticationService.logout();
-    this.router.navigateByUrl('/');
+    // this.authenticationService.logout();
+    this.authService.logout();
   }
 
 }
