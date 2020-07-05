@@ -49,6 +49,15 @@ const routes: Routes = [
     // canActivate: [AuthGuardService],
     loadChildren: () => import('./pages/consonantes/consonantes.module').then( m => m.ConsonantesPageModule)
   },
+  {
+    path: 'registro',
+    loadChildren: () => import('./pages/registro/registro.module').then( m => m.RegistroPageModule), canActivate: [NologinGuard]
+  },  {
+    path: 'recuperacion',
+    loadChildren: () => import('./pages/recuperacion/recuperacion.module').then( m => m.RecuperacionPageModule)
+  },
+
+
 
 
 

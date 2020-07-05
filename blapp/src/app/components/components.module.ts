@@ -41,6 +41,8 @@ import { ConsonantPhonemeVideoPanelComponent } from './phoneme-consonant-view/co
 import { CategoriesNavigationComponent } from './categories-view/categories-navigation/categories-navigation.component';
 import { ConsonantNavigationComponent } from './phoneme-consonant-view/consonant-navigation/consonant-navigation.component';
 import { PhonemeNavComponent } from './phoneme-view/phoneme-nav/phoneme-nav.component';
+import { SignupComponent } from './signup/signup.component';
+import { RestoreComponent } from './restore/restore.component';
 
 
 
@@ -57,7 +59,7 @@ import { PhonemeNavComponent } from './phoneme-view/phoneme-nav/phoneme-nav.comp
     CategoriesViewComponent, CategoriesBarComponent, CategoriesViewPanelComponent, CategoriesNavigationComponent,
     ProfessorComponent, ListComponent, RegisterComponent, StudentInfoComponent,
     FunctionBarComponent, InfoPanelComponent, StudentsBarComponent, SubcategoriesComponent,
-    SubcategoriesBarComponent, SubcategoriesPanelComponent, NavigationComponent],
+    SubcategoriesBarComponent, SubcategoriesPanelComponent, NavigationComponent, SignupComponent, RestoreComponent],
 
   exports: [LoginComponent,
     MenuPanelComponent, ProfessorMenuComponent, StudentsMenuComponent,
@@ -69,7 +71,7 @@ import { PhonemeNavComponent } from './phoneme-view/phoneme-nav/phoneme-nav.comp
     CategoriesViewComponent, CategoriesBarComponent, CategoriesViewPanelComponent, CategoriesNavigationComponent,
     ProfessorComponent, ListComponent, RegisterComponent, StudentInfoComponent,
     FunctionBarComponent, InfoPanelComponent, StudentsBarComponent, SubcategoriesComponent,
-    SubcategoriesBarComponent, SubcategoriesPanelComponent, NavigationComponent],
+    SubcategoriesBarComponent, SubcategoriesPanelComponent, NavigationComponent, SignupComponent, RestoreComponent],
   imports: [
     CommonModule,
     IonicModule,
