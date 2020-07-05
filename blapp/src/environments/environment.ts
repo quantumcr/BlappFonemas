@@ -6,7 +6,7 @@ export const environment = {
   production: false
 };
 
-export const firebaseConfig ={
+export const firebaseConfig = {
   apiKey: 'AIzaSyC9FVYZqD2qGZNoBz_TQFlYivUc3S3U_7g',
   authDomain: 'coletin-62528.firebaseapp.com',
   databaseURL: 'https://coletin-62528.firebaseio.com',
