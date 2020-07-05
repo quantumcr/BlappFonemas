@@ -1,0 +1,46 @@
+.principal{
+    width: 100%;
+    height: 100%;
+    background: url('../../../assets/svg/background/login.svg');
+    background-size: 100%;
+} 
+   
+
+.logo{
+    position: absolute;
+    max-width: 245px;
+    max-height: 145px;
+    min-width: 245px;
+    min-height: 145px;
+    left: 549px;
+    right: 550px;
+    top: 76px;   
+}    
+
+
+.component{
+    width: 1081px;
+    height: 696px;
+    margin-top: 202px;
+    margin-left:45px;
+    margin-right: 45px;
+}
+.titulo{
+    position: absolute;
+    max-width: 405px;
+    max-height: 45px;
+    min-width: 405px;
+    min-height: 45px;
+    margin-left: 437px;
+    margin-right: 438px;
+    top: 253px;    
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 45px;
+    
+    /* identical to box height */
+    
+    color: #5F659C;    
+}

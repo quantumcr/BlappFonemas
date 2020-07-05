@@ -1,0 +1,21 @@
+<div class="principal">
+  <ion-grid class="grid">
+    <ion-row class="rowMensaje">
+      <ion-col>
+        <ion-label class="mensaje">Escriba su correo para enviarle las instrucciones y recuperar su contraseña</ion-label>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-label class="label">Correo Electrónico</ion-label>
+        <ion-input [(ngModel)]="email" class="input"></ion-input>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-button class="btnGuardar" color="formButton" shape="round" (click)="sendLinkReset()">{{comando}}</ion-button>  
+    </ion-row>
+
+  </ion-grid>
+</div>
