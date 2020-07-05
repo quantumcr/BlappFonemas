@@ -1,0 +1,36 @@
+<div class="principal">
+  <ion-grid class="grid">
+    <ion-row>
+      <ion-col>
+        <ion-label class="label">Nombre Completo</ion-label>
+        <ion-input [(ngModel)]="nombre" class="input"></ion-input>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-label class="label">Institución</ion-label>
+        <ion-input [(ngModel)]="institucion" class="input"></ion-input>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-label class="label">Correo Electrónico</ion-label>
+        <ion-input [(ngModel)]="email" class="input"></ion-input>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-label class="label">Contraseña</ion-label>
+        <ion-input [(ngModel)]="password" class="input" type="password"></ion-input>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+        <ion-button class="btnGuardar" color="formButton" shape="round" (click)="registrar()">{{comando}}</ion-button>
+    </ion-row>
+
+  </ion-grid>
+</div>
