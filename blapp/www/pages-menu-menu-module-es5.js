@@ -241,17 +241,18 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(MenuPage, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this = this;
+          /*
+          this.activatedRoute.queryParams.subscribe(params => {
+            this.tipoUsuario = JSON.parse(params['tipo']);
+          });*/
+          // Revisar Esto con los nuevos servicios de Firebase
 
-          this.activatedRoute.queryParams.subscribe(function (params) {
-            _this.tipoUsuario = JSON.parse(params['tipo']);
-          });
-
+          /*
           if (this.authenticationService.getUserDetails().tipo.toUpperCase() == "ESTUDIANTE") {
             this.tipoUsuario = false;
           } else if (this.authenticationService.getUserDetails().tipo.toUpperCase() == "DOCENTE") {
             this.tipoUsuario = true;
-          }
+          } */
         }
       }]);
 

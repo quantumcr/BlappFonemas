@@ -132,15 +132,17 @@ let MenuPage = class MenuPage {
         this.authenticationService = authenticationService;
     }
     ngOnInit() {
+        /*
         this.activatedRoute.queryParams.subscribe(params => {
-            this.tipoUsuario = JSON.parse(params['tipo']);
-        });
+          this.tipoUsuario = JSON.parse(params['tipo']);
+        });*/
+        // Revisar Esto con los nuevos servicios de Firebase
+        /*
         if (this.authenticationService.getUserDetails().tipo.toUpperCase() == "ESTUDIANTE") {
-            this.tipoUsuario = false;
-        }
-        else if (this.authenticationService.getUserDetails().tipo.toUpperCase() == "DOCENTE") {
-            this.tipoUsuario = true;
-        }
+          this.tipoUsuario = false;
+        } else if (this.authenticationService.getUserDetails().tipo.toUpperCase() == "DOCENTE") {
+          this.tipoUsuario = true;
+        } */
     }
 };
 MenuPage.ctorParameters = () => [

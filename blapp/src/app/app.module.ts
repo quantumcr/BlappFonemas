@@ -21,6 +21,7 @@ import { firebaseConfig } from '../environments/environment';
 import {AngularFireModule} from '@angular/fire';
 import {AngularFireAuthModule} from '@angular/fire/auth';
 import {AngularFirestore} from '@angular/fire/firestore';
+import {AngularFirestoreModule} from '@angular/fire/firestore';
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
@@ -35,6 +36,7 @@ import {AngularFirestore} from '@angular/fire/firestore';
     DragDropModule,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireAuthModule,
+    AngularFirestoreModule
   ],
   providers: [
     StatusBar,

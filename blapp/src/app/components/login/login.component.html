@@ -3,14 +3,14 @@
     <ion-row>
       <ion-col >
         <ion-label class="tituloUsuario">{{usuario}}</ion-label>
-        <ion-input [(ngModel)]="email" id="email" class="usuario" (ionInput)="setEmail($event)"></ion-input>
+        <ion-input [(ngModel)]="email" id="email" class="usuario" placeholder="correo electrónico" (ionInput)="setEmail($event)"></ion-input>
       </ion-col>
     </ion-row>
 
     <ion-row justify-content-center>
       <ion-col >
         <ion-label class="tituloClave">{{clave}}</ion-label>
-        <ion-input [(ngModel)]="password" id="password" class="clave" type="password" (ionInput)="setPassword($event)"></ion-input>
+        <ion-input [(ngModel)]="password" id="password" class="clave" type="password" placeholder="su password" (ionInput)="setPassword($event)"></ion-input>
       </ion-col>
     </ion-row> 
 

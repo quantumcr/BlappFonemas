@@ -11,6 +11,9 @@ import { StudentService } from '../../services/student.service';
 import { Student } from '../../models/student';
 import { Router } from '@angular/router';
 
+// Notificacion de Ingreso
+import {AlertController} from '@ionic/angular';
+
 
 @Component({
   selector: 'app-login',
@@ -33,7 +36,8 @@ export class LoginComponent implements OnInit {
     private authenticationService: AuthenticationService,
     private studentService: StudentService,
     private route: Router,
-    private authService: AuthService
+    private authService: AuthService,
+    private alertController: AlertController
   ) { }
 
   ngOnInit() {}
@@ -75,8 +79,40 @@ export class LoginComponent implements OnInit {
   loginFirebase(){
     console.log('Estas en el login Firebase');
     this.authService.login(this.email, this.password).then(res => {
-      this.route.navigate(['/menu']); // Se requiere validar entre estudiantes y docentes
-    }).catch(err => alert('Los datos son incorrectos o el usuario no existe'));
+      this.presentAlert();
+      // this.route.navigate(['/menu']); // Se requiere validar entre estudiantes y docentes
+    }).catch(err =>alert('Los datos son incorrectos o el usuario no existe'));
+  }
+
+  async presentAlert() {
+    const alert = await this.alertController.create({
+      cssClass: 'my-custom-class',
+      header: ' Verificación de Acceso',
+      subHeader: 'Acceso Confirmado',
+      message: 'Bienvenidos a Coletín',
+      buttons: [
+        {
+          text: 'Aceptar',
+          handler: () => {
+            this.route.navigate(['/menu']); // Se requiere validar entre estudiantes y docentes
+          }
+        }
+      ]
+    });
+
+    await alert.present();
+  }
+
+  async errorAlert() {
+    const alert = await this.alertController.create({
+      cssClass: 'my-custom-class',
+      header: ' Verificación de Acceso',
+      subHeader: 'Acceso Denegado',
+      message: 'Usuario y contraseña inválidos',
+      buttons: ['OK']
+    });
+
+    await alert.present();
   }
 
 }

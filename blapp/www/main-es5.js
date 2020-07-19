@@ -803,9 +803,15 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var _services_auth_guard_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
-    /*! ./services/auth-guard.service */
-    "./src/app/services/auth-guard.service.ts");
+    var _guards_auth_guard__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! ./guards/auth.guard */
+    "./src/app/guards/auth.guard.ts");
+    /* harmony import */
+
+
+    var _guards_nologin_guard__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! ./guards/nologin.guard */
+    "./src/app/guards/nologin.guard.ts");
 
     var routes = [{
       path: '',
@@ -816,31 +822,33 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       loadChildren: function loadChildren() {
         return Promise.all(
         /*! import() | pages-inicio-inicio-module */
-        [__webpack_require__.e("default~pages-categoria-categoria-module~pages-consonantes-consonantes-module~pages-docentes-docente~625ffebc"), __webpack_require__.e("pages-inicio-inicio-module")]).then(__webpack_require__.bind(null,
+        [__webpack_require__.e("default~pages-categoria-categoria-module~pages-consonantes-consonantes-module~pages-docentes-docente~b8ec91ad"), __webpack_require__.e("pages-inicio-inicio-module")]).then(__webpack_require__.bind(null,
         /*! ./pages/inicio/inicio.module */
         "./src/app/pages/inicio/inicio.module.ts")).then(function (m) {
           return m.InicioPageModule;
         });
-      }
+      },
+      canActivate: [_guards_nologin_guard__WEBPACK_IMPORTED_MODULE_4__["NologinGuard"]]
     }, {
       path: 'menu',
-      canActivate: [_services_auth_guard_service__WEBPACK_IMPORTED_MODULE_3__["AuthGuardService"]],
+      // canActivate: [AuthGuardService],
       loadChildren: function loadChildren() {
         return Promise.all(
         /*! import() | pages-menu-menu-module */
-        [__webpack_require__.e("default~pages-categoria-categoria-module~pages-consonantes-consonantes-module~pages-docentes-docente~625ffebc"), __webpack_require__.e("pages-menu-menu-module")]).then(__webpack_require__.bind(null,
+        [__webpack_require__.e("default~pages-categoria-categoria-module~pages-consonantes-consonantes-module~pages-docentes-docente~b8ec91ad"), __webpack_require__.e("pages-menu-menu-module")]).then(__webpack_require__.bind(null,
         /*! ./pages/menu/menu.module */
         "./src/app/pages/menu/menu.module.ts")).then(function (m) {
           return m.MenuPageModule;
         });
-      }
+      },
+      canActivate: [_guards_auth_guard__WEBPACK_IMPORTED_MODULE_3__["AuthGuard"]]
     }, {
       path: 'docentes',
-      canActivate: [_services_auth_guard_service__WEBPACK_IMPORTED_MODULE_3__["AuthGuardService"]],
+      // canActivate: [AuthGuardService],
       loadChildren: function loadChildren() {
         return Promise.all(
         /*! import() | pages-docentes-docentes-module */
-        [__webpack_require__.e("default~pages-categoria-categoria-module~pages-consonantes-consonantes-module~pages-docentes-docente~625ffebc"), __webpack_require__.e("pages-docentes-docentes-module")]).then(__webpack_require__.bind(null,
+        [__webpack_require__.e("default~pages-categoria-categoria-module~pages-consonantes-consonantes-module~pages-docentes-docente~b8ec91ad"), __webpack_require__.e("pages-docentes-docentes-module")]).then(__webpack_require__.bind(null,
         /*! ./pages/docentes/docentes.module */
         "./src/app/pages/docentes/docentes.module.ts")).then(function (m) {
           return m.DocentesPageModule;
@@ -848,11 +856,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
     }, {
       path: 'fonemas',
-      canActivate: [_services_auth_guard_service__WEBPACK_IMPORTED_MODULE_3__["AuthGuardService"]],
+      // canActivate: [AuthGuardService],
       loadChildren: function loadChildren() {
         return Promise.all(
         /*! import() | pages-fonemas-fonemas-module */
-        [__webpack_require__.e("default~pages-categoria-categoria-module~pages-consonantes-consonantes-module~pages-docentes-docente~625ffebc"), __webpack_require__.e("pages-fonemas-fonemas-module")]).then(__webpack_require__.bind(null,
+        [__webpack_require__.e("default~pages-categoria-categoria-module~pages-consonantes-consonantes-module~pages-docentes-docente~b8ec91ad"), __webpack_require__.e("pages-fonemas-fonemas-module")]).then(__webpack_require__.bind(null,
         /*! ./pages/fonemas/fonemas.module */
         "./src/app/pages/fonemas/fonemas.module.ts")).then(function (m) {
           return m.FonemasPageModule;
@@ -860,11 +868,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
     }, {
       path: 'semanticas',
-      canActivate: [_services_auth_guard_service__WEBPACK_IMPORTED_MODULE_3__["AuthGuardService"]],
+      // canActivate: [AuthGuardService],
       loadChildren: function loadChildren() {
         return Promise.all(
         /*! import() | pages-semanticas-semanticas-module */
-        [__webpack_require__.e("default~pages-categoria-categoria-module~pages-consonantes-consonantes-module~pages-docentes-docente~625ffebc"), __webpack_require__.e("pages-semanticas-semanticas-module")]).then(__webpack_require__.bind(null,
+        [__webpack_require__.e("default~pages-categoria-categoria-module~pages-consonantes-consonantes-module~pages-docentes-docente~b8ec91ad"), __webpack_require__.e("pages-semanticas-semanticas-module")]).then(__webpack_require__.bind(null,
         /*! ./pages/semanticas/semanticas.module */
         "./src/app/pages/semanticas/semanticas.module.ts")).then(function (m) {
           return m.SemanticasPageModule;
@@ -872,11 +880,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
     }, {
       path: 'estudiantes',
-      canActivate: [_services_auth_guard_service__WEBPACK_IMPORTED_MODULE_3__["AuthGuardService"]],
+      // canActivate: [AuthGuardService],
       loadChildren: function loadChildren() {
         return Promise.all(
         /*! import() | pages-estudiantes-estudiantes-module */
-        [__webpack_require__.e("default~pages-categoria-categoria-module~pages-consonantes-consonantes-module~pages-docentes-docente~625ffebc"), __webpack_require__.e("pages-estudiantes-estudiantes-module")]).then(__webpack_require__.bind(null,
+        [__webpack_require__.e("default~pages-categoria-categoria-module~pages-consonantes-consonantes-module~pages-docentes-docente~b8ec91ad"), __webpack_require__.e("pages-estudiantes-estudiantes-module")]).then(__webpack_require__.bind(null,
         /*! ./pages/estudiantes/estudiantes.module */
         "./src/app/pages/estudiantes/estudiantes.module.ts")).then(function (m) {
           return m.EstudiantesPageModule;
@@ -884,11 +892,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
     }, {
       path: 'fonema',
-      canActivate: [_services_auth_guard_service__WEBPACK_IMPORTED_MODULE_3__["AuthGuardService"]],
+      // canActivate: [AuthGuardService],
       loadChildren: function loadChildren() {
         return Promise.all(
         /*! import() | pages-fonema-fonema-module */
-        [__webpack_require__.e("default~pages-categoria-categoria-module~pages-consonantes-consonantes-module~pages-docentes-docente~625ffebc"), __webpack_require__.e("pages-fonema-fonema-module")]).then(__webpack_require__.bind(null,
+        [__webpack_require__.e("default~pages-categoria-categoria-module~pages-consonantes-consonantes-module~pages-docentes-docente~b8ec91ad"), __webpack_require__.e("pages-fonema-fonema-module")]).then(__webpack_require__.bind(null,
         /*! ./pages/fonema/fonema.module */
         "./src/app/pages/fonema/fonema.module.ts")).then(function (m) {
           return m.FonemaPageModule;
@@ -896,11 +904,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
     }, {
       path: 'categoria',
-      canActivate: [_services_auth_guard_service__WEBPACK_IMPORTED_MODULE_3__["AuthGuardService"]],
+      // canActivate: [AuthGuardService],
       loadChildren: function loadChildren() {
         return Promise.all(
         /*! import() | pages-categoria-categoria-module */
-        [__webpack_require__.e("default~pages-categoria-categoria-module~pages-consonantes-consonantes-module~pages-docentes-docente~625ffebc"), __webpack_require__.e("pages-categoria-categoria-module")]).then(__webpack_require__.bind(null,
+        [__webpack_require__.e("default~pages-categoria-categoria-module~pages-consonantes-consonantes-module~pages-docentes-docente~b8ec91ad"), __webpack_require__.e("pages-categoria-categoria-module")]).then(__webpack_require__.bind(null,
         /*! ./pages/categoria/categoria.module */
         "./src/app/pages/categoria/categoria.module.ts")).then(function (m) {
           return m.CategoriaPageModule;
@@ -908,14 +916,37 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
     }, {
       path: 'consonantes',
-      canActivate: [_services_auth_guard_service__WEBPACK_IMPORTED_MODULE_3__["AuthGuardService"]],
+      // canActivate: [AuthGuardService],
       loadChildren: function loadChildren() {
         return Promise.all(
         /*! import() | pages-consonantes-consonantes-module */
-        [__webpack_require__.e("default~pages-categoria-categoria-module~pages-consonantes-consonantes-module~pages-docentes-docente~625ffebc"), __webpack_require__.e("pages-consonantes-consonantes-module")]).then(__webpack_require__.bind(null,
+        [__webpack_require__.e("default~pages-categoria-categoria-module~pages-consonantes-consonantes-module~pages-docentes-docente~b8ec91ad"), __webpack_require__.e("pages-consonantes-consonantes-module")]).then(__webpack_require__.bind(null,
         /*! ./pages/consonantes/consonantes.module */
         "./src/app/pages/consonantes/consonantes.module.ts")).then(function (m) {
           return m.ConsonantesPageModule;
+        });
+      }
+    }, {
+      path: 'registro',
+      loadChildren: function loadChildren() {
+        return Promise.all(
+        /*! import() | pages-registro-registro-module */
+        [__webpack_require__.e("default~pages-categoria-categoria-module~pages-consonantes-consonantes-module~pages-docentes-docente~b8ec91ad"), __webpack_require__.e("pages-registro-registro-module")]).then(__webpack_require__.bind(null,
+        /*! ./pages/registro/registro.module */
+        "./src/app/pages/registro/registro.module.ts")).then(function (m) {
+          return m.RegistroPageModule;
+        });
+      },
+      canActivate: [_guards_nologin_guard__WEBPACK_IMPORTED_MODULE_4__["NologinGuard"]]
+    }, {
+      path: 'recuperacion',
+      loadChildren: function loadChildren() {
+        return Promise.all(
+        /*! import() | pages-recuperacion-recuperacion-module */
+        [__webpack_require__.e("default~pages-categoria-categoria-module~pages-consonantes-consonantes-module~pages-docentes-docente~b8ec91ad"), __webpack_require__.e("pages-recuperacion-recuperacion-module")]).then(__webpack_require__.bind(null,
+        /*! ./pages/recuperacion/recuperacion.module */
+        "./src/app/pages/recuperacion/recuperacion.module.ts")).then(function (m) {
+          return m.RecuperacionPageModule;
         });
       }
     }];
@@ -1162,6 +1193,31 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
     /*! @angular/cdk/drag-drop */
     "./node_modules/@angular/cdk/esm2015/drag-drop.js");
+    /* harmony import */
+
+
+    var _environments_environment__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
+    /*! ../environments/environment */
+    "./src/environments/environment.ts");
+    /* harmony import */
+
+
+    var _angular_fire__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
+    /*! @angular/fire */
+    "./node_modules/@angular/fire/fesm2015/angular-fire.js");
+    /* harmony import */
+
+
+    var _angular_fire_auth__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(
+    /*! @angular/fire/auth */
+    "./node_modules/@angular/fire/fesm2015/angular-fire-auth.js");
+    /* harmony import */
+
+
+    var _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(
+    /*! @angular/fire/firestore */
+    "./node_modules/@angular/fire/fesm2015/angular-fire-firestore.js"); // importaciones de Firebase
+
 
     var AppModule = function AppModule() {
       _classCallCheck(this, AppModule);
@@ -1170,34 +1226,34 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
       declarations: [_app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"]],
       entryComponents: [],
-      imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["BrowserModule"], _ionic_angular__WEBPACK_IMPORTED_MODULE_5__["IonicModule"].forRoot(), _app_routing_module__WEBPACK_IMPORTED_MODULE_9__["AppRoutingModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_10__["HttpClientModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["ReactiveFormsModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_13__["BrowserAnimationsModule"], _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_14__["DragDropModule"]],
+      imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["BrowserModule"], _ionic_angular__WEBPACK_IMPORTED_MODULE_5__["IonicModule"].forRoot(), _app_routing_module__WEBPACK_IMPORTED_MODULE_9__["AppRoutingModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_10__["HttpClientModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["ReactiveFormsModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_13__["BrowserAnimationsModule"], _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_14__["DragDropModule"], _angular_fire__WEBPACK_IMPORTED_MODULE_16__["AngularFireModule"].initializeApp(_environments_environment__WEBPACK_IMPORTED_MODULE_15__["firebaseConfig"]), _angular_fire_auth__WEBPACK_IMPORTED_MODULE_17__["AngularFireAuthModule"], _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_18__["AngularFirestoreModule"]],
       providers: [_ionic_native_status_bar_ngx__WEBPACK_IMPORTED_MODULE_7__["StatusBar"], _ionic_native_splash_screen_ngx__WEBPACK_IMPORTED_MODULE_6__["SplashScreen"], _services_authentication_service__WEBPACK_IMPORTED_MODULE_11__["AuthenticationService"], _services_user_service__WEBPACK_IMPORTED_MODULE_12__["UserService"], {
         provide: _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouteReuseStrategy"],
         useClass: _ionic_angular__WEBPACK_IMPORTED_MODULE_5__["IonicRouteStrategy"]
-      }],
+      }, _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_18__["AngularFirestore"]],
       bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"]]
     })], AppModule);
     /***/
   },
 
   /***/
-  "./src/app/services/auth-guard.service.ts":
-  /*!************************************************!*\
-    !*** ./src/app/services/auth-guard.service.ts ***!
-    \************************************************/
+  "./src/app/guards/auth.guard.ts":
+  /*!**************************************!*\
+    !*** ./src/app/guards/auth.guard.ts ***!
+    \**************************************/
 
-  /*! exports provided: AuthGuardService */
+  /*! exports provided: AuthGuard */
 
   /***/
-  function srcAppServicesAuthGuardServiceTs(module, __webpack_exports__, __webpack_require__) {
+  function srcAppGuardsAuthGuardTs(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
     /* harmony export (binding) */
 
 
-    __webpack_require__.d(__webpack_exports__, "AuthGuardService", function () {
-      return AuthGuardService;
+    __webpack_require__.d(__webpack_exports__, "AuthGuard", function () {
+      return AuthGuard;
     });
     /* harmony import */
 
@@ -1220,46 +1276,179 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var _authentication_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
-    /*! ./authentication.service */
-    "./src/app/services/authentication.service.ts");
+    var _angular_fire_auth__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! @angular/fire/auth */
+    "./node_modules/@angular/fire/fesm2015/angular-fire-auth.js");
+    /* harmony import */
 
-    var AuthGuardService =
+
+    var rxjs_operators__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! rxjs/operators */
+    "./node_modules/rxjs/_esm2015/operators/index.js");
+    /* harmony import */
+
+
+    var util__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! util */
+    "./node_modules/util/util.js");
+    /* harmony import */
+
+
+    var util__WEBPACK_IMPORTED_MODULE_5___default =
+    /*#__PURE__*/
+    __webpack_require__.n(util__WEBPACK_IMPORTED_MODULE_5__);
+
+    var AuthGuard =
     /*#__PURE__*/
     function () {
-      function AuthGuardService(auth, router) {
-        _classCallCheck(this, AuthGuardService);
+      function AuthGuard(AFauth, route) {
+        _classCallCheck(this, AuthGuard);
 
-        this.auth = auth;
-        this.router = router;
+        this.AFauth = AFauth;
+        this.route = route;
       }
 
-      _createClass(AuthGuardService, [{
+      _createClass(AuthGuard, [{
         key: "canActivate",
-        value: function canActivate() {
-          if (!this.auth.isLoggedIn()) {
-            this.router.navigateByUrl('/inicio');
-            return false;
-          }
+        value: function canActivate(next, state) {
+          var _this2 = this;
 
-          return true;
+          return this.AFauth.authState.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (auth) {
+            if (Object(util__WEBPACK_IMPORTED_MODULE_5__["isNullOrUndefined"])(auth)) {
+              _this2.route.navigate(['/inicio']);
+
+              return false;
+            } else {
+              return true;
+            } // console.log(auth);
+            // return false;
+
+          }));
         }
       }]);
 
-      return AuthGuardService;
+      return AuthGuard;
     }();
 
-    AuthGuardService.ctorParameters = function () {
+    AuthGuard.ctorParameters = function () {
       return [{
-        type: _authentication_service__WEBPACK_IMPORTED_MODULE_3__["AuthenticationService"]
+        type: _angular_fire_auth__WEBPACK_IMPORTED_MODULE_3__["AngularFireAuth"]
       }, {
         type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]
       }];
     };
 
-    AuthGuardService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+    AuthGuard = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
       providedIn: 'root'
-    }), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_authentication_service__WEBPACK_IMPORTED_MODULE_3__["AuthenticationService"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]])], AuthGuardService);
+    }), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_fire_auth__WEBPACK_IMPORTED_MODULE_3__["AngularFireAuth"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]])], AuthGuard);
+    /***/
+  },
+
+  /***/
+  "./src/app/guards/nologin.guard.ts":
+  /*!*****************************************!*\
+    !*** ./src/app/guards/nologin.guard.ts ***!
+    \*****************************************/
+
+  /*! exports provided: NologinGuard */
+
+  /***/
+  function srcAppGuardsNologinGuardTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "NologinGuard", function () {
+      return NologinGuard;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/fesm2015/router.js");
+    /* harmony import */
+
+
+    var _angular_fire_auth__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! @angular/fire/auth */
+    "./node_modules/@angular/fire/fesm2015/angular-fire-auth.js");
+    /* harmony import */
+
+
+    var rxjs_operators__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! rxjs/operators */
+    "./node_modules/rxjs/_esm2015/operators/index.js");
+    /* harmony import */
+
+
+    var util__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! util */
+    "./node_modules/util/util.js");
+    /* harmony import */
+
+
+    var util__WEBPACK_IMPORTED_MODULE_5___default =
+    /*#__PURE__*/
+    __webpack_require__.n(util__WEBPACK_IMPORTED_MODULE_5__);
+
+    var NologinGuard =
+    /*#__PURE__*/
+    function () {
+      function NologinGuard(AFauth, route) {
+        _classCallCheck(this, NologinGuard);
+
+        this.AFauth = AFauth;
+        this.route = route;
+      }
+
+      _createClass(NologinGuard, [{
+        key: "canActivate",
+        value: function canActivate(next, state) {
+          var _this3 = this;
+
+          return this.AFauth.authState.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (auth) {
+            if (Object(util__WEBPACK_IMPORTED_MODULE_5__["isNullOrUndefined"])(auth)) {
+              return true;
+            } else {
+              _this3.route.navigate(['/menu']);
+
+              return false;
+            } // console.log(auth);
+            // return false;
+
+          }));
+        }
+      }]);
+
+      return NologinGuard;
+    }();
+
+    NologinGuard.ctorParameters = function () {
+      return [{
+        type: _angular_fire_auth__WEBPACK_IMPORTED_MODULE_3__["AngularFireAuth"]
+      }, {
+        type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]
+      }];
+    };
+
+    NologinGuard = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+      providedIn: 'root'
+    }), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_fire_auth__WEBPACK_IMPORTED_MODULE_3__["AngularFireAuth"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]])], NologinGuard);
     /***/
   },
 
@@ -1487,7 +1676,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     !*** ./src/environments/environment.ts ***!
     \*****************************************/
 
-  /*! exports provided: environment */
+  /*! exports provided: environment, firebaseConfig */
 
   /***/
   function srcEnvironmentsEnvironmentTs(module, __webpack_exports__, __webpack_require__) {
@@ -1499,6 +1688,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     __webpack_require__.d(__webpack_exports__, "environment", function () {
       return environment;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "firebaseConfig", function () {
+      return firebaseConfig;
     });
     /* harmony import */
 
@@ -1512,6 +1707,16 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     var environment = {
       production: false
+    };
+    var firebaseConfig = {
+      apiKey: 'AIzaSyC9FVYZqD2qGZNoBz_TQFlYivUc3S3U_7g',
+      authDomain: 'coletin-62528.firebaseapp.com',
+      databaseURL: 'https://coletin-62528.firebaseio.com',
+      projectId: 'coletin-62528',
+      storageBucket: 'coletin-62528.appspot.com',
+      messagingSenderId: '780629345602',
+      appId: '1:780629345602:web:298df9fc941efe17ed74db',
+      measurementId: 'G-7W1Z54LMY1'
     };
     /*
      * For easier debugging in development mode, you can import the following file

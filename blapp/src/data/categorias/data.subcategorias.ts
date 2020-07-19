@@ -780,7 +780,7 @@ export const SUBCATEGORIAS = [
         data: [
             {
                 sujeto: 'Yo',
-                verbo: 'como',
+                verbo: 'bebo',
                 predicado: 'café',
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
@@ -788,7 +788,7 @@ export const SUBCATEGORIAS = [
             },
             {
                 sujeto: 'Yo',
-                verbo: 'como',
+                verbo: 'bebp',
                 predicado: 'coca cola',
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
@@ -796,7 +796,7 @@ export const SUBCATEGORIAS = [
             },
             {
                 sujeto: 'Yo',
-                verbo: 'como',
+                verbo: 'bebo',
                 predicado: 'leche',
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
@@ -1329,14 +1329,14 @@ export const SUBCATEGORIAS = [
     {
         nombre: 'Partes de la Casa',
         data: [
-            {
+            /*{
                 sujeto: 'Yo',
                 verbo: 'estoy',
                 predicado: 'en el servicio sanitario',
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/casa/Sanitario.jpg',
-            },
+            },*/
             {
                 sujeto: 'Yo',
                 verbo: 'veo',
@@ -1355,20 +1355,13 @@ export const SUBCATEGORIAS = [
             },
             {
                 sujeto: 'Yo',
-                verbo: 'estoy',
-                predicado: 'en el corredor',
-                imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
-                imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
-                imagenPredicado: 'assets/img/semanticas/categorias/casa/Corredor.jpg',
-            },
-            {
-                sujeto: 'Yo',
                 verbo: 'duermo',
                 predicado: 'en el cuarto',
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/casa/Cuarto.jpg',
             },
+
             {
                 sujeto: 'Yo',
                 verbo: 'estoy',
@@ -1377,6 +1370,25 @@ export const SUBCATEGORIAS = [
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/casa/Baño.jpg',
             },
+            //Acá va la imagen del Patio
+            {
+                sujeto: 'Yo',
+                verbo: 'estoy',
+                predicado: 'en el patio',
+                imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+                imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+                imagenPredicado: 'assets/img/semanticas/categorias/casa/Patio.jpg',
+            },
+            {
+                sujeto: 'Yo',
+                verbo: 'estoy',
+                predicado: 'en el corredor',
+                imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
+                imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
+                imagenPredicado: 'assets/img/semanticas/categorias/casa/Corredor.jpg',
+            },
+
+
         ]
     },
     {

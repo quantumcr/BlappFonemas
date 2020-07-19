@@ -77,6 +77,25 @@
         background: #A9B0F0;
         border-radius: 6px;    
     } 
+
+    //Estilos alert
+    .my-custom-class {
+        --background: #e5e5e5;
+        text-align: center;
+      }
+
+    /* DOES NOT WORK - not specific enough */
+    .alert-wrapper {
+        background: #e5e5e5;
+        text-align: center;
+    }
+  
+  /* Works - pass "my-custom-class" in cssClass to increase specificity */
+    .my-custom-class .alert-wrapper {
+        background: #e5e5e5;
+        text-align: center;
+        font-family: Poppins;
+    }
     
 }
 
