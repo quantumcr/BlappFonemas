@@ -2,27 +2,47 @@
   <ion-grid class="grid">  
     <ion-row>
       <ion-col>
-        <div class="sujeto">
-          <div>
-            
-          </div>
-        </div>
-      </ion-col>
-      <ion-col>
-        <div class="verbo">
-          <div>
 
+        <div cdkDropList #sujetoList="cdkDropList" [cdkDropListData]="sujeto"
+        cdkDropListOrientation="horizontal" [cdkDropListConnectedTo]="[imagenesList]" 
+        class="sujeto" (cdkDropListDropped)="drop($event)" [cdkDropListEnterPredicate]="validarSujeto">
+          <div class="element" *ngFor="let item of sujeto" cdkDrag [cdkDragData]="item">
+            <ion-avatar class="imagen">
+              <ion-img src="{{item}}"></ion-img>
+            </ion-avatar>
           </div>
         </div>
+
       </ion-col>
       <ion-col>
-        <div class="predicado">
-          <div>
+
+        <div cdkDropList #verboList="cdkDropList" [cdkDropListData]="verbo"
+        cdkDropListOrientation="horizontal" [cdkDropListConnectedTo]="[imagenesList]" 
+        class="verbo" (cdkDropListDropped)="drop($event)" [cdkDropListEnterPredicate]="validarVerbo">
+          <div class="element" *ngFor="let item of verbo" cdkDrag [cdkDragData]="item">
+            <ion-avatar class="imagen">
+              <ion-img src="{{item}}"></ion-img>
+            </ion-avatar>
           </div>
         </div>
+        
       </ion-col>
+      <ion-col>
+
+        <div cdkDropList #predicadoList="cdkDropList" [cdkDropListData]="predicado"
+        cdkDropListOrientation="horizontal" [cdkDropListConnectedTo]="[imagenesList]" 
+        class="predicado" (cdkDropListDropped)="drop($event)" [cdkDropListEnterPredicate]="validarPredicado">
+          <div class="element" *ngFor="let item of predicado" cdkDrag [cdkDragData]="item">
+            <ion-avatar class="imagen">
+              <ion-img src="{{item}}"></ion-img>
+            </ion-avatar>
+          </div>
+        </div>
+        
+      </ion-col>
+     
     </ion-row> 
-
+    
     <ion-row>
       <ion-col>
         <div class="semantica">
@@ -40,30 +60,22 @@
         </div>
       </ion-col>
     </ion-row>
-
     <ion-row class="options">
       <ion-col>
-        <div class="element" cdkDrop>
-          <ion-avatar class="imagen" cdkDrag>
-            <ion-img src={{imagenes[0]}}></ion-img>
-          </ion-avatar>
-        </div>        
-      </ion-col>
-      <ion-col>
-        <div class="element" cdkDrop>
-          <ion-avatar class="imagen" cdkDrag>
-            <ion-img src={{imagenes[1]}}></ion-img>
-          </ion-avatar>
-        </div>  
-      </ion-col>
-      <ion-col>
-        <div class="element" cdkDrop>
-          <ion-avatar class="imagen" cdkDrag>
-            <ion-img src={{imagenes[2]}}></ion-img>
-          </ion-avatar>
-        </div>  
+
+        <div cdkDropList #imagenesList="cdkDropList" [cdkDropListData]="imagenes"
+        cdkDropListOrientation="horizontal" [cdkDropListConnectedTo]="[sujetoList,verboList,predicadoList]" 
+        class="example-list" (cdkDropListDropped)="drop($event)" [cdkDropListEnterPredicate]="noReturnPredicate">
+          <div class="element" *ngFor="let imagen of imagenes"  cdkDrag [cdkDragData]="imagen">
+            <ion-avatar class="imagen">
+              <ion-img src="{{imagen}}"></ion-img>
+            </ion-avatar>
+          </div>
+        </div>
+
       </ion-col>
     </ion-row> 
+
 
   </ion-grid>
 </div>
