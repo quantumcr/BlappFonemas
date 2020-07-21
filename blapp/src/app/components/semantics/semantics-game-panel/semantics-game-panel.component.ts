@@ -1,7 +1,7 @@
 import { Component, OnInit, Input} from '@angular/core';
 import {CdkDragDrop, moveItemInArray, transferArrayItem, CdkDrag} from '@angular/cdk/drag-drop';
 import { SUBCATEGORIAS, OneDataI } from '../../../../data/categorias/data.subcategorias';
-
+import {SONIDOS, CategoriesSoundI, OneDataCategoriesSoundI} from '../../../../data/audio/semanticas/data.sonidos';
 @Component({
   selector: 'app-semantics-game-panel',
   templateUrl: './semantics-game-panel.component.html',
@@ -9,30 +9,16 @@ import { SUBCATEGORIAS, OneDataI } from '../../../../data/categorias/data.subcat
 })
 export class SemanticsGamePanelComponent implements OnInit {
   @Input() subcategoryOneData: OneDataI;
-  todo = [
-    'Get to work',
-    'Pick up groceries',
-    'Go home',
-    'Fall asleep'
-  ];
-  done = [
-    'Get up',
-    'Brush teeth',
-    'Take a shower',
-    'Check e-mail',
-    'Walk dog'
-  ];
-  same = ['correr'];
+  @Input() nombreSubcategoria: string;
+
+  public audio = new Audio();
 
   subcategoria = [];
   sujeto = [];
   verbo = [];
   predicado = [];
   imagenes = [];
-
-  all = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-  even = ['hola'];
-  odd = [11];
+  sonidos =[];
 
   
 
@@ -49,9 +35,10 @@ export class SemanticsGamePanelComponent implements OnInit {
   getImagenes() {
     console.log(this.subcategoryOneData);
     this.imagenes.push(this.subcategoryOneData.imagenSujeto);
-    console.log(this.subcategoryOneData.imagenPredicado.substring(22, 32));
     this.imagenes.push(this.subcategoryOneData.imagenVerbo);
     this.imagenes.push(this.subcategoryOneData.imagenPredicado);
+    this.audio.src = this.subcategoryOneData.audio;
+    this.audio.load();
     this.shuffleMethod();
   }
 
@@ -77,7 +64,7 @@ export class SemanticsGamePanelComponent implements OnInit {
     //Add '${implements OnChanges}' to the class.
     this.imagenes = [];
     this.getImagenes();
-    console.log(this.imagenes[0], this.imagenes[1], this.imagenes[2]);
+    // console.log(this.imagenes[0], this.imagenes[1], this.imagenes[2]);
   }
 
   drop(event: CdkDragDrop<string[]>) {
@@ -112,4 +99,5 @@ export class SemanticsGamePanelComponent implements OnInit {
   validarPredicado(item: CdkDrag<string>) {
     return item.data.substring(22, 32 ) === 'categorias';
   }
+  playSound(){};
 }

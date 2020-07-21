@@ -31,7 +31,7 @@
 
         <div cdkDropList #predicadoList="cdkDropList" [cdkDropListData]="predicado"
         cdkDropListOrientation="horizontal" [cdkDropListConnectedTo]="[imagenesList]" 
-        class="predicado" (cdkDropListDropped)="drop($event)" [cdkDropListEnterPredicate]="validarPredicado">
+        class="predicado" (cdkDropListDropped)="drop($event)" [cdkDropListEnterPredicate]="validarPredicado" (click)="audio.play()">
           <div class="element" *ngFor="let item of predicado" cdkDrag [cdkDragData]="item">
             <ion-avatar class="imagen">
               <ion-img src="{{item}}"></ion-img>

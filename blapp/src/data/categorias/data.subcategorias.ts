@@ -7,6 +7,7 @@ export interface SubcategoryI {
         imagenSujeto: string;
         imagenVerbo: string;
         imagenPredicado: string;
+        audio: string;
     }]
 }
 
@@ -17,6 +18,7 @@ export interface OneDataI {
     imagenSujeto: string;
     imagenVerbo: string;
     imagenPredicado: string;
+    audio: string;
 }
 
 export const SUBCATEGORIAS = [
@@ -30,6 +32,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Este.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/imagen/Yo.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -38,6 +41,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/imagen/Nombre.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -46,6 +50,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/imagen/Lugar.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -54,6 +59,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/imagen/Centro.jpg',
+                audio: ''
             }
         ]
     },
@@ -67,6 +73,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/cuerpo/Cabeza.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -75,6 +82,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/cuerpo/Pelo.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -83,6 +91,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/cuerpo/Frente.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -91,6 +100,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/cuerpo/Mejillas.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -99,6 +109,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/cuerpo/Ojos.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -107,6 +118,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/cuerpo/Cejas.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -115,6 +127,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/cuerpo/Pestañas.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -123,6 +136,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/cuerpo/Cabeza.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -131,6 +145,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/cuerpo/Boca.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -139,6 +154,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/cuerpo/Dientes.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -147,6 +163,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/cuerpo/Lengua.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -155,6 +172,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/cuerpo/Labios.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -163,6 +181,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/cuerpo/Barbilla.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -171,6 +190,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/cuerpo/Orejas.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -179,6 +199,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/cuerpo/Cuello.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -187,6 +208,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/cuerpo/Nuca.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -195,6 +217,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/cuerpo/Espalda.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -203,6 +226,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/cuerpo/Hombros.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -211,6 +235,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/cuerpo/Estómago.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -219,6 +244,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/cuerpo/Brazos.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -227,6 +253,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/cuerpo/Codos.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -235,6 +262,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/cuerpo/Manos.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -243,6 +271,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/cuerpo/Dedos.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -251,6 +280,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/cuerpo/Uñas.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -259,6 +289,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/cuerpo/Cintura.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -267,6 +298,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/cuerpo/Piernas.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -275,6 +307,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/cuerpo/Rodillas.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -283,6 +316,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/cuerpo/Tobillos.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -291,6 +325,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/cuerpo/Talones.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -299,6 +334,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/cuerpo/Pies.jpg',
+                audio: ''
             }
         ]
     },
@@ -312,6 +348,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/familia/Mamá.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Ella',
@@ -320,6 +357,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Ella.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/familia/Mamá.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -328,6 +366,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/familia/Papá.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Él',
@@ -336,6 +375,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Él.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/familia/Papá.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -344,6 +384,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/familia/Abuela.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Ella',
@@ -352,6 +393,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Ella.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/familia/Abuela.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -360,6 +402,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/familia/Abuelo.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Él',
@@ -368,39 +411,8 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Él.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/familia/Abuelo.jpg',
+                audio: ''
             },
-            /*{
-                sujeto: 'Yo',
-                verbo: 'tengo',
-                predicado: 'prima',
-                imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
-                imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
-                imagenPredicado: 'assets/img/semanticas/categorias/familia/Prima.jpg',
-            },
-            {
-                sujeto: 'Ella',
-                verbo: 'se llama',
-                predicado: 'Nombre',
-                imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Ella.jpg',
-                imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
-                imagenPredicado: 'assets/img/semanticas/categorias/familia/Prima.jpg',
-            },
-            {
-                sujeto: 'Yo',
-                verbo: 'tengo',
-                predicado: 'primo',
-                imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
-                imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
-                imagenPredicado: 'assets/img/semanticas/categorias/familia/Primo.jpg',
-            },
-            {
-                sujeto: 'Él',
-                verbo: 'se llama',
-                predicado: 'Nombre',
-                imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Él.jpg',
-                imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
-                imagenPredicado: 'assets/img/semanticas/categorias/familia/Primo.jpg',
-            },*/
             {
                 sujeto: 'Yo',
                 verbo: 'tengo',
@@ -408,6 +420,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/familia/Tío.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Él',
@@ -416,6 +429,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Él.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/familia/Tío.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -424,6 +438,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/familia/Tía.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Ella',
@@ -432,6 +447,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Ella.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/familia/Tía.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -440,6 +456,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/familia/Padrino.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Él',
@@ -448,6 +465,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Él.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/familia/Padrino.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -456,6 +474,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/familia/Tía.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Ella',
@@ -464,6 +483,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Ella.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/familia/Madrina.jpg',
+                audio: ''
             },
         ]
     },
@@ -477,6 +497,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/frutas/Banano.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -485,6 +506,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/frutas/Naranja.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -493,6 +515,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/frutas/Manzana.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -501,6 +524,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/frutas/Uvas.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -509,6 +533,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/frutas/Sandía.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -517,6 +542,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/frutas/Papaya.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -525,6 +551,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/frutas/Melón.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -533,6 +560,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/frutas/Piña.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -541,6 +569,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/frutas/Fresas.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -549,6 +578,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/frutas/Cas.jpg',
+                audio: ''
             }
         ]
     },
@@ -562,6 +592,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/vegetales/Aguacate.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -570,6 +601,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/vegetales/Ajo.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -578,23 +610,8 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/vegetales/Coliflor.jpg',
+                audio: ''
             },
-            /*{
-                sujeto: 'Yo',
-                verbo: 'como',
-                predicado: 'espárragos',
-                imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
-                imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
-                imagenPredicado: 'assets/img/semanticas/categorias/vegetales/Espárragos.jpg',
-            },
-            {
-                sujeto: 'Yo',
-                verbo: 'como',
-                predicado: 'espinacas',
-                imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
-                imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
-                imagenPredicado: 'assets/img/semanticas/categorias/vegetales/Espinaca.jpg',
-            },*/
             {
                 sujeto: 'Yo',
                 verbo: 'como',
@@ -602,6 +619,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/vegetales/Verduras.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -610,6 +628,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/vegetales/Tomate.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -618,6 +637,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/vegetales/Papa.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -626,6 +646,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/vegetales/Chayote.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -634,6 +655,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/vegetales/Zanahoria.jpg',
+                audio: ''
             },
         ]
     },
@@ -647,6 +669,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/salados/Chuleta.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -655,6 +678,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/salados/Mantequilla.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -663,6 +687,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/salados/Pasta.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -671,6 +696,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/salados/Sopa.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -679,6 +705,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/salados/Tortilla.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -687,6 +714,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/salados/Tostadas.jpg',
+                audio: ''
             },
         ]
     },
@@ -700,6 +728,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/dulces/Chocolate.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -708,6 +737,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/dulces/Chocolates.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -716,6 +746,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/dulces/Chocoleta.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -724,6 +755,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/dulces/Chupa.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -732,6 +764,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/dulces/Churros.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -740,6 +773,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/dulces/Churros.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -748,6 +782,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/dulces/Confite.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -756,6 +791,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/dulces/Confites.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -764,6 +800,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/dulces/Dona.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -772,6 +809,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/dulces/Queque.jpg',
+                audio: ''
             },
         ]
     },
@@ -785,6 +823,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/bebidas/Café.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -793,6 +832,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/bebidas/CocaCola.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -801,6 +841,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/bebidas/Leche.jpg',
+                audio: ''
             },
         ]
     },
@@ -814,6 +855,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Esta.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/granja/Vaca.jpg',
+                audio: ''
             },
             {
                 sujeto: 'La vaca',
@@ -822,6 +864,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/categorias/granja/Vaca.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/granja/Vaca.jpg',
+                audio: ''
             },
 
             {
@@ -831,6 +874,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Esta.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/granja/Gallina.jpg',
+                audio: ''
             },
             {
                 sujeto: 'La gallina',
@@ -839,6 +883,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/categorias/granja/Gallina.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/granja/Gallina.jpg',
+                audio: ''
             },
 
             {
@@ -848,6 +893,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Este.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/granja/Pato.jpg',
+                audio: ''
             },
             {
                 sujeto: 'El pato',
@@ -856,6 +902,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/categorias/granja/Pato.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/granja/Pato.jpg',
+                audio: ''
             },
 
             {
@@ -865,6 +912,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Esta.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/granja/Caballo.jpg',
+                audio: ''
             },
             {
                 sujeto: 'El caballo',
@@ -873,6 +921,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/categorias/granja/Caballo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/granja/Caballo.jpg',
+                audio: ''
             },
 
             {
@@ -882,6 +931,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Esta.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/granja/Cabra.jpg',
+                audio: ''
             },
             {
                 sujeto: 'La cabra',
@@ -890,6 +940,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/categorias/granja/Cabra.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/granja/Cabra.jpg',
+                audio: ''
             },
 
             {
@@ -899,6 +950,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Esta.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/granja/Gallo.jpg',
+                audio: ''
             },
             {
                 sujeto: 'El gallo',
@@ -907,6 +959,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/categorias/granja/Gallo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/granja/Gallo.jpg',
+                audio: ''
             },
 
             {
@@ -916,6 +969,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Esta.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/granja/Pollito.jpg',
+                audio: ''
             },
             {
                 sujeto: 'El pollito',
@@ -924,6 +978,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/categorias/granja/Pollito.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/granja/Pollito.jpg',
+                audio: ''
             },
         ]
     },
@@ -937,6 +992,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Este.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/domesticos/Conejo.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Esta',
@@ -945,6 +1001,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Esta.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/domesticos/Lora.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Estos',
@@ -953,6 +1010,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Estos.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/domesticos/Peces.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Este',
@@ -961,6 +1019,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Este.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/domesticos/Perico.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Este',
@@ -969,6 +1028,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Este.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/domesticos/Perro.jpg',
+                audio: ''
             },
             {
                 sujeto: 'El perro',
@@ -977,6 +1037,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/categorias/domesticos/Perro.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/domesticos/Perro.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Esta',
@@ -985,6 +1046,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Esta.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/domesticos/Tortuga.jpg',
+                audio: ''
             },
 
         ]
@@ -999,6 +1061,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Esta.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/salvajes/Cebra.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Esta',
@@ -1007,6 +1070,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Esta.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/salvajes/Jirafa.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Este',
@@ -1015,6 +1079,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Este.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/salvajes/León.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Este',
@@ -1023,6 +1088,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Este.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/salvajes/Mono.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Este',
@@ -1031,6 +1097,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Este.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/salvajes/Oso.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Esta',
@@ -1039,6 +1106,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Esta.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/salvajes/Serpiente.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Este',
@@ -1047,6 +1115,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Este.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/salvajes/Tigre.jpg',
+                audio: ''
             },
         ]
     },
@@ -1060,6 +1129,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto:  'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/juguetes/Bola.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Ella',
@@ -1068,6 +1138,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto:  'assets/img/semanticas/estructura/sujeto/Ella.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/juguetes/Muñeca.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Ella',
@@ -1076,6 +1147,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto:  'assets/img/semanticas/estructura/sujeto/Ella.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/juguetes/Tucos.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Él',
@@ -1084,6 +1156,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto:  'assets/img/semanticas/estructura/sujeto/Él.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/juguetes/Bicicleta.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -1092,6 +1165,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto:  'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/juguetes/Patines.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Ella',
@@ -1099,7 +1173,8 @@ export const SUBCATEGORIAS = [
                 predicado: 'motos',
                 imagenSujeto:  'assets/img/semanticas/estructura/sujeto/Ella.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
-                imagenPredicado: 'assets/img/semanticas/categorias/juguetes/Moto.PNG',
+                imagenPredicado: 'assets/img/semanticas/categorias/juguetes/Moto.png',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -1108,6 +1183,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto:  'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/juguetes/Rompecabezas.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Ella',
@@ -1116,6 +1192,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto:  'assets/img/semanticas/estructura/sujeto/Ella.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/juguetes/Aviones.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -1124,6 +1201,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto:  'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/juguetes/Trastes.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Él',
@@ -1132,6 +1210,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto:  'assets/img/semanticas/estructura/sujeto/Él.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/juguetes/Bingo.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Ella',
@@ -1140,6 +1219,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto:  'assets/img/semanticas/estructura/sujeto/Ella.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/juguetes/Lotería.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Él',
@@ -1148,6 +1228,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto:  'assets/img/semanticas/estructura/sujeto/Él.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/juguetes/HulaHula.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -1156,6 +1237,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto:  'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/juguetes/Suiza.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Ella',
@@ -1164,6 +1246,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Ella.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/juguetes/Nintendo.jpg',
+                audio: ''
             }
         ]
     },
@@ -1177,6 +1260,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/ropaH/Bota.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -1185,6 +1269,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/ropaH/Camisa.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -1193,6 +1278,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/ropaH/Corbata.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -1201,6 +1287,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/ropaH/PantalónCorto.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -1209,6 +1296,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/ropaH/Pantalones.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -1217,6 +1305,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/ropaH/PantalónLargo.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -1225,6 +1314,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/ropaH/Zapato.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -1233,6 +1323,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/ropaH/Zapatos.jpg',
+                audio: ''
             },
         ]
     },
@@ -1246,6 +1337,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Ella.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/ropaM/Abrigo.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Ella',
@@ -1254,6 +1346,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Ella.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/ropaM/Blusa.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Ella',
@@ -1262,6 +1355,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Ella.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/ropaM/Chaleco.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Ella',
@@ -1270,6 +1364,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Ella.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/ropaM/Colas.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Ella',
@@ -1278,6 +1373,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Ella.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/ropaM/Diadema.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Ella',
@@ -1286,6 +1382,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Ella.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/ropaM/Pijama.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Ella',
@@ -1294,6 +1391,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Ella.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/ropaM/Vestido.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Ella',
@@ -1302,6 +1400,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Ella.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/ropaM/Zapatos.jpg',
+                audio: ''
             },
         ]
     },
@@ -1315,6 +1414,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Ella.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/ropaP/Pantaloneta.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Ella',
@@ -1323,20 +1423,14 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Ella.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/ropaP/Vestido.jpg',
+                audio: ''
             },
         ]
     },
     {
         nombre: 'Partes de la Casa',
         data: [
-            /*{
-                sujeto: 'Yo',
-                verbo: 'estoy',
-                predicado: 'en el servicio sanitario',
-                imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
-                imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
-                imagenPredicado: 'assets/img/semanticas/categorias/casa/Sanitario.jpg',
-            },*/
+
             {
                 sujeto: 'Yo',
                 verbo: 'veo',
@@ -1344,6 +1438,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/casa/Cocina.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -1352,6 +1447,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/casa/Comedor.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -1360,6 +1456,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/casa/Cuarto.jpg',
+                audio: ''
             },
 
             {
@@ -1369,8 +1466,9 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/casa/Baño.jpg',
+                audio: ''
             },
-            //Acá va la imagen del Patio
+
             {
                 sujeto: 'Yo',
                 verbo: 'estoy',
@@ -1378,6 +1476,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/casa/Patio.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -1386,6 +1485,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/casa/Corredor.jpg',
+                audio: ''
             },
 
 
@@ -1401,6 +1501,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Usted.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/transporte/Carro.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Ellos',
@@ -1409,6 +1510,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Ellos.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/transporte/Bus.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Nosotros',
@@ -1417,6 +1519,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Nosotros.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/transporte/Trailer.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Ellas',
@@ -1425,6 +1528,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Ellas.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/transporte/Taxi.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Ellos',
@@ -1433,6 +1537,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Ellos.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/transporte/Motocicleta.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Yo',
@@ -1441,6 +1546,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/transporte/Carreta.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Ella',
@@ -1449,6 +1555,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Ella.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/transporte/Tren.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Él',
@@ -1457,6 +1564,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Él.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/transporte/Avión.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Nosotros',
@@ -1465,6 +1573,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Nosotros.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/transporte/Helicóptero.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Ustedes',
@@ -1473,6 +1582,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Ustedes.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/transporte/Barco.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Nosotros',
@@ -1481,6 +1591,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Nosotros.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/transporte/Submarino.jpg',
+                audio: ''
             },
             {
                 sujeto: 'Ellos',
@@ -1489,6 +1600,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Ellos.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/transporte/Cohete.jpg',
+                audio: ''
             },
         ]
     },
@@ -1502,6 +1614,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/categorias/servidores/Doctor.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/estructura/predicado/Enfermos.jpg',
+                audio: ''
             },
             {
                 sujeto: 'El dentista',
@@ -1510,6 +1623,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/categorias/servidores/Dentista.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/estructura/predicado/Dientes.jpg',
+                audio: ''
             },
             {
                 sujeto: 'El veterinario',
@@ -1518,6 +1632,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/categorias/servidores/Veterinario.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/estructura/predicado/Animales.jpg',
+                audio: ''
             },
             {
                 sujeto: 'La maestra',
@@ -1526,6 +1641,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/categorias/servidores/Maestra.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/estructura/predicado/Niños.jpg',
+                audio: ''
             },
             {
                 sujeto: 'La secretaria',
@@ -1534,6 +1650,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/categorias/servidores/Secretaria.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/estructura/predicado/Cartas.jpg',
+                audio: ''
             },
             {
                 sujeto: 'El panadero',
@@ -1542,6 +1659,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/categorias/servidores/Panadero.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/estructura/predicado/Pan.jpg',
+                audio: ''
             },
             {
                 sujeto: 'El carnicero',
@@ -1550,6 +1668,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/categorias/servidores/Carnicero.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/estructura/predicado/Carnes.jpg',
+                audio: ''
             },
             {
                 sujeto: 'El pulpero',
@@ -1558,6 +1677,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/categorias/servidores/Pulpero.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/estructura/predicado/Arroz.jpg',
+                audio: ''
             },
             {
                 sujeto: 'El chofer',
@@ -1566,6 +1686,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/categorias/servidores/Chofer.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/estructura/predicado/Bus.jpg',
+                audio: ''
             },
             {
                 sujeto: 'El cartero',
@@ -1574,6 +1695,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/categorias/servidores/Cartero.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/estructura/predicado/Cartas.jpg',
+                audio: ''
             },
             {
                 sujeto: 'El bombero',
@@ -1582,6 +1704,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/categorias/servidores/Bombero.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/estructura/predicado/Fuego.jpg',
+                audio: ''
             },
             {
                 sujeto: 'El policía',
@@ -1590,6 +1713,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/categorias/servidores/Policía.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/estructura/predicado/Niños.jpg',
+                audio: ''
             },
             {
                 sujeto: 'El mecánico',
@@ -1598,6 +1722,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/categorias/servidores/Mecánico.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/transporte/Carro.jpg',
+                audio: ''
             },
             {
                 sujeto: 'El carpintero',
@@ -1606,6 +1731,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/categorias/servidores/Carpintero.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/estructura/predicado/Muebles.jpg',
+                audio: ''
             },
             {
                 sujeto: 'El pintor',
@@ -1614,6 +1740,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/categorias/servidores/Pintor.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/estructura/predicado/La casa.jpg',
+                audio: ''
             },
             {
                 sujeto: 'El agricultor',
@@ -1622,6 +1749,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/categorias/servidores/Agricultor.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/estructura/predicado/Verduras.jpg',
+                audio: ''
             },
 
         ]
@@ -1636,6 +1764,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/categorias/instrumentos/Tambor.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/instrumentos/Tambor.jpg',
+                audio: 'assets/audio/semanticas/categorias/instrumentos/Tambor.mp3'
             },
             {
                 sujeto: 'La trompeta',
@@ -1644,6 +1773,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/categorias/instrumentos/Trompeta.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/instrumentos/Trompeta.jpg',
+                audio: 'assets/audio/semanticas/categorias/instrumentos/Trompeta.mp3'
             },
             {
                 sujeto: 'La campana',
@@ -1652,6 +1782,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/categorias/instrumentos/Campana.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/instrumentos/Campana.jpg',
+                audio: 'assets/audio/semanticas/categorias/instrumentos/Campana.mp3'
             },
             {
                 sujeto: 'El piano',
@@ -1660,6 +1791,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/categorias/instrumentos/Piano.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/instrumentos/Piano.jpg',
+                audio: 'assets/audio/semanticas/categorias/instrumentos/Piano.mp3'
             },
             {
                 sujeto: 'Las maracas',
@@ -1668,14 +1800,16 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/categorias/instrumentos/Maracas.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/instrumentos/Maracas.jpg',
+                audio: 'assets/audio/semanticas/categorias/instrumentos/Maracas.mp3'
             },
             {
-                sujeto: 'El guitarra',
+                sujeto: 'La guitarra',
                 verbo: 'suena',
                 predicado: 'chin chin',
                 imagenSujeto: 'assets/img/semanticas/categorias/instrumentos/Guitarra.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/instrumentos/Guitarra.jpg',
+                audio: 'assets/audio/semanticas/categorias/instrumentos/Guitarra.mp3'
             },
             {
                 sujeto: 'La flauta',
@@ -1684,6 +1818,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/categorias/instrumentos/Flauta.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/instrumentos/Flauta.jpg',
+                audio: 'assets/audio/semanticas/categorias/instrumentos/Flauta.mp3'
             },
             {
                 sujeto: 'Los platillos',
@@ -1692,6 +1827,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/categorias/instrumentos/Platillos.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/instrumentos/Platillos.jpg',
+                audio: 'assets/audio/semanticas/categorias/instrumentos/Platillos.mp3'
             }
         ]
     }
