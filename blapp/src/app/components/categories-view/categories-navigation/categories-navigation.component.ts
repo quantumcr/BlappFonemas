@@ -22,11 +22,11 @@ export class CategoriesNavigationComponent implements OnInit {
     this.navCtrl.navigateForward('/menu');
   }
 
-  forward() {
+  forward(event: any) {
     this.forwardEmit.emit();
   }
 
-  back(){
+  back(event: any){
     this.backEmit.emit();
   }
 

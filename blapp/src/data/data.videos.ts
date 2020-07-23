@@ -180,7 +180,7 @@ export const VIDEOS = [
     {
         nombre: 'u',
         video: 'assets/video/fonemas/vidFonU.mp4',
-        imagen: 'assets/img/fonemaU.svg',
+        imagen: 'assets/img/fonemas/phoneme-bar/fonemaU.png',
         mensaje: 'Uy Uy Uy (Susto)',
         duracion: 4,
         reproduciendo: false
