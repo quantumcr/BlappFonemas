@@ -79,23 +79,25 @@
     } 
 
     //Estilos alert
-    .my-custom-class {
-        --background: #e5e5e5;
+    .alertClass{
+        --background: blue;
         text-align: center;
       }
 
-    /* DOES NOT WORK - not specific enough */
+    /* DOES NOT WORK - not specific enough 
     .alert-wrapper {
         background: #e5e5e5;
         text-align: center;
     }
+     DOES NOT WORK - not specific enough */
   
-  /* Works - pass "my-custom-class" in cssClass to increase specificity */
+  /* Works - pass "my-custom-class" in cssClass to increase specificity 
     .my-custom-class .alert-wrapper {
         background: #e5e5e5;
         text-align: center;
         font-family: Poppins;
     }
+    DOES NOT WORK - not specific enough */
     
 }
 

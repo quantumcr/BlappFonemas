@@ -1,0 +1,26 @@
+<div class="principal">
+  <ion-grid>
+      <ion-row>
+        <ion-col class="bar">
+          <!--
+          <app-categories-bar [category]="category" (subcategoryEmit)="changeSubcategory($event)" ></app-categories-bar>
+        -->
+          <app-categories-game-bar [category]="category" (subcategoryEmit)="changeSubcategory($event)" ></app-categories-game-bar>
+        </ion-col>
+        <ion-col class="panel">
+          <!--
+          <app-categories-view-panel [subcategoryOneData]="subcategory.data[indexData]"></app-categories-view-panel>
+        -->
+          <app-semantics-game-panel [nombreSubcategoria]="subcategory.nombre" [subcategoryOneData]="subcategory.data[indexData]"></app-semantics-game-panel>
+        </ion-col>
+      </ion-row>
+      <ion-row class="navigation">
+        <ion-col>
+          <app-categories-game-navigation (forwardEmit)="incIndexData()" (backEmit)="decIndexData()"></app-categories-game-navigation>
+          <!--
+          <app-categories-navigation (forwardEmit)="incIndexData()" (backEmit)="decIndexData()"></app-categories-navigation>
+          -->
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+</div>

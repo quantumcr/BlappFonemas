@@ -5,11 +5,11 @@ import { StudentService } from '../../../services/student.service';
 import { UserService } from '../../../services/user.service';
 import { TokenResponse } from '../../../services/authentication.service';
 
-import { Student } from '../../../models/student';
+import { Student, EncargadoLegal, Encargado } from '../../../models/student';
 import { User } from '../../../models/user';
 import { Router } from '@angular/router';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-
+import { AuthService } from '../../../services/auth.service';
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
@@ -38,6 +38,11 @@ export class RegisterComponent implements OnInit {
     ])),
     sexo: new FormControl('', Validators.compose([
       Validators.required,
+      Validators.pattern('[a-zA-Z áéíóú]*')
+    ])),
+    direccion: new FormControl('', Validators.compose([
+      Validators.required,
+      Validators.minLength(3),
       Validators.pattern('[a-zA-Z áéíóú]*')
     ])),
     encargadoLegal: new FormGroup({      
@@ -88,6 +93,11 @@ export class RegisterComponent implements OnInit {
   }
 
   public userForm = new FormGroup({
+    nombre: new FormControl('', Validators.compose([
+      Validators.required,
+      Validators.minLength(3),
+      Validators.pattern('[a-zA-Z áéíóú]*')
+    ])),
     email: new FormControl('', Validators.compose([
       Validators.required,
       Validators.pattern('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$')
@@ -97,14 +107,16 @@ export class RegisterComponent implements OnInit {
       Validators.required
     ]))
   })
-
-  newStudent = new Student;
-  newUser = new User;
+  public encargados =[];
+  public encargadoLegal: Encargado;
+  newStudent = new Student();
+  newUser = new User();
 
   constructor(
     private studentService: StudentService,
     private userService: UserService,
-    private router: Router
+    private router: Router,
+    private authService: AuthService
   ) { }
 
   ngOnInit() {
@@ -112,15 +124,35 @@ export class RegisterComponent implements OnInit {
   }
 
   register() {
-    this.newStudent = this.studentForm.value;
-    this.newUser = this.userForm.value;
-    delete this.newStudent._id;
-    this.studentService.createStudent(this.newStudent)
+    this.newUser.nombre = this.newStudent.nombre;
+    this.newUser.tipo = 'Estudiante';
+    console.log('Informacion del Encargado Legal');
+    console.log(this.newStudent.encargadoLegal);
+    console.log('Informacion del Estudiante');
+    console.log(this.newStudent);
+    console.log('Informacion del Usuario');
+    console.log(this.newUser);
+    this.authService.registerStudent(this.newUser, this.newStudent).then(res => {
+      this.newUser.uid = localStorage.getItem('uidStudent');
+      this.newStudent._id = localStorage.getItem('uidStudent');
+      const miEncargado: Encargado={
+        nombre: this.newStudent.encargadoLegal.nombre,
+        profesion: "por asignar",
+        telefono: "por asignar",
+        direccion: this.newStudent.encargadoLegal.direccion
+      }
+      //this.studentService.updateChildLegalGuardian(miEncargado,this.newStudent._id);
+      //this.router.navigate(['estudiantes'], { queryParams: { _id: this.newStudent._id } });
+    }).catch(err => {
+      console.log("Error creando usuario", err);
+    });
+
+    /*this.studentService.createStudent(this.newStudent)
     .then((student: Student) => {
       console.log(student);
-      delete this.newUser._id;
+      //delete this.newUser._id;
       this.newUser.tipo = "Estudiante";
-      this.newUser.idUsuario = student._id;
+      this.newUser.uid = student._id;
       this.userService.createUser(this.newUser)
       .then((userToken: TokenResponse) => {        
         console.log(userToken);
@@ -132,6 +164,6 @@ export class RegisterComponent implements OnInit {
     })
     .catch(err => {
       console.log("Error creando estudiante", err);
-    });
+    });*/
   }
 }

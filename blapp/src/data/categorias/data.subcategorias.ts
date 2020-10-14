@@ -606,7 +606,7 @@ export const SUBCATEGORIAS = [
             {
                 sujeto: 'Yo',
                 verbo: 'como',
-                predicado: 'coliflor',
+                predicado: 'brócoli',
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/vegetales/Coliflor.jpg',
@@ -864,7 +864,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/categorias/granja/Vaca.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/granja/Vaca.jpg',
-                audio: ''
+                audio: 'assets/audio/semanticas/categorias/granja/Vaca.mp3'
             },
 
             {
@@ -883,7 +883,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/categorias/granja/Gallina.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/granja/Gallina.jpg',
-                audio: ''
+                audio: 'assets/audio/semanticas/categorias/granja/Gallina.mp3'
             },
 
             {
@@ -902,7 +902,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/categorias/granja/Pato.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/granja/Pato.jpg',
-                audio: ''
+                audio: 'assets/audio/semanticas/categorias/granja/Pato.mp3'
             },
 
             {
@@ -921,7 +921,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/categorias/granja/Caballo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/granja/Caballo.jpg',
-                audio: ''
+                audio: 'assets/audio/semanticas/categorias/granja/Caballo.mp3'
             },
 
             {
@@ -940,7 +940,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/categorias/granja/Cabra.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/granja/Cabra.jpg',
-                audio: ''
+                audio: 'assets/audio/semanticas/categorias/granja/Cabra.mp3'
             },
 
             {
@@ -959,7 +959,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/categorias/granja/Gallo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/granja/Gallo.jpg',
-                audio: ''
+                audio: 'assets/audio/semanticas/categorias/granja/Gallo.mp3'
             },
 
             {
@@ -978,7 +978,7 @@ export const SUBCATEGORIAS = [
                 imagenSujeto: 'assets/img/semanticas/categorias/granja/Pollito.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
                 imagenPredicado: 'assets/img/semanticas/categorias/granja/Pollito.jpg',
-                audio: ''
+                audio: 'assets/audio/semanticas/categorias/granja/Pollito.mp3'
             },
         ]
     },

@@ -1,10 +1,17 @@
 <div class="principal">
     <ion-grid>
-  
       <ion-row>
         <ion-col>
           <ion-button fill="clear" class="icon" (click)="logout()">
             <ion-img src="assets/icon/logout.svg"></ion-img>
+          </ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button *ngIf="visiblePlay" fill="clear" class="iconMusic" (click)="play()">
+            <ion-img src="assets/icon/play2.svg"></ion-img>
+          </ion-button>
+          <ion-button *ngIf="visibleMute" fill="clear" class="iconMusic" (click)="mute()">
+            <ion-img src="assets/icon/mute.svg"></ion-img>
           </ion-button>
         </ion-col>
       </ion-row>

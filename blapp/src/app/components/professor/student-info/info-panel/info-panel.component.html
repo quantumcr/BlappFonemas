@@ -63,36 +63,7 @@
           </ion-row>
         </ion-grid>
       </ion-row>
-      <ion-row>
-        <ion-col class="infoFamilia">
-          <ion-label class="titulo">Familia</ion-label>
 
-          <ion-list class="list">
-            <ion-item lines="none" *ngFor="let family_member of student.familia">
-              <ion-col>
-                <ion-row>
-                  <ion-label>{{"Nombre " + family_member.relacion + ":"}}</ion-label>
-                </ion-row>
-                <ion-row>
-                  <ion-input class="input" [(ngModel)]="family_member.nombre"></ion-input>
-                </ion-row>
-              </ion-col>      
-            </ion-item>
-          </ion-list>
-          
-          <!--<app-family-info [familia]="student.familia"></app-family-info>-->
-        </ion-col>
-        <ion-col class="infoAlimentos">
-          <ion-label class="titulo">Alimentos</ion-label>
-            <ion-list class="list">
-              <ion-item lines="none" *ngFor="let alimento of student.alimentacion" (click)="changeSelected(alimento)">
-                <ion-label class="label" color="black">{{alimento.alimento}}</ion-label>
-                <ion-checkbox slot="start" mode="ios" color="success" checked={{alimento.seleccionado}}></ion-checkbox>        
-              </ion-item>
-            </ion-list>
-          <!--<app-food-info [alimetacion]="student.alimentacion"></app-food-info>-->
-        </ion-col>
-      </ion-row>
       <ion-row>
         <ion-col>
             <ion-button color="success" slot="start">Actualizar</ion-button>

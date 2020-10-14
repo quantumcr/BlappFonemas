@@ -109,7 +109,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"principal\">\r\n  <ion-grid justify-content-center>\r\n    <ion-row>\r\n      <ion-col >\r\n        <ion-label class=\"tituloUsuario\">{{usuario}}</ion-label>\r\n        <ion-input [(ngModel)]=\"email\" id=\"email\" class=\"usuario\" placeholder=\"correo electrónico\" (ionInput)=\"setEmail($event)\"></ion-input>\r\n      </ion-col>\r\n    </ion-row>\r\n\r\n    <ion-row justify-content-center>\r\n      <ion-col >\r\n        <ion-label class=\"tituloClave\">{{clave}}</ion-label>\r\n        <ion-input [(ngModel)]=\"password\" id=\"password\" class=\"clave\" type=\"password\" placeholder=\"su password\" (ionInput)=\"setPassword($event)\"></ion-input>\r\n      </ion-col>\r\n    </ion-row> \r\n\r\n    <ion-row justify-content-center>\r\n      <ion-col>\r\n        <ion-button color=\"blappButton\" class=\"btnLogin\" (click)=\"loginFirebase()\">{{comando}}</ion-button>\r\n      </ion-col>\r\n    </ion-row>\r\n\r\n   \r\n  </ion-grid>\r\n</div>\r\n";
+    __webpack_exports__["default"] = "<div class=\"principal\">\r\n  <ion-grid justify-content-center>\r\n    <ion-row>\r\n      <ion-col >\r\n        <ion-label class=\"tituloUsuario\">{{usuario}}</ion-label>\r\n        <ion-input [(ngModel)]=\"email\" id=\"email\" class=\"usuario\" placeholder=\"correo electrónico\" (ionInput)=\"setEmail($event)\"></ion-input>\r\n      </ion-col>\r\n    </ion-row>\r\n\r\n    <ion-row justify-content-center>\r\n      <ion-col >\r\n        <ion-label class=\"tituloClave\">{{clave}}</ion-label>\r\n        <ion-input [(ngModel)]=\"password\" id=\"password\" class=\"clave\" type=\"password\" placeholder=\"su contraseña\" (ionInput)=\"setPassword($event)\"></ion-input>\r\n      </ion-col>\r\n    </ion-row> \r\n\r\n    <ion-row justify-content-center>\r\n      <ion-col>\r\n        <ion-button color=\"blappButton\" class=\"btnLogin\" (click)=\"loginFirebase()\">{{comando}}</ion-button>\r\n      </ion-col>\r\n    </ion-row>\r\n\r\n   \r\n  </ion-grid>\r\n</div>\r\n";
     /***/
   },
 
@@ -409,7 +409,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"principal\">\r\n    <ion-grid class=\"grid\">\r\n        <ion-row class=\"row\">\r\n            <ion-col>\r\n                <ion-segment-button class=\"phonemeButton\" (click)=\"goToPhoneme('p')\">Pp</ion-segment-button>\r\n            </ion-col>\r\n            <ion-col>\r\n                <ion-segment-button class=\"phonemeButton\" (click)=\"goToPhoneme('m')\">Mm</ion-segment-button>\r\n            </ion-col>\r\n            <ion-col>\r\n                <ion-segment-button class=\"phonemeButton\" (click)=\"goToPhoneme('b')\">Bb</ion-segment-button>\r\n            </ion-col>                        \r\n        </ion-row>\r\n\r\n        <ion-row class=\"row\">\r\n            <ion-col>\r\n                <ion-segment-button class=\"phonemeButton\" (click)=\"goToPhoneme('d')\">Dd</ion-segment-button>\r\n            </ion-col>\r\n            <ion-col>\r\n                <ion-segment-button class=\"phonemeButton\" (click)=\"goToPhoneme('t')\">Tt</ion-segment-button>\r\n            </ion-col>\r\n            <ion-col>\r\n                <ion-segment-button class=\"phonemeButton\" (click)=\"goToPhoneme('g')\">Gg</ion-segment-button>\r\n            </ion-col>                        \r\n        </ion-row>  \r\n        \r\n        <ion-row class=\"row\">\r\n            <ion-col>\r\n                <ion-segment-button class=\"phonemeButton\" (click)=\"goToPhoneme('Cc Kk Qq')\">Cc Kk Qq</ion-segment-button>\r\n            </ion-col>\r\n            <ion-col>\r\n                <ion-segment-button class=\"phonemeButton\" (click)=\"goToPhoneme('f')\">Ff</ion-segment-button>\r\n            </ion-col>\r\n            <ion-col>\r\n                <ion-segment-button class=\"phonemeButton\" (click)=\"goToPhoneme('ch')\">Ch ch</ion-segment-button>\r\n            </ion-col>                        \r\n        </ion-row> \r\n\r\n        <ion-row class=\"row\">\r\n            <ion-col>\r\n                <ion-segment-button class=\"phonemeButton\" (click)=\"goToPhoneme('j')\">Jj</ion-segment-button>\r\n            </ion-col>\r\n            <ion-col>\r\n                <ion-segment-button class=\"phonemeButton\" (click)=\"goToPhoneme('s')\">Ss</ion-segment-button>\r\n            </ion-col>\r\n            <ion-col>\r\n                <ion-segment-button class=\"phonemeButton\" (click)=\"goToPhoneme('n')\">Nn</ion-segment-button>\r\n            </ion-col>                        \r\n        </ion-row>   \r\n\r\n        <ion-row class=\"row\">\r\n            <ion-col>\r\n                <ion-segment-button class=\"phonemeButton\" (click)=\"goToPhoneme('ñ')\">Ññ</ion-segment-button>\r\n            </ion-col>\r\n            <ion-col>\r\n                <ion-segment-button class=\"phonemeButton\" (click)=\"goToPhoneme('l')\">Ll</ion-segment-button>\r\n            </ion-col>\r\n            <ion-col>\r\n                <ion-segment-button class=\"phonemeButton\" (click)=\"goToPhoneme('LLll Yy')\">LLll Yy</ion-segment-button>\r\n            </ion-col>                        \r\n        </ion-row>\r\n        \r\n        <ion-row class=\"row\">\r\n            <ion-col>\r\n                <ion-segment-button class=\"phonemeButton\" (click)=\"goToPhoneme('r')\">Rr</ion-segment-button>\r\n            </ion-col>\r\n            <ion-col>\r\n                <ion-segment-button class=\"phonemeButton\" (click)=\"goToPhoneme('rr')\">RR rr</ion-segment-button>\r\n            </ion-col>\r\n            <ion-col>\r\n                <ion-segment-button class=\"phonemeButton\" (click)=\"goToPhoneme('x')\">Xx</ion-segment-button>\r\n            </ion-col>\r\n        </ion-row>\r\n    </ion-grid>\r\n</div>";
+    __webpack_exports__["default"] = "<div class=\"principal\">\r\n    <ion-grid class=\"grid\">\r\n        <ion-row class=\"row\">\r\n            <ion-col>\r\n                <ion-segment-button class=\"phonemeButton\" (click)=\"goToPhoneme('p')\">Pp</ion-segment-button>\r\n            </ion-col>\r\n            <ion-col>\r\n                <ion-segment-button class=\"phonemeButton\" (click)=\"goToPhoneme('m')\">Mm</ion-segment-button>\r\n            </ion-col>\r\n            <ion-col>\r\n                <ion-segment-button class=\"phonemeButton\" (click)=\"goToPhoneme('b')\">Bb</ion-segment-button>\r\n            </ion-col>                        \r\n        </ion-row>\r\n\r\n        <ion-row class=\"row\">\r\n            <ion-col>\r\n                <ion-segment-button class=\"phonemeButton\" (click)=\"goToPhoneme('d')\">Dd</ion-segment-button>\r\n            </ion-col>\r\n            <ion-col>\r\n                <ion-segment-button class=\"phonemeButton\" (click)=\"goToPhoneme('t')\">Tt</ion-segment-button>\r\n            </ion-col>\r\n            <ion-col>\r\n                <ion-segment-button class=\"phonemeButton\" (click)=\"goToPhoneme('g')\">Gg</ion-segment-button>\r\n            </ion-col>                        \r\n        </ion-row>  \r\n        \r\n        <ion-row class=\"row\">\r\n            <ion-col>\r\n                <ion-segment-button class=\"phonemeButton\" (click)=\"goToPhoneme('ckq')\">Cc Kk Qq</ion-segment-button>\r\n            </ion-col>\r\n            <ion-col>\r\n                <ion-segment-button class=\"phonemeButton\" (click)=\"goToPhoneme('f')\">Ff</ion-segment-button>\r\n            </ion-col>\r\n            <ion-col>\r\n                <ion-segment-button class=\"phonemeButton\" (click)=\"goToPhoneme('ch')\">Ch ch</ion-segment-button>\r\n            </ion-col>                        \r\n        </ion-row> \r\n\r\n        <ion-row class=\"row\">\r\n            <ion-col>\r\n                <ion-segment-button class=\"phonemeButton\" (click)=\"goToPhoneme('j')\">Jj</ion-segment-button>\r\n            </ion-col>\r\n            <ion-col>\r\n                <ion-segment-button class=\"phonemeButton\" (click)=\"goToPhoneme('s')\">Ss</ion-segment-button>\r\n            </ion-col>\r\n            <ion-col>\r\n                <ion-segment-button class=\"phonemeButton\" (click)=\"goToPhoneme('n')\">Nn</ion-segment-button>\r\n            </ion-col>                        \r\n        </ion-row>   \r\n\r\n        <ion-row class=\"row\">\r\n            <ion-col>\r\n                <ion-segment-button class=\"phonemeButton\" (click)=\"goToPhoneme('ñ')\">Ññ</ion-segment-button>\r\n            </ion-col>\r\n            <ion-col>\r\n                <ion-segment-button class=\"phonemeButton\" (click)=\"goToPhoneme('l')\">Ll</ion-segment-button>\r\n            </ion-col>\r\n            <ion-col>\r\n                <ion-segment-button class=\"phonemeButton\" (click)=\"goToPhoneme('LLll Yy')\">LLll Yy</ion-segment-button>\r\n            </ion-col>                        \r\n        </ion-row>\r\n        \r\n        <ion-row class=\"row\">\r\n            <ion-col>\r\n                <ion-segment-button class=\"phonemeButton\" (click)=\"goToPhoneme('r')\">Rr</ion-segment-button>\r\n            </ion-col>\r\n            <ion-col>\r\n                <ion-segment-button class=\"phonemeButton\" (click)=\"goToPhoneme('rr')\">RR rr</ion-segment-button>\r\n            </ion-col>\r\n            <ion-col>\r\n                <ion-segment-button class=\"phonemeButton\" (click)=\"goToPhoneme('x')\">Xx</ion-segment-button>\r\n            </ion-col>\r\n        </ion-row>\r\n    </ion-grid>\r\n</div>";
     /***/
   },
 
@@ -449,7 +449,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"principal\">\r\n    <ion-grid>\r\n        <ion-row class=\"rowSilaba\">\r\n            <ion-col cdkDrop>\r\n                <ion-segment-button fill=\"round\" class=\"silaba\">{{silaba1}}</ion-segment-button>\r\n            </ion-col>\r\n            <ion-col>\r\n                <ion-segment-button fill=\"round\" class=\"silaba\">{{silaba2}}</ion-segment-button>\r\n            </ion-col>\r\n        </ion-row>\r\n        <ion-row class=\"row\" cdkDropList>\r\n            <ion-col >\r\n                <!--SECCION SILABA 1-->\r\n                <div style=\"position: relative;\" cdkDrag>\r\n                    <div style=\"position: absolute; left: 0px; top: 0px;\">\r\n                        <ion-avatar>\r\n                            <ion-img src={{palabra1.imagen}} class=\"imagen\"></ion-img>\r\n                        </ion-avatar>\r\n                    </div>\r\n                    <div style=\"position: absolute; left: 0px; right: 120px; top: 126px;\">\r\n                        <ion-segment-button value={{palabra1.audio}} class=\"btnPlay\" (click)=\"playAudio($event)\">\r\n                            <ion-icon src=\"assets/icon/play.svg\"></ion-icon>\r\n                        </ion-segment-button>\r\n                    </div>\r\n                  </div>\r\n            </ion-col>\r\n            <ion-col>\r\n                <!--SECCION SILABA 2-->\r\n                <div style=\"position: relative;\" cdkDrag>\r\n                    <div style=\"position: absolute; left: 0px; top: 0px;\">\r\n                        <ion-avatar class=\"imagen\">\r\n                            <ion-img src={{palabra2.imagen}}></ion-img>\r\n                        </ion-avatar>\r\n                    </div>\r\n                    <div style=\"position: absolute; left: 0px; right: 120px; top: 126px;\">\r\n                        <ion-segment-button value={{palabra2.audio}} class=\"btnPlay\" (click)=\"playAudio($event)\">\r\n                            <ion-icon src=\"assets/icon/play.svg\"></ion-icon>\r\n                        </ion-segment-button>\r\n                    </div>\r\n                  </div>              \r\n            </ion-col>  \r\n            <ion-col>\r\n                <div style=\"position: relative;\" cdkDrag>\r\n                    <div style=\"position: absolute; left: 0px; top: 0px;\">\r\n                        <ion-avatar>\r\n                            <ion-img src={{palabra3.imagen}} class=\"imagen\"></ion-img>\r\n                        </ion-avatar>\r\n                    </div>\r\n                    <div style=\"position: absolute; left: 0px; right: 120px; top: 126px;\">\r\n                        <ion-segment-button value={{palabra3.audio}} class=\"btnPlay\" (click)=\"playAudio($event)\">\r\n                            <ion-icon src=\"assets/icon/play.svg\"></ion-icon>\r\n                        </ion-segment-button>\r\n                    </div>\r\n                  </div>             \r\n            </ion-col>                   \r\n        </ion-row>\r\n    </ion-grid>\r\n</div>\r\n";
+    __webpack_exports__["default"] = "<div class=\"principal\">\r\n    <ion-grid>\r\n        <!--SECCION SILABAS-->\r\n        <ion-row class=\"rowSilaba\">\r\n            <ion-col>\r\n                <div cdkDropList #silaba1List=\"cdkDropList\" [cdkDropListData]=\"\">\r\n                     \r\n                </div>\r\n                <ion-segment-button fill=\"round\" class=\"silaba\">{{silaba1}}</ion-segment-button>\r\n            </ion-col>\r\n            <ion-col>\r\n                <ion-segment-button fill=\"round\" class=\"silaba\">{{silaba2}}</ion-segment-button>\r\n            </ion-col>\r\n        </ion-row>\r\n        <ion-row class=\"row\" cdkDropList>\r\n            <ion-col >\r\n                <!--SECCION SILABA 1-->\r\n                <div style=\"position: relative;\" cdkDrag>\r\n                    <div style=\"position: absolute; left: 0px; top: 0px;\">\r\n                        <ion-avatar>\r\n                            <ion-img src={{palabra1.imagen}} class=\"imagen\"></ion-img>\r\n                        </ion-avatar>\r\n                    </div>\r\n                    <div style=\"position: absolute; left: 0px; right: 120px; top: 126px;\">\r\n                        <ion-segment-button value={{palabra1.audio}} class=\"btnPlay\" (click)=\"playAudio($event)\">\r\n                            <ion-icon src=\"assets/icon/play.svg\"></ion-icon>\r\n                        </ion-segment-button>\r\n                    </div>\r\n                  </div>\r\n            </ion-col>\r\n            <ion-col>\r\n                <!--SECCION SILABA 2-->\r\n                <div style=\"position: relative;\" cdkDrag>\r\n                    <div style=\"position: absolute; left: 0px; top: 0px;\">\r\n                        <ion-avatar class=\"imagen\">\r\n                            <ion-img src={{palabra2.imagen}}></ion-img>\r\n                        </ion-avatar>\r\n                    </div>\r\n                    <div style=\"position: absolute; left: 0px; right: 120px; top: 126px;\">\r\n                        <ion-segment-button value={{palabra2.audio}} class=\"btnPlay\" (click)=\"playAudio($event)\">\r\n                            <ion-icon src=\"assets/icon/play.svg\"></ion-icon>\r\n                        </ion-segment-button>\r\n                    </div>\r\n                  </div>              \r\n            </ion-col>  \r\n            <ion-col>\r\n                <div style=\"position: relative;\" cdkDrag>\r\n                    <div style=\"position: absolute; left: 0px; top: 0px;\">\r\n                        <ion-avatar>\r\n                            <ion-img src={{palabra3.imagen}} class=\"imagen\"></ion-img>\r\n                        </ion-avatar>\r\n                    </div>\r\n                    <div style=\"position: absolute; left: 0px; right: 120px; top: 126px;\">\r\n                        <ion-segment-button value={{palabra3.audio}} class=\"btnPlay\" (click)=\"playAudio($event)\">\r\n                            <ion-icon src=\"assets/icon/play.svg\"></ion-icon>\r\n                        </ion-segment-button>\r\n                    </div>\r\n                  </div>             \r\n            </ion-col>                   \r\n        </ion-row>\r\n    </ion-grid>\r\n</div>\r\n";
     /***/
   },
 
@@ -649,7 +649,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"principal\">\n  <ion-grid class=\"grid\">\n    <ion-row class=\"rowMensaje\">\n      <ion-col>\n        <ion-label class=\"mensaje\">Escriba su correo para enviarle las instrucciones y recuperar su contraseña</ion-label>\n      </ion-col>\n    </ion-row>\n\n    <ion-row>\n      <ion-col>\n        <ion-label class=\"label\">Correo Electrónico</ion-label>\n        <ion-input [(ngModel)]=\"email\" class=\"input\"></ion-input>\n      </ion-col>\n    </ion-row>\n\n    <ion-row>\n      <ion-button class=\"btnGuardar\" color=\"formButton\" shape=\"round\" (click)=\"sendLinkReset()\">{{comando}}</ion-button>  \n    </ion-row>\n\n  </ion-grid>\n</div>\n";
+    __webpack_exports__["default"] = "<div class=\"principal\">\r\n  <ion-grid class=\"grid\">\r\n    <ion-row class=\"rowMensaje\">\r\n      <ion-col>\r\n        <ion-label class=\"mensaje\">Escriba su correo para enviarle las instrucciones y recuperar su contraseña</ion-label>\r\n      </ion-col>\r\n    </ion-row>\r\n\r\n    <ion-row>\r\n      <ion-col>\r\n        <ion-label class=\"label\">Correo Electrónico</ion-label>\r\n        <ion-input [(ngModel)]=\"email\" class=\"input\"></ion-input>\r\n      </ion-col>\r\n    </ion-row>\r\n\r\n    <ion-row>\r\n      <ion-button class=\"btnGuardar\" color=\"formButton\" shape=\"round\" (click)=\"sendLinkReset()\">{{comando}}</ion-button>  \r\n    </ion-row>\r\n\r\n  </ion-grid>\r\n</div>\r\n";
     /***/
   },
 
@@ -809,7 +809,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"principal\">\n  <ion-grid class=\"grid\">\n    <ion-row>\n      <ion-col>\n        <ion-label class=\"label\">Nombre Completo</ion-label>\n        <ion-input [(ngModel)]=\"nombre\" class=\"input\"></ion-input>\n      </ion-col>\n    </ion-row>\n\n    <ion-row>\n      <ion-col>\n        <ion-label class=\"label\">Institución</ion-label>\n        <ion-input [(ngModel)]=\"institucion\" class=\"input\"></ion-input>\n      </ion-col>\n    </ion-row>\n\n    <ion-row>\n      <ion-col>\n        <ion-label class=\"label\">Correo Electrónico</ion-label>\n        <ion-input [(ngModel)]=\"email\" class=\"input\"></ion-input>\n      </ion-col>\n    </ion-row>\n\n    <ion-row>\n      <ion-col>\n        <ion-label class=\"label\">Contraseña</ion-label>\n        <ion-input [(ngModel)]=\"password\" class=\"input\" type=\"password\"></ion-input>\n      </ion-col>\n    </ion-row>\n\n    <ion-row>\n        <ion-button class=\"btnGuardar\" color=\"formButton\" shape=\"round\" (click)=\"registrar()\">{{comando}}</ion-button>\n    </ion-row>\n\n  </ion-grid>\n</div>\n";
+    __webpack_exports__["default"] = "<div class=\"principal\">\r\n  <ion-grid class=\"grid\">\r\n    <ion-row>\r\n      <ion-col>\r\n        <ion-label class=\"label\">Nombre Completo</ion-label>\r\n        <ion-input [(ngModel)]=\"nombre\" class=\"input\"></ion-input>\r\n      </ion-col>\r\n    </ion-row>\r\n\r\n    <ion-row>\r\n      <ion-col>\r\n        <ion-label class=\"label\">Institución</ion-label>\r\n        <ion-input [(ngModel)]=\"institucion\" class=\"input\"></ion-input>\r\n      </ion-col>\r\n    </ion-row>\r\n\r\n    <ion-row>\r\n      <ion-col>\r\n        <ion-label class=\"label\">Correo Electrónico</ion-label>\r\n        <ion-input [(ngModel)]=\"email\" class=\"input\"></ion-input>\r\n      </ion-col>\r\n    </ion-row>\r\n\r\n    <ion-row>\r\n      <ion-col>\r\n        <ion-label class=\"label\">Contraseña</ion-label>\r\n        <ion-input [(ngModel)]=\"password\" class=\"input\" type=\"password\"></ion-input>\r\n      </ion-col>\r\n    </ion-row>\r\n\r\n    <ion-row>\r\n        <ion-button class=\"btnGuardar\" color=\"formButton\" shape=\"round\" (click)=\"registrar()\">{{comando}}</ion-button>\r\n    </ion-row>\r\n\r\n  </ion-grid>\r\n</div>\r\n";
     /***/
   },
 
@@ -1739,7 +1739,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "@media screen and (min-width: 1280px) and (orientation: landscape) {\n  .principal {\n    position: absolute;\n    width: 554px;\n    height: 264px;\n    margin-left: 360px;\n    margin-right: 360px;\n    top: 318px;\n    background: #7A84DD;\n    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);\n    border-radius: 15px;\n  }\n\n  .tituloUsuario {\n    top: 16px;\n    margin-left: 241px;\n    margin-right: auto;\n    font-style: normal;\n    font-weight: 600;\n    font-size: 20px;\n    text-align: center;\n    color: #FFFFFF;\n  }\n\n  .tituloClave {\n    margin-left: 219px;\n    margin-right: auto;\n    font-style: normal;\n    font-weight: 600;\n    font-size: 20px;\n    line-height: 30px;\n    text-align: center;\n    color: #FFFFFF;\n  }\n\n  .usuario {\n    width: 484px;\n    height: 44px;\n    left: 25px;\n    right: 33px;\n    top: 4px;\n    background: #FFFFFF;\n    border-radius: 3px;\n  }\n\n  .clave {\n    width: 484px;\n    height: 44px;\n    left: 25px;\n    right: 33px;\n    top: 14px;\n    background: #FFFFFF;\n    border-radius: 3px;\n  }\n\n  .btnLogin {\n    position: absolute;\n    width: 150px;\n    height: 44px;\n    left: 203px;\n    right: 201px;\n    top: 18px;\n    bottom: 20px;\n    background: #A9B0F0;\n    border-radius: 6px;\n  }\n\n  .my-custom-class {\n    --background: #e5e5e5;\n    text-align: center;\n  }\n\n  /* DOES NOT WORK - not specific enough */\n  .alert-wrapper {\n    background: #e5e5e5;\n    text-align: center;\n  }\n\n  /* Works - pass \"my-custom-class\" in cssClass to increase specificity */\n  .my-custom-class .alert-wrapper {\n    background: #e5e5e5;\n    text-align: center;\n    font-family: Poppins;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9sb2dpbi9DOlxcVXNlcnNcXGJlcm5hXFxEb2N1bWVudHNcXEdpdEh1YlxcQmxhcHBGb25lbWFzXFxibGFwcC9zcmNcXGFwcFxcY29tcG9uZW50c1xcbG9naW5cXGxvZ2luLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9jb21wb25lbnRzL2xvZ2luL2xvZ2luLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUNBO0VBQ0k7SUFDSSxrQkFBQTtJQUNBLFlBQUE7SUFDQSxhQUFBO0lBQ0Esa0JBQUE7SUFDQSxtQkFBQTtJQUNBLFVBQUE7SUFFQSxtQkFBQTtJQUNBLDJDQUFBO0lBQ0EsbUJBQUE7RUNETjs7RURJRTtJQUdJLFNBQUE7SUFDQSxrQkFBQTtJQUNBLGtCQUFBO0lBRUEsa0JBQUE7SUFDQSxnQkFBQTtJQUNBLGVBQUE7SUFDQSxrQkFBQTtJQUdBLGNBQUE7RUNOTjs7RURRRTtJQUdJLGtCQUFBO0lBQ0Esa0JBQUE7SUFHQSxrQkFBQTtJQUNBLGdCQUFBO0lBQ0EsZUFBQTtJQUNBLGlCQUFBO0lBQ0Esa0JBQUE7SUFJQSxjQUFBO0VDWk47O0VEY0U7SUFDSSxZQUFBO0lBQ0EsWUFBQTtJQUNBLFVBQUE7SUFDQSxXQUFBO0lBQ0EsUUFBQTtJQUNBLG1CQUFBO0lBQ0Esa0JBQUE7RUNYTjs7RURjRTtJQUNJLFlBQUE7SUFDQSxZQUFBO0lBQ0EsVUFBQTtJQUNBLFdBQUE7SUFDQSxTQUFBO0lBQ0EsbUJBQUE7SUFDQSxrQkFBQTtFQ1hOOztFRGNFO0lBQ0ksa0JBQUE7SUFDQSxZQUFBO0lBQ0EsWUFBQTtJQUNBLFdBQUE7SUFDQSxZQUFBO0lBQ0EsU0FBQTtJQUNBLFlBQUE7SUFFQSxtQkFBQTtJQUNBLGtCQUFBO0VDWk47O0VEZ0JFO0lBQ0kscUJBQUE7SUFDQSxrQkFBQTtFQ2JOOztFRGdCRSx3Q0FBQTtFQUNBO0lBQ0ksbUJBQUE7SUFDQSxrQkFBQTtFQ2JOOztFRGdCQSx1RUFBQTtFQUNFO0lBQ0ksbUJBQUE7SUFDQSxrQkFBQTtJQUNBLG9CQUFBO0VDYk47QUFDRiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvbG9naW4vbG9naW4uY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJcclxuQG1lZGlhIHNjcmVlbiBhbmQgKG1pbi13aWR0aDoxMjgwcHgpIGFuZCAob3JpZW50YXRpb246IGxhbmRzY2FwZSl7ICBcclxuICAgIC5wcmluY2lwYWx7XHJcbiAgICAgICAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gICAgICAgIHdpZHRoOiA1NTRweDtcclxuICAgICAgICBoZWlnaHQ6IDI2NHB4O1xyXG4gICAgICAgIG1hcmdpbi1sZWZ0OiAzNjBweDtcclxuICAgICAgICBtYXJnaW4tcmlnaHQ6IDM2MHB4O1xyXG4gICAgICAgIHRvcDogMzE4cHg7XHJcbiAgICAgICAgXHJcbiAgICAgICAgYmFja2dyb3VuZDogIzdBODRERDtcclxuICAgICAgICBib3gtc2hhZG93OiAwcHggNHB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMjUpO1xyXG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDE1cHg7ICAgIFxyXG4gICAgfSAgICBcclxuXHJcbiAgICAudGl0dWxvVXN1YXJpb3tcclxuICAgICAgICAvL3dpZHRoOiAxMDBweDtcclxuICAgICAgICAvL2hlaWdodDogMzBweDsgICAgXHJcbiAgICAgICAgdG9wOiAxNnB4O1xyXG4gICAgICAgIG1hcmdpbi1sZWZ0OiAyNDFweDtcclxuICAgICAgICBtYXJnaW4tcmlnaHQ6IGF1dG87XHJcbiAgICAgICAgLy9mb250LWZhbWlseTogUG9wcGlucztcclxuICAgICAgICBmb250LXN0eWxlOiBub3JtYWw7XHJcbiAgICAgICAgZm9udC13ZWlnaHQ6IDYwMDtcclxuICAgICAgICBmb250LXNpemU6IDIwcHg7XHJcbiAgICAgICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgICAgIC8vbGluZS1oZWlnaHQ6IDMwcHg7IFxyXG5cclxuICAgICAgICBjb2xvcjogI0ZGRkZGRjsgICAgXHJcbiAgICB9ICAgXHJcbiAgICAudGl0dWxvQ2xhdmV7XHJcbiAgICAgICAgLy93aWR0aDogMTIxcHg7XHJcbiAgICAgICAgLy9oZWlnaHQ6IDMwcHg7ICBcclxuICAgICAgICBtYXJnaW4tbGVmdDogMjE5cHg7XHJcbiAgICAgICAgbWFyZ2luLXJpZ2h0OiBhdXRvOyBcclxuICAgIFxyXG4gICAgICAgIC8vZm9udC1mYW1pbHk6IFBvcHBpbnM7XHJcbiAgICAgICAgZm9udC1zdHlsZTogbm9ybWFsO1xyXG4gICAgICAgIGZvbnQtd2VpZ2h0OiA2MDA7XHJcbiAgICAgICAgZm9udC1zaXplOiAyMHB4O1xyXG4gICAgICAgIGxpbmUtaGVpZ2h0OiAzMHB4O1xyXG4gICAgICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgICAgICBcclxuXHJcbiAgICAgICAgXHJcbiAgICAgICAgY29sb3I6ICNGRkZGRkY7ICAgIFxyXG4gICAgfVxyXG4gICAgLnVzdWFyaW97XHJcbiAgICAgICAgd2lkdGg6IDQ4NHB4O1xyXG4gICAgICAgIGhlaWdodDogNDRweDtcclxuICAgICAgICBsZWZ0OiAyNXB4O1xyXG4gICAgICAgIHJpZ2h0OiAzM3B4OyAgICBcclxuICAgICAgICB0b3A6IDRweDtcclxuICAgICAgICBiYWNrZ3JvdW5kOiAjRkZGRkZGO1xyXG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDNweDsgICAgXHJcbiAgICBcclxuICAgIH1cclxuICAgIC5jbGF2ZXtcclxuICAgICAgICB3aWR0aDogNDg0cHg7XHJcbiAgICAgICAgaGVpZ2h0OiA0NHB4O1xyXG4gICAgICAgIGxlZnQ6IDI1cHg7XHJcbiAgICAgICAgcmlnaHQ6IDMzcHg7XHJcbiAgICAgICAgdG9wOiAxNHB4O1xyXG4gICAgICAgIGJhY2tncm91bmQ6ICNGRkZGRkY7XHJcbiAgICAgICAgYm9yZGVyLXJhZGl1czogM3B4OyAgICBcclxuICAgIFxyXG4gICAgfVxyXG4gICAgLmJ0bkxvZ2lue1xyXG4gICAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgICAgICB3aWR0aDogMTUwcHg7XHJcbiAgICAgICAgaGVpZ2h0OiA0NHB4O1xyXG4gICAgICAgIGxlZnQ6IDIwM3B4O1xyXG4gICAgICAgIHJpZ2h0OiAyMDFweDtcclxuICAgICAgICB0b3A6IDE4cHg7XHJcbiAgICAgICAgYm90dG9tOiAyMHB4O1xyXG4gICAgICAgIFxyXG4gICAgICAgIGJhY2tncm91bmQ6ICNBOUIwRjA7XHJcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNnB4OyAgICBcclxuICAgIH0gXHJcblxyXG4gICAgLy9Fc3RpbG9zIGFsZXJ0XHJcbiAgICAubXktY3VzdG9tLWNsYXNzIHtcclxuICAgICAgICAtLWJhY2tncm91bmQ6ICNlNWU1ZTU7XHJcbiAgICAgICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgICB9XHJcblxyXG4gICAgLyogRE9FUyBOT1QgV09SSyAtIG5vdCBzcGVjaWZpYyBlbm91Z2ggKi9cclxuICAgIC5hbGVydC13cmFwcGVyIHtcclxuICAgICAgICBiYWNrZ3JvdW5kOiAjZTVlNWU1O1xyXG4gICAgICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgIH1cclxuICBcclxuICAvKiBXb3JrcyAtIHBhc3MgXCJteS1jdXN0b20tY2xhc3NcIiBpbiBjc3NDbGFzcyB0byBpbmNyZWFzZSBzcGVjaWZpY2l0eSAqL1xyXG4gICAgLm15LWN1c3RvbS1jbGFzcyAuYWxlcnQtd3JhcHBlciB7XHJcbiAgICAgICAgYmFja2dyb3VuZDogI2U1ZTVlNTtcclxuICAgICAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICAgICAgZm9udC1mYW1pbHk6IFBvcHBpbnM7XHJcbiAgICB9XHJcbiAgICBcclxufVxyXG5cclxuIiwiQG1lZGlhIHNjcmVlbiBhbmQgKG1pbi13aWR0aDogMTI4MHB4KSBhbmQgKG9yaWVudGF0aW9uOiBsYW5kc2NhcGUpIHtcbiAgLnByaW5jaXBhbCB7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIHdpZHRoOiA1NTRweDtcbiAgICBoZWlnaHQ6IDI2NHB4O1xuICAgIG1hcmdpbi1sZWZ0OiAzNjBweDtcbiAgICBtYXJnaW4tcmlnaHQ6IDM2MHB4O1xuICAgIHRvcDogMzE4cHg7XG4gICAgYmFja2dyb3VuZDogIzdBODRERDtcbiAgICBib3gtc2hhZG93OiAwcHggNHB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMjUpO1xuICAgIGJvcmRlci1yYWRpdXM6IDE1cHg7XG4gIH1cblxuICAudGl0dWxvVXN1YXJpbyB7XG4gICAgdG9wOiAxNnB4O1xuICAgIG1hcmdpbi1sZWZ0OiAyNDFweDtcbiAgICBtYXJnaW4tcmlnaHQ6IGF1dG87XG4gICAgZm9udC1zdHlsZTogbm9ybWFsO1xuICAgIGZvbnQtd2VpZ2h0OiA2MDA7XG4gICAgZm9udC1zaXplOiAyMHB4O1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICBjb2xvcjogI0ZGRkZGRjtcbiAgfVxuXG4gIC50aXR1bG9DbGF2ZSB7XG4gICAgbWFyZ2luLWxlZnQ6IDIxOXB4O1xuICAgIG1hcmdpbi1yaWdodDogYXV0bztcbiAgICBmb250LXN0eWxlOiBub3JtYWw7XG4gICAgZm9udC13ZWlnaHQ6IDYwMDtcbiAgICBmb250LXNpemU6IDIwcHg7XG4gICAgbGluZS1oZWlnaHQ6IDMwcHg7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xuICAgIGNvbG9yOiAjRkZGRkZGO1xuICB9XG5cbiAgLnVzdWFyaW8ge1xuICAgIHdpZHRoOiA0ODRweDtcbiAgICBoZWlnaHQ6IDQ0cHg7XG4gICAgbGVmdDogMjVweDtcbiAgICByaWdodDogMzNweDtcbiAgICB0b3A6IDRweDtcbiAgICBiYWNrZ3JvdW5kOiAjRkZGRkZGO1xuICAgIGJvcmRlci1yYWRpdXM6IDNweDtcbiAgfVxuXG4gIC5jbGF2ZSB7XG4gICAgd2lkdGg6IDQ4NHB4O1xuICAgIGhlaWdodDogNDRweDtcbiAgICBsZWZ0OiAyNXB4O1xuICAgIHJpZ2h0OiAzM3B4O1xuICAgIHRvcDogMTRweDtcbiAgICBiYWNrZ3JvdW5kOiAjRkZGRkZGO1xuICAgIGJvcmRlci1yYWRpdXM6IDNweDtcbiAgfVxuXG4gIC5idG5Mb2dpbiB7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIHdpZHRoOiAxNTBweDtcbiAgICBoZWlnaHQ6IDQ0cHg7XG4gICAgbGVmdDogMjAzcHg7XG4gICAgcmlnaHQ6IDIwMXB4O1xuICAgIHRvcDogMThweDtcbiAgICBib3R0b206IDIwcHg7XG4gICAgYmFja2dyb3VuZDogI0E5QjBGMDtcbiAgICBib3JkZXItcmFkaXVzOiA2cHg7XG4gIH1cblxuICAubXktY3VzdG9tLWNsYXNzIHtcbiAgICAtLWJhY2tncm91bmQ6ICNlNWU1ZTU7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xuICB9XG5cbiAgLyogRE9FUyBOT1QgV09SSyAtIG5vdCBzcGVjaWZpYyBlbm91Z2ggKi9cbiAgLmFsZXJ0LXdyYXBwZXIge1xuICAgIGJhY2tncm91bmQ6ICNlNWU1ZTU7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xuICB9XG5cbiAgLyogV29ya3MgLSBwYXNzIFwibXktY3VzdG9tLWNsYXNzXCIgaW4gY3NzQ2xhc3MgdG8gaW5jcmVhc2Ugc3BlY2lmaWNpdHkgKi9cbiAgLm15LWN1c3RvbS1jbGFzcyAuYWxlcnQtd3JhcHBlciB7XG4gICAgYmFja2dyb3VuZDogI2U1ZTVlNTtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgZm9udC1mYW1pbHk6IFBvcHBpbnM7XG4gIH1cbn0iXX0= */";
+    __webpack_exports__["default"] = "@media screen and (min-width: 1280px) and (orientation: landscape) {\n  .principal {\n    position: absolute;\n    width: 554px;\n    height: 264px;\n    margin-left: 360px;\n    margin-right: 360px;\n    top: 318px;\n    background: #7A84DD;\n    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);\n    border-radius: 15px;\n  }\n\n  .tituloUsuario {\n    top: 16px;\n    margin-left: 241px;\n    margin-right: auto;\n    font-style: normal;\n    font-weight: 600;\n    font-size: 20px;\n    text-align: center;\n    color: #FFFFFF;\n  }\n\n  .tituloClave {\n    margin-left: 219px;\n    margin-right: auto;\n    font-style: normal;\n    font-weight: 600;\n    font-size: 20px;\n    line-height: 30px;\n    text-align: center;\n    color: #FFFFFF;\n  }\n\n  .usuario {\n    width: 484px;\n    height: 44px;\n    left: 25px;\n    right: 33px;\n    top: 4px;\n    background: #FFFFFF;\n    border-radius: 3px;\n  }\n\n  .clave {\n    width: 484px;\n    height: 44px;\n    left: 25px;\n    right: 33px;\n    top: 14px;\n    background: #FFFFFF;\n    border-radius: 3px;\n  }\n\n  .btnLogin {\n    position: absolute;\n    width: 150px;\n    height: 44px;\n    left: 203px;\n    right: 201px;\n    top: 18px;\n    bottom: 20px;\n    background: #A9B0F0;\n    border-radius: 6px;\n  }\n\n  .alertClass {\n    --background: blue;\n    text-align: center;\n  }\n\n  /* DOES NOT WORK - not specific enough \n  .alert-wrapper {\n      background: #e5e5e5;\n      text-align: center;\n  }\n   DOES NOT WORK - not specific enough */\n  /* Works - pass \"my-custom-class\" in cssClass to increase specificity \n    .my-custom-class .alert-wrapper {\n        background: #e5e5e5;\n        text-align: center;\n        font-family: Poppins;\n    }\n    DOES NOT WORK - not specific enough */\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9sb2dpbi9DOlxcVXNlcnNcXGJlcm5hXFxEb2N1bWVudHNcXEdpdEh1YlxcQmxhcHBGb25lbWFzXFxibGFwcC9zcmNcXGFwcFxcY29tcG9uZW50c1xcbG9naW5cXGxvZ2luLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9jb21wb25lbnRzL2xvZ2luL2xvZ2luLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUNBO0VBQ0k7SUFDSSxrQkFBQTtJQUNBLFlBQUE7SUFDQSxhQUFBO0lBQ0Esa0JBQUE7SUFDQSxtQkFBQTtJQUNBLFVBQUE7SUFFQSxtQkFBQTtJQUNBLDJDQUFBO0lBQ0EsbUJBQUE7RUNETjs7RURJRTtJQUdJLFNBQUE7SUFDQSxrQkFBQTtJQUNBLGtCQUFBO0lBRUEsa0JBQUE7SUFDQSxnQkFBQTtJQUNBLGVBQUE7SUFDQSxrQkFBQTtJQUdBLGNBQUE7RUNOTjs7RURRRTtJQUdJLGtCQUFBO0lBQ0Esa0JBQUE7SUFHQSxrQkFBQTtJQUNBLGdCQUFBO0lBQ0EsZUFBQTtJQUNBLGlCQUFBO0lBQ0Esa0JBQUE7SUFJQSxjQUFBO0VDWk47O0VEY0U7SUFDSSxZQUFBO0lBQ0EsWUFBQTtJQUNBLFVBQUE7SUFDQSxXQUFBO0lBQ0EsUUFBQTtJQUNBLG1CQUFBO0lBQ0Esa0JBQUE7RUNYTjs7RURjRTtJQUNJLFlBQUE7SUFDQSxZQUFBO0lBQ0EsVUFBQTtJQUNBLFdBQUE7SUFDQSxTQUFBO0lBQ0EsbUJBQUE7SUFDQSxrQkFBQTtFQ1hOOztFRGNFO0lBQ0ksa0JBQUE7SUFDQSxZQUFBO0lBQ0EsWUFBQTtJQUNBLFdBQUE7SUFDQSxZQUFBO0lBQ0EsU0FBQTtJQUNBLFlBQUE7SUFFQSxtQkFBQTtJQUNBLGtCQUFBO0VDWk47O0VEZ0JFO0lBQ0ksa0JBQUE7SUFDQSxrQkFBQTtFQ2JOOztFRGdCRTs7Ozs7d0NBQUE7RUFPRjs7Ozs7O3lDQUFBO0FDUkYiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL2xvZ2luL2xvZ2luLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiXHJcbkBtZWRpYSBzY3JlZW4gYW5kIChtaW4td2lkdGg6MTI4MHB4KSBhbmQgKG9yaWVudGF0aW9uOiBsYW5kc2NhcGUpeyAgXHJcbiAgICAucHJpbmNpcGFse1xyXG4gICAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgICAgICB3aWR0aDogNTU0cHg7XHJcbiAgICAgICAgaGVpZ2h0OiAyNjRweDtcclxuICAgICAgICBtYXJnaW4tbGVmdDogMzYwcHg7XHJcbiAgICAgICAgbWFyZ2luLXJpZ2h0OiAzNjBweDtcclxuICAgICAgICB0b3A6IDMxOHB4O1xyXG4gICAgICAgIFxyXG4gICAgICAgIGJhY2tncm91bmQ6ICM3QTg0REQ7XHJcbiAgICAgICAgYm94LXNoYWRvdzogMHB4IDRweCA0cHggcmdiYSgwLCAwLCAwLCAwLjI1KTtcclxuICAgICAgICBib3JkZXItcmFkaXVzOiAxNXB4OyAgICBcclxuICAgIH0gICAgXHJcblxyXG4gICAgLnRpdHVsb1VzdWFyaW97XHJcbiAgICAgICAgLy93aWR0aDogMTAwcHg7XHJcbiAgICAgICAgLy9oZWlnaHQ6IDMwcHg7ICAgIFxyXG4gICAgICAgIHRvcDogMTZweDtcclxuICAgICAgICBtYXJnaW4tbGVmdDogMjQxcHg7XHJcbiAgICAgICAgbWFyZ2luLXJpZ2h0OiBhdXRvO1xyXG4gICAgICAgIC8vZm9udC1mYW1pbHk6IFBvcHBpbnM7XHJcbiAgICAgICAgZm9udC1zdHlsZTogbm9ybWFsO1xyXG4gICAgICAgIGZvbnQtd2VpZ2h0OiA2MDA7XHJcbiAgICAgICAgZm9udC1zaXplOiAyMHB4O1xyXG4gICAgICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgICAgICAvL2xpbmUtaGVpZ2h0OiAzMHB4OyBcclxuXHJcbiAgICAgICAgY29sb3I6ICNGRkZGRkY7ICAgIFxyXG4gICAgfSAgIFxyXG4gICAgLnRpdHVsb0NsYXZle1xyXG4gICAgICAgIC8vd2lkdGg6IDEyMXB4O1xyXG4gICAgICAgIC8vaGVpZ2h0OiAzMHB4OyAgXHJcbiAgICAgICAgbWFyZ2luLWxlZnQ6IDIxOXB4O1xyXG4gICAgICAgIG1hcmdpbi1yaWdodDogYXV0bzsgXHJcbiAgICBcclxuICAgICAgICAvL2ZvbnQtZmFtaWx5OiBQb3BwaW5zO1xyXG4gICAgICAgIGZvbnQtc3R5bGU6IG5vcm1hbDtcclxuICAgICAgICBmb250LXdlaWdodDogNjAwO1xyXG4gICAgICAgIGZvbnQtc2l6ZTogMjBweDtcclxuICAgICAgICBsaW5lLWhlaWdodDogMzBweDtcclxuICAgICAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICAgICAgXHJcblxyXG4gICAgICAgIFxyXG4gICAgICAgIGNvbG9yOiAjRkZGRkZGOyAgICBcclxuICAgIH1cclxuICAgIC51c3Vhcmlve1xyXG4gICAgICAgIHdpZHRoOiA0ODRweDtcclxuICAgICAgICBoZWlnaHQ6IDQ0cHg7XHJcbiAgICAgICAgbGVmdDogMjVweDtcclxuICAgICAgICByaWdodDogMzNweDsgICAgXHJcbiAgICAgICAgdG9wOiA0cHg7XHJcbiAgICAgICAgYmFja2dyb3VuZDogI0ZGRkZGRjtcclxuICAgICAgICBib3JkZXItcmFkaXVzOiAzcHg7ICAgIFxyXG4gICAgXHJcbiAgICB9XHJcbiAgICAuY2xhdmV7XHJcbiAgICAgICAgd2lkdGg6IDQ4NHB4O1xyXG4gICAgICAgIGhlaWdodDogNDRweDtcclxuICAgICAgICBsZWZ0OiAyNXB4O1xyXG4gICAgICAgIHJpZ2h0OiAzM3B4O1xyXG4gICAgICAgIHRvcDogMTRweDtcclxuICAgICAgICBiYWNrZ3JvdW5kOiAjRkZGRkZGO1xyXG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDNweDsgICAgXHJcbiAgICBcclxuICAgIH1cclxuICAgIC5idG5Mb2dpbntcclxuICAgICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICAgICAgd2lkdGg6IDE1MHB4O1xyXG4gICAgICAgIGhlaWdodDogNDRweDtcclxuICAgICAgICBsZWZ0OiAyMDNweDtcclxuICAgICAgICByaWdodDogMjAxcHg7XHJcbiAgICAgICAgdG9wOiAxOHB4O1xyXG4gICAgICAgIGJvdHRvbTogMjBweDtcclxuICAgICAgICBcclxuICAgICAgICBiYWNrZ3JvdW5kOiAjQTlCMEYwO1xyXG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDZweDsgICAgXHJcbiAgICB9IFxyXG5cclxuICAgIC8vRXN0aWxvcyBhbGVydFxyXG4gICAgLmFsZXJ0Q2xhc3N7XHJcbiAgICAgICAgLS1iYWNrZ3JvdW5kOiBibHVlO1xyXG4gICAgICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgICAgfVxyXG5cclxuICAgIC8qIERPRVMgTk9UIFdPUksgLSBub3Qgc3BlY2lmaWMgZW5vdWdoIFxyXG4gICAgLmFsZXJ0LXdyYXBwZXIge1xyXG4gICAgICAgIGJhY2tncm91bmQ6ICNlNWU1ZTU7XHJcbiAgICAgICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgfVxyXG4gICAgIERPRVMgTk9UIFdPUksgLSBub3Qgc3BlY2lmaWMgZW5vdWdoICovXHJcbiAgXHJcbiAgLyogV29ya3MgLSBwYXNzIFwibXktY3VzdG9tLWNsYXNzXCIgaW4gY3NzQ2xhc3MgdG8gaW5jcmVhc2Ugc3BlY2lmaWNpdHkgXHJcbiAgICAubXktY3VzdG9tLWNsYXNzIC5hbGVydC13cmFwcGVyIHtcclxuICAgICAgICBiYWNrZ3JvdW5kOiAjZTVlNWU1O1xyXG4gICAgICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgICAgICBmb250LWZhbWlseTogUG9wcGlucztcclxuICAgIH1cclxuICAgIERPRVMgTk9UIFdPUksgLSBub3Qgc3BlY2lmaWMgZW5vdWdoICovXHJcbiAgICBcclxufVxyXG5cclxuIiwiQG1lZGlhIHNjcmVlbiBhbmQgKG1pbi13aWR0aDogMTI4MHB4KSBhbmQgKG9yaWVudGF0aW9uOiBsYW5kc2NhcGUpIHtcbiAgLnByaW5jaXBhbCB7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIHdpZHRoOiA1NTRweDtcbiAgICBoZWlnaHQ6IDI2NHB4O1xuICAgIG1hcmdpbi1sZWZ0OiAzNjBweDtcbiAgICBtYXJnaW4tcmlnaHQ6IDM2MHB4O1xuICAgIHRvcDogMzE4cHg7XG4gICAgYmFja2dyb3VuZDogIzdBODRERDtcbiAgICBib3gtc2hhZG93OiAwcHggNHB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMjUpO1xuICAgIGJvcmRlci1yYWRpdXM6IDE1cHg7XG4gIH1cblxuICAudGl0dWxvVXN1YXJpbyB7XG4gICAgdG9wOiAxNnB4O1xuICAgIG1hcmdpbi1sZWZ0OiAyNDFweDtcbiAgICBtYXJnaW4tcmlnaHQ6IGF1dG87XG4gICAgZm9udC1zdHlsZTogbm9ybWFsO1xuICAgIGZvbnQtd2VpZ2h0OiA2MDA7XG4gICAgZm9udC1zaXplOiAyMHB4O1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICBjb2xvcjogI0ZGRkZGRjtcbiAgfVxuXG4gIC50aXR1bG9DbGF2ZSB7XG4gICAgbWFyZ2luLWxlZnQ6IDIxOXB4O1xuICAgIG1hcmdpbi1yaWdodDogYXV0bztcbiAgICBmb250LXN0eWxlOiBub3JtYWw7XG4gICAgZm9udC13ZWlnaHQ6IDYwMDtcbiAgICBmb250LXNpemU6IDIwcHg7XG4gICAgbGluZS1oZWlnaHQ6IDMwcHg7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xuICAgIGNvbG9yOiAjRkZGRkZGO1xuICB9XG5cbiAgLnVzdWFyaW8ge1xuICAgIHdpZHRoOiA0ODRweDtcbiAgICBoZWlnaHQ6IDQ0cHg7XG4gICAgbGVmdDogMjVweDtcbiAgICByaWdodDogMzNweDtcbiAgICB0b3A6IDRweDtcbiAgICBiYWNrZ3JvdW5kOiAjRkZGRkZGO1xuICAgIGJvcmRlci1yYWRpdXM6IDNweDtcbiAgfVxuXG4gIC5jbGF2ZSB7XG4gICAgd2lkdGg6IDQ4NHB4O1xuICAgIGhlaWdodDogNDRweDtcbiAgICBsZWZ0OiAyNXB4O1xuICAgIHJpZ2h0OiAzM3B4O1xuICAgIHRvcDogMTRweDtcbiAgICBiYWNrZ3JvdW5kOiAjRkZGRkZGO1xuICAgIGJvcmRlci1yYWRpdXM6IDNweDtcbiAgfVxuXG4gIC5idG5Mb2dpbiB7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIHdpZHRoOiAxNTBweDtcbiAgICBoZWlnaHQ6IDQ0cHg7XG4gICAgbGVmdDogMjAzcHg7XG4gICAgcmlnaHQ6IDIwMXB4O1xuICAgIHRvcDogMThweDtcbiAgICBib3R0b206IDIwcHg7XG4gICAgYmFja2dyb3VuZDogI0E5QjBGMDtcbiAgICBib3JkZXItcmFkaXVzOiA2cHg7XG4gIH1cblxuICAuYWxlcnRDbGFzcyB7XG4gICAgLS1iYWNrZ3JvdW5kOiBibHVlO1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgfVxuXG4gIC8qIERPRVMgTk9UIFdPUksgLSBub3Qgc3BlY2lmaWMgZW5vdWdoIFxuICAuYWxlcnQtd3JhcHBlciB7XG4gICAgICBiYWNrZ3JvdW5kOiAjZTVlNWU1O1xuICAgICAgdGV4dC1hbGlnbjogY2VudGVyO1xuICB9XG4gICBET0VTIE5PVCBXT1JLIC0gbm90IHNwZWNpZmljIGVub3VnaCAqL1xuICAvKiBXb3JrcyAtIHBhc3MgXCJteS1jdXN0b20tY2xhc3NcIiBpbiBjc3NDbGFzcyB0byBpbmNyZWFzZSBzcGVjaWZpY2l0eSBcbiAgICAubXktY3VzdG9tLWNsYXNzIC5hbGVydC13cmFwcGVyIHtcbiAgICAgICAgYmFja2dyb3VuZDogI2U1ZTVlNTtcbiAgICAgICAgdGV4dC1hbGlnbjogY2VudGVyO1xuICAgICAgICBmb250LWZhbWlseTogUG9wcGlucztcbiAgICB9XG4gICAgRE9FUyBOT1QgV09SSyAtIG5vdCBzcGVjaWZpYyBlbm91Z2ggKi9cbn0iXX0= */";
     /***/
   },
 
@@ -1902,7 +1902,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             _this2.presentAlert(); // this.route.navigate(['/menu']); // Se requiere validar entre estudiantes y docentes
 
           }).catch(function (err) {
-            return alert('Los datos son incorrectos o el usuario no existe');
+            return _this2.errorAlert();
           });
         }
       }, {
@@ -3941,6 +3941,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         _classCallCheck(this, PhonemeGamePanelComponent);
 
         this.audio = new Audio();
+        this.silabaA = [];
+        this.silabaB = [];
         this.palabras = [];
         this.silabas = [];
         this.palabrasJuego = [];
@@ -5631,13 +5633,20 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
     /*! @angular/cdk/drag-drop */
     "./node_modules/@angular/cdk/esm2015/drag-drop.js");
+    /* harmony import */
+
+
+    var _ionic_angular__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! @ionic/angular */
+    "./node_modules/@ionic/angular/fesm2015/ionic-angular.js");
 
     var SemanticsGamePanelComponent =
     /*#__PURE__*/
     function () {
-      function SemanticsGamePanelComponent() {
+      function SemanticsGamePanelComponent(alertController) {
         _classCallCheck(this, SemanticsGamePanelComponent);
 
+        this.alertController = alertController;
         this.audio = new Audio();
         this.subcategoria = [];
         this.sujeto = [];
@@ -5653,6 +5662,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.imagenes = [];
           this.getImagenes();
         }
+      }, {
+        key: "aciertoJuego",
+        value: function aciertoJuego() {}
       }, {
         key: "getImagenes",
         value: function getImagenes() {
@@ -5692,16 +5704,35 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         value: function ngOnChanges() {
           //Called before any other lifecycle hook. Use it to inject dependencies, but avoid any serious work here.
           //Add '${implements OnChanges}' to the class.
+          this.revision();
           this.imagenes = [];
           this.getImagenes(); // console.log(this.imagenes[0], this.imagenes[1], this.imagenes[2]);
+        }
+      }, {
+        key: "revision",
+        value: function revision() {
+          if (this.imagenes.length === 0) {
+            this.sujeto = [];
+            this.verbo = [];
+            this.predicado = [];
+            this.getImagenes();
+          }
         }
       }, {
         key: "drop",
         value: function drop(event) {
           if (event.previousContainer === event.container) {
             Object(_angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_2__["moveItemInArray"])(event.container.data, event.previousIndex, event.currentIndex);
+            this.audio.src = 'assets/audio/notificaciones/error.mp3';
+            this.audio.load();
+            this.audio.play();
+            this.errorAlert();
           } else {
             Object(_angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_2__["transferArrayItem"])(event.previousContainer.data, event.container.data, event.previousIndex, event.currentIndex);
+            this.audio.src = 'assets/audio/notificaciones/fantastic.mp3';
+            this.audio.load();
+            this.audio.play();
+            this.presentAlert();
           }
         }
       }, {
@@ -5737,10 +5768,82 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "playSound",
         value: function playSound() {}
+      }, {
+        key: "presentAlert",
+        value: function presentAlert() {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee5() {
+            var alert;
+            return regeneratorRuntime.wrap(function _callee5$(_context5) {
+              while (1) {
+                switch (_context5.prev = _context5.next) {
+                  case 0:
+                    _context5.next = 2;
+                    return this.alertController.create({
+                      cssClass: 'fantastic',
+                      header: '',
+                      subHeader: '',
+                      message: '',
+                      buttons: ['OK']
+                    });
+
+                  case 2:
+                    alert = _context5.sent;
+                    _context5.next = 5;
+                    return alert.present();
+
+                  case 5:
+                  case "end":
+                    return _context5.stop();
+                }
+              }
+            }, _callee5, this);
+          }));
+        }
+      }, {
+        key: "errorAlert",
+        value: function errorAlert() {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee6() {
+            var alert;
+            return regeneratorRuntime.wrap(function _callee6$(_context6) {
+              while (1) {
+                switch (_context6.prev = _context6.next) {
+                  case 0:
+                    _context6.next = 2;
+                    return this.alertController.create({
+                      cssClass: 'try',
+                      header: '         ',
+                      subHeader: '        ',
+                      message: '          ',
+                      buttons: ['OK']
+                    });
+
+                  case 2:
+                    alert = _context6.sent;
+                    _context6.next = 5;
+                    return alert.present();
+
+                  case 5:
+                  case "end":
+                    return _context6.stop();
+                }
+              }
+            }, _callee6, this);
+          }));
+        }
       }]);
 
       return SemanticsGamePanelComponent;
     }();
+
+    SemanticsGamePanelComponent.ctorParameters = function () {
+      return [{
+        type: _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["AlertController"]
+      }];
+    };
 
     tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Object)], SemanticsGamePanelComponent.prototype, "subcategoryOneData", void 0);
     tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)], SemanticsGamePanelComponent.prototype, "nombreSubcategoria", void 0);
@@ -5752,7 +5855,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
       /*! ./semantics-game-panel.component.scss */
       "./src/app/components/semantics/semantics-game-panel/semantics-game-panel.component.scss")).default]
-    }), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])], SemanticsGamePanelComponent);
+    }), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_angular__WEBPACK_IMPORTED_MODULE_3__["AlertController"]])], SemanticsGamePanelComponent);
     /***/
   },
 
@@ -6796,6 +6899,120 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         nombre: 'Bu',
         audio: 'assets/audio/fonemas/silabas/b/Bu.mp3',
+        duracion: 4,
+        reproduciendo: false
+      }]
+    }, //C-K-Q
+    {
+      consonante: 'ckq',
+      data: [{
+        nombre: 'Ca-mi-sa',
+        silaba: 'Ca',
+        audio: 'assets/audio/fonemas/consonantes/ckq/Camisa.mp3',
+        imagen: 'assets/img/fonemas/consonantes/ckq/Camisa.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Ca-ra-col',
+        silaba: 'Ca',
+        audio: 'assets/audio/fonemas/consonantes/ckq/Caracol.mp3',
+        imagen: 'assets/img/fonemas/consonantes/ckq/Caracol.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Co-ne-jo',
+        silaba: 'Co',
+        audio: 'assets/audio/fonemas/consonantes/ckq/Conejo.mp3',
+        imagen: 'assets/img/fonemas/consonantes/ckq/Conejo.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Co-co',
+        silaba: 'Co',
+        audio: 'assets/audio/fonemas/consonantes/ckq/Coco.mp3',
+        imagen: 'assets/img/fonemas/consonantes/ckq/Coco.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Co-li-flor',
+        silaba: 'Co',
+        audio: 'assets/audio/fonemas/consonantes/ckq/Coliflor.mp3',
+        imagen: 'assets/img/fonemas/consonantes/ckq/Coliflor.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Co-mer',
+        silaba: 'Co',
+        audio: 'assets/audio/fonemas/consonantes/ckq/Comer.mp3',
+        imagen: 'assets/img/fonemas/consonantes/ckq/Comer.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Ka-ra-te',
+        silaba: 'ka',
+        audio: 'assets/audio/fonemas/consonantes/ckq/Karate.mp3',
+        imagen: 'assets/img/fonemas/consonantes/ckq/Karate.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Kin-der',
+        silaba: 'ki',
+        audio: 'assets/audio/fonemas/consonantes/ckq/Kinder.mp3',
+        imagen: 'assets/img/fonemas/consonantes/ckq/Kinder.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Ki-wi',
+        silaba: 'ki',
+        audio: 'assets/audio/fonemas/consonantes/ckq/Kiwi.mp3',
+        imagen: 'assets/img/fonemas/consonantes/ckq/Kiwi.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Ko-a-la',
+        silaba: 'ko',
+        audio: 'assets/audio/fonemas/consonantes/ckq/Koala.mp3',
+        imagen: 'assets/img/fonemas/consonantes/ckq/Koala.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Que-que',
+        silaba: 'que',
+        audio: 'assets/audio/fonemas/consonantes/ckq/Queque.mp3',
+        imagen: 'assets/img/fonemas/consonantes/ckq/Queque.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Qui-que',
+        silaba: 'qui',
+        audio: 'assets/audio/fonemas/consonantes/ckq/Quique.mp3',
+        imagen: 'assets/img/fonemas/consonantes/ckq/Quique.jpg',
+        duracion: 4,
+        reproduciendo: false
+      }],
+      dataS: [{
+        nombre: 'Ca',
+        audio: 'assets/audio/fonemas/silabas/ckq/Ca.mp3',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Co',
+        audio: 'assets/audio/fonemas/silabas/ckq/Co.mp3',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Cu',
+        audio: 'assets/audio/fonemas/silabas/ckq/Cu.mp3',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Que',
+        audio: 'assets/audio/fonemas/silabas/ckq/Que.mp3',
+        duracion: 4,
+        reproduciendo: false
+      }, {
+        nombre: 'Qui',
+        audio: 'assets/audio/fonemas/silabas/ckq/Qui.mp3',
         duracion: 4,
         reproduciendo: false
       }]
@@ -9863,7 +10080,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         imagenSujeto: 'assets/img/semanticas/categorias/granja/Vaca.jpg',
         imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
         imagenPredicado: 'assets/img/semanticas/categorias/granja/Vaca.jpg',
-        audio: ''
+        audio: 'assets/audio/semanticas/categorias/granja/Vaca.mp3'
       }, {
         sujeto: 'Esta',
         verbo: 'es',
@@ -9879,7 +10096,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         imagenSujeto: 'assets/img/semanticas/categorias/granja/Gallina.jpg',
         imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
         imagenPredicado: 'assets/img/semanticas/categorias/granja/Gallina.jpg',
-        audio: ''
+        audio: 'assets/audio/semanticas/categorias/granja/Gallina.mp3'
       }, {
         sujeto: 'Este',
         verbo: 'es',
@@ -9895,7 +10112,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         imagenSujeto: 'assets/img/semanticas/categorias/granja/Pato.jpg',
         imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
         imagenPredicado: 'assets/img/semanticas/categorias/granja/Pato.jpg',
-        audio: ''
+        audio: 'assets/audio/semanticas/categorias/granja/Pato.mp3'
       }, {
         sujeto: 'Este',
         verbo: 'es',
@@ -9911,7 +10128,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         imagenSujeto: 'assets/img/semanticas/categorias/granja/Caballo.jpg',
         imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
         imagenPredicado: 'assets/img/semanticas/categorias/granja/Caballo.jpg',
-        audio: ''
+        audio: 'assets/audio/semanticas/categorias/granja/Caballo.mp3'
       }, {
         sujeto: 'Esta',
         verbo: 'es',
@@ -9927,7 +10144,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         imagenSujeto: 'assets/img/semanticas/categorias/granja/Cabra.jpg',
         imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
         imagenPredicado: 'assets/img/semanticas/categorias/granja/Cabra.jpg',
-        audio: ''
+        audio: 'assets/audio/semanticas/categorias/granja/Cabra.mp3'
       }, {
         sujeto: 'Este',
         verbo: 'es',
@@ -9943,7 +10160,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         imagenSujeto: 'assets/img/semanticas/categorias/granja/Gallo.jpg',
         imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
         imagenPredicado: 'assets/img/semanticas/categorias/granja/Gallo.jpg',
-        audio: ''
+        audio: 'assets/audio/semanticas/categorias/granja/Gallo.mp3'
       }, {
         sujeto: 'Este',
         verbo: 'es',
@@ -9959,7 +10176,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         imagenSujeto: 'assets/img/semanticas/categorias/granja/Pollito.jpg',
         imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',
         imagenPredicado: 'assets/img/semanticas/categorias/granja/Pollito.jpg',
-        audio: ''
+        audio: 'assets/audio/semanticas/categorias/granja/Pollito.mp3'
       }]
     }, {
       nombre: 'Animales Domésticos',
@@ -10740,8 +10957,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       duracion: 4,
       reproduciendo: false
     }, {
-      nombre: 'c',
-      video: 'assets/video/fonemas/vidFonC.mp4',
+      nombre: 'ckq',
+      video: 'assets/video/fonemas/vidFonK.mp4',
       imagen: 'assets/img/fonemas/phoneme-bar/fonemaC.png',
       mensaje: 'Cuac Cuac Cuac (Pato)',
       duracion: 4,
@@ -10777,7 +10994,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }, {
       nombre: 'g',
       video: 'assets/video/fonemas/vidFonG.mp4',
-      imagen: 'assets/img/fonemaG.svg',
+      imagen: 'assets/img/fonemas/phoneme-bar/fonemaG.png',
       mensaje: 'Ggggggggg (Gárgaras)',
       duracion: 4,
       reproduciendo: false
@@ -10805,7 +11022,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }, {
       nombre: 'l',
       video: 'assets/video/fonemas/vidFonL.mp4',
-      imagen: 'assets/img/fonemaL.svg',
+      imagen: 'assets/img/fonemas/phoneme-bar/fonemaL.png',
       mensaje: 'La La La La La La (Cantando)',
       duracion: 4,
       reproduciendo: false
@@ -10847,7 +11064,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }, {
       nombre: 'p',
       video: 'assets/video/fonemas/vidFonP.mp4',
-      imagen: '',
+      imagen: 'assets/img/fonemas/phoneme-bar/fonemaP.png',
       mensaje: 'Pum Pum Pum (Tambor)',
       duracion: 4,
       reproduciendo: false

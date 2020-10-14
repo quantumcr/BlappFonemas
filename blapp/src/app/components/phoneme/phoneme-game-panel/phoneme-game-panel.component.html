@@ -1,8 +1,30 @@
 <div class="principal">
     <ion-grid>
+        <!--SECCION SILABAS-->
         <ion-row class="rowSilaba">
-            <ion-col cdkDrop>
-                <ion-segment-button fill="round" class="silaba">{{silaba1}}</ion-segment-button>
+            <!--SÍLABA 1-->
+            <ion-col>
+                <div cdkDropList #silaba1List="cdkDropList" [cdkDropListData]="silaba1"
+                cdkDropListOrientation="horizontal" [cdkDropListConnectedTo]="[palabrasList]" 
+                class="silaba" (cdkDropListDropped)="drop($event)" [cdkDropListEnterPredicate]="validarSilaba1">
+                  <div class="element" *ngFor="let item of silaba1" cdkDrag [cdkDragData]="item">
+                    <ion-avatar class="imagen">
+                      <ion-img src="{{item}}"></ion-img>
+                    </ion-avatar>
+                  </div>
+                </div>
+            </ion-col>
+            <!--SÍLABA 2-->
+            <ion-col>
+                <div cdkDropList #silaba2List="cdkDropList" [cdkDropListData]="silaba2"
+                cdkDropListOrientation="horizontal" [cdkDropListConnectedTo]="[palabrasList]" 
+                class="sujeto" (cdkDropListDropped)="drop($event)" [cdkDropListEnterPredicate]="validarSilaba2">
+                  <div class="element" *ngFor="let item of silaba1" cdkDrag [cdkDragData]="item">
+                    <ion-avatar class="imagen">
+                      <ion-img src="{{item}}"></ion-img>
+                    </ion-avatar>
+                  </div>
+                </div>                
             </ion-col>
             <ion-col>
                 <ion-segment-button fill="round" class="silaba">{{silaba2}}</ion-segment-button>
@@ -53,6 +75,19 @@
                     </div>
                   </div>             
             </ion-col>                   
+        </ion-row>
+        <ion-row>
+            <div cdkDropList #palabrasList="cdkDropList" [cdkDropListData]="palabras"
+            cdkDropListOrientation="horizontal" [cdkDropListConnectedTo]="[silaba1List,silaba2List]" 
+            class="example-list" (cdkDropListDropped)="drop($event)" [cdkDropListEnterPredicate]="noReturnPredicate">
+
+
+              <div class="element" *ngFor="let imagen of palabras"  cdkDrag [cdkDragData]="imagen">
+                <ion-avatar class="imagen">
+                  <ion-img src="{{imagen}}"></ion-img>
+                </ion-avatar>
+              </div>
+            </div>
         </ion-row>
     </ion-grid>
 </div>

@@ -18,8 +18,8 @@ export const VIDEOS = [
         reproduciendo: false
     },
     {
-        nombre: 'c',
-        video: 'assets/video/fonemas/vidFonC.mp4',
+        nombre: 'ckq',
+        video: 'assets/video/fonemas/vidFonK.mp4',
         imagen: 'assets/img/fonemas/phoneme-bar/fonemaC.png',
         mensaje: 'Cuac Cuac Cuac (Pato)',
         duracion: 4,
@@ -60,7 +60,7 @@ export const VIDEOS = [
     {
         nombre: 'g',
         video: 'assets/video/fonemas/vidFonG.mp4',
-        imagen: 'assets/img/fonemaG.svg',
+        imagen: 'assets/img/fonemas/phoneme-bar/fonemaG.png',
         mensaje: 'Ggggggggg (Gárgaras)',
         duracion: 4,
         reproduciendo: false
@@ -92,7 +92,7 @@ export const VIDEOS = [
     {
         nombre: 'l',
         video: 'assets/video/fonemas/vidFonL.mp4',
-        imagen: 'assets/img/fonemaL.svg',
+        imagen: 'assets/img/fonemas/phoneme-bar/fonemaL.png',
         mensaje: 'La La La La La La (Cantando)',
         duracion: 4,
         reproduciendo: false
@@ -140,7 +140,7 @@ export const VIDEOS = [
     {
         nombre: 'p',
         video: 'assets/video/fonemas/vidFonP.mp4',
-        imagen: '',
+        imagen: 'assets/img/fonemas/phoneme-bar/fonemaP.png',
         mensaje: 'Pum Pum Pum (Tambor)',
         duracion: 4,
         reproduciendo: false

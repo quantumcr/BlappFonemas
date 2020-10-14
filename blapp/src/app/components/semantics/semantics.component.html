@@ -6,7 +6,10 @@
       </ion-col>
       <ion-col class="panel">
         <app-categories-panel *ngIf="visibleCategories"></app-categories-panel>
+        <!--
         <app-semantics-game-panel *ngIf="visibleGame" [nombreSubcategoria]="subcategory.nombre" [subcategoryOneData]="subcategory.data[indexData]"></app-semantics-game-panel>
+        -->
+        <app-categories-game-panel *ngIf="visibleGame"></app-categories-game-panel>
       </ion-col>
     </ion-row>
     <ion-row class="navigation">

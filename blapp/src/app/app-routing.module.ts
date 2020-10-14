@@ -56,7 +56,11 @@ const routes: Routes = [
   {
     path: 'recuperacion',
     loadChildren: () => import('./pages/recuperacion/recuperacion.module').then( m => m.RecuperacionPageModule)
+  },  {
+    path: 'juego-semanticas',
+    loadChildren: () => import('./pages/juego-semanticas/juego-semanticas.module').then( m => m.JuegoSemanticasPageModule)
   },
+
 
 
 

@@ -1,10 +1,20 @@
-class EncargadoLegal {
-    constructor( 
-        public nombre: String = "",
-        public profesion: String = "",
-        public telefono: String = "",
-        public direccion: String = "",
-    ) {}    
+export interface Encargado {
+    nombre: string;
+    profesion: string;
+    telefono: string;
+    direccion: string;
+}
+export interface Familia{
+    nombre: string;
+    relacion: string;
+}
+export class EncargadoLegal {
+    constructor(
+        public nombre: string = "",
+        public profesion: string = "",
+        public telefono: string = "",
+        public direccion: string = "",
+    ) {}
 }
 
 export class MiembrosFamilia {
@@ -23,13 +33,18 @@ export class Alimentos {
 
 export class Student {
     constructor(
-        public _id: String = "",
-        public nombre: String = "",
-        public cedula: String = "",
-        public sexo: String = "",
-        public edad: Number = 0,
-        public encargadoLegal: EncargadoLegal = new EncargadoLegal,
-        public familia: MiembrosFamilia[] = [],
-        public alimentacion: Alimentos[] = []
+        public _id: string = "",
+        public nombre: string = "",
+        public cedula: string = "",
+        public sexo: string = "",
+        public edad: number = 0,
+        public encargadoLegal: Encargado = {
+            nombre: '',
+            profesion: 'por asignar',
+            telefono: 'por asignar',
+            direccion: '',
+        },
+        //public familia: Encargado[] = [],
+        // public alimentacion: Alimentos[] = []
     ) {}
 }

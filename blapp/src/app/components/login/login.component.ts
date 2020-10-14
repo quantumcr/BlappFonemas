@@ -81,7 +81,7 @@ export class LoginComponent implements OnInit {
     this.authService.login(this.email, this.password).then(res => {
       this.presentAlert();
       // this.route.navigate(['/menu']); // Se requiere validar entre estudiantes y docentes
-    }).catch(err =>alert('Los datos son incorrectos o el usuario no existe'));
+    }).catch(err => this.errorAlert());
   }
 
   async presentAlert() {

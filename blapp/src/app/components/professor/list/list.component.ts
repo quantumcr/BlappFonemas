@@ -5,7 +5,7 @@ import { Router, NavigationExtras } from '@angular/router';
 import { EstudiantesPage } from '../../../pages/estudiantes/estudiantes.page';
 
 import { StudentService, NameStudents } from '../../../services/student.service';
-
+import { Student } from '../../../models/student';
 
 @Component({
   selector: 'app-list',
@@ -16,7 +16,7 @@ export class ListComponent implements OnInit {
   @Input() nombre: string;
 
   nameStudents: NameStudents;
-
+  estudiantes: Student [] =[]
   constructor(
     private studentService: StudentService,
     private router: Router
@@ -24,6 +24,9 @@ export class ListComponent implements OnInit {
   
   ngOnInit() {
     this.getNameStudents();
+    this.studentService.getStudents().subscribe(listaEstudiantes => {
+      this.estudiantes = listaEstudiantes;
+    });
   }
 
   ngOnChanges(): void {

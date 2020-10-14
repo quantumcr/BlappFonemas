@@ -5,7 +5,7 @@
         <app-consonant-bar [fonema]="phoneme.consonante" [imagen]="videoData.imagen" [mensaje]="videoData.mensaje"  (barEvent)="selectPanel($event)"></app-consonant-bar>
       </ion-col>
       <ion-col class="panel">
-        <app-consonant-phoneme-panel *ngIf="visiblePhoneme" [oneDataPhonemeConsonant]="phoneme.data[indexData]" [dataSPhonemeConsonant]="phoneme.dataS" [comando]="comandoFonema"></app-consonant-phoneme-panel>
+        <app-consonant-phoneme-panel *ngIf="visiblePhoneme" [oneDataPhonemeConsonant]="phoneme.dataS[indexSData].data[indexData]" [dataSPhonemeConsonant]="phoneme.dataS" [comando]="comandoFonema" (phonemePanelEvent)="selectSilaba($event)"></app-consonant-phoneme-panel>
         <app-consonant-phoneme-video-panel [video]="videoData.video" *ngIf="visibleVideo"></app-consonant-phoneme-video-panel>
       </ion-col>
     </ion-row>

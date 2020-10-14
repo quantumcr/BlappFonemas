@@ -58,6 +58,39 @@
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
   filter: alpha(opacity=20);
 }
+.my-custom-class {
+  --background: url('../src/assets/svg/notifications/notification.svg');
+  --background-size: 100%;
+  --text-align: center;
+  --font-family: Poppins;
+}
+.fantastic {
+  --width: 282px;
+  --height: 178.2px;
+  --background: url('../src/assets/svg/notifications/fantastic.svg');
+  --background-size: 100%;
+  --text-align: center;
+  --font-family: Poppins;
+  //--webkit-box-pack: center;
+  // --ms-flex-pack: center;
+  --justify-content: center;
+}
+.try {
+  --width: 282px;
+  --height: 178.2px;
+  --background: url('../src/assets/svg/notifications/try.svg');
+  --background-size: 100%;
+  --text-align: center;
+  --font-family: Poppins;
+  //--webkit-box-pack: center;
+  // --ms-flex-pack: center;
+  --justify-content: center;
+}
+.imageFantastic{
+  width: 100%;
+}
+
+
 
 @font-face{
   font-family: 'Poppins';

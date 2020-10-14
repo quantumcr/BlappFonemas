@@ -43,6 +43,10 @@ import { ConsonantNavigationComponent } from './phoneme-consonant-view/consonant
 import { PhonemeNavComponent } from './phoneme-view/phoneme-nav/phoneme-nav.component';
 import { SignupComponent } from './signup/signup.component';
 import { RestoreComponent } from './restore/restore.component';
+import { CategoriesGamePanelComponent } from './semantics/categories-game-panel/categories-game-panel.component';
+import { CategoriesGameComponent } from './categories-game/categories-game.component';
+import { CategoriesGameBarComponent } from './categories-game/categories-game-bar/categories-game-bar.component';
+import { CategoriesGameNavigationComponent } from './categories-game/categories-game-navigation/categories-game-navigation.component';
 
 
 
@@ -50,28 +54,36 @@ import { RestoreComponent } from './restore/restore.component';
 @NgModule({
   declarations: [LoginComponent,
     MenuPanelComponent, ProfessorMenuComponent, StudentsMenuComponent,
-    PhonemeComponent, PhonemeBarComponent, VocalPanelComponent, ConsonantPanelComponent, PhonemeGamePanelComponent,
-    PhonemeViewComponent, BarComponent, PhonemePanelComponent, VideoPanelComponent, PhonemeNavComponent,
-    PhonemeConsonantViewComponent, ConsonantBarComponent, ConsonantPhonemePanelComponent, ConsonantPhonemeVideoPanelComponent,
-    ConsonantNavigationComponent,
-    SemanticsComponent, SemanticsBarComponent, CategoriesPanelComponent, SemanticsGamePanelComponent,
-    SubcategoriesComponent, SubcategoriesBarComponent, SubcategoriesPanelComponent,
-    CategoriesViewComponent, CategoriesBarComponent, CategoriesViewPanelComponent, CategoriesNavigationComponent,
+    PhonemeComponent, PhonemeBarComponent, VocalPanelComponent,
+    ConsonantPanelComponent, PhonemeGamePanelComponent, PhonemeViewComponent,
+    BarComponent, PhonemePanelComponent, VideoPanelComponent, PhonemeNavComponent,
+    PhonemeConsonantViewComponent, ConsonantBarComponent, ConsonantPhonemePanelComponent,
+    ConsonantPhonemeVideoPanelComponent, ConsonantNavigationComponent,
+    SemanticsComponent, SemanticsBarComponent, CategoriesPanelComponent,
+    SemanticsGamePanelComponent, SubcategoriesComponent, SubcategoriesBarComponent,
+    SubcategoriesPanelComponent, CategoriesViewComponent, CategoriesBarComponent,
+    CategoriesViewPanelComponent, CategoriesNavigationComponent,
     ProfessorComponent, ListComponent, RegisterComponent, StudentInfoComponent,
     FunctionBarComponent, InfoPanelComponent, StudentsBarComponent, SubcategoriesComponent,
-    SubcategoriesBarComponent, SubcategoriesPanelComponent, NavigationComponent, SignupComponent, RestoreComponent],
+    SubcategoriesBarComponent, SubcategoriesPanelComponent, NavigationComponent,
+    SignupComponent, RestoreComponent, CategoriesGamePanelComponent,
+    CategoriesGameComponent, CategoriesGameBarComponent, CategoriesGameNavigationComponent],
 
   exports: [LoginComponent,
     MenuPanelComponent, ProfessorMenuComponent, StudentsMenuComponent,
-    PhonemeComponent, PhonemeBarComponent, VocalPanelComponent, ConsonantPanelComponent, PhonemeGamePanelComponent,
-    PhonemeViewComponent, BarComponent, PhonemePanelComponent, VideoPanelComponent, PhonemeNavComponent,
-    PhonemeConsonantViewComponent, ConsonantBarComponent, ConsonantPhonemePanelComponent, ConsonantPhonemeVideoPanelComponent,
-    SemanticsComponent, SemanticsBarComponent, CategoriesPanelComponent, SemanticsGamePanelComponent,
+    PhonemeComponent, PhonemeBarComponent, VocalPanelComponent, ConsonantPanelComponent,
+    PhonemeGamePanelComponent, PhonemeViewComponent, BarComponent, PhonemePanelComponent,
+    VideoPanelComponent, PhonemeNavComponent,
+    PhonemeConsonantViewComponent, ConsonantBarComponent, ConsonantPhonemePanelComponent,
+    ConsonantPhonemeVideoPanelComponent, SemanticsComponent, SemanticsBarComponent,
+    CategoriesPanelComponent, SemanticsGamePanelComponent,
     SubcategoriesComponent, SubcategoriesBarComponent, SubcategoriesPanelComponent,
-    CategoriesViewComponent, CategoriesBarComponent, CategoriesViewPanelComponent, CategoriesNavigationComponent,
-    ProfessorComponent, ListComponent, RegisterComponent, StudentInfoComponent,
-    FunctionBarComponent, InfoPanelComponent, StudentsBarComponent, SubcategoriesComponent,
-    SubcategoriesBarComponent, SubcategoriesPanelComponent, NavigationComponent, SignupComponent, RestoreComponent],
+    CategoriesViewComponent, CategoriesBarComponent, CategoriesViewPanelComponent,
+    CategoriesNavigationComponent, ProfessorComponent, ListComponent, RegisterComponent,
+    StudentInfoComponent, FunctionBarComponent, InfoPanelComponent, StudentsBarComponent,
+    SubcategoriesComponent, SubcategoriesBarComponent, SubcategoriesPanelComponent,
+    NavigationComponent, SignupComponent, RestoreComponent, CategoriesGamePanelComponent,
+    CategoriesGameComponent, CategoriesGameBarComponent, CategoriesGameNavigationComponent],
   imports: [
     CommonModule,
     IonicModule,

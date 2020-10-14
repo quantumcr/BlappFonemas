@@ -1,0 +1,19 @@
+<div class="principal">
+  <ion-grid>
+    <ion-row>
+      <ion-img src="assets\img\semanticas\semantics-bar\semanticas.png" class="imagen"></ion-img>
+    </ion-row>
+
+    <ion-row>
+      <ion-label class="titulo">{{this.category.nombre.toUpperCase()}}</ion-label>      
+    </ion-row>
+    
+    <div class="buttons">
+      <ion-row *ngFor="let subcategory of category.subcategoria">
+        <ion-col>
+          <ion-segment-button value="{{subcategory.nombre}}" (click)="subcategorySelected(subcategory.nombre)" class="button">{{subcategory.nombre}}</ion-segment-button>
+        </ion-col>
+      </ion-row>
+    </div>
+  </ion-grid>
+</div>

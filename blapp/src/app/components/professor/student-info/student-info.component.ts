@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { StudentService } from '../../../services/student.service';
 import { Router } from '@angular/router';
 
@@ -12,6 +12,9 @@ export class StudentInfoComponent implements OnInit {
 
   boolEdit: Boolean = false;
 
+  @Output() newDeleteStudentEvent = new EventEmitter();
+  @Output() newUpdateStudentEvent = new EventEmitter();
+
   constructor(
     private studentService: StudentService,
     private router: Router
@@ -20,7 +23,6 @@ export class StudentInfoComponent implements OnInit {
   }
 
   ngOnInit() {
-    
   }
 
   deleteStudent() {

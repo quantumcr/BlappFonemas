@@ -7,6 +7,14 @@
           <ion-img src="assets/icon/logout.svg"></ion-img>
         </ion-button>
       </ion-col>
+      <ion-col>
+        <ion-button *ngIf="visiblePlay" fill="clear" class="iconMusic" (click)="logout()">
+          <ion-img src="assets/icon/play2.svg"></ion-img>
+        </ion-button>
+        <ion-button *ngIf="visibleMute" fill="clear" class="iconMusic" (click)="logout()">
+          <ion-img src="assets/icon/mute.svg"></ion-img>
+        </ion-button>
+      </ion-col>
     </ion-row>
 
     <ion-row class="titulo">

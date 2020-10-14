@@ -13,8 +13,8 @@ export class InfoPanelComponent implements OnInit {
   @Input() _idStudent: string;
   @Input() boolEdit: Boolean;
 
-  public student = new Student;
-  public user = new User;
+  public student = new Student();
+  public user = new User();
 
   constructor(
     private studentService: StudentService,
@@ -22,7 +22,11 @@ export class InfoPanelComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.studentService.getStudent(this._idStudent).
+    this.studentService.getStudent(this._idStudent).subscribe(myStudent => {
+      this.student = myStudent as Student;
+      //console.log(this.student);
+    });
+    /*this.studentService.getStudent(this._idStudent).
     then((student: Student) => {
       this.student = student;
       console.log(student);
@@ -37,7 +41,7 @@ export class InfoPanelComponent implements OnInit {
     })
     .catch(err => {
       console.log(err);
-    });    
+    });*/
   }
 
   prueba(){
@@ -51,23 +55,28 @@ export class InfoPanelComponent implements OnInit {
   ngOnChanges(): void {
     //Called before any other lifecycle hook. Use it to inject dependencies, but avoid any serious work here.
     //Add '${implements OnChanges}' to the class.
-    console.log(this.student, this.user);
+    //console.log(this.student, this.user);
     if (this.boolEdit) {
-      this.studentService.putStudent(this.student)
-      .then(message => {
+      this.student._id=this._idStudent;
+      this.studentService.updateStudent(this.student).then(res => {}).catch(err => console.log(err));
+      /*
+      this.studentService.putStudent(this.student).then(message => {
         console.log(message);
-        this.userService.putUser(this.user)
-        .then(message => {
+        this.userService.putUser(this.user).then(message => {
           console.log(message);
           window.open("/docentes", "_self");
-        })
-        .catch(err => {
+        }).catch(err => {
           console.log(err);
         });
-      })
-      .catch(err => {
+      }).catch(err => {
         console.log(err);
-      });
+      });*/
+    }
+  }
+
+  updateInfo(){
+    if (this.boolEdit) {
+      this.studentService.updateStudent(this.student).then(res => {}).catch(err => console.log(err));
     }
   }
 }

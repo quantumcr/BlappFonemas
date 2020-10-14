@@ -4,12 +4,15 @@
         height: 100%;
         background-image: url('../../../assets/svg/background/menu.svg');
         background-size: 100%;
+        justify-content: center;
     }
     .component{
         width: 1144px;
         height: 664px;
+
         margin-left: 68px;
         margin-top: 68px;
         margin-bottom: 68px;    
+   
     }    
 }

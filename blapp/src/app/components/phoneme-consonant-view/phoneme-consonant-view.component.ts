@@ -1,7 +1,7 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ɵɵNgOnChangesFeature } from '@angular/core';
 import { VideoSelected } from '../../models/video-selected';
 import { VIDEOS } from '../../../data/data.videos';
-import { PhonemeConsonantI } from '../../../data/audio/fonemas/consonantes/data.consonantes';
+import { PhonemeConsonantI, OneDataPhonemeConsonantI } from '../../../data/audio/fonemas/consonantes/data.consonantes';
 import { NavController } from '@ionic/angular';
 @Component({
   selector: 'app-phoneme-consonant-view',
@@ -10,14 +10,14 @@ import { NavController } from '@ionic/angular';
 })
 export class PhonemeConsonantViewComponent implements OnInit {
   @Input() phoneme: PhonemeConsonantI;
-
+  public silaba: number = 0;
   public indexData: number = 0;
+  public indexSData: number = 0;
   
   public videoData = new VideoSelected();
   public visiblePhoneme = true;
   public visibleVideo = false;
   public comandoFonema: string;
-  
   constructor(
     private navCtrl: NavController,
   ) { }
@@ -25,7 +25,11 @@ export class PhonemeConsonantViewComponent implements OnInit {
   ngOnInit() {
     this.getVideo(this.phoneme.consonante);
   }
-
+  selectSilaba(index: number){
+    this.indexSData = index;
+    this.indexData = 0;
+    
+  }
   selectPanel(value: string) {
     console.log(value);
     this.setVisible(value);
