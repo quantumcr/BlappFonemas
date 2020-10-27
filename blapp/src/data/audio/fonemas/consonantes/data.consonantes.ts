@@ -15,16 +15,18 @@ export interface PhonemeConsonantI {
         reproduciendo: false,
         data: [{
             nombre: string;
+            silaba: string;
             audio: string;
             imagen: string;
             duracion: number;
             reproduciendo: Boolean;
         }],
-    }]
+    }];
 }
 
 export interface OneDataPhonemeConsonantI {
     nombre: string;
+    silaba: string;
     audio: string;
     imagen: string;
     duracion: number;
@@ -34,15 +36,16 @@ export interface OneDataPhonemeConsonantI {
 export interface OneDataSPhonemeConsonantI {
     nombre: string;
     audio: string;
-    duracion: number,
-    reproduciendo: false
+    duracion: number;
+    reproduciendo: Boolean;
     data: [{
         nombre: string;
+        silaba: string;
         audio: string;
         imagen: string;
         duracion: number;
         reproduciendo: Boolean;
-    }],
+    }];
 }
 
 
@@ -110,7 +113,7 @@ export const CONSONANTES = [
                 audio: 'assets/audio/fonemas/silabas/b/Ba.mp3',
                 duracion: 4,
                 reproduciendo: false,
-                data:[
+                data: [
                     {
                         nombre: 'Ba-na-no',
                         silaba: 'Ba',
@@ -133,7 +136,17 @@ export const CONSONANTES = [
                 nombre: 'Be',
                 audio: 'assets/audio/fonemas/silabas/b/Be.mp3',
                 duracion: 4,
-                reproduciendo: false
+                reproduciendo: false,
+                data:[
+                    {
+                        nombre: 'Prue-ba',
+                        silaba: 'Be',
+                        audio: 'assets/audio/fonemas/vocales/a/aguila.mp3',
+                        imagen: 'assets/img/fonemas/vocales/a/aguila.jpg',
+                        duracion: 4,
+                        reproduciendo: false
+                    },
+                ]
             },
             {
                 nombre: 'Bi',
@@ -187,7 +200,17 @@ export const CONSONANTES = [
                 nombre: 'Bu',
                 audio: 'assets/audio/fonemas/silabas/b/Bu.mp3',
                 duracion: 4,
-                reproduciendo: false
+                reproduciendo: false,
+                data: [
+                    {
+                        nombre: 'Prue-ba',
+                        silaba: 'Bu',
+                        audio: 'assets/audio/fonemas/vocales/a/aguila.mp3',
+                        imagen: 'assets/img/fonemas/vocales/a/aguila.jpg',
+                        duracion: 4,
+                        reproduciendo: false
+                    },
+                ]
             }
         ],
     },
@@ -299,7 +322,17 @@ export const CONSONANTES = [
                 nombre: 'Cu',
                 audio: 'assets/audio/fonemas/silabas/ckq/Cu.mp3',
                 duracion: 4,
-                reproduciendo: false
+                reproduciendo: false,
+                data:[
+                    {
+                        nombre: 'Prue-ba',
+                        silaba: 'Cu',
+                        audio: 'assets/audio/fonemas/vocales/a/aguila.mp3',
+                        imagen: 'assets/img/fonemas/vocales/a/aguila.jpg',
+                        duracion: 4,
+                        reproduciendo: false
+                    },
+                ]
             },
             {
                 nombre: 'Que',
@@ -344,25 +377,65 @@ export const CONSONANTES = [
                 nombre: 'Cha',
                 audio: 'assets/audio/fonemas/silabas/ch/Cha.mp3',
                 duracion: 4,
-                reproduciendo: false
+                reproduciendo: false,
+                data:[
+                    {
+                        nombre: 'Prue-ba',
+                        silaba: 'Cha',
+                        audio: 'assets/audio/fonemas/vocales/a/aguila.mp3',
+                        imagen: 'assets/img/fonemas/vocales/a/aguila.jpg',
+                        duracion: 4,
+                        reproduciendo: false
+                    },
+                ]
             },
             {
                 nombre: 'Che',
                 audio: 'assets/audio/fonemas/silabas/ch/Che.mp3',
                 duracion: 4,
-                reproduciendo: false
+                reproduciendo: false,
+                data:[
+                    {
+                        nombre: 'Prue-ba',
+                        silaba: 'Che',
+                        audio: 'assets/audio/fonemas/vocales/a/aguila.mp3',
+                        imagen: 'assets/img/fonemas/vocales/a/aguila.jpg',
+                        duracion: 4,
+                        reproduciendo: false
+                    },
+                ]
             },
             {
                 nombre: 'Chi',
                 audio: 'assets/audio/fonemas/silabas/ch/Chi.mp3',
                 duracion: 4,
-                reproduciendo: false
+                reproduciendo: false,
+                data:[
+                    {
+                        nombre: 'Prue-ba',
+                        silaba: 'Chi',
+                        audio: 'assets/audio/fonemas/vocales/a/aguila.mp3',
+                        imagen: 'assets/img/fonemas/vocales/a/aguila.jpg',
+                        duracion: 4,
+                        reproduciendo: false
+                    },
+                ]
             },
             {
                 nombre: 'Cho',
                 audio: 'assets/audio/fonemas/silabas/ch/Cho.mp3',
                 duracion: 4,
-                reproduciendo: false
+                reproduciendo: false,
+                data:[
+                    {
+                        nombre: 'Prue-ba',
+                        silaba: 'Cho',
+                        audio: 'assets/audio/fonemas/vocales/a/aguila.mp3',
+                        imagen: 'assets/img/fonemas/vocales/a/aguila.jpg',
+                        duracion: 4,
+                        reproduciendo: false
+                    },
+                ]
             },
             {
                 nombre: 'Chu',
@@ -391,7 +464,17 @@ export const CONSONANTES = [
                 nombre: 'Da',
                 audio: 'assets/audio/fonemas/silabas/d/Da.mp3',
                 duracion: 4,
-                reproduciendo: false
+                reproduciendo: false,
+                data:[
+                    {
+                        nombre: 'Prue-ba',
+                        silaba: 'Da',
+                        audio: 'assets/audio/fonemas/vocales/a/aguila.mp3',
+                        imagen: 'assets/img/fonemas/vocales/a/aguila.jpg',
+                        duracion: 4,
+                        reproduciendo: false
+                    },
+                ]
             },
             {
                 nombre: 'De',
@@ -445,13 +528,33 @@ export const CONSONANTES = [
                 nombre: 'Do',
                 audio: 'assets/audio/fonemas/silabas/d/Do.mp3',
                 duracion: 4,
-                reproduciendo: false
+                reproduciendo: false,
+                data:[
+                    {
+                        nombre: 'Prue-ba',
+                        silaba: 'Do',
+                        audio: 'assets/audio/fonemas/vocales/a/aguila.mp3',
+                        imagen: 'assets/img/fonemas/vocales/a/aguila.jpg',
+                        duracion: 4,
+                        reproduciendo: false
+                    },
+                ]
             },
             {
                 nombre: 'Du',
                 audio: 'assets/audio/fonemas/silabas/d/Du.mp3',
                 duracion: 4,
-                reproduciendo: false
+                reproduciendo: false,
+                data:[
+                    {
+                        nombre: 'Prue-ba',
+                        silaba: 'Du',
+                        audio: 'assets/audio/fonemas/vocales/a/aguila.mp3',
+                        imagen: 'assets/img/fonemas/vocales/a/aguila.jpg',
+                        duracion: 4,
+                        reproduciendo: false
+                    },
+                ]
             },
         ]
     },
@@ -488,7 +591,16 @@ export const CONSONANTES = [
                 audio: 'assets/audio/fonemas/silabas/f/Fe.mp3',
                 duracion: 4,
                 reproduciendo: false,
-                data:[]
+                data:[
+                    {
+                        nombre: 'Prue-ba',
+                        silaba: 'Fe',
+                        audio: 'assets/audio/fonemas/vocales/a/aguila.mp3',
+                        imagen: 'assets/img/fonemas/vocales/a/aguila.jpg',
+                        duracion: 4,
+                        reproduciendo: false
+                    },
+                ]
             },
             {
                 nombre: 'Fi',
@@ -511,14 +623,32 @@ export const CONSONANTES = [
                 audio: 'assets/audio/fonemas/silabas/f/Fo.mp3',
                 duracion: 4,
                 reproduciendo: false,
-                data:[]
+                data:[
+                    {
+                        nombre: 'Prue-ba',
+                        silaba: 'Fo',
+                        audio: 'assets/audio/fonemas/vocales/a/aguila.mp3',
+                        imagen: 'assets/img/fonemas/vocales/a/aguila.jpg',
+                        duracion: 4,
+                        reproduciendo: false
+                    },
+                ]
             },
             {
                 nombre: 'Fu',
                 audio: 'assets/audio/fonemas/silabas/f/Fu.mp3',
                 duracion: 4,
                 reproduciendo: false,
-                data:[]
+                data:[
+                    {
+                        nombre: 'Prue-ba',
+                        silaba: 'Fu',
+                        audio: 'assets/audio/fonemas/vocales/a/aguila.mp3',
+                        imagen: 'assets/img/fonemas/vocales/a/aguila.jpg',
+                        duracion: 4,
+                        reproduciendo: false
+                    },
+                ]
             },
         ]
     },
@@ -547,14 +677,32 @@ export const CONSONANTES = [
                 audio: 'assets/audio/fonemas/silabas/g/Gue.mp3',
                 duracion: 4,
                 reproduciendo: false,
-                data:[]
+                data:[
+                    {
+                        nombre: 'Prue-ba',
+                        silaba: 'Gue',
+                        audio: 'assets/audio/fonemas/vocales/a/aguila.mp3',
+                        imagen: 'assets/img/fonemas/vocales/a/aguila.jpg',
+                        duracion: 4,
+                        reproduciendo: false
+                    },
+                ]
             },
             {
                 nombre: 'Gui',
                 audio: 'assets/audio/fonemas/silabas/g/Gui.mp3',
                 duracion: 4,
                 reproduciendo: false,
-                data:[]
+                data:[
+                    {
+                        nombre: 'Prue-ba',
+                        silaba: 'Gui',
+                        audio: 'assets/audio/fonemas/vocales/a/aguila.mp3',
+                        imagen: 'assets/img/fonemas/vocales/a/aguila.jpg',
+                        duracion: 4,
+                        reproduciendo: false
+                    },
+                ]
             },
             {
                 nombre: 'Go',
@@ -577,7 +725,16 @@ export const CONSONANTES = [
                 audio: 'assets/audio/fonemas/silabas/g/Gu.mp3',
                 duracion: 4,
                 reproduciendo: false,
-                data:[]
+                data:[
+                    {
+                        nombre: 'Prue-ba',
+                        silaba: 'Gu',
+                        audio: 'assets/audio/fonemas/vocales/a/aguila.mp3',
+                        imagen: 'assets/img/fonemas/vocales/a/aguila.jpg',
+                        duracion: 4,
+                        reproduciendo: false
+                    },
+                ]
             },
         ]
     },
@@ -835,7 +992,17 @@ export const CONSONANTES = [
                 nombre: 'Li',
                 audio: 'assets/audio/fonemas/silabas/l/Li.mp3',
                 duracion: 4,
-                reproduciendo: false
+                reproduciendo: false,
+                data:[
+                    {
+                        nombre: 'Prue-ba',
+                        silaba: 'Li',
+                        audio: 'assets/audio/fonemas/vocales/a/aguila.mp3',
+                        imagen: 'assets/img/fonemas/vocales/a/aguila.jpg',
+                        duracion: 4,
+                        reproduciendo: false
+                    },
+                ]
             },
             {
                 nombre: 'Lo',
@@ -979,7 +1146,16 @@ export const CONSONANTES = [
                 audio: 'assets/audio/fonemas/silabas/llyy/Ya.mp3',
                 duracion: 4,
                 reproduciendo: false,
-                data: []
+                data: [
+                    {
+                        nombre: 'Prue-ba',
+                        silaba: 'Ya',
+                        audio: 'assets/audio/fonemas/vocales/a/aguila.mp3',
+                        imagen: 'assets/img/fonemas/vocales/a/aguila.jpg',
+                        duracion: 4,
+                        reproduciendo: false
+                    },
+                ]
             },
             {
                 nombre: 'Ye',
@@ -1010,14 +1186,32 @@ export const CONSONANTES = [
                 audio: 'assets/audio/fonemas/silabas/llyy/Yi.mp3',
                 duracion: 4,
                 reproduciendo: false,
-                data: []
+                data: [
+                    {
+                        nombre: 'Prue-ba',
+                        silaba: 'Yi',
+                        audio: 'assets/audio/fonemas/vocales/a/aguila.mp3',
+                        imagen: 'assets/img/fonemas/vocales/a/aguila.jpg',
+                        duracion: 4,
+                        reproduciendo: false
+                    },
+                ]
             },
             {
                 nombre: 'Yo',
                 audio: 'assets/audio/fonemas/silabas/llyy/Yo.mp3',
                 duracion: 4,
                 reproduciendo: false,
-                data: []
+                data: [
+                    {
+                        nombre: 'Prue-ba',
+                        silaba: 'Yo',
+                        audio: 'assets/audio/fonemas/vocales/a/aguila.mp3',
+                        imagen: 'assets/img/fonemas/vocales/a/aguila.jpg',
+                        duracion: 4,
+                        reproduciendo: false
+                    },
+                ]
             },
             {
                 nombre: 'Yu',
@@ -1166,28 +1360,64 @@ export const CONSONANTES = [
                 audio: 'assets/audio/fonemas/silabas/m/Me.mp3',
                 duracion: 4,
                 reproduciendo: false,
-                data: []
+                data: [
+                    {
+                        nombre: 'Prue-ba',
+                        silaba: 'Me',
+                        audio: 'assets/audio/fonemas/vocales/a/aguila.mp3',
+                        imagen: 'assets/img/fonemas/vocales/a/aguila.jpg',
+                        duracion: 4,
+                        reproduciendo: false
+                    },
+                ]
             },
             {
                 nombre: 'Mi',
                 audio: 'assets/audio/fonemas/silabas/m/Mi.mp3',
                 duracion: 4,
                 reproduciendo: false,
-                data: []
+                data: [
+                    {
+                        nombre: 'Prue-ba',
+                        silaba: 'Mi',
+                        audio: 'assets/audio/fonemas/vocales/a/aguila.mp3',
+                        imagen: 'assets/img/fonemas/vocales/a/aguila.jpg',
+                        duracion: 4,
+                        reproduciendo: false
+                    },
+                ]
             },
             {
                 nombre: 'Mo',
                 audio: 'assets/audio/fonemas/silabas/m/Mo.mp3',
                 duracion: 4,
                 reproduciendo: false,
-                data: []
+                data: [
+                    {
+                        nombre: 'Prue-ba',
+                        silaba: 'Mo',
+                        audio: 'assets/audio/fonemas/vocales/a/aguila.mp3',
+                        imagen: 'assets/img/fonemas/vocales/a/aguila.jpg',
+                        duracion: 4,
+                        reproduciendo: false
+                    },
+                ]
             },
             {
                 nombre: 'Mu',
                 audio: 'assets/audio/fonemas/silabas/m/Mu.mp3',
                 duracion: 4,
                 reproduciendo: false,
-                data: []
+                data: [
+                    {
+                        nombre: 'Prue-ba',
+                        silaba: 'Mu',
+                        audio: 'assets/audio/fonemas/vocales/a/aguila.mp3',
+                        imagen: 'assets/img/fonemas/vocales/a/aguila.jpg',
+                        duracion: 4,
+                        reproduciendo: false
+                    },
+                ]
             }
         ]
     },
@@ -1406,28 +1636,64 @@ export const CONSONANTES = [
                 audio: 'assets/audio/fonemas/silabas/ñ/Ñe.mp3',
                 duracion: 4,
                 reproduciendo: false,
-                data: []
+                data: [
+                    {
+                        nombre: 'Prue-ba',
+                        silaba: 'Ñe',
+                        audio: 'assets/audio/fonemas/vocales/a/aguila.mp3',
+                        imagen: 'assets/img/fonemas/vocales/a/aguila.jpg',
+                        duracion: 4,
+                        reproduciendo: false
+                    },
+                ]
             },
             {
                 nombre: 'Ñi',
                 audio: 'assets/audio/fonemas/silabas/ñ/Ñi.mp3',
                 duracion: 4,
                 reproduciendo: false,
-                data: []
+                data: [
+                    {
+                        nombre: 'Prue-ba',
+                        silaba: 'Ñi',
+                        audio: 'assets/audio/fonemas/vocales/a/aguila.mp3',
+                        imagen: 'assets/img/fonemas/vocales/a/aguila.jpg',
+                        duracion: 4,
+                        reproduciendo: false
+                    },
+                ]
             },
             {
                 nombre: 'Ño',
                 audio: 'assets/audio/fonemas/silabas/ñ/Ño.mp3',
                 duracion: 4,
                 reproduciendo: false,
-                data: []
+                data: [
+                    {
+                        nombre: 'Prue-ba',
+                        silaba: 'Ño',
+                        audio: 'assets/audio/fonemas/vocales/a/aguila.mp3',
+                        imagen: 'assets/img/fonemas/vocales/a/aguila.jpg',
+                        duracion: 4,
+                        reproduciendo: false
+                    },
+                ]
             },
             {
                 nombre: 'Ñu',
                 audio: 'assets/audio/fonemas/silabas/ñ/Ñu.mp3',
                 duracion: 4,
                 reproduciendo: false,
-                data: []
+                data: [
+                    {
+                        nombre: 'Prue-ba',
+                        silaba: 'Ñu',
+                        audio: 'assets/audio/fonemas/vocales/a/aguila.mp3',
+                        imagen: 'assets/img/fonemas/vocales/a/aguila.jpg',
+                        duracion: 4,
+                        reproduciendo: false
+                    },
+                ]
             }
         ]
 
@@ -2082,7 +2348,16 @@ export const CONSONANTES = [
                 audio: 'assets/audio/fonemas/silabas/r/Ru.mp3',
                 duracion: 4,
                 reproduciendo: false,
-                data: []
+                data: [
+                    {
+                        nombre: 'Prue-ba',
+                        silaba: 'Ru',
+                        audio: 'assets/audio/fonemas/vocales/a/aguila.mp3',
+                        imagen: 'assets/img/fonemas/vocales/a/aguila.jpg',
+                        duracion: 4,
+                        reproduciendo: false
+                    },
+                ]
             },
         ]
     },
@@ -2659,14 +2934,32 @@ export const CONSONANTES = [
                 audio: 'assets/audio/fonemas/silabas/x/Xa.mp3',
                 duracion: 4,
                 reproduciendo: false,
-                data:[]
+                data:[
+                    {
+                        nombre: 'Prue-ba',
+                        silaba: 'Xa',
+                        audio: 'assets/audio/fonemas/vocales/a/aguila.mp3',
+                        imagen: 'assets/img/fonemas/vocales/a/aguila.jpg',
+                        duracion: 4,
+                        reproduciendo: false
+                    },
+                ]
             },
             {
                 nombre: 'Xe',
                 audio: 'assets/audio/fonemas/silabas/x/Xe.mp3',
                 duracion: 4,
                 reproduciendo: false,
-                data:[]
+                data:[
+                    {
+                        nombre: 'Prue-ba',
+                        silaba: 'Xe',
+                        audio: 'assets/audio/fonemas/vocales/a/aguila.mp3',
+                        imagen: 'assets/img/fonemas/vocales/a/aguila.jpg',
+                        duracion: 4,
+                        reproduciendo: false
+                    },
+                ]
             },
             {
                 nombre: 'Xi',
@@ -2697,14 +2990,32 @@ export const CONSONANTES = [
                 audio: 'assets/audio/fonemas/silabas/x/Xo.mp3',
                 duracion: 4,
                 reproduciendo: false,
-                data:[]
+                data:[
+                    {
+                        nombre: 'Prue-ba',
+                        silaba: 'Xo',
+                        audio: 'assets/audio/fonemas/vocales/a/aguila.mp3',
+                        imagen: 'assets/img/fonemas/vocales/a/aguila.jpg',
+                        duracion: 4,
+                        reproduciendo: false
+                    },
+                ]
             },
             {
                 nombre: 'Xu',
                 audio: 'assets/audio/fonemas/silabas/x/Xu.mp3',
                 duracion: 4,
                 reproduciendo: false,
-                data:[]
+                data:[
+                    {
+                        nombre: 'Prue-ba',
+                        silaba: 'Xu',
+                        audio: 'assets/audio/fonemas/vocales/a/aguila.mp3',
+                        imagen: 'assets/img/fonemas/vocales/a/aguila.jpg',
+                        duracion: 4,
+                        reproduciendo: false
+                    },
+                ]
             },
         ]
     }

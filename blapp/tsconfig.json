@@ -2,6 +2,8 @@
   "compileOnSave": false,
   "compilerOptions": {
     "skipLibCheck": true,
+    "strictNullChecks": false,
+    "strict": false,
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
@@ -23,5 +25,5 @@
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
     "strictInjectionParameters": true
-  }
+  },
 }

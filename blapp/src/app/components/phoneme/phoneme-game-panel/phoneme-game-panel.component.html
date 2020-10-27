@@ -1,93 +1,66 @@
 <div class="principal">
-    <ion-grid>
-        <!--SECCION SILABAS-->
-        <ion-row class="rowSilaba">
-            <!--SÍLABA 1-->
-            <ion-col>
-                <div cdkDropList #silaba1List="cdkDropList" [cdkDropListData]="silaba1"
-                cdkDropListOrientation="horizontal" [cdkDropListConnectedTo]="[palabrasList]" 
-                class="silaba" (cdkDropListDropped)="drop($event)" [cdkDropListEnterPredicate]="validarSilaba1">
-                  <div class="element" *ngFor="let item of silaba1" cdkDrag [cdkDragData]="item">
-                    <ion-avatar class="imagen">
-                      <ion-img src="{{item}}"></ion-img>
-                    </ion-avatar>
-                  </div>
-                </div>
-            </ion-col>
-            <!--SÍLABA 2-->
-            <ion-col>
-                <div cdkDropList #silaba2List="cdkDropList" [cdkDropListData]="silaba2"
-                cdkDropListOrientation="horizontal" [cdkDropListConnectedTo]="[palabrasList]" 
-                class="sujeto" (cdkDropListDropped)="drop($event)" [cdkDropListEnterPredicate]="validarSilaba2">
-                  <div class="element" *ngFor="let item of silaba1" cdkDrag [cdkDragData]="item">
-                    <ion-avatar class="imagen">
-                      <ion-img src="{{item}}"></ion-img>
-                    </ion-avatar>
-                  </div>
-                </div>                
-            </ion-col>
-            <ion-col>
-                <ion-segment-button fill="round" class="silaba">{{silaba2}}</ion-segment-button>
-            </ion-col>
-        </ion-row>
-        <ion-row class="row" cdkDropList>
-            <ion-col >
-                <!--SECCION SILABA 1-->
-                <div style="position: relative;" cdkDrag>
-                    <div style="position: absolute; left: 0px; top: 0px;">
-                        <ion-avatar>
-                            <ion-img src={{palabra1.imagen}} class="imagen"></ion-img>
-                        </ion-avatar>
-                    </div>
-                    <div style="position: absolute; left: 0px; right: 120px; top: 126px;">
-                        <ion-segment-button value={{palabra1.audio}} class="btnPlay" (click)="playAudio($event)">
-                            <ion-icon src="assets/icon/play.svg"></ion-icon>
-                        </ion-segment-button>
-                    </div>
-                  </div>
-            </ion-col>
-            <ion-col>
-                <!--SECCION SILABA 2-->
-                <div style="position: relative;" cdkDrag>
-                    <div style="position: absolute; left: 0px; top: 0px;">
-                        <ion-avatar class="imagen">
-                            <ion-img src={{palabra2.imagen}}></ion-img>
-                        </ion-avatar>
-                    </div>
-                    <div style="position: absolute; left: 0px; right: 120px; top: 126px;">
-                        <ion-segment-button value={{palabra2.audio}} class="btnPlay" (click)="playAudio($event)">
-                            <ion-icon src="assets/icon/play.svg"></ion-icon>
-                        </ion-segment-button>
-                    </div>
-                  </div>              
-            </ion-col>  
-            <ion-col>
-                <div style="position: relative;" cdkDrag>
-                    <div style="position: absolute; left: 0px; top: 0px;">
-                        <ion-avatar>
-                            <ion-img src={{palabra3.imagen}} class="imagen"></ion-img>
-                        </ion-avatar>
-                    </div>
-                    <div style="position: absolute; left: 0px; right: 120px; top: 126px;">
-                        <ion-segment-button value={{palabra3.audio}} class="btnPlay" (click)="playAudio($event)">
-                            <ion-icon src="assets/icon/play.svg"></ion-icon>
-                        </ion-segment-button>
-                    </div>
-                  </div>             
-            </ion-col>                   
-        </ion-row>
-        <ion-row>
-            <div cdkDropList #palabrasList="cdkDropList" [cdkDropListData]="palabras"
-            cdkDropListOrientation="horizontal" [cdkDropListConnectedTo]="[silaba1List,silaba2List]" 
-            class="example-list" (cdkDropListDropped)="drop($event)" [cdkDropListEnterPredicate]="noReturnPredicate">
-
-
-              <div class="element" *ngFor="let imagen of palabras"  cdkDrag [cdkDragData]="imagen">
-                <ion-avatar class="imagen">
-                  <ion-img src="{{imagen}}"></ion-img>
-                </ion-avatar>
-              </div>
+    <ion-grid class="grid">  
+      <ion-row class="rowSilaba">
+        <ion-col>
+  
+          <div cdkDropList #silabaAList="cdkDropList" [cdkDropListData]="silabaA"
+          cdkDropListOrientation="horizontal" [cdkDropListConnectedTo]="[imagenesList]" 
+          class="silaba" (cdkDropListDropped)="drop($event)" [cdkDropListEnterPredicate]="validarSilabaA">
+            <div class="element" *ngFor="let item of silabaA" cdkDrag [cdkDragData]="item">
+              <ion-avatar class="imagen">
+                <ion-img src="{{item.imagen}}"></ion-img>
+              </ion-avatar>
             </div>
-        </ion-row>
+          </div>
+  
+        </ion-col>
+        <ion-col>
+  
+          <div cdkDropList #silabaBList="cdkDropList" [cdkDropListData]="silabaB"
+          cdkDropListOrientation="horizontal" [cdkDropListConnectedTo]="[imagenesList]" 
+          class="silaba" (cdkDropListDropped)="drop($event)" [cdkDropListEnterPredicate]="validarSilabaB">
+            <div class="element" *ngFor="let item of silabaB" cdkDrag [cdkDragData]="item">
+              <ion-avatar class="imagen">
+                <ion-img src="{{item.imagen}}"></ion-img>
+              </ion-avatar>
+            </div>
+          </div>
+          
+        </ion-col>
+       
+      </ion-row> 
+      
+      <ion-row class="ion-text-center">
+        <ion-col>
+          <div class="semantica">
+            <ion-label class="textoSilaba">{{silabas[0].nombre}}</ion-label>
+          </div>
+        </ion-col>
+        <ion-col>
+          <div class="semantica">
+            <ion-label class="textoSilaba">{{silabas[1].nombre}}</ion-label>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row class="options">
+        <ion-col>
+  
+          <div cdkDropList #imagenesList="cdkDropList" [cdkDropListData]="palabrasJuego"
+          cdkDropListOrientation="horizontal" [cdkDropListConnectedTo]="[silabaAList,silabaBList]" 
+          class="example-list" (cdkDropListDropped)="drop($event)" [cdkDropListEnterPredicate]="noReturnPredicate">
+            <div class="element" *ngFor="let palabra of palabrasJuego"  cdkDrag [cdkDragData]="palabra">
+              <ion-avatar class="imagen">
+                <ion-img src="{{palabra.imagen}}"></ion-img>
+              </ion-avatar>
+              
+  
+            </div>
+          </div>
+  
+        </ion-col>
+      </ion-row> 
+  
+  
     </ion-grid>
-</div>
+  </div>
+  
