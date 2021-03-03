@@ -45,12 +45,12 @@
       <ion-row class="options">
         <ion-col>
   
-          <div cdkDropList #imagenesList="cdkDropList" [cdkDropListData]="palabrasJuego"
+          <div cdkDropList #imagenesList="cdkDropList" [cdkDropListData]="pruebaPalabrasJuego"
           cdkDropListOrientation="horizontal" [cdkDropListConnectedTo]="[silabaAList,silabaBList]" 
           class="example-list" (cdkDropListDropped)="drop($event)" [cdkDropListEnterPredicate]="noReturnPredicate">
-            <div class="element" *ngFor="let palabra of palabrasJuego"  cdkDrag [cdkDragData]="palabra">
+            <div class="element" *ngFor="let palabra of pruebaPalabrasJuego"  cdkDrag [cdkDragData]="palabra">
               <ion-avatar class="imagen">
-                <ion-img src="{{palabra.imagen}}"></ion-img>
+                <ion-img src="{{palabra}}"></ion-img>
               </ion-avatar>
               
   
@@ -62,5 +62,6 @@
   
   
     </ion-grid>
-  </div>
+</div>
+
   

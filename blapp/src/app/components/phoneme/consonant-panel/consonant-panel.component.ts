@@ -7,7 +7,7 @@ import { PhonemeConsonantI, CONSONANTES } from '../../../../data/audio/fonemas/c
   templateUrl: './consonant-panel.component.html',
   styleUrls: ['./consonant-panel.component.scss'],
 })
-export class ConsonantPanelComponent implements OnInit {    
+export class ConsonantPanelComponent implements OnInit {
   //public value:string;
 
   constructor(

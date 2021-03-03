@@ -1,0 +1,27 @@
+<div class="principal">
+  <ion-grid>
+    <ion-row>
+      <ion-col class="bar">
+        <!--
+        <app-consonant-bar [fonema]="phoneme.consonante" [imagen]="videoData.imagen" [mensaje]="videoData.mensaje"  (barEvent)="selectPanel($event)"></app-consonant-bar>
+        -->
+        <app-phoneme-game-bar [fonema]="phoneme.consonante"></app-phoneme-game-bar>
+      </ion-col>
+      <ion-col class="panel">
+        <!--
+        <app-consonant-phoneme-panel *ngIf="visiblePhoneme" [oneDataPhonemeConsonant]="phoneme.dataS[indexSData].data[indexData]" [dataSPhonemeConsonant]="phoneme.dataS" [comando]="comandoFonema" (phonemePanelEvent)="selectSilaba($event)"></app-consonant-phoneme-panel>
+        <app-consonant-phoneme-video-panel [video]="videoData.video" *ngIf="visibleVideo"></app-consonant-phoneme-video-panel>
+        -->
+        <app-phoneme-game-panel [dataSPhonemeConsonant]="phoneme.dataS"></app-phoneme-game-panel>
+      </ion-col>
+    </ion-row>
+    <ion-row class="navigation">
+      <ion-col>
+        <!--<app-navigation></app-navigation>-->
+        <!--
+        <app-phoneme-nav (forwardEmit)="incIndexData()" (backEmit)="decIndexData()"></app-phoneme-nav>
+        -->
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>

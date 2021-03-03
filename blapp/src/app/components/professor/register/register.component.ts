@@ -147,23 +147,5 @@ export class RegisterComponent implements OnInit {
       console.log("Error creando usuario", err);
     });
 
-    /*this.studentService.createStudent(this.newStudent)
-    .then((student: Student) => {
-      console.log(student);
-      //delete this.newUser._id;
-      this.newUser.tipo = "Estudiante";
-      this.newUser.uid = student._id;
-      this.userService.createUser(this.newUser)
-      .then((userToken: TokenResponse) => {        
-        console.log(userToken);
-        this.router.navigate(['estudiantes'], { queryParams: { _id: student._id } });
-      })
-      .catch(err => {
-        console.log("Error creando usuario", err);
-      });
-    })
-    .catch(err => {
-      console.log("Error creando estudiante", err);
-    });*/
   }
 }

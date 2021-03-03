@@ -21,8 +21,7 @@ export class CategoriesGamePanelComponent implements OnInit {
   goToCategories(value: string) {
     let categoryData: CategoriaI = this.getCategory(value);
     this.router.navigate(['/juego-semanticas'], { queryParams: { category: JSON.stringify(categoryData) }});
-    //this.router.navigate(['/juego-semanticas']);
-    //this.navCtrl.navigateForward('/categoria', true, );
+
   }
 
   getCategory(categoryName: string): CategoriaI {

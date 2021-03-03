@@ -47,6 +47,10 @@ import { CategoriesGamePanelComponent } from './semantics/categories-game-panel/
 import { CategoriesGameComponent } from './categories-game/categories-game.component';
 import { CategoriesGameBarComponent } from './categories-game/categories-game-bar/categories-game-bar.component';
 import { CategoriesGameNavigationComponent } from './categories-game/categories-game-navigation/categories-game-navigation.component';
+import { ConsonantGamePanelComponent } from './phoneme/consonant-game-panel/consonant-game-panel.component';
+import { PhonemeGameComponent } from './phoneme-game/phoneme-game.component';
+import { PhonemeGameNavigationComponent } from './phoneme-game/phoneme-game-navigation/phoneme-game-navigation.component';
+import { PhonemeGameBarComponent } from './phoneme-game/phoneme-game-bar/phoneme-game-bar.component';
 
 
 
@@ -58,7 +62,8 @@ import { CategoriesGameNavigationComponent } from './categories-game/categories-
     ConsonantPanelComponent, PhonemeGamePanelComponent, PhonemeViewComponent,
     BarComponent, PhonemePanelComponent, VideoPanelComponent, PhonemeNavComponent,
     PhonemeConsonantViewComponent, ConsonantBarComponent, ConsonantPhonemePanelComponent,
-    ConsonantPhonemeVideoPanelComponent, ConsonantNavigationComponent,
+    ConsonantPhonemeVideoPanelComponent, ConsonantNavigationComponent, ConsonantGamePanelComponent,
+    PhonemeGameComponent, PhonemeGameNavigationComponent, PhonemeGameBarComponent,
     SemanticsComponent, SemanticsBarComponent, CategoriesPanelComponent,
     SemanticsGamePanelComponent, SubcategoriesComponent, SubcategoriesBarComponent,
     SubcategoriesPanelComponent, CategoriesViewComponent, CategoriesBarComponent,
@@ -74,8 +79,9 @@ import { CategoriesGameNavigationComponent } from './categories-game/categories-
     PhonemeComponent, PhonemeBarComponent, VocalPanelComponent, ConsonantPanelComponent,
     PhonemeGamePanelComponent, PhonemeViewComponent, BarComponent, PhonemePanelComponent,
     VideoPanelComponent, PhonemeNavComponent,
-    PhonemeConsonantViewComponent, ConsonantBarComponent, ConsonantPhonemePanelComponent,
+    PhonemeConsonantViewComponent, ConsonantBarComponent, ConsonantPhonemePanelComponent, ConsonantGamePanelComponent,
     ConsonantPhonemeVideoPanelComponent, SemanticsComponent, SemanticsBarComponent,
+    PhonemeGameComponent, PhonemeGameNavigationComponent, PhonemeGameBarComponent,
     CategoriesPanelComponent, SemanticsGamePanelComponent,
     SubcategoriesComponent, SubcategoriesBarComponent, SubcategoriesPanelComponent,
     CategoriesViewComponent, CategoriesBarComponent, CategoriesViewPanelComponent,

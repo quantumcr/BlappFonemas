@@ -24,6 +24,7 @@ export class SignupComponent implements OnInit {
   registrar() {
     this.nuevoUsuario.tipo = 'Docente';
     this.authService.register(this.nuevoUsuario).then(auth =>{
+      console.log(auth);
       this.route.navigate(['/inicio']);
       console.log(auth);
     }).catch(err => console.log(err));

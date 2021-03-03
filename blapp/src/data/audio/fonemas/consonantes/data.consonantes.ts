@@ -1,4 +1,6 @@
 
+
+
 export interface PhonemeConsonantI {
     consonante: string;
     data: [{
@@ -23,6 +25,42 @@ export interface PhonemeConsonantI {
         }],
     }];
 }
+
+export interface PhonemeGameI {
+    consonante: string;
+    dataS: [{
+        nombre: string;
+        audio: string;
+        duracion: number,
+        reproduciendo: false,
+        data: [{
+            nombre: string;
+            silaba: string;
+            audio: string;
+            imagen: string;
+            duracion: number;
+            reproduciendo: Boolean;
+        }],
+    }];
+}
+
+export interface SilabasI{
+    dataS: [{
+        nombre: string;
+        audio: string;
+        duracion: number,
+        reproduciendo: false,
+        data: [{
+            nombre: string;
+            silaba: string;
+            audio: string;
+            imagen: string;
+            duracion: number;
+            reproduciendo: Boolean;
+        }],
+    }];
+}
+
 
 export interface OneDataPhonemeConsonantI {
     nombre: string;

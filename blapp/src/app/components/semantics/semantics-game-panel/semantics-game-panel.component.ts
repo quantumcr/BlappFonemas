@@ -20,7 +20,7 @@ export class SemanticsGamePanelComponent implements OnInit {
   predicado = [];
   imagenes = [];
   sonidos =[];
-
+  nuevaVariable='sujeto';
   
 
   constructor(

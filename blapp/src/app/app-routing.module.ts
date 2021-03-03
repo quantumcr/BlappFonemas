@@ -60,6 +60,10 @@ const routes: Routes = [
     path: 'juego-semanticas',
     loadChildren: () => import('./pages/juego-semanticas/juego-semanticas.module').then( m => m.JuegoSemanticasPageModule)
   },
+  {
+    path: 'juego-fonemas',
+    loadChildren: () => import('./pages/juego-fonemas/juego-fonemas.module').then( m => m.JuegoFonemasPageModule)
+  },
 
 
 
