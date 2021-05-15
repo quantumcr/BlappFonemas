@@ -1,42 +1,42 @@
-@media screen and(min-width:1280px) and(orientation:landscape){
+@media (orientation:landscape){
     .principal{
-        width: 100%;
-        height: 100%;
+        width:  100vw;
+        height: 100vh;
         background: url('../../../assets/svg/background/login.svg');
-        background-size: 100%;
+        background-size: cover;
     }      
 
     .logo{
         position: absolute;
-        max-width: 245px;
-        max-height: 145px;
-        min-width: 245px;
-        min-height: 145px;
-        left: 549px;
-        right: 550px;
+        max-width: 19.140625vw;
+        max-height: 18.125vh;
+        min-width: 19.140625vw;
+        min-height: 18.125vh;
+        left: 42.890625vw;
+        right: 42.96875vw;
         top: 76px;   
     }    
    
 
     .loginComponent{
         top: 20px;
-        left: 360px;
-        right: 366px;
+        left: 28.25vw;
+        right: 28,59375vw;
     }
     .titulo{
         position: absolute;
-        max-width: 229px;
-        max-height: 45px;
-        min-width: 229px;
-        min-height: 45px;
-        margin-left: 526px;
-        margin-right: 525px;
+        max-width: 17.890625vw;
+        max-height: 5.625vh;
+        min-width: 17.890625vw;
+        min-height: 5.625vh;
+        margin-left: 41.09375vw;
+        margin-right: 41.015625vw;
         top: 253px;    
         font-family: Poppins;
         font-style: normal;
         font-weight: bold;
-        font-size: 30px;
-        line-height: 45px;
+        font-size: 2.34375vw;
+        //line-height: 45px;
         
         /* identical to box height */
         
@@ -44,17 +44,17 @@
     }
 
     .reset{
-        max-width: 229px;
-        max-height: 45px;
-        min-width: 229px;
-        min-height: 45px;
-        margin-top: 600px;
-        margin-left: 522px;
-        margin-right: 523px;
+        max-width: 17.890625vw;
+        max-height: 5.625vh;
+        min-width: 17.890625vw;
+        min-height: 5.625vh;
+        margin-top: 80vh;
+        margin-left: 40.78125vw;
+        margin-right: 40.859375vw;
         font-family: Poppins;
         font-style: normal;
         font-weight: bold;
-        font-size: 20px;
+        font-size: 1,5625vw;
         line-height: 25px;
         text-align: center;
         color: #5F659C;    

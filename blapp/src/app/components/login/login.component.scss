@@ -1,11 +1,11 @@
 
-@media screen and (min-width:1280px) and (orientation: landscape){  
+@media (orientation: landscape){  
     .principal{
         position: absolute;
-        width: 554px;
-        height: 264px;
-        margin-left: 360px;
-        margin-right: 360px;
+        width: 43.28125vw;
+        height: 33vh;
+        margin-left: 28.125vw;
+        margin-right: 28.125vw;
         top: 318px;
         
         background: #7A84DD;
@@ -17,12 +17,12 @@
         //width: 100px;
         //height: 30px;    
         top: 16px;
-        margin-left: 241px;
+        margin-left: 18.828125vw;
         margin-right: auto;
         //font-family: Poppins;
         font-style: normal;
         font-weight: 600;
-        font-size: 20px;
+        font-size: 1.5625vw;
         text-align: center;
         //line-height: 30px; 
 
@@ -31,14 +31,14 @@
     .tituloClave{
         //width: 121px;
         //height: 30px;  
-        margin-left: 219px;
+        margin-left: 17.109375vw;
         margin-right: auto; 
     
         //font-family: Poppins;
         font-style: normal;
         font-weight: 600;
-        font-size: 20px;
-        line-height: 30px;
+        font-size: 1.5625vw;
+        //line-height: 30px;
         text-align: center;
         
 
@@ -46,20 +46,20 @@
         color: #FFFFFF;    
     }
     .usuario{
-        width: 484px;
-        height: 44px;
-        left: 25px;
-        right: 33px;    
+        width: 37.8125vw;
+        height: 5,5vh;
+        left: 1.953125vw;
+        right: 2.578125vw;    
         top: 4px;
         background: #FFFFFF;
         border-radius: 3px;    
     
     }
     .clave{
-        width: 484px;
-        height: 44px;
-        left: 25px;
-        right: 33px;
+        width: 37.8125vw;
+        height: 5,5vh;
+        left: 1.953125vw;
+        right: 2.578125vw;
         top: 14px;
         background: #FFFFFF;
         border-radius: 3px;    
@@ -67,10 +67,10 @@
     }
     .btnLogin{
         position: absolute;
-        width: 150px;
-        height: 44px;
-        left: 203px;
-        right: 201px;
+        width: 11.71875vw;
+        height: 5.5vh;
+        left: 15.859375vw;
+        right: 15.703125vw;
         top: 18px;
         bottom: 20px;
         

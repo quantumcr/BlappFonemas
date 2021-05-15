@@ -47,6 +47,7 @@ import { CategoriesGamePanelComponent } from './semantics/categories-game-panel/
 import { CategoriesGameComponent } from './categories-game/categories-game.component';
 import { CategoriesGameBarComponent } from './categories-game/categories-game-bar/categories-game-bar.component';
 import { CategoriesGameNavigationComponent } from './categories-game/categories-game-navigation/categories-game-navigation.component';
+import { PhonemeNavigationComponent } from './phoneme/phoneme-navigation/phoneme-navigation.component';
 
 
 
@@ -67,7 +68,7 @@ import { CategoriesGameNavigationComponent } from './categories-game/categories-
     FunctionBarComponent, InfoPanelComponent, StudentsBarComponent, SubcategoriesComponent,
     SubcategoriesBarComponent, SubcategoriesPanelComponent, NavigationComponent,
     SignupComponent, RestoreComponent, CategoriesGamePanelComponent,
-    CategoriesGameComponent, CategoriesGameBarComponent, CategoriesGameNavigationComponent],
+    CategoriesGameComponent, CategoriesGameBarComponent, CategoriesGameNavigationComponent, PhonemeNavigationComponent],
 
   exports: [LoginComponent,
     MenuPanelComponent, ProfessorMenuComponent, StudentsMenuComponent,
@@ -83,7 +84,7 @@ import { CategoriesGameNavigationComponent } from './categories-game/categories-
     StudentInfoComponent, FunctionBarComponent, InfoPanelComponent, StudentsBarComponent,
     SubcategoriesComponent, SubcategoriesBarComponent, SubcategoriesPanelComponent,
     NavigationComponent, SignupComponent, RestoreComponent, CategoriesGamePanelComponent,
-    CategoriesGameComponent, CategoriesGameBarComponent, CategoriesGameNavigationComponent],
+    CategoriesGameComponent, CategoriesGameBarComponent, CategoriesGameNavigationComponent, PhonemeNavigationComponent],
   imports: [
     CommonModule,
     IonicModule,

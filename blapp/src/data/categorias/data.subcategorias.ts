@@ -827,7 +827,7 @@ export const SUBCATEGORIAS = [
             },
             {
                 sujeto: 'Yo',
-                verbo: 'bebp',
+                verbo: 'bebo',
                 predicado: 'coca cola',
                 imagenSujeto: 'assets/img/semanticas/estructura/sujeto/Yo.jpg',
                 imagenVerbo: 'assets/img/semanticas/estructura/verbo/Verbo.jpg',

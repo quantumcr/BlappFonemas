@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-consonant-navigation',
@@ -6,9 +7,28 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./consonant-navigation.component.scss'],
 })
 export class ConsonantNavigationComponent implements OnInit {
+  @Output() forwardEmit = new EventEmitter();
+  @Output() backEmit = new EventEmitter();
+  //@Output() navigationEvent = new EventEmitter();
+  
+  constructor(
+    private navCtrl: NavController
+  ) { }
 
-  constructor() { }
+  ngOnInit() {
+    
+  }
 
-  ngOnInit() {}
+  goToHome(event: any) {
+    this.navCtrl.navigateForward('/menu');
+  }
+
+  forward(event: any) {
+    this.forwardEmit.emit();
+  }
+
+  back(event: any){
+    this.backEmit.emit();
+  }
 
 }

@@ -64,7 +64,7 @@ export class PhonemeConsonantViewComponent implements OnInit {
   }
 
   incIndexData() {
-    if (this.phoneme.data.length - 1 == this.indexData) {
+    if (this.phoneme.dataS[this.indexSData].data.length - 1 == this.indexData) {
       this.indexData = 0;
     } else {
       this.indexData++;
