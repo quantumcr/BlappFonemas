@@ -1244,7 +1244,7 @@ export const CONSONANTES = [
                     {
                         nombre: 'Ma-che-te',
                         silaba: 'Ma',
-                        audio: 'assets/audio/fonemas/consonantes/m/Machete.mp3',
+                        audio: 'assets/audio/fonemas/consonantes/m/machete.mp3',
                         imagen: 'assets/img/fonemas/consonantes/m/Machete.jpg',
                         duracion: 4,
                         reproduciendo: false
@@ -1252,7 +1252,7 @@ export const CONSONANTES = [
                     {
                         nombre: 'Ma-dri-na',
                         silaba: 'Ma',
-                        audio: 'assets/audio/fonemas/consonantes/m/Madrina.mp3',
+                        audio: 'assets/audio/fonemas/consonantes/m/madrina.mp3',
                         imagen: 'assets/img/fonemas/consonantes/m/Madrina.jpg',
                         duracion: 4,
                         reproduciendo: false
@@ -1260,7 +1260,7 @@ export const CONSONANTES = [
                     {
                         nombre: 'Ma-es-tra',
                         silaba: 'Ma',
-                        audio: 'assets/audio/fonemas/consonantes/m/Maestra.mp3',
+                        audio: 'assets/audio/fonemas/consonantes/m/maestra.mp3',
                         imagen: 'assets/img/fonemas/consonantes/m/Maestra.jpg',
                         duracion: 4,
                         reproduciendo: false
@@ -1268,7 +1268,7 @@ export const CONSONANTES = [
                     {
                         nombre: 'Ma-go',
                         silaba: 'Ma',
-                        audio: 'assets/audio/fonemas/consonantes/m/Mago.mp3',
+                        audio: 'assets/audio/fonemas/consonantes/m/mago.mp3',
                         imagen: 'assets/img/fonemas/consonantes/m/Mago.jpg',
                         duracion: 4,
                         reproduciendo: false
@@ -1276,7 +1276,7 @@ export const CONSONANTES = [
                     {
                         nombre: 'Ma-le-ta',
                         silaba: 'Ma',
-                        audio: 'assets/audio/fonemas/consonantes/m/Maleta.mp3',
+                        audio: 'assets/audio/fonemas/consonantes/m/maleta.mp3',
                         imagen: 'assets/img/fonemas/consonantes/m/Maleta.jpg',
                         duracion: 4,
                         reproduciendo: false
@@ -1284,7 +1284,7 @@ export const CONSONANTES = [
                     {
                         nombre: 'Ma-má',
                         silaba: 'Ma',
-                        audio: 'assets/audio/fonemas/consonantes/m/Mama.mp3',
+                        audio: 'assets/audio/fonemas/consonantes/m/mama.mp3',
                         imagen: 'assets/img/fonemas/consonantes/m/Mama.jpg',
                         duracion: 4,
                         reproduciendo: false
@@ -1292,7 +1292,7 @@ export const CONSONANTES = [
                     {
                         nombre: 'Man-da-ri-na',
                         silaba: 'Ma',
-                        audio: 'assets/audio/fonemas/consonantes/m/Mandarina.mp3',
+                        audio: 'assets/audio/fonemas/consonantes/m/mandarina.mp3',
                         imagen: 'assets/img/fonemas/consonantes/m/Mandarina.jpg',
                         duracion: 4,
                         reproduciendo: false
@@ -1300,7 +1300,7 @@ export const CONSONANTES = [
                     {
                         nombre: 'Man-go',
                         silaba: 'Ma',
-                        audio: 'assets/audio/fonemas/consonantes/m/Mango.mp3',
+                        audio: 'assets/audio/fonemas/consonantes/m/mango.mp3',
                         imagen: 'assets/img/fonemas/consonantes/m/Mango.jpg',
                         duracion: 4,
                         reproduciendo: false
@@ -1308,7 +1308,7 @@ export const CONSONANTES = [
                     {
                         nombre: 'Man-gue-ra',
                         silaba: 'Ma',
-                        audio: 'assets/audio/fonemas/consonantes/m/Manguera.mp3',
+                        audio: 'assets/audio/fonemas/consonantes/m/manguera.mp3',
                         imagen: 'assets/img/fonemas/consonantes/m/Manguera.jpg',
                         duracion: 4,
                         reproduciendo: false
@@ -1316,7 +1316,7 @@ export const CONSONANTES = [
                     {
                         nombre: 'Ma-ní',
                         silaba: 'Ma',
-                        audio: 'assets/audio/fonemas/consonantes/m/Maní.mp3',
+                        audio: 'assets/audio/fonemas/consonantes/m/maní.mp3',
                         imagen: 'assets/img/fonemas/consonantes/m/Maní.jpg',
                         duracion: 4,
                         reproduciendo: false
@@ -1324,7 +1324,7 @@ export const CONSONANTES = [
                     {
                         nombre: 'Man-tel',
                         silaba: 'Ma',
-                        audio: 'assets/audio/fonemas/consonantes/m/Mantel.mp3',
+                        audio: 'assets/audio/fonemas/consonantes/m/mantel.mp3',
                         imagen: 'assets/img/fonemas/consonantes/m/Mantel.jpg',
                         duracion: 4,
                         reproduciendo: false
@@ -1332,7 +1332,7 @@ export const CONSONANTES = [
                     {
                         nombre: 'Man-te-qui-lla',
                         silaba: 'Ma',
-                        audio: 'assets/audio/fonemas/consonantes/m/Mantequilla.mp3',
+                        audio: 'assets/audio/fonemas/consonantes/m/mantequilla.mp3',
                         imagen: 'assets/img/fonemas/consonantes/m/Mantequilla.jpg',
                         duracion: 4,
                         reproduciendo: false
@@ -1340,7 +1340,7 @@ export const CONSONANTES = [
                     {
                         nombre: 'Ma-ña-na',
                         silaba: 'Ma',
-                        audio: 'assets/audio/fonemas/consonantes/m/Mañana.mp3',
+                        audio: 'assets/audio/fonemas/consonantes/m/mañana.mp3',
                         imagen: 'assets/img/fonemas/consonantes/m/Mañana.jpg',
                         duracion: 4,
                         reproduciendo: false
